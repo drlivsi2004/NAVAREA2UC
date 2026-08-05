@@ -44,9 +44,7 @@ xml = []
 xml.append('<?xml version="1.0" encoding="UTF-8"?>')
 xml.append('<userchart name="TEST" version="1.3">')
 xml.append('<areas>')
-xml.append(
-    '<area name="NAVAREA IV 539/2026" description="UNDERWATER OPERATIONS">'
-)
+xml.append('<area name="NAVAREA IV 539/2026" description="UNDERWATER OPERATIONS">')
 xml.append('<position>')
 
 for i, (lat, lon) in enumerate(coords, start=1):
