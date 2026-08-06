@@ -12,7 +12,7 @@ output/
 
 
 
-`markdown
+
 # NAVAREA2UC
 
 Convert NAVAREA Navigational Warnings into Furuno User Chart XML files.
@@ -94,4 +94,29 @@ NAVAREA2UC automatically parses NAVAREA text messages and generates Furuno User 
 
 Place one or more NAVAREA text files in the same folder as the executable.
 
-Example:
+Import XML files into Furuno User Chart.
+
+## Notes
+
+NAVAREA messages are not fully standardized.
+
+The parser attempts to recognize common coordinate formats, tracklines, areas, circles and offshore installations automatically.
+
+Some NAVAREA warnings may still require manual verification, especially complex area definitions.
+
+## Disclaimer
+
+Always verify generated chart objects against official navigational warnings and charts.
+
+Use at your own responsibility.
+
+## Why?
+
+Because manually plotting dozens of NAVAREA objects into ECDIS is a pain.
+
+---
+
+Tested on Furuno ECDIS with modern User Chart firmware.
+
+Fair winds and following seas.
+
