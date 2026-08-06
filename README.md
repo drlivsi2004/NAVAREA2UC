@@ -3,7 +3,7 @@ NAVAREA2UC/
 README.md
 
 src/
-    parser.py
+     main.py
 
 samples/
     navarea.txt
