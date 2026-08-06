@@ -541,6 +541,45 @@ for block in blocks:
         or "BOUNDED BY" in upper
         or "AREA BOUNDED" in upper
     ):
+        area_groups = re.findall(
+            r'\(([A-Z])\)\s*(.*?)(?=\([A-Z]\)|WIDE BERTH|$)',
+            block,
+            flags=re.S
+        )
+
+        if len(area_groups) > 1:
+
+            for area_id, area_text in area_groups:
+
+                sub_coords = extract_coordinates(area_text)
+
+                if len(sub_coords) < 3:
+                    continue
+
+                area_coords = sub_coords
+
+                if has_self_intersection(area_coords):
+
+                    fixed = sort_area_vertices(area_coords)
+
+                    if not has_self_intersection(fixed):
+                        area_coords = fixed
+
+                container['areas'].append({
+
+                    "name": f"{label_text} ({area_id})",
+
+                    "description": description,
+
+                    "coords": area_coords,
+
+                    "color": detect_color(block),
+
+                    "checkDanger": detect_check_danger(block)
+
+                })
+
+            continue
 
         if len(coords) >= 3:
 
@@ -572,7 +611,7 @@ for block in blocks:
 
             })
 
-        continue
+            continue
 
     # NO ANCHORING / ANCHORING PROHIBITED -> area (non-danger unless matched)
     if (

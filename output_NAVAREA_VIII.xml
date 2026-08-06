@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <userchart name="NAVAREA VIII IMPORT" description="" version="1.3">
 <areas>
+<<<<<<< HEAD
 <area name="NAV VIII 736/26" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+=======
+<area name="NAV VIII 736/26 (A)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+>>>>>>> 1719b2c (Add Windows build workflow)
 <position>
 <vertex id="1" latitude="19.020667" longitude="72.692833"/>
 <vertex id="2" latitude="18.977833" longitude="72.6795"/>
@@ -9,6 +13,7 @@
 <vertex id="4" latitude="18.9515" longitude="72.556333"/>
 <vertex id="5" latitude="18.987833" longitude="72.664833"/>
 <vertex id="6" latitude="19.03" longitude="72.6865"/>
+<<<<<<< HEAD
 <vertex id="7" latitude="18.897333" longitude="72.514667"/>
 <vertex id="8" latitude="18.870167" longitude="72.464333"/>
 <vertex id="9" latitude="18.872833" longitude="72.445667"/>
@@ -42,6 +47,70 @@
 <vertex id="37" latitude="9.284333" longitude="74.1975"/>
 <vertex id="38" latitude="18.7555" longitude="72.171"/>
 <vertex id="39" latitude="17.8025" longitude="71.953"/>
+=======
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (B)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="18.897333" longitude="72.514667"/>
+<vertex id="2" latitude="18.870167" longitude="72.464333"/>
+<vertex id="3" latitude="18.872833" longitude="72.445667"/>
+<vertex id="4" latitude="18.909833" longitude="72.508"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (C)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="16.415667" longitude="71.2155"/>
+<vertex id="2" latitude="16.3915" longitude="71.372333"/>
+<vertex id="3" latitude="15.454167" longitude="71.987833"/>
+<vertex id="4" latitude="14.039667" longitude="72.585667"/>
+<vertex id="5" latitude="14.124333" longitude="72.742333"/>
+<vertex id="6" latitude="18.820833" longitude="72.321167"/>
+<vertex id="7" latitude="18.826833" longitude="72.296"/>
+<vertex id="8" latitude="18.7555" longitude="72.171"/>
+<vertex id="9" latitude="18.7815" longitude="72.140333"/>
+<vertex id="10" latitude="17.773833" longitude="72.065"/>
+<vertex id="11" latitude="17.8025" longitude="71.953"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (D)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="9.2615" longitude="74.454833"/>
+<vertex id="2" latitude="9.724667" longitude="74.5125"/>
+<vertex id="3" latitude="10.917" longitude="74.442167"/>
+<vertex id="4" latitude="14.124333" longitude="72.742333"/>
+<vertex id="5" latitude="14.039667" longitude="72.585667"/>
+<vertex id="6" latitude="10.896667" longitude="74.341833"/>
+<vertex id="7" latitude="9.284333" longitude="74.1975"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (E)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="9.2615" longitude="74.454833"/>
+<vertex id="2" latitude="8.251833" longitude="74.857833"/>
+<vertex id="3" latitude="8.104667" longitude="75.368"/>
+<vertex id="4" latitude="5.438833" longitude="77.478333"/>
+<vertex id="5" latitude="4.8155" longitude="77.014833"/>
+<vertex id="6" latitude="5.105667" longitude="76.727667"/>
+<vertex id="7" latitude="6.261833" longitude="75.868833"/>
+<vertex id="8" latitude="6.825833" longitude="75.471833"/>
+<vertex id="9" latitude="7.3735" longitude="75.274"/>
+<vertex id="10" latitude="7.919167" longitude="74.958167"/>
+<vertex id="11" latitude="7.836667" longitude="74.068667"/>
+<vertex id="12" latitude="9.284333" longitude="74.1975"/>
+>>>>>>> 1719b2c (Add Windows build workflow)
 </position>
 <attribute linkedDocument=""/>
 <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
@@ -61,7 +130,11 @@
 <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
 <display S52colorcode="NINFO" lineWidth="2" density="25"/>
 </area>
+<<<<<<< HEAD
 <area name="NAV VIII 808/26" description="NAVAREA VIII 808/26 311137 UTC JUL 2026 INDIA WEST COAST. KOCHI. CHARTS IN 22 220 259 INT 7356. 1. FIRING SCHEDULED (A) 07, 14, 21 AND 28 AUG 26 FROM 0900 TO 1200 UTC AND 1230 TO 1430 UTC (B) 03, 10, 17, 24 AND 31 AUG 26 FROM 0900 TO 1200 UTC IN DANGER AREA BOUNDED BY 09-57.6N 076-14.5E, 09-47.4N 076-16.6E, 09-46.8N 076-11.6E, 09-50N 076-07.6E 2. CANCEL THIS MSG 311300 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+=======
+<area name="NAV VIII 808/26 (B)" description="NAVAREA VIII 808/26 311137 UTC JUL 2026 INDIA WEST COAST. KOCHI. CHARTS IN 22 220 259 INT 7356. 1. FIRING SCHEDULED (A) 07, 14, 21 AND 28 AUG 26 FROM 0900 TO 1200 UTC AND 1230 TO 1430 UTC (B) 03, 10, 17, 24 AND 31 AUG 26 FROM 0900 TO 1200 UTC IN DANGER AREA BOUNDED BY 09-57.6N 076-14.5E, 09-47.4N 076-16.6E, 09-46.8N 076-11.6E, 09-50N 076-07.6E 2. CANCEL THIS MSG 311300 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+>>>>>>> 1719b2c (Add Windows build workflow)
 <position>
 <vertex id="1" latitude="9.833333" longitude="76.126667"/>
 <vertex id="2" latitude="9.78" longitude="76.193333"/>
@@ -72,6 +145,7 @@
 <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
 <display S52colorcode="CHRED" lineWidth="2" density="25"/>
 </area>
+<<<<<<< HEAD
 <area name="NAV VIII 809/26" description="NAVAREA VIII 809/26 311141 UTC JUL 2026 INDIA EAST COAST. OFF GOPALPUR. CHARTS IN 31 305 353 INT 7413. 1. ARMY AIR DEFENCE FIRING SCHEDULED (A) 03 TO 08 AUG 26 FROM 1930 TO 1829 UTC (B) 10 TO 12 AUG 26 FROM 0130 TO 1430 UTC DAILY IN DANGER AREA BOUNDED BY (A) 19-14.6N 084-53.7E (B) 19-07.39N 085-35.94E (C) 18-33.61N 084-53.74E AND ARC OF 41 NM RADIUS JOINING POINT B AND C 2. CANCEL THIS MSG 121530 UTC AUG 26.  ---------------------------------------------------------------------------------------">
 <position>
 <vertex id="1" latitude="19.243333" longitude="84.895"/>
@@ -82,6 +156,8 @@
 <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
 <display S52colorcode="CHRED" lineWidth="2" density="25"/>
 </area>
+=======
+>>>>>>> 1719b2c (Add Windows build workflow)
 <area name="NAV VIII 810/26" description="NAVAREA VIII 810/26 311142 UTC JUL 2026 ANDAMAN SEA. OFF RUTLAND I. CHARTS IN 405 473 4030 INT 7440. 1. FIRING PRACTICE BY AIRCRAFT SCHEDULED 04 TO 06 AUG 26 FROM 0130 TO 0330 UTC AND 0800 TO 1030 UTC IN DANGER AREA BOUNDED BY 11-15N 092-30E, 11-20N 092-55E, 11-05N 092-55E, 11-00N 092-30E 2. CANCEL THIS MSG 061130 UTC AUG 26.  ---------------------------------------------------------------------------------------">
 <position>
 <vertex id="1" latitude="11.25" longitude="92.5"/>
@@ -104,6 +180,7 @@
 <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
 <display S52colorcode="CHRED" lineWidth="2" density="25"/>
 </area>
+<<<<<<< HEAD
 <area name="NAV VIII 814/26" description="NAVAREA VIII 814/26 311219 UTC JUL 2026 BAY OF BENGAL. OFF BANGLADESH. CHARTS IN 31 7706 INT 756. 1. FIRING PRACTICE BY BANGLADESH NAVY SCHEDULED 01 TO 31 AUG 26 (EXCLUDING FRIDAYS AND SATURDAYS) FROM 0001 TO 1600 UTC IN DANGER AREAS BOUNDED BY (A)  21-20.83N 090-34E, 21-41N 091-14E, 21-20.83N 091-28E, 21-00N 090-47.83E (B) 20-07N 090-52E, 20-47.6N 091-29.8E, 20-24N 091-59E, 19-44N 091-21E (C) 21-18N 089-31E, 21-18N 089-50E, 21-04N 089-54E, 21-04N 089-34E (D) 20-58N 089-34E, 20-58N 089-54E, 20-34N 089-54E, 20-34N 089-34E 2. CANCEL THIS MSG 311700 UTC AUG 26.  ---------------------------------------------------------------------------------------">
 <position>
 <vertex id="1" latitude="20.566667" longitude="89.566667"/>
@@ -122,6 +199,47 @@
 <vertex id="14" latitude="21.066667" longitude="89.566667"/>
 <vertex id="15" latitude="20.966667" longitude="89.9"/>
 <vertex id="16" latitude="20.966667" longitude="89.566667"/>
+=======
+<area name="NAV VIII 814/26 (A)" description="NAVAREA VIII 814/26 311219 UTC JUL 2026 BAY OF BENGAL. OFF BANGLADESH. CHARTS IN 31 7706 INT 756. 1. FIRING PRACTICE BY BANGLADESH NAVY SCHEDULED 01 TO 31 AUG 26 (EXCLUDING FRIDAYS AND SATURDAYS) FROM 0001 TO 1600 UTC IN DANGER AREAS BOUNDED BY (A)  21-20.83N 090-34E, 21-41N 091-14E, 21-20.83N 091-28E, 21-00N 090-47.83E (B) 20-07N 090-52E, 20-47.6N 091-29.8E, 20-24N 091-59E, 19-44N 091-21E (C) 21-18N 089-31E, 21-18N 089-50E, 21-04N 089-54E, 21-04N 089-34E (D) 20-58N 089-34E, 20-58N 089-54E, 20-34N 089-54E, 20-34N 089-34E 2. CANCEL THIS MSG 311700 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="21.0" longitude="90.797167"/>
+<vertex id="2" latitude="21.347167" longitude="91.466667"/>
+<vertex id="3" latitude="21.683333" longitude="91.233333"/>
+<vertex id="4" latitude="21.347167" longitude="90.566667"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 814/26 (B)" description="NAVAREA VIII 814/26 311219 UTC JUL 2026 BAY OF BENGAL. OFF BANGLADESH. CHARTS IN 31 7706 INT 756. 1. FIRING PRACTICE BY BANGLADESH NAVY SCHEDULED 01 TO 31 AUG 26 (EXCLUDING FRIDAYS AND SATURDAYS) FROM 0001 TO 1600 UTC IN DANGER AREAS BOUNDED BY (A)  21-20.83N 090-34E, 21-41N 091-14E, 21-20.83N 091-28E, 21-00N 090-47.83E (B) 20-07N 090-52E, 20-47.6N 091-29.8E, 20-24N 091-59E, 19-44N 091-21E (C) 21-18N 089-31E, 21-18N 089-50E, 21-04N 089-54E, 21-04N 089-34E (D) 20-58N 089-34E, 20-58N 089-54E, 20-34N 089-54E, 20-34N 089-34E 2. CANCEL THIS MSG 311700 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="20.116667" longitude="90.866667"/>
+<vertex id="2" latitude="20.793333" longitude="91.496667"/>
+<vertex id="3" latitude="20.4" longitude="91.983333"/>
+<vertex id="4" latitude="19.733333" longitude="91.35"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 814/26 (C)" description="NAVAREA VIII 814/26 311219 UTC JUL 2026 BAY OF BENGAL. OFF BANGLADESH. CHARTS IN 31 7706 INT 756. 1. FIRING PRACTICE BY BANGLADESH NAVY SCHEDULED 01 TO 31 AUG 26 (EXCLUDING FRIDAYS AND SATURDAYS) FROM 0001 TO 1600 UTC IN DANGER AREAS BOUNDED BY (A)  21-20.83N 090-34E, 21-41N 091-14E, 21-20.83N 091-28E, 21-00N 090-47.83E (B) 20-07N 090-52E, 20-47.6N 091-29.8E, 20-24N 091-59E, 19-44N 091-21E (C) 21-18N 089-31E, 21-18N 089-50E, 21-04N 089-54E, 21-04N 089-34E (D) 20-58N 089-34E, 20-58N 089-54E, 20-34N 089-54E, 20-34N 089-34E 2. CANCEL THIS MSG 311700 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="21.3" longitude="89.516667"/>
+<vertex id="2" latitude="21.3" longitude="89.833333"/>
+<vertex id="3" latitude="21.066667" longitude="89.9"/>
+<vertex id="4" latitude="21.066667" longitude="89.566667"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 814/26 (D)" description="NAVAREA VIII 814/26 311219 UTC JUL 2026 BAY OF BENGAL. OFF BANGLADESH. CHARTS IN 31 7706 INT 756. 1. FIRING PRACTICE BY BANGLADESH NAVY SCHEDULED 01 TO 31 AUG 26 (EXCLUDING FRIDAYS AND SATURDAYS) FROM 0001 TO 1600 UTC IN DANGER AREAS BOUNDED BY (A)  21-20.83N 090-34E, 21-41N 091-14E, 21-20.83N 091-28E, 21-00N 090-47.83E (B) 20-07N 090-52E, 20-47.6N 091-29.8E, 20-24N 091-59E, 19-44N 091-21E (C) 21-18N 089-31E, 21-18N 089-50E, 21-04N 089-54E, 21-04N 089-34E (D) 20-58N 089-34E, 20-58N 089-54E, 20-34N 089-54E, 20-34N 089-34E 2. CANCEL THIS MSG 311700 UTC AUG 26.  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="20.966667" longitude="89.9"/>
+<vertex id="2" latitude="20.566667" longitude="89.9"/>
+<vertex id="3" latitude="20.566667" longitude="89.566667"/>
+<vertex id="4" latitude="20.966667" longitude="89.566667"/>
+>>>>>>> 1719b2c (Add Windows build workflow)
 </position>
 <attribute linkedDocument=""/>
 <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>

@@ -1337,6 +1337,17 @@
 <type checkDanger="0" displayRadar="0"/>
 <display S52colorcode="RESBL"/>
 </label>
+<<<<<<< HEAD
+=======
+<label name="NAV IX 41/2026" description="NAVAREA IX 41/2026 031500 UTC FEB 26 GULF OF OMAN UAE CHARTS BA 2851, 2888 AND 3520 1. TEMPORARY EXCLUSION ZONE ESTABLISHED AROUND AN OFFSHORE DRILLING WELL IN AREA BOUNDED BY ARC OF RADIUS 3000 METERS CENTERED AT 25-24.13N 056-45.19E TILL 31 DEC 26 MARINERS CAUTIONED 2. CANCEL THIS MSG 312359 UTC DEC 26  ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="25.402167" longitude="56.753167"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IX 41/2026" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+>>>>>>> 1719b2c (Add Windows build workflow)
 <label name="NAV IX 46/2026" description="NAVAREA IX 46/2026 061500 UTC FEB 26 PAKISTAN KARACHI APPROACHES CHARTS PAK 5 (INT 7314), 30 (INT 7315) AND BA 40 CHANNEL BUOY S-11 IN POSITION 24-46.58N 066-59.16E REPORTED MISSING MARINERS CAUTIONED  ---------------------------------------------------------------------------------------">
 <position>
 <vertex id="1" latitude="24.776333" longitude="66.986"/>
