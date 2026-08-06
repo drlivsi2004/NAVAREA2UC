@@ -145,6 +145,62 @@ def ensure_clockwise(coords):
 
     return coords
 
+import math
+
+def segments_intersect(p1, p2, p3, p4):
+
+    def ccw(a, b, c):
+        return (
+            (c[1] - a[1]) * (b[0] - a[0])
+            >
+            (b[1] - a[1]) * (c[0] - a[0])
+        )
+
+    return (
+        ccw(p1, p3, p4) != ccw(p2, p3, p4)
+        and
+        ccw(p1, p2, p3) != ccw(p1, p2, p4)
+    )
+
+def has_self_intersection(coords):
+
+    n = len(coords)
+
+    if n < 4:
+        return False
+
+    for i in range(n):
+
+        a1 = coords[i]
+        a2 = coords[(i + 1) % n]
+
+        for j in range(i + 1, n):
+
+            if abs(i - j) <= 1:
+                continue
+
+            if i == 0 and j == n - 1:
+                continue
+
+            b1 = coords[j]
+            b2 = coords[(j + 1) % n]
+
+            if segments_intersect(a1, a2, b1, b2):
+                return True
+
+    return False
+
+def sort_area_vertices(coords):
+
+    c_lat, c_lon = centroid(coords)
+
+    return sorted(
+        coords,
+        key=lambda p: math.atan2(
+            p[0] - c_lat,
+            p[1] - c_lon
+        )
+    )
 
 def detect_style(block):
 
@@ -256,7 +312,8 @@ def parse_bounding_box(block):
         (round(lat2, 6), round(lon1, 6)),
     ]
 
-    return ensure_clockwise(coords)
+    return coords
+
 
 
 def get_point_style(block):
@@ -357,7 +414,7 @@ def collect_text_from_sources(sources):
 if len(sys.argv) > 1:
     sources = sys.argv[1:]
 else:
-    sources = sorted(glob.glob('*.txt') + glob.glob('*.xml'))
+    sources = sorted(glob.glob('*.txt'))
 
 if not sources:
     # fallback to input.txt if present
@@ -371,11 +428,6 @@ blocks = re.split(
     text,
     flags=re.IGNORECASE
 )
-
-areas = []
-lines = []
-circles = []
-labels = []
 
 navs = {}
 
@@ -492,7 +544,19 @@ for block in blocks:
 
         if len(coords) >= 3:
 
-            area_coords = ensure_clockwise(coords)
+            area_coords = coords
+
+            if has_self_intersection(area_coords):
+
+                fixed = sort_area_vertices(area_coords)
+
+                if not has_self_intersection(fixed):
+
+                    print(
+                        f"AUTO-FIX AREA: {label_text}"
+                    )
+
+                    area_coords = fixed
 
             container['areas'].append({
 
@@ -511,62 +575,51 @@ for block in blocks:
         continue
 
     # NO ANCHORING / ANCHORING PROHIBITED -> area (non-danger unless matched)
-    if ("NO ANCHOR" in upper or "ANCHORING PROHIBITED" in upper) and len(coords) >= 3:
-        area_coords = ensure_clockwise(coords)
-        container['areas'].append({
-            "name": label_text,
-            "description": description,
-            "coords": area_coords,
-            "color": detect_color(block),
-            "checkDanger": 0
-        })
-        continue
-
-    # TRACKLINE
-
-    # Treat channel/route/pipeline/cable as lines as well
     if (
-        "TRACKLINE" in upper
-        or "JOINING" in upper
-        or "ROUTE" in upper
-        or "CHANNEL" in upper
-        or "PIPELINE" in upper
-        or "CABLE" in upper
+         "NO ANCHOR" in upper 
+        or "ANCHORING PROHIBITED" in upper
     ):
-
-        if len(coords) >= 2:
-
-            container['lines'].append({
-
+        if len(coords) >= 3:
+            area_coords = ensure_clockwise(coords)
+            container['areas'].append({
                 "name": label_text,
-
                 "description": description,
-
-                "coords": coords,
-
+                "coords": area_coords,
                 "color": detect_color(block),
-
-                "checkDanger": detect_check_danger(block)
-
+                "checkDanger": 0
             })
+            continue
 
-            mid = len(coords) // 2
+        # TRACKLINE
 
-            container['labels'].append({
+        # Treat channel/route/pipeline/cable as lines as well
+        if ("TRACKLINE" in upper
+            or "JOINING" in upper
+            or "ROUTE" in upper
+            or "CHANNEL" in upper
+            or "PIPELINE" in upper
+            or "CABLE" in upper):
 
-                "style": 6,
+            if len(coords) >= 2:
+                container['lines'].append({
+                    "name": label_text,
+                    "description": description,
+                    "coords": coords,
+                    "color": detect_color(block),
+                    "checkDanger": detect_check_danger(block)
+                })
 
-                "color": detect_color(block),
-                "checkDanger": detect_check_danger(block),
-                "text": label_text,
+                mid = len(coords) // 2
+                container['labels'].append({
+                    "style": 6,
+                    "color": detect_color(block),
+                    "checkDanger": detect_check_danger(block),
+                    "text": label_text,
+                    "description": description,
+                    "coord": coords[mid]
+                })
 
-                "description": description,
-
-                "coord": coords[mid]
-
-            })
-
-        continue
+            continue
 
     # MULTI POINT
 
