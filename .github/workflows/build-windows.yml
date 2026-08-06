@@ -1,0 +1,58 @@
+name: Build Windows executable
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          if (Test-Path 'requirements.txt') { pip install -r requirements.txt }
+          pip install pyinstaller
+
+      - name: Build one-file executable (PyInstaller)
+        shell: pwsh
+        run: |
+          # On Windows, use semicolon between src and dest for --add-data
+          pyinstaller --onefile --name NAVAREA2UC --add-data "input.txt;." main.py
+
+      - name: Build portable folder (PyInstaller onedir)
+        shell: pwsh
+        run: |
+          pyinstaller --onedir --name NAVAREA2UC-portable --add-data "input.txt;." main.py
+
+      - name: Upload executable artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NAVAREA2UC-windows-exe
+          path: dist/NAVAREA2UC.exe
+
+      - name: Archive and upload portable bundle
+        shell: pwsh
+        run: |
+          $zipFile = "NAVAREA2UC-portable.zip"
+          if (Test-Path $zipFile) { Remove-Item $zipFile }
+          Compress-Archive -Path "dist/NAVAREA2UC-portable/*" -DestinationPath $zipFile
+          Write-Output "Created $zipFile"
+        env:
+          PYTHONIOENCODING: utf-8
+
+      - name: Upload portable bundle artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: NAVAREA2UC-windows-portable
+          path: NAVAREA2UC-portable.zip
