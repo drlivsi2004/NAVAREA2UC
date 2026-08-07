@@ -17,7 +17,6 @@ output/
 
 # NAVAREA2UC
 
-../../releases/latest
 
 Convert NAVAREA Navigational Warnings into Furuno User Chart XML files.
 
