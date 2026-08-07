@@ -128,6 +128,8 @@ def centroid(coords):
     )
 
 
+
+
 def signed_area(coords):
 
     area = 0.0
@@ -567,6 +569,8 @@ for block in blocks:
         "AREA BOUND BY" in upper
         or "BOUNDED BY" in upper
         or "AREA BOUNDED" in upper
+        or "AREAS BOUNDED" in upper
+        or "AREAS BOUND BY" in upper
     ):
         area_groups = re.findall(
             r'\(([A-Z])\)\s*(.*?)(?=\([A-Z]\)|WIDE BERTH|$)',
@@ -660,71 +664,132 @@ for block in blocks:
 
     # Treat channel/route/pipeline/cable as lines as well
     if ("TRACKLINE" in upper
-        or "JOINING" in upper
-            or "ROUTE" in upper
-            or "CHANNEL" in upper
-            or "PIPELINE" in upper
-            or "CABLE" in upper):
+         or "JOINING" in upper
+         or "ROUTE" in upper
+         or "CHANNEL" in upper
+         or "PIPELINE" in upper
+         or "CABLE" in upper):
 
-            if len(coords) >= 2:
-                container['lines'].append({
-                    "name": label_text,
-                    "description": description,
-                    "coords": coords,
-                    "color": detect_color(block),
-                    "checkDanger": detect_check_danger(block)
-                })
+         if len(coords) >= 2:
+            container['lines'].append({
+                "name": label_text,
+                "description": description,
+                "coords": coords,
+                "color": detect_color(block),
+                "checkDanger": detect_check_danger(block)
+            })
 
-                mid = len(coords) // 2
-                container['labels'].append({
-                    "style": 6,
-                    "color": detect_color(block),
-                    "checkDanger": detect_check_danger(block),
-                    "text": label_text,
-                    "description": description,
-                    "coord": coords[mid]
-                })
+            mid = len(coords) // 2
+            container['labels'].append({
+                "style": 6,
+                "color": detect_color(block),
+                "checkDanger": detect_check_danger(block),
+                "text": label_text,
+                "description": description,
+                "coord": coords[mid]
+            })
 
-            continue
+         continue
+    
     # RIG LIST / MODU LIST
-   
 
     if "RIG LIST" in upper or "RIGLIST" in upper:
 
-        entries = re.split(r'\n\s*\d+.\s+', block)
+        # -----------------------------
+        # FR style
+        # 2. ADRIATIC 1 04-22.72N 007-49.50E
+        # -----------------------------
 
-        for entry in entries:
+        entries = re.split(r'\n\s*\d+\.\s+', block)
+        
 
-         coords_found = extract_coordinates(entry)
+        if len(entries) > 10:
+             for entry in entries:
 
-         if not coords_found:
-            continue
+                coords_found = extract_coordinates(entry)
 
-         coord_match = re.search(
+                if not coords_found:
+                    continue
+
+                coord_match = re.search(
+                    r'\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]',
+                    entry
+                )
+
+                if not coord_match:
+                    continue
+
+                coord_text = coord_match.group(0)
+
+                rig_name = entry[:coord_match.start()].strip()
+                rig_name = " ".join(rig_name.split())
+
+                if not rig_name:
+                    continue
+
+                container['labels'].append({
+                    "style": 5,
+                    "color": "RESBL",
+                    "checkDanger": 0,
+                    "text": label_text,
+                    "description": f"{rig_name} | {coord_text}",
+                    "coord": coords_found[0]
+                })
+
+             continue
+
+        # -----------------------------
+        # UK style
+        # 52-07.7N 003-56.4E VALARIS 123 ACP P18-A
+        # -----------------------------
+
+        rig_block = re.sub(r'\s+', ' ', block)
+
+        coord_pattern = re.compile(
             r'\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]',
-            entry
-         )
+            re.I
+        )
 
-         if not coord_match:
-            continue
+        matches = list(coord_pattern.finditer(rig_block))
 
-         rig_name = entry[:coord_match.start()].strip()
+        for i, m in enumerate(matches):
+            coord_text = m.group(0)
+            coords_found = extract_coordinates(coord_text)
 
-         rig_name = " ".join(rig_name.split())
+            if not coords_found:
+                continue
 
-         if not rig_name:
-            continue
+            start = m.end()
+            end = (
+                matches[i + 1].start()
+                if i + 1 < len(matches)
+                else rig_block.find("NOTES:")
+            )
 
-         coord_text = coord_match.group(0)
+            if end < 0:
+                end = len(rig_block)
 
-         container['labels'].append({
-            "style": 5,
-            "color": "RESBL",
-            "checkDanger": 0,
-            "text": rig_name,
-            "description": f"{rig_name} | {coord_text}",
-            "coord": coords_found[0]
-         })
+            tail = rig_block[start:end].strip()
+            rig_name = re.split(
+                r'\s+ACP\s+',
+                tail,
+                maxsplit=1,
+                flags=re.I
+            )[0]
+
+            rig_name = " ".join(rig_name.split())
+
+            if not rig_name:
+                continue
+
+            container['labels'].append({
+                "style": 5,
+                "color": "RESBL",
+                "checkDanger": 0,
+                "text": label_text,
+                "description": f"{rig_name} | {coord_text}",
+                "coord": coords_found[0]
+            })
 
         continue
 
