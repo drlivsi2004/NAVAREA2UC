@@ -2,6 +2,7 @@ NAVAREA2UC/
 
 README.md
 
+NAVAREA2UC.EXE
 src/
      main.py
 
@@ -14,6 +15,8 @@ output/
 
 
 # NAVAREA2UC
+
+../../releases/latest
 
 Convert NAVAREA Navigational Warnings into Furuno User Chart XML files.
 
