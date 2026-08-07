@@ -3,6 +3,9 @@ import sys
 import glob
 import os
 from xml.sax.saxutils import escape
+APP_NAME = "NAVAREA2UC"
+APP_VERSION = "1.0"
+APP_AUTHOR = "Dr.Livsi2004"
 
 
 def dm_to_decimal(deg, minutes, hemi):
@@ -34,7 +37,8 @@ def extract_coordinates(text):
     # "DD MM.MMN DDD MM.MME", and comma-separated variants.
     patterns = [
         # 17-30N 083-43E or 17 30N 083 43E (space or hyphen)
-        r"(\d{1,3})[- ]+([\d.]+)\s*([NS])\s*[ ,\t]+(\d{1,3})[- ]+([\d.]+)\s*([EW])",
+        r"(\d{1,3})[- ]+([\d.]+)\s*([NS])[\s,]+(\d{1,3})[- ]+([\d.]+)\s*([EW])",
+
         # 17-30N,083-43E (comma between lat and lon)
         r"(\d{1,3})-([\d.]+)([NS])\s*,\s*(\d{1,3})-([\d.]+)([EW])",
     ]
@@ -334,9 +338,7 @@ def is_multi_point_navarea(block):
 
     triggers = [
 
-        "RIG LIST",
-        "RIGLIST",
-
+        
         "MOBILE OFFSHORE DRILLING UNITS",
 
         "LIGHTS UNLIT",
@@ -379,6 +381,15 @@ def is_target_object_type(block):
 
     return any(t in upper for t in targets)
 
+print()
+print("=" * 60)
+print(f" {APP_NAME} v{APP_VERSION}")
+print()
+print(" NAVAREA to Furuno UserChart Converter")
+print()
+print(f" Author : {APP_AUTHOR}")
+print("=" * 60)
+print()
 
 def collect_text_from_sources(sources):
     parts = []
@@ -467,7 +478,19 @@ for block in blocks:
 
     coords = extract_coordinates(block)
 
-    description = escape(block.replace('"', "'").replace("\n", " ").strip())
+    clean_block = re.sub(
+    r'-{5,}',
+    ' ',
+    block
+    )
+
+    clean_block = re.sub(
+    r'\s+',
+    ' ',
+    clean_block
+    )
+
+    description = escape(clean_block.replace('"', "'").strip())
 
     upper = block.upper()
 
@@ -476,7 +499,11 @@ for block in blocks:
     # snippet as the description.
     sublabels = extract_sublabels(block)
 
-    if sublabels and is_target_object_type(block):
+    if (
+    sublabels
+    and is_target_object_type(block)
+    and "RIGLIST" not in upper
+    ):
         style = get_point_style(block)
         color = detect_color(block)
         check_danger = detect_check_danger(block)
@@ -629,11 +656,11 @@ for block in blocks:
             })
             continue
 
-        # TRACKLINE
+    # TRACKLINE
 
-        # Treat channel/route/pipeline/cable as lines as well
-        if ("TRACKLINE" in upper
-            or "JOINING" in upper
+    # Treat channel/route/pipeline/cable as lines as well
+    if ("TRACKLINE" in upper
+        or "JOINING" in upper
             or "ROUTE" in upper
             or "CHANNEL" in upper
             or "PIPELINE" in upper
@@ -659,11 +686,52 @@ for block in blocks:
                 })
 
             continue
+    # RIG LIST / MODU LIST
+   
+
+    if "RIG LIST" in upper or "RIGLIST" in upper:
+
+        entries = re.split(r'\n\s*\d+.\s+', block)
+
+        for entry in entries:
+
+         coords_found = extract_coordinates(entry)
+
+         if not coords_found:
+            continue
+
+         coord_match = re.search(
+            r'\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]',
+            entry
+         )
+
+         if not coord_match:
+            continue
+
+         rig_name = entry[:coord_match.start()].strip()
+
+         rig_name = " ".join(rig_name.split())
+
+         if not rig_name:
+            continue
+
+         coord_text = coord_match.group(0)
+
+         container['labels'].append({
+            "style": 5,
+            "color": "RESBL",
+            "checkDanger": 0,
+            "text": rig_name,
+            "description": f"{rig_name} | {coord_text}",
+            "coord": coords_found[0]
+         })
+
+        continue
+
 
     # MULTI POINT
 
     if is_multi_point_navarea(block):
-
         style = get_point_style(block)
         color = detect_color(block)
 
@@ -805,3 +873,7 @@ print(f'Circles : {total_circles}')
 print(f'Labels  : {total_labels}')
 print()
 print(f'Objects : {total_areas+total_lines+total_circles+total_labels}')
+print()
+print("Conversion completed successfully.")
+if getattr(sys, "frozen", False):
+ input("\nPress ENTER to exit...")
