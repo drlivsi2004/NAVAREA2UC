@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA II IMPORT" description="" version="1.3">
+<labels>
+<label name="NAV II 268/2026" description="ADRIATIC 1 | 04-22.72N 007-49.50E">
+<position>
+<vertex id="1" latitude="4.378667" longitude="7.825"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="BLUE SHARK | 04-15.81N 007-19.48E">
+<position>
+<vertex id="1" latitude="4.2635" longitude="7.324667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="DAGDA | 05-01.65S 011-34.30E">
+<position>
+<vertex id="1" latitude="-5.0275" longitude="11.571667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="LEOPOLD S. SENGHOR | 13-43.33N 017-31.85W">
+<position>
+<vertex id="1" latitude="13.722167" longitude="-17.530833"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="MABOMO | 04-10.97S 010-38.90E">
+<position>
+<vertex id="1" latitude="-4.182833" longitude="10.648333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="DEEPWATER SKYROS | 04-38.60N 004-06.37W">
+<position>
+<vertex id="1" latitude="4.643333" longitude="-4.106167"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="CLIVANA | 04-16.32N
+008-25.08E">
+<position>
+<vertex id="1" latitude="4.272" longitude="8.418"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="DELTA CONQUEST 8 | 04-17.99N 007-38.77E">
+<position>
+<vertex id="1" latitude="4.299833" longitude="7.646167"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="MAIN PASS IV | 05-25.29N 005-02.79E">
+<position>
+<vertex id="1" latitude="5.4215" longitude="5.0465"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="AXIMA | 04-37.19S 011-21.37E">
+<position>
+<vertex id="1" latitude="-4.619833" longitude="11.356167"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="SHELF DRILLING TENACIOUS | 05-35.48S 011-47.81E">
+<position>
+<vertex id="1" latitude="-5.591333" longitude="11.796833"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="HAMAD EAGLE | 05-22.89S 012-07.04E">
+<position>
+<vertex id="1" latitude="-5.3815" longitude="12.117333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="NATT | 03-52.45N 006-21.51E">
+<position>
+<vertex id="1" latitude="3.874167" longitude="6.3585"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="BANBA | 01-11.96S
+008-45.00E">
+<position>
+<vertex id="1" latitude="-1.199333" longitude="8.75"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="PROSPECTOR 5 | 04-31.70S 011-33.02E">
+<position>
+<vertex id="1" latitude="-4.528333" longitude="11.550333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="ORITSETIMEYIN | 04-02.90N 007-50.16E">
+<position>
+<vertex id="1" latitude="4.048333" longitude="7.836"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="SHELF DRILLING SCEPTER | 05-44.56N 004-54.55E">
+<position>
+<vertex id="1" latitude="5.742667" longitude="4.909167"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="SHELF DRILLING ACHIEVER | 04-05.06N
+006-32.51E">
+<position>
+<vertex id="1" latitude="4.084333" longitude="6.541833"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="SHELF DRILLING VICTORY | 04-24.54N 007-49.48E">
+<position>
+<vertex id="1" latitude="4.409" longitude="7.824667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="GERD | 05-02.05N 004-40.67W">
+<position>
+<vertex id="1" latitude="5.034167" longitude="-4.677833"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="ADMARINE 504 | 05-19.87N 005-12.57E">
+<position>
+<vertex id="1" latitude="5.331167" longitude="5.2095"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="JUB PIONEER | 04-00.94N 007-29.43E">
+<position>
+<vertex id="1" latitude="4.015667" longitude="7.4905"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="SCARABEO 5 | 04-32.01S 011-31.34E">
+<position>
+<vertex id="1" latitude="-4.5335" longitude="11.522333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV II 268/2026" description="NOBLE VENTURER | 04-33.54N 002-53.00W">
+<position>
+<vertex id="1" latitude="4.559" longitude="-2.883333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV II 268/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+</labels>
+</userchart>

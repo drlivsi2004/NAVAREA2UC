@@ -1,0 +1,792 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA IV IMPORT" description="" version="1.3">
+<areas>
+<area name="NAV IV 12/2024 (A)" description="NAVAREA IV 12/2024 031916 UTC JAN 2024 WESTERN NORTH ATLANTIC. UNDERWATER OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V BOURBON CALM AND M/V BOURBON SAPPHIRE IN AREAS BOUND BY A. 08-00.66N 056-44.58W, 08-00.66N 056-40.12W, 07-54.87N 056-40.12W, 07-54.87N056-44.58W. B. 08-15.96N 057-02.23W, 08-15.96N 056-54.25W, 07-58.60N 056-54.25W, 07-58.60N 057-02.23W. C. 08-06.94N 056-49.93W, 08-06.94N 056-46.61W, 07-58.94N 056-46.61W, 07-58.94N 056-49.93W. WIDE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="8.011" longitude="-56.743"/>
+<vertex id="2" latitude="8.011" longitude="-56.668667"/>
+<vertex id="3" latitude="7.9145" longitude="-56.668667"/>
+<vertex id="4" latitude="7.9145" longitude="-56.743"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV IV 12/2024 (B)" description="NAVAREA IV 12/2024 031916 UTC JAN 2024 WESTERN NORTH ATLANTIC. UNDERWATER OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V BOURBON CALM AND M/V BOURBON SAPPHIRE IN AREAS BOUND BY A. 08-00.66N 056-44.58W, 08-00.66N 056-40.12W, 07-54.87N 056-40.12W, 07-54.87N056-44.58W. B. 08-15.96N 057-02.23W, 08-15.96N 056-54.25W, 07-58.60N 056-54.25W, 07-58.60N 057-02.23W. C. 08-06.94N 056-49.93W, 08-06.94N 056-46.61W, 07-58.94N 056-46.61W, 07-58.94N 056-49.93W. WIDE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="8.266" longitude="-57.037167"/>
+<vertex id="2" latitude="8.266" longitude="-56.904167"/>
+<vertex id="3" latitude="7.976667" longitude="-56.904167"/>
+<vertex id="4" latitude="7.976667" longitude="-57.037167"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV IV 12/2024 (C)" description="NAVAREA IV 12/2024 031916 UTC JAN 2024 WESTERN NORTH ATLANTIC. UNDERWATER OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V BOURBON CALM AND M/V BOURBON SAPPHIRE IN AREAS BOUND BY A. 08-00.66N 056-44.58W, 08-00.66N 056-40.12W, 07-54.87N 056-40.12W, 07-54.87N056-44.58W. B. 08-15.96N 057-02.23W, 08-15.96N 056-54.25W, 07-58.60N 056-54.25W, 07-58.60N 057-02.23W. C. 08-06.94N 056-49.93W, 08-06.94N 056-46.61W, 07-58.94N 056-46.61W, 07-58.94N 056-49.93W. WIDE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="8.115667" longitude="-56.832167"/>
+<vertex id="2" latitude="8.115667" longitude="-56.776833"/>
+<vertex id="3" latitude="7.982333" longitude="-56.776833"/>
+<vertex id="4" latitude="7.982333" longitude="-56.832167"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+</areas>
+<labels>
+<label name="NAV IV 735/2026" description="A. AGOSTO 12 19-23.0N 092-03.1W.">
+<position>
+<vertex id="1" latitude="19.383333" longitude="-92.051667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="B. ALULA 11-38.4N 070-21.8W.">
+<position>
+<vertex id="1" latitude="11.64" longitude="-70.363333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="C. ARGOS PLATFORM 27-10.4N 090-22.0W.">
+<position>
+<vertex id="1" latitude="27.173333" longitude="-90.366667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="D. ATLANTIS 19-23.9N 092-02.3W.">
+<position>
+<vertex id="1" latitude="19.398333" longitude="-92.038333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="E. AUGER TLP 27-32.7N 092-26.6W.">
+<position>
+<vertex id="1" latitude="27.545" longitude="-92.443333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="F. BLUE EAGLE 18-28.6N 094-01.9W.">
+<position>
+<vertex id="1" latitude="18.476667" longitude="-94.031667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="G. BORR RAN 18-27.3N 093-41.3W.">
+<position>
+<vertex id="1" latitude="18.455" longitude="-93.688333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="H. BP ATLANTIS PLATFORM 27-11.7N 090-01.6W.">
+<position>
+<vertex id="1" latitude="27.195" longitude="-90.026667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="I. CENTENARIO GR 21-07.7N 097-08.1W.">
+<position>
+<vertex id="1" latitude="21.128333" longitude="-97.135"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="J. CHIHUAHUA 19-39.7N 090-44.4W.">
+<position>
+<vertex id="1" latitude="19.661667" longitude="-90.74"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="K. CME I 19-34.6N 092-02.7W.">
+<position>
+<vertex id="1" latitude="19.576667" longitude="-92.045"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="L. CME II 18-34.4N 092-46.2W.">
+<position>
+<vertex id="1" latitude="18.573333" longitude="-92.77"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="M. COATZACOALCOS 19-35.3N 092-12.1W.">
+<position>
+<vertex id="1" latitude="19.588333" longitude="-92.201667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="N. CPOC MAGNOLIA 27-12.2N 092-12.2W.">
+<position>
+<vertex id="1" latitude="27.203333" longitude="-92.203333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="O. DEEPWATER ASGARD 27-21.5N 090-44.6W.">
+<position>
+<vertex id="1" latitude="27.358333" longitude="-90.743333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="P. DEEPWATER ATLAS 26-54.5N 091-34.6W.">
+<position>
+<vertex id="1" latitude="26.908333" longitude="-91.576667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="Q. DEEPWATER CONQUEROR 26-17.8N 091-05.6W.">
+<position>
+<vertex id="1" latitude="26.296667" longitude="-91.093333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="R. DEEPWATER INVICTUS 26-42.4N 092-38.5W.">
+<position>
+<vertex id="1" latitude="26.706667" longitude="-92.641667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="S. DEEPWATER PONTUS 28-30.9N 088-08.7W.">
+<position>
+<vertex id="1" latitude="28.515" longitude="-88.145"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="T. DEEPWATER POSEIDON 26-13.8N 094-43.8W.">
+<position>
+<vertex id="1" latitude="26.23" longitude="-94.73"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="U. (NEW RIG) DEEPWATER PROTEUS 26-31.2N 090-31.9W.">
+<position>
+<vertex id="1" latitude="26.52" longitude="-90.531667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="V. DEEPWATER THALASSA 25-45.0N 095-24.3W.">
+<position>
+<vertex id="1" latitude="25.75" longitude="-95.405"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="W. DEEPWATER TITAN 27-09.1N 091-12.7W.">
+<position>
+<vertex id="1" latitude="27.151667" longitude="-91.211667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="X. DEFENDER 18-28.6N 094-01.9W.">
+<position>
+<vertex id="1" latitude="18.476667" longitude="-94.031667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="Y. DEVELOPMENT DRILLER III 10-38.5N 061-39.0W.">
+<position>
+<vertex id="1" latitude="10.641667" longitude="-61.65"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="Z. ENTERPRISE 264 10-21.2N 061-49.0W.">
+<position>
+<vertex id="1" latitude="10.353333" longitude="-61.816667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AA. ESSAR WILDCAT 18-51.5N 091-45.7W.">
+<position>
+<vertex id="1" latitude="18.858333" longitude="-91.761667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AB. FRIDA I 19-36.1N 092-31.6W.">
+<position>
+<vertex id="1" latitude="19.601667" longitude="-92.526667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AC. GALAR 22-16.1N 097-28.3W.">
+<position>
+<vertex id="1" latitude="22.268333" longitude="-97.471667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AD. GERSEMI 19-02.5N 092-14.8W.">
+<position>
+<vertex id="1" latitude="19.041667" longitude="-92.246667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AE. GULF DRILLER VI 19-23.1N 092-20.8W.">
+<position>
+<vertex id="1" latitude="19.385" longitude="-92.346667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AF. GULF DRILLER VIII 18-29.9N 094-00.4W.">
+<position>
+<vertex id="1" latitude="18.498333" longitude="-94.006667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AG. H&amp;P RIG 201 28-09.6N 089-13.1W.">
+<position>
+<vertex id="1" latitude="28.16" longitude="-89.218333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AH. H&amp;P RIG 203 28-08.5N 089-57.3W.">
+<position>
+<vertex id="1" latitude="28.141667" longitude="-89.955"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AI. H&amp;P RIG 205 26-06.8N 094-53.2W.">
+<position>
+<vertex id="1" latitude="26.113333" longitude="-94.886667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AJ. HELIX Q4000 27-23.8N 090-18.3W.">
+<position>
+<vertex id="1" latitude="27.396667" longitude="-90.305"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AK. HELIX Q5000 28-00.6N 089-09.8W.">
+<position>
+<vertex id="1" latitude="28.01" longitude="-89.163333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AL. HILD 19-02.6N 092-26.6W.">
+<position>
+<vertex id="1" latitude="19.043333" longitude="-92.443333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AM. INDEPENDENCIA 1 19-17.9N 091-51.2W.">
+<position>
+<vertex id="1" latitude="19.298333" longitude="-91.853333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AN. IOLAIR 19-30.8N 092-09.1W.">
+<position>
+<vertex id="1" latitude="19.513333" longitude="-92.151667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AO. JACK ST MALO 26-14.1N 091-15.7W.">
+<position>
+<vertex id="1" latitude="26.235" longitude="-91.261667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AP. JOE DOUGLAS 09-59.6N 060-18.4W.">
+<position>
+<vertex id="1" latitude="9.993333" longitude="-60.306667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AQ. KUKULKAN 18-16.4N 094-03.6W.">
+<position>
+<vertex id="1" latitude="18.273333" longitude="-94.06"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AR. LA COVADONGA 19-18.1N 092-10.0W.">
+<position>
+<vertex id="1" latitude="19.301667" longitude="-92.166667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AS. LA SANTA MARIA 18-36.8N 093-17.7W.">
+<position>
+<vertex id="1" latitude="18.613333" longitude="-93.295"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AT. LIZA DESTINY 08-00.7N 056-59.5W.">
+<position>
+<vertex id="1" latitude="8.011667" longitude="-56.991667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AU. LIZA UNITY 08-00.6N 056-54.9W.">
+<position>
+<vertex id="1" latitude="8.01" longitude="-56.915"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AV. MAD DOG 27-11.3N 090-16.1W.">
+<position>
+<vertex id="1" latitude="27.188333" longitude="-90.268333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AW. MAERSK DISCOVERER 11-38.9N 073-42.0W.">
+<position>
+<vertex id="1" latitude="11.648333" longitude="-73.7"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AX. MARLIN TLP 29-06.5N 087-56.7W.">
+<position>
+<vertex id="1" latitude="29.108333" longitude="-87.945"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AY. MARS TLP 28-10.4N 089-13.4W.">
+<position>
+<vertex id="1" latitude="28.173333" longitude="-89.223333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AZ. MIAMTE MV34 18-24.3N 093-46.2W.">
+<position>
+<vertex id="1" latitude="18.405" longitude="-93.77"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAA. NABARIMA 10-14.8N 062-09.0W.">
+<position>
+<vertex id="1" latitude="10.246667" longitude="-62.15"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAB. NABORS MODS 140 28-12.5N 088-43.5W.">
+<position>
+<vertex id="1" latitude="28.208333" longitude="-88.725"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAC. NABORS MODS 400 26-56.0N 090-31.4W.">
+<position>
+<vertex id="1" latitude="26.933333" longitude="-90.523333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAD. NFE PIONEER III 22-39.2N 097-40.8W.">
+<position>
+<vertex id="1" latitude="22.653333" longitude="-97.68"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAE. NJORD 18-30.4N 093-15.7W.">
+<position>
+<vertex id="1" latitude="18.506667" longitude="-93.261667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAF. NOBLE BLACKHAWK 27-14.4N 090-49.1W.">
+<position>
+<vertex id="1" latitude="27.24" longitude="-90.818333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAG. NOBLE BLACKHORNET 27-13.5N 090-01.9W.">
+<position>
+<vertex id="1" latitude="27.225" longitude="-90.031667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAH. NOBLE BLACKLION 27-08.8N 090-19.1W.">
+<position>
+<vertex id="1" latitude="27.146667" longitude="-90.318333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAI. NOBLE BLACKRHINO 27-01.8N 090-59.4W.">
+<position>
+<vertex id="1" latitude="27.03" longitude="-90.99"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAJ. (NEW POSITION) NOBLE BOB DOUGLAS 08-00.1N 056-42.7W.">
+<position>
+<vertex id="1" latitude="8.001667" longitude="-56.711667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAK. NOBLE DEVELOPER 07-18.2N 055-46.9W.">
+<position>
+<vertex id="1" latitude="7.303333" longitude="-55.781667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAL. (NEW POSITION) NOBLE DON TAYLOR 08-01.2N 056-46.1W.">
+<position>
+<vertex id="1" latitude="8.02" longitude="-56.768333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAM. NOBLE SAM CROFT 08-01.6N 056-46.5W.">
+<position>
+<vertex id="1" latitude="8.026667" longitude="-56.775"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAN. (NEW POSITION) NOBLE STANLEY LAFOSSE 28-36.1N 088-12.6W.">
+<position>
+<vertex id="1" latitude="28.601667" longitude="-88.21"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAO. NOBLE TOM MADDEN 07-52.3N 056-39.7W.">
+<position>
+<vertex id="1" latitude="7.871667" longitude="-56.661667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAP. OLYMPUS N88 28-09.6N 089-12.8W.">
+<position>
+<vertex id="1" latitude="28.16" longitude="-89.213333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAQ. ONE GUYANA 07-57.4N 056-43.0W.">
+<position>
+<vertex id="1" latitude="7.956667" longitude="-56.716667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAR. PAPALOAPAN 19-25.1N 092-03.1W.">
+<position>
+<vertex id="1" latitude="19.418333" longitude="-92.051667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAS. PERRO NEGRO 10 18-20.2N 093-52.2W.">
+<position>
+<vertex id="1" latitude="18.336667" longitude="-93.87"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAT. PIONEER 26-41.7N 090-30.6W.">
+<position>
+<vertex id="1" latitude="26.695" longitude="-90.51"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAU. PROSPERITY 08-11.7N 057-00.2W.">
+<position>
+<vertex id="1" latitude="8.195" longitude="-57.003333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAV. SANDUNGA 19-31.0N 091-59.0W.">
+<position>
+<vertex id="1" latitude="19.516667" longitude="-91.983333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAW. SEAROSE FPSO 46-47.2N 048-00.8W.">
+<position>
+<vertex id="1" latitude="46.786667" longitude="-48.013333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAX. (NEW POSITION) SEVAN LOUISIANA 26-46.9N 094-33.1W.">
+<position>
+<vertex id="1" latitude="26.781667" longitude="-94.551667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAY. SHELL WHALE 26-13.4N 094-40.4W.">
+<position>
+<vertex id="1" latitude="26.223333" longitude="-94.673333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAZ. STENA CARRON 07-56.3N 056-49.2W.">
+<position>
+<vertex id="1" latitude="7.938333" longitude="-56.82"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAA. STENA EVOLUTION 27-02.4N 092-14.6W.">
+<position>
+<vertex id="1" latitude="27.04" longitude="-92.243333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAB. TAHITI SPAR 27-19.6N 090-42.9W.">
+<position>
+<vertex id="1" latitude="27.326667" longitude="-90.715"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAC. TERRA NOVA 46-28.3N 048-27.9W.">
+<position>
+<vertex id="1" latitude="46.471667" longitude="-48.465"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAD. THUNDER HORSE PDQ 28-11.4N 088-29.7W.">
+<position>
+<vertex id="1" latitude="28.19" longitude="-88.495"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAE. TUXPAN 18-45.8N 091-45.7W.">
+<position>
+<vertex id="1" latitude="18.763333" longitude="-91.761667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAF. UXPANAPA 18-32.4N 093-17.7W.">
+<position>
+<vertex id="1" latitude="18.54" longitude="-93.295"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAG. VALARIS DS-16 27-23.5N 090-15.7W.">
+<position>
+<vertex id="1" latitude="27.391667" longitude="-90.261667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAH. VALARIS GORILLA VII 10-39.1N 061-37.4W.">
+<position>
+<vertex id="1" latitude="10.651667" longitude="-61.623333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAI. VITO FPU 28-01.5N 089-12.6W.">
+<position>
+<vertex id="1" latitude="28.025" longitude="-89.21"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAJ. WEST COURAGEOUS 19-30.4N 092-00.0W.">
+<position>
+<vertex id="1" latitude="19.506667" longitude="-92.0"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAK. WEST INTREPID 19-36.5N 092-15.5W.">
+<position>
+<vertex id="1" latitude="19.608333" longitude="-92.258333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAL. WEST NEPTUNE 28-10.5N 088-45.4W.">
+<position>
+<vertex id="1" latitude="28.175" longitude="-88.756667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAM. WEST VELA 26-50.9N 091-00.1W.">
+<position>
+<vertex id="1" latitude="26.848333" longitude="-91.001667"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAN. WFD 400 28-41.0N 090-08.9W.">
+<position>
+<vertex id="1" latitude="28.683333" longitude="-90.148333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAO. YUNUEN 19-32.4N 092-10.5W.">
+<position>
+<vertex id="1" latitude="19.54" longitude="-92.175"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="NAV IV 735/2026" description="AAAP. YUUM K'AK' NAAB 19-36.7N 092-17.9W. 2. TO REPORT A MOBILE OFFSHORE DRILLING UNIT AS PER IMO RESOLUTION A.1023(26), PARAGRAPH 11.5.1, CONTACT NAVSAFETY@NGA.MIL SUBJ: MODU REPORT. 3. CANCEL">
+<position>
+<vertex id="1" latitude="19.611667" longitude="-92.298333"/>
+</position>
+<attribute labelStyle="5" labelText="NAV IV 735/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+</labels>
+</userchart>

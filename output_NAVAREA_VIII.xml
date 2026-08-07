@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA VIII IMPORT" description="" version="1.3">
+<areas>
+<area name="NAV VIII 736/26 (A)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26. VSVersionInfo( ffi=FixedFileInfo( filevers=(1,0,0,0), prodvers=(1,0,0,0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0) ), kids=[ StringFileInfo([ StringTable( '040904B0', [ StringStruct('Copyright', '@drlivsi2004'), StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'), StringStruct('FileVersion', '1.0.0'), StringStruct('InternalName', 'NAVAREA2UC'), StringStruct('OriginalFilename', 'NAVAREA2UC.exe'), StringStruct('ProductName', 'NAVAREA2UC'), StringStruct('ProductVersion', '1.0.0') ] ) ]), VarFileInfo([VarStruct('Translation', [1033, 1200])]) ] )">
+<position>
+<vertex id="1" latitude="19.020667" longitude="72.692833"/>
+<vertex id="2" latitude="18.977833" longitude="72.6795"/>
+<vertex id="3" latitude="18.9355" longitude="72.565833"/>
+<vertex id="4" latitude="18.9515" longitude="72.556333"/>
+<vertex id="5" latitude="18.987833" longitude="72.664833"/>
+<vertex id="6" latitude="19.03" longitude="72.6865"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="RESBL" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (B)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26. VSVersionInfo( ffi=FixedFileInfo( filevers=(1,0,0,0), prodvers=(1,0,0,0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0) ), kids=[ StringFileInfo([ StringTable( '040904B0', [ StringStruct('Copyright', '@drlivsi2004'), StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'), StringStruct('FileVersion', '1.0.0'), StringStruct('InternalName', 'NAVAREA2UC'), StringStruct('OriginalFilename', 'NAVAREA2UC.exe'), StringStruct('ProductName', 'NAVAREA2UC'), StringStruct('ProductVersion', '1.0.0') ] ) ]), VarFileInfo([VarStruct('Translation', [1033, 1200])]) ] )">
+<position>
+<vertex id="1" latitude="18.897333" longitude="72.514667"/>
+<vertex id="2" latitude="18.870167" longitude="72.464333"/>
+<vertex id="3" latitude="18.872833" longitude="72.445667"/>
+<vertex id="4" latitude="18.909833" longitude="72.508"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="RESBL" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (C)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26. VSVersionInfo( ffi=FixedFileInfo( filevers=(1,0,0,0), prodvers=(1,0,0,0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0) ), kids=[ StringFileInfo([ StringTable( '040904B0', [ StringStruct('Copyright', '@drlivsi2004'), StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'), StringStruct('FileVersion', '1.0.0'), StringStruct('InternalName', 'NAVAREA2UC'), StringStruct('OriginalFilename', 'NAVAREA2UC.exe'), StringStruct('ProductName', 'NAVAREA2UC'), StringStruct('ProductVersion', '1.0.0') ] ) ]), VarFileInfo([VarStruct('Translation', [1033, 1200])]) ] )">
+<position>
+<vertex id="1" latitude="14.124333" longitude="72.742333"/>
+<vertex id="2" latitude="15.454167" longitude="71.987833"/>
+<vertex id="3" latitude="16.3915" longitude="71.372333"/>
+<vertex id="4" latitude="17.773833" longitude="72.065"/>
+<vertex id="5" latitude="18.7555" longitude="72.171"/>
+<vertex id="6" latitude="18.820833" longitude="72.321167"/>
+<vertex id="7" latitude="18.826833" longitude="72.296"/>
+<vertex id="8" latitude="18.7815" longitude="72.140333"/>
+<vertex id="9" latitude="17.8025" longitude="71.953"/>
+<vertex id="10" latitude="16.415667" longitude="71.2155"/>
+<vertex id="11" latitude="14.039667" longitude="72.585667"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="RESBL" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (D)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26. VSVersionInfo( ffi=FixedFileInfo( filevers=(1,0,0,0), prodvers=(1,0,0,0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0) ), kids=[ StringFileInfo([ StringTable( '040904B0', [ StringStruct('Copyright', '@drlivsi2004'), StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'), StringStruct('FileVersion', '1.0.0'), StringStruct('InternalName', 'NAVAREA2UC'), StringStruct('OriginalFilename', 'NAVAREA2UC.exe'), StringStruct('ProductName', 'NAVAREA2UC'), StringStruct('ProductVersion', '1.0.0') ] ) ]), VarFileInfo([VarStruct('Translation', [1033, 1200])]) ] )">
+<position>
+<vertex id="1" latitude="9.2615" longitude="74.454833"/>
+<vertex id="2" latitude="9.724667" longitude="74.5125"/>
+<vertex id="3" latitude="10.917" longitude="74.442167"/>
+<vertex id="4" latitude="14.124333" longitude="72.742333"/>
+<vertex id="5" latitude="14.039667" longitude="72.585667"/>
+<vertex id="6" latitude="10.896667" longitude="74.341833"/>
+<vertex id="7" latitude="9.284333" longitude="74.1975"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="RESBL" lineWidth="2" density="25"/>
+</area>
+<area name="NAV VIII 736/26 (E)" description="NAVAREA VIII 736/26 031243 UTC JUL 2026 ARABIAN SEA. CHARTS IN 22 32 INT 752. 1. ALBATROSS 37 PROGRESSING ROUTE SURVEY IN AREAS BOUNDED BY (A) 19-01.24N 072-41.57E, 18-58.67N 072-40.77E, 18-56.13N 072-33.95E, 18-57.09N 072-33.38E, 18-59.27N 072-39.89E, 19-01.8N 072-41.19E (B) 18-53.84N 072-30.88E, 18-52.21N 072-27.86E, 18-52.37N 072-26.74E, 18-54.59N 072-30.48E (C) 14-07.46N 072-44.54E, 15-27.25N 071-59.27E, 16-23.49N 071-22.34E, 17-46.43N 072-03.9E, 18-45.33N 072-10.26E, 18-49.25N 072-19.27E, 18-49.61N 072-17.76E, 18-46.89N 072-08.42E, 17-48.15N 071-57.18E, 16-24.94N 071-12.93E, 14-02.38N 072-35.14E (D) 09-15.69N 074-27.29E, 09-43.48N 074-30.75E, 10-55.02N 074-26.53E, 14-07.46N 072-44.54E, 14-02.38N 072-35.14E, 10-53.8N 074-20.51E, 09-17.06N 074-11.85E (E) 09-15.69N 074-27.29E, 08-15.11N 074-51.47E, 08-06.28N 075-22.08E, 05-26.33N 077-28.7E, 04-48.93N 077-00.89E, 05-06.34N 076-43.66E, 06-15.71N 075-52.13E, 06-49.55N 075-28.31E, 07-22.41N 075-16.44E, 07-55.15N 074-57.49E, 07-50.2N 074-04.12E, 09-17.06N 074-11.85E. WIDE BERTH REQUESTED 2. CANCEL NAVAREA VIII MSG 706/26 AND THIS MSG 041830 UTC AUG 26. VSVersionInfo( ffi=FixedFileInfo( filevers=(1,0,0,0), prodvers=(1,0,0,0), mask=0x3f, flags=0x0, OS=0x40004, fileType=0x1, subtype=0x0, date=(0, 0) ), kids=[ StringFileInfo([ StringTable( '040904B0', [ StringStruct('Copyright', '@drlivsi2004'), StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'), StringStruct('FileVersion', '1.0.0'), StringStruct('InternalName', 'NAVAREA2UC'), StringStruct('OriginalFilename', 'NAVAREA2UC.exe'), StringStruct('ProductName', 'NAVAREA2UC'), StringStruct('ProductVersion', '1.0.0') ] ) ]), VarFileInfo([VarStruct('Translation', [1033, 1200])]) ] )">
+<position>
+<vertex id="1" latitude="9.2615" longitude="74.454833"/>
+<vertex id="2" latitude="8.251833" longitude="74.857833"/>
+<vertex id="3" latitude="8.104667" longitude="75.368"/>
+<vertex id="4" latitude="5.438833" longitude="77.478333"/>
+<vertex id="5" latitude="4.8155" longitude="77.014833"/>
+<vertex id="6" latitude="5.105667" longitude="76.727667"/>
+<vertex id="7" latitude="6.261833" longitude="75.868833"/>
+<vertex id="8" latitude="6.825833" longitude="75.471833"/>
+<vertex id="9" latitude="7.3735" longitude="75.274"/>
+<vertex id="10" latitude="7.919167" longitude="74.958167"/>
+<vertex id="11" latitude="7.836667" longitude="74.068667"/>
+<vertex id="12" latitude="9.284333" longitude="74.1975"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="RESBL" lineWidth="2" density="25"/>
+</area>
+</areas>
+</userchart>

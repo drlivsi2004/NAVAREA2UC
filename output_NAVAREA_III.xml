@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA III IMPORT" description="" version="1.3">
+<lines>
+<line name="NAV III 113/26" description="NAVAREA III 113/26 281259 UTC JUL 2026 MEDITERRANEAN SEA TOWING OPERATIONS BY MANTA (IMO 9261487, MMSI 205340000) TO HENRY GOODRICH MOBILE PLATFORM TO ALIAGA PORT 600 METERS TRAILER LENGTH THROUGH THE SMOOTHED ROUTE: 35-55.48N 005-18.05W 36-30.84N 000-50.10W 37-09.09N 005-01.25E 37-13.82N 008-40.75E 37-27.45N 010-20.29E 36-48.56N 012-08.39E 36-22.62N 014-36.05E 36-16.78N 022-31.98E 36-24.82N 022-56.97E 36-16.25N 023-12.19E 37-08.57N 024-49.09E 38-09.63N 026-14.78E 38-38.56N 026-13.46E 38-45.24N 026-59.60E 38-50.75N 026-58.55E WIDE BERTH IS REQUESTED CANCEL THIS MSG 201200 UTC AUG 26.">
+<position>
+<vertex id="1" latitude="35.924667" longitude="-5.300833"/>
+<vertex id="2" latitude="36.514" longitude="-0.835"/>
+<vertex id="3" latitude="37.1515" longitude="5.020833"/>
+<vertex id="4" latitude="37.230333" longitude="8.679167"/>
+<vertex id="5" latitude="37.4575" longitude="10.338167"/>
+<vertex id="6" latitude="36.809333" longitude="12.139833"/>
+<vertex id="7" latitude="36.377" longitude="14.600833"/>
+<vertex id="8" latitude="36.279667" longitude="22.533"/>
+<vertex id="9" latitude="36.413667" longitude="22.9495"/>
+<vertex id="10" latitude="36.270833" longitude="23.203167"/>
+<vertex id="11" latitude="37.142833" longitude="24.818167"/>
+<vertex id="12" latitude="38.1605" longitude="26.246333"/>
+<vertex id="13" latitude="38.642667" longitude="26.224333"/>
+<vertex id="14" latitude="38.754" longitude="26.993333"/>
+<vertex id="15" latitude="38.845833" longitude="26.975833"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="RESBL" lineWidth="3"/>
+</line>
+</lines>
+<labels>
+<label name="NAV III 113/26" description="NAVAREA III 113/26 281259 UTC JUL 2026 MEDITERRANEAN SEA TOWING OPERATIONS BY MANTA (IMO 9261487, MMSI 205340000) TO HENRY GOODRICH MOBILE PLATFORM TO ALIAGA PORT 600 METERS TRAILER LENGTH THROUGH THE SMOOTHED ROUTE: 35-55.48N 005-18.05W 36-30.84N 000-50.10W 37-09.09N 005-01.25E 37-13.82N 008-40.75E 37-27.45N 010-20.29E 36-48.56N 012-08.39E 36-22.62N 014-36.05E 36-16.78N 022-31.98E 36-24.82N 022-56.97E 36-16.25N 023-12.19E 37-08.57N 024-49.09E 38-09.63N 026-14.78E 38-38.56N 026-13.46E 38-45.24N 026-59.60E 38-50.75N 026-58.55E WIDE BERTH IS REQUESTED CANCEL THIS MSG 201200 UTC AUG 26.">
+<position>
+<vertex id="1" latitude="36.279667" longitude="22.533"/>
+</position>
+<attribute labelStyle="6" labelText="NAV III 113/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+</labels>
+</userchart>

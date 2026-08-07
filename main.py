@@ -41,6 +41,10 @@ def extract_coordinates(text):
 
         # 17-30N,083-43E (comma between lat and lon)
         r"(\d{1,3})-([\d.]+)([NS])\s*,\s*(\d{1,3})-([\d.]+)([EW])",
+
+        # 17-30.5N083-43.2E (no space between lat and lon)
+        r"(\d{1,3})-([\d.]+)([NS])(\d{1,3})-([\d.]+)([EW])"
+
     ]
 
     coords = []
@@ -572,11 +576,16 @@ for block in blocks:
         or "AREAS BOUNDED" in upper
         or "AREAS BOUND BY" in upper
     ):
-        area_groups = re.findall(
-            r'\(([A-Z])\)\s*(.*?)(?=\([A-Z]\)|WIDE BERTH|$)',
+        area_groups = []
+        for m in re.finditer(
+            r'(?:\(([A-Z])\)|\b([A-Z])\.)\s*(.*?)(?=(?:\(([A-Z])\)|\b[A-Z]\.)|WIDE BERTH|$)',
             block,
             flags=re.S
-        )
+        ):
+            area_id = m.group(1) or m.group(2)
+            area_text = (m.group(3) or '').strip()
+            if area_id:
+                area_groups.append((area_id, area_text))
 
         if len(area_groups) > 1:
 
