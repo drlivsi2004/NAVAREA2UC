@@ -4,7 +4,7 @@ import glob
 import os
 from xml.sax.saxutils import escape
 APP_NAME = "NAVAREA2UC"
-APP_VERSION = "1.1"
+APP_VERSION = "1.1.0"
 APP_AUTHOR = "Dr.Livsi2004"
 
 
