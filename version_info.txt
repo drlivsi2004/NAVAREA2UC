@@ -14,8 +14,8 @@ VSVersionInfo(
       StringTable(
         '040904B0',
         [
-          StringStruct('CompanyName', 'NAVAREA2UC Project'),
-          StringStruct('Copyright', 'Copyright (c) 2026 drlivsi2004')
+          StringStruct('CompanyName', 'NAVAREA2UC@drlivsi2004'),
+          StringStruct('Copyright', 'Copyright (c) 2026'),
           StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'),
           StringStruct('FileVersion', '1.1.0'),
           StringStruct('InternalName', 'NAVAREA2UC'),
@@ -25,6 +25,8 @@ VSVersionInfo(
         ]
       )
     ]),
-    VarFileInfo([VarStruct('Translation', [1033, 1200])])
+    VarFileInfo([
+      VarStruct('Translation', [1033, 1200])
+    ])
   ]
 )
