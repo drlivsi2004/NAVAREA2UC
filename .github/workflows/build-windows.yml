@@ -32,5 +32,5 @@ jobs:
       - name: Upload executable artifact
         uses: actions/upload-artifact@v4
         with:
-          name: NAVAREA2UC_v1_1_0
+          name: NAVAREA2UC-windows.exe
           path: dist/NAVAREA2UC_v1_1_0.exe
