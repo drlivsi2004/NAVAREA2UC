@@ -1,35 +1,36 @@
-name: Build NAVAREA2UC
+name: Build Windows executable
 
 on:
   push:
-    tags:
-      - 'v*'
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  build:
+  build-windows:
     runs-on: windows-latest
-
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          python-version: "3.12"
+          python-version: '3.11'
 
       - name: Install dependencies
+        shell: pwsh
         run: |
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip
+          if (Test-Path 'requirements.txt') { pip install -r requirements.txt }
           pip install pyinstaller
 
-      - name: Build executable
+      - name: Build one-file executable (PyInstaller)
+        shell: pwsh
         run: |
-          pyinstaller NAVAREA2UC.spec
+          pyinstaller --onefile --name NAVAREA2UC main.py --version-file version_info.txt 
 
-      - name: Upload artifact
+      - name: Upload executable artifact
         uses: actions/upload-artifact@v4
         with:
-          name: NAVAREA2UC
-          path: dist/**
+          name: NAVAREA2UC-windows.exe
+          path: dist/NAVAREA2UC.exe 
