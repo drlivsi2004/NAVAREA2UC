@@ -91,12 +91,17 @@ NAVAREA2UC automatically parses NAVAREA text messages and generates Furuno User 
 
 - Warnings defined by a radius from a central position
 
----
+## Compatibility
+
+### Tested
+
+- Furuno ECDIS (current generation)
+- Furuno ECDIS legacy systems (UserChart v1.0)
 
 ## Usage
 
 Place one or more NAVAREA text files in the same folder as the executable.
-
+Run parser.
 Import XML files into Furuno User Chart.
 
 ## Notes
@@ -115,11 +120,23 @@ Use at your own responsibility.
 
 ## Why?
 
-Because manually plotting dozens of NAVAREA objects into ECDIS is a pain.
+Because manually plotting dozens of NAVAREA objects into ECDIS is a headache.
 
 ---
 
 Tested on Furuno ECDIS with modern User Chart firmware.
 
 Fair winds and following seas.
+
+## Version History
+
+### v1.1.0
+
+- Added legacy Furuno UserChart export
+- Improved XML compatibility
+- Legacy label style normalization
+- Verified on legacy Furuno ECDIS
+## License
+
+Copyright (c) 2026
 
