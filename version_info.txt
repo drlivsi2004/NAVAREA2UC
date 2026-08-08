@@ -1,7 +1,7 @@
 VSVersionInfo(
   ffi=FixedFileInfo(
-    filevers=(1,0,0,0),
-    prodvers=(1,0,0,0),
+    filevers=(1,1,0,0),
+    prodvers=(1,1,0,0),
     mask=0x3f,
     flags=0x0,
     OS=0x40004,
@@ -14,13 +14,14 @@ VSVersionInfo(
       StringTable(
         '040904B0',
         [
-          StringStruct('Copyright', '@drlivsi2004'),
+          StringStruct('CompanyName', 'NAVAREA2UC Project'),
+          StringStruct('Copyright', 'Copyright (c) 2026 drlivsi2004')
           StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'),
-          StringStruct('FileVersion', '1.0.0'),
+          StringStruct('FileVersion', '1.1.0'),
           StringStruct('InternalName', 'NAVAREA2UC'),
           StringStruct('OriginalFilename', 'NAVAREA2UC.exe'),
           StringStruct('ProductName', 'NAVAREA2UC'),
-          StringStruct('ProductVersion', '1.0.0')
+          StringStruct('ProductVersion', '1.1.0')
         ]
       )
     ]),

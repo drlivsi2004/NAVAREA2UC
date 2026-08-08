@@ -4,7 +4,7 @@ import glob
 import os
 from xml.sax.saxutils import escape
 APP_NAME = "NAVAREA2UC"
-APP_VERSION = "1.0"
+APP_VERSION = "1.1"
 APP_AUTHOR = "Dr.Livsi2004"
 
 
@@ -851,7 +851,6 @@ for block in blocks:
 
         })
 
-
 total_areas = total_lines = total_circles = total_labels = 0
 
 for nav_id in sorted(navs.keys()):
@@ -930,14 +929,162 @@ for nav_id in sorted(navs.keys()):
     except Exception as e:
         print('Failed to write', outname, e)
 
+    import xml.etree.ElementTree as ET
+    from xml.dom import minidom
+
+    def generate_legacy_xml(nav_id, data):
+        """
+        Генерирует legacy XML (версия 1.0) для старых ECDIS.
+        - Создаются только секции, для которых есть данные.
+        - Нет <display>, нет linkedDocument.
+        - Добавляются комментарии перед каждой секцией и перед корневым элементом.
+        - Порядок: lines, clearingLines, areas, labels, circles.
+        - Для label description берётся из данных (если есть), иначе дублирует name.
+        """
+        root = ET.Element('userchart', name=f'NAVAREA {nav_id}', description='', version='1.0')
+
+        def get_attrs(obj_type, obj_data):
+            if obj_type == 'area':
+                name = obj_data.get('name', f'NAV {nav_id}')
+                desc = obj_data.get('description', '')
+                return name, desc
+            elif obj_type == 'label':
+                name = obj_data.get('text', f'NAV {nav_id}')
+                desc = obj_data.get('description', name)   # уникальное описание из данных
+                return name, desc
+            else:  # line, circle, clearingLine
+                name = obj_data.get('name', '')
+                desc = obj_data.get('description', '')
+                return name, desc
+
+        # -------------------- LINES --------------------
+        if data.get('lines'):
+            lines_elem = ET.SubElement(root, 'lines')
+            for line in data['lines']:
+                name, desc = get_attrs('line', line)
+                line_elem = ET.SubElement(lines_elem, 'line', name=name, description=desc)
+                pos = ET.SubElement(line_elem, 'position')
+                for idx, (lat, lon) in enumerate(line['coords'], start=1):
+                    ET.SubElement(pos, 'vertex', id=str(idx),
+                                  latitude=f"{lat:.6f}", longitude=f"{lon:.6f}")
+                ET.SubElement(line_elem, 'attribute', lineType=str(line.get('lineType', 2)))
+                ET.SubElement(line_elem, 'type',
+                              checkDanger=str(line.get('checkDanger', 0)),
+                              displayRadar='0', hasNotes='0', rangeOfNotes='1.000000')
+
+        # -------------------- CLEARING LINES --------------------
+        if data.get('clearingLines'):
+            clearing_elem = ET.SubElement(root, 'clearingLines')
+            for cl in data['clearingLines']:
+                name, desc = get_attrs('line', cl)
+                cl_elem = ET.SubElement(clearing_elem, 'clearingLine', name=name, description=desc)
+                pos = ET.SubElement(cl_elem, 'position')
+                for idx, (lat, lon) in enumerate(cl['coords'], start=1):
+                    ET.SubElement(pos, 'vertex', id=str(idx),
+                                  latitude=f"{lat:.6f}", longitude=f"{lon:.6f}")
+                ET.SubElement(cl_elem, 'attribute', lineType=str(cl.get('lineType', 1)))
+                ET.SubElement(cl_elem, 'type', isDanger=str(cl.get('isDanger', 0)))
+
+        # -------------------- AREAS --------------------
+        if data.get('areas'):
+            areas_elem = ET.SubElement(root, 'areas')
+            for area in data['areas']:
+                name, desc = get_attrs('area', area)
+                area_elem = ET.SubElement(areas_elem, 'area', name=name, description=desc)
+                pos = ET.SubElement(area_elem, 'position')
+                for idx, (lat, lon) in enumerate(area['coords'], start=1):
+                    ET.SubElement(pos, 'vertex', id=str(idx),
+                                  latitude=f"{lat:.6f}", longitude=f"{lon:.6f}")
+                # У области в legacy нет <attribute>
+                ET.SubElement(area_elem, 'type',
+                              checkDanger=str(area.get('checkDanger', 0)),
+                              displayRadar='0', hasNotes='0', notesType='0')
+
+        # -------------------- LABELS --------------------
+        if data.get('labels'):
+            labels_elem = ET.SubElement(root, 'labels')
+            for label in data['labels']:
+                name, desc = get_attrs('label', label)
+                label_elem = ET.SubElement(labels_elem, 'label', name=name, description=desc)
+                pos = ET.SubElement(label_elem, 'position')
+                lat, lon = label['coord']
+                ET.SubElement(pos, 'vertex', id='1',
+                              latitude=f"{lat:.6f}", longitude=f"{lon:.6f}")
+                ET.SubElement(label_elem, 'attribute',
+                              labelStyle='2',
+                              labelText=label.get('text', f'NAV {nav_id}'))
+                ET.SubElement(label_elem, 'type',
+                              checkDanger=str(label.get('checkDanger', 0)),
+                              displayRadar='0')
+
+        # -------------------- CIRCLES --------------------
+        if data.get('circles'):
+            circles_elem = ET.SubElement(root, 'circles')
+            for circle in data['circles']:
+                name, desc = get_attrs('circle', circle)
+                circle_elem = ET.SubElement(circles_elem, 'circle', name=name, description=desc)
+                pos = ET.SubElement(circle_elem, 'position')
+                lat, lon = circle['coord']
+                ET.SubElement(pos, 'vertex', id='1',
+                              latitude=f"{lat:.6f}", longitude=f"{lon:.6f}")
+                ET.SubElement(circle_elem, 'attribute',
+                              range=f"{circle.get('range', 0.0):.6f}")
+                ET.SubElement(circle_elem, 'type',
+                              checkDanger=str(circle.get('checkDanger', 0)),
+                              displayRadar='0', hasNotes='0', notesType='0')
+
+        # Преобразуем в строку с форматированием
+        rough_string = ET.tostring(root, encoding='unicode')
+        reparsed = minidom.parseString(rough_string)
+        xml_str = reparsed.toprettyxml(indent='  ')   # <--- ЗДЕСЬ ДОБАВЛЯЕТСЯ ШАПКА
+
+        # Вставляем комментарии перед существующими секциями
+        root_node = reparsed.documentElement
+        section_tags = ['lines', 'clearingLines', 'areas', 'labels', 'circles']
+        comment_map = {
+            'lines': 'userchart line',
+            'clearingLines': 'userchart clearingLine',
+            'areas': 'userchart area',
+            'labels': 'userchart label',
+            'circles': 'userchart circle'
+        }
+        for tag in section_tags:
+            elem = root_node.getElementsByTagName(tag)
+            if elem:
+                elem = elem[0]
+                comment = reparsed.createComment(comment_map.get(tag, tag))
+                root_node.insertBefore(comment, elem)
+
+       # Заново формируем строку после вставки комментариев
+        xml_str = reparsed.toprettyxml(indent='  ')
+
+        lines = xml_str.splitlines()
+
+        # удалить xml declaration от minidom
+        if lines and lines[0].startswith('<?xml'):
+         ines = lines[1:]
+
+         xml_str = '\n'.join([
+          '<?xml version="1.0" encoding="UTF-8"?>',
+         '<!--userchart node-->',
+           *lines
+        ])
+
+        return xml_str
+
+
+    legacy_xml = generate_legacy_xml(nav_id, data)
+    with open(f'output_NAVAREA_{nav_id}_legacy.xml', 'w', encoding='utf-8') as f:
+        f.write(legacy_xml)
+
     # update totals
     total_areas += len(data['areas'])
     total_lines += len(data['lines'])
     total_circles += len(data['circles'])
     total_labels += len(data['labels'])
 
-    print(f'Wrote {outname}: Areas={len(data["areas"])}, Lines={len(data["lines"])}, Circles={len(data["circles"])}, Labels={len(data["labels"]) }')
-
+    print(f'Wrote output_NAVAREA_{nav_id}.xml: Areas={len(data["areas"])}, Lines={len(data["lines"])}, Circles={len(data["circles"])}, Labels={len(data["labels"]) }')
+    print(f'Wrote output_NAVAREA_{nav_id}_legacy.xml: Areas={len(data["areas"])}, Lines={len(data["lines"])}, Circles={len(data["circles"])}, Labels={len(data["labels"]) }')
 
 print()
 print('===== TOTAL SUMMARY =====')
