@@ -1036,7 +1036,6 @@ for nav_id in sorted(navs.keys()):
         # Преобразуем в строку с форматированием
         rough_string = ET.tostring(root, encoding='unicode')
         reparsed = minidom.parseString(rough_string)
-        xml_str = reparsed.toprettyxml(indent='  ')   # <--- ЗДЕСЬ ДОБАВЛЯЕТСЯ ШАПКА
 
         # Вставляем комментарии перед существующими секциями
         root_node = reparsed.documentElement
@@ -1055,19 +1054,16 @@ for nav_id in sorted(navs.keys()):
                 comment = reparsed.createComment(comment_map.get(tag, tag))
                 root_node.insertBefore(comment, elem)
 
-       # Заново формируем строку после вставки комментариев
         xml_str = reparsed.toprettyxml(indent='  ')
-
         lines = xml_str.splitlines()
 
-        # удалить xml declaration от minidom
         if lines and lines[0].startswith('<?xml'):
-         ines = lines[1:]
+            lines = lines[1:]
 
-         xml_str = '\n'.join([
-          '<?xml version="1.0" encoding="UTF-8"?>',
-         '<!--userchart node-->',
-           *lines
+        xml_str = '\n'.join([
+            '<?xml version="1.0" encoding="UTF-8"?>',
+            '<!--userchart node-->',
+            *lines
         ])
 
         return xml_str
