@@ -3,7 +3,9 @@
 </p>
 
 
-NAVAREA2UC/
+<h1 align="center">NAVAREA2UC</h1>
+
+<p align="center">
 
 ## Project Structure
 
