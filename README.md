@@ -1,6 +1,7 @@
 <p align="center">
-  logo.png
+  <img src="logo.png" width="300">
 </p>
+
 
 NAVAREA2UC/
 
