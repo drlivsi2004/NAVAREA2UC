@@ -27,7 +27,7 @@ jobs:
       - name: Build one-file executable (PyInstaller)
         shell: pwsh
         run: |
-          pyinstaller --onefile --name NAVAREA2UC main.py --version-file version_info.txt 
+          pyinstaller --onefile --name NAVAREA2UC --icon icon.ico --version-file version_info.txt main.py
 
       - name: Upload executable artifact
         uses: actions/upload-artifact@v4
