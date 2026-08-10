@@ -3,12 +3,19 @@ NAVAREA2UC/
 ## Project Structure
 
 NAVAREA2UC/
+
 ├── .github/
+
 ├── NAVAREA2UC.exe
+
 ├── README.md
+
 ├── main.py
+
 ├── version_info.txt
+
 ├── icon.ico
+
 └── input.txt  (example NAVAREA messages)
 
 
