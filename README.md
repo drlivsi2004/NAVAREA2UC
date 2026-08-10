@@ -1,3 +1,7 @@
+<p align="center">
+  docs/logo.png
+</p>
+
 NAVAREA2UC/
 
 ## Project Structure
