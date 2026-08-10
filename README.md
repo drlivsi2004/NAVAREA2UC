@@ -177,8 +177,6 @@ Because manually plotting dozens of NAVAREA objects into ECDIS is a headache.
 
 ---
 
-Tested on Furuno ECDIS with modern User Chart firmware.
-
 Fair winds and following seas.
 
 ## Version History
