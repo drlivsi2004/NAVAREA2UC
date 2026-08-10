@@ -1,5 +1,5 @@
 <p align="center">
-  docs/logo.png
+  logo.png
 </p>
 
 NAVAREA2UC/
