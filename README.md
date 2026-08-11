@@ -13,7 +13,7 @@ NAVAREA2UC/
 
 ├── .github/
 
-├── NAVAREA2UC.exe
+├── NAVAREA2UC_v1.2.0.exe
 
 ├── README.md
 
