@@ -193,6 +193,7 @@ Fair winds and following seas.
 - Added message-aware Legacy UserChart splitter
 - Preserved NAVAREA message integrity during legacy export
 - Added automatic generation of multi-part legacy UserCharts
+- Legacy descriptions limited to 999 characters
 - Improved area parsing
 - Improved multi-area warning detection
 - Improved circle detection
