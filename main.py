@@ -9,7 +9,8 @@ APP_VERSION = "1.2.0"
 APP_AUTHOR = "dr_livsi2004"
 
 # -------------------- CONSTANTS --------------------
-LEGACY_MAX_OBJECTS = 100  # maximum objects per legacy UserChart
+LEGACY_MAX_OBJECTS = 150  # maximum objects per legacy UserChart
+LEGACY_MAX_DESC = 999  # maximum characters for description
 LEGACY_MAX_CIRCLE_RANGE = 100.0   # max radius (NM) for circles
 
 def dm_to_decimal(deg, minutes, hemi):
@@ -705,19 +706,20 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
         if obj_type == 'area':
             name = obj_data.get('name', f'NAV {nav_id}')
             desc = obj_data.get('description', '')
-            return name, desc
         elif obj_type == 'label':
             name = obj_data.get('text', f'NAV {nav_id}')
             desc = obj_data.get('description', name)
-            return name, desc
-        elif obj_type == 'circle':
-             # Furuno ECDIS не принимает description для кругов (только name)
-             name = obj_data.get('name', '')
-             return name, ''   # <--- description всегда пустой
-        else:  # line, clearingLine
-             name = obj_data.get('name', '')
-             desc = obj_data.get('description', '')
-             return name, desc
+        else:  # line, circle, clearingLine
+            name = obj_data.get('name', '')
+            desc = obj_data.get('description', '')
+
+        if len(desc) > LEGACY_MAX_DESC:
+            print(
+                f"DESC TRUNCATED [{obj_type}] "
+                f"{len(desc)} -> {LEGACY_MAX_DESC}"
+            )
+            desc = desc[:LEGACY_MAX_DESC]
+        return name, desc
 
     # LINES
     if data.get('lines'):
