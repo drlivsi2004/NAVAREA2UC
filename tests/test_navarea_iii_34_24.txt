@@ -1,0 +1,115 @@
+# REGRESSION TEST: NAVAREA III 34/24
+# Black Sea Ukrainian Maritime Corridor
+# Test Case: Mixed Geometry Package Validation
+
+## EXPECTED RESULTS:
+
+### Handler Match
+MATCH: handle_mixed_geometry_package
+
+### Object Count
+Total Objects: 14
+- Lines: 6 (3 routes + 3 channels)
+- Areas: 2 (2 waiting areas)
+- Labels: 6
+
+### Vertex Distribution
+Total Vertices: 44
+- ROUTE NO. 1.1: 9 vertices
+- ROUTE NO. 1: 7 vertices
+- ROUTE NO. 2: 6 vertices
+- CHORNOMORSK CHANNEL: 6 vertices
+- ODESSA CHANNEL: 4 vertices
+- PIVDENNYI CHANNEL: 3 vertices
+- SOUTHERN WAITING AREA: 4 vertices
+- WAITING AREA NORTH AR 354: 4 vertices
+Total: 9 + 7 + 6 + 6 + 4 + 3 + 4 + 4 = 43 vertices (routes + channels + areas)
+
+### Objects Per Type
+
+#### Routes (3 independent lines)
+1. NAV III 34/24 ROUTE NO. 1.1
+   - Type: line
+   - Vertices: 9
+   - Coordinates: A-I (from 45-05N, 30-03E to 46-25.38N, 30-53.23E)
+   - Description: ROUTE NO. 1.1
+   
+2. NAV III 34/24 ROUTE NO. 1
+   - Type: line
+   - Vertices: 7 (A, B, C, J, K, L, M)
+   - Coordinates: from 45-05N, 30-03E to 46-26.30N, 30-53.90E
+   - Description: ROUTE NO. 1
+   - Key: Must include K and L with coordinates from 46-02.80N, 031-04.40E and 46-19.30N, 031-04.40E
+   
+3. NAV III 34/24 ROUTE NO. 2
+   - Type: line
+   - Vertices: 6
+   - Coordinates: N-M (from 45-03.90N, 030-18.50E to 46-26.30N, 030-53.90E)
+   - Description: ROUTE NO. 2
+
+#### Waiting Areas (2 independent areas)
+1. NAV III 34/24 SOUTHERN WAITING AREA
+   - Type: area
+   - Vertices: 4
+   - Coordinates: 45-00N to 44-50N, 030-10E to 030-25E (rectangular)
+   - Description: SOUTHERN WAITING AREA
+   - Header: 2.2.2. SOUTHERN WAITING AREA...
+
+2. NAV III 34/24 WAITING AREA NORTH AR 354
+   - Type: area
+   - Vertices: 4
+   - Coordinates: 46-25.38N to 46-30.48N, 030-50.37E to 030-53.90E
+   - Description: WAITING AREA NORTH AR 354
+   - Header: 2.2.3. WAITING AREA NORTH AR 354...
+
+#### Channels (3 independent lines)
+1. NAV III 34/24 CHORNOMORSK CHANNEL
+   - Type: line
+   - Vertices: 6
+   - Coordinates: from 46-25.38N, 030-52.60E to 46-19.12N, 030-40.60E
+   - Description: FROM CHORNOMORSK TO THE NORTH HOLDING AREA
+   - Header: 2.2.4. FROM CHORNOMORSK...
+
+2. NAV III 34/24 ODESSA CHANNEL
+   - Type: line
+   - Vertices: 4
+   - Coordinates: from 46-30N, 030-50.51E to 46-29.99N, 030-44.54E
+   - Description: FROM ODESSA TO THE NORTH WAITING AREA
+   - Header: 2.2.5. FROM ODESSA...
+
+3. NAV III 34/24 PIVDENNYI CHANNEL
+   - Type: line
+   - Vertices: 3
+   - Coordinates: from 46-30.48N, 030-53.90E to 46-36.187N, 031-01.00E
+   - Description: OF PIVDENNYI TO THE NORTH WAITING AREA
+   - Header: 2.2.6. OF PIVDENNYI...
+
+### Validation Criteria
+
+✓ Handler: handle_mixed_geometry_package (not handle_structured_sections)
+✓ Areas >= 2 (exactly 2)
+✓ Lines >= 5 (exactly 6: 3 routes + 3 channels)
+✓ No giant area with 40 vertices (max area: 4 vertices)
+✓ No label explosion (6 labels for 8 geometry objects + labels)
+✓ Each route is isolated (no coordinate bleeding between routes)
+✓ Each waiting area is isolated (no coordinates from routes)
+✓ Each channel is isolated (no coordinates from other channels)
+✓ All K, L coordinates present in ROUTE NO. 1
+✓ Coordinate replacement works (commas to dots conversion successful)
+
+### Regression Test Pass/Fail
+
+PASS: All validation criteria met
+PASS: MATCH shows handle_mixed_geometry_package
+PASS: Objects separated correctly
+PASS: No coordinate mixing
+PASS: All expected geometries extracted
+
+## NOTES FOR FUTURE RUNS:
+
+If this test FAILS, check:
+1. Handler registry order (mixed_geometry_package must be FIRST)
+2. Activation rule (must require BOTH routes AND areas)
+3. Section extraction (must properly split by subsection numbers)
+4. Coordinate extraction (comma-to-dot replacement must allow spaces)
+5. K, L coordinate special case (46-02,80 format in input)
