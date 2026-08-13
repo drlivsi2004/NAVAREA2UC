@@ -436,6 +436,28 @@ def is_multi_point_navarea(block):
         "CHANNEL MARKING BUOY"
     ]
     return any(x in upper for x in triggers)
+# --------------------------------------------------
+# SEMANTIC DETECTION HELPERS
+# --------------------------------------------------
+
+def is_buoy_group(text):
+    """
+    Detect canonical buoy group terminology.
+
+    Terminology is normalized by normalizer.py:
+
+        CHANNEL BUOYS
+        CHANNEL MARKING BUOYS
+        BUOY LIST
+
+    →
+
+        BUOY GROUP
+
+    This helper performs semantic detection only.
+    Geometry creation remains the responsibility of handlers.
+    """
+    return "BUOY GROUP" in text.upper()
 
 def is_buoy_group(text):
     return "BUOY GROUP" in text.upper()
@@ -1892,6 +1914,7 @@ def handle_riglist(ctx, container, message):
 
 def handle_multipoint(ctx, container, message):
     debug("PROCESS: handle_multipoint")
+
     if ctx['is_riglist']:
         return False
     if (
