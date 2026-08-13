@@ -202,6 +202,13 @@ Fair winds and following seas.
 - Improved complex offshore installation parsing
 - Improved compatibility with legacy Furuno ECDIS
 
+### v1.2.1
 
-
-
+- Improoved NAVAREA parsing and coordinate extraction
+- Improoved Area, route, channel and point generation
+- Improved RIGLIST / MODU 
+- Improved coordinate parsing
+- Improved geometry isolation
+- Added handler diagnostics
+- Added Mixed geometry support
+- AddedMulti-area package support
