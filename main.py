@@ -634,22 +634,14 @@ def extract_riglist_entries(block):
     if not any(x in upper for x in ["RIGLIST", "RIG LIST", "MODU LIST", "MOBILE OFFSHORE DRILLING UNITS"]):
         return None
 
-    entries = re.split(r'\n\s*\d+.\s+', block)
-
-    entries = [
-        e.strip()
-        for e in entries
-        if e.strip()
-        and re.search(
-            r'\d{1,3}-\d+(?:.\d+)?[NS]\s+\d{1,3}-\d+(?:.\d+)?[EW]',
-            e,
-            re.I,
-        )
-    ]
-
+    # Сначала пробуем разбить по номерам (1., 2., ...)
+    entries = re.split(r'\n\s*\d+\.\s+', block)
     if len(entries) > 10:
-        return entries
+        
+        # Возвращаем записи, пропуская первый пустой элемент, если есть
+        return [e.strip() for e in entries if e.strip()]
 
+    # UK style: каждая запись обычно на отдельной строке и содержит координаты
     rig_block = re.sub(r'\s+', ' ', block)
     coord_pattern = re.compile(r'\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]', re.I)
     matches = list(coord_pattern.finditer(rig_block))

@@ -44,10 +44,6 @@ class NormalizerStats:
 
 
 def normalize_input(text, stats=None):
-    """
-    Main entry point: applies full normalization pipeline.
-    Returns canonical text ready for block splitting and parsing.
-    """
     if stats is None:
         stats = NormalizerStats()
 
@@ -56,12 +52,12 @@ def normalize_input(text, stats=None):
     text = normalize_pdf_artifacts(text, stats)
     text = normalize_headers(text, stats)
     text = normalize_area_phrases(text)
-    text = normalize_sections(text, stats)
     text = normalize_semantic_aliases(text)
     text = normalize_coordinates(text, stats)
-    # ---- НОВЫЙ ЭТАП: нормализация RIGLIST/MODU форматов ----
+    # ---- НОВЫЙ ПОРЯДОК: сначала RIGLIST, потом SECTIONS ----
     text = normalize_riglist_formats(text)
-    # Второй проход для чистоты после конвертации координат и RIGLIST
+    text = normalize_sections(text, stats)
+    # ---- КОНЕЦ ИЗМЕНЕНИЙ ----
     text = normalize_whitespace(text, stats)
 
     return text
