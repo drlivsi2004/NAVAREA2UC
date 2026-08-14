@@ -134,9 +134,16 @@ def normalize_area_phrases(text):
     Normalize common area boundary phrases.
     "AREA BOUNDED BY" -> "AREA BOUND BY"
     "AREAS BOUNDED BY" -> "AREAS BOUND BY"
+    "AREA DELIMITED BY" -> "AREA BOUND BY"
+    "AREAS DELIMITED BY" -> "AREAS BOUND BY"
     """
     text = re.sub(r'AREA\s+BOUNDED\s+BY', 'AREA BOUND BY', text, flags=re.I)
     text = re.sub(r'AREAS\s+BOUNDED\s+BY', 'AREAS BOUND BY', text, flags=re.I)
+
+    # Добавлено для поддержки AREA DELIMITED BY
+    text = re.sub(r'AREA\s+DELIMITED\s+BY', 'AREA BOUND BY', text, flags=re.I)
+    text = re.sub(r'AREAS\s+DELIMITED\s+BY', 'AREAS BOUND BY', text, flags=re.I)
+
     return text
 
 
@@ -242,9 +249,9 @@ def normalize_coordinates(text, stats=None):
     text = re.sub(r'(\d)-([\d.]+)\s*([NS])', r'\1-\2\3', text, flags=re.I)
     text = re.sub(r'(\d)-([\d.]+)\s*([EW])', r'\1-\2\3', text, flags=re.I)
 
-    # Replace separators between lat/lon with space (handles /, ;, ,)
-    text = re.sub(r'([NS])\s*[/;]\s*(\d)', r'\1 \2', text, flags=re.I)
-    text = re.sub(r'([EW])\s*[/;]\s*(\d)', r'\1 \2', text, flags=re.I)
+    # Replace separators between lat/lon with space (handles /, ;, -)
+    text = re.sub(r'([NS])\s*[/;,\-]\s*(\d)', r'\1 \2', text, flags=re.I)
+    text = re.sub(r'([EW])\s*[/;,\-]\s*(\d)', r'\1 \2', text, flags=re.I)
 
     return text
 
