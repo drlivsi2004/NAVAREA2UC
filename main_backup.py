@@ -978,8 +978,15 @@ def handle_structured_sections(ctx, container, message):
     debug("PROCESS: handle_structured_sections")
     if ctx['is_riglist']:
         return False
-    if not re.search(r'(?:^|\n)\s*\d+\.\s+', ctx['block']):
-        return False
+    if (
+        re.search(r'\(([A-Z])\)\s*\d', ctx['block'])
+        and (
+            "AREAS BOUND BY" in ctx['upper']
+            or "AREA BOUND BY" in ctx['upper']
+            or "DANGER AREA" in ctx['upper']
+        )
+    ):
+        return False 
     structured_objects = parse_structured_sections(ctx['block'])
     if not structured_objects:
         return False
@@ -1060,71 +1067,139 @@ def handle_bounding_box(ctx, container, message):
     return True
 
 def extract_area_group_sections(block):
-    """Extract independent area sections from grouped area blocks.
-
-    Supports all common formats:
-      - (A) ...
-      - A. ...
-      - A\ncoords...
-      - A\ncoords...\nB\ncoords...
     """
-    groups = []
-    current_id = None
-    current_lines = []
+    Extract independent area groups from grouped area blocks.
 
-    for raw_line in block.splitlines():
-        stripped = raw_line.strip()
-        if not stripped:
-            continue
+    Правило:
+      Маркер считается пространственной группой только если:
+        1. находится после AREA BOUND BY / AREAS BOUND BY /
+           DANGER AREA BOUND BY / BOUNDED BY
+        2. его локальный сегмент содержит >= 3 координаты.
 
-        standalone = re.fullmatch(r'\(?\s*([A-Z])\s*\)?\.?\s*', stripped)
-        inline = re.match(r'^(?:\(([A-Z])\)|([A-Z])\.)\s*(.*)$', stripped)
-
-        if standalone:
-            if current_id is not None and current_lines:
-                groups.append((current_id, '\n'.join(current_lines).strip()))
-            current_id = standalone.group(1).upper()
-            current_lines = []
-            continue
-
-        if inline:
-            letter = (inline.group(1) or inline.group(2) or '').upper()
-            remainder = (inline.group(3) or '').strip()
-            if current_id is not None and current_lines:
-                groups.append((current_id, '\n'.join(current_lines).strip()))
-            current_id = letter
-            current_lines = []
-            if remainder:
-                current_lines.append(remainder)
-            continue
-
-        if current_id is not None:
-            current_lines.append(raw_line)
-
-    if current_id is not None and current_lines:
-        groups.append((current_id, '\n'.join(current_lines).strip()))
-
-    if groups:
-        return groups
-
-    regex = re.compile(
-        r'(?ms)(?:^|\n)\s*(?:\(([A-Z])\)|([A-Z])\.)\s*(.*?)(?=(?:^|\n)\s*(?:\(([A-Z])\)|([A-Z])\.|[A-Z]\s*$)|WIDE BERTH|$)'
+    Расписания (A) 1200-1800 UTC
+    и точечные ссылки (A) 19-14.6N 084-53.7E
+    не считаются группами.
+    """
+    # Найти начало области координат после boundary-фразы
+    context_match = re.search(
+        r'(?:AREA|AREAS|DANGER AREA|DANGER AREAS)\s+(?:BOUND BY|BOUNDED BY|DELIMITED BY)',
+        block,
+        re.IGNORECASE
     )
-    for m in regex.finditer(block):
-        area_id = (m.group(1) or m.group(2) or '').upper()
-        area_text = (m.group(3) or '').strip()
-        if area_id and area_text:
-            groups.append((area_id, area_text))
-    return groups
+    if not context_match:
+        return []
 
+    search_block = block[context_match.end():]
+
+    # Собрать маркеры двух форматов:
+    #   - начало строки: (A) или A.
+    #   - inline: (A) внутри строки
+    markers = {}
+
+    # line-start markers
+    for m in re.finditer(
+        r'(?:^|\n)\s*(?:\(([A-Z])\)|([A-Z])\.)\s*',
+        search_block,
+        flags=re.MULTILINE
+    ):
+        letter = m.group(1) or m.group(2)
+        markers[m.start()] = letter.upper()
+
+    # inline markers
+    for m in re.finditer(r'\(([A-Z])\)\s*', search_block):
+        markers[m.start()] = m.group(1).upper()
+
+    if not markers:
+        return []
+
+    sorted_markers = sorted(markers.items())  # (pos, letter)
+
+    groups = []
+    for i, (pos, letter) in enumerate(sorted_markers):
+        end = sorted_markers[i + 1][0] if i + 1 < len(sorted_markers) else len(search_block)
+        segment = search_block[pos:end]
+
+        # Убрать маркер из начала сегмента
+        segment = re.sub(
+            r'^\s*(?:\([A-Z]\)|[A-Z]\.)\s*',
+            '',
+            segment,
+            count=1,
+            flags=re.IGNORECASE
+        )
+
+        # Локальные координаты — ключевая проверка
+        coords = extract_coordinates(segment)
+
+        if len(coords) >= 3:
+            groups.append((letter, segment.strip()))
+
+    return groups
 
 def handle_area(ctx, container, message):
     debug("PROCESS: handle_area")
     if ctx['is_riglist']:
         return False
 
-    # Detect waiting/holding areas directly
-    if any(x in ctx['upper'] for x in ["WAITING AREA", "HOLDING AREA", "ANCHORAGE AREA", "DESIGNATED ANCHORAGE AREA", "TEMPORARY STAY AREA"]):
+    # ----------------------------
+    # 1. GROUPED AREA PROCESSING FIRST
+    # ----------------------------
+    area_groups = extract_area_group_sections(ctx['block'])
+
+    if len(area_groups) > 1:
+        for area_id, area_text in area_groups:
+            sub_coords = extract_coordinates(area_text)
+            if len(sub_coords) < 3:
+                continue
+
+            print(f"AREA GROUP {area_id} -> {len(sub_coords)} vertices")
+
+            area_coords = ensure_clockwise(sub_coords)
+            if has_self_intersection(area_coords):
+                fixed = sort_area_vertices(area_coords)
+                if not has_self_intersection(fixed):
+                    area_coords = fixed
+
+            area_obj = create_area(
+                name=f"{ctx['label_text']} ({area_id})",
+                description=area_text.strip()[:200],
+                coords=area_coords,
+                color=detect_color(ctx['block']),
+                check_danger=detect_check_danger(ctx['block'])
+            )
+            add_area(area_obj, container, message)
+        return True
+
+    if len(area_groups) == 1:
+        area_id, area_text = area_groups[0]
+        sub_coords = extract_coordinates(area_text)
+        if len(sub_coords) >= 3:
+            area_coords = ensure_clockwise(sub_coords)
+            if has_self_intersection(area_coords):
+                fixed = sort_area_vertices(area_coords)
+                if not has_self_intersection(fixed):
+                    area_coords = fixed
+
+            area_obj = create_area(
+                name=ctx['label_text'],
+                description=area_text.strip()[:200],
+                coords=area_coords,
+                color=detect_color(ctx['block']),
+                check_danger=detect_check_danger(ctx['block'])
+            )
+            add_area(area_obj, container, message)
+            return True
+
+    # ----------------------------
+    # 2. WAITING / HOLDING / ANCHORAGE AREA SHORTCUT
+    # ----------------------------
+    if any(x in ctx['upper'] for x in [
+        "WAITING AREA",
+        "HOLDING AREA",
+        "ANCHORAGE AREA",
+        "DESIGNATED ANCHORAGE AREA",
+        "TEMPORARY STAY AREA"
+    ]):
         if len(ctx['coords']) >= 3:
             area_coords = ensure_clockwise(ctx['coords'])
             area_obj = create_area(
@@ -1137,33 +1212,15 @@ def handle_area(ctx, container, message):
             add_area(area_obj, container, message)
             return True
 
-    # Existing AREA BOUND BY logic
-    if not ("AREA BOUND BY" in ctx['upper'] or "BOUNDED BY" in ctx['upper'] or
-            "AREA BOUNDED" in ctx['upper'] or "AREAS BOUNDED" in ctx['upper'] or
+    # ----------------------------
+    # 3. SINGLE AREA BOUND BY fallback
+    # ----------------------------
+    if not ("AREA BOUND BY" in ctx['upper'] or
+            "BOUNDED BY" in ctx['upper'] or
+            "AREA BOUNDED" in ctx['upper'] or
+            "AREAS BOUNDED" in ctx['upper'] or
             "AREAS BOUND BY" in ctx['upper']):
         return False
-
-    area_groups = extract_area_group_sections(ctx['block'])
-    if len(area_groups) > 1:
-        for area_id, area_text in area_groups:
-            sub_coords = extract_coordinates(area_text)
-            if len(sub_coords) < 3:
-                continue
-            print(f"AREA GROUP {area_id} -> {len(sub_coords)} vertices")
-            area_coords = sub_coords
-            if has_self_intersection(area_coords):
-                fixed = sort_area_vertices(area_coords)
-                if not has_self_intersection(fixed):
-                    area_coords = fixed
-            area_obj = create_area(
-                name=f"{ctx['label_text']} ({area_id})",
-                description=area_text.strip()[:200],
-                coords=area_coords,
-                color=detect_color(ctx['block']),
-                check_danger=detect_check_danger(ctx['block'])
-            )
-            add_area(area_obj, container, message)
-        return True
 
     if len(ctx['coords']) >= 3:
         area_coords = ctx['coords']
@@ -1172,6 +1229,7 @@ def handle_area(ctx, container, message):
             if not has_self_intersection(fixed):
                 print(f"AUTO-FIX AREA: {ctx['label_text']}")
                 area_coords = fixed
+
         area_obj = create_area(
             name=ctx['label_text'],
             description=ctx['description'],
@@ -1181,6 +1239,7 @@ def handle_area(ctx, container, message):
         )
         add_area(area_obj, container, message)
         return True
+
     return False
 
 def handle_no_anchor(ctx, container, message):
