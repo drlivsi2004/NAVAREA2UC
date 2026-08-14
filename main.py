@@ -1548,6 +1548,66 @@ def handle_area(ctx, container, message):
     if ctx['is_riglist']:
         return False
 
+    MIN_SUMMARY = 120
+
+    def build_group_area_description(ctx, area_id, area_text):
+        """
+        Формирует описание grouped area.
+
+        Порядок:
+          1. Краткий NAVAREA context до BOUNDARY-фразы
+          2. Group identifier
+          3. Group coordinates
+
+        Полный ctx['description'] больше не используется,
+        чтобы избежать дублирования координат всех групп.
+        """
+        # Исходный нормализованный текст без переносов
+        nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
+
+        # Ищем начало координатной секции:
+        #   ... IN DANGER AREAS BOUND BY ...
+        #   ... IN AREA BOUND BY ...
+        #   ... IN DANGER AREA BOUND BY ...
+        boundary_match = re.search(
+            r'\b(?:IN\s+)?(?:DANGER\s+)?AREAS?\s+(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\b',
+            nav_summary,
+            re.IGNORECASE
+        )
+
+        if boundary_match:
+            nav_summary = nav_summary[:boundary_match.start()].rstrip()
+
+        # Если контекст пустой, используем имя NAVAREA
+        if not nav_summary:
+            nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
+
+        coords_text = sanitize_xml_attribute(" ".join(area_text.split()))
+        group_header = f"ZONE {area_id}"
+
+        separators_len = 2  # два переноса строки
+
+        fixed_len = MIN_SUMMARY + len(group_header) + separators_len
+
+        if fixed_len > LEGACY_MAX_DESC:
+            # Экстремально маленький лимит:
+            # сохраняем заголовок и урезанный summary
+            available = max(0, LEGACY_MAX_DESC - len(group_header) - separators_len)
+            nav_summary = nav_summary[:available].rstrip()
+            coords_text = ""
+        else:
+            available_for_coords = LEGACY_MAX_DESC - fixed_len
+
+            if len(coords_text) > available_for_coords:
+                coords_text = coords_text[:available_for_coords].rstrip()
+
+            max_summary = LEGACY_MAX_DESC - len(group_header) - len(coords_text) - separators_len
+
+            if len(nav_summary) > max_summary:
+                nav_summary = nav_summary[:max_summary].rstrip()
+
+        return f"{nav_summary}\n{group_header}\n{coords_text}"
+
     # ------------------------------------------------------------------
     # 1. Grouped Areas / Named Areas
     # ------------------------------------------------------------------
