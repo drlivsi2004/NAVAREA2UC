@@ -550,14 +550,11 @@ def is_target_object_type(block):
     return any(t in upper for t in targets)
 def detect_security_incident(text):
     """
-    ÐÐ¿ÑÐµÐ´ÐµÐ»ÑÐµÑ, Ð¾ÑÐ½Ð¾ÑÐ¸ÑÑÑ Ð»Ð¸ ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ðµ Ðº security incident.
+    Разбивает блок на нумерованные секции (2., 3., ...) и возвращает объекты.
+    Поддерживает ледовые бюллетени и подобные сообщения.
     """
-    upper = text.upper()
-    return any(keyword in upper for keyword in SECURITY_KEYWORDS)
-
-def parse_structured_sections(block):
-    if not re.search(r'(?:^|\n)\s*\d+\.\s*', block):
-         return None
+    if not re.search(r'(?:^|\n)\s*\d+\.\s+', block):
+        return None
 
     parts = re.split(r'\n\s*(\d+)\.\s*', block)
     sections = []
@@ -566,7 +563,6 @@ def parse_structured_sections(block):
         text = parts[i + 1].strip()
         if not text:
             continue
-            
         lines = text.split('\n')
         title = lines[0].strip()
         desc_lines = []
@@ -600,24 +596,15 @@ def parse_structured_sections(block):
             continue
 
         desc = sec.get('description', sec.get('title', '')).strip()
-        upper_text = sec['text'].upper()
-
-        is_boundary_line = BOUNDARY_LINE_PATTERN.search(upper_text) is not None
-
-        is_area = (
-            not is_boundary_line
-            and has_area_pattern(sec['text'])
-            and len(coords) >= 3
-         ) 
-
+        is_area = "AREA" in sec['text'].upper() and len(coords) >= 3
         if is_area:
-           area_coords = normalize_area_vertices(coords)
-           objects.append({
-              'type': 'area',
-              'coords': area_coords,
-              'description': desc,
-              'name': None,
-         })
+            area_coords = ensure_clockwise(coords)
+            objects.append({
+                'type': 'area',
+                'coords': area_coords,
+                'description': desc,
+                'name': None
+            })
         else:
             objects.append({
                 'type': 'line',
@@ -1048,51 +1035,22 @@ GEOMETRY_KEYWORDS = [
     "WAITING AREA", "HOLDING AREA", "ANCHORAGE AREA", "TEMPORARY STAY AREA",
     "PIPELINE", "CABLE", "JOINING"
 ]
-BOUNDARY_LINE_PATTERN = re.compile(
-    r'\b(?:TO\s+)?(?:NORTH(?:ERN)?|SOUTH(?:ERN)?|EAST(?:ERN)?|WEST(?:ERN)?)\s+OF\s+LINE\b',
-    re.IGNORECASE,
-)
-SECURITY_KEYWORDS = [
-    "SECURITY INCIDENT",
-    "ARMED ROBBERY",
-    "PIRACY",
-    "PIRATES",
-    "ATTACK",
-    "ATTEMPTED ATTACK",
-    "ROBBERY",
-    "BOARDING",
-    "UNAUTHORIZED BOARDING",
-    "HIJACKING",
-    "SUSPICIOUS CRAFT",
-    "SUSPICIOUS APPROACH",
-    "ANTI PIRACY",
-    "PIRATE",
-    "SUSPECTED PIRATE",
-    "SECURITY THREAT",
-]
-AREA_PATTERNS = [
-    "AREA BOUND BY",
-    "AREA BOUNDED BY",
-    "AREAS BOUND BY",
-    "AREAS BOUNDED BY",
-    "AREA BOUNDED WITHIN",
-]
 
-LINE_PATTERNS = [
-    "ALONG TRACKLINE",
-    "TRACKLINE JOINING",
-]
-
-def has_area_pattern(text):
-    normalized = re.sub(r"\s+", " ", text.upper())
-    return any(pattern in normalized for pattern in AREA_PATTERNS)
-
-def has_line_pattern(text):
-    upper = text.upper()
-    return any(pattern in upper for pattern in LINE_PATTERNS)
-# -------------------- MIXED GEOMETRY HANDLER --------------------
+# -------------------- MIXED GEOMETRY HANDLER (исправленный) --------------------
 def extract_mixed_geometry_sections(block):
+    """
+    Extract sections respecting both:
+    1. Route numbering within section 1 (ROUTE NO. 1.1, ROUTE NO. 1, ROUTE NO. 2)
+    2. Subsection headers (2.2.2, 2.2.3, etc.)
+    
+    Returns list of (header, text) tuples with properly isolated coordinates.
+    """
     sections = []
+    
+    # Strategy: First extract routes from the main section,
+    # then extract subsections.
+    
+    # Split the block into main part (section 1) and subsection part (2.2.x and beyond)
     subsection_split = re.search(r'\n\d+\.\d+\.\d+\.', block)
     if subsection_split:
         main_part = block[:subsection_split.start()]
