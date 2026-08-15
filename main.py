@@ -431,9 +431,7 @@ def is_multi_point_navarea(block):
         "MOORINGS DEPLOYED",
         "OCEAN BOTTOM MOORINGS",
         "REMOTE COMMUNICATION FACILITIES",
-        "MESSAGING SERVICES UNAVAILABLE",
-        "REMOVAL OF SUBMERGED LINES",
-        "CHANNEL MARKING BUOY"
+        "MESSAGING SERVICES UNAVAILABLE"
     ]
     return any(x in upper for x in triggers)
 
@@ -1746,53 +1744,10 @@ def handle_trackline(ctx, container, message):
     # Area patterns have priority over line
     if has_area_pattern(ctx['block']):
         return False
-        
-    # P2: Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð²Ð°ÑÑ Ð»Ð¸Ð½Ð¸Ñ Ð´Ð»Ñ Ð½ÐµÐ·Ð°Ð²Ð¸ÑÐ¸Ð¼ÑÑ Ð±ÑÐµÐ²/ÑÐ¾ÑÐµÑÐ½ÑÑ Ð¾Ð±ÑÐµÐºÑÐ¾Ð²
-    BUOY_SEMANTIC_TERMS = [
-        "CHANNEL MARKING BUOY",
-        "BUOY NO",
-        "FAIRWAY BUOY",
-        "BUOY GROUP",
-        "MISSING BUOY",
-        "UNLIT BUOY"
-    ]
 
-    has_buoy_semantics = any(term in ctx['upper'] for term in BUOY_SEMANTIC_TERMS)
-
-    LINE_GEOMETRY_TERMS = [
-        "TRACKLINE",
-        "JOINING",
-        "PIPELINE",
-        "CABLE",
-        "ROUTE"
-    ]
-
-    has_line_geometry = any(kw in ctx['upper'] for kw in LINE_GEOMETRY_TERMS)
-
-    if has_buoy_semantics and not has_line_geometry:
-        return False
-
-    ROUTE_KEYWORDS = [
-        "ROUTE",
-        "ROUTE NO",
-        "ROUTE CENTERLINE",
-        "CENTERLINE COORDINATES",
-        "DOUBLE TRACK",
-        "TRACK WIDTH",
-        "TRANSIT ROUTE",
-        "CHANNEL WIDTH"
-    ]
-
-    TRACK_KEYWORDS = [
-        "TRACKLINE",
-        "JOINING",
-        "PIPELINE",
-        "CABLE",
-        "CHANNEL",
-        "TRACK LINE",
-        "TRACK LINE JOINING"
-    ]
-
+    ROUTE_KEYWORDS = ["ROUTE", "ROUTE NO", "ROUTE CENTERLINE", "CENTERLINE COORDINATES",
+                      "DOUBLE TRACK", "TRACK WIDTH", "TRANSIT ROUTE", "CHANNEL WIDTH"]
+    TRACK_KEYWORDS = ["TRACKLINE", "JOINING", "PIPELINE", "CABLE", "CHANNEL", "TRACK LINE", "TRACK LINE JOINING"]
     if not any(kw in ctx['upper'] for kw in ROUTE_KEYWORDS + TRACK_KEYWORDS):
         return False
 
@@ -1967,186 +1922,6 @@ def handle_no_anchor(ctx, container, message):
     )
     add_area(area_obj, container, message)
     return True
-# ----------------------------------------------------------------------
-# BUOY SEMANTIC LAYER v1
-# ----------------------------------------------------------------------
-
-BUOY_SUBTYPE_PATTERNS = [
-    ("CHANNEL_MARKING", re.compile(r'\bCHANNEL\s+MARKING\s+BUOYS?\b', re.IGNORECASE)),
-    ("CHANNEL",         re.compile(r'\bCHANNEL\s+BUOYS?\b', re.IGNORECASE)),
-    ("FAIRWAY",         re.compile(r'\bFAIRWAY\s+BUOYS?\b', re.IGNORECASE)),
-    ("SAFE_WATER",      re.compile(r'\bSAFE\s+WATER\s+BUOYS?\b', re.IGNORECASE)),
-    ("SPECIAL_MARK",    re.compile(r'\bSPECIAL\s+MARK\s+BUOYS?\b', re.IGNORECASE)),
-    ("BUOY_NO",         re.compile(r'\bBUOY\s+NO\b', re.IGNORECASE)),
-    ("BUOY_GROUP",      re.compile(r'\bBUOY\s+GROUP\b', re.IGNORECASE)),
-    ("BUOY",            re.compile(r'\bBUOYS?\b', re.IGNORECASE)),
-]
-
-BUOY_STATUS_PATTERNS = [
-    ("UNLIT",     re.compile(r'\bUNLIT\b', re.IGNORECASE)),
-    ("MISSING",   re.compile(r'\bMISSING\b', re.IGNORECASE)),
-    ("OFF_AIR",   re.compile(r'\bOFF\s+AIR\b', re.IGNORECASE)),
-    ("REMOVED",   re.compile(r'\bREMOVED\b', re.IGNORECASE)),
-    ("RETRIEVED", re.compile(r'\bRETRIEVED\b', re.IGNORECASE)),
-    ("SHIFTED",   re.compile(r'\bSHIFTED\b', re.IGNORECASE)),
-]
-
-
-def classify_buoy(text):
-    upper = text.upper()
-
-    # LIGHT UNLIT / LIGHTHOUSE UNLIT — это AtoN, не buoy
-    if (
-        "UNLIT" in upper
-        and "BUOY" not in upper
-        and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
-    ):
-        return None
-
-    subtype = None
-    for name, pattern in BUOY_SUBTYPE_PATTERNS:
-        if pattern.search(upper):
-            subtype = name
-            break
-
-    if subtype is None:
-        return None
-
-    status = "ACTIVE"
-    for name, pattern in BUOY_STATUS_PATTERNS:
-        if pattern.search(upper):
-            status = name
-            break
-
-    return {
-        "has_buoy": True,
-        "subtype": subtype,
-        "status": status,
-    }
-
-
-def buoy_style_color(check_danger, status):
-    """
-    ÐÐ¾Ð·Ð²ÑÐ°ÑÐ°ÐµÑ (style, color, checkDanger) Ð´Ð»Ñ Ð±ÑÑÐ².
-
-    Style 4 Ð¾Ð±ÑÐ·Ð°ÑÐµÐ»ÐµÐ½ Ð´Ð»Ñ buoy display.
-
-    ACTIVE:
-        S52colorcode = CHYLW
-
-    ÐÑÑ Ð¾ÑÑÐ°Ð»ÑÐ½Ð¾Ðµ:
-        S52colorcode = CHBRN
-
-    ÐÑÐ°ÑÐ½ÑÐ¹ Ð½Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÐµÑÑÑ.
-    """
-    style = 4
-
-    if status == "ACTIVE":
-        color = "CHYLW"
-    else:
-        color = "CHBRN"
-
-    return style, color, 0
-
-
-def build_buoy_label_description(ctx, coord, status):
-    nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
-
-    # ÐÑÐµÐ¼ Ð¿ÐµÑÐ²ÑÑ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð¸ Ð¾Ð±ÑÐµÐ·Ð°ÐµÐ¼ ÑÐµÐºÑÑ Ð´Ð¾ Ð½ÐµÑ
-    coord_pattern = re.compile(
-        r'\d{1,3}-\d{1,2}(?:\.\d+)?[NS]\s+\d{1,3}-\d{1,2}(?:\.\d+)?[EW]',
-        re.IGNORECASE
-    )
-    m = coord_pattern.search(nav_summary)
-
-    if m:
-        nav_summary = nav_summary[:m.start()].rstrip()
-        nav_summary = re.sub(r'[(\[\s,;:-]+$', '', nav_summary)
-
-    if not nav_summary:
-        nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
-
-    # ÐÑÐ»Ð¸ Ð±ÑÐ¹ Ð´ÐµÐ³ÑÐ°Ð´Ð¸ÑÐ¾Ð²Ð°Ð», Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ ÑÑÐ°ÑÑÑ, Ð¿Ð¾ÑÐ¾Ð¼Ñ ÑÑÐ¾ Ð² Ð¸ÑÑÐ¾Ð´Ð½Ð¾Ð¼
-    # ÑÐµÐºÑÑÐµ Ð¾Ð½ Ð¾Ð±ÑÑÐ½Ð¾ Ð½Ð°ÑÐ¾Ð´Ð¸ÑÑÑ Ð¿Ð¾ÑÐ»Ðµ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð¸ Ð±ÑÐ» Ð¾Ð±ÑÐµÐ·Ð°Ð½.
-    if status and status != "ACTIVE":
-        nav_summary = f"{nav_summary} {status}"
-
-    coord_text = f"{coord[0]:.6f} {coord[1]:.6f}"
-    return f"{nav_summary} | {coord_text}"
-
-
-def handle_buoy_semantics(ctx, container, message):
-    """
-    Buoy Semantic Layer v1.
-
-    ÐÑÐ»Ð¸ ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ðµ Ð¾Ð¿Ð¸ÑÑÐ²Ð°ÐµÑ Ð±ÑÐ¸ Ð¸ Ð½Ðµ ÑÐ¾Ð´ÐµÑÐ¶Ð¸Ñ ÑÐµÐ°Ð»ÑÐ½ÑÑ line-Ð³ÐµÐ¾Ð¼ÐµÑÑÐ¸Ñ,
-    ÑÐ¾Ð·Ð´Ð°ÑÑ Ð¾ÑÐ´ÐµÐ»ÑÐ½ÑÐµ labels Style 4 Ð´Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð¹ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ.
-
-    Line geometry Ð´Ð»Ñ buoy-only messages ÐÐ ÑÐ¾Ð·Ð´Ð°ÑÑÑÑ.
-    """
-    debug("PROCESS: handle_buoy_semantics")
-
-    if ctx['is_riglist']:
-        return False
-    upper = ctx['upper']
-    
-    if (
-        "UNLIT" in upper
-        and "BUOY" not in upper
-        and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
-    ):
-        return False
-
-    buoy = classify_buoy(ctx['block'])
-    if not buoy or not buoy.get("has_buoy"):
-        return False
-
-    LINE_GEOMETRY_TERMS = [
-        "TRACKLINE",
-        "JOINING",
-        "PIPELINE",
-         "ROUTE"
-    ]
-    HAZARD_CONTEXT_TERMS = [
-    "DERELICT",
-    "WRECK",
-    "SUNKEN",
-    "SUNK",
-    "OBSTRUCTION",
-    "SUBMERGED",
-    "UNMARKED",
-    ]
-
-    if any(term in ctx['upper'] for term in HAZARD_CONTEXT_TERMS):
-        return False
-    has_line_geometry = any(kw in ctx['upper'] for kw in LINE_GEOMETRY_TERMS)
-
-    if has_line_geometry:
-        return False
-
-    if len(ctx['coords']) < 1:
-        return False
-
-    style, color, check_danger = buoy_style_color(
-        check_danger=detect_check_danger(ctx['block']),
-        status=buoy["status"],
-    )
-
-    for coord in ctx['coords']:
-        desc = build_buoy_label_description(ctx, coord, buoy["status"])
-
-        label_obj = create_label(
-            style=style,
-            color=color,
-            check_danger=check_danger,
-            text=ctx['label_text'],
-            description=desc,
-            coord=coord
-        )
-        add_label(label_obj, container, message)
-
-    return True
-
 # -------------------- HANDLER REGISTRY --------------------
 PROCESS_HANDLERS = [
     handle_ice_report,
