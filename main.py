@@ -343,8 +343,7 @@ def detect_color(block):
         "WAR GAME", "WAR GAMES", "FIRING EXERCISE", "GUNNERY",
         "MINE CLEARANCE", "MINE SWEEPING", "AMMUNITION DUMP", "AMMUNITION DUMPING",
         "MILITARY MANOEUVRE", "MILITARY MANOEUVRES", "NAVAL DRILL", "MILITARY DRILL",
-        "WARSHIP", "NAVAL ACTIVITY", "MILITARY ACTIVITY", "DEFENCE OPERATION", "HAZARDOUS OPERATIONS", "ROCKET LAUNCHING",
-        "ICEBERG", "ICEBERGS"  
+        "WARSHIP", "NAVAL ACTIVITY", "MILITARY ACTIVITY", "DEFENCE OPERATION"
     ]):
         return "CHRED"
     if any(x in upper for x in ["FPSO", "FSO", "MODU", "RIG", "PLATFORM", "DRILL", "DRILLSHIP"]):
@@ -354,7 +353,7 @@ def detect_color(block):
 def detect_check_danger(block):
     upper = block.upper()
     if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING",
-                                "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION"]):
+                                "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION"]):
         return 1
     return 0
 
@@ -382,7 +381,7 @@ def parse_bounding_box(block):
 
 def get_point_style(block):
     upper = block.upper()
-    
+
     if detect_security_incident(block):
         debug("Security incident detected")
         return STYLE_SECURITY
@@ -1944,6 +1943,161 @@ def handle_no_anchor(ctx, container, message):
     )
     add_area(area_obj, container, message)
     return True
+# ----------------------------------------------------------------------
+# BUOY SEMANTIC LAYER v1
+# ----------------------------------------------------------------------
+
+BUOY_SUBTYPE_PATTERNS = [
+    ("CHANNEL_MARKING", re.compile(r'\bCHANNEL\s+MARKING\s+BUOYS?\b', re.IGNORECASE)),
+    ("CHANNEL",         re.compile(r'\bCHANNEL\s+BUOYS?\b', re.IGNORECASE)),
+    ("FAIRWAY",         re.compile(r'\bFAIRWAY\s+BUOYS?\b', re.IGNORECASE)),
+    ("SAFE_WATER",      re.compile(r'\bSAFE\s+WATER\s+BUOYS?\b', re.IGNORECASE)),
+    ("SPECIAL_MARK",    re.compile(r'\bSPECIAL\s+MARK\s+BUOYS?\b', re.IGNORECASE)),
+    ("BUOY_NO",         re.compile(r'\bBUOY\s+NO\b', re.IGNORECASE)),
+    ("BUOY_GROUP",      re.compile(r'\bBUOY\s+GROUP\b', re.IGNORECASE)),
+    ("BUOY",            re.compile(r'\bBUOYS?\b', re.IGNORECASE)),
+]
+
+BUOY_STATUS_PATTERNS = [
+    ("UNLIT",     re.compile(r'\bUNLIT\b', re.IGNORECASE)),
+    ("MISSING",   re.compile(r'\bMISSING\b', re.IGNORECASE)),
+    ("OFF_AIR",   re.compile(r'\bOFF\s+AIR\b', re.IGNORECASE)),
+    ("REMOVED",   re.compile(r'\bREMOVED\b', re.IGNORECASE)),
+    ("RETRIEVED", re.compile(r'\bRETRIEVED\b', re.IGNORECASE)),
+    ("SHIFTED",   re.compile(r'\bSHIFTED\b', re.IGNORECASE)),
+]
+
+
+def classify_buoy(text):
+    """
+    Определяет, относится ли сообщение к буям.
+
+    Returns:
+        dict: has_buoy, subtype, status
+        None: если buoy semantics не обнаружены.
+    """
+    upper = text.upper()
+
+    subtype = None
+    for name, pattern in BUOY_SUBTYPE_PATTERNS:
+        if pattern.search(upper):
+            subtype = name
+            break
+
+    if subtype is None:
+        return None
+
+    status = "ACTIVE"
+    for name, pattern in BUOY_STATUS_PATTERNS:
+        if pattern.search(upper):
+            status = name
+            break
+
+    return {
+        "has_buoy": True,
+        "subtype": subtype,
+        "status": status,
+    }
+
+
+def buoy_style_color(check_danger, status):
+    """
+    Возвращает (style, color, checkDanger) для буёв.
+
+    Style 4 обязателен для buoy display.
+
+    ACTIVE:
+        S52colorcode = CHYLW
+
+    Всё остальное:
+        S52colorcode = CHBRN
+
+    Красный не используется.
+    """
+    style = 4
+
+    if status == "ACTIVE":
+        color = "CHYLW"
+    else:
+        color = "CHBRN"
+
+    return style, color, 0
+
+
+def build_buoy_label_description(ctx, coord):
+    nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
+
+    coord_pattern = re.compile(
+        r'\d{1,3}-\d{1,2}(?:\.\d+)?[NS]\s+\d{1,3}-\d{1,2}(?:\.\d+)?[EW]',
+        re.IGNORECASE
+    )
+    m = coord_pattern.search(nav_summary)
+
+    if m:
+        nav_summary = nav_summary[:m.start()].rstrip()
+        nav_summary = re.sub(r'[(\[\s,;:-]+$', '', nav_summary)
+
+    if not nav_summary:
+        nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
+
+    coord_text = f"{coord[0]:.6f} {coord[1]:.6f}"
+    return f"{nav_summary} | {coord_text}"
+
+
+def handle_buoy_semantics(ctx, container, message):
+    """
+    Buoy Semantic Layer v1.
+
+    Если сообщение описывает буи и не содержит реальную line-геометрию,
+    создаёт отдельные labels Style 4 для каждой координаты.
+
+    Line geometry для buoy-only messages НЕ создаётся.
+    """
+    debug("PROCESS: handle_buoy_semantics")
+
+    if ctx['is_riglist']:
+        return False
+
+    buoy = classify_buoy(ctx['block'])
+    if not buoy or not buoy.get("has_buoy"):
+        return False
+
+    LINE_GEOMETRY_TERMS = [
+        "TRACKLINE",
+        "JOINING",
+        "PIPELINE",
+        "CABLE",
+        "ROUTE"
+    ]
+
+    has_line_geometry = any(kw in ctx['upper'] for kw in LINE_GEOMETRY_TERMS)
+
+    if has_line_geometry:
+        return False
+
+    if len(ctx['coords']) < 1:
+        return False
+
+    style, color, check_danger = buoy_style_color(
+        check_danger=detect_check_danger(ctx['block']),
+        status=buoy["status"],
+    )
+
+    for coord in ctx['coords']:
+        desc = build_buoy_label_description(ctx, coord)
+
+        label_obj = create_label(
+            style=style,
+            color=color,
+            check_danger=check_danger,
+            text=ctx['label_text'],
+            description=desc,
+            coord=coord
+        )
+        add_label(label_obj, container, message)
+
+    return True
+
 # -------------------- HANDLER REGISTRY --------------------
 PROCESS_HANDLERS = [
     handle_ice_report,
