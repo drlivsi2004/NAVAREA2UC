@@ -327,11 +327,7 @@ def sort_area_vertices(coords):
 
 def detect_style(block):
     upper = block.upper()
-    if any(x in upper for x in [
-        "WRECK", "SANK", "SUNK", "DERELICT", "OBSTRUCTION",
-        "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD",
-        "ICEBERG", "ICEBERGS"
-    ]):
+    if any(x in upper for x in ["WRECK", "SANK", "SUNK", "DERELICT"]):
         return 3
     if any(x in upper for x in ["FPSO", "FSO", "MODU", "RIG", "PLATFORM", "DRILLSHIP", "DRILL"]):
         return 5
@@ -341,8 +337,7 @@ def detect_color(block):
     upper = block.upper()
     if any(x in upper for x in [
         "WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING",
-        "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION",
-        "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD",
+        "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION",
         "NAVAL OPERATION", "NAVAL OPERATIONS", "NAVAL EXERCISE", "NAVAL EXERCISES",
         "MILITARY OPERATION", "MILITARY EXERCISE", "MILITARY EXERCISES",
         "WAR GAME", "WAR GAMES", "FIRING EXERCISE", "GUNNERY",
@@ -358,10 +353,8 @@ def detect_color(block):
 
 def detect_check_danger(block):
     upper = block.upper()
-    if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING", "NAVAL OPERATIONS", 
-                                "HAZARDOUS OPERATIONS", "ROCKET LAUNCHING", "ICEBERG", "ICEBERGS",
-                                 "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD",
-                                "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION"]):
+    if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING",
+                                "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION"]):
         return 1
     return 0
 
@@ -389,6 +382,11 @@ def parse_bounding_box(block):
 
 def get_point_style(block):
     upper = block.upper()
+    
+    if detect_security_incident(block):
+        debug("Security incident detected")
+        return STYLE_SECURITY
+    
     if any(x in upper for x in ["BUOY", "LIGHT", "SPECIAL MARK", "SPECIAL-MARK", "MOORING", "MOORING BUOY", "MOORING BUOYS"]):
         return 2
     return detect_style(block)
