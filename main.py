@@ -1649,6 +1649,55 @@ def handle_area(ctx, container, message):
             )
             add_area(area_obj, container, message)
             return True
+    
+    # ------------------------------------------------------------------
+    # 1.5. ARC-DEFINED AREA
+    # ------------------------------------------------------------------
+    arc_params = detect_arc_area(ctx['block'])
+
+    if arc_params:
+        center = arc_params["center"]
+        start = arc_params["start"]
+        end = arc_params["end"]
+
+        arc_points = generate_arc_points(
+            center=center,
+            start=start,
+            end=end,
+            steps=24,
+            direction="shortest",
+        )
+
+        # sector polygon
+        area_coords = [center] + arc_points
+
+        # удаляем подряд идущие дубликаты
+        cleaned = []
+        for pt in area_coords:
+            if not cleaned or pt != cleaned[-1]:
+                cleaned.append(pt)
+        area_coords = cleaned
+
+        if len(area_coords) >= 3:
+            area_coords = ensure_clockwise(area_coords)
+
+            debug(
+                f"ARC area detected:\n"
+                f"center={center}\n"
+                f"start={start}\n"
+                f"end={end}\n"
+                f"vertices={len(area_coords)}"
+            )
+
+            area_obj = create_area(
+                name=ctx['label_text'],
+                description=ctx['description'],
+                coords=area_coords,
+                color=detect_color(ctx['block']),
+                check_danger=detect_check_danger(ctx['block'])
+            )
+            add_area(area_obj, container, message)
+            return True
 
     # ------------------------------------------------------------------
     # 1.5. ARC-DEFINED AREA
