@@ -352,7 +352,7 @@ def detect_color(block):
 
 def detect_check_danger(block):
     upper = block.upper()
-    if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING",
+    if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING","HAZARDOUS OPERATIONS", "ROCKET LAUNCHING"
                                 "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION"]):
         return 1
     return 0
@@ -1361,54 +1361,17 @@ def handle_bounding_box(ctx, container, message):
     return True
 
 def extract_area_group_sections(block):
-    INVALID_AREA_NAMES = {
-        "BOUND", "BOUNDED", "OF", "DANGER", "DANGEROUS",
-        "OPERATIONS", "OPERATION",
-    }
+    """
+    Извлекает независимые группы областей из блока с grouped-area формулировками.
 
-    named_markers = list(re.finditer(
-        r'\b(?:DANGER\s+)?AREA\s+([A-Z][A-Z]+)\b',
-        block,
-        re.IGNORECASE
-    ))
+    Правило:
+      Маркер считается пространственной группой, только если:
+        1. Он находится после фразы AREA/AREAS BOUND BY / BOUNDED BY / DELIMITED BY.
+        2. Его локальный сегмент содержит >= 3 координаты.
 
-    if len(named_markers) > 1:
-        named_groups = []
-
-        for i, m in enumerate(named_markers):
-            zone_name = m.group(1).upper()
-
-            if zone_name in INVALID_AREA_NAMES:
-                continue
-
-            start = m.end()
-            end = named_markers[i + 1].start() if i + 1 < len(named_markers) else len(block)
-            segment = block[start:end].strip()
-
-            # ÐÐ¾Ð¿Ð¾Ð»Ð½Ð¸ÑÐµÐ»ÑÐ½Ð°Ñ Ð¾ÑÐ¸ÑÑÐºÐ°: ÑÐ±ÑÐ°ÑÑ ÑÐ»ÑÑÐ°Ð¹Ð½ÑÐ¹ ÑÐ²Ð¾ÑÑ ÑÐ»ÐµÐ´ÑÑÑÐµÐ¹ Ð·Ð¾Ð½Ñ
-            # (ÐµÑÐ»Ð¸ ÑÑÐ¾-ÑÐ¾ Ð¾ÑÑÐ°Ð»Ð¾ÑÑ Ð¿Ð¾ÑÐ»Ðµ Ð¾Ð±ÑÐµÐ·Ð°Ð½Ð¸Ñ)
-            next_marker_re = re.compile(
-                r'\b(?:DANGER\s+)?AREA\s+[A-Z][A-Z]+\b',
-                re.IGNORECASE
-            )
-            split_segments = next_marker_re.split(segment)
-            if split_segments:
-                segment = split_segments[0].strip()
-
-            coords = extract_coordinates(segment)
-            if len(coords) >= 3:
-                named_groups.append((zone_name, segment))
-
-        if named_groups:
-            debug(
-                f"Named area groups detected: "
-                f"{[g[0] for g in named_groups]}"
-            )
-            return named_groups
-
-    # ------------------------------------------------------------------
-    # Ð¡ÑÐ°ÑÐ°Ñ Ð»Ð¾Ð³Ð¸ÐºÐ° Ð´Ð»Ñ (A)/(B)/A./B.
-    # ------------------------------------------------------------------
+    Расписания (A) 1200-1800 UTC и точечные ссылки (A) 19-14.6N 084-53.7E
+    не считаются группами.
+    """
     context_match = re.search(
         r'(?:AREA|AREAS|DANGER AREA|DANGER AREAS)\s+(?:BOUND BY|BOUNDED BY|DELIMITED BY)',
         block,
@@ -1457,61 +1420,6 @@ def extract_area_group_sections(block):
             groups.append((letter, segment.strip()))
 
     return groups
-def build_group_area_description(ctx, area_id, area_text):
-    nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
-
-    is_named = len(area_id) > 1
-
-    if is_named:
-        # ÐÐ±ÑÐµÐ·Ð°ÐµÐ¼ Ð´Ð¾ Ð¿ÐµÑÐ²Ð¾Ð³Ð¾ named area Ð¼Ð°ÑÐºÐµÑÐ°, ÑÑÐ¾Ð±Ñ ÑÐ±ÑÐ°ÑÑ Ð²ÑÐµ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð·Ð¾Ð½
-        first_named_marker = re.search(
-            r'\b(?:DANGER\s+)?AREA\s+[A-Z][A-Z]+\b',
-            nav_summary,
-            re.IGNORECASE
-        )
-        if first_named_marker:
-            nav_summary = nav_summary[:first_named_marker.start()].rstrip()
-            # ÑÐ±ÑÐ°ÑÑ Ð²Ð¸ÑÑÑÐ¸Ðµ Ð·Ð°Ð¿ÑÑÑÐµ/Ð¿ÑÐ¾Ð±ÐµÐ»Ñ
-            nav_summary = re.sub(r'[,\s]+$', '', nav_summary)
-
-        group_header = f"AREA {area_id}"
-    else:
-        boundary_match = re.search(
-            r'\b(?:IN\s+)?(?:DANGER\s+)?AREAS?\s+(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\b',
-            nav_summary,
-            re.IGNORECASE
-        )
-        if boundary_match:
-            nav_summary = nav_summary[:boundary_match.start()].rstrip()
-
-        group_header = f"ZONE {area_id}"
-
-    if not nav_summary:
-        nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
-
-    coords_text = sanitize_xml_attribute(" ".join(area_text.split()))
-
-    MIN_SUMMARY = 120
-    separators_len = 2  # Ð´Ð²Ð° Ð¿ÐµÑÐµÐ½Ð¾ÑÐ° ÑÑÑÐ¾ÐºÐ¸
-
-    fixed_len = MIN_SUMMARY + len(group_header) + separators_len
-
-    if fixed_len > LEGACY_MAX_DESC:
-        available = max(0, LEGACY_MAX_DESC - len(group_header) - separators_len)
-        nav_summary = nav_summary[:available].rstrip()
-        coords_text = ""
-    else:
-        available_for_coords = LEGACY_MAX_DESC - fixed_len
-
-        if len(coords_text) > available_for_coords:
-            coords_text = coords_text[:available_for_coords].rstrip()
-
-        max_summary = LEGACY_MAX_DESC - len(group_header) - len(coords_text) - separators_len
-
-        if len(nav_summary) > max_summary:
-            nav_summary = nav_summary[:max_summary].rstrip()
-
-    return f"{nav_summary}\n{group_header}\n{coords_text}"
 
 def handle_area(ctx, container, message):
     debug("PROCESS: handle_area")
@@ -1544,39 +1452,42 @@ def handle_area(ctx, container, message):
             nav_summary,
             re.IGNORECASE
         )
-
         if boundary_match:
             nav_summary = nav_summary[:boundary_match.start()].rstrip()
 
-        # Если контекст пустой, используем имя NAVAREA
-        if not nav_summary:
-            nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
-
-        coords_text = sanitize_xml_attribute(" ".join(area_text.split()))
         group_header = f"ZONE {area_id}"
 
-        separators_len = 2  # два переноса строки
+    if not nav_summary:
+        nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
 
-        fixed_len = MIN_SUMMARY + len(group_header) + separators_len
+    coords_text = sanitize_xml_attribute(" ".join(area_text.split()))
 
-        if fixed_len > LEGACY_MAX_DESC:
-            # Экстремально маленький лимит:
-            # сохраняем заголовок и урезанный summary
-            available = max(0, LEGACY_MAX_DESC - len(group_header) - separators_len)
-            nav_summary = nav_summary[:available].rstrip()
-            coords_text = ""
-        else:
-            available_for_coords = LEGACY_MAX_DESC - fixed_len
+    MIN_SUMMARY = 120
+    separators_len = 2  # два переноса строки
 
-            if len(coords_text) > available_for_coords:
-                coords_text = coords_text[:available_for_coords].rstrip()
+    fixed_len = MIN_SUMMARY + len(group_header) + separators_len
 
-            max_summary = LEGACY_MAX_DESC - len(group_header) - len(coords_text) - separators_len
+    if fixed_len > LEGACY_MAX_DESC:
+        available = max(0, LEGACY_MAX_DESC - len(group_header) - separators_len)
+        nav_summary = nav_summary[:available].rstrip()
+        coords_text = ""
+    else:
+        available_for_coords = LEGACY_MAX_DESC - fixed_len
 
-            if len(nav_summary) > max_summary:
-                nav_summary = nav_summary[:max_summary].rstrip()
+        if len(coords_text) > available_for_coords:
+            coords_text = coords_text[:available_for_coords].rstrip()
 
-        return f"{nav_summary}\n{group_header}\n{coords_text}"
+        max_summary = LEGACY_MAX_DESC - len(group_header) - len(coords_text) - separators_len
+
+        if len(nav_summary) > max_summary:
+            nav_summary = nav_summary[:max_summary].rstrip()
+
+    return f"{nav_summary}\n{group_header}\n{coords_text}"
+
+def handle_area(ctx, container, message):
+    debug("PROCESS: handle_area")
+    if ctx['is_riglist']:
+        return False
 
     # ------------------------------------------------------------------
     # 1. Grouped Areas / Named Areas
@@ -1621,7 +1532,7 @@ def handle_area(ctx, container, message):
             )
             add_area(area_obj, container, message)
             return True
-    
+
     # ------------------------------------------------------------------
     # 1.5. ARC-DEFINED AREA
     # ------------------------------------------------------------------
@@ -1640,10 +1551,8 @@ def handle_area(ctx, container, message):
             direction="shortest",
         )
 
-        # sector polygon
         area_coords = [center] + arc_points
 
-        # удаляем подряд идущие дубликаты
         cleaned = []
         for pt in area_coords:
             if not cleaned or pt != cleaned[-1]:
@@ -1672,47 +1581,7 @@ def handle_area(ctx, container, message):
             return True
 
     # ------------------------------------------------------------------
-    # 1.5. ARC-DEFINED AREA
-    # ------------------------------------------------------------------
-    arc_params = detect_arc_area(ctx['block'])
-
-    if arc_params:
-        center = arc_params["center"]
-        start = arc_params["start"]
-        end = arc_params["end"]
-
-        arc_points = generate_arc_points(
-            center=center,
-            start=start,
-            end=end,
-            steps=24,
-            direction="shortest",
-        )
-
-        area_coords = [center] + arc_points
-
-        area_coords = normalize_area_vertices(area_coords)
-
-        debug(
-                f"ARC area detected:\n"
-                f"center={center}\n"
-                f"start={start}\n"
-                f"end={end}\n"
-                f"vertices={len(area_coords)}"
-              )
-
-        area_obj = create_area(
-                name=ctx['label_text'],
-                description=ctx['description'],
-                coords=area_coords,
-                color=detect_color(ctx['block']),
-                check_danger=detect_check_danger(ctx['block'])
-            )
-        add_area(area_obj, container, message)
-        return True
-
-    # ------------------------------------------------------------------
-    # 2. Waiting / Holding / Anchorage Area shortcut
+    # 2. Waiting / holding / anchorage area shortcut
     # ------------------------------------------------------------------
     if any(x in ctx['upper'] for x in [
         "WAITING AREA",
@@ -2024,9 +1893,10 @@ def buoy_style_color(check_danger, status):
     return style, color, 0
 
 
-def build_buoy_label_description(ctx, coord):
+def build_buoy_label_description(ctx, coord, status):
     nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
 
+    # Ищем первую координату и обрезаем текст до неё
     coord_pattern = re.compile(
         r'\d{1,3}-\d{1,2}(?:\.\d+)?[NS]\s+\d{1,3}-\d{1,2}(?:\.\d+)?[EW]',
         re.IGNORECASE
@@ -2039,6 +1909,11 @@ def build_buoy_label_description(ctx, coord):
 
     if not nav_summary:
         nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
+
+    # Если буй деградировал, добавляем статус, потому что в исходном
+    # тексте он обычно находится после координаты и был обрезан.
+    if status and status != "ACTIVE":
+        nav_summary = f"{nav_summary} {status}"
 
     coord_text = f"{coord[0]:.6f} {coord[1]:.6f}"
     return f"{nav_summary} | {coord_text}"
@@ -2084,7 +1959,7 @@ def handle_buoy_semantics(ctx, container, message):
     )
 
     for coord in ctx['coords']:
-        desc = build_buoy_label_description(ctx, coord)
+        desc = build_buoy_label_description(ctx, coord, buoy["status"])
 
         label_obj = create_label(
             style=style,

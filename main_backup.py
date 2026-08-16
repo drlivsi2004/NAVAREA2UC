@@ -173,7 +173,7 @@ def detect_color(block):
         "WAR GAME", "WAR GAMES", "FIRING EXERCISE", "GUNNERY",
         "MINE CLEARANCE", "MINE SWEEPING", "AMMUNITION DUMP", "AMMUNITION DUMPING",
         "MILITARY MANOEUVRE", "MILITARY MANOEUVRES", "NAVAL DRILL", "MILITARY DRILL",
-        "WARSHIP", "NAVAL ACTIVITY", "MILITARY ACTIVITY", "DEFENCE OPERATION"
+        "WARSHIP", "NAVAL ACTIVITY", "MILITARY ACTIVITY", "DEFENCE OPERATION", "HAZARDOUS OPERATIONS", "ROCKET LAUNCHING"
     ]):
         return "CHRED"
     if any(x in upper for x in ["FPSO", "FSO", "MODU", "RIG", "PLATFORM", "DRILL", "DRILLSHIP"]):
@@ -1068,35 +1068,87 @@ def handle_bounding_box(ctx, container, message):
 
 def extract_area_group_sections(block):
     """
-    Extract independent area groups from grouped area blocks.
+    Извлекает независимые группы областей.
 
-    Правило:
-      Маркер считается пространственной группой только если:
-        1. находится после AREA BOUND BY / AREAS BOUND BY /
-           DANGER AREA BOUND BY / BOUNDED BY
-        2. его локальный сегмент содержит >= 3 координаты.
+    Поддерживает:
 
-    Расписания (A) 1200-1800 UTC
-    и точечные ссылки (A) 19-14.6N 084-53.7E
-    не считаются группами.
+      1. Буквенные маркеры:
+           (A) ...
+           (B) ...
+           A.
+           B.
+
+      2. Именованные зоны:
+           AREA ALFA ...
+           AREA BRAVO ...
+           AREA CHARLIE ...
+           DANGER AREA ALFA ...
+           DANGER AREA BRAVO ...
+
+    Ложные служебные слова отфильтровываются.
     """
-    # Найти начало области координат после boundary-фразы
+    INVALID_AREA_NAMES = {
+        "BOUND",
+        "BOUNDED",
+        "OF",
+        "DANGER",
+        "DANGEROUS",
+        "OPERATIONS",
+        "OPERATION",
+    }
+
+    # ------------------------------------------------------------------
+    # Именованные AREA-зоны: ALFA / BRAVO / CHARLIE / NORTH / ...
+    # Поддержка DANGER AREA ALFA / DANGER AREA BRAVO
+    # ------------------------------------------------------------------
+    named_markers = list(re.finditer(
+        r'\b(?:DANGER\s+)?AREA\s+([A-Z][A-Z]+)\b',
+        block,
+        re.IGNORECASE
+    ))
+
+    if len(named_markers) > 1:
+        named_groups = []
+
+        for i, m in enumerate(named_markers):
+            zone_name = m.group(1).upper()
+
+            # Пропускаем служебные слова
+            if zone_name in INVALID_AREA_NAMES:
+                continue
+
+            start = m.end()
+            end = named_markers[i + 1].start() if i + 1 < len(named_markers) else len(block)
+            segment = block[start:end].strip()
+
+            coords = extract_coordinates(segment)
+            if len(coords) >= 3:
+                named_groups.append((zone_name, segment))
+
+        if named_groups:
+            debug(
+                f"Named area groups detected: "
+                f"{[g[0] for g in named_groups]}"
+            )
+            return named_groups
+
+    # ------------------------------------------------------------------
+    # Существующая логика для (A)/(B)/A./B.
+    # ------------------------------------------------------------------
     context_match = re.search(
         r'(?:AREA|AREAS|DANGER AREA|DANGER AREAS)\s+(?:BOUND BY|BOUNDED BY|DELIMITED BY)',
         block,
         re.IGNORECASE
     )
+
     if not context_match:
         return []
 
     search_block = block[context_match.end():]
 
-    # Собрать маркеры двух форматов:
-    #   - начало строки: (A) или A.
-    #   - inline: (A) внутри строки
     markers = {}
 
-    # line-start markers
+    # Маркеры вида: (A) или A. в начале строки
     for m in re.finditer(
         r'(?:^|\n)\s*(?:\(([A-Z])\)|([A-Z])\.)\s*',
         search_block,
@@ -1105,21 +1157,20 @@ def extract_area_group_sections(block):
         letter = m.group(1) or m.group(2)
         markers[m.start()] = letter.upper()
 
-    # inline markers
+    # Inline-маркеры вида: ... (A) ... в середине текста
     for m in re.finditer(r'\(([A-Z])\)\s*', search_block):
         markers[m.start()] = m.group(1).upper()
 
     if not markers:
         return []
 
-    sorted_markers = sorted(markers.items())  # (pos, letter)
+    sorted_markers = sorted(markers.items())
 
     groups = []
     for i, (pos, letter) in enumerate(sorted_markers):
         end = sorted_markers[i + 1][0] if i + 1 < len(sorted_markers) else len(search_block)
         segment = search_block[pos:end]
 
-        # Убрать маркер из начала сегмента
         segment = re.sub(
             r'^\s*(?:\([A-Z]\)|[A-Z]\.)\s*',
             '',
@@ -1128,7 +1179,6 @@ def extract_area_group_sections(block):
             flags=re.IGNORECASE
         )
 
-        # Локальные координаты — ключевая проверка
         coords = extract_coordinates(segment)
 
         if len(coords) >= 3:
