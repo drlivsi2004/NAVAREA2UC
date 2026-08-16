@@ -339,22 +339,6 @@ def detect_style(block):
 
 def detect_color(block):
     upper = block.upper()
-    
-    if detect_security_incident(block):
-        return "CHRED"
-    if any(x in upper for x in [
-        "SEA ICE LIMIT",
-        "SEA ICE",
-        "ICE LIMIT",
-    ]):
-        return "NINFO"
-            
-    if any(x in upper for x in [
-        "SEISMIC SURVEY",
-        "SURVEY OPERATIONS",
-        "ROUTE SURVEY",
-    ]):
-        return "NINFO"
     if any(x in upper for x in [
         "WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING",
         "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION",
@@ -405,16 +389,6 @@ def parse_bounding_box(block):
 
 def get_point_style(block):
     upper = block.upper()
-
-    if any(x in upper for x in [
-        "DERELICT", "WRECK", "SUNKEN", "SUNK", "OBSTRUCTION", "ICEBERG", "ICEBERGS",
-        "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD"
-    ]):
-        return 3
-    if detect_security_incident(block):
-        debug("Security incident detected")
-        return STYLE_SECURITY
-    
     if any(x in upper for x in ["BUOY", "LIGHT", "SPECIAL MARK", "SPECIAL-MARK", "MOORING", "MOORING BUOY", "MOORING BUOYS"]):
         return 2
     return detect_style(block)
@@ -527,11 +501,8 @@ def is_target_object_type(block):
         "SERVICES UNRELIABLE"
     ]
     return any(t in upper for t in targets)
-def detect_security_incident(text):
-    """
-    Разбивает блок на нумерованные секции (2., 3., ...) и возвращает объекты.
-    Поддерживает ледовые бюллетени и подобные сообщения.
-    """
+
+def parse_structured_sections(block):
     if not re.search(r'(?:^|\n)\s*\d+\.\s+', block):
         return None
 
@@ -1013,8 +984,12 @@ GEOMETRY_KEYWORDS = [
     "WAITING AREA", "HOLDING AREA", "ANCHORAGE AREA", "TEMPORARY STAY AREA",
     "PIPELINE", "CABLE", "JOINING"
 ]
+BOUNDARY_LINE_PATTERN = re.compile(
+    r'\b(?:TO\s+)?(?:NORTH(?:ERN)?|SOUTH(?:ERN)?|EAST(?:ERN)?|WEST(?:ERN)?)\s+OF\s+LINE\b',
+    re.IGNORECASE,
+)
 
-# -------------------- MIXED GEOMETRY HANDLER (исправленный) --------------------
+# -------------------- MIXED GEOMETRY HANDLER --------------------
 def extract_mixed_geometry_sections(block):
     sections = []
     subsection_split = re.search(r'\n\d+\.\d+\.\d+\.', block)
