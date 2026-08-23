@@ -1,0 +1,132 @@
+NAVAREA XVII (CANADA) - WARNINGS IN FORCE - AS AT 120900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 64/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: 67/2026, 68/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2019 SERIES: 92.
+
+2022 SERIES: 58.
+
+2023 SERIES: 53.
+
+2025 SERIES: 7, 92, 94, 95, 103.
+
+2026 SERIES: 64.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 92/2019
+041130 UTC MAR 22
+Amundsen Gulf
+Franklin Bay
+Chart CHS         7665
+1.Scientific sub-surface mooring
+established 70-02.434N 126-18.404W top float 223 metres
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 58/2022
+051130 UTC AUG 22
+Arctic
+Mackenzie Bay
+Chart CHS         7661, 
+        7662
+Shingle Point Racon inoperative
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 53/2023
+111130 UTC AUG 23
+Beaufort Sea
+Chart CHS         7662, 
+        7663
+PULLEN ISLAND LIGHT 69 46.406N 134
+24.070W, RACON X-BAND INOPERATIVE
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 7/2025
+311130 UTC Jan 25
+Beaufort Sea
+Chart CHS         NOAA 16004
+1. Scientific sub-surface mooring AON/BS3
+established 71-23.81N 152-00.19W depth 153 metres.
+2. Scientific sub-surface mooring
+AON/BS1 established 71-18.49N 152-08.14W depth 57 metres.
+3. Cancel NAVAREA XVII 51/19
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 92/2025
+221130 UTC Aug 25
+Beaufort Sea
+Mackenzie Bay
+Chart CHS         7662
+1. PITT ISLAND RACON, 69-09N 136-11W,
+OUT OF SERVICE
+2. CANCELS NAVAREA XVII 91/25
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 94/2025
+291130 UTC Aug 25
+Arctic
+BEAUFORT SEA
+Chart CHS         16003
+1. SEDIMENT TRAP ESTABLISHED 74-31.37N
+161-55.88W, TOP FLOAT 30 METERS, TOTAL LENGTH 1655 METERS.
+2. CANCELS NAVAREA XVII 128/24.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 95/2025
+291130 UTC Aug 25
+Arctic, 
+        Beaufort Sea
+1. SCIENTIFIC MOORINGS ESTABLISHED:
+A. 71-44.06N
+155-09.84W, TOP FLOAT 20 METERS
+B. 71-47.78N 155-20.81W, TOP FLOAT 20 METERS
+C. 71-40.38N
+154-59.99W, TOP FLOAT 20 METERS
+2. CANCELS NAVAREA XVII 127/24
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 103/2025
+261130 UTC Sep 25
+Beaufort Sea
+Chart CHS         7685
+TUKTOYAKTUK ISLAND RACON, 69-27.35N 132-59.97W, OUT
+OF SERVICE
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XVII 64/2026
+071234 UTC AUG 2026
+1.NAVAREA XVII WARNINGS IN FORCE AT 071130 UTC AUG 26:
+2019 SERIES: 92.
+2022 SERIES: 58.
+2023 SERIES: 53.
+2025 SERIES: 7, 92, 94, 95, 103.
+2026 SERIES: 64.
+NOTES:
+A. NAVAREA XVII
+WARNINGS LESS THAN 42 DAYS OLD ARE PROMULGATED VIA SAFETYNET AND SAFETYCAST.
+B. THE
+COMPLETE TEXTS OF ALL IN-FORCE NAVAREA XVII WARNINGS ARE AVAILABLE FROM THE CANADIAN
+COAST GUARD WEBSITE AT HTTPS://WWW.CCG-GCC.GC.CA/MCTS-SCTM/NAVWARN-AVNAV-CA-ENG.HTML.
+ALTERNATIVELY, THESE MAY BE REQUESTED BY EMAIL FROM NAVAREA XVII OPERATIONS AT
+NAVAREA17.18@INNAV.GC.CA.
+2. CANCEL NAVAREA XVII 63/2026.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.
