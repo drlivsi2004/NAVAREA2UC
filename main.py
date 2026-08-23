@@ -500,8 +500,8 @@ def is_target_object_type(block):
     return any(t in upper for t in targets)
 
 def parse_structured_sections(block):
-    if not re.search(r'(?:^|\n)\s*\d+\.\s+', block):
-        return None
+    if not re.search(r'(?:^|\n)\s*\d+\.\s*', block):
+         return None
 
     parts = re.split(r'\n\s*(\d+)\.\s*', block)
     sections = []
@@ -985,7 +985,6 @@ BOUNDARY_LINE_PATTERN = re.compile(
     r'\b(?:TO\s+)?(?:NORTH(?:ERN)?|SOUTH(?:ERN)?|EAST(?:ERN)?|WEST(?:ERN)?)\s+OF\s+LINE\b',
     re.IGNORECASE,
 )
-
 # -------------------- MIXED GEOMETRY HANDLER --------------------
 def extract_mixed_geometry_sections(block):
     sections = []
@@ -1463,7 +1462,7 @@ def handle_area(ctx, container, message):
     coords_text = sanitize_xml_attribute(" ".join(area_text.split()))
 
     MIN_SUMMARY = 120
-    separators_len = 2  # два переноса строки
+    separators_len = 2  # Ð´Ð²Ð° Ð¿ÐµÑÐµÐ½Ð¾ÑÐ° ÑÑÑÐ¾ÐºÐ¸
 
     fixed_len = MIN_SUMMARY + len(group_header) + separators_len
 
@@ -1553,32 +1552,25 @@ def handle_area(ctx, container, message):
 
         area_coords = [center] + arc_points
 
-        cleaned = []
-        for pt in area_coords:
-            if not cleaned or pt != cleaned[-1]:
-                cleaned.append(pt)
-        area_coords = cleaned
+        area_coords = normalize_area_vertices(area_coords)
 
-        if len(area_coords) >= 3:
-            area_coords = ensure_clockwise(area_coords)
-
-            debug(
+        debug(
                 f"ARC area detected:\n"
                 f"center={center}\n"
                 f"start={start}\n"
                 f"end={end}\n"
                 f"vertices={len(area_coords)}"
-            )
+              )
 
-            area_obj = create_area(
+        area_obj = create_area(
                 name=ctx['label_text'],
                 description=ctx['description'],
                 coords=area_coords,
                 color=detect_color(ctx['block']),
                 check_danger=detect_check_danger(ctx['block'])
             )
-            add_area(area_obj, container, message)
-            return True
+        add_area(area_obj, container, message)
+        return True
 
     # ------------------------------------------------------------------
     # 2. Waiting / holding / anchorage area shortcut
@@ -1670,6 +1662,7 @@ def handle_sublabels(ctx, container, message):
     debug("PROCESS: handle_sublabels")
     if ctx['is_riglist'] or ctx.get('is_letter_partition', False):
         return False
+
     if any(kw in ctx['upper'] for kw in GEOMETRY_KEYWORDS):
         return False
 
@@ -1838,14 +1831,15 @@ BUOY_STATUS_PATTERNS = [
 
 
 def classify_buoy(text):
-    """
-    Определяет, относится ли сообщение к буям.
-
-    Returns:
-        dict: has_buoy, subtype, status
-        None: если buoy semantics не обнаружены.
-    """
     upper = text.upper()
+
+    # LIGHT UNLIT / LIGHTHOUSE UNLIT — это AtoN, не buoy
+    if (
+        "UNLIT" in upper
+        and "BUOY" not in upper
+        and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
+    ):
+        return None
 
     subtype = None
     for name, pattern in BUOY_SUBTYPE_PATTERNS:
@@ -1871,17 +1865,17 @@ def classify_buoy(text):
 
 def buoy_style_color(check_danger, status):
     """
-    Возвращает (style, color, checkDanger) для буёв.
+    ÐÐ¾Ð·Ð²ÑÐ°ÑÐ°ÐµÑ (style, color, checkDanger) Ð´Ð»Ñ Ð±ÑÑÐ².
 
-    Style 4 обязателен для buoy display.
+    Style 4 Ð¾Ð±ÑÐ·Ð°ÑÐµÐ»ÐµÐ½ Ð´Ð»Ñ buoy display.
 
     ACTIVE:
         S52colorcode = CHYLW
 
-    Всё остальное:
+    ÐÑÑ Ð¾ÑÑÐ°Ð»ÑÐ½Ð¾Ðµ:
         S52colorcode = CHBRN
 
-    Красный не используется.
+    ÐÑÐ°ÑÐ½ÑÐ¹ Ð½Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÐµÑÑÑ.
     """
     style = 4
 
@@ -1896,7 +1890,7 @@ def buoy_style_color(check_danger, status):
 def build_buoy_label_description(ctx, coord, status):
     nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
 
-    # Ищем первую координату и обрезаем текст до неё
+    # ÐÑÐµÐ¼ Ð¿ÐµÑÐ²ÑÑ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð¸ Ð¾Ð±ÑÐµÐ·Ð°ÐµÐ¼ ÑÐµÐºÑÑ Ð´Ð¾ Ð½ÐµÑ
     coord_pattern = re.compile(
         r'\d{1,3}-\d{1,2}(?:\.\d+)?[NS]\s+\d{1,3}-\d{1,2}(?:\.\d+)?[EW]',
         re.IGNORECASE
@@ -1910,8 +1904,8 @@ def build_buoy_label_description(ctx, coord, status):
     if not nav_summary:
         nav_summary = sanitize_xml_attribute(ctx.get('navarea_name', ''))
 
-    # Если буй деградировал, добавляем статус, потому что в исходном
-    # тексте он обычно находится после координаты и был обрезан.
+    # ÐÑÐ»Ð¸ Ð±ÑÐ¹ Ð´ÐµÐ³ÑÐ°Ð´Ð¸ÑÐ¾Ð²Ð°Ð», Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ ÑÑÐ°ÑÑÑ, Ð¿Ð¾ÑÐ¾Ð¼Ñ ÑÑÐ¾ Ð² Ð¸ÑÑÐ¾Ð´Ð½Ð¾Ð¼
+    # ÑÐµÐºÑÑÐµ Ð¾Ð½ Ð¾Ð±ÑÑÐ½Ð¾ Ð½Ð°ÑÐ¾Ð´Ð¸ÑÑÑ Ð¿Ð¾ÑÐ»Ðµ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð¸ Ð±ÑÐ» Ð¾Ð±ÑÐµÐ·Ð°Ð½.
     if status and status != "ACTIVE":
         nav_summary = f"{nav_summary} {status}"
 
@@ -1923,14 +1917,22 @@ def handle_buoy_semantics(ctx, container, message):
     """
     Buoy Semantic Layer v1.
 
-    Если сообщение описывает буи и не содержит реальную line-геометрию,
-    создаёт отдельные labels Style 4 для каждой координаты.
+    ÐÑÐ»Ð¸ ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ðµ Ð¾Ð¿Ð¸ÑÑÐ²Ð°ÐµÑ Ð±ÑÐ¸ Ð¸ Ð½Ðµ ÑÐ¾Ð´ÐµÑÐ¶Ð¸Ñ ÑÐµÐ°Ð»ÑÐ½ÑÑ line-Ð³ÐµÐ¾Ð¼ÐµÑÑÐ¸Ñ,
+    ÑÐ¾Ð·Ð´Ð°ÑÑ Ð¾ÑÐ´ÐµÐ»ÑÐ½ÑÐµ labels Style 4 Ð´Ð»Ñ ÐºÐ°Ð¶Ð´Ð¾Ð¹ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ.
 
-    Line geometry для buoy-only messages НЕ создаётся.
+    Line geometry Ð´Ð»Ñ buoy-only messages ÐÐ ÑÐ¾Ð·Ð´Ð°ÑÑÑÑ.
     """
     debug("PROCESS: handle_buoy_semantics")
 
     if ctx['is_riglist']:
+        return False
+    upper = ctx['upper']
+    
+    if (
+        "UNLIT" in upper
+        and "BUOY" not in upper
+        and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
+    ):
         return False
 
     buoy = classify_buoy(ctx['block'])
@@ -1941,8 +1943,7 @@ def handle_buoy_semantics(ctx, container, message):
         "TRACKLINE",
         "JOINING",
         "PIPELINE",
-        "CABLE",
-        "ROUTE"
+         "ROUTE"
     ]
 
     has_line_geometry = any(kw in ctx['upper'] for kw in LINE_GEOMETRY_TERMS)
