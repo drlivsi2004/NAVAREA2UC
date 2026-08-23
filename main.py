@@ -327,7 +327,11 @@ def sort_area_vertices(coords):
 
 def detect_style(block):
     upper = block.upper()
-    if any(x in upper for x in ["WRECK", "SANK", "SUNK", "DERELICT"]):
+    if any(x in upper for x in [
+        "WRECK", "SANK", "SUNK", "DERELICT", "OBSTRUCTION",
+        "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD",
+        "ICEBERG", "ICEBERGS"
+    ]):
         return 3
     if any(x in upper for x in ["FPSO", "FSO", "MODU", "RIG", "PLATFORM", "DRILLSHIP", "DRILL"]):
         return 5
@@ -335,15 +339,33 @@ def detect_style(block):
 
 def detect_color(block):
     upper = block.upper()
+    
+    if detect_security_incident(block):
+        return "CHRED"
+    if any(x in upper for x in [
+        "SEA ICE LIMIT",
+        "SEA ICE",
+        "ICE LIMIT",
+    ]):
+        return "NINFO"
+            
+    if any(x in upper for x in [
+        "SEISMIC SURVEY",
+        "SURVEY OPERATIONS",
+        "ROUTE SURVEY",
+    ]):
+        return "NINFO"
     if any(x in upper for x in [
         "WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING",
-        "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION",
+        "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION",
+        "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD",
         "NAVAL OPERATION", "NAVAL OPERATIONS", "NAVAL EXERCISE", "NAVAL EXERCISES",
         "MILITARY OPERATION", "MILITARY EXERCISE", "MILITARY EXERCISES",
         "WAR GAME", "WAR GAMES", "FIRING EXERCISE", "GUNNERY",
         "MINE CLEARANCE", "MINE SWEEPING", "AMMUNITION DUMP", "AMMUNITION DUMPING",
         "MILITARY MANOEUVRE", "MILITARY MANOEUVRES", "NAVAL DRILL", "MILITARY DRILL",
-        "WARSHIP", "NAVAL ACTIVITY", "MILITARY ACTIVITY", "DEFENCE OPERATION"
+        "WARSHIP", "NAVAL ACTIVITY", "MILITARY ACTIVITY", "DEFENCE OPERATION", "HAZARDOUS OPERATIONS", "ROCKET LAUNCHING",
+        "ICEBERG", "ICEBERGS"  
     ]):
         return "CHRED"
     if any(x in upper for x in ["FPSO", "FSO", "MODU", "RIG", "PLATFORM", "DRILL", "DRILLSHIP"]):
@@ -352,7 +374,9 @@ def detect_color(block):
 
 def detect_check_danger(block):
     upper = block.upper()
-    if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING","HAZARDOUS OPERATIONS", "ROCKET LAUNCHING"
+    if any(x in upper for x in ["WAR RISK AREA", "MINE DANGER", "FIRING PRACTICE", "FIRING", "NAVAL OPERATIONS", 
+                                "HAZARDOUS OPERATIONS", "ROCKET LAUNCHING", "ICEBERG", "ICEBERGS",
+                                 "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD",
                                 "WRECK", "SANK", "SUNK", "DERELICT", "DANGER", "PROHIBITED", "EXCLUSION", "OBSTRUCTION"]):
         return 1
     return 0
@@ -382,6 +406,11 @@ def parse_bounding_box(block):
 def get_point_style(block):
     upper = block.upper()
 
+    if any(x in upper for x in [
+        "DERELICT", "WRECK", "SUNKEN", "SUNK", "OBSTRUCTION", "ICEBERG", "ICEBERGS",
+        "SUBMERGED WELLHEAD", "SUBMERGED OBJECT", "UNMARKED SUBMERGED WELLHEAD"
+    ]):
+        return 3
     if detect_security_incident(block):
         debug("Security incident detected")
         return STYLE_SECURITY
@@ -402,12 +431,11 @@ def is_multi_point_navarea(block):
         "MOORINGS DEPLOYED",
         "OCEAN BOTTOM MOORINGS",
         "REMOTE COMMUNICATION FACILITIES",
-        "MESSAGING SERVICES UNAVAILABLE"
+        "MESSAGING SERVICES UNAVAILABLE",
+        "REMOVAL OF SUBMERGED LINES",
+        "CHANNEL MARKING BUOY"
     ]
     return any(x in upper for x in triggers)
-
-def is_buoy_group(text):
-    return "BUOY GROUP" in text.upper()
 
 def is_buoy_group(text):
     return "BUOY GROUP" in text.upper()
@@ -498,6 +526,12 @@ def is_target_object_type(block):
         "SERVICES UNRELIABLE"
     ]
     return any(t in upper for t in targets)
+def detect_security_incident(text):
+    """
+    ÐÐ¿ÑÐµÐ´ÐµÐ»ÑÐµÑ, Ð¾ÑÐ½Ð¾ÑÐ¸ÑÑÑ Ð»Ð¸ ÑÐ¾Ð¾Ð±ÑÐµÐ½Ð¸Ðµ Ðº security incident.
+    """
+    upper = text.upper()
+    return any(keyword in upper for keyword in SECURITY_KEYWORDS)
 
 def parse_structured_sections(block):
     if not re.search(r'(?:^|\n)\s*\d+\.\s*', block):
@@ -510,6 +544,7 @@ def parse_structured_sections(block):
         text = parts[i + 1].strip()
         if not text:
             continue
+            
         lines = text.split('\n')
         title = lines[0].strip()
         desc_lines = []
@@ -543,15 +578,24 @@ def parse_structured_sections(block):
             continue
 
         desc = sec.get('description', sec.get('title', '')).strip()
-        is_area = "AREA" in sec['text'].upper() and len(coords) >= 3
+        upper_text = sec['text'].upper()
+
+        is_boundary_line = BOUNDARY_LINE_PATTERN.search(upper_text) is not None
+
+        is_area = (
+            not is_boundary_line
+            and has_area_pattern(sec['text'])
+            and len(coords) >= 3
+         ) 
+
         if is_area:
-            area_coords = ensure_clockwise(coords)
-            objects.append({
-                'type': 'area',
-                'coords': area_coords,
-                'description': desc,
-                'name': None
-            })
+           area_coords = normalize_area_vertices(coords)
+           objects.append({
+              'type': 'area',
+              'coords': area_coords,
+              'description': desc,
+              'name': None,
+         })
         else:
             objects.append({
                 'type': 'line',
@@ -568,12 +612,21 @@ def extract_riglist_entries(block):
     if not any(x in upper for x in ["RIGLIST", "RIG LIST", "MODU LIST", "MOBILE OFFSHORE DRILLING UNITS"]):
         return None
 
-    # Сначала пробуем разбить по номерам (1., 2., ...)
-    entries = re.split(r'\n\s*\d+\.\s+', block)
+    entries = re.split(r'\n\s*\d+.\s+', block)
+
+    entries = [
+        e.strip()
+        for e in entries
+        if e.strip()
+        and re.search(
+            r'\d{1,3}-\d+(?:.\d+)?[NS]\s+\d{1,3}-\d+(?:.\d+)?[EW]',
+            e,
+            re.I,
+        )
+    ]
+
     if len(entries) > 10:
-        
-        # Возвращаем записи, пропуская первый пустой элемент, если есть
-        return [e.strip() for e in entries if e.strip()]
+        return entries
 
     rig_block = re.sub(r'\s+', ' ', block)
     coord_pattern = re.compile(r'\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]', re.I)
@@ -985,6 +1038,44 @@ BOUNDARY_LINE_PATTERN = re.compile(
     r'\b(?:TO\s+)?(?:NORTH(?:ERN)?|SOUTH(?:ERN)?|EAST(?:ERN)?|WEST(?:ERN)?)\s+OF\s+LINE\b',
     re.IGNORECASE,
 )
+SECURITY_KEYWORDS = [
+    "SECURITY INCIDENT",
+    "ARMED ROBBERY",
+    "PIRACY",
+    "PIRATES",
+    "ATTACK",
+    "ATTEMPTED ATTACK",
+    "ROBBERY",
+    "BOARDING",
+    "UNAUTHORIZED BOARDING",
+    "HIJACKING",
+    "SUSPICIOUS CRAFT",
+    "SUSPICIOUS APPROACH",
+    "ANTI PIRACY",
+    "PIRATE",
+    "SUSPECTED PIRATE",
+    "SECURITY THREAT",
+]
+AREA_PATTERNS = [
+    "AREA BOUND BY",
+    "AREA BOUNDED BY",
+    "AREAS BOUND BY",
+    "AREAS BOUNDED BY",
+    "AREA BOUNDED WITHIN",
+]
+
+LINE_PATTERNS = [
+    "ALONG TRACKLINE",
+    "TRACKLINE JOINING",
+]
+
+def has_area_pattern(text):
+    normalized = re.sub(r"\s+", " ", text.upper())
+    return any(pattern in normalized for pattern in AREA_PATTERNS)
+
+def has_line_pattern(text):
+    upper = text.upper()
+    return any(pattern in upper for pattern in LINE_PATTERNS)
 # -------------------- MIXED GEOMETRY HANDLER --------------------
 def extract_mixed_geometry_sections(block):
     sections = []
@@ -1360,17 +1451,54 @@ def handle_bounding_box(ctx, container, message):
     return True
 
 def extract_area_group_sections(block):
-    """
-    Извлекает независимые группы областей из блока с grouped-area формулировками.
+    INVALID_AREA_NAMES = {
+        "BOUND", "BOUNDED", "OF", "DANGER", "DANGEROUS",
+        "OPERATIONS", "OPERATION",
+    }
 
-    Правило:
-      Маркер считается пространственной группой, только если:
-        1. Он находится после фразы AREA/AREAS BOUND BY / BOUNDED BY / DELIMITED BY.
-        2. Его локальный сегмент содержит >= 3 координаты.
+    named_markers = list(re.finditer(
+        r'\b(?:DANGER\s+)?AREA\s+([A-Z][A-Z]+)\b',
+        block,
+        re.IGNORECASE
+    ))
 
-    Расписания (A) 1200-1800 UTC и точечные ссылки (A) 19-14.6N 084-53.7E
-    не считаются группами.
-    """
+    if len(named_markers) > 1:
+        named_groups = []
+
+        for i, m in enumerate(named_markers):
+            zone_name = m.group(1).upper()
+
+            if zone_name in INVALID_AREA_NAMES:
+                continue
+
+            start = m.end()
+            end = named_markers[i + 1].start() if i + 1 < len(named_markers) else len(block)
+            segment = block[start:end].strip()
+
+            # ÐÐ¾Ð¿Ð¾Ð»Ð½Ð¸ÑÐµÐ»ÑÐ½Ð°Ñ Ð¾ÑÐ¸ÑÑÐºÐ°: ÑÐ±ÑÐ°ÑÑ ÑÐ»ÑÑÐ°Ð¹Ð½ÑÐ¹ ÑÐ²Ð¾ÑÑ ÑÐ»ÐµÐ´ÑÑÑÐµÐ¹ Ð·Ð¾Ð½Ñ
+            # (ÐµÑÐ»Ð¸ ÑÑÐ¾-ÑÐ¾ Ð¾ÑÑÐ°Ð»Ð¾ÑÑ Ð¿Ð¾ÑÐ»Ðµ Ð¾Ð±ÑÐµÐ·Ð°Ð½Ð¸Ñ)
+            next_marker_re = re.compile(
+                r'\b(?:DANGER\s+)?AREA\s+[A-Z][A-Z]+\b',
+                re.IGNORECASE
+            )
+            split_segments = next_marker_re.split(segment)
+            if split_segments:
+                segment = split_segments[0].strip()
+
+            coords = extract_coordinates(segment)
+            if len(coords) >= 3:
+                named_groups.append((zone_name, segment))
+
+        if named_groups:
+            debug(
+                f"Named area groups detected: "
+                f"{[g[0] for g in named_groups]}"
+            )
+            return named_groups
+
+    # ------------------------------------------------------------------
+    # Ð¡ÑÐ°ÑÐ°Ñ Ð»Ð¾Ð³Ð¸ÐºÐ° Ð´Ð»Ñ (A)/(B)/A./B.
+    # ------------------------------------------------------------------
     context_match = re.search(
         r'(?:AREA|AREAS|DANGER AREA|DANGER AREAS)\s+(?:BOUND BY|BOUNDED BY|DELIMITED BY)',
         block,
@@ -1419,33 +1547,25 @@ def extract_area_group_sections(block):
             groups.append((letter, segment.strip()))
 
     return groups
+def build_group_area_description(ctx, area_id, area_text):
+    nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
 
-def handle_area(ctx, container, message):
-    debug("PROCESS: handle_area")
-    if ctx['is_riglist']:
-        return False
+    is_named = len(area_id) > 1
 
-    MIN_SUMMARY = 120
+    if is_named:
+        # ÐÐ±ÑÐµÐ·Ð°ÐµÐ¼ Ð´Ð¾ Ð¿ÐµÑÐ²Ð¾Ð³Ð¾ named area Ð¼Ð°ÑÐºÐµÑÐ°, ÑÑÐ¾Ð±Ñ ÑÐ±ÑÐ°ÑÑ Ð²ÑÐµ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð·Ð¾Ð½
+        first_named_marker = re.search(
+            r'\b(?:DANGER\s+)?AREA\s+[A-Z][A-Z]+\b',
+            nav_summary,
+            re.IGNORECASE
+        )
+        if first_named_marker:
+            nav_summary = nav_summary[:first_named_marker.start()].rstrip()
+            # ÑÐ±ÑÐ°ÑÑ Ð²Ð¸ÑÑÑÐ¸Ðµ Ð·Ð°Ð¿ÑÑÑÐµ/Ð¿ÑÐ¾Ð±ÐµÐ»Ñ
+            nav_summary = re.sub(r'[,\s]+$', '', nav_summary)
 
-    def build_group_area_description(ctx, area_id, area_text):
-        """
-        Формирует описание grouped area.
-
-        Порядок:
-          1. Краткий NAVAREA context до BOUNDARY-фразы
-          2. Group identifier
-          3. Group coordinates
-
-        Полный ctx['description'] больше не используется,
-        чтобы избежать дублирования координат всех групп.
-        """
-        # Исходный нормализованный текст без переносов
-        nav_summary = sanitize_xml_attribute(ctx.get('description', ''))
-
-        # Ищем начало координатной секции:
-        #   ... IN DANGER AREAS BOUND BY ...
-        #   ... IN AREA BOUND BY ...
-        #   ... IN DANGER AREA BOUND BY ...
+        group_header = f"AREA {area_id}"
+    else:
         boundary_match = re.search(
             r'\b(?:IN\s+)?(?:DANGER\s+)?AREAS?\s+(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\b',
             nav_summary,
@@ -1573,7 +1693,7 @@ def handle_area(ctx, container, message):
         return True
 
     # ------------------------------------------------------------------
-    # 2. Waiting / holding / anchorage area shortcut
+    # 2. Waiting / Holding / Anchorage Area shortcut
     # ------------------------------------------------------------------
     if any(x in ctx['upper'] for x in [
         "WAITING AREA",
@@ -1626,10 +1746,53 @@ def handle_trackline(ctx, container, message):
     # Area patterns have priority over line
     if has_area_pattern(ctx['block']):
         return False
+        
+    # P2: Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð²Ð°ÑÑ Ð»Ð¸Ð½Ð¸Ñ Ð´Ð»Ñ Ð½ÐµÐ·Ð°Ð²Ð¸ÑÐ¸Ð¼ÑÑ Ð±ÑÐµÐ²/ÑÐ¾ÑÐµÑÐ½ÑÑ Ð¾Ð±ÑÐµÐºÑÐ¾Ð²
+    BUOY_SEMANTIC_TERMS = [
+        "CHANNEL MARKING BUOY",
+        "BUOY NO",
+        "FAIRWAY BUOY",
+        "BUOY GROUP",
+        "MISSING BUOY",
+        "UNLIT BUOY"
+    ]
 
-    ROUTE_KEYWORDS = ["ROUTE", "ROUTE NO", "ROUTE CENTERLINE", "CENTERLINE COORDINATES",
-                      "DOUBLE TRACK", "TRACK WIDTH", "TRANSIT ROUTE", "CHANNEL WIDTH"]
-    TRACK_KEYWORDS = ["TRACKLINE", "JOINING", "PIPELINE", "CABLE", "CHANNEL", "TRACK LINE", "TRACK LINE JOINING"]
+    has_buoy_semantics = any(term in ctx['upper'] for term in BUOY_SEMANTIC_TERMS)
+
+    LINE_GEOMETRY_TERMS = [
+        "TRACKLINE",
+        "JOINING",
+        "PIPELINE",
+        "CABLE",
+        "ROUTE"
+    ]
+
+    has_line_geometry = any(kw in ctx['upper'] for kw in LINE_GEOMETRY_TERMS)
+
+    if has_buoy_semantics and not has_line_geometry:
+        return False
+
+    ROUTE_KEYWORDS = [
+        "ROUTE",
+        "ROUTE NO",
+        "ROUTE CENTERLINE",
+        "CENTERLINE COORDINATES",
+        "DOUBLE TRACK",
+        "TRACK WIDTH",
+        "TRANSIT ROUTE",
+        "CHANNEL WIDTH"
+    ]
+
+    TRACK_KEYWORDS = [
+        "TRACKLINE",
+        "JOINING",
+        "PIPELINE",
+        "CABLE",
+        "CHANNEL",
+        "TRACK LINE",
+        "TRACK LINE JOINING"
+    ]
+
     if not any(kw in ctx['upper'] for kw in ROUTE_KEYWORDS + TRACK_KEYWORDS):
         return False
 
@@ -1945,7 +2108,18 @@ def handle_buoy_semantics(ctx, container, message):
         "PIPELINE",
          "ROUTE"
     ]
+    HAZARD_CONTEXT_TERMS = [
+    "DERELICT",
+    "WRECK",
+    "SUNKEN",
+    "SUNK",
+    "OBSTRUCTION",
+    "SUBMERGED",
+    "UNMARKED",
+    ]
 
+    if any(term in ctx['upper'] for term in HAZARD_CONTEXT_TERMS):
+        return False
     has_line_geometry = any(kw in ctx['upper'] for kw in LINE_GEOMETRY_TERMS)
 
     if has_line_geometry:
