@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--userchart node-->
+<userchart name="NAVAREA IV (Part 2)" description="" version="1.0">
+  <!--userchart line-->
+  <lines>
+    <line name="NAV IV 659/2026" description="1. CABLE OPERATIONS 08 JUL THRU 31 AUG BY CABLESHIP ILE D YEU ALONG TRACKLINE JOINING 05-02.22N 052-12.01W 05-18.45N 051-59.35W 05-36.55N 051-43.11W 05-52.51N 051-25.07W 05-55.16N 051-22.20W 06-03.25N 051-04.51W 06-07.98N 050-38.63W 06-07.95N 050-11.97W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="5.037000" longitude="-52.200167"/>
+        <vertex id="2" latitude="5.307500" longitude="-51.989167"/>
+        <vertex id="3" latitude="5.609167" longitude="-51.718500"/>
+        <vertex id="4" latitude="5.875167" longitude="-51.417833"/>
+        <vertex id="5" latitude="5.919333" longitude="-51.370000"/>
+        <vertex id="6" latitude="6.054167" longitude="-51.075167"/>
+        <vertex id="7" latitude="6.133000" longitude="-50.643833"/>
+        <vertex id="8" latitude="6.132500" longitude="-50.199500"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 663/2026" description="1. CABLE OPERATIONS 10 JUL THRU 15 AUG BY CABLESHIP IIE DE MOLENE ALONG TRACKLINE JOINING 09-55.70N 060-08.70W 09-56.00N 060-09.40W 09-56.90N 060-11.30W 09-57.10N 060-14.90W 09-53.90N 060-18.50W 09-52.40N 060-26.10W 09-52.80N 060-30.00W 10-03.50N 060-57.00W 10-03.60N 061-00.10W 10-06.70N 061-02.70W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="9.928333" longitude="-60.145000"/>
+        <vertex id="2" latitude="9.933333" longitude="-60.156667"/>
+        <vertex id="3" latitude="9.948333" longitude="-60.188333"/>
+        <vertex id="4" latitude="9.951667" longitude="-60.248333"/>
+        <vertex id="5" latitude="9.898333" longitude="-60.308333"/>
+        <vertex id="6" latitude="9.873333" longitude="-60.435000"/>
+        <vertex id="7" latitude="9.880000" longitude="-60.500000"/>
+        <vertex id="8" latitude="10.058333" longitude="-60.950000"/>
+        <vertex id="9" latitude="10.060000" longitude="-61.001667"/>
+        <vertex id="10" latitude="10.111667" longitude="-61.045000"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 677/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 230001Z AUG BY CABLESHIP RELIANCE ALONG TRACKLINE JOINING 21-58.68N 044-28.46W 30-50.64N 061-00.22W. TWO MILE WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="21.978000" longitude="-44.474333"/>
+        <vertex id="2" latitude="30.844000" longitude="-61.003667"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 708/2026" description="1. SURVEY OPERATIONS 23 JUL UNTIL 26 AUG BY M/V FUGRO DISCOVERY ALONG TRACKLINE JOINING 36-15.04N 071-25.95W 36-15.13N 071-28.42W 36-17.01N 072-11.50W 36-18.08N 072-35.85W 36-18.57N 072-47.25W 36-19.15N 073-00.35W 36-20.08N 073-21.78W 36-20.88N 073-40.18W 36-20.36N 073-46.32W 36-19.83N 073-52.40W 36-20.31N 074-06.35W 36-20.61N 074-16.01W 36-20.97N 074-27.47W 36-21.64N 074-32.58W 36-21.90N 074-34.46W 36-23.30N 074-40.15W 36-26.59N 074-53.53W 36-27.36N 074-56.65W 36-29.37N 075-02.72W 36-34.41N 075-22.15W 36-35.02N 075-24.52W 36-38.56N 075-38.18W 36-39.34N 075-41.19W 36-41.79N 075-50.66W 36-41.99N 075-51.43W 36-42.04N 075-51.62W 36-42.18N 075-51.96W 36-43.92N 075-54.10W 36-44.04N 075-54.32W 36-44.88N 075-55.82W 36-44.89N 075-55.83W 36-44.89N 075-55.90W 36-44.91N 075-56.03W 36-44.90N 075-56.03W 36-44.87N 075-56.31W 36-44.87N 075-56.38W 36-44.84N 075-56.47W 36-44.77N 075-56.68W 36-44.76N 075-56.70W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="36.250667" longitude="-71.432500"/>
+        <vertex id="2" latitude="36.252167" longitude="-71.473667"/>
+        <vertex id="3" latitude="36.283500" longitude="-72.191667"/>
+        <vertex id="4" latitude="36.301333" longitude="-72.597500"/>
+        <vertex id="5" latitude="36.309500" longitude="-72.787500"/>
+        <vertex id="6" latitude="36.319167" longitude="-73.005833"/>
+        <vertex id="7" latitude="36.334667" longitude="-73.363000"/>
+        <vertex id="8" latitude="36.348000" longitude="-73.669667"/>
+        <vertex id="9" latitude="36.339333" longitude="-73.772000"/>
+        <vertex id="10" latitude="36.330500" longitude="-73.873333"/>
+        <vertex id="11" latitude="36.338500" longitude="-74.105833"/>
+        <vertex id="12" latitude="36.343500" longitude="-74.266833"/>
+        <vertex id="13" latitude="36.349500" longitude="-74.457833"/>
+        <vertex id="14" latitude="36.360667" longitude="-74.543000"/>
+        <vertex id="15" latitude="36.365000" longitude="-74.574333"/>
+        <vertex id="16" latitude="36.388333" longitude="-74.669167"/>
+        <vertex id="17" latitude="36.443167" longitude="-74.892167"/>
+        <vertex id="18" latitude="36.456000" longitude="-74.944167"/>
+        <vertex id="19" latitude="36.489500" longitude="-75.045333"/>
+        <vertex id="20" latitude="36.573500" longitude="-75.369167"/>
+        <vertex id="21" latitude="36.583667" longitude="-75.408667"/>
+        <vertex id="22" latitude="36.642667" longitude="-75.636333"/>
+        <vertex id="23" latitude="36.655667" longitude="-75.686500"/>
+        <vertex id="24" latitude="36.696500" longitude="-75.844333"/>
+        <vertex id="25" latitude="36.699833" longitude="-75.857167"/>
+        <vertex id="26" latitude="36.700667" longitude="-75.860333"/>
+        <vertex id="27" latitude="36.703000" longitude="-75.866000"/>
+        <vertex id="28" latitude="36.732000" longitude="-75.901667"/>
+        <vertex id="29" latitude="36.734000" longitude="-75.905333"/>
+        <vertex id="30" latitude="36.748000" longitude="-75.930333"/>
+        <vertex id="31" latitude="36.748167" longitude="-75.930500"/>
+        <vertex id="32" latitude="36.748167" longitude="-75.931667"/>
+        <vertex id="33" latitude="36.748500" longitude="-75.933833"/>
+        <vertex id="34" latitude="36.748333" longitude="-75.933833"/>
+        <vertex id="35" latitude="36.747833" longitude="-75.938500"/>
+        <vertex id="36" latitude="36.747833" longitude="-75.939667"/>
+        <vertex id="37" latitude="36.747333" longitude="-75.941167"/>
+        <vertex id="38" latitude="36.746167" longitude="-75.944667"/>
+        <vertex id="39" latitude="36.746000" longitude="-75.945000"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 729/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 25 AUG BY CABLESHIP PIERRE DE FERMAT ALONG TRACKLINE JOINING 12-50.00N 069-42.30W 13-37.20N 069-39.20W 14-16.10N 069-27.60W 14-51.50N 069-09.70W 15-09.60N 068-54.00W 15-41.00N 068-51.50W 17-08.00N 068-29.20W 17-16.90N 068-29.80W 17-25.60N 068-27.20W 17-33.20N 068-22.80W 17-38.30N 068-22.00W 17-51.10N 068-25.40W 17-55.50N 068-25.40W 18-11.50N 068-17.00W 18-14.90N 068-12.80W 18-33.90N 068-03.40W 18-40.80N 068-03.00W 18-53.10N 067-55.50W 19-13.20N 068-01.50W 20-06.10N 068-17.60W 20-43.00N 068-46.70W 21-29.20N 069-44.70W 21-41.20N 070-14.60W 22-38.30N 071-38.10W. 22-45.80N 071-43.00W 23-08.00N 071-40.40W 23-21.20N 071-45.00W 24-00.80N 072-32.00W 24-59.80N 073-52.30W 25-24.50N 074-10.70W 25-46.80N 074-48.80W 27-06.90N 077-19.00W 27-26.70N 077-50.30W 27-30.30N 078-18.60W 27-36.00N 078-29.80W 27-32.20N 079-06.50W 27-29.50N 079-14.40W 27-26.80N 079-17.30W 27-23.70N 079-28.90W 27-23.10N 079-29.70W 27-21.70N 079-30.30W 27-17.20N 079-30.10W 26-49.10N 079-29.">
+      <position>
+        <vertex id="1" latitude="12.833333" longitude="-69.705000"/>
+        <vertex id="2" latitude="13.620000" longitude="-69.653333"/>
+        <vertex id="3" latitude="14.268333" longitude="-69.460000"/>
+        <vertex id="4" latitude="14.858333" longitude="-69.161667"/>
+        <vertex id="5" latitude="15.160000" longitude="-68.900000"/>
+        <vertex id="6" latitude="15.683333" longitude="-68.858333"/>
+        <vertex id="7" latitude="17.133333" longitude="-68.486667"/>
+        <vertex id="8" latitude="17.281667" longitude="-68.496667"/>
+        <vertex id="9" latitude="17.426667" longitude="-68.453333"/>
+        <vertex id="10" latitude="17.553333" longitude="-68.380000"/>
+        <vertex id="11" latitude="17.638333" longitude="-68.366667"/>
+        <vertex id="12" latitude="17.851667" longitude="-68.423333"/>
+        <vertex id="13" latitude="17.925000" longitude="-68.423333"/>
+        <vertex id="14" latitude="18.191667" longitude="-68.283333"/>
+        <vertex id="15" latitude="18.248333" longitude="-68.213333"/>
+        <vertex id="16" latitude="18.565000" longitude="-68.056667"/>
+        <vertex id="17" latitude="18.680000" longitude="-68.050000"/>
+        <vertex id="18" latitude="18.885000" longitude="-67.925000"/>
+        <vertex id="19" latitude="19.220000" longitude="-68.025000"/>
+        <vertex id="20" latitude="20.101667" longitude="-68.293333"/>
+        <vertex id="21" latitude="20.716667" longitude="-68.778333"/>
+        <vertex id="22" latitude="21.486667" longitude="-69.745000"/>
+        <vertex id="23" latitude="21.686667" longitude="-70.243333"/>
+        <vertex id="24" latitude="22.638333" longitude="-71.635000"/>
+        <vertex id="25" latitude="22.763333" longitude="-71.716667"/>
+        <vertex id="26" latitude="23.133333" longitude="-71.673333"/>
+        <vertex id="27" latitude="23.353333" longitude="-71.750000"/>
+        <vertex id="28" latitude="24.013333" longitude="-72.533333"/>
+        <vertex id="29" latitude="24.996667" longitude="-73.871667"/>
+        <vertex id="30" latitude="25.408333" longitude="-74.178333"/>
+        <vertex id="31" latitude="25.780000" longitude="-74.813333"/>
+        <vertex id="32" latitude="27.115000" longitude="-77.316667"/>
+        <vertex id="33" latitude="27.445000" longitude="-77.838333"/>
+        <vertex id="34" latitude="27.505000" longitude="-78.310000"/>
+        <vertex id="35" latitude="27.600000" longitude="-78.496667"/>
+        <vertex id="36" latitude="27.536667" longitude="-79.108333"/>
+        <vertex id="37" latitude="27.491667" longitude="-79.240000"/>
+        <vertex id="38" latitude="27.446667" longitude="-79.288333"/>
+        <vertex id="39" latitude="27.395000" longitude="-79.481667"/>
+        <vertex id="40" latitude="27.385000" longitude="-79.495000"/>
+        <vertex id="41" latitude="27.361667" longitude="-79.505000"/>
+        <vertex id="42" latitude="27.286667" longitude="-79.501667"/>
+        <vertex id="43" latitude="26.818333" longitude="-79.486667"/>
+        <vertex id="44" latitude="26.760000" longitude="-79.500000"/>
+        <vertex id="45" latitude="26.690000" longitude="-79.541667"/>
+        <vertex id="46" latitude="26.620000" longitude="-79.610000"/>
+        <vertex id="47" latitude="26.603333" longitude="-79.648333"/>
+        <vertex id="48" latitude="26.541667" longitude="-79.696667"/>
+        <vertex id="49" latitude="26.486667" longitude="-79.815000"/>
+        <vertex id="50" latitude="26.483333" longitude="-79.851667"/>
+        <vertex id="51" latitude="26.443333" longitude="-79.911667"/>
+        <vertex id="52" latitude="26.398333" longitude="-80.026667"/>
+        <vertex id="53" latitude="26.380000" longitude="-80.038333"/>
+        <vertex id="54" latitude="26.378333" longitude="-80.068333"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 779/2026" description="2. ICEBERG LIMIT ALONG TRACKLINE JOINING 48-25N 053-10W 48-40N 052-20W 50-10N 051-00W 58-00N 053-00W.">
+      <position>
+        <vertex id="1" latitude="48.416667" longitude="-53.166667"/>
+        <vertex id="2" latitude="48.666667" longitude="-52.333333"/>
+        <vertex id="3" latitude="50.166667" longitude="-51.000000"/>
+        <vertex id="4" latitude="58.000000" longitude="-53.000000"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 779/2026" description="3. ESTIMATED ICEBERG LIMIT ALONG TRACKLINE JOINING 58-00N 053-00W 60-20N 052-00W 58-15N 042-45W 58-15N 041-40W 64-20N 036-20W 64-10N 027-30W.">
+      <position>
+        <vertex id="1" latitude="58.000000" longitude="-53.000000"/>
+        <vertex id="2" latitude="60.333333" longitude="-52.000000"/>
+        <vertex id="3" latitude="58.250000" longitude="-42.750000"/>
+        <vertex id="4" latitude="58.250000" longitude="-41.666667"/>
+        <vertex id="5" latitude="64.333333" longitude="-36.333333"/>
+        <vertex id="6" latitude="64.166667" longitude="-27.500000"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 779/2026" description="4. WESTERN ICEBERG LIMIT ALONG TRACKLINE JOINING 51-20N 058-20W 50-35N 057-20W.">
+      <position>
+        <vertex id="1" latitude="51.333333" longitude="-58.333333"/>
+        <vertex id="2" latitude="50.583333" longitude="-57.333333"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 779/2026" description="5. SEA ICE LIMIT ALONG TRACKLINE JOINING 62-03N 066-00W 62-03N 063-55W 63-03N 061-45W 65-14N 058-49W 68-53N 062-52W 69-11N 066-41W.">
+      <position>
+        <vertex id="1" latitude="62.050000" longitude="-66.000000"/>
+        <vertex id="2" latitude="62.050000" longitude="-63.916667"/>
+        <vertex id="3" latitude="63.050000" longitude="-61.750000"/>
+        <vertex id="4" latitude="65.233333" longitude="-58.816667"/>
+        <vertex id="5" latitude="68.883333" longitude="-62.866667"/>
+        <vertex id="6" latitude="69.183333" longitude="-66.683333"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 780/2026" description="1. UNDERWATER OPERATIONS 1000Z TO 2000Z DAILY UNTIL 13 SEP BY CABLESHIP ILE DE YEU ALONG TRACKLINE JOINING 06-07.96N 050-11.98W 05-42.65N 048-10.88W 04-08.82N 046-25.06W 02-28.17N 045-06.01W 02-10.82N 044-46.98W 00-43.66N 043-12.68W 00-18.44S 042-11.09W 01-07.78S 040-58.42W 01-48.28S 038-57.49W 02-14.74S 037-36.65W 02-11.35S 036-54.42W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="6.132667" longitude="-50.199667"/>
+        <vertex id="2" latitude="5.710833" longitude="-48.181333"/>
+        <vertex id="3" latitude="4.147000" longitude="-46.417667"/>
+        <vertex id="4" latitude="2.469500" longitude="-45.100167"/>
+        <vertex id="5" latitude="2.180333" longitude="-44.783000"/>
+        <vertex id="6" latitude="0.727667" longitude="-43.211333"/>
+        <vertex id="7" latitude="-0.307333" longitude="-42.184833"/>
+        <vertex id="8" latitude="-1.129667" longitude="-40.973667"/>
+        <vertex id="9" latitude="-1.804667" longitude="-38.958167"/>
+        <vertex id="10" latitude="-2.245667" longitude="-37.610833"/>
+        <vertex id="11" latitude="-2.189167" longitude="-36.907000"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+  </lines>
+  <!--userchart area-->
+  <areas>
+    <area name="NAV IV 658/2026" description="1. PIPELINE OPERATIONS IN PROGRESS UNTIL 01 JAN 27 BY M/V SAIPEM CONSTELLATION IN AREA BOUND BY 08-07.37N 056-57.90W 08-07.37N 056-47.30W 07-56.63N 056-47.30W 07-56.63N 056-57.90W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="8.122833" longitude="-56.965000"/>
+        <vertex id="2" latitude="8.122833" longitude="-56.788333"/>
+        <vertex id="3" latitude="7.943833" longitude="-56.788333"/>
+        <vertex id="4" latitude="7.943833" longitude="-56.965000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 705/2026" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 31 DEC BY VESSEL AHT DN87 AND TUG TELESTO IN AREA BOUND BY 07-03.06N 057-57.60W 07-02.68N 057-57.22W 06-49.95N 058-09.90W 06-49.04N 058-10.21W 06-49.15N 058-10.75W 06-50.13N 058-10.41W 06-50.34N 058-10.28W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="7.051000" longitude="-57.960000"/>
+        <vertex id="2" latitude="7.044667" longitude="-57.953667"/>
+        <vertex id="3" latitude="6.832500" longitude="-58.165000"/>
+        <vertex id="4" latitude="6.817333" longitude="-58.170167"/>
+        <vertex id="5" latitude="6.819167" longitude="-58.179167"/>
+        <vertex id="6" latitude="6.835500" longitude="-58.173500"/>
+        <vertex id="7" latitude="6.839000" longitude="-58.171333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 755/2026 (A)" description="1. HAZARDOUS OPERATIONS, ROCKET LAUNCHING 101449Z TO 101931Z AUG, ALTERNATE 111426Z TO 111908Z, 121404Z TO 121846Z, 131342Z TO 131824Z, 141319Z TO 141801Z, 151257Z TO 151739Z AND 161235Z TO 161717Z AUG ZONE A 31-37.00N 077-09.00W 32-23.00N 076-52.00W 33-08.00N 075-40.00W 33-12.00N 075-13.00W 32-54.00N 074-58.00W 32-36.00N 075-02.00W 31-51.00N 076-13.00W 31-32.00N 077-03.00W.">
+      <position>
+        <vertex id="1" latitude="31.616667" longitude="-77.150000"/>
+        <vertex id="2" latitude="32.383333" longitude="-76.866667"/>
+        <vertex id="3" latitude="33.133333" longitude="-75.666667"/>
+        <vertex id="4" latitude="33.200000" longitude="-75.216667"/>
+        <vertex id="5" latitude="32.900000" longitude="-74.966667"/>
+        <vertex id="6" latitude="32.600000" longitude="-75.033333"/>
+        <vertex id="7" latitude="31.850000" longitude="-76.216667"/>
+        <vertex id="8" latitude="31.533333" longitude="-77.050000"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 755/2026 (B)" description="1. HAZARDOUS OPERATIONS, ROCKET LAUNCHING 101449Z TO 101931Z AUG, ALTERNATE 111426Z TO 111908Z, 121404Z TO 121846Z, 131342Z TO 131824Z, 141319Z TO 141801Z, 151257Z TO 151739Z AND 161235Z TO 161717Z AUG ZONE B 28-39.18N 080-37.82W 29-00.00N 080-14.00W 28-53.00N 080-05.00W 28-29.42N 080-32.52W.">
+      <position>
+        <vertex id="1" latitude="28.653000" longitude="-80.630333"/>
+        <vertex id="2" latitude="29.000000" longitude="-80.233333"/>
+        <vertex id="3" latitude="28.883333" longitude="-80.083333"/>
+        <vertex id="4" latitude="28.490333" longitude="-80.542000"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 762/2026" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 31 DEC BY M/V ISLAND FRONTIER IN AREA BOUND BY 27-54.83N 092-06.05W 27-52.85N 089-52.06W 26-24.29N 089-54.51W 26-26.11N 089-54.51W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="27.913833" longitude="-92.100833"/>
+        <vertex id="2" latitude="27.880833" longitude="-89.867667"/>
+        <vertex id="3" latitude="26.404833" longitude="-89.908500"/>
+        <vertex id="4" latitude="26.435167" longitude="-89.908500"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 776/2026 (A)" description="1. HAZARDOUS OPERATIONS, ROCKET LAUNCHING 160102Z TO 160220Z AUG, ALTERNATE 170045Z TO 170203Z, 180031Z TO 180149Z, 190014Z TO 190132Z, 192358Z TO 200116Z, 202342Z TO 210100Z AND 212327Z TO 220045Z AUG ZONE A 30-58.00N 078-25.00W 31-47.00N 077-47.00W 32-18.00N 077-09.00W 32-45.00N 076-27.00W 32-28.00N 076-07.00W 31-47.00N 076-23.00W 31-13.00N 077-21.00W 30-40.00N 078-11.00W.">
+      <position>
+        <vertex id="1" latitude="30.966667" longitude="-78.416667"/>
+        <vertex id="2" latitude="31.783333" longitude="-77.783333"/>
+        <vertex id="3" latitude="32.300000" longitude="-77.150000"/>
+        <vertex id="4" latitude="32.750000" longitude="-76.450000"/>
+        <vertex id="5" latitude="32.466667" longitude="-76.116667"/>
+        <vertex id="6" latitude="31.783333" longitude="-76.383333"/>
+        <vertex id="7" latitude="31.216667" longitude="-77.350000"/>
+        <vertex id="8" latitude="30.666667" longitude="-78.183333"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 776/2026 (B)" description="1. HAZARDOUS OPERATIONS, ROCKET LAUNCHING 160102Z TO 160220Z AUG, ALTERNATE 170045Z TO 170203Z, 180031Z TO 180149Z, 190014Z TO 190132Z, 192358Z TO 200116Z, 202342Z TO 210100Z AND 212327Z TO 220045Z AUG ZONE B 28-39.57N 080-38.08W 29-06.00N 080-08.00W 29-02.00N 080-02.00W 28-32.00N 080-28.00W 28-29.95N 080-32.78W.">
+      <position>
+        <vertex id="1" latitude="28.659500" longitude="-80.634667"/>
+        <vertex id="2" latitude="29.100000" longitude="-80.133333"/>
+        <vertex id="3" latitude="29.033333" longitude="-80.033333"/>
+        <vertex id="4" latitude="28.533333" longitude="-80.466667"/>
+        <vertex id="5" latitude="28.499167" longitude="-80.546333"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 778/2026" description="1. CABLE OPERATIONS 151200Z TO 280000Z AUG BY CABLESHIP CABLE VIGILANCE IN AREA BOUND BY 34-52.60N 072-44.90W 35-00.50N 072-29.90W 34-32.10N 072-03.30W 34-23.10N 072-17.40W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="34.876667" longitude="-72.748333"/>
+        <vertex id="2" latitude="35.008333" longitude="-72.498333"/>
+        <vertex id="3" latitude="34.535000" longitude="-72.055000"/>
+        <vertex id="4" latitude="34.385000" longitude="-72.290000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 781/2026" description="1. NAVAL OPERATIONS 131200Z TO 131730Z AUG IN AREA BOUND BY 10-24.23N 075-37.95W 10-23.20N 075-38.07W 10-23.20N 075-39.08W 10-24.23N 075-39.08W.">
+      <position>
+        <vertex id="1" latitude="10.403833" longitude="-75.632500"/>
+        <vertex id="2" latitude="10.386667" longitude="-75.634500"/>
+        <vertex id="3" latitude="10.386667" longitude="-75.651333"/>
+        <vertex id="4" latitude="10.403833" longitude="-75.651333"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+  </areas>
+  <!--userchart label-->
+  <labels>
+    <label name="NAV IV 653/2026" description="(A) BOSTON 41-43.00N 070-31.00W.">
+      <position>
+        <vertex id="1" latitude="41.716667" longitude="-70.516667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 653/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 653/2026" description="(B) CHESAPEAKE 36-44.00N 076-01.00W.">
+      <position>
+        <vertex id="1" latitude="36.733333" longitude="-76.016667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 653/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 653/2026" description="(C) CHARLESTON 32-08.00N 081-42.00W.">
+      <position>
+        <vertex id="1" latitude="32.133333" longitude="-81.700000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 653/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 653/2026" description="(D) MIAMI 25-30.00N 080-23.00W.">
+      <position>
+        <vertex id="1" latitude="25.500000" longitude="-80.383333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 653/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 653/2026" description="(E) NEW ORLEANS 29-53.00N 089-57.00W.">
+      <position>
+        <vertex id="1" latitude="29.883333" longitude="-89.950000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 653/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 653/2026" description="(F) SAN JUAN 18-27.00N 066-06.00W. ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="18.450000" longitude="-66.100000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 653/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 659/2026" description="1. CABLE OPERATIONS 08 JUL THRU 31 AUG BY CABLESHIP ILE D YEU ALONG TRACKLINE JOINING 05-02.22N 052-12.01W 05-18.45N 051-59.35W 05-36.55N 051-43.11W 05-52.51N 051-25.07W 05-55.16N 051-22.20W 06-03.25N 051-04.51W 06-07.98N 050-38.63W 06-07.95N 050-11.97W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="5.919333" longitude="-51.370000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 659/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 662/2026" description="NAVAREA IV 662/2026 070131 UTC JUL 2026 NORTH ATLANTIC. LOUISIANA. USCG REMOTE COMMUNICATION FACILITY NEW ORLEANS 29-53.00N 089-57.00W MF AND HF DSC OFF AIR.">
+      <position>
+        <vertex id="1" latitude="29.883333" longitude="-89.950000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 662/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 663/2026" description="1. CABLE OPERATIONS 10 JUL THRU 15 AUG BY CABLESHIP IIE DE MOLENE ALONG TRACKLINE JOINING 09-55.70N 060-08.70W 09-56.00N 060-09.40W 09-56.90N 060-11.30W 09-57.10N 060-14.90W 09-53.90N 060-18.50W 09-52.40N 060-26.10W 09-52.80N 060-30.00W 10-03.50N 060-57.00W 10-03.60N 061-00.10W 10-06.70N 061-02.70W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="9.873333" longitude="-60.435000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 663/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 666/2026" description="1. PIPELINE OPERATIONS IN PROGRESS UNTIL 292200Z AUG BY M/V SEVEN PEGASUS IN 10-06.30N 060-17.39W. 500 METER BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="10.105000" longitude="-60.289833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 666/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 670/2026" description="NAVAREA IV 670/2026 091509 UTC JUL 2026 NORTH ATLANTIC. TRINIDAD AND TOBAGO. GALEOTA POINT LIGHT 10-08.30N 060-59.50W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.138333" longitude="-60.991667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 670/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 677/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 230001Z AUG BY CABLESHIP RELIANCE ALONG TRACKLINE JOINING 21-58.68N 044-28.46W 30-50.64N 061-00.22W. TWO MILE WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="30.844000" longitude="-61.003667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 677/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 682/2026" description="NAVAREA IV 682/2026 131529 UTC JUL 2026 HUDSON BAY. CANADA. MCTS IQALUIT REMOTE STATION CORAL HARBOUR 64-09.00N 083-22.00W MF AND HF SERVICES OFF AIR.">
+      <position>
+        <vertex id="1" latitude="64.150000" longitude="-83.366667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 682/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 684/2026" description="NAVAREA IV 684/2026 131904 UTC JUL 2026 HUDSON STRAIT. CANADA. MCTS IQALUIT REMOTE STATION KILLENEK 60-25.45N 064-50.50W HF R/T, MF BROADCAST AND MF R/T SERVICES OFF AIR.">
+      <position>
+        <vertex id="1" latitude="60.424167" longitude="-64.841667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 684/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 708/2026" description="1. SURVEY OPERATIONS 23 JUL UNTIL 26 AUG BY M/V FUGRO DISCOVERY ALONG TRACKLINE JOINING 36-15.04N 071-25.95W 36-15.13N 071-28.42W 36-17.01N 072-11.50W 36-18.08N 072-35.85W 36-18.57N 072-47.25W 36-19.15N 073-00.35W 36-20.08N 073-21.78W 36-20.88N 073-40.18W 36-20.36N 073-46.32W 36-19.83N 073-52.40W 36-20.31N 074-06.35W 36-20.61N 074-16.01W 36-20.97N 074-27.47W 36-21.64N 074-32.58W 36-21.90N 074-34.46W 36-23.30N 074-40.15W 36-26.59N 074-53.53W 36-27.36N 074-56.65W 36-29.37N 075-02.72W 36-34.41N 075-22.15W 36-35.02N 075-24.52W 36-38.56N 075-38.18W 36-39.34N 075-41.19W 36-41.79N 075-50.66W 36-41.99N 075-51.43W 36-42.04N 075-51.62W 36-42.18N 075-51.96W 36-43.92N 075-54.10W 36-44.04N 075-54.32W 36-44.88N 075-55.82W 36-44.89N 075-55.83W 36-44.89N 075-55.90W 36-44.91N 075-56.03W 36-44.90N 075-56.03W 36-44.87N 075-56.31W 36-44.87N 075-56.38W 36-44.84N 075-56.47W 36-44.77N 075-56.68W 36-44.76N 075-56.70W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="36.573500" longitude="-75.369167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 708/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 709/2026" description="NAVAREA IV 709/2026 211951 UTC JUL 2026 NORTH ATLANTIC. GUYANA. M/V BARIMA SANK IN 07-28.23N 058-23.40W.">
+      <position>
+        <vertex id="1" latitude="7.470500" longitude="-58.390000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 709/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 727/2026" description="NAVAREA IV 727/2026 261515 UTC JUL 2026 CARIBBEAN SEA. VENEZUELA. CABLE BUOY ESTABLISHED IN 12-28.30N 069-45.10W.">
+      <position>
+        <vertex id="1" latitude="12.471667" longitude="-69.751667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 727/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 729/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 25 AUG BY CABLESHIP PIERRE DE FERMAT ALONG TRACKLINE JOINING 12-50.00N 069-42.30W 13-37.20N 069-39.20W 14-16.10N 069-27.60W 14-51.50N 069-09.70W 15-09.60N 068-54.00W 15-41.00N 068-51.50W 17-08.00N 068-29.20W 17-16.90N 068-29.80W 17-25.60N 068-27.20W 17-33.20N 068-22.80W 17-38.30N 068-22.00W 17-51.10N 068-25.40W 17-55.50N 068-25.40W 18-11.50N 068-17.00W 18-14.90N 068-12.80W 18-33.90N 068-03.40W 18-40.80N 068-03.00W 18-53.10N 067-55.50W 19-13.20N 068-01.50W 20-06.10N 068-17.60W 20-43.00N 068-46.70W 21-29.20N 069-44.70W 21-41.20N 070-14.60W 22-38.30N 071-38.10W. 22-45.80N 071-43.00W 23-08.00N 071-40.40W 23-21.20N 071-45.00W 24-00.80N 072-32.00W 24-59.80N 073-52.30W 25-24.50N 074-10.70W 25-46.80N 074-48.80W 27-06.90N 077-19.00W 27-26.70N 077-50.30W 27-30.30N 078-18.60W 27-36.00N 078-29.80W 27-32.20N 079-06.50W 27-29.50N 079-14.40W 27-26.80N 079-17.30W 27-23.70N 079-28.90W 27-23.10N 079-29.70W 27-21.70N 079-30.30W 27-17.20N 079-30.10W 26-49.10N 079-29.">
+      <position>
+        <vertex id="1" latitude="24.013333" longitude="-72.533333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 729/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="AGOSTO 12 | 19-23.0N 092-03.1W">
+      <position>
+        <vertex id="1" latitude="19.383333" longitude="-92.051667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="ALULA | 11-38.4N 070-21.8W">
+      <position>
+        <vertex id="1" latitude="11.640000" longitude="-70.363333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="ARGOS PLATFORM | 27-10.4N 090-22.0W">
+      <position>
+        <vertex id="1" latitude="27.173333" longitude="-90.366667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="AUGER TLP | 27-32.7N 092-26.6W">
+      <position>
+        <vertex id="1" latitude="27.545000" longitude="-92.443333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="BLUE EAGLE | 18-28.6N 094-01.9W">
+      <position>
+        <vertex id="1" latitude="18.476667" longitude="-94.031667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="BORR RAN | 18-27.3N 093-41.3W">
+      <position>
+        <vertex id="1" latitude="18.455000" longitude="-93.688333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="BP ATLANTIS PLATFORM | 27-11.7N 090-01.6W">
+      <position>
+        <vertex id="1" latitude="27.195000" longitude="-90.026667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="CHIHUAHUA | 19-39.7N 090-44.4W">
+      <position>
+        <vertex id="1" latitude="19.661667" longitude="-90.740000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="CME I | 19-34.6N 092-02.7W">
+      <position>
+        <vertex id="1" latitude="19.576667" longitude="-92.045000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="CME II | 18-34.4N 092-46.2W">
+      <position>
+        <vertex id="1" latitude="18.573333" longitude="-92.770000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="COATZACOALCOS | 19-35.3N 092-12.1W">
+      <position>
+        <vertex id="1" latitude="19.588333" longitude="-92.201667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="CPOC MAGNOLIA | 27-12.2N 092-12.2W">
+      <position>
+        <vertex id="1" latitude="27.203333" longitude="-92.203333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER ASGARD | 27-21.5N 090-44.6W">
+      <position>
+        <vertex id="1" latitude="27.358333" longitude="-90.743333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER ATLAS | 26-54.5N 091-34.6W">
+      <position>
+        <vertex id="1" latitude="26.908333" longitude="-91.576667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER CONQUEROR | 26-17.8N 091-05.6W">
+      <position>
+        <vertex id="1" latitude="26.296667" longitude="-91.093333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER INVICTUS | 26-42.4N 092-38.5W">
+      <position>
+        <vertex id="1" latitude="26.706667" longitude="-92.641667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER PONTUS | 28-30.9N 088-08.7W">
+      <position>
+        <vertex id="1" latitude="28.515000" longitude="-88.145000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER POSEIDON | 26-13.8N 094-43.8W">
+      <position>
+        <vertex id="1" latitude="26.230000" longitude="-94.730000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="(NEW RIG) DEEPWATER PROTEUS | 26-31.2N 090-31.9W">
+      <position>
+        <vertex id="1" latitude="26.520000" longitude="-90.531667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER THALASSA | 25-45.0N 095-24.3W">
+      <position>
+        <vertex id="1" latitude="25.750000" longitude="-95.405000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEEPWATER TITAN | 27-09.1N 091-12.7W">
+      <position>
+        <vertex id="1" latitude="27.151667" longitude="-91.211667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEFENDER | 18-28.6N 094-01.9W">
+      <position>
+        <vertex id="1" latitude="18.476667" longitude="-94.031667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="DEVELOPMENT DRILLER III | 10-38.5N 061-39.0W">
+      <position>
+        <vertex id="1" latitude="10.641667" longitude="-61.650000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="ENTERPRISE 264 | 10-21.2N 061-49.0W">
+      <position>
+        <vertex id="1" latitude="10.353333" longitude="-61.816667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="ESSAR WILDCAT | 18-51.5N 091-45.7W">
+      <position>
+        <vertex id="1" latitude="18.858333" longitude="-91.761667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="FRIDA I | 19-36.1N 092-31.6W">
+      <position>
+        <vertex id="1" latitude="19.601667" longitude="-92.526667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="GERSEMI | 19-02.5N 092-14.8W">
+      <position>
+        <vertex id="1" latitude="19.041667" longitude="-92.246667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="GULF DRILLER VI | 19-23.1N 092-20.8W">
+      <position>
+        <vertex id="1" latitude="19.385000" longitude="-92.346667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="GULF DRILLER VIII | 18-29.9N 094-00.4W">
+      <position>
+        <vertex id="1" latitude="18.498333" longitude="-94.006667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="H&amp;P RIG 201 | 28-09.6N 089-13.1W">
+      <position>
+        <vertex id="1" latitude="28.160000" longitude="-89.218333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="H&amp;P RIG 203 | 28-08.5N 089-57.3W">
+      <position>
+        <vertex id="1" latitude="28.141667" longitude="-89.955000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="H&amp;P RIG 205 | 26-06.8N 094-53.2W">
+      <position>
+        <vertex id="1" latitude="26.113333" longitude="-94.886667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="HELIX Q4000 | 27-23.8N 090-18.3W">
+      <position>
+        <vertex id="1" latitude="27.396667" longitude="-90.305000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="HELIX Q5000 | 28-00.6N 089-09.8W">
+      <position>
+        <vertex id="1" latitude="28.010000" longitude="-89.163333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="HILD | 19-02.6N 092-26.6W">
+      <position>
+        <vertex id="1" latitude="19.043333" longitude="-92.443333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="IOLAIR | 19-30.8N 092-09.1W">
+      <position>
+        <vertex id="1" latitude="19.513333" longitude="-92.151667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="JACK ST MALO | 26-14.1N 091-15.7W">
+      <position>
+        <vertex id="1" latitude="26.235000" longitude="-91.261667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="JOE DOUGLAS | 09-59.6N 060-18.4W">
+      <position>
+        <vertex id="1" latitude="9.993333" longitude="-60.306667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="KUKULKAN | 18-16.4N 094-03.6W">
+      <position>
+        <vertex id="1" latitude="18.273333" longitude="-94.060000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="LA COVADONGA | 19-18.1N 092-10.0W">
+      <position>
+        <vertex id="1" latitude="19.301667" longitude="-92.166667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="LA SANTA MARIA | 18-36.8N 093-17.7W">
+      <position>
+        <vertex id="1" latitude="18.613333" longitude="-93.295000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="LIZA DESTINY | 08-00.7N 056-59.5W">
+      <position>
+        <vertex id="1" latitude="8.011667" longitude="-56.991667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="LIZA UNITY | 08-00.6N 056-54.9W">
+      <position>
+        <vertex id="1" latitude="8.010000" longitude="-56.915000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="MAD DOG | 27-11.3N 090-16.1W">
+      <position>
+        <vertex id="1" latitude="27.188333" longitude="-90.268333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="MAERSK DISCOVERER | 11-38.9N 073-42.0W">
+      <position>
+        <vertex id="1" latitude="11.648333" longitude="-73.700000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="MARLIN TLP | 29-06.5N 087-56.7W">
+      <position>
+        <vertex id="1" latitude="29.108333" longitude="-87.945000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="MARS TLP | 28-10.4N 089-13.4W">
+      <position>
+        <vertex id="1" latitude="28.173333" longitude="-89.223333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="MIAMTE MV34 | 18-24.3N 093-46.2W">
+      <position>
+        <vertex id="1" latitude="18.405000" longitude="-93.770000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NABARIMA | 10-14.8N 062-09.0W">
+      <position>
+        <vertex id="1" latitude="10.246667" longitude="-62.150000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NABORS MODS 140 | 28-12.5N 088-43.5W">
+      <position>
+        <vertex id="1" latitude="28.208333" longitude="-88.725000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NABORS MODS 400 | 26-56.0N 090-31.4W">
+      <position>
+        <vertex id="1" latitude="26.933333" longitude="-90.523333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NFE PIONEER III | 22-39.2N 097-40.8W">
+      <position>
+        <vertex id="1" latitude="22.653333" longitude="-97.680000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NJORD | 18-30.4N 093-15.7W">
+      <position>
+        <vertex id="1" latitude="18.506667" longitude="-93.261667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE BLACKHAWK | 27-14.4N 090-49.1W">
+      <position>
+        <vertex id="1" latitude="27.240000" longitude="-90.818333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE BLACKHORNET | 27-13.5N 090-01.9W">
+      <position>
+        <vertex id="1" latitude="27.225000" longitude="-90.031667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE BLACKLION | 27-08.8N 090-19.1W">
+      <position>
+        <vertex id="1" latitude="27.146667" longitude="-90.318333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE BLACKRHINO | 27-01.8N 090-59.4W">
+      <position>
+        <vertex id="1" latitude="27.030000" longitude="-90.990000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="(NEW POSITION) NOBLE BOB DOUGLAS | 08-00.1N 056-42.7W">
+      <position>
+        <vertex id="1" latitude="8.001667" longitude="-56.711667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE DEVELOPER | 07-18.2N 055-46.9W">
+      <position>
+        <vertex id="1" latitude="7.303333" longitude="-55.781667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="(NEW POSITION) NOBLE DON TAYLOR | 08-01.2N 056-46.1W">
+      <position>
+        <vertex id="1" latitude="8.020000" longitude="-56.768333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE SAM CROFT | 08-01.6N 056-46.5W">
+      <position>
+        <vertex id="1" latitude="8.026667" longitude="-56.775000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="(NEW POSITION) NOBLE STANLEY LAFOSSE | 28-36.1N 088-12.6W">
+      <position>
+        <vertex id="1" latitude="28.601667" longitude="-88.210000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="NOBLE TOM MADDEN | 07-52.3N 056-39.7W">
+      <position>
+        <vertex id="1" latitude="7.871667" longitude="-56.661667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="OLYMPUS N88 | 28-09.6N 089-12.8W">
+      <position>
+        <vertex id="1" latitude="28.160000" longitude="-89.213333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="ONE GUYANA | 07-57.4N 056-43.0W">
+      <position>
+        <vertex id="1" latitude="7.956667" longitude="-56.716667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="PAPALOAPAN | 19-25.1N 092-03.1W">
+      <position>
+        <vertex id="1" latitude="19.418333" longitude="-92.051667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="PERRO NEGRO 10 | 18-20.2N 093-52.2W">
+      <position>
+        <vertex id="1" latitude="18.336667" longitude="-93.870000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="PIONEER | 26-41.7N 090-30.6W">
+      <position>
+        <vertex id="1" latitude="26.695000" longitude="-90.510000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="PROSPERITY | 08-11.7N 057-00.2W">
+      <position>
+        <vertex id="1" latitude="8.195000" longitude="-57.003333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="SANDUNGA | 19-31.0N 091-59.0W">
+      <position>
+        <vertex id="1" latitude="19.516667" longitude="-91.983333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="SEAROSE FPSO | 46-47.2N 048-00.8W">
+      <position>
+        <vertex id="1" latitude="46.786667" longitude="-48.013333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="SHELL WHALE | 26-13.4N 094-40.4W">
+      <position>
+        <vertex id="1" latitude="26.223333" longitude="-94.673333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="STENA CARRON | 07-56.3N 056-49.2W">
+      <position>
+        <vertex id="1" latitude="7.938333" longitude="-56.820000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="STENA EVOLUTION | 27-02.4N 092-14.6W">
+      <position>
+        <vertex id="1" latitude="27.040000" longitude="-92.243333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="TERRA NOVA | 46-28.3N 048-27.9W">
+      <position>
+        <vertex id="1" latitude="46.471667" longitude="-48.465000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="THUNDER HORSE PDQ | 28-11.4N 088-29.7W">
+      <position>
+        <vertex id="1" latitude="28.190000" longitude="-88.495000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="TUXPAN | 18-45.8N 091-45.7W">
+      <position>
+        <vertex id="1" latitude="18.763333" longitude="-91.761667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="UXPANAPA | 18-32.4N 093-17.7W">
+      <position>
+        <vertex id="1" latitude="18.540000" longitude="-93.295000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="VALARIS DS 16 | 27-23.5N 090-15.7W">
+      <position>
+        <vertex id="1" latitude="27.391667" longitude="-90.261667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="VALARIS GORILLA VII | 10-39.1N 061-37.4W">
+      <position>
+        <vertex id="1" latitude="10.651667" longitude="-61.623333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="VITO FPU | 28-01.5N 089-12.6W">
+      <position>
+        <vertex id="1" latitude="28.025000" longitude="-89.210000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="WEST COURAGEOUS | 19-30.4N 092-00.0W">
+      <position>
+        <vertex id="1" latitude="19.506667" longitude="-92.000000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="WEST INTREPID | 19-36.5N 092-15.5W">
+      <position>
+        <vertex id="1" latitude="19.608333" longitude="-92.258333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="WEST NEPTUNE | 28-10.5N 088-45.4W">
+      <position>
+        <vertex id="1" latitude="28.175000" longitude="-88.756667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="WEST VELA | 26-50.9N 091-00.1W">
+      <position>
+        <vertex id="1" latitude="26.848333" longitude="-91.001667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="WFD 400 | 28-41.0N 090-08.9W">
+      <position>
+        <vertex id="1" latitude="28.683333" longitude="-90.148333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="YUNUEN | 19-32.4N 092-10.5W">
+      <position>
+        <vertex id="1" latitude="19.540000" longitude="-92.175000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 735/2026" description="YUUM K AK NAAB | 19-36.7N 092-17.9W">
+      <position>
+        <vertex id="1" latitude="19.611667" longitude="-92.298333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 735/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 737/2026" description="NAVAREA IV 737/2026 292341 UTC JUL 2026 GULF OF MEXICO. LOUISIANA. USCG REMOTE COMMUNICATION FACILITY NEW ORLEANS 29-53.00N 089-57.00W HF DSC SERVICES OFF AIR.">
+      <position>
+        <vertex id="1" latitude="29.883333" longitude="-89.950000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 737/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 750/2026" description="1. NAVTEX STATION MIAMI (A) 25-30.00N 080-23.00W INOPERATIVE.">
+      <position>
+        <vertex id="1" latitude="25.500000" longitude="-80.383333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 750/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 756/2026" description="1. UNDERWATER OPERATIONS 05 THRU 19 AUG BY CABLESHIP IT INTREPID IN 16-32.79N 075-39.00W. TWO MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="16.546500" longitude="-75.650000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 756/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 779/2026" description="2. ICEBERG LIMIT ALONG TRACKLINE JOINING 48-25N 053-10W 48-40N 052-20W 50-10N 051-00W 58-00N 053-00W.">
+      <position>
+        <vertex id="1" latitude="50.166667" longitude="-51.000000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 779/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 779/2026" description="3. ESTIMATED ICEBERG LIMIT ALONG TRACKLINE JOINING 58-00N 053-00W 60-20N 052-00W 58-15N 042-45W 58-15N 041-40W 64-20N 036-20W 64-10N 027-30W.">
+      <position>
+        <vertex id="1" latitude="58.250000" longitude="-41.666667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 779/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 779/2026" description="4. WESTERN ICEBERG LIMIT ALONG TRACKLINE JOINING 51-20N 058-20W 50-35N 057-20W.">
+      <position>
+        <vertex id="1" latitude="50.583333" longitude="-57.333333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 779/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 779/2026" description="5. SEA ICE LIMIT ALONG TRACKLINE JOINING 62-03N 066-00W 62-03N 063-55W 63-03N 061-45W 65-14N 058-49W 68-53N 062-52W 69-11N 066-41W.">
+      <position>
+        <vertex id="1" latitude="65.233333" longitude="-58.816667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 779/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 780/2026" description="1. UNDERWATER OPERATIONS 1000Z TO 2000Z DAILY UNTIL 13 SEP BY CABLESHIP ILE DE YEU ALONG TRACKLINE JOINING 06-07.96N 050-11.98W 05-42.65N 048-10.88W 04-08.82N 046-25.06W 02-28.17N 045-06.01W 02-10.82N 044-46.98W 00-43.66N 043-12.68W 00-18.44S 042-11.09W 01-07.78S 040-58.42W 01-48.28S 038-57.49W 02-14.74S 037-36.65W 02-11.35S 036-54.42W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="0.727667" longitude="-43.211333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 780/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+  </labels>
+  <!--userchart circle-->
+  <circles>
+    <circle name="NAV IV 743/2026" description="1. UNDERWATER OPERATIONS 020800Z THRU 180800Z AUG BY M/V ATLANTIS ABD SUBMERSIBLE ALVIN IN AREA WITHIN 100 MILES OF 18-23.00N 081-47.00W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="18.383333" longitude="-81.783333"/>
+      </position>
+      <attribute range="100.000000"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </circle>
+  </circles>
+</userchart>

@@ -1,0 +1,1152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--userchart node-->
+<userchart name="NAVAREA IV (Part 1)" description="" version="1.0">
+  <!--userchart line-->
+  <lines>
+    <line name="NAV IV 640/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 31 AUG IN AREA BOUND BY 05-48.42N 051-29.96W 05-50.32N 051-27.42W 05-52.51N 051-25.07W 05-53.20N 051-24.58W 05-54.13N 051-23.64W 05-55.17N 051-22.16W 06-03.26N 051-04.52W 06-07.98N 050-38.64W 06-07.96N 050-11.71W 05-07.65N 052-07.78W 05-18.45N 051-59.35W 05-24.77N 051-53.68W 05-25.27N 051-53.28W 05-31.16N 051-47.95W 05-31.67N 051-47.61W 05-34.43N 051-45.16W 05-36.55N 051-43.12W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="5.807000" longitude="-51.499333"/>
+        <vertex id="2" latitude="5.838667" longitude="-51.457000"/>
+        <vertex id="3" latitude="5.875167" longitude="-51.417833"/>
+        <vertex id="4" latitude="5.886667" longitude="-51.409667"/>
+        <vertex id="5" latitude="5.902167" longitude="-51.394000"/>
+        <vertex id="6" latitude="5.919500" longitude="-51.369333"/>
+        <vertex id="7" latitude="6.054333" longitude="-51.075333"/>
+        <vertex id="8" latitude="6.133000" longitude="-50.644000"/>
+        <vertex id="9" latitude="6.132667" longitude="-50.195167"/>
+        <vertex id="10" latitude="5.127500" longitude="-52.129667"/>
+        <vertex id="11" latitude="5.307500" longitude="-51.989167"/>
+        <vertex id="12" latitude="5.412833" longitude="-51.894667"/>
+        <vertex id="13" latitude="5.421167" longitude="-51.888000"/>
+        <vertex id="14" latitude="5.519333" longitude="-51.799167"/>
+        <vertex id="15" latitude="5.527833" longitude="-51.793500"/>
+        <vertex id="16" latitude="5.573833" longitude="-51.752667"/>
+        <vertex id="17" latitude="5.609167" longitude="-51.718667"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IV 649/2026" description="1. PIPELINE OPERATIONS IN PROGRESS UNTIL 201000Z OCT BY M/V DLV 2000 ALONG TRACKLINE JOINING 10-03.73N 061-00.62W 10-03.65N 060-57.67W 09-52.32N 060-28.13W 09-54.29N 060-17.43W 09-57.88N 060-13.71W 09-55.71N 060-08.78W. 500 METER BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="10.062167" longitude="-61.010333"/>
+        <vertex id="2" latitude="10.060833" longitude="-60.961167"/>
+        <vertex id="3" latitude="9.872000" longitude="-60.468833"/>
+        <vertex id="4" latitude="9.904833" longitude="-60.290500"/>
+        <vertex id="5" latitude="9.964667" longitude="-60.228500"/>
+        <vertex id="6" latitude="9.928500" longitude="-60.146333"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+  </lines>
+  <!--userchart area-->
+  <areas>
+    <area name="NAV IV 222/2023" description="NAVAREA IV 222/2023 011529 MAR 2023 ANGUILLA. ANCHORING PROHIBITED UNTIL FURTHER NOTICE IN AREA BOUND BY 18-13.60N 063-04.15W 18-13.60N 063-04.70W 18-13.20N 063-04.70W 18-13.20N 063-04.50W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="18.226667" longitude="-63.069167"/>
+        <vertex id="2" latitude="18.226667" longitude="-63.078333"/>
+        <vertex id="3" latitude="18.220000" longitude="-63.078333"/>
+        <vertex id="4" latitude="18.220000" longitude="-63.075000"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 12/2024 (A)" description="NAVAREA IV 12/2024 031916 UTC JAN 2024 WESTERN NORTH ATLANTIC. UNDERWATER OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V BOURBON CALM AND M/V BOURBON SAPPHIRE ZONE A 08-00.66N 056-44.58W 08-00.66N 056-40.12W 07-54.87N 056-40.12W 07-54.87N 056-44.58W.">
+      <position>
+        <vertex id="1" latitude="8.011000" longitude="-56.743000"/>
+        <vertex id="2" latitude="8.011000" longitude="-56.668667"/>
+        <vertex id="3" latitude="7.914500" longitude="-56.668667"/>
+        <vertex id="4" latitude="7.914500" longitude="-56.743000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 12/2024 (B)" description="NAVAREA IV 12/2024 031916 UTC JAN 2024 WESTERN NORTH ATLANTIC. UNDERWATER OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V BOURBON CALM AND M/V BOURBON SAPPHIRE ZONE B 08-15.96N 057-02.23W 08-15.96N 056-54.25W 07-58.60N 056-54.25W 07-58.60N 057-02.23W.">
+      <position>
+        <vertex id="1" latitude="8.266000" longitude="-57.037167"/>
+        <vertex id="2" latitude="8.266000" longitude="-56.904167"/>
+        <vertex id="3" latitude="7.976667" longitude="-56.904167"/>
+        <vertex id="4" latitude="7.976667" longitude="-57.037167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 12/2024 (C)" description="NAVAREA IV 12/2024 031916 UTC JAN 2024 WESTERN NORTH ATLANTIC. UNDERWATER OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V BOURBON CALM AND M/V BOURBON SAPPHIRE ZONE C 08-06.94N 056-49.93W 08-06.94N 056-46.61W 07-58.94N 056-46.61W 07-58.94N 056-49.93W. WIDE BERTH REQUESTED. ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="8.115667" longitude="-56.832167"/>
+        <vertex id="2" latitude="8.115667" longitude="-56.776833"/>
+        <vertex id="3" latitude="7.982333" longitude="-56.776833"/>
+        <vertex id="4" latitude="7.982333" longitude="-56.832167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 1524/2024" description="2. TO AVOID THE RISK OF POLLUTION AND DAMAGE TO THE ENVIRONMENT, ENTRY IS PROHIBITED FOR VESSELS OF 300 GROSS TONS AND GREATER, AND ANCHORING IS PROHIBITED FOR ALL VESSELS, IN AREA BOUND BY 17-27.06N 063-56.14W 17-29.00N 063-55.09W 17-27.94N 063-43.32W 17-38.03N 063-27.41W 17-43.35N 063-32.74W 17-45.98N 063-29.98W 17-40.34N 063-21.10W 17-30.88N 063-10.92W 17-23.80N 063-11.25W 17-16.27N 063-15.85W 17-13.44N 063-26.89W 17-10.55N 063-41.81W 17-20.85N 063-49.89W. VESSELS VIOLATING THESE REGULATIONS WILL RECEIVE A FINE.">
+      <position>
+        <vertex id="1" latitude="17.451000" longitude="-63.935667"/>
+        <vertex id="2" latitude="17.483333" longitude="-63.918167"/>
+        <vertex id="3" latitude="17.465667" longitude="-63.722000"/>
+        <vertex id="4" latitude="17.633833" longitude="-63.456833"/>
+        <vertex id="5" latitude="17.722500" longitude="-63.545667"/>
+        <vertex id="6" latitude="17.766333" longitude="-63.499667"/>
+        <vertex id="7" latitude="17.672333" longitude="-63.351667"/>
+        <vertex id="8" latitude="17.514667" longitude="-63.182000"/>
+        <vertex id="9" latitude="17.396667" longitude="-63.187500"/>
+        <vertex id="10" latitude="17.271167" longitude="-63.264167"/>
+        <vertex id="11" latitude="17.224000" longitude="-63.448167"/>
+        <vertex id="12" latitude="17.175833" longitude="-63.696833"/>
+        <vertex id="13" latitude="17.347500" longitude="-63.831500"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 354/2025 (A)" description="NAVAREA IV 354/2025 250016 UTC MAR 2025 EASTERN CARIBBEAN SEA. VENEZUELA. HAZARDOUS OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE ZONE A 10-59.88N 064-17.05W 11-11.68N 064-57.00W 11-47.56N 064-25.28W 10-59.88N 064-17.05W.">
+      <position>
+        <vertex id="1" latitude="11.194667" longitude="-64.950000"/>
+        <vertex id="2" latitude="10.998000" longitude="-64.284167"/>
+        <vertex id="3" latitude="10.998000" longitude="-64.284167"/>
+        <vertex id="4" latitude="11.792667" longitude="-64.421333"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 354/2025 (B)" description="NAVAREA IV 354/2025 250016 UTC MAR 2025 EASTERN CARIBBEAN SEA. VENEZUELA. HAZARDOUS OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE ZONE B 11-07.07N 063-40.77W 11-14.91N 063-59.52W 11-55.00N 064-01.98W 11-28.25N 063-07.48W. ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="11.117833" longitude="-63.679500"/>
+        <vertex id="2" latitude="11.248500" longitude="-63.992000"/>
+        <vertex id="3" latitude="11.916667" longitude="-64.033000"/>
+        <vertex id="4" latitude="11.470833" longitude="-63.124667"/>
+      </position>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 1430/2025" description="1. UNDERWATER OPERATIONS IN PROGRESS UNTIL 31 DEC 26 BY OSV ALDEMIR SOUZA TIDE IN AREA BOUND BY 08-15.96N 057-02.23W 08-15.96N 056-54.25W 07-58.60N 056-54.25W 07-58.60N 057-02.23W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="8.266000" longitude="-57.037167"/>
+        <vertex id="2" latitude="8.266000" longitude="-56.904167"/>
+        <vertex id="3" latitude="7.976667" longitude="-56.904167"/>
+        <vertex id="4" latitude="7.976667" longitude="-57.037167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 1431/2025" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 31 DEC 26 BY VESSEL BOS PRINCESS IN AREA BOUND BY 08-09.73N 057-09.73W 08-09.73N 056-35.00W 08-09.73N 056-30.27W 07-59.73N 056-30.27W 07-59.73N 056-25.27W 07-49.73N 056-25.27W 07-49.73N 056-20.27W 07-44.73N 056-20.27W 07-44.73N 056-14.32W 07-40.08N 056-15.25W 07-30.27N 056-19.43W 07-30.27N 056-24.73W 07-35.27N 056-24.73W 07-35.27N 056-35.27W 07-30.27N 056-35.27W 07-30.27N 056-44.73W 07-35.27N 056-44.73W 07-35.27N 056-54.73W 07-40.27N 056-54.73W 07-40.27N 057-09.73W 07-40.27N 057-09.73W 08-05.00N 057-09.73W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="7.671167" longitude="-57.162167"/>
+        <vertex id="2" latitude="7.671167" longitude="-57.162167"/>
+        <vertex id="3" latitude="7.671167" longitude="-56.912167"/>
+        <vertex id="4" latitude="7.587833" longitude="-56.912167"/>
+        <vertex id="5" latitude="7.587833" longitude="-56.745500"/>
+        <vertex id="6" latitude="7.504500" longitude="-56.745500"/>
+        <vertex id="7" latitude="7.504500" longitude="-56.587833"/>
+        <vertex id="8" latitude="7.587833" longitude="-56.587833"/>
+        <vertex id="9" latitude="7.504500" longitude="-56.412167"/>
+        <vertex id="10" latitude="7.504500" longitude="-56.323833"/>
+        <vertex id="11" latitude="7.587833" longitude="-56.412167"/>
+        <vertex id="12" latitude="7.668000" longitude="-56.254167"/>
+        <vertex id="13" latitude="7.745500" longitude="-56.337833"/>
+        <vertex id="14" latitude="7.745500" longitude="-56.238667"/>
+        <vertex id="15" latitude="7.828833" longitude="-56.337833"/>
+        <vertex id="16" latitude="7.828833" longitude="-56.421167"/>
+        <vertex id="17" latitude="7.995500" longitude="-56.421167"/>
+        <vertex id="18" latitude="7.995500" longitude="-56.504500"/>
+        <vertex id="19" latitude="8.162167" longitude="-56.504500"/>
+        <vertex id="20" latitude="8.162167" longitude="-56.583333"/>
+        <vertex id="21" latitude="8.162167" longitude="-57.162167"/>
+        <vertex id="22" latitude="8.083333" longitude="-57.162167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 7/2026 (A)" description="1. PIPELINE OPERATIONS IN PROGRESS THRU 31 DEC 26 BY THE FOLLOWING VESSELS: C-CONFIDENCE, C- INSTALLER, CLARENCE TRICHE, GUYANA HERO, HORN ISLAND, MADAM KALINA PARADISE ISLAND, RUSSELL ADAMS, SANIBEL ISLAND, TED SMITH, WINE ISLAND, RUSSELL BOUZIGA, A???RINRA ZONE A 08-00.66N 056-44.58W 08-00.66N 056-40.12W 07-54.87N 056-40.12W 07-54.87N 056-44.58W.">
+      <position>
+        <vertex id="1" latitude="8.011000" longitude="-56.743000"/>
+        <vertex id="2" latitude="8.011000" longitude="-56.668667"/>
+        <vertex id="3" latitude="7.914500" longitude="-56.668667"/>
+        <vertex id="4" latitude="7.914500" longitude="-56.743000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 7/2026 (B)" description="1. PIPELINE OPERATIONS IN PROGRESS THRU 31 DEC 26 BY THE FOLLOWING VESSELS: C-CONFIDENCE, C- INSTALLER, CLARENCE TRICHE, GUYANA HERO, HORN ISLAND, MADAM KALINA PARADISE ISLAND, RUSSELL ADAMS, SANIBEL ISLAND, TED SMITH, WINE ISLAND, RUSSELL BOUZIGA, A???RINRA ZONE B 08-15.96N 057-02.23W 08-15.96N 056-54.25W 07-58.60N 056-54.25W 07-58.60N 057-02.23W.">
+      <position>
+        <vertex id="1" latitude="8.266000" longitude="-57.037167"/>
+        <vertex id="2" latitude="8.266000" longitude="-56.904167"/>
+        <vertex id="3" latitude="7.976667" longitude="-56.904167"/>
+        <vertex id="4" latitude="7.976667" longitude="-57.037167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 7/2026 (C)" description="1. PIPELINE OPERATIONS IN PROGRESS THRU 31 DEC 26 BY THE FOLLOWING VESSELS: C-CONFIDENCE, C- INSTALLER, CLARENCE TRICHE, GUYANA HERO, HORN ISLAND, MADAM KALINA PARADISE ISLAND, RUSSELL ADAMS, SANIBEL ISLAND, TED SMITH, WINE ISLAND, RUSSELL BOUZIGA, A???RINRA ZONE C 08-06.94N 056-49.93W 08-06.94N 056-46.61W 07-58.94N 056-46.61W 07-58.94N 056-49.93W.">
+      <position>
+        <vertex id="1" latitude="8.115667" longitude="-56.832167"/>
+        <vertex id="2" latitude="8.115667" longitude="-56.776833"/>
+        <vertex id="3" latitude="7.982333" longitude="-56.776833"/>
+        <vertex id="4" latitude="7.982333" longitude="-56.832167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 7/2026 (D)" description="1. PIPELINE OPERATIONS IN PROGRESS THRU 31 DEC 26 BY THE FOLLOWING VESSELS: C-CONFIDENCE, C- INSTALLER, CLARENCE TRICHE, GUYANA HERO, HORN ISLAND, MADAM KALINA PARADISE ISLAND, RUSSELL ADAMS, SANIBEL ISLAND, TED SMITH, WINE ISLAND, RUSSELL BOUZIGA, A???RINRA ZONE D 08-03.09N 056-46.93W 08-03.09N 056-43.66W 07-56.58N 056-43.67W 07-56.57N 056-38.77W 07-51.15N 056-38.77W 07-51.15N 056-46.94W.">
+      <position>
+        <vertex id="1" latitude="8.051500" longitude="-56.782167"/>
+        <vertex id="2" latitude="8.051500" longitude="-56.727667"/>
+        <vertex id="3" latitude="7.943000" longitude="-56.727833"/>
+        <vertex id="4" latitude="7.942833" longitude="-56.646167"/>
+        <vertex id="5" latitude="7.852500" longitude="-56.646167"/>
+        <vertex id="6" latitude="7.852500" longitude="-56.782333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 98/2026" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 31 DEC 26 BY M/V FUGRO BRASILIS IN AREA BOUND BY: 08-00.00N 057-09.90W 08-00.00N 056-28.70W 07-41.00N 056-28.70W 07-41.10N 057-09.90W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="8.000000" longitude="-57.165000"/>
+        <vertex id="2" latitude="8.000000" longitude="-56.478333"/>
+        <vertex id="3" latitude="7.683333" longitude="-56.478333"/>
+        <vertex id="4" latitude="7.685000" longitude="-57.165000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 496/2026" description="1. UNDERWATER OPERATIONS 01 JUN THRU 31 AUG BY M/V NORMAND NAVIGATOR IN AREA BOUND BY 07-28.00N 056-00.00W 07-28.00N 055-53.00W 07-13.00N 055-53.00W 07-13.00N 056-00.00W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="7.466667" longitude="-56.000000"/>
+        <vertex id="2" latitude="7.466667" longitude="-55.883333"/>
+        <vertex id="3" latitude="7.216667" longitude="-55.883333"/>
+        <vertex id="4" latitude="7.216667" longitude="-56.000000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 539/2026" description="1. UNDERWATER OPERATIONS IN PROGRESS UNTIL 31 DEC BY M/V C-WORKER 1 IN AREA BOUND BY 07-54.85N 057-06.47W 08-04.55N 057-06.47W 08-04.55N 056-50.16W 07-54.85N 056-50.16W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="7.914167" longitude="-57.107833"/>
+        <vertex id="2" latitude="8.075833" longitude="-57.107833"/>
+        <vertex id="3" latitude="8.075833" longitude="-56.836000"/>
+        <vertex id="4" latitude="7.914167" longitude="-56.836000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 551/2026" description="NAVAREA IV 551/2026 092015 UTC JUN 2026-1.SURVEY OPERATIONS IN PROGRESS UNTIL 16 NOV BY M/V SEA HORSE II IN AREA BOUND BY 07-57.54N 058-27.64W 07-57.95N 057-51.01W 07-57.54N 057-51.01W 07-11.93N 057-33.86W 07-11.51N 058-09.64W 07-57.54N 058-27.64W. WIDE BERTH REQUESTED. 2. CANCEL">
+      <position>
+        <vertex id="1" latitude="7.191833" longitude="-58.160667"/>
+        <vertex id="2" latitude="7.198833" longitude="-57.564333"/>
+        <vertex id="3" latitude="7.959000" longitude="-57.850167"/>
+        <vertex id="4" latitude="7.965833" longitude="-57.850167"/>
+        <vertex id="5" latitude="7.959000" longitude="-58.460667"/>
+        <vertex id="6" latitude="7.959000" longitude="-58.460667"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 552/2026" description="NAVAREA IV 552/2026 092047 UTC JUN 2026-1.SURVEY OPERATIONS IN PROGRESS UNTIL 16 NOV BY M/V SEAQUEST IN AREA BOUND BY 07-57.54N 058-27.64W 07-57.95N 057-57.95W 07-57.54N 057-51.01W 07-11.93N 057-33.86W 07-11.51N 058-09.64W 07-57.54N 058-27.64W. WIDE BERTH REQUESTED. 2. CANCEL">
+      <position>
+        <vertex id="1" latitude="7.191833" longitude="-58.160667"/>
+        <vertex id="2" latitude="7.198833" longitude="-57.564333"/>
+        <vertex id="3" latitude="7.959000" longitude="-57.850167"/>
+        <vertex id="4" latitude="7.965833" longitude="-57.965833"/>
+        <vertex id="5" latitude="7.959000" longitude="-58.460667"/>
+        <vertex id="6" latitude="7.959000" longitude="-58.460667"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 586/2026" description="1. UNDERWATER OPERATIONS IN PROGRESS UNTIL 31 DEC BY VESSEL OCV NORMAND NAVIGATOR IN AREA BOUND BY 08-00.65N 056-44.58W 08-00.65N 056-40.12W 07-54.87N 056-40.12W 07-54.87N 056-44.58W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="8.010833" longitude="-56.743000"/>
+        <vertex id="2" latitude="8.010833" longitude="-56.668667"/>
+        <vertex id="3" latitude="7.914500" longitude="-56.668667"/>
+        <vertex id="4" latitude="7.914500" longitude="-56.743000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 587/2026" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 15 SEP BY M/V ISLAND PRIDE, M/V SANCO SWIFT AND M/V OLYMPIC ARTEMIS IN AREA BOUND BY 27-24.06N 090-02.90W 27-24.71N 090-36.63W 26-55.92N 090-37.24W 26-55.29N 090-03.65W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="27.401000" longitude="-90.048333"/>
+        <vertex id="2" latitude="27.411833" longitude="-90.610500"/>
+        <vertex id="3" latitude="26.932000" longitude="-90.620667"/>
+        <vertex id="4" latitude="26.921500" longitude="-90.060833"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 615/2026" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 15 NOV BY M/V BGP PROSPECTOR IN AREA BOUND BY 07-50.19N 058-24.50W 07-50.01N 057-29.99W 07-15.21N 057-13.52W 07-15.21N 057-32.07W 07-19.72N 057-34.21W 07-20.04N 058-13.41W 07-37.60N 058-20.00W 07-40.76N 058-20.00W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="7.836500" longitude="-58.408333"/>
+        <vertex id="2" latitude="7.833500" longitude="-57.499833"/>
+        <vertex id="3" latitude="7.253500" longitude="-57.225333"/>
+        <vertex id="4" latitude="7.253500" longitude="-57.534500"/>
+        <vertex id="5" latitude="7.328667" longitude="-57.570167"/>
+        <vertex id="6" latitude="7.334000" longitude="-58.223500"/>
+        <vertex id="7" latitude="7.626667" longitude="-58.333333"/>
+        <vertex id="8" latitude="7.679333" longitude="-58.333333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 616/2026" description="1. SURVEY OPERATIONS IN PROGRESS UNTIL 15 NOV BY M/V MOONRISE G IN AREA BOUND BY 07-50.19N 058-24.50W 07-50.01N 057-29.99W 07-15.21N 057-13.52W 07-15.21N 057-32.07W 07-19.72N 057-34.21W 07-20.04N 058-13.41W 07-37.60N 058-20.00W 07-40.76N 058-20.00W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="7.836500" longitude="-58.408333"/>
+        <vertex id="2" latitude="7.833500" longitude="-57.499833"/>
+        <vertex id="3" latitude="7.253500" longitude="-57.225333"/>
+        <vertex id="4" latitude="7.253500" longitude="-57.534500"/>
+        <vertex id="5" latitude="7.328667" longitude="-57.570167"/>
+        <vertex id="6" latitude="7.334000" longitude="-58.223500"/>
+        <vertex id="7" latitude="7.626667" longitude="-58.333333"/>
+        <vertex id="8" latitude="7.679333" longitude="-58.333333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IV 621/2026" description="1. UNDERWATER OPERATIONS IN PROGRESS UNTIL 31 DEC BY M/V PRINSENGRACHT IN AREA BOUND BY 08-03.09N 056-46.88W 08-03.09N 056-43.66W 07-56.57N 056-38.77W 07-51.15N 056-38.77W 07-51.15N 056-46.94W 07-56.58N 056-43.67W. WIDE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="8.051500" longitude="-56.781333"/>
+        <vertex id="2" latitude="8.051500" longitude="-56.727667"/>
+        <vertex id="3" latitude="7.942833" longitude="-56.646167"/>
+        <vertex id="4" latitude="7.852500" longitude="-56.646167"/>
+        <vertex id="5" latitude="7.852500" longitude="-56.782333"/>
+        <vertex id="6" latitude="7.943000" longitude="-56.727833"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+  </areas>
+  <!--userchart label-->
+  <labels>
+    <label name="NAV IV 144/21" description="NAVAREA IV 144/21(28). WESTERN CARIBBEAN SEA. MEXICO. CHART 28004. PUERTO MORELOS LIGHT 20-50.2N 086-55.0W UNRELIABLE.">
+      <position>
+        <vertex id="1" latitude="20.836667" longitude="-86.916667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 144/21"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 778/21" description="NAVAREA IV 778/21(28). BAY OF CAMPECHE. MEXICO. CHART 28320. LA BARRA LIGHT 20-58.4N 097-18.5W UNRELIABLE.">
+      <position>
+        <vertex id="1" latitude="20.973333" longitude="-97.308333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 778/21"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1003/21" description="NAVAREA IV 1003/21(28). GULF OF HONDURAS. HONDURAS. CHART 28171. PUNTA SAL LIGHT 15-55.5N 087-36.2W UNLIT.">
+      <position>
+        <vertex id="1" latitude="15.925000" longitude="-87.603333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1003/21"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 120/22" description="NAVAREA IV 120/22(25). CARIBBEAN SEA. DOMINICAN REPUBLIC. CHART 25800. PUNTA LAGUNA LIGHT 18-08.3N 068-45.3W UNLIT.">
+      <position>
+        <vertex id="1" latitude="18.138333" longitude="-68.755000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 120/22"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 141/22" description="1. HUNTING CAY, ZAPODILLA CAYS LIGHT 16-06.5N 088-16.0W UNLIT.">
+      <position>
+        <vertex id="1" latitude="16.108333" longitude="-88.266667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 141/22"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 227/22" description="NAVAREA IV 227/22(25). WESTERN NORTH ATLANTIC. DOMINICAN REPUBLIC. CHART 25720. PUERTO PLATA LIGHT 19-48.2N 070-41.7W UNLIT.">
+      <position>
+        <vertex id="1" latitude="19.803333" longitude="-70.695000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 227/22"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 367/22" description="NAVAREA IV 367/22(28). WESTERN CARIBBEAN SEA. MEXICO. CHART 28190. PUNTA ALLEN LIGHT 19-47.1N 087-27.8W UNLIT.">
+      <position>
+        <vertex id="1" latitude="19.785000" longitude="-87.463333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 367/22"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 439/2022" description="NAVAREA IV 439/2022 070315Z MAY 2022 YUCATAN CHANNEL. MEXICO. CHART 28210. ISLA CONTOY LIGHT 21-31.60N 086-48.30W UNLIT.">
+      <position>
+        <vertex id="1" latitude="21.526667" longitude="-86.805000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 439/2022"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 441/2022" description="NAVAREA IV 441/2022 070356Z MAY 2022 CARIBBEAN SEA. JAMAICA. CHART 26220. PORTLAND RIDGE LIGHT 17-44.50N 077-09.50W UNLIT.">
+      <position>
+        <vertex id="1" latitude="17.741667" longitude="-77.158333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 441/2022"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 748/2022" description="NAVAREA IV 748/2022 011051Z AUG 2022 CARIBBEAN SEA. NETHERLANDS ANTILLES. KLEIN CURACAO LIGHT 11-59.4N 068-38.6W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.990000" longitude="-68.643333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 748/2022"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 356/2023" description="NAVAREA IV 356/2023 271909 UTC MAR 2023 WESTERN CARIBBEAN SEA. MEXICO. CHART 28190. TULUM LIGHT 20-12.68N 087-25.80W UNLIT.">
+      <position>
+        <vertex id="1" latitude="20.211333" longitude="-87.430000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 356/2023"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 873/2023" description="1. PUERTO CORTES ENTRANCE BUOY REMOVED | 15.865000 -87.965000">
+      <position>
+        <vertex id="1" latitude="15.865000" longitude="-87.965000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 873/2023"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1377/2023" description="NAVAREA IV 1377/2023 282012 UTC NOV 2023 CARIBBEAN SEA. DOMINICAN REPUBLIC. CABO ENGANO LIGHTHOUSE 18-36.80N 068-19.50W UNLIT.">
+      <position>
+        <vertex id="1" latitude="18.613333" longitude="-68.325000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1377/2023"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1403/2023" description="NAVAREA IV 1403/2023 041246 UTC DEC 2023 WESTERN CARIBBEAN SEA. MEXICO. XCALAK LIGHTHOUSE 18-16.45N 087-50.10W UNLIT.">
+      <position>
+        <vertex id="1" latitude="18.274167" longitude="-87.835000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1403/2023"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1404/2023" description="NAVAREA IV 1404/2023 041253 UTC DEC 2023 GULF OF MEXICO. CAYO ARENA LIGHTHOUSE 22-06.90N 91-23.90W UNLIT.">
+      <position>
+        <vertex id="1" latitude="22.115000" longitude="-91.398333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1404/2023"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 151/2024" description="NAVAREA IV 151/2024 092139 UTC FEB 2024 EASTERN CARIBBEAN SEA. VENEZUELA. DNC 14. FARO PUNTA MEJILLONES LIGHT 10-42.20N 062-08.40W DISCONTINUED.">
+      <position>
+        <vertex id="1" latitude="10.703333" longitude="-62.140000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 151/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 214/2024" description="NAVAREA IV 214/2024 250645 UTC FEB 2024 CARIBBEAN SEA. NETHERLANDS ANTILLES. KLEIN BONAIRE LIGHT 12-09.37N 068-19.61W UNLIT.">
+      <position>
+        <vertex id="1" latitude="12.156167" longitude="-68.326833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 214/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 325/2024" description="NAVAREA IV 325/2024 211603 UTC MAR 2024 WESTERN NORTH ATLANTIC. GUYANA. ODAS BUOY ESTABLISHED IN | 7.044500 -57.977500">
+      <position>
+        <vertex id="1" latitude="7.044500" longitude="-57.977500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 325/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 437/2024" description="NAVAREA IV 437/2024 171713 UTC APR 2024 WESTERN CARIBBEAN SEA. COLOMBIA. CAYO RONCADOR LIGHT 13-34.41N 080-05.51W UNLIT.">
+      <position>
+        <vertex id="1" latitude="13.573500" longitude="-80.091833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 437/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 701/2024" description="NAVAREA IV 701/2024 182334 UTC JUN 2024 GULF OF MEXICO. MEXICO. CARBONERA LIGHT 24-37.62N 097-42.97W UNLIT.">
+      <position>
+        <vertex id="1" latitude="24.627000" longitude="-97.716167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 701/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 702/2024" description="NAVAREA IV 702/2024 182341 UTC JUN 2024 GULF OF MEXICO MEXICO. PUNTA DE PIEDRA LIGHT 24-29.23N 097-44.56W UNLIT.">
+      <position>
+        <vertex id="1" latitude="24.487167" longitude="-97.742667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 702/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 703/2024" description="NAVAREA IV 703/2024 182349 UTC JUN 2024 WESTERN CARIBBEAN SEA. MEXICO. PUNTA HERRERO LIGHT 19-18.76N 087-26.76W UNLIT.">
+      <position>
+        <vertex id="1" latitude="19.312667" longitude="-87.446000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 703/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 722/2024" description="1. SANDBORE CAY LIGHT 17-28.20N 087-29.50W UNLIT.">
+      <position>
+        <vertex id="1" latitude="17.470000" longitude="-87.491667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 722/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 746/2024" description="NAVAREA IV 746/2024 270637 UTC JUN 2024 WESTERN NORTH ATLANTIC. ODAS BUOY ESTABLISHED IN | 47.898833 -46.795667">
+      <position>
+        <vertex id="1" latitude="47.898833" longitude="-46.795667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 746/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 797/2024" description="NAVAREA IV 797/2024 090142 UTC JUL 2024 EASTERN CARIBBEAN SEA. GRENADINES. CHART 25001 DANGEROUS WRECK IN 12-35.75N 061-24.44W.">
+      <position>
+        <vertex id="1" latitude="12.595833" longitude="-61.407333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 797/2024"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1125/2024" description="NAVAREA IV 1125/2024 130138 UTC SEP 2024 GULF OF HONDURAS. BELIZE. CHART 28162. EAST SNAKE CAYE LIGHT 16-12.60N 088-30.20W UNLIT.">
+      <position>
+        <vertex id="1" latitude="16.210000" longitude="-88.503333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1125/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1382/2024" description="NAVAREA IV 1382/2024 061213 UTC NOV 2024 CARIBBEAN SEA. DOMINICAN REPUBLIC. PUNTA TORRECILLA LIGHT 18-27.86N 069-52.58W UNLIT.">
+      <position>
+        <vertex id="1" latitude="18.464333" longitude="-69.876333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1382/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1553/2024" description="NAVAREA IV 1553/2024 111518 UTC DEC 2024 WESTERN CARIBBEAN SEA. CUBA. LOS BALLENATOS LIGHT, FL W 10 SEC 8 METERS 8 MILES, ESTABLISHED IN 21-34.71N 081-38.30W.">
+      <position>
+        <vertex id="1" latitude="21.578500" longitude="-81.638333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1553/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 12/2025" description="NAVAREA IV 12/2025 021647 UTC JAN 2025 GULF OF HONDURAS. BELIZE. HUNTING CAY LIGHT 16-06.40N 088-16.60W UNLIT.">
+      <position>
+        <vertex id="1" latitude="16.106667" longitude="-88.276667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 12/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 90/2025" description="NAVAREA IV 90/2025 161845 UTC JAN 2025 BAY OF CAMPECHE. MEXICO. SANTIAGUILLO LIGHT 19-08.56N 095-48.48W UNLIT.">
+      <position>
+        <vertex id="1" latitude="19.142667" longitude="-95.808000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 90/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 130/2025" description="NAVAREA IV 130/2025 300123 UTC JAN 2025 WESTERN CARIBBEAN SEA. BELIZE. HALF MOON CAY LIGHT 17-12.20N 087-31.80W UNLIT.">
+      <position>
+        <vertex id="1" latitude="17.203333" longitude="-87.530000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 130/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 155/2025" description="NAVAREA IV 155/2025 060337 UTC FEB 2025 CARIBBEAN SEA. COLOMBIA. RACON AT RIO MAGDALENA F-2 LIGHT 11-06.40N 074-51.30W INOPERATIVE.">
+      <position>
+        <vertex id="1" latitude="11.106667" longitude="-74.855000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 155/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 183/2025" description="NAVAREA IV 183/2025 130304 UTC FEB 2025 EASTERN CARIBBEAN SEA. VENEZUELA. ISLA TESTIGO GRANDE LIGHT 11-22.90N 063-07.20W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.381667" longitude="-63.120000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 183/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 311/2025" description="NAVAREA IV 311/2025 141709 UTC MAR 2025 EASTERN CARIBBEAN SEA. VENEZUELA. ORCHILA PIER BEACON 11-48.43N 066-12.00W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.807167" longitude="-66.200000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 311/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 312/2025" description="NAVAREA IV 312/2025 141716 UTC MAR 2025 EASTERN CARIBBEAN SEA. VENEZUELA. WOLKER LIGHT 11-48.70N 066-11.08W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.811667" longitude="-66.184667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 312/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 466/2025" description="NAVAREA IV 466/2025 251029 UTC APR 2025 WESTERN CARIBBEAN SEA. NICARAGUA. HOYO SOPLADOR LIGHT, FL W 15 SEC 20 METERS 12 MILES, ESTABLISHED IN 12-28.85N 081-43.83W.">
+      <position>
+        <vertex id="1" latitude="12.480833" longitude="-81.730500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 466/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 504/2025" description="NAVAREA IV 504/2025 070902 UTC MAY 2025 WESTERN CARIBBEAN SEA. PANAMA. MANZANILLO ENTRANCE LIGHT 09-22.90N 079-53.90W TEMPORARILY CHANGED TO WHITE.">
+      <position>
+        <vertex id="1" latitude="9.381667" longitude="-79.898333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 504/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 563/2025" description="NAVAREA IV 563/2025 262356 UTC MAY 2025 EASTERN CARIBBEAN SEA. VENEZUELA. PUNTA TIGRE LIGHT 11-04.92N 064-13.00W TEMPORARILY REMOVED.">
+      <position>
+        <vertex id="1" latitude="11.082000" longitude="-64.216667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 563/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 616/2025" description="(A) BOSTON (F) 41-42.00N 070-30.30W.">
+      <position>
+        <vertex id="1" latitude="41.700000" longitude="-70.505000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 616/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 616/2025" description="(B) CHESAPEAKE (N) 36-43.70N 076-00.60W.">
+      <position>
+        <vertex id="1" latitude="36.728333" longitude="-76.010000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 616/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 616/2025" description="(C) CHARLESTON (E) 32-50.00N 079-56.00W.">
+      <position>
+        <vertex id="1" latitude="32.833333" longitude="-79.933333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 616/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 616/2025" description="(D) MIAMI (A) 25-37.00N 080-23.00W.">
+      <position>
+        <vertex id="1" latitude="25.616667" longitude="-80.383333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 616/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 616/2025" description="(G) 29-53.10N 089-56.70W. ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="29.885000" longitude="-89.945000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 616/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 643/2025" description="NAVAREA IV 643/2025 190025 UTC JUN 2025 EASTERN CARIBBEAN SEA. VENEZUELA. PUNTA ORIENTAL LIGHT 10-54.00N 065-12.30W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.900000" longitude="-65.205000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 643/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 644/2025" description="1. PUNTA BOROJO LIGHT 11-12.08N 070-46.67W CHANGED TO FL W 11 SEC 19 METERS 18 MILES.">
+      <position>
+        <vertex id="1" latitude="11.201333" longitude="-70.777833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 644/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 650/2025" description="NAVAREA IV 650/2025 200559 UTC JUN 2025 WESTERN CARIBBEAN SEA. PANAMA. PORT HAND 3 BUOY MISSING | 9.392000 -79.895833">
+      <position>
+        <vertex id="1" latitude="9.392000" longitude="-79.895833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 650/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 663/2025" description="NAVAREA IV 663/2025 240832 UTC JUN 2025 WESTERN CARIBBEAN SEA. PANAMA. STARBOARD HAND 4 BUOY MISSING | 9.392000 -79.897833">
+      <position>
+        <vertex id="1" latitude="9.392000" longitude="-79.897833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 663/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 667/2025" description="NAVAREA IV 667/2025 251300 UTC JUN 2025 EASTERN CARIBBEAN SEA. MARTINIQUE. CARENAGE RANGE REAR LIGHT 14-36.32N 061-03.74W CHANGED TO OC (2) G 50 METERS 9 MILES.">
+      <position>
+        <vertex id="1" latitude="14.605333" longitude="-61.062333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 667/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 671/2025" description="NAVAREA IV 671/2025 252311 UTC JUN 2025 CARIBBEAN SEA. VENEZUELA. PUNTA CHARAGATO LIGHT 10-50.48N 064-09.38W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.841333" longitude="-64.156333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 671/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(A) PUNTA IZOPO 15-50.90N 087-22.50W.">
+      <position>
+        <vertex id="1" latitude="15.848333" longitude="-87.375000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(B) PUMPKIN HILL 16-07.30N 086-52.90W.">
+      <position>
+        <vertex id="1" latitude="16.121667" longitude="-86.881667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(C) COCHINO GRANDE 15-58.60N 086-28.60W.">
+      <position>
+        <vertex id="1" latitude="15.976667" longitude="-86.476667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(D) CABO CAMARON 15-59.20N 085-01.70W.">
+      <position>
+        <vertex id="1" latitude="15.986667" longitude="-85.028333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(E) PUNTA PATUCA 15-48.90N 084-18.20W.">
+      <position>
+        <vertex id="1" latitude="15.815000" longitude="-84.303333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(F) CABO FALSO 15-15.20N 083-23.70W.">
+      <position>
+        <vertex id="1" latitude="15.253333" longitude="-83.395000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(G) PUNTA CAXINAS 16-01.50N 086-00.60W.">
+      <position>
+        <vertex id="1" latitude="16.025000" longitude="-86.010000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 693/2025" description="(H) PUNTA OESTE 16-16.10N 086-36.10W. ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="16.268333" longitude="-86.601667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 693/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 761/2025" description="NAVAREA IV 761/2025 221148 UTC JUL 2025 NORTH ATLANTIC. SURINAME. SAFEWATER BUOY LS MISSING | 6.080167 -55.213667">
+      <position>
+        <vertex id="1" latitude="6.080167" longitude="-55.213667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 761/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 789/2025" description="NAVAREA IV 789/2025 291532 UTC JUL 2025 CARIBBEAN SEA. VENEZUELA. LA GUAIRA LIGHT 10-36.25N 066-56.71W ESTABLISHED.">
+      <position>
+        <vertex id="1" latitude="10.604167" longitude="-66.945167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 789/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 829/2025" description="NAVAREA IV 829/2025 080127 UTC AUG 2025 CARIBBEAN SEA. TRINIDAD AND TOBAGO. CHACACHACARE LIGHT 10-41.81N 061-45.25W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.696833" longitude="-61.754167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 829/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 872/2025" description="NAVAREA IV 872/2025 161717 UTC AUG 2025 NORTH ATLANTIC. DOMINICAN REPUBLIC. DUE TO HURRICANE ERIN, LATERAL BUOYS REMOVED: (A) BUOY 1 REMOVED | 19.176833 -69.275167">
+      <position>
+        <vertex id="1" latitude="19.176833" longitude="-69.275167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 872/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 872/2025" description="NAVAREA IV 872/2025 161717 UTC AUG 2025 NORTH ATLANTIC. DOMINICAN REPUBLIC. DUE TO HURRICANE ERIN, LATERAL BUOYS REMOVED: (A) BUOY 1 REMOVED | 19.150667 -69.124000">
+      <position>
+        <vertex id="1" latitude="19.150667" longitude="-69.124000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 872/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 872/2025" description="NAVAREA IV 872/2025 161717 UTC AUG 2025 NORTH ATLANTIC. DOMINICAN REPUBLIC. DUE TO HURRICANE ERIN, LATERAL BUOYS REMOVED: (A) BUOY 1 REMOVED | 19.172500 -69.229000">
+      <position>
+        <vertex id="1" latitude="19.172500" longitude="-69.229000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 872/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 998/2025" description="NAVAREA IV 998/2025 191411 UTC SEP 2025 CARIBBEAN SEA. TRINIDAD AND TOBAGO. UNMARKED SUBMERGED WELLHEAD IN 10-28.29N 061-33.83W.">
+      <position>
+        <vertex id="1" latitude="10.471500" longitude="-61.563833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 998/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1114/2025" description="1. CROWN POINT LIGHT 11-08.90N 060-50.70W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.148333" longitude="-60.845000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1114/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1158/2025" description="NAVAREA IV 1158/2025 272347 UTC OCT 2025 CARIBBEAN SEA. VENEZUELA. DANGEROUS WRECK IN 10-13.39N 064-42.22W.">
+      <position>
+        <vertex id="1" latitude="10.223167" longitude="-64.703667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1158/2025"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(A) 2.3 METERS IN 58-49.00N 068-19.01W.">
+      <position>
+        <vertex id="1" latitude="58.816667" longitude="-68.316833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(B) 5.8 METERS IN 58-49.68N 068-16.55W.">
+      <position>
+        <vertex id="1" latitude="58.828000" longitude="-68.275833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(C) 3.9 METERS IN 58-49.75N 068-15.92W.">
+      <position>
+        <vertex id="1" latitude="58.829167" longitude="-68.265333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(D) 4.2 METERS IN 58-14.03N 068-16.62W.">
+      <position>
+        <vertex id="1" latitude="58.233833" longitude="-68.277000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(E) 3.6 METERS IN 58-13.74N 068-16.92W.">
+      <position>
+        <vertex id="1" latitude="58.229000" longitude="-68.282000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(F) 4.6 METERS IN 58-10.50N 068-19.17W.">
+      <position>
+        <vertex id="1" latitude="58.175000" longitude="-68.319500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(G) 4.2 METERS IN 58-10.37N 068-19.26W.">
+      <position>
+        <vertex id="1" latitude="58.172833" longitude="-68.321000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(H) 6.7 METERS IN 58-06.57N 068-18.88W.">
+      <position>
+        <vertex id="1" latitude="58.109500" longitude="-68.314667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(I) 2.7 METERS IN 58-05.89N 068-21.85W.">
+      <position>
+        <vertex id="1" latitude="58.098167" longitude="-68.364167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(J) 1.8 METERS IN 58-05.90N 068-22.09W.">
+      <position>
+        <vertex id="1" latitude="58.098333" longitude="-68.368167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(K) 3.0 METERS IN 58-05.90N 068-22.24W.">
+      <position>
+        <vertex id="1" latitude="58.098333" longitude="-68.370667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1170/2025" description="(L) 0.4 METERS IN 58-05.44N 068-23.56W. ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="58.090667" longitude="-68.392667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1170/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1174/2025" description="NAVAREA IV 1174/2025 311928 UTC OCT 2025 CARIBBEAN SEA. VENEZUELA. CABO NEGRO LIGHT 11-30.15N 069-33.34W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.502500" longitude="-69.555667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1174/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1175/2025" description="NAVAREA IV 1175/2025 311939 UTC OCT 2025 CARIBBEAN SEA. VENEZUELA. ROBLEDAL LIGHT 11-02.59N 064-22.63W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.043167" longitude="-64.377167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1175/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1282/2025" description="NAVAREA IV 1282/2025 191207 UTC NOV 2025 CARIBBEAN SEA. GUADELOUPE. LA DESIRADE LIGHT 16-20.00N 061-00.33W UNLIT.">
+      <position>
+        <vertex id="1" latitude="16.333333" longitude="-61.005500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1282/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(A) 61-32.92N 059-23.18W 2230 METERS.">
+      <position>
+        <vertex id="1" latitude="61.548667" longitude="-59.386333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(B) 61-20.01N 058-47.40W 2545 METERS.">
+      <position>
+        <vertex id="1" latitude="61.333500" longitude="-58.790000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(C) 61-03.97N 058-12.11W 2733 METERS.">
+      <position>
+        <vertex id="1" latitude="61.066167" longitude="-58.201833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(D) 60-51.41N 057-37.03W 2882 METERS.">
+      <position>
+        <vertex id="1" latitude="60.856833" longitude="-57.617167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(E) 61-25.56N 059-50.90W 2053 METERS.">
+      <position>
+        <vertex id="1" latitude="61.426000" longitude="-59.848333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(F) 61-15.38N 059-22.43W 2310 METERS.">
+      <position>
+        <vertex id="1" latitude="61.256333" longitude="-59.373833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(G) 61-03.18N 058-55.91W 2519 METERS.">
+      <position>
+        <vertex id="1" latitude="61.053000" longitude="-58.931833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(H) 60-53.82N 058-33.22W 2650 METERS.">
+      <position>
+        <vertex id="1" latitude="60.897000" longitude="-58.553667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(I) 60-38.79N 058-04.73W 2678 METERS.">
+      <position>
+        <vertex id="1" latitude="60.646500" longitude="-58.078833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(J) 61-09.01N 060-06.80W 2056 METERS.">
+      <position>
+        <vertex id="1" latitude="61.150167" longitude="-60.113333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(K) 61-02.04N 059-32.47W 2335 METERS.">
+      <position>
+        <vertex id="1" latitude="61.034000" longitude="-59.541167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(L) 60-49.16N 059-12.67W 2383 METERS.">
+      <position>
+        <vertex id="1" latitude="60.819333" longitude="-59.211167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(M) 60-43.09N 058-43.89W 2442 METERS.">
+      <position>
+        <vertex id="1" latitude="60.718167" longitude="-58.731500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(N) 60-50.62N 060-11.91W 1963 METERS.">
+      <position>
+        <vertex id="1" latitude="60.843667" longitude="-60.198500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(O) 60-42.99N 059-40.96W 2093 METERS.">
+      <position>
+        <vertex id="1" latitude="60.716500" longitude="-59.682667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(P) 60-35.80N 059-10.90W 2231 METERS.">
+      <position>
+        <vertex id="1" latitude="60.596667" longitude="-59.181667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(Q) 60-28.94N 058-27.74W 2613 METERS.">
+      <position>
+        <vertex id="1" latitude="60.482333" longitude="-58.462333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(R) 60-14.23N 057-51.33W 2772 METERS.">
+      <position>
+        <vertex id="1" latitude="60.237167" longitude="-57.855500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(S) 60-35.36N 060-10.70W 1739 METERS.">
+      <position>
+        <vertex id="1" latitude="60.589333" longitude="-60.178333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(T) 60-23.71N 059-36.23W 2257 METERS.">
+      <position>
+        <vertex id="1" latitude="60.395167" longitude="-59.603833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(U) 60-18.96N 059-04.37W 2428 METERS.">
+      <position>
+        <vertex id="1" latitude="60.316000" longitude="-59.072833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1292/2025" description="(V) 60-13.29N 058-33.87W 2635 METERS. ANY INQUIRIES CAN BE DIRECTED TO GRAEME CAIRNS AT NFSI (GRAEME.CAIRNS@DAL.CA) OR ALEXANDRE PLOURDE AT NRCAN (ALEXANDRE.PLOURDE@NRCAN-RNCAN.GC.CA). ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="60.221500" longitude="-58.564500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1292/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1391/2025" description="1. CAYO NOROESTE LIGHT 11-13.31N 068-26.28W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.221833" longitude="-68.438000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1391/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 1413/2025" description="NAVAREA IV 1413/2025 241815 UTC DEC 2025 NORTH ATLANTIC. GUYANA. TWO ODAS BUOYS ESTABLISHED IN VICINITY | 6.965500 -57.809000">
+      <position>
+        <vertex id="1" latitude="6.965500" longitude="-57.809000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 1413/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 53/2026" description="NAVAREA IV 53/2026 200113 UTC JAN 2026 GULF OF AMERICA. MEXICO. DANGEROUS WRECK IN 25-14.24N 097-07.72W.">
+      <position>
+        <vertex id="1" latitude="25.237333" longitude="-97.128667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 53/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 55/2026" description="NAVAREA IV 55/2026 200251 UTC JAN 2026 NORTH ATLANTIC. CUBA. PUNTA BARLOVENTO LIGHT 20-43.20N 075-19.15W RANGE CHANGED TO 14 MILES.">
+      <position>
+        <vertex id="1" latitude="20.720000" longitude="-75.319167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 55/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 79/2026" description="NAVAREA IV 79/2026 270107 UTC JAN 2026 CARIBBEAN SEA. TRINIDAD AND TOBAGO. GRAN CHEMIN LIGHT 10-05.27N 061-16.77W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.087833" longitude="-61.279500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 79/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 113/2026" description="NAVAREA IV 113/2026 061649 UTC FEB 2026 CARIBBEAN SEA. PANAMA. MANZANILLO ENTRANCE WEST HEAD LIGHT 09-22.90N 079-53.90W DAMAGED.">
+      <position>
+        <vertex id="1" latitude="9.381667" longitude="-79.898333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 113/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 161/2026" description="1. CHUPARA POINT LIGHT, 10-48.72N 061-21.86W. UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.812000" longitude="-61.364333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 161/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 222/2026" description="NAVAREA IV 222/2026 102115 UTC MAR 2026 NORTH ATLANTIC. GUYANA. BARGE TRADER III SANK IN 06-53.77N 057-53.43W.">
+      <position>
+        <vertex id="1" latitude="6.896167" longitude="-57.890500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 222/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 306/2026" description="NAVAREA IV 306/2026 021409 UTC APR 2026 WESTERN NORTH ATLANTIC. CUBA. CARAPACHIBEY LIGHT 021-26.90N 082-55.40W UNLIT.">
+      <position>
+        <vertex id="1" latitude="21.448333" longitude="-82.923333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 306/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 345/2026" description="NAVAREA IV 345/2026 130037 UTC APR 2026 CARIBBEAN SEA. COLOMBIA. M/V ROSWAL SANK IN 08-40.88N 076-50.00W.">
+      <position>
+        <vertex id="1" latitude="8.681333" longitude="-76.833333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 345/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 413/2026" description="1. BRIGAND HILL LIGHT 10-29.61N 061-04.20W CHANGED TO FL (5) W 20 SEC 217 METERS 17 MILES.">
+      <position>
+        <vertex id="1" latitude="10.493500" longitude="-61.070000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 413/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 451/2026" description="NAVAREA IV 451/2026 150712 UTC MAY 2026 CARIBBEAN SEA. VENEZUELA. PUNTA PALANQUETE LIGHT 10-49.90N 064-12.60W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.831667" longitude="-64.210000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 451/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 452/2026" description="NAVAREA IV 452/2026 150721 UTC MAY 2026 CARIBBEAN SEA. VENEZUELA. PUNTA PERRET LIGHT 11-47.68N 071-20.37W UNLIT.">
+      <position>
+        <vertex id="1" latitude="11.794667" longitude="-71.339500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 452/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 525/2026" description="1. OBSTRUCTION 20 METERS BELOW SURFACE, IN 24-50.93N 077-48.83W UNTIL 30 NOV">
+      <position>
+        <vertex id="1" latitude="24.848833" longitude="-77.813833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 525/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 545/2026" description="NAVAREA IV 545/2026 062126 UTC JUN 2026 WESTERN CARIBBEAN PANAMA LM BUOY MISSING | 9.433167 -79.829667">
+      <position>
+        <vertex id="1" latitude="9.433167" longitude="-79.829667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 545/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 556/2026" description="NAVAREA IV 556/2026 102039 UTC JUN 2026 CARIBBEAN SEA. COLOMBIA. PUERTO BOLIVAR FRONT RANGE LIGHT 12-15.30N 071-57.50W UNLIT.">
+      <position>
+        <vertex id="1" latitude="12.255000" longitude="-71.958333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 556/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 601/2026" description="1. TAPARO POINT LIGHT IN 10-03.53N 061-37.55W UNLIT.">
+      <position>
+        <vertex id="1" latitude="10.058833" longitude="-61.625833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 601/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 640/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 31 AUG IN AREA BOUND BY 05-48.42N 051-29.96W 05-50.32N 051-27.42W 05-52.51N 051-25.07W 05-53.20N 051-24.58W 05-54.13N 051-23.64W 05-55.17N 051-22.16W 06-03.26N 051-04.52W 06-07.98N 050-38.64W 06-07.96N 050-11.71W 05-07.65N 052-07.78W 05-18.45N 051-59.35W 05-24.77N 051-53.68W 05-25.27N 051-53.28W 05-31.16N 051-47.95W 05-31.67N 051-47.61W 05-34.43N 051-45.16W 05-36.55N 051-43.12W. ONE MILE BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="6.132667" longitude="-50.195167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 640/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IV 649/2026" description="1. PIPELINE OPERATIONS IN PROGRESS UNTIL 201000Z OCT BY M/V DLV 2000 ALONG TRACKLINE JOINING 10-03.73N 061-00.62W 10-03.65N 060-57.67W 09-52.32N 060-28.13W 09-54.29N 060-17.43W 09-57.88N 060-13.71W 09-55.71N 060-08.78W. 500 METER BERTH REQUESTED.">
+      <position>
+        <vertex id="1" latitude="9.904833" longitude="-60.290500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IV 649/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+  </labels>
+</userchart>

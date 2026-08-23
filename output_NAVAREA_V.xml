@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA V IMPORT" description="" version="1.3">
+<areas>
+<area name="NAV V 449/26 (ALFA)" description="NAVAREA V 449/26 220129 UTC JUL 2026 SOUTH OF RIO DE JANEIRO CHART 21070 (INT 2008) LAUNCH OF 24 ANCHORAGE LINES 190300 UTC JUL 26 A 190259 UTC DEZ 26 VESSEL INVOLVED SKANDI ANGRA, BRAN TITAN, BRAN ATLAS, SKANDI URCA, SKANDI IGUACU, SKANDI LIFTER,SEVEN OCEANIC, SAPURA JADE, SKANDI SALVADOR AND SKANDI LOGGER MAERSK MARINER AREA ALFA 24-42.10S 042-26.12W 24-43.50S 042-20.70W 24-42.62S 042-25.68W 24-41.88S 042-26.07W 24-42.48S 042-25.95W 24-45.33S 042-20.83W 24-45.32S 042-20.82W 24-42.02S 042-25.67W 24-42.18S 042-22.95W 24-42.80S 042-24.65W 24-41.70S 042-27.10W 24-43.97S 042-21.55W 24-42.65S 042-24.60W 24-43.25S 042-24.83W 24-42.38S 042-27.25W">
+<position>
+<vertex id="1" latitude="-24.720833" longitude="-42.413833"/>
+<vertex id="2" latitude="-24.755500" longitude="-42.347167"/>
+<vertex id="3" latitude="-24.755333" longitude="-42.347000"/>
+<vertex id="4" latitude="-24.732833" longitude="-42.359167"/>
+<vertex id="5" latitude="-24.725000" longitude="-42.345000"/>
+<vertex id="6" latitude="-24.703000" longitude="-42.382500"/>
+<vertex id="7" latitude="-24.710833" longitude="-42.410000"/>
+<vertex id="8" latitude="-24.700333" longitude="-42.427833"/>
+<vertex id="9" latitude="-24.698000" longitude="-42.434500"/>
+<vertex id="10" latitude="-24.701667" longitude="-42.435333"/>
+<vertex id="11" latitude="-24.695000" longitude="-42.451667"/>
+<vertex id="12" latitude="-24.713333" longitude="-42.410833"/>
+<vertex id="13" latitude="-24.708000" longitude="-42.432500"/>
+<vertex id="14" latitude="-24.710333" longitude="-42.428000"/>
+<vertex id="15" latitude="-24.706333" longitude="-42.454167"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV V 449/26 (BRAVO)" description="NAVAREA V 449/26 220129 UTC JUL 2026 SOUTH OF RIO DE JANEIRO CHART 21070 (INT 2008) LAUNCH OF 24 ANCHORAGE LINES 190300 UTC JUL 26 A 190259 UTC DEZ 26 VESSEL INVOLVED SKANDI ANGRA, BRAN TITAN, BRAN ATLAS, SKANDI URCA, SKANDI IGUACU, SKANDI LIFTER,SEVEN OCEANIC, SAPURA JADE, SKANDI SALVADOR AND SKANDI LOGGER MAERSK MARINER AREA BRAVO 24-42.10S 042-26.02W 24-43.50S 042-20.70W 24-42.62S 042-25.68W 24-41.88S 042-26.07W 24-42.48S 042-25.97W 24-45.33S 042-20.83W 24-45.32S 042-20.82W 24-42.00S 042-25.67W 24-42.18S 042-22.97W 24-42.78S 042-24.65W 24-41.70S 042-27.08W 24-43.97S 042-21.53W 24-42.65S 042-24.60W 24-43.25S 042-24.83W 24-42.38S 042-27.27W">
+<position>
+<vertex id="1" latitude="-24.720833" longitude="-42.413833"/>
+<vertex id="2" latitude="-24.755500" longitude="-42.347167"/>
+<vertex id="3" latitude="-24.755333" longitude="-42.347000"/>
+<vertex id="4" latitude="-24.732833" longitude="-42.358833"/>
+<vertex id="5" latitude="-24.725000" longitude="-42.345000"/>
+<vertex id="6" latitude="-24.703000" longitude="-42.382833"/>
+<vertex id="7" latitude="-24.710833" longitude="-42.410000"/>
+<vertex id="8" latitude="-24.700000" longitude="-42.427833"/>
+<vertex id="9" latitude="-24.698000" longitude="-42.434500"/>
+<vertex id="10" latitude="-24.701667" longitude="-42.433667"/>
+<vertex id="11" latitude="-24.713000" longitude="-42.410833"/>
+<vertex id="12" latitude="-24.695000" longitude="-42.451333"/>
+<vertex id="13" latitude="-24.708000" longitude="-42.432833"/>
+<vertex id="14" latitude="-24.710333" longitude="-42.428000"/>
+<vertex id="15" latitude="-24.706333" longitude="-42.454500"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV V 449/26 (CHARLIE)" description="NAVAREA V 449/26 220129 UTC JUL 2026 SOUTH OF RIO DE JANEIRO CHART 21070 (INT 2008) LAUNCH OF 24 ANCHORAGE LINES 190300 UTC JUL 26 A 190259 UTC DEZ 26 VESSEL INVOLVED SKANDI ANGRA, BRAN TITAN, BRAN ATLAS, SKANDI URCA, SKANDI IGUACU, SKANDI LIFTER,SEVEN OCEANIC, SAPURA JADE, SKANDI SALVADOR AND SKANDI LOGGER MAERSK MARINER AREA CHARLIE 24-42.97S 036-24.77W 24-43.52S 036-22.15W 24-43.30S 036-24.90W 24-42.85S 036-24.68W 24-43.37S 036-24.92W 24-44.17S 036-22.32W 24-44.03S 036-22.47W 24-42.92S 036-24.70W 24-43.20S 036-22.45W 24-42.90S 036-24.48W 24-42.85S 036-24.45W 24-43.88S 036-22.42W 24-42.82S 036-24.40W 24-43.28S 036-24.68W 24-43.53S 036-24.72W 0.6 MILES RADIUS RECOMMENDED DISTANCE CANCEL THIS WARNING 190400 UTC DEC 26. ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="-24.722833" longitude="-36.415333"/>
+<vertex id="2" latitude="-24.725500" longitude="-36.412000"/>
+<vertex id="3" latitude="-24.736167" longitude="-36.372000"/>
+<vertex id="4" latitude="-24.733833" longitude="-36.374500"/>
+<vertex id="5" latitude="-24.731333" longitude="-36.373667"/>
+<vertex id="6" latitude="-24.725333" longitude="-36.369167"/>
+<vertex id="7" latitude="-24.720000" longitude="-36.374167"/>
+<vertex id="8" latitude="-24.713667" longitude="-36.406667"/>
+<vertex id="9" latitude="-24.714167" longitude="-36.407500"/>
+<vertex id="10" latitude="-24.715000" longitude="-36.408000"/>
+<vertex id="11" latitude="-24.714167" longitude="-36.411333"/>
+<vertex id="12" latitude="-24.715333" longitude="-36.411667"/>
+<vertex id="13" latitude="-24.716167" longitude="-36.412833"/>
+<vertex id="14" latitude="-24.721333" longitude="-36.411333"/>
+<vertex id="15" latitude="-24.721667" longitude="-36.415000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV V 470/26" description="NAVAREA V 470/26 290129 UTC JUL 2026 SANTOS OIL FIELD CHART 21070 (INT 2008) AREA DANGEROUS TO NAVIGATION 282000 UTC JUL 26 TO 060400 UTC JUN 27 IN AREA BOUND BY 24-39.87S 042-29.30W 24-39.78S 042-31.55W 24-38.97S 042-32.52W 24-38.15S 042-31.55W 24-38.07S 042-29.30W 24-38.97S 042-28.27W NAVIGATION IS PROHIBITED WITHIN A RADIUS OF 1.5 NAUTICAL MILES. CANCEL THIS WARNING 060400 UTC JUN 27.">
+<position>
+<vertex id="1" latitude="-24.664500" longitude="-42.488333"/>
+<vertex id="2" latitude="-24.663000" longitude="-42.525833"/>
+<vertex id="3" latitude="-24.649500" longitude="-42.542000"/>
+<vertex id="4" latitude="-24.635833" longitude="-42.525833"/>
+<vertex id="5" latitude="-24.634500" longitude="-42.488333"/>
+<vertex id="6" latitude="-24.649500" longitude="-42.471167"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV V 492/26" description="NAVAREA V 492/26 080129 UTC AUG 2026 CAMPOS OILFIELD CHART 1550 SEISMIC SURVEY 03 AUG 26 TO 09 JUL 27 BY BGP DRAGON IN THE AREA BOUND BY 22-32.79S 040-09.79W 22-30.18S 040-14.02W 22-22.20S 040-14.72W 22-18.56S 040-12.13W 22-14.72S 040-10.95W 22-08.19S 040-06.66W 22-04.65S 040-06.28W 22-01.32S 040-03.91W 22-00.21S 040-01.41W 21-58.95S 039-59.82W 21-57.94S 039-56.98W 21-59.51S 039-51.99W 22-02.26S 039-47.32W 22-06.87S 039-46.80W 22-12.18S 039-50.95W 22-12.92S 039-51.99W 22-21.80S 039-57.86W 22-25.83S 039-56.22W 22-28.41S 039-55.62W 22-34.61S 040-00.11W 22-35.52S 040-05.16W TOWING 210 METER SEISMIC EQUIPMENT WITH A 250 METER CABLE CANCEL NAVAREA 0491/26 CANCEL THIS WARNING 092200 UTC JUL 27.">
+<position>
+<vertex id="1" latitude="-22.546500" longitude="-40.163167"/>
+<vertex id="2" latitude="-22.503000" longitude="-40.233667"/>
+<vertex id="3" latitude="-22.370000" longitude="-40.245333"/>
+<vertex id="4" latitude="-22.309333" longitude="-40.202167"/>
+<vertex id="5" latitude="-22.245333" longitude="-40.182500"/>
+<vertex id="6" latitude="-22.136500" longitude="-40.111000"/>
+<vertex id="7" latitude="-22.077500" longitude="-40.104667"/>
+<vertex id="8" latitude="-22.022000" longitude="-40.065167"/>
+<vertex id="9" latitude="-22.003500" longitude="-40.023500"/>
+<vertex id="10" latitude="-21.982500" longitude="-39.997000"/>
+<vertex id="11" latitude="-21.965667" longitude="-39.949667"/>
+<vertex id="12" latitude="-21.991833" longitude="-39.866500"/>
+<vertex id="13" latitude="-22.037667" longitude="-39.788667"/>
+<vertex id="14" latitude="-22.114500" longitude="-39.780000"/>
+<vertex id="15" latitude="-22.203000" longitude="-39.849167"/>
+<vertex id="16" latitude="-22.215333" longitude="-39.866500"/>
+<vertex id="17" latitude="-22.363333" longitude="-39.964333"/>
+<vertex id="18" latitude="-22.430500" longitude="-39.937000"/>
+<vertex id="19" latitude="-22.473500" longitude="-39.927000"/>
+<vertex id="20" latitude="-22.576833" longitude="-40.001833"/>
+<vertex id="21" latitude="-22.592000" longitude="-40.086000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV V 495/26" description="NAVAREA V 495/26 090449 UTC AUG 2026 CAMPOS OILFIELD VICINITY CHART 1550 WORKS UNDER AND ON WATER LAUNCHING SUBMARINE CABLES 10 AUG 26 A 08 MAR 27 BY MCE NAVEGACAO I IN AREA BOUND BY 22-48.38S 041-08.21W 22-48.38S 041-01.70W 22-51.38S 041-01.70W 22-51.38S 041-08.21W CANCEL THIS WARNING 090000 UTC MAR 27.">
+<position>
+<vertex id="1" latitude="-22.806333" longitude="-41.136833"/>
+<vertex id="2" latitude="-22.806333" longitude="-41.028333"/>
+<vertex id="3" latitude="-22.856333" longitude="-41.028333"/>
+<vertex id="4" latitude="-22.856333" longitude="-41.136833"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV V 496/26" description="NAVAREA V 496/26 090449 UTC AUG 2026 EAST OF SANTA CATARINA CHART 30 (INT 201) SEISMIC SURVEY 10 AUG 26 TO 17 AUG 26 BY RAMFORM TITAN, DRS IPANEMA, OCEAN MERMAID E C ITAJAI. TOWING 12 CABLES WITH 9000 METERS IN THE AREA BOUND BY 29-30.21S 046-11.38W 29-30.18S 046-26.19W 30-03.21S 046-26.36W 30-03.36S 046-56.33W 30-18.35S 046-56.28W 30-17.95S 048-28.19W 30-06.69S 048-25.46W 30-06.21S 048-17.71W 30-03.07S 048-16.66W 29-56.43S 048-18.41W 29-31.45S 048-08.35W 29-15.16S 048-06.49W 29-10.05S 047-59.46W 29-03.83S 047-56.90W 28-59.58S 047-52.42W 28-53.93S 047-52.17W 28-42.84S 047-35.57W 28-35.21S 047-34.17W 28-35.25S 047-25.52W 28-32.66S 047-22.67W 28-07.86S 047-17.35W 27-53.39S 047-19.68W 27-53.32S 045-26.37W 29-18.28S 045-26.16W 29-18.40S 046-11.42W 29-30.21S 046-11.38W CANCEL NAVAREA 0481/26 CANCEL THIS WARNING 170100 UTC AUG 26.">
+<position>
+<vertex id="1" latitude="-29.524167" longitude="-48.139167"/>
+<vertex id="2" latitude="-29.940500" longitude="-48.306833"/>
+<vertex id="3" latitude="-30.111500" longitude="-48.424333"/>
+<vertex id="4" latitude="-30.051167" longitude="-48.277667"/>
+<vertex id="5" latitude="-30.103500" longitude="-48.295167"/>
+<vertex id="6" latitude="-30.299167" longitude="-48.469833"/>
+<vertex id="7" latitude="-30.305833" longitude="-46.938000"/>
+<vertex id="8" latitude="-30.056000" longitude="-46.938833"/>
+<vertex id="9" latitude="-30.053500" longitude="-46.439333"/>
+<vertex id="10" latitude="-29.503000" longitude="-46.436500"/>
+<vertex id="11" latitude="-29.503500" longitude="-46.189667"/>
+<vertex id="12" latitude="-29.503500" longitude="-46.189667"/>
+<vertex id="13" latitude="-29.306667" longitude="-46.190333"/>
+<vertex id="14" latitude="-29.304667" longitude="-45.436000"/>
+<vertex id="15" latitude="-27.888667" longitude="-45.439500"/>
+<vertex id="16" latitude="-28.131000" longitude="-47.289167"/>
+<vertex id="17" latitude="-27.889833" longitude="-47.328000"/>
+<vertex id="18" latitude="-28.544333" longitude="-47.377833"/>
+<vertex id="19" latitude="-28.587500" longitude="-47.425333"/>
+<vertex id="20" latitude="-28.586833" longitude="-47.569500"/>
+<vertex id="21" latitude="-28.714000" longitude="-47.592833"/>
+<vertex id="22" latitude="-28.898833" longitude="-47.869500"/>
+<vertex id="23" latitude="-28.993000" longitude="-47.873667"/>
+<vertex id="24" latitude="-29.063833" longitude="-47.948333"/>
+<vertex id="25" latitude="-29.167500" longitude="-47.991000"/>
+<vertex id="26" latitude="-29.252667" longitude="-48.108167"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+</areas>
+<circles>
+<circle name="NAV V 490/26" description="NAVAREA V 490/26 061329 UTC AUG 2026 SOUTHEAST OF CABO FRIO CHART 21070 (INT 2008) HAZARDOUS OPERATIONS - AREA DANGEROUS TO NAVIGATION 11 AUG 26 TO 13 AUG 26 08:00 TO 21:00 WITHIN 10.0 MILES OF 25-06.00S 041-13.00W CANCEL THIS WARNING 132200 UTC AUG 26.">
+<position>
+<vertex id="1" latitude="-25.100000" longitude="-41.216667"/>
+</position>
+<attribute range="10.000000" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</circle>
+</circles>
+<labels>
+<label name="NAV V 310/25" description="NAVAREA V 310/25 302101 UTC MAY 2025 EAST OF VITORIA CHART 21060 (INT 2007) INSERT DEPHT IN 20-35.71S 034-46.07W 18.3 METERS REMOVE DEPHT IN 20-34.33S 034-45.32W 57.0 METERS CANCEL NAVAREA 0185/25 CANCEL THIS WARNING 302000 UTC MAY 27.">
+<position>
+<vertex id="1" latitude="-20.595167" longitude="-34.767833"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 310/25" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 589/25" description="NAVAREA V 589/25 290301 UTC SEP 2025 TOW TUG TOWING BETWEEN 22-53.79S 043-12.44W 22-22.86S 041-45.95W LENGTH OF TOW 285 METERS SPEED 3 KNOTS CANCEL THIS WARNING 260639 UTC SEP 26.">
+<position>
+<vertex id="1" latitude="-22.896500" longitude="-43.207333"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 589/25" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 593/25" description="NAVAREA V 593/25 290301 UTC SEP 2025 TOW TUG TOWING BETWEEN 22-53.79S 043-12.44W 22-22.86S 041-45.95W LENGTH OF TOW 445 METERS SPEED 3 KNOTS CANCEL THIS WARNING 260639 UTC SEP 26.">
+<position>
+<vertex id="1" latitude="-22.896500" longitude="-43.207333"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 593/25" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 710/25" description="NAVAREA V 710/25 280301 UTC NOV 2025 CAMPOS OIL FIELD CHART 1550 UNDERWATER OPERATIONS 26 NOV 25 TO 02 NOV 26 10:00 TO 20:00 BY USV FUGRO VAQUITA IN 22-26.32S 040-25.47W IN 22-27.05S 040-24.71W CANCEL THIS WARNING 022100 UTC NOV 26.">
+<position>
+<vertex id="1" latitude="-22.438667" longitude="-40.424500"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 710/25" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 121/26" description="NAVAREA V 121/26 240247 UTC FEB 2026 EAST OF CABO DE SAO TOME CHART 23000 (INT 2123) REMOVAL OF SUBMERGED LINES CONNECTED TO MONOBUOY 2 (MB-2)DE PRA-1 IN 22-07.48S 040-10.48W 22-07.66S 040-10.71W CANCEL THIS WARNING 222000 UTC AUG 26.">
+<position>
+<vertex id="1" latitude="-22.124667" longitude="-40.174667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 121/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 128/26" description="NAVAREA V 128/26 270240 UTC FEB 2026 EAST OF SANTA CATARINA CHART 23300 (INT 2126) MOORING BUOY FOR COLLECTING METEOCEANOGRAPHIC DATA, YELLOW COLOR LP(5)A.20S IN | -27.406333 -47.265333">
+<position>
+<vertex id="1" latitude="-27.406333" longitude="-47.265333"/>
+</position>
+<attribute labelStyle="4" labelText="NAV V 128/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="NAV V 163/26" description="NAVAREA V 163/26 200253 UTC MAR 2026 EAST OF RIO GRANDE DO SUL CHART 23500 (INT 2128) MOORING BUOY FOR COLLECTING METEOCEANOGRAPHIC DATA, YELLOW COLOR LP(5)A.20S IN | -31.851667 -49.251667">
+<position>
+<vertex id="1" latitude="-31.851667" longitude="-49.251667"/>
+</position>
+<attribute labelStyle="4" labelText="NAV V 163/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="NAV V 260/26" description="NAVAREA V 260/26 222026 UTC APR 2026 CAMPOS OILFIELD VINICITY CHART 1550 DERELICT, 4 BUOYS WITH HOLMES FLARES AND 29 LIFE JACKETS, LAST POSITION 23-05.01S 040-59.43W IN 191000 UTC APR 26 INFORM THE MACAE PORT AUTHORITY: +55 22 2772-1889 / 185 (MARITIME AND RIVER EMERGENCIES TELEPHONE). EMAIL: CPM.SEGMAR@MARINHA.MIL.BR / OPS.MACAE.BR@SOLANA.COM.BR CANCEL THIS WARNING 260400 UTC OCT 26.">
+<position>
+<vertex id="1" latitude="-23.083500" longitude="-40.990500"/>
+</position>
+<attribute labelStyle="3" labelText="NAV V 260/26" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="NAV V 295/26" description="NAVAREA V 295/26 100129 UTC MAY 2026 CAMPOS OILFIELD VINICITY CHART 23000 (INT 2123) DERELICT, SUBMERSIBLE DRONE, LAST POSITION 23-07.45S 041-04.43W IN 061530 UTC MAI 26 INFORM THE MACAE PORT AUTHORITY: +55 22 2772-1889 / 185 (MARITIME AND RIVER EMERGENCIES TELEPHONE). EMAIL: CPM.SEGMAR@MARINHA.MIL.BR / OPS.MACAE.BR@SOLANA.COM.BR CANCEL THIS WARNING 051600 UTC NOV 26.">
+<position>
+<vertex id="1" latitude="-23.124167" longitude="-41.073833"/>
+</position>
+<attribute labelStyle="3" labelText="NAV V 295/26" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="NAV V 370/26" description="NAVAREA V 370/26 171329 UTC JUN 2026 BETWEEN VITORA AND RIO DE JANEIRO CHART 30 (INT 201) UNDERWATER OPERATIONS 14 MAY 26 TO 14 NOV 26 10:00 TO 20:00 BY USV FUGRO VAQUITA IN POSITIONS 22-03.00S 037-06.48W 20-27.24S 040-20.52W 22-59.46S 042-00.84W 25-55.32S 040-11.58W CANCEL THIS WARNING 142100 UTC NOV 26.">
+<position>
+<vertex id="1" latitude="-22.050000" longitude="-37.108000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 370/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 386/26" description="NAVAREA V 386/26 230129 UTC JUN 2026 BETWEEN VITORA AND RIO DE JANEIRO CHART 30 (INT 201) UNDERWATER OPERATIONS 17 JUN 26 TO 30 SEP 26 10:00 TO 20:00 BY USV FUGRO VAQUITA IN POSITIONS 22-55.58S 041-50.26W 22-55.54S 041-09.51W 23-26.22S 041-50.16W 23-27.06S 041-10.19W CANCEL THIS WARNING 302100 UTC SEP 26.">
+<position>
+<vertex id="1" latitude="-22.926333" longitude="-41.837667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 386/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 434/26" description="NAVAREA V 434/26 121329 UTC JUL 2026 TOW TUG SN CARAIVA TOWING FLU-FLAMBOYANT FERRY AND FLU-IPE FERRY BETWEEN 01-25.45S 048-29.67W 22-49.30S 043-05.40W LENGTH OF TOW 493 METERS SPEED 5 KNOTS CANCEL THIS WARNING 142200 UTC AUG 26.">
+<position>
+<vertex id="1" latitude="-1.424167" longitude="-48.494500"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 434/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV V 436/26" description="NAVAREA V 436/26 130129 UTC JUL 2026 SOUTHEAST OF RIO GRANDE CHART 23600 (INT 2129) LAUNCH OF ANCHOR BUOY FOR METEOROLOGICAL DATA COLLECTION WITH RADAR REFLECTOR YELLOW LIGHT SIGNAL CHARACTERISTIC FL(5)Y 20S IT IS REQUESTED TO MAINTAIN A MINIMUM DISTANCE OF 500 METERS IN | -32.881333 -50.843833">
+<position>
+<vertex id="1" latitude="-32.881333" longitude="-50.843833"/>
+</position>
+<attribute labelStyle="4" labelText="NAV V 436/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="NAV V 440/26" description="NAVAREA V 440/26 170129 UTC JUL 2026 NORTHEAST OF AMAPA CHART 21010 (INT 4071) LAUNCH OF ANCHOR BUOY FOR METEOROLOGICAL DATA COLLECTION WITH RADAR YELLOW LIGHT SIGNAL CHARACTERISTIC FL(5)Y 20S IT IS REQUESTED TO MAINTAIN A MINIMUM DISTANCE OF 500 METERS IN | 4.038333 -47.728333">
+<position>
+<vertex id="1" latitude="4.038333" longitude="-47.728333"/>
+</position>
+<attribute labelStyle="4" labelText="NAV V 440/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="NAV V 502/26" description="NAVAREA V 502/26 120129 UTC AUG 2026 BETWEEN FORTALEZA AND CABO ORANGE CHART 10 (INT 407) UNDERWATER OPERATIONS 11 AUG 26 TO 13 SEP 26 10:00 TO 20:00 BY ILE D YEU BETWEEN THE POINTS 00-18.44S 042-11.09W 02-11.35S 036-54.42W 02-10.82N 044-46.98W 06-07.96N 050-11.98W 05-42.65N 048-10.88W 02-28.17N 045-06.01W 04-08.82N 046-25.06W 00-43.66N 043-12.68W 01-07.78S 040-58.42W 01-48.28S 038-57.49W 02-14.74S 037-36.65W CANCEL NAVAREA 0498/26 CANCEL THIS WARNING 132100 UTC SEP 26. Disclaimer: The provision of navigational warnings from this service does not relieve Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with the provisions of SOLAS. The end user assumes all risks in using the NautoShark content, the data or information contained herein or the results thereof.">
+<position>
+<vertex id="1" latitude="-0.307333" longitude="-42.184833"/>
+</position>
+<attribute labelStyle="2" labelText="NAV V 502/26" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+</labels>
+</userchart>

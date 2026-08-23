@@ -1,0 +1,80 @@
+NAVAREA X (AUSTRALIA) - WARNINGS IN FORCE - AS AT 120900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 91/2026, 92/2026.
+
+NO CANCELLED WARNINGS SINCE LAST UPDATE.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: 87, 91, 92.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA X 87/2026
+282138 UTC JUL 2026
+SPECIAL PURPOSE VESSEL PMG EMERALD / VMGY / 503000137 CONDUCTING SURVEY OPERATIONS IN AN
+AREA BOUNDED BY 15-26.25 S TO 20-57.00 S AND 167-08.20 E TO 169-17.00 E
+
+2.5NM CLEARANCE
+REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA X 91/2026
+051140 UTC AUG 2026
+CHART AUS4704 - CAPE DARNLEY TO TASMANIA
+
+1. SPACE DEBRIS DANGER AREA 80NM EITHER SIDE OF
+CENTRELINE:
+
+40-44S 081-06E
+
+52-26S 115-07E
+
+48-08S 160-00E
+
+2. WINDOW BETWEEN 1455 UTC
+TO 2205 UTC DAILY 10 TO 16 AUG 2026
+
+---------------------------------------------------------------------------------------
+
+NAVAREA X 92/2026
+060000 UTC AUG 2026
+1. NAVAREA X WARNINGS IN FORCE AT 060000 UTC AUG 26
+
+087/26, 089/26, 091/26, 092/26
+
+2.
+AUSCOAST WARNINGS IN FORCE AT 060000 UTC AUG 26
+
+AREA A NIL
+
+AREA B 257/26, 263/26
+
+AREA
+C 231/26, 249/26
+
+AREA D 208/26, 227/26, 228/26, 231/26, 233/26, 234/26
+
+AREA E NIL
+
+AREA
+F 253/26, 262/26
+
+AREA G 120/26, 130/26, 202/26, 243/26, 255/26, 256/26, 260/26, 262/26,
+266/26, 174/26
+
+AREA H 202/26
+
+3. COMPLETE TEXTS OF ALL WARNINGS IN FORCE ARE AVAILABLE
+FROM WEBSITE WWW.AMSA.GOV.AU.
+
+4. CANCEL THIS MESSAGE 130000 UTC AUG 26
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

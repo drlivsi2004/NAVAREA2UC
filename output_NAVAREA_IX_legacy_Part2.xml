@@ -1,0 +1,1087 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--userchart node-->
+<userchart name="NAVAREA IX (Part 2)" description="" version="1.0">
+  <!--userchart line-->
+  <lines>
+    <line name="NAV IX 299/2024" description="1. OPERATIONS FOR TRESTLE CONSTRUCTION, SEABED EXCAVATION AND PIPELINE LAYING ACTIVITIES OF BAPCO TERMINAL TO SITRA PORT EXTENDED TILL END OF JUN 25 IN THE FOLLOWING BOUNDED AREA: 26-10.03N 050-39.57E 26-10.05N 050-39.72E 26-10.07N 050-40.00E 26-09.98N 050-40.28E 26-09.77N 050-40.42E 26-09.73N 050-40.37E 26-10.00N 050-39.90E 26-09.95N 050-39.72E 26-09.88N 050-39.58E 26-09.95N 050-39.55E MARINERS ARE ADVISED TO NAVIGATE WITH CAUTION, MAINTAIN LISTENING WATCH ON VHF CHANNEL 16/72/74 (BAHRAIN PORT CONTROL AND BAPCO WHARF CONTROL)">
+      <position>
+        <vertex id="1" latitude="26.167167" longitude="50.659500"/>
+        <vertex id="2" latitude="26.167500" longitude="50.662000"/>
+        <vertex id="3" latitude="26.167833" longitude="50.666667"/>
+        <vertex id="4" latitude="26.166333" longitude="50.671333"/>
+        <vertex id="5" latitude="26.162833" longitude="50.673667"/>
+        <vertex id="6" latitude="26.162167" longitude="50.672833"/>
+        <vertex id="7" latitude="26.166667" longitude="50.665000"/>
+        <vertex id="8" latitude="26.165833" longitude="50.662000"/>
+        <vertex id="9" latitude="26.164667" longitude="50.659667"/>
+        <vertex id="10" latitude="26.165833" longitude="50.659167"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+    <line name="NAV IX 484/2025" description="1. PIPELINE INSTALLATION OPERATION IN PROGRESS BY MULTI VESSELS TILL 15 FEB 26 ALONG LINE JOINING: START POINT 24-30.82N 054-01.29E END POINT 24-53.45N 053-03.62E">
+      <position>
+        <vertex id="1" latitude="24.513667" longitude="54.021500"/>
+        <vertex id="2" latitude="24.890833" longitude="53.060333"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+  </lines>
+  <!--userchart area-->
+  <areas>
+    <area name="NAV IX 289/2024" description="NAVAREA IX 289/2024 061500 UTC AUG 2024 RED SEA SAUDI ARABIA (SHAYBARA ISLAND) CHARTS BA 159 SEAPLANE LANDING AREA ESTABLISHED BOUNDED BY FOLLOWING POSITIONS: 25-22.54N 036-55.03E 25-21.90N 036-55.76E 25-21.48N 036-54.97E 25-21.95N 036-55.84E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="25.358000" longitude="36.916167"/>
+        <vertex id="2" latitude="25.365000" longitude="36.929333"/>
+        <vertex id="3" latitude="25.365833" longitude="36.930667"/>
+        <vertex id="4" latitude="25.375667" longitude="36.917167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IX 328/2025" description="NAVAREA IX 328/2025 080700 UTC JUL 25 RED SEA YEMEN CHARTS BA 6, 143 AND 157 RISK OF EXPLOSION MAY EXIST IN VICINITY OF ATTACKED VESSEL MV MAGIC SEAS CAUTION AREA ESTABLISHED BOUNDED BY FOLLOWING COORDINATES: (A) 14-38.00N 42-08.00E (B) 14-10.00N 42-34.00E (C) 14-04.00N 42-26.00E (D) 14-30.00N 42-00.00E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="14.633333" longitude="42.133333"/>
+        <vertex id="2" latitude="14.166667" longitude="42.566667"/>
+        <vertex id="3" latitude="14.066667" longitude="42.433333"/>
+        <vertex id="4" latitude="14.500000" longitude="42.000000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IX 375/2025" description="NAVAREA IX 375/2025 131500 UTC AUG 25 CENTRAL GULF QATAR,AL SHAHEEN FIELD CHARTS BA 2523, 2837, 2883, AND 2886 PIPE LAYING AND SLEEPERS INSTALLATION OPERATION WILL BE CONDUCTED ON 14 AUG 25 BY MULTI VESSELS IN AREA BOUND BY FOLLOWING COORDINATES: 26-18.90N 051-48.90E 26-37.70N 051-51.00E 26-42.50N 051-53.50E 26-40.20N 052-00.70E 26-35.60N 052-00.40E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.315000" longitude="51.815000"/>
+        <vertex id="2" latitude="26.628333" longitude="51.850000"/>
+        <vertex id="3" latitude="26.708333" longitude="51.891667"/>
+        <vertex id="4" latitude="26.670000" longitude="52.011667"/>
+        <vertex id="5" latitude="26.593333" longitude="52.006667"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IX 387/2025" description="1. RESTRICTED AREA ESTABLISHED IN OFFSHORE UMM SUQEIM COASTAL AREA BOUND BY FOLLOWING COORDINATES: (A) 25-11.20N 055-11.36E (B) 25-11.75N 055-11.80E (C) 25-11.52N 055-12.90E (D) 25-10.60N 055-12.90E (E) 25-10.32N 055-12.59E (F) 25-10.06N 055-11.88E (G) 25-10.15N 055-11.56E">
+      <position>
+        <vertex id="1" latitude="25.186667" longitude="55.189333"/>
+        <vertex id="2" latitude="25.195833" longitude="55.196667"/>
+        <vertex id="3" latitude="25.192000" longitude="55.215000"/>
+        <vertex id="4" latitude="25.176667" longitude="55.215000"/>
+        <vertex id="5" latitude="25.172000" longitude="55.209833"/>
+        <vertex id="6" latitude="25.167667" longitude="55.198000"/>
+        <vertex id="7" latitude="25.169167" longitude="55.192667"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV IX 477/2025" description="NAVAREA IX 477/2025 141500 UTC OCT 25 SOUTHERN GULF UAE DELMA ISLAND CHARTS BA 2837 AND 3951 BATHYMETRIC SURVEY OPERATION WILL BE CONDUCTED BY VESSELS BLUE WAVES, OWN OCEAN DEZIRE UNTIL 30 OCT 25 IN AREA BOUND BY FOLLOWING COORDINATES: (A) 24-30.00N 052-15.00E (B) 24-20.00N 052-15.00E (C) 24-20.00N 052-23.00E (D) 24-30.00N 052-23.00E MARINERS ARE REQUESTED TO NAVIGATE WITH EXTREME CAUTION">
+      <position>
+        <vertex id="1" latitude="24.500000" longitude="52.250000"/>
+        <vertex id="2" latitude="24.333333" longitude="52.250000"/>
+        <vertex id="3" latitude="24.333333" longitude="52.383333"/>
+        <vertex id="4" latitude="24.500000" longitude="52.383333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+  </areas>
+  <!--userchart label-->
+  <labels>
+    <label name="NAV IX 168/2024" description="1. FISHING VESSEL REPORTED SUNK IN VICINITY OF POSITION 23-51.8N 067-20.9E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="23.863333" longitude="67.348333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 168/2024"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 198/2024" description="NAVAREA IX 198/2024 261230 UTC MAY 24 IRAN SHATT AL ARAB CHART BA 3842 (INT 7292) STARBOARD HAND PILLAR BUOY WITH TOPMARK, CHARACTERISTICS FL(3)18SEC 5M ESTABLISHED AT | 29.876333 48.681000">
+      <position>
+        <vertex id="1" latitude="29.876333" longitude="48.681000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 198/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 240/2024" description="NAVAREA IX 240/2024 031500 UTC JUL 2024 IRAN BANDAR-E SHAHID RAJAI CHARTS BA 3173 AND 3599 SHAHID RAJA I CONTROL TOWER (HEIGHT 66 METERS) INSTALLED AT LOCATION 27-06.13N 056-04.57E NON-IALA RED FLESHING LANTERN INSTALLED ON 12 METER LATTICE TOWER ON TOP OF CONTROL TOWER MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="27.102167" longitude="56.076167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 240/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 253/2024" description="NAVAREA IX 253/2024 081500 UTC JUL 2024 BANDAR-E PARS IRAN CHART BA 2883 STARBOARD BEACON TOWER WITH TOPMARK FL(1)5SEC 7M 9 METERS ESTABLISHED AT 27-34.96N 052-30.66E PORT BEACON TOWER WITH TOPMARK FL(1)5SEC 7M 9 METERS ESTABLISHED AT 27-34.82N 052-30.47E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="27.582667" longitude="52.511000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 253/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 267/2024" description="NAVAREA IX 267/2024 181500 UTC JUL 2024 OMAN ARABIAN SEA CHARTS OM 1, 3501 AND BA 3785 SAR OPERATION FOR VESSEL PRESTIGE FALCON MISSING CREW IN PROGRESS CENTERED AROUND 19-09.50N 058-18.30E MARINERS ARE ADVISED TO NAVIGATE WITH CAUTION AND KEEP SHARP LOOK FOR MISSING CREW">
+      <position>
+        <vertex id="1" latitude="19.158333" longitude="58.305000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 267/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 285/2024" description="NAVAREA IX 285/2024 021500 UTC AUG 2024 ARABIAN SEA YEMEN CHARTS BA 6, 2964, 2970 AND 3784 UNLIT VESSEL ROYAL BLUE (IMO NO 8795962) ANCHORED IN POSITION 14-21.60N 048-59.92E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="14.360000" longitude="48.998667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 285/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 288/2024" description="NAVAREA IX 288/2024 051500 UTC AUG 2024 CENTRAL GULF QATAR CHARTS BA 2523 AND 2886 WAVE RIDER BUOY FL (5)Y 2.5S DEPLOYED IN POSITION | 26.442000 51.964333">
+      <position>
+        <vertex id="1" latitude="26.442000" longitude="51.964333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 288/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 299/2024" description="1. OPERATIONS FOR TRESTLE CONSTRUCTION, SEABED EXCAVATION AND PIPELINE LAYING ACTIVITIES OF BAPCO TERMINAL TO SITRA PORT EXTENDED TILL END OF JUN 25 IN THE FOLLOWING BOUNDED AREA: 26-10.03N 050-39.57E 26-10.05N 050-39.72E 26-10.07N 050-40.00E 26-09.98N 050-40.28E 26-09.77N 050-40.42E 26-09.73N 050-40.37E 26-10.00N 050-39.90E 26-09.95N 050-39.72E 26-09.88N 050-39.58E 26-09.95N 050-39.55E MARINERS ARE ADVISED TO NAVIGATE WITH CAUTION, MAINTAIN LISTENING WATCH ON VHF CHANNEL 16/72/74 (BAHRAIN PORT CONTROL AND BAPCO WHARF CONTROL)">
+      <position>
+        <vertex id="1" latitude="26.162167" longitude="50.672833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 299/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 311/2024" description="NAVAREA IX 311/2024 211500 UTC AUG 2024 RED SEA SAUDI ARABIA PORT OF NEOM (DUBA PORT) CHART BA 12 LIGHT (Fl.12s 15m 5M) AND RACON IN POSITION 27-39.10N 035-16.70E REPORTED UNRELIABLE MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="27.651667" longitude="35.278333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 311/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 333/2024" description="NAVAREA IX 333/2024 011500 UTC SEP 24 GULF OF OMAN IRAN CHARTS BA 2888, 3171, 3173 AND 3599 FOLLOWING NEW TRAFFIC CONTROL TOWERS ESTABLISHED: (A) SHAHID BAHONAR TRAFFIC CONTROL TOWER, 22 METERS HEIGHT, IN POSITION 27-09.22N 056-12.22E (B) SHAHID HAGHANI TRAFFIC CONTROL TOWER, 12 METERS HEIGHT, IN POSITION 27-10.45N 056-16.91E (C) BUNJI TRAFFIC CONTROL TOWER, 5 METERS HEIGHT, IN POSITION 25-54.67N 057-16.50E (D) JASK TRAFFIC CONTROL TOWER, 25 METERS HEIGHT, IN POSITION 25-38.74N 057-46.02E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="27.153667" longitude="56.203667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 333/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 340/2024" description="NAVAREA IX 340/2024 031500 UTC SEP 2024 IRAN JAZIREH-YE QEYS CHARTS BA 2887 AND 3409 FOLLOWING LATERAL MARKS ESTABLISHED: (A) STARBOARD BEACON TOWER WITH TOPMARK FL(2)6SEC 3M ESTABLISHED IN POSITION 26-31.35N 054-02.98E (B) PORT BEACON TOWER WITH TOPMARK FL(2)6SEC 3M ESTABLISHED IN POSITION 26-31.36N 054-03.03E (C) STARBOARD BEACON TOWER WITH TOPMARK FL(1)5SEC 3M ESTABLISHED IN POSITION 26-34.66N 053-56.80E (D) PORT BEACON TOWER WITH TOPMARK FL(1)5SEC 3M ESTABLISHED IN POSITION 26-34.60N 053-56.76E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.522500" longitude="54.049667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 340/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 361/2024" description="NAVAREA IX 361/2024 161500 UTC SEP 24 IRAN JAZIREH-YE LARK CHARTS BA 2851, 2888 AND 3173 NORTH CARDINAL PILLAR LIGHT BUOY WITH TOPMARK Q 5M 4 METERS ESTABLISHED IN POSITION | 26.891500 56.354333">
+      <position>
+        <vertex id="1" latitude="26.891500" longitude="56.354333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 361/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 362/2024" description="NAVAREA IX 362/2024 161530 UTC SEP 24 SOUTHERN GULF UAE CHARTS BA 2889 AND 3175 MV KNIDOS REPORTED SUNK WITH FLOATING DEBRIS IN POSITION 25-35.02N 054-51.15E MARINERS NAVIGATE WITH CAUTION AND KEEP CLEAR OF THE AREA">
+      <position>
+        <vertex id="1" latitude="25.583667" longitude="54.852500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 362/2024"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 363/2024" description="NAVAREA IX 363/2024 161530 UTC SEP 24 IRAN KHALIJ-E CHABAHAR CHART BA 38, 2851 AND 2858 PORT HAND PILLAR LIGHTBUOY FL(2)5SEC 5M MOVED 0.2M NORTH-EAST FROM 25-18.61N 060-34.82E TO 25-18.72N 060-34.98E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="25.310167" longitude="60.580333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 363/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 365/2024" description="NAVAREA IX 365/2024 181500 UTC SEP 24 NORTHERN GULF KUWAIT CHARTS BA 1223, 2882 AND 3773 MOORING BUOY M1 PERMANENTLY MOVED FROM POSITION | 29.107333 48.294667">
+      <position>
+        <vertex id="1" latitude="29.107333" longitude="48.294667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 365/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 365/2024" description="NAVAREA IX 365/2024 181500 UTC SEP 24 NORTHERN GULF KUWAIT CHARTS BA 1223, 2882 AND 3773 MOORING BUOY M1 PERMANENTLY MOVED FROM POSITION | 29.109500 48.287833">
+      <position>
+        <vertex id="1" latitude="29.109500" longitude="48.287833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 365/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 399/2024" description="NAVAREA IX 399/2024 141500 UTC OCT 24 SAUDI ARABIA ARABIAN GULF, APPROACHES TO JUBAIL CHARTS BA 3719 AND 3788 BUOY ANCHORAGE 3 FL.Y.5S MISSING | 27.180333 49.783333">
+      <position>
+        <vertex id="1" latitude="27.180333" longitude="49.783333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 399/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 402/2024" description="NAVAREA IX 402/2024 161500 UTC OCT 24 IRAN BANDAR-E SHENAS CHARTS BA 2441, 2887 AND 2888 FOLLOWING LATERAL MARKS ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOPMARK FL(1)5SEC 3M 26-29.75N 054-46.98E (B) STARBOARD HAND BEACON TOWER WITH TOPMARK FL(1)5SEC 3M 26-29.80N 054-47.02E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.495833" longitude="54.783000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 402/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 403/2024" description="NAVAREA IX 403/2024 161500 UTC OCT 24 SAUDI ARABIA APPROACHES TO DAMMAM CHARTS BA 3777 AND 3812 BUOY D-7 FL(2)G.6S UNLIT | 26.587667 50.207500">
+      <position>
+        <vertex id="1" latitude="26.587667" longitude="50.207500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 403/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 432/2024" description="NAVAREA IX 432/2024 041500 UTC NOV 24 PERSIAN GULF IRAN, DARGAHAN AND BOSTANEH PORTS CHARTS BA 2441, 2887, 3173, 3599 AND IR FOLLOWING LATERAL MARKS ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOP MARK FL(1)5SEC 3M 26-58.04N 056-02.77E (B) STARBOARD HAND BEACON TOWER WITH TOP MARK FL(1)5SEC 3M 26-58.04N 056-02.71E (C) PORT HAND BEACON TOWER WITH TOP MARK FL(1)5SEC 3M 26-30.44N 054-39.93E (B) STARBOARD HAND BEACON TOWER WITH TOP MARK FL(1)5SEC 3M 26-30.48N 054-39.85E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.967333" longitude="56.046167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 432/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 476/2024" description="NAVAREA IX 476/2024 040655 UTC DEC 24 ARABIAN SEA PAKISTAN CHARTS PAK 33, 57 (INT 751), BA 707 AND 4705 MSV AL PIRANPIR (MMSI 419956499) REPORTED SUNK IN POSITION 22-44N 066-24E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="22.733333" longitude="66.400000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 476/2024"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 486/2024" description="1. BUOY FCH-4 FL (2) R 6 SEC IN POSITION MISSING | 16.852000 42.412333">
+      <position>
+        <vertex id="1" latitude="16.852000" longitude="42.412333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 486/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 488/2024" description="NAVAREA IX 488/2024 101500 UTC DEC 24 IRAN KUH-E MAND CHARTS BA 2847, 2883 AND 2884 FOLLOWING LATERAL MARKS ESTABLISHED: (A) STARBOARD HAND BEACON TOWER WITH TOPMARK FL(2)6SEC 7M ESTABLISHED 28-14.55N 051-16.29E (B) PORT HAND BEACON TOWER WITH TOPMARK FL(2)6SEC 7M ESTABLISHED 28-14.48N 051-16.24E (C) PORT HAND BEACON TOWER WITH TOPMARK FL(2)6SEC 7M ESTABLISHED 28-31.89N 051-05.09E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="28.242500" longitude="51.271500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 488/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 501/2024" description="NAVAREA IX 501/2024 141500 UTC DEC 2024 NORTHERN GULF KUWAIT CHARTS KU 1, BA 3773 1. RIG ORIENTAL DRAGON 1 WILL BE MOVED FROM POSITION 28-52.490 048-21.634E TO 28-55.298N 048-28.485E ON 14 DEC 24 AND WILL REMAIN STATIONED UNTIL END OF DEC 25 MARINERS CAUTIONED KEEP WELL CLEAR OF ABOVE MENTIONED AREA">
+      <position>
+        <vertex id="1" latitude="28.921633" longitude="48.474750"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 501/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 509/2024" description="1. VESSEL ISA STAR (IMO 9210270) REPORTED AGROUND 18-26.00N 041-06.00E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="18.433333" longitude="41.100000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 509/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 519/2024" description="NAVAREA IX 519/2024 231500 UTC DEC 2024 SAUDI ARABIA RED SEA, JIZAN CHARTS BA 15 BUOY F2 IN POSITION MISSING | 16.823333 42.303333">
+      <position>
+        <vertex id="1" latitude="16.823333" longitude="42.303333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 519/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 529/2024" description="1. MSV TAJDARE HARAM (MMSI 419956194) REPORTED SUNK IN POSITION 22-55.50N 066-56.50E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="22.925000" longitude="66.941667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 529/2024"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 531/2024" description="NAVAREA IX 531/2024 291500 UTC DEC 24 CENTERAL GULF BAHRAIN CHARTS BA 3736 AND 3737, BH 1501 MSI-2 BUOY ALTERED IN POSITION | 26.194667 50.611333">
+      <position>
+        <vertex id="1" latitude="26.194667" longitude="50.611333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 531/2024"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.787333 67.256500">
+      <position>
+        <vertex id="1" latitude="24.787333" longitude="67.256500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.786667 67.254500">
+      <position>
+        <vertex id="1" latitude="24.786667" longitude="67.254500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.788500 67.261000">
+      <position>
+        <vertex id="1" latitude="24.788500" longitude="67.261000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.788000 67.260833">
+      <position>
+        <vertex id="1" latitude="24.788000" longitude="67.260833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.788500 67.267333">
+      <position>
+        <vertex id="1" latitude="24.788500" longitude="67.267333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.788000 67.267000">
+      <position>
+        <vertex id="1" latitude="24.788000" longitude="67.267000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.787000 67.275333">
+      <position>
+        <vertex id="1" latitude="24.787000" longitude="67.275333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 2/2025" description="1. FOLLOWING NAVIGATIONAL BUOY GROUP TEMPORARILY MOVED FOR DREDGING OPERATION: BUOY NAME CHARTED POSITION NEW POSITION K-7 | 24.786000 67.274500">
+      <position>
+        <vertex id="1" latitude="24.786000" longitude="67.274500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 2/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 6/2025" description="NAVAREA IX 6/2025 061500 UTC JAN 25 NORTHERN GULF KUWAIT CHARTS BA 2882, 3773 AND KU CHART 1 RESTRICTED AREA ESTABLISHED AT POSITION 28-52.49N 048-21.63E WITH 600 METER DIAMETER MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="28.874833" longitude="48.360500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 6/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 18/2025" description="1. DATA BUOY DWR | 25.119000 52.934333">
+      <position>
+        <vertex id="1" latitude="25.119000" longitude="52.934333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 18/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 18/2025" description="1. DATA BUOY DWR | 25.050167 53.069333">
+      <position>
+        <vertex id="1" latitude="25.050167" longitude="53.069333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 18/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 21/2025" description="1. METEOROLOGICAL TOWER REPORTED COLLAPSED | 28.766667 48.435000">
+      <position>
+        <vertex id="1" latitude="28.766667" longitude="48.435000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 21/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 63/2025" description="NAVAREA IX 63/2025 071600 UTC FEB 25 SOUTHERN GULF UAE CHARTS BA 2444, 3179 AND 3413 ANCHOR WITH 2.5 SHACKLE CHAIN REPORTED LOST 25-07.69N 052-53.09E MARINERS REQUESTED NOT TO ANCHOR IN VICINITY">
+      <position>
+        <vertex id="1" latitude="25.128167" longitude="52.884833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 63/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 111/2025" description="1. DREDGING OPERATION WILL BE CONDUCTED EAST OF BAHRAIN STEEL TERMINAL ON 08 MAR 25 A TEMPORARY SPECIAL MARK BUOY DEPLOYED SHIFTED | 26.178833 50.695000">
+      <position>
+        <vertex id="1" latitude="26.178833" longitude="50.695000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 111/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 111/2025" description="1. DREDGING OPERATION WILL BE CONDUCTED EAST OF BAHRAIN STEEL TERMINAL ON 08 MAR 25 A TEMPORARY SPECIAL MARK BUOY DEPLOYED SHIFTED | 26.187333 50.697333">
+      <position>
+        <vertex id="1" latitude="26.187333" longitude="50.697333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 111/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 111/2025" description="1. DREDGING OPERATION WILL BE CONDUCTED EAST OF BAHRAIN STEEL TERMINAL ON 08 MAR 25 A TEMPORARY SPECIAL MARK BUOY DEPLOYED SHIFTED | 26.189833 50.694167">
+      <position>
+        <vertex id="1" latitude="26.189833" longitude="50.694167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 111/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 158/2025" description="1. AHSAN CHANNEL BEACON NO.7 TEMPORARILY REPLACED WITH BUOY IN POSITION | 24.606333 67.087333">
+      <position>
+        <vertex id="1" latitude="24.606333" longitude="67.087333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 158/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 176/2025" description="NAVAREA IX 176/2025 201500 UTC APR 25 RED SEA SAUDI ARABIA, YANBU INDUSTRIAL PORT CHARTS BA 158 AND 326 BUOY S 10 IN POSITION UNLIT | 23.818000 38.297000">
+      <position>
+        <vertex id="1" latitude="23.818000" longitude="38.297000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 176/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 216/2025" description="NAVAREA IX 216/2025 061500 UTC MAY 25 ARABIAN GULF SAUDI ARABIA, PORT RAS AL KHAIR CHARTS BA 2882 AND 3775 FOLLOWING BUOYS REPORTED MISSING: RAZ-17 MISSING | 27.636500 49.299333">
+      <position>
+        <vertex id="1" latitude="27.636500" longitude="49.299333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 216/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 216/2025" description="NAVAREA IX 216/2025 061500 UTC MAY 25 ARABIAN GULF SAUDI ARABIA, PORT RAS AL KHAIR CHARTS BA 2882 AND 3775 FOLLOWING BUOYS REPORTED MISSING: RAZ-17 MISSING | 27.635167 49.300333">
+      <position>
+        <vertex id="1" latitude="27.635167" longitude="49.300333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 216/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 218/2025" description="NAVAREA IX 218/2025 081500 UTC MAY 25 SOUTHERN GULF UAE CHARTS BA 3174 AND 3175 FOLLOWING SPECIAL MARK DATA BUOY ESTABLISHED | 25.736833 55.693333">
+      <position>
+        <vertex id="1" latitude="25.736833" longitude="55.693333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 218/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 227/2025" description="1. FOLLOWING BUOYS ARE OUT OF SERVICE: BUOY TYPE POSITION LIGHT NAME CHARACTERISTICS EAST EAST CARDINAL BUOY | 24.098333 37.785833">
+      <position>
+        <vertex id="1" latitude="24.098333" longitude="37.785833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 227/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 227/2025" description="1. FOLLOWING BUOYS ARE OUT OF SERVICE: BUOY TYPE POSITION LIGHT NAME CHARACTERISTICS EAST EAST CARDINAL BUOY | 23.466000 38.431000">
+      <position>
+        <vertex id="1" latitude="23.466000" longitude="38.431000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 227/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 227/2025" description="1. FOLLOWING BUOYS ARE OUT OF SERVICE: BUOY TYPE POSITION LIGHT NAME CHARACTERISTICS EAST EAST CARDINAL BUOY | 23.936667 38.188000">
+      <position>
+        <vertex id="1" latitude="23.936667" longitude="38.188000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 227/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 227/2025" description="1. FOLLOWING BUOYS ARE OUT OF SERVICE: BUOY TYPE POSITION LIGHT NAME CHARACTERISTICS EAST EAST CARDINAL BUOY | 23.903333 38.252500">
+      <position>
+        <vertex id="1" latitude="23.903333" longitude="38.252500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 227/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 227/2025" description="2. ISOLATED DANGER BUOY FL(2)5S IN POSITION | 23.916667 38.208667">
+      <position>
+        <vertex id="1" latitude="23.916667" longitude="38.208667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 227/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 246/2025" description="NAVAREA IX 246/2025 241500 UTC MAY 25 CENTRAL GULF QATAR CHARTS BA 2523 AND 2886 SELF PROPELLED DP2 VESSEL HYSY289 WILL BE CARRYING OUT SLEEPERS INSTALLATION IN FOLLOWING BOUNDED AREA: A- 26-41.99N 051-53.26E B- 26-41.94N 052-00.75E C- 26-37.65N 052-00.72E D- 26-37.70N 051-53.23E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.699833" longitude="51.887667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 246/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 254/2025" description="NAVAREA IX 254/2025 291500 UTC MAY 25 IRAN BANDAR E LENGEH CHARTS BA 2441, 2887 AND 2888 ISOLATED DANGER BEACON IN POSITION 26-32.21N 054-57.79E PERMANENTLY DISCONTINUED ISOLATED DANGER PILLAR LIGHTBUOY WITH TOPMARK FL(2)6SEC 5 MILES ESTABLISHED IN POSITION 26-32.31N 054-57.83E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.536833" longitude="54.963167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 254/2025"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 256/2025" description="NAVAREA IX 256/2025 291500 UTC MAY 25 RED SEA SAUDI ARABIA, JEDDAH CHARTS BA 158, 2599, 2658 AND 2659 BUOY 04W MISSING | 21.446667 39.058333">
+      <position>
+        <vertex id="1" latitude="21.446667" longitude="39.058333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 256/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 256/2025" description="NAVAREA IX 256/2025 291500 UTC MAY 25 RED SEA SAUDI ARABIA, JEDDAH CHARTS BA 158, 2599, 2658 AND 2659 BUOY 04W MISSING | 25.166333 52.857500">
+      <position>
+        <vertex id="1" latitude="25.166333" longitude="52.857500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 256/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 256/2025" description="NAVAREA IX 256/2025 291500 UTC MAY 25 RED SEA SAUDI ARABIA, JEDDAH CHARTS BA 158, 2599, 2658 AND 2659 BUOY 04W MISSING | 25.166333 52.869000">
+      <position>
+        <vertex id="1" latitude="25.166333" longitude="52.869000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 256/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 256/2025" description="NAVAREA IX 256/2025 291500 UTC MAY 25 RED SEA SAUDI ARABIA, JEDDAH CHARTS BA 158, 2599, 2658 AND 2659 BUOY 04W MISSING | 25.164667 52.869000">
+      <position>
+        <vertex id="1" latitude="25.164667" longitude="52.869000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 256/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 256/2025" description="NAVAREA IX 256/2025 291500 UTC MAY 25 RED SEA SAUDI ARABIA, JEDDAH CHARTS BA 158, 2599, 2658 AND 2659 BUOY 04W MISSING | 25.159500 52.860667">
+      <position>
+        <vertex id="1" latitude="25.159500" longitude="52.860667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 256/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 256/2025" description="NAVAREA IX 256/2025 291500 UTC MAY 25 RED SEA SAUDI ARABIA, JEDDAH CHARTS BA 158, 2599, 2658 AND 2659 BUOY 04W MISSING | 25.159500 52.857500">
+      <position>
+        <vertex id="1" latitude="25.159500" longitude="52.857500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 256/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 261/2025" description="NAVAREA IX 261/2025 311500 UTC MAY 25 NORTHERN GULF KUWAIT CHARTS BA 2882, 2884, AND 3773 RESTRICTED AREA ESTABLISHED AT POSITION 29-13.10N 048-44.42E WITH 600 METER DIAMETER MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="29.218333" longitude="48.740333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 261/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 272/2025" description="NAVAREA IX 272/2025 071500 UTC JUN 25 RED SEA SAUDI ARABIA CHARTS BA 326, 327 AND 328 FOLLOWING BUOYS REPORTED MISSING: (A) BUOY NO.7 MISSING | 23.917833 38.152833">
+      <position>
+        <vertex id="1" latitude="23.917833" longitude="38.152833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 272/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 272/2025" description="NAVAREA IX 272/2025 071500 UTC JUN 25 RED SEA SAUDI ARABIA CHARTS BA 326, 327 AND 328 FOLLOWING BUOYS REPORTED MISSING: (A) BUOY NO.7 MISSING | 23.900833 38.287000">
+      <position>
+        <vertex id="1" latitude="23.900833" longitude="38.287000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 272/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 289/2025" description="NAVAREA IX 289/2025 161500 UTC JUN 25 SOUTHERN GULF UAE CHARTS BA 3178 AND 3179 FOLLOWING UNLIT MOORING BUOYS DEPLOYED TEMPORARILY: 7086 UNLIT | 24.898667 53.026167">
+      <position>
+        <vertex id="1" latitude="24.898667" longitude="53.026167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 289/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 289/2025" description="NAVAREA IX 289/2025 161500 UTC JUN 25 SOUTHERN GULF UAE CHARTS BA 3178 AND 3179 FOLLOWING UNLIT MOORING BUOYS DEPLOYED TEMPORARILY: 7086 UNLIT | 24.897500 53.033667">
+      <position>
+        <vertex id="1" latitude="24.897500" longitude="53.033667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 289/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 289/2025" description="NAVAREA IX 289/2025 161500 UTC JUN 25 SOUTHERN GULF UAE CHARTS BA 3178 AND 3179 FOLLOWING UNLIT MOORING BUOYS DEPLOYED TEMPORARILY: 7086 UNLIT | 24.894500 53.032667">
+      <position>
+        <vertex id="1" latitude="24.894500" longitude="53.032667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 289/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 300/2025" description="NAVAREA IX 300/2025 191600 UTC JUN 25 PORT OF FUJAIRAH UAE CHARTS BA 3520 AND 3171 MT ADALYNN IMO 9231767 ANCHORED IN POSITION 25-36.99N 056-24.85E AT DIBBA ANCHORAGE AREA W REPORTED UNMANNED AND IN COMPLETE BLACKOUT MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="25.616500" longitude="56.414167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 300/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 321/2025" description="NAVAREA IX 321/2025 021500 UTC JUL 25 IRAN BANDAR-E KUHESTAK CHARTS BA 2837, 2888 AND 3173 FOLLOWING ESTABLISHED: (A) STARBOARD HAND BEACON TOWER WITH TOPMARK FL(1)5SEC 3M AT 26-47.91N 057-00.95E (B) PORT HAND BEACON TOWER WITH TOPMARK FL(1)5SEC 3M AT 26-47.93N 057-01.06E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="26.798500" longitude="57.015833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 321/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 335/2025" description="NAVAREA IX 335/2025 101500 UTC JUL 25 PAKISTAN KARACHI APPROACHES CHARTS PAK 5 (INT 7314), 30 (INT 7315) AND BA 40 CHANNEL BUOY S 7 MISSING | 24.758167 66.968833">
+      <position>
+        <vertex id="1" latitude="24.758167" longitude="66.968833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 335/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 339/2025" description="1. MV ETERNITY C (IMO 9588249) REPORTED SUNK IN POSITION 14-42.00N 042-26.00E 10 CREW MEMBERS RESCUED AND REMAINING STILL PRESUMED IN WATER ALL VESSELS IN VICINITY ARE REQUESTED TO MAINTAIN SHARP LOOKOUT AND RENDER ASSISTANCE">
+      <position>
+        <vertex id="1" latitude="14.700000" longitude="42.433333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 339/2025"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 365/2025" description="NAVAREA IX 365/2025 031500 UTC AUG 25 PAKISTAN KARACHI APPROACHES CHARTS PAK 5 (INT 7314), 30 (INT 7315) AND BA 40 CHANNEL BUOY S 3 MISSING | 24.738333 66.952333">
+      <position>
+        <vertex id="1" latitude="24.738333" longitude="66.952333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 365/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 379/2025" description="1. RESTRICTED AREA ESTABLISHED IN VICINITY OF BURJ AL ARAB AND MADINAT JUMEIRAH BOUNDED BY FOLLOWING COORDINATES: (A) 25-07.99N 055-10.77E (B) 25-08.29N 055-10.63E (C) 25-08.98N 055-11.22E (D) 25-08.91N 055-11.38E">
+      <position>
+        <vertex id="1" latitude="25.133167" longitude="55.179500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 379/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 405/2025" description="NAVAREA IX 405/2025 031500 UTC SEP 25 PAKISTAN KARACHI APPROACHES CHARTS PAK 5 (INT 7314), 30 (INT 7315) AND BA 40 CHANNEL BUOY S 13 MISSING | 24.780667 66.989667">
+      <position>
+        <vertex id="1" latitude="24.780667" longitude="66.989667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 405/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 439/2025" description="NAVAREA IX 439/2025 271500 UTC SEP 25 CENTRAL GULF QATAR CHARTS BA 3772, 2523 AND 2886 ROV OPERATION WILL BE CONDUCTED BY VESSEL HALUL 51 FROM 28 SEP 25 ALONG FOLLOWING POSITIONS: (A) 25-57.32N 051-30.13E (B) 26-00.68N 051-32.25E (C) 26-05.20N 051-33.73E (D) 26-07.22N 051-31.83E (E) 26-12.43N 051-32.97E (F) 26-17.26N 051-34.91E (G) 26-27.66N 051-42.79E (H) 26-36.89N 051-51.65E (I) 26-36.89N 051-56.43E (J) 26-38.11N 051-57.58E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="25.955333" longitude="51.502167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 439/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 440/2025" description="NAVAREA IX 440/2025 281500 UTC SEP 25 RED SEA SAUDI ARABIA, YANBU INDUSTRIAL PORT CHARTS BA 158, 326 AND 328 BUOY NO (W) IN POSITION MISSING | 23.916667 38.208667">
+      <position>
+        <vertex id="1" latitude="23.916667" longitude="38.208667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 440/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 441/2025" description="NAVAREA IX 441/2025 291500 UTC SEP 25 PERSIAN GULF IRAN CHARTS BA 2883 AND IR 3059(INT 7247) FOLLOWING AIDS TO NAVIGATION ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOPMARK FL (2) 5SEC 3M IN POSITION | 27.161667 52.911667">
+      <position>
+        <vertex id="1" latitude="27.161667" longitude="52.911667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 441/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 441/2025" description="NAVAREA IX 441/2025 291500 UTC SEP 25 PERSIAN GULF IRAN CHARTS BA 2883 AND IR 3059(INT 7247) FOLLOWING AIDS TO NAVIGATION ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOPMARK FL (2) 5SEC 3M IN POSITION | 27.140833 52.921167">
+      <position>
+        <vertex id="1" latitude="27.140833" longitude="52.921167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 441/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 441/2025" description="NAVAREA IX 441/2025 291500 UTC SEP 25 PERSIAN GULF IRAN CHARTS BA 2883 AND IR 3059(INT 7247) FOLLOWING AIDS TO NAVIGATION ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOPMARK FL (2) 5SEC 3M IN POSITION | 27.153500 52.920667">
+      <position>
+        <vertex id="1" latitude="27.153500" longitude="52.920667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 441/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 441/2025" description="NAVAREA IX 441/2025 291500 UTC SEP 25 PERSIAN GULF IRAN CHARTS BA 2883 AND IR 3059(INT 7247) FOLLOWING AIDS TO NAVIGATION ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOPMARK FL (2) 5SEC 3M IN POSITION | 27.152000 52.917000">
+      <position>
+        <vertex id="1" latitude="27.152000" longitude="52.917000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 441/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 441/2025" description="NAVAREA IX 441/2025 291500 UTC SEP 25 PERSIAN GULF IRAN CHARTS BA 2883 AND IR 3059(INT 7247) FOLLOWING AIDS TO NAVIGATION ESTABLISHED: (A) PORT HAND BEACON TOWER WITH TOPMARK FL (2) 5SEC 3M IN POSITION | 27.162500 52.915333">
+      <position>
+        <vertex id="1" latitude="27.162500" longitude="52.915333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 441/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 442/2025" description="NAVAREA IX 442/2025 291500 UTC SEP 25 NORTHERN GULF KUWAIT CHARTS BA 1214, 3773 AND KU 1 SEABED SURVEY IN PROGRESS BY MULTI VESSELS ALONG FOLLOWING POSITIONS: MPA-1 29-21.17N 047-50.56E MPA-2 29-20.63N 047-50.71E MPA-3 29-21.56N 047-50.78E MPA-4 29-21.18N 047-53.23E LTMP-1 29-21.61N 047-52.35E LTMP-2 29-24.78N 047-54.45E LTMP-3 29-25.82N 048-05.31E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="29.352833" longitude="47.842667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 442/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 453/2025" description="1. AIDS TO NAVIGATION DEVELOPMENT AND SEABED SURVEY OPERATION WILL BE CONDUCTED BY MULTI VESSELS IN FOLLOWING AREAS: DOHA (A) 29-23.68N 047-52.47E (B) 29-23.70N 047-54.25E (C) 29-21.43N 047-54.10E (D) 29-21.44N 047-52.45E FAYLAKA ISLAND (A) 29-32.84N 048-37.57E (B) 29-32.84N 048-12.26E (C) 29-21.40N 048-12.22E (D) 29-21.40N 048-37.66E BUBIYAN ISLAND (A) 29-43.37N 048-34.40E (B) 29-29.47N 048-11.35E (C) 29-56.87N 047-56.01E (D) 30-01.12N 048-09.46E">
+      <position>
+        <vertex id="1" latitude="29.394667" longitude="47.874500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 453/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 458/2025" description="NAVAREA IX 458/2025 051500 UTC OCT 25 SOUTHERN GULF UAE CHARTS BA 2889 AND 2444 ZAQQUM LIGHT BUOY IN POSITION | 25.109333 53.417667">
+      <position>
+        <vertex id="1" latitude="25.109333" longitude="53.417667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 458/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 481/2025" description="NAVAREA IX 481/2025 151500 UTC OCT 25 NORTHERN GULF KUWAIT CHARTS BA 1223, 3773 AND KU CHART 01 MOORING BUOY SIB IN POSITION | 29.112000 48.292333">
+      <position>
+        <vertex id="1" latitude="29.112000" longitude="48.292333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 481/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 484/2025" description="1. PIPELINE INSTALLATION OPERATION IN PROGRESS BY MULTI VESSELS TILL 15 FEB 26 ALONG LINE JOINING: START POINT 24-30.82N 054-01.29E END POINT 24-53.45N 053-03.62E">
+      <position>
+        <vertex id="1" latitude="24.890833" longitude="53.060333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 484/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 522/2025" description="NAVAREA IX 522/2025 051400 UTC NOV 25 ARABIAN SEA PAKISTAN CHARTS PAK 33, 57(INT 751) AND BA 39 FISHING VESSEL MASHAALLAH SUNK IN POSITION 23-02.00N 067-24.00E AND REPORTED MAN OVER BOARD VESSELS TRANSITING THE AREA ARE REQUESTED TO KEEP A SHARP LOOKOUT AND RENDER ASSISTANCE">
+      <position>
+        <vertex id="1" latitude="23.033333" longitude="67.400000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 522/2025"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="1. 29-54.51N 049-09.68E">
+      <position>
+        <vertex id="1" latitude="29.908500" longitude="49.161333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="2. 29-57.00N 049-05.14E">
+      <position>
+        <vertex id="1" latitude="29.950000" longitude="49.085667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="4. 30-05.35N 048-59.32E">
+      <position>
+        <vertex id="1" latitude="30.089167" longitude="48.988667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="5. 30-05.41N 048-59.49E">
+      <position>
+        <vertex id="1" latitude="30.090167" longitude="48.991500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="6. 30-04.60N 048-59.91E">
+      <position>
+        <vertex id="1" latitude="30.076667" longitude="48.998500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="7. 30-00.30N 049-01.76E">
+      <position>
+        <vertex id="1" latitude="30.005000" longitude="49.029333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="8. 29-57.15N 049-05.31E">
+      <position>
+        <vertex id="1" latitude="29.952500" longitude="49.088500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 546/2025" description="9. 29-54.69N 049-09.82E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="29.911500" longitude="49.163667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 546/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 548/2025" description="2. WAVE BUOY PTM-6376 WITH CHARACTERISTICS FL.Y.2S TEMPORARILY DEPLOYED IN POSITION | 24.652167 52.592500">
+      <position>
+        <vertex id="1" latitude="24.652167" longitude="52.592500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 548/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 559/2025" description="NAVAREA IX 559/2025 281500 UTC NOV 25 SOUTHERN GULF UAE CHART BA 3174 BREAKWATER REPLACEMENT OPERATION WILL BE CARRIED OUT BETWEEN FOLLOWING COORDINATES: (A) 25-41.63N055-45.22E (B) 25-41.45N055-45.03E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="25.693833" longitude="55.753667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 559/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="1. DUE TO DREDGING AND RECLAMATION OPERATION BUOY TRB-3 SHIFTED FROM REMOVED | 24.137667 52.782667">
+      <position>
+        <vertex id="1" latitude="24.137667" longitude="52.782667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="1. DUE TO DREDGING AND RECLAMATION OPERATION BUOY TRB-3 SHIFTED FROM REMOVED | 24.138167 52.781833">
+      <position>
+        <vertex id="1" latitude="24.138167" longitude="52.781833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="2. NAVIGATION BUOYS SHIFTED TRB-4 SHIFTED | 24.139833 52.780333">
+      <position>
+        <vertex id="1" latitude="24.139833" longitude="52.780333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="2. NAVIGATION BUOYS SHIFTED TRB-4 SHIFTED | 24.132667 52.782500">
+      <position>
+        <vertex id="1" latitude="24.132667" longitude="52.782500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="2. NAVIGATION BUOYS SHIFTED TRB-4 SHIFTED | 24.131333 52.781333">
+      <position>
+        <vertex id="1" latitude="24.131333" longitude="52.781333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="2. NAVIGATION BUOYS SHIFTED TRB-4 SHIFTED | 24.143000 52.777167">
+      <position>
+        <vertex id="1" latitude="24.143000" longitude="52.777167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="3. NAVIGATION BUOYS REMOVED GS 14 REMOVED | 24.140500 52.780500">
+      <position>
+        <vertex id="1" latitude="24.140500" longitude="52.780500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="3. NAVIGATION BUOYS REMOVED GS 14 REMOVED | 24.138500 52.783500">
+      <position>
+        <vertex id="1" latitude="24.138500" longitude="52.783500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="3. NAVIGATION BUOYS REMOVED GS 14 REMOVED | 24.136833 52.784000">
+      <position>
+        <vertex id="1" latitude="24.136833" longitude="52.784000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="3. NAVIGATION BUOYS REMOVED GS 14 REMOVED | 24.132833 52.782500">
+      <position>
+        <vertex id="1" latitude="24.132833" longitude="52.782500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 570/2025" description="3. NAVIGATION BUOYS REMOVED GS 14 REMOVED | 24.131167 52.781667">
+      <position>
+        <vertex id="1" latitude="24.131167" longitude="52.781667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 570/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.192667 52.692000">
+      <position>
+        <vertex id="1" latitude="24.192667" longitude="52.692000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.188000 52.689000">
+      <position>
+        <vertex id="1" latitude="24.188000" longitude="52.689000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.183500 52.685833">
+      <position>
+        <vertex id="1" latitude="24.183500" longitude="52.685833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.178833 52.682667">
+      <position>
+        <vertex id="1" latitude="24.178833" longitude="52.682667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.174333 52.679500">
+      <position>
+        <vertex id="1" latitude="24.174333" longitude="52.679500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.169667 52.676167">
+      <position>
+        <vertex id="1" latitude="24.169667" longitude="52.676167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.165667 52.673333">
+      <position>
+        <vertex id="1" latitude="24.165667" longitude="52.673333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.161500 52.670500">
+      <position>
+        <vertex id="1" latitude="24.161500" longitude="52.670500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.157500 52.667667">
+      <position>
+        <vertex id="1" latitude="24.157500" longitude="52.667667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.190833 52.694167">
+      <position>
+        <vertex id="1" latitude="24.190833" longitude="52.694167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.186833 52.691167">
+      <position>
+        <vertex id="1" latitude="24.186833" longitude="52.691167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.182333 52.688000">
+      <position>
+        <vertex id="1" latitude="24.182333" longitude="52.688000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.177667 52.684667">
+      <position>
+        <vertex id="1" latitude="24.177667" longitude="52.684667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.173167 52.681500">
+      <position>
+        <vertex id="1" latitude="24.173167" longitude="52.681500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.169167 52.678667">
+      <position>
+        <vertex id="1" latitude="24.169167" longitude="52.678667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.164333 52.677333">
+      <position>
+        <vertex id="1" latitude="24.164333" longitude="52.677333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.159667 52.676000">
+      <position>
+        <vertex id="1" latitude="24.159667" longitude="52.676000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.155000 52.674667">
+      <position>
+        <vertex id="1" latitude="24.155000" longitude="52.674667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.151500 52.673500">
+      <position>
+        <vertex id="1" latitude="24.151500" longitude="52.673500"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 571/2025" description="NAVAREA IX 571/2025 090300 UTC DEC 2025 SOUTHERN GULF UAE CHARTS BA 3778 AND 3780 FOLLOWING NAVIGATIONAL BUOYS PERMANENTLY DEPLOYED: (A) RLNG-1 | 24.148000 52.672667">
+      <position>
+        <vertex id="1" latitude="24.148000" longitude="52.672667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 571/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 574/2025" description="NAVAREA IX 574/2025 111500 UTC DEC 25 CENTRAL GULF QATAR CHARTS BA 2523 AND 2886 MOORING BUOY MO U .15S PERMANENTLY DEPLOYED IN POSITION | 26.576500 52.004833">
+      <position>
+        <vertex id="1" latitude="26.576500" longitude="52.004833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 574/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.657500 48.393167">
+      <position>
+        <vertex id="1" latitude="28.657500" longitude="48.393167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.657833 48.392333">
+      <position>
+        <vertex id="1" latitude="28.657833" longitude="48.392333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.657500 48.390000">
+      <position>
+        <vertex id="1" latitude="28.657500" longitude="48.390000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.657833 48.390000">
+      <position>
+        <vertex id="1" latitude="28.657833" longitude="48.390000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.656000 48.386833">
+      <position>
+        <vertex id="1" latitude="28.656000" longitude="48.386833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.656333 48.386167">
+      <position>
+        <vertex id="1" latitude="28.656333" longitude="48.386167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 578/2025" description="NAVAREA IX 578/2025 131500 UTC DEC 25 NORTHERN GULF KUWAIT CHARTS BA 2884 AND 3773 FOLL0WING MOORING BUOYS PERMANENTLY WITHDRAWN WITH FOLLOWING COORDINATES: S16 | 28.656333 48.385167">
+      <position>
+        <vertex id="1" latitude="28.656333" longitude="48.385167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 578/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 582/2025" description="1. FOLLOWING BUOYS DEPLOYED FOR ONGOING RECLAMATION OPERATION WITHIN FUJAIRAH PORT LIMITS: Y1 | 25.174500 56.372333">
+      <position>
+        <vertex id="1" latitude="25.174500" longitude="56.372333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 582/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 582/2025" description="1. FOLLOWING BUOYS DEPLOYED FOR ONGOING RECLAMATION OPERATION WITHIN FUJAIRAH PORT LIMITS: Y1 | 25.180500 56.378333">
+      <position>
+        <vertex id="1" latitude="25.180500" longitude="56.378333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 582/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 582/2025" description="1. FOLLOWING BUOYS DEPLOYED FOR ONGOING RECLAMATION OPERATION WITHIN FUJAIRAH PORT LIMITS: Y1 | 25.174000 56.375167">
+      <position>
+        <vertex id="1" latitude="25.174000" longitude="56.375167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 582/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 582/2025" description="1. FOLLOWING BUOYS DEPLOYED FOR ONGOING RECLAMATION OPERATION WITHIN FUJAIRAH PORT LIMITS: Y1 | 25.183833 56.377833">
+      <position>
+        <vertex id="1" latitude="25.183833" longitude="56.377833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 582/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 582/2025" description="1. FOLLOWING BUOYS DEPLOYED FOR ONGOING RECLAMATION OPERATION WITHIN FUJAIRAH PORT LIMITS: Y1 | 25.174667 56.378000">
+      <position>
+        <vertex id="1" latitude="25.174667" longitude="56.378000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 582/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 582/2025" description="1. FOLLOWING BUOYS DEPLOYED FOR ONGOING RECLAMATION OPERATION WITHIN FUJAIRAH PORT LIMITS: Y1 | 25.173667 56.379333">
+      <position>
+        <vertex id="1" latitude="25.173667" longitude="56.379333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 582/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+  </labels>
+</userchart>
