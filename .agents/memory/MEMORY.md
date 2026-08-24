@@ -1,0 +1,1 @@
+- [S2 measurement partitioning](s2-measurement-partitioning.md) — filter measurement-shaped decimals before downstream handlers inspect partition input.

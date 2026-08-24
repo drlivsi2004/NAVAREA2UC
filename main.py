@@ -1268,11 +1268,22 @@ def partition_navarea_block(block, navarea_name):
         return parts
 
     # Numbered sections
-    numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
     measurement_marker_re = re.compile(
         r"^\s*\d+\.\d+\s*(?:M|METERS?|METRES?)\b",
         re.IGNORECASE,
     )
+    if re.search(
+        r"(?im)^\s*\d+\.\d+\s*(?:M|METERS?|METRES?)\b",
+        block,
+    ):
+        block = re.sub(
+            r"\n(?=\s*\d+\.\d+\s*(?:M|METERS?|METRES?)\b)",
+            " ",
+            block,
+            flags=re.IGNORECASE,
+        )
+
+    numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
     numbered_markers = [
         marker
         for marker in numbered_markers
