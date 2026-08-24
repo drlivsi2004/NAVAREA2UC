@@ -618,7 +618,12 @@ def is_multi_point_navarea(block):
         "REMOVAL OF SUBMERGED LINES",
         "CHANNEL MARKING BUOY",
     ]
-    return any(x in upper for x in triggers)
+    if any(x in upper for x in triggers):
+        return True
+
+    platform_count = len(re.findall(r"\bPLATAFORMA\b", upper))
+    coordinate_count = len(extract_coordinates(block))
+    return platform_count >= 2 and coordinate_count >= 2
 
 
 def is_buoy_group(text):
