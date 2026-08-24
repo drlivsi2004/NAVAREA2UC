@@ -1194,6 +1194,13 @@ def partition_navarea_block(block, navarea_name):
     # Numbered sections
     numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
     if len(numbered_markers) > 1:
+        semantic_context = None
+        preamble = block[: numbered_markers[0].start()]
+        for line in preamble.splitlines():
+            if re.search(r"AREA\s+TEMPORARILY\s+DANGEROUS", line, re.IGNORECASE):
+                semantic_context = line.strip()
+                break
+
         parts = []
         for i, m in enumerate(numbered_markers):
             start = m.start()
@@ -1204,6 +1211,8 @@ def partition_navarea_block(block, navarea_name):
             )
             sub_block = block[start:end].strip()
             if sub_block:
+                if i == 0 and semantic_context:
+                    sub_block = f"{semantic_context}\n{sub_block}"
                 meta = build_partition_context(
                     source_navarea=navarea_name,
                     partition_type="SECTION_NUMBER",
@@ -2040,6 +2049,7 @@ def handle_area(ctx, container, message):
         or "AREA BOUNDED" in ctx["upper"]
         or "AREAS BOUNDED" in ctx["upper"]
         or "AREAS BOUND BY" in ctx["upper"]
+        or "AREA TEMPORARILY DANGEROUS" in ctx["upper"]
     ):
         return False
 
