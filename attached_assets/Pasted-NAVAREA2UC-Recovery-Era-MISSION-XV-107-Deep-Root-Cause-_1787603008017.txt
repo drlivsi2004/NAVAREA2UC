@@ -1,0 +1,283 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+XV-107 Deep Root Cause Investigation
+
+DO NOT MODIFY CODE.
+
+DO NOT IMPLEMENT FIXES.
+
+DO NOT PROPOSE FIXES YET.
+
+Your task is to identify the exact reason why:
+
+NAVAREA XV 107/2026
+
+with
+
+7 coordinates
+(A)-(G)
+
+becomes
+
+7 Labels
+
+instead of
+
+1 Area.
+
+====================================================
+OBJECTIVE
+====================================================
+
+Determine the FIRST decision point where the Area candidate is lost.
+
+Do not stop at:
+
+    AREA_PATTERNS
+
+Do not stop at:
+
+    handle_sublabels()
+
+Trace the complete execution path.
+
+====================================================
+PART 1
+FULL EXECUTION TRACE
+====================================================
+
+For the exact partition that creates 7 Labels:
+
+Report:
+
+Block Length
+
+Coordinate Count
+
+Marker Count
+
+Normalized Text Preview
+
+Then execute a complete handler trace.
+
+Output:
+
+handler name
+
+entered?
+
+returned?
+
+reason
+
+Example:
+
+handle_structured_sections
+
+    entered: yes
+
+    result: False
+
+    reason:
+        parse_structured_sections returned None
+
+--------------------------------
+
+handle_area
+
+    entered: yes
+
+    result: False
+
+    reason:
+        condition X failed
+
+--------------------------------
+
+handle_sublabels
+
+    entered: yes
+
+    result: True
+
+    reason:
+        inline markers detected
+
+====================================================
+PART 2
+HANDLE_AREA AUTOPSY
+====================================================
+
+Trace every conditional branch inside:
+
+handle_area()
+
+For the XV-107 partition show:
+
+Condition
+Value
+Result
+
+Example:
+
+has_area_pattern()
+    False
+
+contains "WAITING AREA"
+    False
+
+contains "ANCHORAGE AREA"
+    False
+
+len(coords) >= 3
+    True
+
+etc.
+
+Identify:
+
+the exact condition
+that prevents Area creation.
+
+====================================================
+PART 3
+PARSE_STRUCTURED_SECTIONS AUTOPSY
+====================================================
+
+Trace:
+
+parse_structured_sections()
+
+for this partition.
+
+Show:
+
+number of sections created
+
+section text
+
+section coordinates
+
+section classification
+
+Answer:
+
+Why exactly does:
+
+parse_structured_sections()
+
+return None
+
+or fail to create Area sections?
+
+====================================================
+PART 4
+SUBLABEL EXTRACTION ANALYSIS
+====================================================
+
+Trace:
+
+extract_sublabels_inline()
+
+Output:
+
+Detected Markers
+
+Detected Coordinates
+
+Returned Objects
+
+Show:
+
+Why the block is considered
+a valid sublabel structure.
+
+====================================================
+PART 5
+AREA CANDIDATE DETECTION MAP
+====================================================
+
+For the same XV-107 block evaluate:
+
+If AREA creation depended only on:
+
+coordinate count
+
+Would it become Area?
+
+If AREA creation depended on:
+
+marker count
+
+Would it become Area?
+
+If AREA creation depended on:
+
+AREA keyword presence
+
+Would it become Area?
+
+Construct a table:
+
+Rule
+Pass/Fail
+
+====================================================
+PART 6
+MINIMAL ROOT CAUSE
+====================================================
+
+Provide ONLY ONE answer:
+
+The first code decision
+which transforms:
+
+Potential Area
+
+into
+
+Not Area
+
+Format:
+
+File:
+Function:
+Line:
+
+Condition:
+
+Value:
+
+Consequence:
+
+====================================================
+DELIVERABLE
+====================================================
+
+1.
+Execution Trace
+
+2.
+handle_area() Autopsy
+
+3.
+parse_structured_sections() Autopsy
+
+4.
+Sublabel Analysis
+
+5.
+Area Candidate Detection Map
+
+6.
+FIRST CORRUPTING DECISION
+
+IMPORTANT
+
+Do not provide a fix.
+
+Do not provide recommendations.
+
+The mission ends only after locating the exact condition that prevents Area creation.
