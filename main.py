@@ -1200,7 +1200,7 @@ def partition_navarea_block(block, navarea_name):
     )
     if len(route_markers) > 1:
         numbered_markers = list(
-            re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block)
+            re.finditer(r"(?:^|\n)\s*(\d+(?:\.\d+)*)\.\s*", block)
         )
         parts = []
         for i, marker in enumerate(route_markers):
@@ -1297,7 +1297,9 @@ def partition_navarea_block(block, navarea_name):
             flags=re.IGNORECASE,
         )
 
-    numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
+    numbered_markers = list(
+        re.finditer(r"(?:^|\n)\s*(\d+(?:\.\d+)*)\.\s*", block)
+    )
     numbered_markers = [
         marker
         for marker in numbered_markers

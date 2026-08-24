@@ -1,0 +1,243 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+S1 Nested Numbering Implementation
+
+AUTHORIZATION:
+APPROVED
+
+====================================================
+OBJECTIVE
+====================================================
+
+Implement the approved S1 repair.
+
+Goal:
+
+Preserve full nested section identity.
+
+Current behavior:
+
+    2.2.2.
+        ↓
+    partition_id = "2"
+
+    2.2.3.
+        ↓
+    partition_id = "2"
+
+    2.2.4.
+        ↓
+    partition_id = "2"
+
+Result:
+
+    multiple logical sections
+    share the same partition identity.
+
+====================================================
+CONFIRMED RCA
+====================================================
+
+Affected message:
+
+    NAVAREA III 34/24
+
+Nested markers:
+
+    2.2.2.
+    2.2.3.
+    2.2.4.
+    2.2.5.
+    2.2.6.
+
+Current IDs:
+
+    ['2','2','2','2','2']
+
+Expected IDs:
+
+    ['2.2.2','2.2.3','2.2.4','2.2.5','2.2.6']
+
+====================================================
+APPROVED DESIGN
+====================================================
+
+Preserve full hierarchical section identity.
+
+Do NOT change:
+
+    section boundaries
+
+Do NOT change:
+
+    handler routing
+
+Do NOT change:
+
+    geometry generation
+
+Do NOT change:
+
+    Area logic
+
+Do NOT change:
+
+    Route segmentation
+
+The only goal:
+
+    preserve unique nested IDs.
+
+====================================================
+AUTHORIZED SCOPE
+====================================================
+
+main.py
+
+partition_navarea_block()
+
+only
+
+====================================================
+NOT AUTHORIZED
+====================================================
+
+Do not modify:
+
+    normalizer.py
+
+    Route Segmentation
+
+    XV-107 context logic
+
+    Multipoint routing
+
+    Area handling
+
+    Coordinate Fragment logic
+
+    Distance Value logic
+
+    Measurement Value logic
+
+====================================================
+SUCCESS CRITERIA
+====================================================
+
+Before:
+
+    ['2','2','2','2','2']
+
+After:
+
+    ['2.2.2',
+     '2.2.3',
+     '2.2.4',
+     '2.2.5',
+     '2.2.6']
+
+Partition count must remain unchanged.
+
+Generated object counts must remain unchanged.
+
+====================================================
+MANDATORY REGRESSION SET
+====================================================
+
+1.
+
+NAVAREA III 34/24
+
+Verify:
+
+    5 Areas
+    3 Lines
+    3 Labels
+
+Verify nested identities:
+
+    unique
+
+2.
+
+NAVAREA XVIII 160/2025
+
+Verify unchanged.
+
+3.
+
+NAVAREA IX 546/2025
+
+Verify unchanged.
+
+4.
+
+NAVAREA XV 107/2026
+
+Verify unchanged.
+
+5.
+
+NAVAREA XV 102/2026
+
+Verify unchanged.
+
+6.
+
+NAVAREA V 449/26
+
+Verify unchanged.
+
+====================================================
+VALIDATION
+====================================================
+
+Run:
+
+    python -m py_compile main.py normalizer.py
+
+Run:
+
+    git diff --check
+
+====================================================
+DELIVERABLE
+====================================================
+
+Provide:
+
+Changed files
+
+Implementation summary
+
+Before / After partition IDs
+
+Regression results
+
+Unexpected behavior
+
+Final status:
+
+    SUCCESS
+
+or
+
+    ROLLBACK REQUIRED
+
+====================================================
+IMPORTANT
+====================================================
+
+Implement S1 only.
+
+Do not begin S4.
+
+Do not refactor partitioning.
+
+Do not expand scope.
+
+Recovery Era rule:
+
+One monster at a time.
