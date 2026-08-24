@@ -1,0 +1,377 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+Patch Design Review
+
+DO NOT MODIFY CODE.
+
+DO NOT IMPLEMENT FIXES.
+
+Design implementation plans only.
+
+====================================================
+OBJECTIVE
+====================================================
+
+Design the smallest possible safe fixes for:
+
+    XV-107/2026
+    XV-102/2026
+
+The goal is:
+
+    minimal code changes
+    minimal regression risk
+    maximum recovery confidence
+
+Do not propose large refactors.
+
+Do not redesign architecture.
+
+Provide the smallest fix that solves the defect.
+
+====================================================
+DEFECT #1
+XV-107/2026
+====================================================
+
+Confirmed facts:
+
+1.
+
+parse_structured_sections()
+
+Line:
+    main.py:721
+
+Uses:
+
+    re.split(r"\n\s*(\d+).\s*", block)
+
+The XV-107 partition begins with:
+
+    1.-
+
+at the start of the block.
+
+Result:
+
+    no sections created
+
+    sections = []
+
+    return None
+
+2.
+
+handle_structured_sections()
+
+returns False.
+
+3.
+
+handle_area()
+
+returns False because:
+
+    AREA BOUND BY
+    BOUNDED BY
+    AREA BOUNDED
+    AREAS BOUNDED
+    AREAS BOUND BY
+
+are all absent.
+
+4.
+
+handle_sublabels()
+
+accepts:
+
+    (A)
+    (B)
+    ...
+    (G)
+
+and creates:
+
+    7 Labels
+
+====================================================
+
+TASK
+
+Design the smallest safe patch.
+
+Provide:
+
+A.
+
+Current execution path
+
+B.
+
+Proposed execution path
+
+C.
+
+Exact file(s)
+
+D.
+
+Exact function(s)
+
+E.
+
+Estimated changed lines
+
+F.
+
+Expected result
+
+Current:
+
+    7 Labels
+
+Target:
+
+    1 Area
+
+G.
+
+Regression Risk
+
+H.
+
+Alternative Designs
+
+Rank:
+
+    Preferred
+    Acceptable
+    Not Recommended
+
+IMPORTANT:
+
+Determine whether:
+
+- fixing parse_structured_sections only
+
+or
+
+- fixing handle_area only
+
+or
+
+- fixing both
+
+is required.
+
+Prove your recommendation.
+
+====================================================
+DEFECT #2
+XV-102/2026
+====================================================
+
+Confirmed facts:
+
+1.
+
+coord_count = 19
+
+2.
+
+is_multi_point_navarea() = False
+
+3.
+
+handle_multipoint() = False
+
+4.
+
+handle_single_point() = True
+
+5.
+
+main.py:2245
+
+uses:
+
+    ctx["coords"][0]
+
+and creates:
+
+    1 Label
+
+====================================================
+
+TASK
+
+Design the smallest safe patch.
+
+Provide:
+
+A.
+
+Current execution path
+
+B.
+
+Proposed execution path
+
+C.
+
+Exact file(s)
+
+D.
+
+Exact function(s)
+
+E.
+
+Estimated changed lines
+
+F.
+
+Expected result
+
+Current:
+
+    1 Label
+
+Target:
+
+    19 Labels
+
+G.
+
+Regression Risk
+
+H.
+
+Alternative Designs
+
+Rank:
+
+    Preferred
+    Acceptable
+    Not Recommended
+
+IMPORTANT:
+
+Evaluate:
+
+Condition A:
+
+    "PLATAFORMA" in upper
+
+Condition B:
+
+    platform_count >= 2
+    and
+    coordinate_count >= 2
+
+Condition C:
+
+    generic repeated coordinate list detection
+
+Recommend only one.
+
+====================================================
+PART 3
+PATCH IMPACT MATRIX
+====================================================
+
+For both defects provide:
+
+Fix
+Affected Functions
+Affected Handlers
+Affected NAVAREA Messages
+Risk Level
+
+Format:
+
+XV-107
+
+Functions:
+    ...
+
+Messages:
+    ...
+
+Risk:
+    LOW/MEDIUM/HIGH
+
+----------------------------------------------------
+
+XV-102
+
+Functions:
+    ...
+
+Messages:
+    ...
+
+Risk:
+    LOW/MEDIUM/HIGH
+
+====================================================
+PART 4
+REGRESSION PLAN
+====================================================
+
+After implementation,
+
+which messages MUST be re-tested?
+
+Provide exact list.
+
+Include:
+
+XV-107
+XV-102
+III 34/24
+
+Plus any additional messages discovered
+during anti-regression analysis.
+
+====================================================
+FINAL DELIVERABLE
+====================================================
+
+1.
+
+XV-107 Patch Plan
+
+2.
+
+XV-102 Patch Plan
+
+3.
+
+Patch Impact Matrix
+
+4.
+
+Regression Test Plan
+
+5.
+
+Final Recommendation
+
+For each fix choose:
+
+    READY TO IMPLEMENT
+
+or
+
+    NEEDS MORE INVESTIGATION
+
+No code.
+
+No implementation.
+
+Design review only.
