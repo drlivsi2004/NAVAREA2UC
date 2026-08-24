@@ -1,0 +1,332 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+S4 Coordinate Fragments Deep Investigation
+
+DO NOT MODIFY CODE.
+
+DO NOT IMPLEMENT FIXES.
+
+DO NOT DESIGN FIXES YET.
+
+Your task is to determine the true architecture
+of S4 Coordinate Fragments before any implementation.
+
+====================================================
+OBJECTIVE
+====================================================
+
+Determine whether S4 is:
+
+    ONE defect
+
+or
+
+    MULTIPLE independent sub-families.
+
+The goal is to fully map S4 before attempting repairs.
+
+====================================================
+KNOWN S4 CASES
+====================================================
+
+Confirmed messages:
+
+    NAVAREA VII 217/2026
+    NAVAREA VII 229/2026
+
+Known examples:
+
+    38.21 S
+    16.56 S
+    28.14 S
+    27.33 S
+    11.13 S
+
+Current behavior:
+
+    38.21 S
+        ↓
+    interpreted as section 38
+
+    16.56 S
+        ↓
+    interpreted as section 16
+
+Result:
+
+    false partitions
+    geometry fragmentation
+    coordinate ownership loss
+
+====================================================
+PART 1
+EXACT FAILURE TRACE
+====================================================
+
+For each confirmed case provide:
+
+Source text
+
+Trigger line
+
+Regex match
+
+Capture group
+
+Created partition ID
+
+Partition result
+
+Object result
+
+Show the full path:
+
+    Source
+        ↓
+    Marker Detection
+        ↓
+    Partition Creation
+        ↓
+    Handler Routing
+        ↓
+    Final Objects
+
+====================================================
+PART 2
+EXPOSURE AUDIT
+====================================================
+
+Search all available NAVAREA datasets.
+
+Find coordinate-like line starts such as:
+
+    38.21 S
+    16.56 N
+    28.14 E
+    11.13 W
+
+and similar decimal-coordinate forms.
+
+Report:
+
+Message
+Pattern
+Current Partition Result
+
+Classify:
+
+    Confirmed Defect
+
+    Potential Exposure
+
+====================================================
+PART 3
+SUB-FAMILY IDENTIFICATION
+====================================================
+
+Determine whether S4 consists of
+multiple coordinate formats.
+
+Possible examples:
+
+Family A
+
+Decimal Degrees
+
+    38.21 S
+
+--------------------------------
+
+Family B
+
+Wrapped Coordinates
+
+    38.21
+    S
+
+--------------------------------
+
+Family C
+
+Mixed Coordinate
+and Numbered Sections
+
+--------------------------------
+
+Family D
+
+Platform Lists
+
+--------------------------------
+
+Family E
+
+Environmental Reports
+
+Do not assume these families exist.
+
+Investigate and classify.
+
+====================================================
+PART 4
+FIRST CORRUPTING DECISION
+====================================================
+
+For every confirmed family provide:
+
+File
+
+Function
+
+Line
+
+Condition
+
+Value
+
+Corrupting Effect
+
+Identify:
+
+FIRST CORRUPTING DECISION
+
+for each family.
+
+====================================================
+PART 5
+BLAST RADIUS ANALYSIS
+====================================================
+
+Estimate:
+
+Confirmed cases
+
+Potential cases
+
+Risk
+
+For each discovered family.
+
+Format:
+
+Family
+
+Confirmed Cases
+
+Potential Cases
+
+Risk
+
+====================================================
+PART 6
+DEPENDENCY ANALYSIS
+====================================================
+
+Determine whether S4 can be repaired:
+
+independently
+
+or
+
+depends on:
+
+    S1
+    S2
+    S3
+
+Provide justification.
+
+====================================================
+PART 7
+REPAIR FEASIBILITY
+====================================================
+
+Without proposing a fix:
+
+Determine whether S4 appears to be:
+
+LOW RISK
+
+MEDIUM RISK
+
+HIGH RISK
+
+VERY HIGH RISK
+
+Explain:
+
+Why.
+
+====================================================
+PART 8
+RECOVERY ERA DECISION
+====================================================
+
+Answer:
+
+Can S4 realistically be finished
+inside Recovery Era?
+
+or
+
+Should S4 become a separate
+Hardening Era project?
+
+Support your conclusion with evidence.
+
+====================================================
+FINAL DELIVERABLE
+====================================================
+
+SECTION A
+
+Confirmed S4 Families
+
+SECTION B
+
+Failure Matrix
+
+SECTION C
+
+Blast Radius Matrix
+
+SECTION D
+
+Architecture Assessment
+
+SECTION E
+
+Recovery Era Recommendation
+
+Final answer only:
+
+    S4 is one defect
+
+or
+
+    S4 is a defect family
+
+and
+
+    Finish in Recovery Era
+
+or
+
+    Move to Hardening Era
+
+IMPORTANT
+
+Do not implement.
+
+Do not propose fixes.
+
+Do not modify code.
+
+We are deciding whether S4 is the final monster
+of Recovery Era
+
+or
+
+the first monster of Hardening Era.
