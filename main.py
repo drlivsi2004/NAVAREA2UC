@@ -819,14 +819,22 @@ def extract_riglist_entries(block):
         )
     ]
 
-    if len(entries) > 10:
-        return entries
-
-    rig_block = re.sub(r"\s+", " ", block)
-    coord_pattern = re.compile(
+    entry_coord_pattern = re.compile(
         r"\d{1,3}\s*-\s*[\d.]+\s*[NS]\s+\d{1,3}\s*-\s*[\d.]+\s*[EW]",
         re.I,
     )
+    has_spaced_coordinates = re.search(
+        r"\d{1,3}\s+-\s+[\d.]+\s+[NS]", block, re.I
+    )
+    if len(entries) > 10 and (
+        not has_spaced_coordinates
+        or sum(len(entry_coord_pattern.findall(entry)) for entry in entries)
+        == len(entries)
+    ):
+        return entries
+
+    rig_block = re.sub(r"\s+", " ", block)
+    coord_pattern = entry_coord_pattern
     matches = list(coord_pattern.finditer(rig_block))
     if not matches:
         return [block.strip()]
