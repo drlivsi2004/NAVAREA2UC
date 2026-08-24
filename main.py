@@ -2517,7 +2517,7 @@ def buoy_style_color(check_danger, status):
         S52colorcode = CHYLW
 
     ÐÑÑ Ð¾ÑÑÐ°Ð»ÑÐ½Ð¾Ðµ:
-        S52colorcode = CHBRN
+        S52colorcode = NINFO
 
     ÐÑÐ°ÑÐ½ÑÐ¹ Ð½Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÐµÑÑÑ.
     """
@@ -2526,7 +2526,7 @@ def buoy_style_color(check_danger, status):
     if status == "ACTIVE":
         color = "CHYLW"
     else:
-        color = "CHBRN"
+        color = "NINFO"
 
     return style, color, 0
 
