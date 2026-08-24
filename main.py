@@ -813,7 +813,7 @@ def extract_riglist_entries(block):
         for e in entries
         if e.strip()
         and re.search(
-            r"\d{1,3}-\d+(?:.\d+)?[NS]\s+\d{1,3}-\d+(?:.\d+)?[EW]",
+            r"\d{1,3}\s*-\s*\d+(?:.\d+)?\s*[NS]\s+\d{1,3}\s*-\s*\d+(?:.\d+)?\s*[EW]",
             e,
             re.I,
         )
@@ -823,7 +823,10 @@ def extract_riglist_entries(block):
         return entries
 
     rig_block = re.sub(r"\s+", " ", block)
-    coord_pattern = re.compile(r"\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]", re.I)
+    coord_pattern = re.compile(
+        r"\d{1,3}\s*-\s*[\d.]+\s*[NS]\s+\d{1,3}\s*-\s*[\d.]+\s*[EW]",
+        re.I,
+    )
     matches = list(coord_pattern.finditer(rig_block))
     if not matches:
         return [block.strip()]
@@ -847,7 +850,10 @@ def extract_riglist_entries(block):
 
 
 def process_riglist_entry(entry_text, label_text, container, message):
-    coord_pattern = re.compile(r"\d{1,3}-[\d.]+[NS]\s+\d{1,3}-[\d.]+[EW]", re.I)
+    coord_pattern = re.compile(
+        r"\d{1,3}\s*-\s*[\d.]+\s*[NS]\s+\d{1,3}\s*-\s*[\d.]+\s*[EW]",
+        re.I,
+    )
     matches = list(coord_pattern.finditer(entry_text))
     if not matches:
         return

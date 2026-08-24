@@ -1,0 +1,288 @@
+NAVAREA2UC
+v1.3.0 Final Release Fix
+
+MISSION:
+NAVAREA VII 233/2026
+
+AUTHORIZATION:
+APPROVED
+
+====================================================
+OBJECTIVE
+====================================================
+
+Implement the smallest possible safe fix for:
+
+NAVAREA VII 233/2026
+
+Current behavior:
+
+    Coordinates: 12
+
+    Objects: 0
+
+Expected behavior:
+
+    Coordinates: 12
+
+    Objects > 0
+
+RIGLIST entries must be represented.
+
+====================================================
+CONFIRMED RCA
+====================================================
+
+Message:
+
+    NAVAREA VII 233/2026
+
+Routing:
+
+    partition_riglist()
+        ↓
+
+    handle_riglist()
+        ↓
+
+    process_riglist_entry()
+
+Current issue:
+
+Generic coordinate extraction supports:
+
+    22 - 00.80 S 014 - 00.55 E
+
+Riglist-specific parser expects:
+
+    22-00.80S 014-00.55E
+
+Result:
+
+    matches = []
+
+Then:
+
+    if not matches:
+        return
+
+No objects created.
+
+Handler still returns handled=True.
+
+Pipeline stops.
+
+Output:
+
+    12 coordinates
+    0 objects
+
+====================================================
+APPROVED SCOPE
+====================================================
+
+AUTHORIZED:
+
+    main.py
+
+    handle_riglist()
+
+    process_riglist_entry()
+
+    extract_riglist_entries()
+
+ONLY
+
+====================================================
+NOT AUTHORIZED
+====================================================
+
+Do NOT modify:
+
+    partitioning engine
+
+    Route Segmentation
+
+    S1 logic
+
+    S2 logic
+
+    S3 logic
+
+    Area Engine
+
+    Multipoint Engine
+
+    Generic coordinate extraction
+
+    Semantic Color Policy
+
+    Style Logic
+
+====================================================
+IMPLEMENTATION GOAL
+====================================================
+
+Align riglist coordinate recognition
+with coordinate formats already
+accepted by the generic extractor.
+
+Supported forms must include:
+
+    22-00.80S 014-00.55E
+
+and
+
+    22 - 00.80 S 014 - 00.55 E
+
+without changing existing
+successful RIGLIST behavior.
+
+====================================================
+SUCCESS CRITERIA
+====================================================
+
+Before:
+
+NAVAREA VII 233/2026
+
+    Coordinates: 12
+
+    Objects: 0
+
+After:
+
+NAVAREA VII 233/2026
+
+    Coordinates: 12
+
+    Objects: >= 12 Labels
+
+or
+
+    one label per rig entry
+
+No object loss.
+
+====================================================
+MANDATORY REGRESSION SET
+====================================================
+
+RIGLIST family:
+
+NAVAREA VII 233/2026
+
+NAVAREA I 169/26
+
+NAVAREA II 299/2026
+
+NAVAREA IV 735/2026
+
+NAVAREA XIX 100/26
+
+Verify:
+
+    coordinates
+
+    partitions
+
+    labels
+
+    styles
+
+remain correct.
+
+====================================================
+RECOVERY ERA REGRESSION SET
+====================================================
+
+Verify unchanged:
+
+NAVAREA III 34/24
+    5 Areas
+    3 Lines
+    3 Labels
+
+NAVAREA XV 107/2026
+    1 Area
+
+NAVAREA XV 102/2026
+    19 Labels
+
+NAVAREA XVIII 160/2025
+    1 partition
+    7 Labels
+
+NAVAREA IX 546/2025
+    no partition 14
+
+====================================================
+VALIDATION
+====================================================
+
+Run:
+
+    python -m py_compile main.py normalizer.py
+
+Run:
+
+    git diff --check
+
+====================================================
+DELIVERABLE
+====================================================
+
+Provide:
+
+1.
+
+Changed files
+
+2.
+
+Exact implementation summary
+
+3.
+
+Before / After
+for NAVAREA VII 233/2026
+
+4.
+
+RIGLIST regression results
+
+5.
+
+Recovery regression results
+
+6.
+
+Any unexpected behavior
+
+7.
+
+Final status:
+
+    SUCCESS
+
+or
+
+    ROLLBACK REQUIRED
+
+====================================================
+IMPORTANT
+====================================================
+
+This is intended to be the last
+confirmed pre-release defect.
+
+Do not expand scope.
+
+Do not refactor unrelated systems.
+
+Do not begin S4.
+
+Fix only:
+
+    NAVAREA VII 233/2026
+    RIGLIST coordinate grammar mismatch.
