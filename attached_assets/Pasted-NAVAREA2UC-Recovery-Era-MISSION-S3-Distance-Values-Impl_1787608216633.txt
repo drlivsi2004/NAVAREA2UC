@@ -1,0 +1,316 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+S3 Distance Values Implementation
+
+AUTHORIZATION:
+APPROVED
+
+====================================================
+OBJECTIVE
+====================================================
+
+Implement the approved S3 repair:
+
+Distance Values
+
+Goal:
+
+Prevent distance values from being interpreted
+as numbered section markers.
+
+Examples:
+
+    14.5NM
+    2.5NM
+    0.6 MILES
+    0.7 MILES
+
+must NOT create:
+
+    partition_id = 14
+    partition_id = 2
+    partition_id = 0
+    etc.
+
+====================================================
+CONFIRMED RCA
+====================================================
+
+Affected message:
+
+    NAVAREA IX 546/2025
+
+Current behavior:
+
+    14.5NM
+        ↓
+    regex captures:
+
+        14.
+
+        group(1) = "14"
+
+        partition_id = "14"
+
+Result:
+
+    ['14','1','2','3','4','5','6','7','8','9']
+
+Channel geometry becomes fragmented.
+
+====================================================
+APPROVED DESIGN
+====================================================
+
+Approach A
+
+Distance-aware exclusion
+during marker collection.
+
+Activation criteria:
+
+    decimal value
+    +
+    distance unit
+
+Supported units:
+
+    NM
+    NM.
+    MILE
+    MILES
+    MI
+    MI.
+
+Examples:
+
+    14.5NM
+    2.5NM
+    0.6 MILES
+    0.7 MILES
+
+must be excluded from
+numbered marker collection.
+
+====================================================
+IMPLEMENTATION SCOPE
+====================================================
+
+AUTHORIZED:
+
+    main.py
+
+    partition_navarea_block()
+
+ONLY
+
+====================================================
+NOT AUTHORIZED
+====================================================
+
+Do NOT modify:
+
+    normalizer.py
+
+    PROCESS_HANDLERS
+
+    Route Segmentation Stage
+
+    Nested Numbering logic
+
+    Coordinate Fragment logic
+
+    Area handling
+
+    Multipoint handling
+
+    Measurement Value logic (S2)
+
+    Trackline construction
+
+    Existing route logic
+
+====================================================
+SUCCESS CRITERIA
+====================================================
+
+Before:
+
+    14.5NM
+        ↓
+    partition_id = "14"
+
+After:
+
+    14.5NM
+        ↓
+    no section marker created
+
+Expected result:
+
+    false partition "14"
+    no longer exists
+
+====================================================
+MANDATORY REGRESSION SET
+====================================================
+
+Run baseline/current comparison.
+
+1.
+
+NAVAREA IX 546/2025
+
+Verify:
+
+    partition_id "14" removed
+
+    false distance partition removed
+
+    report resulting:
+
+        partitions
+        Areas
+        Lines
+        Circles
+        Labels
+
+2.
+
+NAVAREA XVIII 160/2025
+
+Verify:
+
+    S2 remains unchanged
+
+    1 partition
+
+    7 Labels
+
+3.
+
+NAVAREA XVIII 131/2025
+
+Verify unchanged.
+
+4.
+
+NAVAREA XVIII 156/2025
+
+Verify unchanged.
+
+5.
+
+NAVAREA III 34/24
+
+Verify unchanged:
+
+    5 Areas
+    3 Lines
+    3 Labels
+
+6.
+
+NAVAREA XV 107/2026
+
+Verify unchanged:
+
+    1 Area
+
+7.
+
+NAVAREA XV 102/2026
+
+Verify unchanged:
+
+    19 Labels
+
+8.
+
+NAVAREA V 449/26
+
+Verify unchanged:
+
+    3 Areas
+
+====================================================
+VALIDATION
+====================================================
+
+Run:
+
+    python -m py_compile main.py normalizer.py
+
+Run:
+
+    git diff --check
+
+====================================================
+DELIVERABLE
+====================================================
+
+Provide:
+
+1.
+
+Changed files
+
+2.
+
+Exact implementation summary
+
+3.
+
+Before / After comparison
+
+4.
+
+Regression results
+
+5.
+
+Partition IDs before / after
+for NAVAREA IX 546/2025
+
+6.
+
+Any unexpected behavior
+
+7.
+
+Final status:
+
+    SUCCESS
+
+or
+
+    ROLLBACK REQUIRED
+
+====================================================
+IMPORTANT
+====================================================
+
+If the implementation causes
+any regression outside NAVAREA IX 546/2025:
+
+    STOP
+
+    REPORT
+
+    DO NOT EXPAND SCOPE
+
+Recovery Era rule:
+
+    One defect family at a time.
+
+Do not continue into:
+
+    S1 Nested Numbering
+
+or
+
+    S4 Coordinate Fragments.
+
+Implement S3 only.

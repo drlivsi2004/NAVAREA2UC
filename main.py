@@ -1272,6 +1272,10 @@ def partition_navarea_block(block, navarea_name):
         r"^\s*\d+\.\d+\s*(?:M|METERS?|METRES?)\b",
         re.IGNORECASE,
     )
+    distance_marker_re = re.compile(
+        r"^\s*\d+\.\d+\s*(?:NM\.?|MILES?|MI\.?)\b",
+        re.IGNORECASE,
+    )
     if re.search(
         r"(?im)^\s*\d+\.\d+\s*(?:M|METERS?|METRES?)\b",
         block,
@@ -1282,12 +1286,37 @@ def partition_navarea_block(block, navarea_name):
             block,
             flags=re.IGNORECASE,
         )
+    if re.search(
+        r"(?im)^\s*\d+\.\d+\s*(?:NM\.?|MILES?|MI\.?)\b",
+        block,
+    ):
+        block = re.sub(
+            r"\n(?=\s*\d+\.\d+\s*(?:NM\.?|MILES?|MI\.?)\b)",
+            " ",
+            block,
+            flags=re.IGNORECASE,
+        )
 
     numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
     numbered_markers = [
         marker
         for marker in numbered_markers
         if not measurement_marker_re.match(
+            block[
+                marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0) :
+                block.find(
+                    "\n",
+                    marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0),
+                )
+                if block.find(
+                    "\n",
+                    marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0),
+                )
+                >= 0
+                else len(block)
+            ]
+        )
+        or distance_marker_re.match(
             block[
                 marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0) :
                 block.find(
