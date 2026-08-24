@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--userchart node-->
+<userchart name="NAVAREA IX (Part 4)" description="" version="1.0">
+  <!--userchart label-->
+  <labels>
+    <label name="NAV IX 282/2026" description="1. FIRING PRACTICE WILL BE CONDUCTED BETWEEN 0400 TO 1600 UTC IN FOLLOWING AREAS AREA A: 17 AUG 26 20-08.28N 040-05.14E 20-07.43N 040-05.29E 20-08.28N 040-06.46E 20-07.25N 040-06.46E AREA B: 17 AUG 23-01.50N 038-46.50E 23-03.50N 038-40.51E 23-09.40N 038-40.51E 23-09.40N 038-45.40E AREA C: 19 AUG 26 19-20.42N 040-53.48E 19-16.42N 040-57.54E 19-12.45N 040-53.48E 19-16.42N 040-48.35E AREA D: 17 TO 20 AUG 26 21-06.00N 038-58.30E 21-05.35N 039-07.00E 21-13.24N 038-58.30E 21-13.30N 039-06.12E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="20.138000" longitude="40.085667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 282/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 283/2026" description="DP2 25-53.24N 052-43.61E">
+      <position>
+        <vertex id="1" latitude="25.887333" longitude="52.726833"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 283/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 283/2026" description="DP2-KP0 25-53.32N 052-43.64E">
+      <position>
+        <vertex id="1" latitude="25.888667" longitude="52.727333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 283/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV IX 283/2026" description="DP2-KP2.7 25-53.20N 052-42.13E MARINERS CAUTIONED">
+      <position>
+        <vertex id="1" latitude="25.886667" longitude="52.702167"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV IX 283/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+  </labels>
+</userchart>
