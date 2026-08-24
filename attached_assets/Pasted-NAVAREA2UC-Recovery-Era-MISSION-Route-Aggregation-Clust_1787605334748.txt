@@ -1,0 +1,313 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+Route Aggregation Cluster D Investigation
+
+DO NOT MODIFY CODE.
+
+DO NOT IMPLEMENT FIXES.
+
+DO NOT PROPOSE PATCHES.
+
+Your task is to determine whether the Route Aggregation defect
+identified in NAVAREA III 34/24 is an isolated case
+or a systemic partitioning problem affecting multiple NAVAREA datasets.
+
+====================================================
+OBJECTIVE
+====================================================
+
+Investigate the following candidates:
+
+    NAVAREA III 34/24
+    NAVAREA XVIII 160/2025
+
+Confirmed candidates
+
+and additionally:
+
+    NAVAREA IX 546/2025
+    NAVAREA VII 217/2026
+    NAVAREA VII 225/2026
+    NAVAREA VII 229/2026
+    NAVAREA V 449/26
+    NAVAREA X 87/2026
+    NAVAREA XI 488/2020
+    NAVAREA XI 325/2021
+    NAVAREA XVIII 131/2025
+    NAVAREA XVIII 156/2025
+
+Potential candidates
+
+====================================================
+PART 1
+PARTITION FORENSICS
+====================================================
+
+For each candidate message:
+
+Report:
+
+Message ID
+
+Raw section numbering
+
+Example:
+
+    1.
+    2.
+    2.2.2.
+    2.2.3.
+    2.2.4.
+
+Show actual output from:
+
+partition_navarea_block()
+
+Provide:
+
+partition_ids
+
+Example:
+
+    ['1','2','2','2','2']
+
+Identify:
+
+duplicate partition IDs
+
+Provide:
+
+YES / NO
+
+====================================================
+PART 2
+STRUCTURE PRESERVATION AUDIT
+====================================================
+
+For each candidate:
+
+Determine:
+
+1.
+
+Source geometry groups
+
+How many logical groups exist?
+
+Examples:
+
+    Routes
+    Areas
+    Waiting Areas
+    Holding Areas
+    Subsections
+    Platform Lists
+
+2.
+
+Post-partition groups
+
+How many groups remain after partitioning?
+
+3.
+
+Identify any merge events
+
+Examples:
+
+    Route A + Route B
+            →
+    One Route
+
+    Area A + Area B
+            →
+    One Area
+
+====================================================
+PART 3
+ROUTE AGGREGATION ANALYSIS
+====================================================
+
+For every candidate containing routes:
+
+Determine:
+
+Number of route definitions
+in source text.
+
+Examples:
+
+    ROUTE No. 1
+    ROUTE No. 1.1
+    ROUTE No. 2
+
+Then determine:
+
+How many Line objects
+are created.
+
+Output:
+
+Source Routes:
+
+Created Lines:
+
+Aggregation Present:
+
+YES / NO
+
+====================================================
+PART 4
+OBJECT COMPARISON
+====================================================
+
+For every candidate provide:
+
+Source
+
+Coords Count
+
+Partition Count
+
+Areas
+
+Lines
+
+Circles
+
+Labels
+
+Determine:
+
+Are coordinates lost?
+
+YES / NO
+
+Are objects merged?
+
+YES / NO
+
+Are sections merged?
+
+YES / NO
+
+====================================================
+PART 5
+CLUSTER IDENTIFICATION
+====================================================
+
+Determine whether each candidate belongs to:
+
+Cluster D
+(Route Aggregation)
+
+Cluster P
+(Partition ID Collision)
+
+Cluster S
+(Section Parsing)
+
+Cluster N
+(No Issue)
+
+A message may belong to multiple clusters.
+
+====================================================
+PART 6
+ROOT CAUSE SIMILARITY MATRIX
+====================================================
+
+Compare all affected messages.
+
+Determine:
+
+Does NAVAREA XVIII 160/2025
+share the SAME root cause
+as NAVAREA III 34/24?
+
+Answer:
+
+IDENTICAL
+
+SIMILAR
+
+DIFFERENT
+
+Provide justification.
+
+====================================================
+PART 7
+PRIORITY RANKING
+====================================================
+
+Rank all candidates by severity.
+
+Format:
+
+1.
+Message
+
+Reason
+
+Severity
+
+2.
+Message
+
+Reason
+
+Severity
+
+etc.
+
+====================================================
+FINAL DELIVERABLE
+====================================================
+
+SECTION A
+
+Confirmed Cluster D Messages
+
+SECTION B
+
+Confirmed Partition Collision Messages
+
+SECTION C
+
+False Positives
+
+SECTION D
+
+Root Cause Similarity Matrix
+
+SECTION E
+
+Severity Ranking
+
+SECTION F
+
+Final Assessment
+
+Answer only:
+
+Is Route Aggregation Cluster D
+
+LOCALIZED
+
+or
+
+SYSTEMIC
+
+Provide evidence.
+
+IMPORTANT
+
+Do not propose fixes.
+
+Do not suggest code changes.
+
+Do not modify code.
+
+Only determine the true scope of the defect family.
