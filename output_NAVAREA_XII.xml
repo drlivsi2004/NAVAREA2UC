@@ -1,0 +1,588 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA XII IMPORT" description="" version="1.3">
+<lines>
+<line name="NAV XII 862/2024" description="NAVAREA XII 862/2024 281257 UTC OCT 2024 EASTERN NORTH PACIFIC. KIRIBATI. CABLE OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE IN VICINITY OF TRACKLINE JOINING 02-01.46N 157-29.67W 02-01.45N 157-29.69W 02-01.45N 157-29.72W 02-01.42N 157-29.82W 02-01.36N 157-30.04W 02-01.22N 157-30.29W 02-00.20N 157-32.23W 100 METER BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="2.024333" longitude="-157.494500"/>
+<vertex id="2" latitude="2.024167" longitude="-157.494833"/>
+<vertex id="3" latitude="2.024167" longitude="-157.495333"/>
+<vertex id="4" latitude="2.023667" longitude="-157.497000"/>
+<vertex id="5" latitude="2.022667" longitude="-157.500667"/>
+<vertex id="6" latitude="2.020333" longitude="-157.504833"/>
+<vertex id="7" latitude="2.003333" longitude="-157.537167"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="NINFO" lineWidth="3"/>
+</line>
+<line name="NAV XII 496/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 30 NOV BY CABLESHIP IT INFINITY ALONG TRACKLINE JOINING 58-41.85N 157-20.77W 58-24.79N 157-47.71W 58-08.90N 158-43.85W 58-12.85N 161-01.19W 58-15.70N 161-48.97W 58-58.32N 164-39.72W 60-14.14N 165-20.64W 60-53.89N 166-39.24W WIDE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="58.697500" longitude="-157.346167"/>
+<vertex id="2" latitude="58.413167" longitude="-157.795167"/>
+<vertex id="3" latitude="58.148333" longitude="-158.730833"/>
+<vertex id="4" latitude="58.214167" longitude="-161.019833"/>
+<vertex id="5" latitude="58.261667" longitude="-161.816167"/>
+<vertex id="6" latitude="58.972000" longitude="-164.662000"/>
+<vertex id="7" latitude="60.235667" longitude="-165.344000"/>
+<vertex id="8" latitude="60.898167" longitude="-166.654000"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="NINFO" lineWidth="3"/>
+</line>
+<line name="NAV XII 523/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V GRACE WITHIN THREE MILES OF TRACKLINE JOINING 48-57.51N 162-53.63W 48-55.01N 162-45.02W 48-54.59N 162-18.29W 48-54.03N 161-51.12W 48-53.63N 161-32.00W 48-53.47N 161-23.99W 48-52.77N 160-57.37W 48-51.94N 160-30.70W 48-51.02N 160-04.11W 48-50.01N 159-37.57W 48-49.50N 159-25.00W 48-49.28N 159-23.89W 48-48.40N 159-19.52W 48-47.20N 159-13.67W 48-45.50N 159-05.00W 48-43.50N 158-50.00W 48-43.86N 158-47.56W 48-45.00N 158-40.00W 48-47.03N 158-21.26W 48-47.50N 158-17.00W 48-48.39N 157-54.83W 48-49.00N 157-40.00W 48-45.90N 157-29.16W 48-43.30N 157-20.00W 48-41.27N 157-03.72W 48-39.60N 156-50.00W 48-39.46N 156-37.36W 48-39.30N 156-21.10W 48-38.20N 156-12.80W 48-37.73N 156-11.13W 48-36.60N 156-07.00W 48-34.44N 155-59.39W 48-35.31N 155-57.60W 48-36.33N 155-57.26W 48-34.01N 155-57.90W 48-33.89N 155-57.42W 48-33.20N 155-55.00W 48-33.20N 155-49.10W 48-33.43N 155-47.69W 48-33.84N 155-44.87W 48-34.80N 155-38.70W 48-36.28N 155-35.66W 48-38.10N 155-31.96W 48-39.50N 155-29.10W 48-39.87N 155-26.02W 48-40.00N 155-25.00W 48-40.03N 155-15.05W 48-40.00N 155-14.30W 48-38.70N 155-06.70W 48-37.00N 155-02.50W 48-31.40N 154-56.10W 48-30.75N 154-53.95W 48-29.38N 154-49.67W 48-25.60N 154-37.78W 48-24.60N 154-34.70W 48-24.35N 154-32.04W 48-22.64N 154-14.65W 48-20.12N 153-49.75W 48-18.52N 153-34.45W 48-17.95N 153-29.12W 48-17.69N 153-26.81W 48-14.78N 153-00.17W 48-12.80N 152-42.40W 48-11.53N 152-33.70W 48-10.18N 152-24.42W 48-09.50N 152-20.00W 48-08.63N 152-08.03W 48-06.75N 151-42.45W 48-05.00N 151-20.00W 48-04.71N 151-16.59W 48-04.53N 151-14.58W 48-02.50N 150-51.58W 48-01.00N 150-35.00W 47-59.85N 150-26.37W 47-59.12N 150-20.92W 47-56.50N 150-01.68W 47-56.13N 149-58.98W 47-56.00N 149-58.00W 47-51.36N 149-40.84W TWO MILE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="48.958500" longitude="-162.893833"/>
+<vertex id="2" latitude="48.916833" longitude="-162.750333"/>
+<vertex id="3" latitude="48.909833" longitude="-162.304833"/>
+<vertex id="4" latitude="48.900500" longitude="-161.852000"/>
+<vertex id="5" latitude="48.893833" longitude="-161.533333"/>
+<vertex id="6" latitude="48.891167" longitude="-161.399833"/>
+<vertex id="7" latitude="48.879500" longitude="-160.956167"/>
+<vertex id="8" latitude="48.865667" longitude="-160.511667"/>
+<vertex id="9" latitude="48.850333" longitude="-160.068500"/>
+<vertex id="10" latitude="48.833500" longitude="-159.626167"/>
+<vertex id="11" latitude="48.825000" longitude="-159.416667"/>
+<vertex id="12" latitude="48.821333" longitude="-159.398167"/>
+<vertex id="13" latitude="48.806667" longitude="-159.325333"/>
+<vertex id="14" latitude="48.786667" longitude="-159.227833"/>
+<vertex id="15" latitude="48.758333" longitude="-159.083333"/>
+<vertex id="16" latitude="48.725000" longitude="-158.833333"/>
+<vertex id="17" latitude="48.731000" longitude="-158.792667"/>
+<vertex id="18" latitude="48.750000" longitude="-158.666667"/>
+<vertex id="19" latitude="48.783833" longitude="-158.354333"/>
+<vertex id="20" latitude="48.791667" longitude="-158.283333"/>
+<vertex id="21" latitude="48.806500" longitude="-157.913833"/>
+<vertex id="22" latitude="48.816667" longitude="-157.666667"/>
+<vertex id="23" latitude="48.765000" longitude="-157.486000"/>
+<vertex id="24" latitude="48.721667" longitude="-157.333333"/>
+<vertex id="25" latitude="48.687833" longitude="-157.062000"/>
+<vertex id="26" latitude="48.660000" longitude="-156.833333"/>
+<vertex id="27" latitude="48.657667" longitude="-156.622667"/>
+<vertex id="28" latitude="48.655000" longitude="-156.351667"/>
+<vertex id="29" latitude="48.636667" longitude="-156.213333"/>
+<vertex id="30" latitude="48.628833" longitude="-156.185500"/>
+<vertex id="31" latitude="48.610000" longitude="-156.116667"/>
+<vertex id="32" latitude="48.574000" longitude="-155.989833"/>
+<vertex id="33" latitude="48.588500" longitude="-155.960000"/>
+<vertex id="34" latitude="48.605500" longitude="-155.954333"/>
+<vertex id="35" latitude="48.566833" longitude="-155.965000"/>
+<vertex id="36" latitude="48.564833" longitude="-155.957000"/>
+<vertex id="37" latitude="48.553333" longitude="-155.916667"/>
+<vertex id="38" latitude="48.553333" longitude="-155.818333"/>
+<vertex id="39" latitude="48.557167" longitude="-155.794833"/>
+<vertex id="40" latitude="48.564000" longitude="-155.747833"/>
+<vertex id="41" latitude="48.580000" longitude="-155.645000"/>
+<vertex id="42" latitude="48.604667" longitude="-155.594333"/>
+<vertex id="43" latitude="48.635000" longitude="-155.532667"/>
+<vertex id="44" latitude="48.658333" longitude="-155.485000"/>
+<vertex id="45" latitude="48.664500" longitude="-155.433667"/>
+<vertex id="46" latitude="48.666667" longitude="-155.416667"/>
+<vertex id="47" latitude="48.667167" longitude="-155.250833"/>
+<vertex id="48" latitude="48.666667" longitude="-155.238333"/>
+<vertex id="49" latitude="48.645000" longitude="-155.111667"/>
+<vertex id="50" latitude="48.616667" longitude="-155.041667"/>
+<vertex id="51" latitude="48.523333" longitude="-154.935000"/>
+<vertex id="52" latitude="48.512500" longitude="-154.899167"/>
+<vertex id="53" latitude="48.489667" longitude="-154.827833"/>
+<vertex id="54" latitude="48.426667" longitude="-154.629667"/>
+<vertex id="55" latitude="48.410000" longitude="-154.578333"/>
+<vertex id="56" latitude="48.405833" longitude="-154.534000"/>
+<vertex id="57" latitude="48.377333" longitude="-154.244167"/>
+<vertex id="58" latitude="48.335333" longitude="-153.829167"/>
+<vertex id="59" latitude="48.308667" longitude="-153.574167"/>
+<vertex id="60" latitude="48.299167" longitude="-153.485333"/>
+<vertex id="61" latitude="48.294833" longitude="-153.446833"/>
+<vertex id="62" latitude="48.246333" longitude="-153.002833"/>
+<vertex id="63" latitude="48.213333" longitude="-152.706667"/>
+<vertex id="64" latitude="48.192167" longitude="-152.561667"/>
+<vertex id="65" latitude="48.169667" longitude="-152.407000"/>
+<vertex id="66" latitude="48.158333" longitude="-152.333333"/>
+<vertex id="67" latitude="48.143833" longitude="-152.133833"/>
+<vertex id="68" latitude="48.112500" longitude="-151.707500"/>
+<vertex id="69" latitude="48.083333" longitude="-151.333333"/>
+<vertex id="70" latitude="48.078500" longitude="-151.276500"/>
+<vertex id="71" latitude="48.075500" longitude="-151.243000"/>
+<vertex id="72" latitude="48.041667" longitude="-150.859667"/>
+<vertex id="73" latitude="48.016667" longitude="-150.583333"/>
+<vertex id="74" latitude="47.997500" longitude="-150.439500"/>
+<vertex id="75" latitude="47.985333" longitude="-150.348667"/>
+<vertex id="76" latitude="47.941667" longitude="-150.028000"/>
+<vertex id="77" latitude="47.935500" longitude="-149.983000"/>
+<vertex id="78" latitude="47.933333" longitude="-149.966667"/>
+<vertex id="79" latitude="47.856000" longitude="-149.680667"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="NINFO" lineWidth="3"/>
+</line>
+</lines>
+<areas>
+<area name="NAV XII 93/2023" description="1. INTERMITTENT MISSILE FIRING OPERATIONS CONDUCTED BY THE PACIFIC MISSILE RANGE FACILITY (PMRF), BARKING SANDS KAUAI, HAWAII, IN WHISKEY (W 188) OPERATING AREA. OPERATIONS ARE CONDUCTED PERIODICALLY THROUGHOUT EACH WEEK IN AREA BOUND BY 22-00.0N 159-51.0W 22-00.0N 160-00.0W 22-04.0N 160-06.0W 21-59.5N 160-21.0W 22-05.0N 161-35.0W 22-45.0N 161-25.0W 22-56.0N 161-49.0W 23-34.0N 161-18.6W 23-57.0N 160-41.0W 25-41.0N 161-36.0W 26-00.0N 159-58.0W 25-47.0N 158-15.0W 23-54.0N 158-15.0W 22-20.0N 159-09.0W 22-21.0N 159-30.0W 22-13.0N 159-42.0W 22-00.0N 159-51.0W">
+<position>
+<vertex id="1" latitude="22.000000" longitude="-159.850000"/>
+<vertex id="2" latitude="22.000000" longitude="-160.000000"/>
+<vertex id="3" latitude="22.066667" longitude="-160.100000"/>
+<vertex id="4" latitude="21.991667" longitude="-160.350000"/>
+<vertex id="5" latitude="22.083333" longitude="-161.583333"/>
+<vertex id="6" latitude="22.750000" longitude="-161.416667"/>
+<vertex id="7" latitude="22.933333" longitude="-161.816667"/>
+<vertex id="8" latitude="23.566667" longitude="-161.310000"/>
+<vertex id="9" latitude="23.950000" longitude="-160.683333"/>
+<vertex id="10" latitude="25.683333" longitude="-161.600000"/>
+<vertex id="11" latitude="26.000000" longitude="-159.966667"/>
+<vertex id="12" latitude="25.783333" longitude="-158.250000"/>
+<vertex id="13" latitude="23.900000" longitude="-158.250000"/>
+<vertex id="14" latitude="22.333333" longitude="-159.150000"/>
+<vertex id="15" latitude="22.350000" longitude="-159.500000"/>
+<vertex id="16" latitude="22.216667" longitude="-159.700000"/>
+<vertex id="17" latitude="22.000000" longitude="-159.850000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 678/2025" description="NAVAREA XII 678/2025 300805 UTC OCT 2025 NORTH PACIFIC. COLOMBIA. FISH FARM ESTABLISHED IN AREA BOUND BY 07-10.96N 077-54.60W 06-56.19N 078-07.51W 06-50.73N 078-04.75W 06-11.42N 077-51.53W 06-03.57N 077-49.63W 06-03.55N 077-32.02W 06-10.59N 077-31.38W 06-17.90N 077-33.61W 06-31.64N 077-28.82W 06-49.13N 077-44.24W WIDE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="7.182667" longitude="-77.910000"/>
+<vertex id="2" latitude="6.936500" longitude="-78.125167"/>
+<vertex id="3" latitude="6.845500" longitude="-78.079167"/>
+<vertex id="4" latitude="6.190333" longitude="-77.858833"/>
+<vertex id="5" latitude="6.059500" longitude="-77.827167"/>
+<vertex id="6" latitude="6.059167" longitude="-77.533667"/>
+<vertex id="7" latitude="6.176500" longitude="-77.523000"/>
+<vertex id="8" latitude="6.298333" longitude="-77.560167"/>
+<vertex id="9" latitude="6.527333" longitude="-77.480333"/>
+<vertex id="10" latitude="6.818833" longitude="-77.737333"/>
+<vertex id="11" latitude="7.182667" longitude="-77.910000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 510/2026" description="1. HAZARDOUS OPERATIONS 010800Z AUG TO 010800Z SEP IN AREA BOUND BY 32-52.70N 119-11.96W 33-08.06N 118-52.09W 33-08.06N 118-46.03W 33-03.86N 118-41.80W 33-02.53N 118-43.55W 32-58.88N 118-43.52W 32-47.66N 118-32.35W 32-36.92N 118-45.00W 32-36.92N 118-56.95W">
+<position>
+<vertex id="1" latitude="32.878333" longitude="-119.199333"/>
+<vertex id="2" latitude="33.134333" longitude="-118.868167"/>
+<vertex id="3" latitude="33.134333" longitude="-118.767167"/>
+<vertex id="4" latitude="33.064333" longitude="-118.696667"/>
+<vertex id="5" latitude="33.042167" longitude="-118.725833"/>
+<vertex id="6" latitude="32.981333" longitude="-118.725333"/>
+<vertex id="7" latitude="32.794333" longitude="-118.539167"/>
+<vertex id="8" latitude="32.615333" longitude="-118.750000"/>
+<vertex id="9" latitude="32.615333" longitude="-118.949167"/>
+<vertex id="10" latitude="32.878333" longitude="-119.199333"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 511/2026" description="1. HAZARDOUS OPERATIONS 010800Z AUG TO 010800Z SEP IN AREA BOUND BY 32-33.00N 118-25.00W 32-35.00N 118-16.00W 32-35.00N 117-40.00W 31-55.00N 117-40.00W 31-55.00N 118-25.00W">
+<position>
+<vertex id="1" latitude="32.550000" longitude="-118.416667"/>
+<vertex id="2" latitude="32.583333" longitude="-118.266667"/>
+<vertex id="3" latitude="32.583333" longitude="-117.666667"/>
+<vertex id="4" latitude="31.916667" longitude="-117.666667"/>
+<vertex id="5" latitude="31.916667" longitude="-118.416667"/>
+<vertex id="6" latitude="32.550000" longitude="-118.416667"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 512/2026" description="1. HAZARDOUS OPERATIONS 010800Z AUG TO 010800Z SEP IN AREA BOUND BY 32-55.00N 118-25.00W 32-55.00N 118-15.00W 32-40.00N 118-15.00W 32-40.00N 118-35.00W 32-45.00N 118-35.00W">
+<position>
+<vertex id="1" latitude="32.916667" longitude="-118.416667"/>
+<vertex id="2" latitude="32.916667" longitude="-118.250000"/>
+<vertex id="3" latitude="32.666667" longitude="-118.250000"/>
+<vertex id="4" latitude="32.666667" longitude="-118.583333"/>
+<vertex id="5" latitude="32.750000" longitude="-118.583333"/>
+<vertex id="6" latitude="32.916667" longitude="-118.416667"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 533/2026" description="1. HAZARDOUS OPERATIONS ROCKET LAUNCHING (A) 120200Z TO 120625Z AUG, ALTERNATE 0200Z TO 0625Z DAILY 13 THRU 18 AUG ZONE B 120200Z TO 120643Z AUG, ALTERNATE 0200Z TO 0643Z DAILY 13 THRU 18 AUG IN AREA BOUND BY 29-13.00N 121-31.00W 29-13.00N 122-03.00W 28-49.00N 122-14.00W 27-41.00N 122-06.00W 28-42.00N 121-25.00W">
+<position>
+<vertex id="1" latitude="29.216667" longitude="-121.516667"/>
+<vertex id="2" latitude="29.216667" longitude="-122.050000"/>
+<vertex id="3" latitude="28.816667" longitude="-122.233333"/>
+<vertex id="4" latitude="27.683333" longitude="-122.100000"/>
+<vertex id="5" latitude="28.700000" longitude="-121.416667"/>
+<vertex id="6" latitude="29.216667" longitude="-121.516667"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 539/2026 (B)" description="1. HAZARDOUS OPERATIONS ROCKET LAUNCHING: (A) 152152Z TO 160215Z AUG, ALTERNATE 162138Z TO 170201Z, 172124Z TO 180147Z, 182110Z TO 190133Z, 192056Z TO 200119Z, 202042Z TO 210105Z AND 212029Z TO 220052Z AUG ZONE B 152152Z TO 160217Z AUG, ALTERNATE 162138Z TO 170203Z, 172124Z TO 180149Z, 182110Z TO 190135Z, 192056Z TO 200121Z, 202042Z TO 210107Z AND 212029Z TO 220054Z AUG IN AREA BOUND BY 29-48.00N 117-39.00W 31-20.00N 118-49.00W 31-19.00N 118-50.00W 30-36.00N 118-39.00W 29-54.00N 118-22.00W 29-24.00N 118-08.00W">
+<position>
+<vertex id="1" latitude="29.800000" longitude="-117.650000"/>
+<vertex id="2" latitude="31.333333" longitude="-118.816667"/>
+<vertex id="3" latitude="31.316667" longitude="-118.833333"/>
+<vertex id="4" latitude="30.600000" longitude="-118.650000"/>
+<vertex id="5" latitude="29.900000" longitude="-118.366667"/>
+<vertex id="6" latitude="29.400000" longitude="-118.133333"/>
+<vertex id="7" latitude="29.800000" longitude="-117.650000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 539/2026 (C)" description="1. HAZARDOUS OPERATIONS ROCKET LAUNCHING: (A) 152152Z TO 160215Z AUG, ALTERNATE 162138Z TO 170201Z, 172124Z TO 180147Z, 182110Z TO 190133Z, 192056Z TO 200119Z, 202042Z TO 210105Z AND 212029Z TO 220052Z AUG ZONE C 152152Z TO 160235Z AUG, ALTERNATE 162138Z TO 170221Z, 172124Z TO 180207Z, 182110Z TO 190153Z, 192056Z TO 200139Z, 202042Z TO 210125Z AND 212029Z TO 220112Z AUG IN AREA BOUND BY 29-48.00N 117-39.00W 29-24.00N 118-08.00W 29-15.00N 118-02.00W 29-02.00N 117-59.00W 28-13.00N 117-21.00W 29-36.00N 117-16.00W">
+<position>
+<vertex id="1" latitude="29.800000" longitude="-117.650000"/>
+<vertex id="2" latitude="29.400000" longitude="-118.133333"/>
+<vertex id="3" latitude="29.250000" longitude="-118.033333"/>
+<vertex id="4" latitude="29.033333" longitude="-117.983333"/>
+<vertex id="5" latitude="28.216667" longitude="-117.350000"/>
+<vertex id="6" latitude="29.600000" longitude="-117.266667"/>
+<vertex id="7" latitude="29.800000" longitude="-117.650000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 540/2026 (A)" description="1. HAZARDOUS OPERATIONS SPACE DEBRIS 2100Z TO 1800Z DAILY 13 THRU 26 AUG ZONE A 33-06.05N 128-42.07W 32-50.48N 127-12.42W 28-19.72N 128-15.70W 28-36.02N 129-37.43W">
+<position>
+<vertex id="1" latitude="33.100833" longitude="-128.701167"/>
+<vertex id="2" latitude="32.841333" longitude="-127.207000"/>
+<vertex id="3" latitude="28.328667" longitude="-128.261667"/>
+<vertex id="4" latitude="28.600333" longitude="-129.623833"/>
+<vertex id="5" latitude="33.100833" longitude="-128.701167"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="NAV XII 540/2026 (B)" description="1. HAZARDOUS OPERATIONS SPACE DEBRIS 2100Z TO 1800Z DAILY 13 THRU 26 AUG ZONE B 38-46.77N 172-48.63W 38-15.70N 170-15.70W 31-07.28N 172-31.87W 31-32.10N 174-48.60W">
+<position>
+<vertex id="1" latitude="38.779500" longitude="-172.810500"/>
+<vertex id="2" latitude="38.261667" longitude="-170.261667"/>
+<vertex id="3" latitude="31.121333" longitude="-172.531167"/>
+<vertex id="4" latitude="31.535000" longitude="-174.810000"/>
+<vertex id="5" latitude="38.779500" longitude="-172.810500"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+</areas>
+<circles>
+<circle name="NAV XII 535/2026" description="1. HAZARDOUS OPERATIONS 131800Z TO 140100Z, ALTERNATE 141800Z TO 150100Z AUG IN AREA WITHIN 25 MILES OF 33-21.80N 120-08.00W">
+<position>
+<vertex id="1" latitude="33.363333" longitude="-120.133333"/>
+</position>
+<attribute range="25.000000" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</circle>
+</circles>
+<labels>
+<label name="NAV XII 243/22" description="1. CORONADO ISLAND SOUTH LIGHT 32-23.5N 117-14.5W UNLIT.">
+<position>
+<vertex id="1" latitude="32.391667" longitude="-117.241667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 243/22" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 244/22" description="NAVAREA XII 244/22(21). GOLFO DE CALIFORNIA. MEXICO. CHART 21120. BOCA DEL TULE LIGHT 23-14.3N 109-26.4W UNLIT.">
+<position>
+<vertex id="1" latitude="23.238333" longitude="-109.440000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 244/22" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 720/2022" description="NAVAREA XII 720/2022 272217Z SEP 2022 EASTERN NORTH PACIFIC. EL SALVADOR. CHART 12529. PUERTO DE LA UNION 16 BUOY UNLIT | 13.339333 -87.816500">
+<position>
+<vertex id="1" latitude="13.339333" longitude="-87.816500"/>
+</position>
+<attribute labelStyle="4" labelText="NAV XII 720/2022" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHBRN"/>
+</label>
+<label name="NAV XII 721/2022" description="NAVAREA XII 721/2022 272223Z SEP 2022 EL SALVADOR. CHART 21524 MOORING BUOYS UNLIT | 13.587167 -89.851667">
+<position>
+<vertex id="1" latitude="13.587167" longitude="-89.851667"/>
+</position>
+<attribute labelStyle="4" labelText="NAV XII 721/2022" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHBRN"/>
+</label>
+<label name="NAV XII 441/2024" description="NAVAREA XII 441/2024 182355 UTC JUN 2024 EASTERN NORTH PACIFIC. MEXICO. MORRO SANTO DOMINGO LIGHT 28-14.37N 114-06.18W UNLIT.">
+<position>
+<vertex id="1" latitude="28.239500" longitude="-114.103000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 441/2024" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 862/2024" description="NAVAREA XII 862/2024 281257 UTC OCT 2024 EASTERN NORTH PACIFIC. KIRIBATI. CABLE OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE IN VICINITY OF TRACKLINE JOINING 02-01.46N 157-29.67W 02-01.45N 157-29.69W 02-01.45N 157-29.72W 02-01.42N 157-29.82W 02-01.36N 157-30.04W 02-01.22N 157-30.29W 02-00.20N 157-32.23W 100 METER BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="2.023667" longitude="-157.497000"/>
+</position>
+<attribute labelStyle="6" labelText="NAV XII 862/2024" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 208/2025" description="NAVAREA XII 208/2025 061220 UTC APR 2025 EASTERN NORTH PACIFIC. COLOMBIA. PUNTA SOLDADO LIGHT 03-48.50N 077-10.80W DISCONTINUED.">
+<position>
+<vertex id="1" latitude="3.808333" longitude="-77.180000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 208/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 259/2025" description="57-46.00N 152-34.00W HF AND DSC SERVICES UNRELIABLE ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="57.766667" longitude="-152.566667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 259/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 338/2025" description="46-10.00N 123-49.00W OFF AIR. ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="46.166667" longitude="-123.816667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 338/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 344/2025" description="NAVAREA XII 344/2025 100619 UTC JUN 2025 BERING SEA. ALASKA. COMMDET KODIAK, AK REMOTE SITE SHEMYA 52-43.00N 174-07.00E HF R/T SERVICES OFF AIR.">
+<position>
+<vertex id="1" latitude="52.716667" longitude="174.116667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 344/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 354/2025" description="37-55.50N 122-43.90W">
+<position>
+<vertex id="1" latitude="37.925000" longitude="-122.731667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 354/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 354/2025" description="21-26.00N 158-09.00W">
+<position>
+<vertex id="1" latitude="21.433333" longitude="-158.150000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 354/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 354/2025" description="57-46.00N 152-34.00W">
+<position>
+<vertex id="1" latitude="57.766667" longitude="-152.566667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 354/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 354/2025" description="46-10.00N 123-49.00W E CAMBRIA">
+<position>
+<vertex id="1" latitude="46.166667" longitude="-123.816667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 354/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 354/2025" description="33-44.00N 118-24.00W ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="33.733333" longitude="-118.400000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 354/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 392/2025" description="NAVAREA XII 392/2025 242359 UTC JUN 2025 NORTH PACIFIC. M/V MORNING MIDAS SANK IN 45-16.88N 179-14.13W VESSELS IN VICINITY REQUESTED TO NAVIGATE WITH CAUTION AND REPORT PRESENCE OF OIL SHEENS OR DEBRIS TO USCG SECTOR WESTERN ALASKA AND US ARCTIC, PHONE 907 428 4100, E-MAIL: SOUTHWESTERNAK@USCG.MIL.">
+<position>
+<vertex id="1" latitude="45.281333" longitude="-179.235500"/>
+</position>
+<attribute labelStyle="3" labelText="NAV XII 392/2025" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="NAV XII 422/2025" description="65-46.86N 168-34.07W">
+<position>
+<vertex id="1" latitude="65.781000" longitude="-168.567833"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 422/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 422/2025" description="65-44.76N 168-15.75W ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="65.746000" longitude="-168.262500"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 422/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 718/2025" description="57-46.00N 152-34.00W">
+<position>
+<vertex id="1" latitude="57.766667" longitude="-152.566667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 718/2025" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 98/2026" description="NAVAREA XII 98/2026 171634 UTC FEB 2026 BERING SEA. ALASKA. USCG REMOTE COMMUNICATION FACILITY SHEMYA 52-43.00N 174-07.00E HF TRANSMIT AND RECEIVE SERVICES INOPERATIVE">
+<position>
+<vertex id="1" latitude="52.716667" longitude="174.116667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 98/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 429/2026" description="NAVAREA XII 429/2026 162018 UTC JUN 2026 NORTH PACIFIC. ALASKA. USCG COMMUNICATION FACILITY PT HIGGINS 55-27.00N 131-49.00W TRANSMIT AND RECEIVE SERVICES OFF AIR.">
+<position>
+<vertex id="1" latitude="55.450000" longitude="-131.816667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 429/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 458/2026" description="NAVAREA XII 458/2026 291810 UTC JUN 2026 BERING SEA. ALASKA. USCG COMMUNICATION FACILITY ST PAUL 57-09.00N 170-14.00W HF TRANSMIT AND RECEIVE SERVICES OFF AIR.">
+<position>
+<vertex id="1" latitude="57.150000" longitude="-170.233333"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 458/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="PT REYES 37-55.00N 122-24.00W">
+<position>
+<vertex id="1" latitude="37.916667" longitude="-122.400000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="HONOLULU 21-22.00N 158-09.00W">
+<position>
+<vertex id="1" latitude="21.366667" longitude="-158.150000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="KODIAK 57-46.00N 152-34.00W">
+<position>
+<vertex id="1" latitude="57.766667" longitude="-152.566667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="NOME 64-29.00N 165-15.00W E COLD BAY 55-11.00N 162-42.00W">
+<position>
+<vertex id="1" latitude="64.483333" longitude="-165.250000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="NOME 64-29.00N 165-15.00W E COLD BAY 55-11.00N 162-42.00W">
+<position>
+<vertex id="1" latitude="55.183333" longitude="-162.700000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="ST PAUL 57-09.00N 170-14.00W">
+<position>
+<vertex id="1" latitude="57.150000" longitude="-170.233333"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="SHEMYA 52-43.00N 174-07.00E">
+<position>
+<vertex id="1" latitude="52.716667" longitude="174.116667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="PT HIGGINS 55-27.00N 131-49.00W">
+<position>
+<vertex id="1" latitude="55.450000" longitude="-131.816667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="ASTORIA 46-10.00N 123-49.00W">
+<position>
+<vertex id="1" latitude="46.166667" longitude="-123.816667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="BERING SEA 57-46.00N 152-34.00W">
+<position>
+<vertex id="1" latitude="57.766667" longitude="-152.566667"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 469/2026" description="CAMBRIA 33-44N 118-24W ---------------------------------------------------------------------------------------">
+<position>
+<vertex id="1" latitude="33.733333" longitude="-118.400000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 469/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 486/2026" description="1. USCG REMOTE COMMUNICATION FACILITY HONOLULU 21-22.00N 158-09.00W TRANSMIT SERVICES UNRELIABLE">
+<position>
+<vertex id="1" latitude="21.366667" longitude="-158.150000"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 486/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 486/2026" description="2. HONOLULU BROADCASTS WILL BE TRANSMITTED FROM USCG REMOTE COMMUNICATION FACILITY GUAM 13-25.00N 144-50.00E">
+<position>
+<vertex id="1" latitude="13.416667" longitude="144.833333"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 486/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 486/2026" description="3. DSC RESPONSES WILL BE TRANSMITTED FROM USCG REMOTE COMMUNICATION FACILITY POINT REYES 37-56.00N 122-44.00W">
+<position>
+<vertex id="1" latitude="37.933333" longitude="-122.733333"/>
+</position>
+<attribute labelStyle="2" labelText="NAV XII 486/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 496/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL 30 NOV BY CABLESHIP IT INFINITY ALONG TRACKLINE JOINING 58-41.85N 157-20.77W 58-24.79N 157-47.71W 58-08.90N 158-43.85W 58-12.85N 161-01.19W 58-15.70N 161-48.97W 58-58.32N 164-39.72W 60-14.14N 165-20.64W 60-53.89N 166-39.24W WIDE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="58.261667" longitude="-161.816167"/>
+</position>
+<attribute labelStyle="6" labelText="NAV XII 496/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="NAV XII 523/2026" description="1. CABLE OPERATIONS IN PROGRESS UNTIL FURTHER NOTICE BY M/V GRACE WITHIN THREE MILES OF TRACKLINE JOINING 48-57.51N 162-53.63W 48-55.01N 162-45.02W 48-54.59N 162-18.29W 48-54.03N 161-51.12W 48-53.63N 161-32.00W 48-53.47N 161-23.99W 48-52.77N 160-57.37W 48-51.94N 160-30.70W 48-51.02N 160-04.11W 48-50.01N 159-37.57W 48-49.50N 159-25.00W 48-49.28N 159-23.89W 48-48.40N 159-19.52W 48-47.20N 159-13.67W 48-45.50N 159-05.00W 48-43.50N 158-50.00W 48-43.86N 158-47.56W 48-45.00N 158-40.00W 48-47.03N 158-21.26W 48-47.50N 158-17.00W 48-48.39N 157-54.83W 48-49.00N 157-40.00W 48-45.90N 157-29.16W 48-43.30N 157-20.00W 48-41.27N 157-03.72W 48-39.60N 156-50.00W 48-39.46N 156-37.36W 48-39.30N 156-21.10W 48-38.20N 156-12.80W 48-37.73N 156-11.13W 48-36.60N 156-07.00W 48-34.44N 155-59.39W 48-35.31N 155-57.60W 48-36.33N 155-57.26W 48-34.01N 155-57.90W 48-33.89N 155-57.42W 48-33.20N 155-55.00W 48-33.20N 155-49.10W 48-33.43N 155-47.69W 48-33.84N 155-44.87W 48-34.80N 155-38.70W 48-36.28N 155-35.66W 48-38.10N 155-31.96W 48-39.50N 155-29.10W 48-39.87N 155-26.02W 48-40.00N 155-25.00W 48-40.03N 155-15.05W 48-40.00N 155-14.30W 48-38.70N 155-06.70W 48-37.00N 155-02.50W 48-31.40N 154-56.10W 48-30.75N 154-53.95W 48-29.38N 154-49.67W 48-25.60N 154-37.78W 48-24.60N 154-34.70W 48-24.35N 154-32.04W 48-22.64N 154-14.65W 48-20.12N 153-49.75W 48-18.52N 153-34.45W 48-17.95N 153-29.12W 48-17.69N 153-26.81W 48-14.78N 153-00.17W 48-12.80N 152-42.40W 48-11.53N 152-33.70W 48-10.18N 152-24.42W 48-09.50N 152-20.00W 48-08.63N 152-08.03W 48-06.75N 151-42.45W 48-05.00N 151-20.00W 48-04.71N 151-16.59W 48-04.53N 151-14.58W 48-02.50N 150-51.58W 48-01.00N 150-35.00W 47-59.85N 150-26.37W 47-59.12N 150-20.92W 47-56.50N 150-01.68W 47-56.13N 149-58.98W 47-56.00N 149-58.00W 47-51.36N 149-40.84W TWO MILE BERTH REQUESTED.">
+<position>
+<vertex id="1" latitude="48.564000" longitude="-155.747833"/>
+</position>
+<attribute labelStyle="6" labelText="NAV XII 523/2026" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+</labels>
+</userchart>

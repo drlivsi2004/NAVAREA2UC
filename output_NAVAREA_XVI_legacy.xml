@@ -38,7 +38,7 @@
       <attribute labelStyle="2" labelText="NAV XVI 61/26"/>
       <type checkDanger="0" displayRadar="0"/>
     </label>
-    <label name="NAV XVI 64/26" description="NAVAREA XVI 64/26 102217 UTC AUG 2026 PERU CALLAO PORT HIDRONAV-2235 HIDRONAV-2236 NORTH LANTERN LIGHT TEMPORARILY INOPERATIVE 12-2.780S 077-9.337W ORDER NUMBER 22139 INTERNATIONAL NUMBER G.2053 Disclaimer: The provision of navigational warnings from this service does not relieve Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with the provisions of SOLAS The end user assumes all risks in using the NautoShark content, the data or information contained herein or the results thereof.">
+    <label name="NAV XVI 64/26" description="NAVAREA XVI 64/26 102217 UTC AUG 2026 PERU CALLAO PORT HIDRONAV-2235 HIDRONAV-2236 NORTH LANTERN LIGHT TEMPORARILY INOPERATIVE 12-2.780S 077-9.337W ORDER NUMBER 22139 INTERNATIONAL NUMBER G.2053 Disclaimer: The provision of navigational warnings from this service does not relieve Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with the provisions of SOLAS The end user assumes all risks in using the NautoShark content, the data or information contained herein or the results thereof. NAVAREA XVII (CANADA) - WARNINGS IN FORCE - AS AT 120900 UTC AUG 2026 ================================================================= NEW WARNINGS SINCE LAST UPDATE 64/2026. CANCELLED WARNINGS SINCE LAST UPDATE 67/2026, 68/2026. SUMMARY OF IN FORCE WARNINGS 2019 SERIES 92. 2022 SERIES 58. 2023 SERIES 53. 2025 SERIES 7, 92, 94, 95, 103. 2026 SERIES 64.">
       <position>
         <vertex id="1" latitude="-12.046333" longitude="-77.155617"/>
       </position>

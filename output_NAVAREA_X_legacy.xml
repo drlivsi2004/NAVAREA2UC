@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--userchart node-->
+<userchart name="NAVAREA X" description="" version="1.0">
+  <!--userchart area-->
+  <areas>
+    <area name="NAV X 87/2026" description="NAVAREA X 87/2026 282138 UTC JUL 2026 SPECIAL PURPOSE VESSEL PMG EMERALD / VMGY / 503000137 CONDUCTING SURVEY OPERATIONS IN AN AREA BOUND BY 15-26.25S TO 20-57.00S AND 167-08.20E TO 169-17.00E 2.5NM CLEARANCE REQUESTED.">
+      <position>
+        <vertex id="1" latitude="-15.437500" longitude="167.136667"/>
+        <vertex id="2" latitude="-15.437500" longitude="169.283333"/>
+        <vertex id="3" latitude="-20.950000" longitude="169.283333"/>
+        <vertex id="4" latitude="-20.950000" longitude="167.136667"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+  </areas>
+  <!--userchart label-->
+  <labels>
+    <label name="NAV X 91/2026" description="1. SPACE DEBRIS DANGER AREA 80NM EITHER SIDE OF CENTRELINE 40-44S 081-06E 52-26S 115-07E 48-08S 160-00E">
+      <position>
+        <vertex id="1" latitude="-40.733333" longitude="81.100000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV X 91/2026"/>
+      <type checkDanger="1" displayRadar="0"/>
+    </label>
+  </labels>
+</userchart>

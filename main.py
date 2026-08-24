@@ -3282,35 +3282,16 @@ def main():
     print("\n=== SOURCE DISCOVERY ===")
     print("SOURCES =", sources)
     print("========================\n")
+  
 
-    def collect_text_from_sources(sources):
-        parts = []
-        for src in sources:
-            if os.path.isdir(src):
-                for fpath in sorted(
-                    glob.glob(os.path.join(src, "*.txt"))
-                    + glob.glob(os.path.join(src, "*.xml"))
-                ):
-                    try:
-                        with open(fpath, "r", encoding="utf-8") as fh:
-                            parts.append(fh.read())
-                    except Exception:
-                        continue
-                continue
-            paths = glob.glob(src) if any(c in src for c in ["*", "?", "["]) else [src]
-            for p in paths:
-                if not os.path.isfile(p):
-                    continue
-                if not p.lower().endswith((".txt", ".xml")):
-                    continue
-                try:
-                    with open(p, "r", encoding="utf-8") as fh:
-                        parts.append(fh.read())
-                except Exception:
-                    continue
-        return "\n".join(parts)
+    from source_intake import load_sources, combine_texts, report_summary
 
-    text = collect_text_from_sources(sources)
+    reports = load_sources(sources)
+    print(report_summary(reports))
+    text = combine_texts(reports)
+
+    if not text:
+        print("[WARNING] No text loaded from sources. Export will be empty.")
 
     stats = NormalizerStats()
     text = normalize_input(text, stats)

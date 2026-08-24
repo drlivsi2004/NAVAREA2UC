@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--userchart node-->
+<userchart name="NAVAREA XIII" description="" version="1.0">
+  <!--userchart line-->
+  <lines>
+    <line name="NAV XIII 56/2026" description="NAVAREA XIII 56/2026 130800 UTC JUL 2026 CHARTS RUS 63104 60101 62271-1.ENGINEERING RESEARCH BY VESSEL NIKOLAY TRUBYATCHINSKIY 15 JUL TO 15 OCT WITHIN TWO MILE WIDE SEA STRIP ALONG THE CENTRELINE 46-48.6N 143-25.8E 46-52.8N 143-23.4E 46-54.0N 143-27.0E 45-15.6N 147-49.2E 45-13.8N 147-50.4E 45-14.4N 147-49.8E 45-16.2N 147-48.0E 45-14.4N 147-45.6E 45-16.8N 147-39.6E 45-08.4N 147-39.0E 45-05.4N 147-41.4E 45-08.4N 147-39.0E 45-05.4N 147-41.4E 45-08.7N 147-22.8E 44-56.4N 147-07.8E 44-19.8N 146-41.4E 44-04.8N 146-03.6E 44-03.0N 145-54.0E 44-03.0N 145-56.6E TW0 CABLE BERTH REQUESTED 2. CANCEL THIS MESSAGE 16 OCT 26">
+      <position>
+        <vertex id="1" latitude="46.810000" longitude="143.430000"/>
+        <vertex id="2" latitude="46.880000" longitude="143.390000"/>
+        <vertex id="3" latitude="46.900000" longitude="143.450000"/>
+        <vertex id="4" latitude="45.260000" longitude="147.820000"/>
+        <vertex id="5" latitude="45.230000" longitude="147.840000"/>
+        <vertex id="6" latitude="45.240000" longitude="147.830000"/>
+        <vertex id="7" latitude="45.270000" longitude="147.800000"/>
+        <vertex id="8" latitude="45.240000" longitude="147.760000"/>
+        <vertex id="9" latitude="45.280000" longitude="147.660000"/>
+        <vertex id="10" latitude="45.140000" longitude="147.650000"/>
+        <vertex id="11" latitude="45.090000" longitude="147.690000"/>
+        <vertex id="12" latitude="45.140000" longitude="147.650000"/>
+        <vertex id="13" latitude="45.090000" longitude="147.690000"/>
+        <vertex id="14" latitude="45.145000" longitude="147.380000"/>
+        <vertex id="15" latitude="44.940000" longitude="147.130000"/>
+        <vertex id="16" latitude="44.330000" longitude="146.690000"/>
+        <vertex id="17" latitude="44.080000" longitude="146.060000"/>
+        <vertex id="18" latitude="44.050000" longitude="145.900000"/>
+        <vertex id="19" latitude="44.050000" longitude="145.943333"/>
+      </position>
+      <attribute lineType="2"/>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+    </line>
+  </lines>
+  <!--userchart area-->
+  <areas>
+    <area name="NAV XIII 22/2026 (A)" description="NAVAREA XIII 22/2026 210800 UTC APR 2026 CHART RUS 62175-1.ENGINEERING WORKS 01 MAY TO 31 OCT ZONE A 51-27.950N 143-26.717E 51-29.250N 143-45.517E 51-24.433N 143-46.800E 51-23.350N 143-27.967E">
+      <position>
+        <vertex id="1" latitude="51.465833" longitude="143.445283"/>
+        <vertex id="2" latitude="51.487500" longitude="143.758617"/>
+        <vertex id="3" latitude="51.407217" longitude="143.780000"/>
+        <vertex id="4" latitude="51.389167" longitude="143.466117"/>
+        <vertex id="5" latitude="51.465833" longitude="143.445283"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 22/2026 (B)" description="NAVAREA XIII 22/2026 210800 UTC APR 2026 CHART RUS 62175-1.ENGINEERING WORKS 01 MAY TO 31 OCT ZONE B 51-29.250N 143-45.517E 51-29.367N 143-47.450E 51-33.000N 143-45.000E 51-33.000N 143-53.217E 51-23.000N 144-0.000E 51-23.383N 143-51.717E 51-24.650N 143-50.617E 51-24.433N 143-46.800E 2. CANCEL THIS MESSAGE 01 NOV 26 ---------------------------------------------------------------------------------------">
+      <position>
+        <vertex id="1" latitude="51.487500" longitude="143.758617"/>
+        <vertex id="2" latitude="51.489450" longitude="143.790833"/>
+        <vertex id="3" latitude="51.550000" longitude="143.750000"/>
+        <vertex id="4" latitude="51.550000" longitude="143.886950"/>
+        <vertex id="5" latitude="51.383333" longitude="144.000000"/>
+        <vertex id="6" latitude="51.389717" longitude="143.861950"/>
+        <vertex id="7" latitude="51.410833" longitude="143.843617"/>
+        <vertex id="8" latitude="51.407217" longitude="143.780000"/>
+        <vertex id="9" latitude="51.487500" longitude="143.758617"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 42/2026" description="NAVAREA XIII 42/2026 160800 UTC JUN 2026 CHART RUS 60104-1.SEISMIC SURVEY BY VESSEL ORDOVIK TOWING CABLE 9000 METRES UNTIL 15 SEP IN AREA BOUND BY 64-35.550N 178-45.850E 65-5.967N 178-32.017W 64-10.733N 175-53.300W 63-22.917N 176-15.383W 63-2.483N 175-47.350W 62-28.517N 176-58.183W 63-11.067N 178-43.617W 62-54.650N 179-19.967W 63-31.317N 178-59.650E 63-52.917N 178-52.683E 64-20.400N 178-26.100E FIVE MILE BERTH REQUESTED 2. CANCEL THIS MESSAGE 16 SEP 26">
+      <position>
+        <vertex id="1" latitude="64.592500" longitude="178.764167"/>
+        <vertex id="2" latitude="65.099450" longitude="-178.533617"/>
+        <vertex id="3" latitude="64.178883" longitude="-175.888333"/>
+        <vertex id="4" latitude="63.381950" longitude="-176.256383"/>
+        <vertex id="5" latitude="63.041383" longitude="-175.789167"/>
+        <vertex id="6" latitude="62.475283" longitude="-176.969717"/>
+        <vertex id="7" latitude="63.184450" longitude="-178.726950"/>
+        <vertex id="8" latitude="62.910833" longitude="-179.332783"/>
+        <vertex id="9" latitude="63.521950" longitude="178.994167"/>
+        <vertex id="10" latitude="63.881950" longitude="178.878050"/>
+        <vertex id="11" latitude="64.340000" longitude="178.435000"/>
+        <vertex id="12" latitude="64.592500" longitude="178.764167"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 78/2026" description="1. MISSILE EXERCISES FOR 16 HOURS FROM 2000 UTC 10 TO 15 AUG IN AREA BOUND BY 46-54.8N 144-08.6E 47-35.3N 144-56.3E 47-11.4N 145-32.5E 46-38.0N 146-09.0E 46-16.7N 144-53.7E 46-00.7N 144-04.8E 45-59.5N 143-29.0E 45-59.5N 143-25.5E MYS ANIVA AND COASTLINE 46-23.2N 143-37.0E">
+      <position>
+        <vertex id="1" latitude="46.913333" longitude="144.143333"/>
+        <vertex id="2" latitude="47.588333" longitude="144.938333"/>
+        <vertex id="3" latitude="47.190000" longitude="145.541667"/>
+        <vertex id="4" latitude="46.633333" longitude="146.150000"/>
+        <vertex id="5" latitude="46.278333" longitude="144.895000"/>
+        <vertex id="6" latitude="46.011667" longitude="144.080000"/>
+        <vertex id="7" latitude="45.991667" longitude="143.483333"/>
+        <vertex id="8" latitude="45.991667" longitude="143.425000"/>
+        <vertex id="9" latitude="46.386667" longitude="143.616667"/>
+        <vertex id="10" latitude="46.913333" longitude="144.143333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 80/2026 (A)" description="1. GUNNERY EXERCISES FOR 16 HOURS FROM 2000 UTC 09 TO 14 AUG ZONE A 46-41N 146-02E 45-13N 148-05E 44-58N 147-58E 44-27N 147-16E 44-25N 146-57E 44-53N 144-54E">
+      <position>
+        <vertex id="1" latitude="46.683333" longitude="146.033333"/>
+        <vertex id="2" latitude="45.216667" longitude="148.083333"/>
+        <vertex id="3" latitude="44.966667" longitude="147.966667"/>
+        <vertex id="4" latitude="44.450000" longitude="147.266667"/>
+        <vertex id="5" latitude="44.416667" longitude="146.950000"/>
+        <vertex id="6" latitude="44.883333" longitude="144.900000"/>
+        <vertex id="7" latitude="46.683333" longitude="146.033333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 80/2026 (B)" description="1. GUNNERY EXERCISES FOR 16 HOURS FROM 2000 UTC 09 TO 14 AUG ZONE B 45-37N 144-00E 45-25N 146-52E 45-03N 147-00E 45-14N 146-09E">
+      <position>
+        <vertex id="1" latitude="45.616667" longitude="144.000000"/>
+        <vertex id="2" latitude="45.416667" longitude="146.866667"/>
+        <vertex id="3" latitude="45.050000" longitude="147.000000"/>
+        <vertex id="4" latitude="45.233333" longitude="146.150000"/>
+        <vertex id="5" latitude="45.616667" longitude="144.000000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 82/2026" description="1. GUNNERY EXERCISES FOR 16 HOURS FROM 2000 UTC TO 14 AUG IN AREA BOUND BY 45-33N 143-20E 46-04N 143-26E 45-57N 144-43E 45-39N 145-00E 45-25N 144-36E">
+      <position>
+        <vertex id="1" latitude="45.550000" longitude="143.333333"/>
+        <vertex id="2" latitude="46.066667" longitude="143.433333"/>
+        <vertex id="3" latitude="45.950000" longitude="144.716667"/>
+        <vertex id="4" latitude="45.650000" longitude="145.000000"/>
+        <vertex id="5" latitude="45.416667" longitude="144.600000"/>
+        <vertex id="6" latitude="45.550000" longitude="143.333333"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+    <area name="NAV XIII 83/2026" description="1. MISSILE EXERCISES FOR 20 HOURS FROM 1400 UTC 16 TO 22 AUG IN AREA BOUND BY 47-16.3N 151-00.0E 47-16.3N 151-35.0E 44-24.0N 152-10.0E 42-45.6N 155-10.6E 40-48.0N 152-02.7E 42-10.0N 150-45.0E 42-10.0N 149-40.0E 43-25.0N 149-40.0E 44-45.0N 147-24.0E 45-56.0N 147-26.0E 45-58.0N 147-56.0E 46-20.0N 148-35.0E 45-51.0N 149-50.0E COASTLINE 46-14.0N 150-34.5E">
+      <position>
+        <vertex id="1" latitude="47.271667" longitude="151.000000"/>
+        <vertex id="2" latitude="47.271667" longitude="151.583333"/>
+        <vertex id="3" latitude="44.400000" longitude="152.166667"/>
+        <vertex id="4" latitude="42.760000" longitude="155.176667"/>
+        <vertex id="5" latitude="40.800000" longitude="152.045000"/>
+        <vertex id="6" latitude="42.166667" longitude="150.750000"/>
+        <vertex id="7" latitude="42.166667" longitude="149.666667"/>
+        <vertex id="8" latitude="43.416667" longitude="149.666667"/>
+        <vertex id="9" latitude="44.750000" longitude="147.400000"/>
+        <vertex id="10" latitude="45.933333" longitude="147.433333"/>
+        <vertex id="11" latitude="45.966667" longitude="147.933333"/>
+        <vertex id="12" latitude="46.333333" longitude="148.583333"/>
+        <vertex id="13" latitude="45.850000" longitude="149.833333"/>
+        <vertex id="14" latitude="46.233333" longitude="150.575000"/>
+        <vertex id="15" latitude="47.271667" longitude="151.000000"/>
+      </position>
+      <type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+    </area>
+  </areas>
+  <!--userchart label-->
+  <labels>
+    <label name="NAV XIII 109/2025" description="1. AUTOMATIC BUOY STATION ESTABLISHED IN | 56.323333 154.648333">
+      <position>
+        <vertex id="1" latitude="56.323333" longitude="154.648333"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 109/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV XIII 121/2025" description="NAVAREA XIII 121/2025 230800 UTC SEP 2025 CHART RUS 63112-1.WAVE RIDER BUOY IN | 51.453883 143.518883">
+      <position>
+        <vertex id="1" latitude="51.453883" longitude="143.518883"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 121/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV XIII 148/2025" description="1. DRILLING RIG POLYARNAYA ZVEZDA IN 46-54.7N 141-54.1E 500 METRE BERTH REQUESTED">
+      <position>
+        <vertex id="1" latitude="46.911667" longitude="141.901667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 148/2025"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV XIII 34/2026" description="1. CONSTRUCTION AND INSTALLATION WORKS 25 MAY TO 31 DEC IN AREA 51-34.917N 143-24.267E 51-34.900N 144-6.217E 51-32.600N 144-6.183E 51-31.600N 144-43.483E 50-47.967N 144-53.117E 50-48.800N 143-40.033E">
+      <position>
+        <vertex id="1" latitude="51.581950" longitude="143.404450"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 34/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV XIII 48/2026" description="NAVAREA XIII 48/2026 080800 UTC JUL 2026 CHART RUS 62175 WAVE RIDER BUOY ESTABLISHED IN | 51.375550 144.236117">
+      <position>
+        <vertex id="1" latitude="51.375550" longitude="144.236117"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 48/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV XIII 56/2026" description="NAVAREA XIII 56/2026 130800 UTC JUL 2026 CHARTS RUS 63104 60101 62271-1.ENGINEERING RESEARCH BY VESSEL NIKOLAY TRUBYATCHINSKIY 15 JUL TO 15 OCT WITHIN TWO MILE WIDE SEA STRIP ALONG THE CENTRELINE 46-48.6N 143-25.8E 46-52.8N 143-23.4E 46-54.0N 143-27.0E 45-15.6N 147-49.2E 45-13.8N 147-50.4E 45-14.4N 147-49.8E 45-16.2N 147-48.0E 45-14.4N 147-45.6E 45-16.8N 147-39.6E 45-08.4N 147-39.0E 45-05.4N 147-41.4E 45-08.4N 147-39.0E 45-05.4N 147-41.4E 45-08.7N 147-22.8E 44-56.4N 147-07.8E 44-19.8N 146-41.4E 44-04.8N 146-03.6E 44-03.0N 145-54.0E 44-03.0N 145-56.6E TW0 CABLE BERTH REQUESTED 2. CANCEL THIS MESSAGE 16 OCT 26">
+      <position>
+        <vertex id="1" latitude="45.140000" longitude="147.650000"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 56/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+    <label name="NAV XIII 57/2026" description="1. DRILLING RIG SEVERNOYE SIYANIYE IN 51-18.1N 144-21.4E 2000 METRE BERTH REQUESTED">
+      <position>
+        <vertex id="1" latitude="51.301667" longitude="144.356667"/>
+      </position>
+      <attribute labelStyle="2" labelText="NAV XIII 57/2026"/>
+      <type checkDanger="0" displayRadar="0"/>
+    </label>
+  </labels>
+  <!--userchart circle-->
+  <circles>
+    <circle name="NAV XIII 123/2025" description="NAVAREA XIII 123/2025 270800 UTC SEP 2025 CHART RUS 62275 AREA TEMPORARILY DANGEROUS TO NAVIGATION WITHIN 2 MILE RADIUS OF 48-17.8N 154-36.2E">
+      <position>
+        <vertex id="1" latitude="48.296667" longitude="154.603333"/>
+      </position>
+      <attribute range="2.000000"/>
+      <type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+    </circle>
+  </circles>
+</userchart>
