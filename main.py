@@ -1211,14 +1211,14 @@ def partition_navarea_block(block, navarea_name):
             )
             sub_block = block[start:end].strip()
             if sub_block:
-                if i == 0 and semantic_context:
-                    sub_block = f"{semantic_context}\n{sub_block}"
                 meta = build_partition_context(
                     source_navarea=navarea_name,
                     partition_type="SECTION_NUMBER",
                     partition_id=m.group(1),
                     sub_block=sub_block,
                 )
+                if i == 0 and semantic_context:
+                    meta["semantic_context"] = semantic_context
                 parts.append((sub_block, meta))
         return parts
 
@@ -1273,10 +1273,16 @@ def predict_complexity(block):
 
 # -------------------- PROCESSING CONTEXT --------------------
 def build_processing_context(block, navarea_name, label_text=None, metadata=None):
-    upper = block.upper()
+    semantic_context = (metadata or {}).get("semantic_context")
+    contextual_block = (
+        f"{semantic_context}\n{block}" if semantic_context else block
+    )
+    upper = contextual_block.upper()
     coords = extract_coordinates(block)
     clean_block = re.sub(r"-{5,}", " ", block)
     clean_block = re.sub(r"\s+", " ", clean_block)
+    if semantic_context:
+        clean_block = f"{semantic_context}\n{clean_block}"
     description = escape(clean_block.replace('"', "'").strip())
     if label_text is None:
         label_text = build_navarea_label(navarea_name)
