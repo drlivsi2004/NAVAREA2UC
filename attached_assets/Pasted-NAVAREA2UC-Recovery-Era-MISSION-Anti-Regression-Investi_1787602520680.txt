@@ -1,0 +1,265 @@
+NAVAREA2UC
+Recovery Era
+
+MISSION:
+Anti-Regression Investigation
+
+DO NOT MODIFY CODE.
+
+DO NOT IMPLEMENT FIXES.
+
+Your task is to identify potential regressions that may be introduced by the proposed fixes for:
+
+    XV-107/2026
+    XV-102/2026
+
+====================================================
+PART 1
+AREA CLASSIFICATION IMPACT ANALYSIS
+====================================================
+
+Current proposed change:
+
+AREA_PATTERNS +=
+    "AREA TEMPORARILY DANGEROUS"
+
+Investigate:
+
+1.
+
+Search entire codebase for:
+
+    has_area_pattern()
+
+Report:
+
+    File
+    Function
+    Line Number
+
+for every usage.
+
+2.
+
+Search all available NAVAREA validation datasets.
+
+Find every message that:
+
+    contains "AREA"
+
+but does NOT contain:
+
+    BOUND BY
+    BOUNDED BY
+    BOUNDED WITHIN
+
+Produce list:
+
+    NAVAREA
+    Warning ID
+    Message Title
+
+3.
+
+For each identified message:
+
+Determine current classification.
+
+Determine future classification
+if AREA TEMPORARILY DANGEROUS
+is added to AREA_PATTERNS.
+
+4.
+
+Report any message that may change from:
+
+    Point → Area
+    Line → Area
+    Multipoint → Area
+
+after the fix.
+
+5.
+
+Provide:
+
+SAFE
+POTENTIAL REGRESSION
+HIGH-RISK REGRESSION
+
+classification for each case.
+
+====================================================
+PART 2
+MULTIPOINT DETECTION IMPACT ANALYSIS
+====================================================
+
+Current proposed change:
+
+Improve handling of platform lists.
+
+Investigate:
+
+1.
+
+Search all validated datasets for:
+
+    PLATAFORMA
+    PLATFORM
+    PLATFORMS
+    DRILLING PLATFORM
+    OIL PLATFORM
+    OFFSHORE PLATFORM
+
+2.
+
+Count:
+
+    coordinate count
+    object count
+    current geometry type
+
+for each occurrence.
+
+3.
+
+Determine whether:
+
+    platform_count >= 2
+    coordinate_count >= 2
+
+would alter routing outcome.
+
+4.
+
+List every warning that would switch:
+
+    Single Point
+            →
+    Multipoint
+
+after implementing XV-102 fix.
+
+5.
+
+For each case provide:
+
+SAFE
+POTENTIAL REGRESSION
+HIGH-RISK REGRESSION
+
+====================================================
+PART 3
+ROUTING COVERAGE AUDIT
+====================================================
+
+Generate handler statistics.
+
+For every handler in PROCESS_HANDLERS:
+
+Report:
+
+    handler name
+
+    times executed
+
+    times accepted block
+
+    total objects created
+
+    geometry types created
+
+Format:
+
+handle_area
+
+    Executed:
+    Accepted:
+    Areas:
+    Lines:
+    Labels:
+
+handle_trackline
+
+    Executed:
+    Accepted:
+    Lines:
+
+etc.
+
+====================================================
+PART 4
+SUPERBOSS SCAN
+====================================================
+
+Search all available NAVAREA datasets.
+
+Find any messages containing nested numbering:
+
+    1.1
+    1.2
+    2.1.1
+    2.2.2
+    etc.
+
+For each occurrence:
+
+Report:
+
+    NAVAREA
+    Warning ID
+
+Determine whether:
+
+partition_navarea_block()
+
+produces duplicate partition_id values.
+
+Identify any warnings potentially affected
+by the same route aggregation issue
+observed in NAVAREA III 34/24.
+
+====================================================
+DELIVERABLE
+====================================================
+
+SECTION A
+
+XV-107 Regression Analysis
+
+SECTION B
+
+XV-102 Regression Analysis
+
+SECTION C
+
+Handler Coverage Statistics
+
+SECTION D
+
+Potential Route Aggregation Candidates
+
+SECTION E
+
+Final Recommendation
+
+For each proposed fix provide:
+
+    SAFE TO DEPLOY
+
+or
+
+    REQUIRES ADDITIONAL WORK
+
+Justify every conclusion with:
+
+    file
+    function
+    line number
+    evidence
+
+No assumptions.
+
+No code changes.
+
+Evidence only.
