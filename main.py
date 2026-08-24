@@ -1191,6 +1191,82 @@ def partition_navarea_block(block, navarea_name):
     if rig_parts:
         return rig_parts
 
+    # Explicit route segmentation
+    route_markers = list(
+        re.finditer(
+            r"(?im)^\s*ROUTE\s+No\.\s*([0-9]+(?:\.[0-9]+)*)\s*:",
+            block,
+        )
+    )
+    if len(route_markers) > 1:
+        numbered_markers = list(
+            re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block)
+        )
+        parts = []
+        for i, marker in enumerate(route_markers):
+            next_route = (
+                route_markers[i + 1].start()
+                if i + 1 < len(route_markers)
+                else None
+            )
+            following_numbered = next(
+                (
+                    numbered.start()
+                    for numbered in numbered_markers
+                    if numbered.start() > marker.start()
+                ),
+                None,
+            )
+            end_candidates = [
+                position
+                for position in (next_route, following_numbered)
+                if position is not None
+            ]
+            end = min(end_candidates) if end_candidates else len(block)
+            sub_block = block[marker.start() : end].strip()
+            if sub_block:
+                meta = build_partition_context(
+                    source_navarea=navarea_name,
+                    partition_type="ROUTE",
+                    partition_id=f"ROUTE_{marker.group(1)}",
+                    sub_block=sub_block,
+                )
+                parts.append((sub_block, meta))
+
+        first_remaining_numbered = next(
+            (
+                numbered
+                for numbered in numbered_markers
+                if numbered.start() > route_markers[-1].start()
+            ),
+            None,
+        )
+        if first_remaining_numbered:
+            for i, marker in enumerate(
+                numbered_markers[
+                    numbered_markers.index(first_remaining_numbered) :
+                ]
+            ):
+                start = marker.start()
+                end = (
+                    numbered_markers[
+                        numbered_markers.index(first_remaining_numbered) + i + 1
+                    ].start()
+                    if numbered_markers.index(first_remaining_numbered) + i + 1
+                    < len(numbered_markers)
+                    else len(block)
+                )
+                sub_block = block[start:end].strip()
+                if sub_block:
+                    meta = build_partition_context(
+                        source_navarea=navarea_name,
+                        partition_type="SECTION_NUMBER",
+                        partition_id=marker.group(1),
+                        sub_block=sub_block,
+                    )
+                    parts.append((sub_block, meta))
+        return parts
+
     # Numbered sections
     numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
     if len(numbered_markers) > 1:
