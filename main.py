@@ -1269,6 +1269,29 @@ def partition_navarea_block(block, navarea_name):
 
     # Numbered sections
     numbered_markers = list(re.finditer(r"(?:^|\n)\s*(\d+)\.\s*", block))
+    measurement_marker_re = re.compile(
+        r"^\s*\d+\.\d+\s*(?:M|METERS?|METRES?)\b",
+        re.IGNORECASE,
+    )
+    numbered_markers = [
+        marker
+        for marker in numbered_markers
+        if not measurement_marker_re.match(
+            block[
+                marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0) :
+                block.find(
+                    "\n",
+                    marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0),
+                )
+                if block.find(
+                    "\n",
+                    marker.start() + (1 if block[marker.start() : marker.start() + 1] == "\n" else 0),
+                )
+                >= 0
+                else len(block)
+            ]
+        )
+    ]
     if len(numbered_markers) > 1:
         semantic_context = None
         preamble = block[: numbered_markers[0].start()]
