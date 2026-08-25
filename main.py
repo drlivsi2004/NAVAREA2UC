@@ -9,15 +9,6 @@ import xml.etree.ElementTree as ET
 from xml.dom import minidom
 from xml.sax.saxutils import escape
 
-PROJECT_DIR = os.path.dirname(os.path.abspath(__file__))
-
-print("PROJECT_DIR =", PROJECT_DIR)
-
-os.chdir(PROJECT_DIR)
-
-print("NEW CWD =", os.getcwd())
-print("PROJECT FILES =", os.listdir())
-
 
 APP_NAME = "NAVAREA2UC"
 APP_VERSION = "1.3.0"
