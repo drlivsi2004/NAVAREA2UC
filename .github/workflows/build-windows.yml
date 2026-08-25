@@ -1,0 +1,49 @@
+name: Build Windows executable
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout source
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install PyInstaller
+        shell: pwsh
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
+
+      - name: Build NAVAREA2UC.exe
+        shell: pwsh
+        run: |
+          pyinstaller 
+            --onefile 
+            --clean 
+            --name NAVAREA2UC 
+            --icon icon.ico 
+            --version-file version_info.txt 
+            main.py
+
+      - name: Verify executable exists
+        shell: pwsh
+        run: |
+          if (!(Test-Path "dist/NAVAREA2UC.exe")) {
+            throw "Build failed: NAVAREA2UC.exe not found"
+          }
+
+      - name: Upload executable
+        uses: actions/upload-artifact@v4
+        with:
+          name: NAVAREA2UC-v1.3.0
+          path: dist/NAVAREA2UC.exe
