@@ -16,7 +16,7 @@ VSVersionInfo(
         [
           StringStruct('CompanyName', 'Independent developer (dr_livsi2004)'),
           StringStruct('Copyright','Copyright (c) 2026 dr_livsi2004'),
-          StringStruct('FileDescription', 'NAVAREA to Furuno UserChart Converter'),
+          StringStruct('FileDescription', 'NAVAREA to ECDIS UserChart Converter'),
           StringStruct('FileVersion', '1.3.0'),
           StringStruct('InternalName', 'NAVAREA2UC'),
           StringStruct('OriginalFilename', 'NAVAREA2UC.exe'),
