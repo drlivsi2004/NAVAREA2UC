@@ -1,0 +1,142 @@
+.navarea2uc-landing {
+  min-height: 100vh;
+  background: #071321;
+  color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif;
+  text-align: center;
+}
+
+.navarea2uc-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px 80px;
+}
+
+.navarea2uc-logo {
+  width: 360px;
+  max-width: 90%;
+  border-radius: 18px;
+  display: inline-block;
+}
+
+.navarea2uc-landing h1 {
+  margin: 30px 0 10px;
+  font-size: 58px;
+  letter-spacing: 1px;
+}
+
+.navarea2uc-tagline {
+  color: #cbd5e1;
+  font-size: 22px;
+  margin-bottom: 60px;
+}
+
+.navarea2uc-version-label {
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.navarea2uc-version {
+  margin-top: 10px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.navarea2uc-buttons {
+  margin-top: 30px;
+}
+
+.navarea2uc-btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.navarea2uc-btn-download {
+  background: #2563eb;
+}
+
+.navarea2uc-btn-download:hover {
+  background: #1d4ed8;
+}
+
+.navarea2uc-btn-github {
+  background: #1f2937;
+}
+
+.navarea2uc-btn-github:hover {
+  background: #374151;
+}
+
+.navarea2uc-divider {
+  width: 100px;
+  height: 1px;
+  margin: 80px auto;
+  background: #334155;
+}
+
+.navarea2uc-coming {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.navarea2uc-next {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  color: #60a5fa;
+  font-size: 28px;
+}
+
+.navarea2uc-features {
+  color: #e2e8f0;
+  font-size: 20px;
+  line-height: 2;
+}
+
+.navarea2uc-vision {
+  margin-top: 60px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+.navarea2uc-footer {
+  margin-top: 80px;
+  color: #64748b;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .navarea2uc-landing h1 {
+    font-size: 42px;
+  }
+
+  .navarea2uc-tagline {
+    font-size: 18px;
+  }
+
+  .navarea2uc-version {
+    font-size: 36px;
+  }
+
+  .navarea2uc-features {
+    font-size: 18px;
+  }
+
+  .navarea2uc-vision {
+    font-size: 20px;
+  }
+
+  .navarea2uc-btn {
+    display: block;
+    max-width: 280px;
+    margin: 12px auto;
+  }
+}

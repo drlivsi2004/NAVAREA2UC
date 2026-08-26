@@ -1,0 +1,190 @@
+{
+  "title": "Attention Required! | Cloudflare",
+  "url": "https://replit.com/@drlivsi2004/NAVAREA2UC#index.html",
+  "lang": "en-US",
+  "bodyText": "Sorry, you have been blocked\nYou are unable to access replit.com\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a310a3faadae1121 • Your IP: Click to reveal • Performance & security by Cloudflare",
+  "headings": [
+    {
+      "tag": "h1",
+      "id": "",
+      "cls": "",
+      "text": "Sorry, you have been blocked",
+      "rect": {
+        "x": 240,
+        "y": 34.984375,
+        "w": 960,
+        "h": 72
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(64, 64, 64)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "60px",
+        "fontWeight": "300",
+        "lineHeight": "72px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(64, 64, 64)"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "cls": "cf-subheadline",
+      "text": "You are unable to access replit.com",
+      "rect": {
+        "x": 240,
+        "y": 106.984375,
+        "w": 960,
+        "h": 39
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(89, 89, 89)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "300",
+        "lineHeight": "39px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(89, 89, 89)"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "cls": "",
+      "text": "Why have I been blocked?",
+      "rect": {
+        "x": 240,
+        "y": 718.984375,
+        "w": 457.5,
+        "h": 39
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(64, 64, 64)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "39px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(64, 64, 64)"
+      }
+    },
+    {
+      "tag": "h2",
+      "id": "",
+      "cls": "",
+      "text": "What can I do to resolve this?",
+      "rect": {
+        "x": 742.5,
+        "y": 718.984375,
+        "w": 457.5,
+        "h": 39
+      },
+      "styles": {
+        "display": "block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(64, 64, 64)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "30px",
+        "fontWeight": "400",
+        "lineHeight": "39px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(64, 64, 64)"
+      }
+    }
+  ],
+  "buttons": [
+    {
+      "tag": "button",
+      "id": "cf-footer-ip-reveal",
+      "cls": "cf-footer-ip-reveal-btn",
+      "text": "Click to reveal",
+      "rect": {
+        "x": 708.78125,
+        "y": 956.484375,
+        "w": 92.625,
+        "h": 19.5
+      },
+      "styles": {
+        "display": "inline-block",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 81, 195)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "19.5px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 81, 195)"
+      }
+    },
+    {
+      "tag": "a",
+      "id": "brand_link",
+      "cls": "",
+      "text": "Cloudflare",
+      "rect": {
+        "x": 1000.765625,
+        "y": 958.484375,
+        "w": 66.359375,
+        "h": 15
+      },
+      "styles": {
+        "display": "inline",
+        "position": "static",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "color": "rgb(0, 81, 195)",
+        "fontFamily": "-apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen, Ubuntu, \"Helvetica Neue\", Arial, sans-serif",
+        "fontSize": "13px",
+        "fontWeight": "400",
+        "lineHeight": "19.5px",
+        "padding": "0px",
+        "margin": "0px",
+        "borderRadius": "0px",
+        "border": "0px none rgb(0, 81, 195)"
+      }
+    }
+  ],
+  "sections": [],
+  "bodyStyle": {
+    "display": "block",
+    "position": "static",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
+    "color": "rgb(0, 0, 0)",
+    "fontFamily": "\"Times New Roman\"",
+    "fontSize": "16px",
+    "fontWeight": "400",
+    "lineHeight": "normal",
+    "padding": "0px",
+    "margin": "0px",
+    "borderRadius": "0px",
+    "border": "0px none rgb(0, 0, 0)"
+  },
+  "links": [
+    "https://replit.com/cdn-cgi/styles/cf.errors.css"
+  ],
+  "scripts": [],
+  "images": [],
+  "stylesheets": [
+    "https://replit.com/cdn-cgi/styles/cf.errors.css"
+  ],
+  "rootVars": {}
+}

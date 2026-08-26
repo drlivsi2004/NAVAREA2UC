@@ -1,0 +1,19 @@
+kind = "design"
+previewPath = "/__mockup/"
+title = "NAVAREA2UC Imported Design"
+description = "Editable design reconstruction imported from the authorized NAVAREA2UC page."
+version = "1.0.0"
+id = "artifacts/navarea2uc-imported-design"
+router = "path"
+
+[[services]]
+name = "Component Preview Server"
+paths = [ "/__mockup/" ]
+localPort = 19715
+
+[services.development]
+run = "npm run dev"
+
+[services.env]
+PORT = "19715"
+BASE_PATH = "/__mockup/"

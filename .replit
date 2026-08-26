@@ -1,7 +1,15 @@
-modules = ["python-3.12"]
+modules = ["python-3.12", "nodejs-24"]
 
 [nix]
 channel = "stable-25_05"
+packages = ["gitFull", "playwright-driver", "nspr", "nss", "atk", "cups", "libdrm", "mesa", "pango", "gtk3", "xorg.libX11", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXext", "xorg.libXfixes", "xorg.libXrandr", "xorg.libxcb"]
 
 [agent]
 expertMode = true
+
+[workflows]
+runButton = "Project"
+
+[[ports]]
+localPort = 19715
+externalPort = 80
