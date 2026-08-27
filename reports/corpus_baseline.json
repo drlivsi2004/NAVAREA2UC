@@ -1,0 +1,25 @@
+{
+  "baseline_messages": 1142,
+  "report_sha256": "4e70034735db0cd892acc73d64693d48d4390539464f71ade96264f9443f9bcb",
+  "reviewed_component_losses": [
+    {
+      "id": "NAVAREA IX 41/2026 [Section 1]",
+      "kind": "area",
+      "source": "NAV-IX.txt",
+      "source_block_index": 150
+    },
+    {
+      "id": "NAVAREA XI 488/2020",
+      "kind": "circle",
+      "source": "NAV-XI.txt",
+      "source_block_index": 6
+    },
+    {
+      "id": "NAVAREA XIV 220/26 [Section 1]",
+      "kind": "area",
+      "source": "NAV-XIV .txt",
+      "source_block_index": 12
+    }
+  ],
+  "source_report": "corpus_differential_latest.json"
+}

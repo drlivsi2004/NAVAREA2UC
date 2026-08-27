@@ -2,3 +2,7 @@
 - [S1 nested numbering](s1-nested-numbering.md) — preserve dotted section identity in both numeric and route-boundary marker scans.
 - [RIGLIST coordinate grammar](riglist-coordinate-grammar.md) — keep specialized rig parsing aligned with generic spaced and compact coordinate forms.
 - [Offshore operational semantics](offshore-operational-messages.md) — deployment and work notices may carry points without defining a polygon, line, or route.
+- [NAVAREA corpus validation](navarea-corpus-validation.md) — preserve source boundaries and use reviewed fingerprints with full reports as investigation artifacts.
+- [Radius-only warnings](radius-warning-semantics.md) — radius language without an explicit center qualifies an existing warning, not an inferred Circle.
+- [Canvas preview port reuse](canvas-preview-port-reuse.md) — a stale Vite preview can answer successfully while a duplicate workflow launch reports the port as busy.
+- [GitHub CI workspace synchronization](github-ci-workspace-sync.md) — a successful remote run may validate an older workflow when local release commits are not on the dispatched ref.

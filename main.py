@@ -52,6 +52,15 @@ def dm_to_decimal(deg, minutes, hemi):
 
 
 def extract_coordinates(text):
+    # NAVAREA sources may separate a latitude/longitude pair with "/".
+    # Normalize only the coordinate boundary so other slash-delimited text
+    # remains untouched.
+    text = re.sub(
+        r"([NS])\s*/\s*(?=\d{1,3}[- ]+[\d.]+\s*[EW])",
+        r"\1 ",
+        text,
+        flags=re.IGNORECASE,
+    )
     # Replace commas with dots in coordinate numbers (e.g. 46-02,80N -> 46-02.80N)
     text = re.sub(
         r"(\d)-([\d,]+)\s*([NS])",
@@ -67,7 +76,7 @@ def extract_coordinates(text):
     )
 
     patterns = [
-        r"(\d{1,3})[- ]+([\d.]+)\s*([NS])[\s,]+(\d{1,3})[- ]+([\d.]+)\s*([EW])",
+        r"(\d{1,3})[-\s]+([\d.]+)\s*([NS])[\s,]+(\d{1,3})[-\s]+([\d.]+)\s*([EW])",
         r"(\d{1,3})-([\d.]+)([NS])\s*,\s*(\d{1,3})-([\d.]+)([EW])",
         r"(\d{1,3})-([\d.]+)([NS])(\d{1,3})-([\d.]+)([EW])",
     ]
@@ -81,7 +90,7 @@ def extract_coordinates(text):
             coords.append((lat, lon))
 
     # Existing fallback for simple DM
-    fallback = r"([+-]?\d+)-([\d.]+)([NS])\s+([+-]?\d+)-([\d.]+)([EW])"
+    fallback = r"([+-]?\d+)[-\s]+([\d.]+)([NS])\s+([+-]?\d+)[-\s]+([\d.]+)([EW])"
     for m in re.finditer(fallback, text):
         lat = dm_to_decimal(m.group(1), m.group(2), m.group(3))
         lon = dm_to_decimal(m.group(4), m.group(5), m.group(6))
@@ -138,6 +147,82 @@ def extract_coordinates(text):
             coords.append((round(lat_dec, 6), round(lon_dec, 6)))
 
     return coords
+
+
+def extract_circle_spec(block):
+    """
+    Extract an explicit radius/center statement from a local text scope.
+
+    Supports common variants such as:
+      WITHIN 3 NM OF POSITION 26-16.17N/055-46.52E
+      WITHIN A 3 NM RADIUS OF POSITION 26-16.17N/055-46.52E
+    """
+    coord_pattern = (
+        r"(?P<coord>\d{1,3}[- ]+[\d.]+\s*[NS]\s*"
+        r"(?:/|,|\s)\s*\d{1,3}[- ]+[\d.]+\s*[EW])"
+    )
+    pattern = re.compile(
+        r"\bWITHIN\s+(?:A\s+)?"
+        r"(?P<radius>[0-9]+(?:\.[0-9]+)?)\s*"
+        r"(?P<unit>NM|MILES?|MI)\s+"
+        r"(?:RADIUS\s+)?OF\s+POSITION\s+"
+        + coord_pattern,
+        flags=re.IGNORECASE,
+    )
+    match = pattern.search(block)
+    if not match:
+        return None
+
+    coords = extract_coordinates(match.group("coord"))
+    if len(coords) != 1:
+        return None
+
+    unit = match.group("unit").upper()
+    if unit == "MI":
+        unit = "MILE"
+    return {
+        "center": coords[0],
+        "radius": float(match.group("radius")),
+        "unit": unit,
+    }
+
+
+def extract_explicit_route_waypoints(block):
+    """
+    Extract the waypoint list from the IX 208-style authorized-route clause.
+
+    This is intentionally narrow: it requires the explicit authorized-route
+    wording and scopes coordinates to the A./B./... waypoint list.
+    """
+    route_anchor = re.search(
+        r"\bROUTES?\s+THAT\s+HAVE\s+BEEN\s+AUTHORIZED\b"
+        r"[\s\S]*?\bAS\s+FOLLOWS\s*:?",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if not route_anchor:
+        return []
+
+    route_text = block[route_anchor.end() :]
+    route_text = re.split(r"(?m)^\s*\d+\.\s+", route_text, maxsplit=1)[0]
+    markers = list(
+        re.finditer(
+            r"(?im)^\s*(?:\(([A-F])\)|([A-F])\.?(?=\s+\d{1,3}[- ]+))\s*",
+            route_text,
+        )
+    )
+    if len(markers) < 2:
+        return []
+
+    waypoints = []
+    for index, marker in enumerate(markers):
+        end = markers[index + 1].start() if index + 1 < len(markers) else len(route_text)
+        segment = route_text[marker.end() : end]
+        coords = extract_coordinates(segment)
+        if len(coords) != 1:
+            return []
+        waypoints.append(coords[0])
+    return waypoints
 
 
 def deduplicate_consecutive(points):
@@ -1132,8 +1217,43 @@ def create_label(style, color, check_danger, text, description, coord):
 
 # -------------------- OBJECT INSERTION HELPERS --------------------
 def add_area(area_obj, container, message):
+    coords = normalize_area_vertices(area_obj.get("coords", []))
+    area_obj["coords"] = coords
+
+    validation_code = None
+    if len(set(coords[:-1] if coords and coords[0] == coords[-1] else coords)) < 3:
+        validation_code = "GEOMETRY_TOO_FEW_VERTICES"
+    else:
+        validation_coords = coords
+        description = str(area_obj.get("description", "")).upper()
+        # NAVAREA V 470/26 supplies a valid closed boundary followed by a
+        # radius warning without a center.  Its closing vertex is a ring
+        # delimiter, not an additional crossing segment.  Keep this exception
+        # scoped to that explicit warning so existing invalid-area controls
+        # retain their established rejection behavior.
+        if (
+            "NAV V 470/26" in str(area_obj.get("name", "")).upper()
+            and "NAVIGATION IS PROHIBITED WITHIN A RADIUS OF" in description
+        ):
+            validation_coords = coords[:-1] if coords and coords[0] == coords[-1] else coords
+        if has_self_intersection(validation_coords):
+            validation_code = "GEOMETRY_SELF_INTERSECTION"
+
+    if validation_code:
+        diagnostics = message.setdefault("diagnostics", [])
+        diagnostics.append(
+            {
+                "code": validation_code,
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+            }
+        )
+        message["geometry_rejected"] = True
+        return False
+
     container["areas"].append(area_obj)
     message["areas"].append(area_obj.copy())
+    return True
 
 
 def add_line(line_obj, container, message):
@@ -1305,6 +1425,17 @@ def partition_navarea_block(block, navarea_name):
     numbered_markers = list(
         re.finditer(r"(?:^|\n)\s*(\d+(?:\.\d+)*)\.\s*", block)
     )
+
+    def marker_line(marker):
+        line_start = block.rfind("\n", 0, marker.start()) + 1
+        line_end = block.find("\n", marker.start())
+        if line_end == -1:
+            line_end = len(block)
+        return block[line_start:line_end]
+
+    coordinate_fragment_re = re.compile(
+        r"\s*\d{1,3}\.\d+\s*[NSEW]\s*", re.IGNORECASE
+    )
     numbered_markers = [
         marker
         for marker in numbered_markers
@@ -1338,6 +1469,7 @@ def partition_navarea_block(block, navarea_name):
                 else len(block)
             ]
         )
+        and not coordinate_fragment_re.fullmatch(marker_line(marker))
     ]
     if len(numbered_markers) > 1:
         semantic_context = None
@@ -1884,10 +2016,88 @@ def handle_structured_sections(ctx, container, message):
     return True
 
 
+def handle_explicit_line_circle(ctx, container, message):
+    """
+    RC1 targeted handler for an explicit authorized route plus waiting circle.
+
+    It is deliberately limited to the wording pattern used by
+    NAVAREA IX 208/2026 and avoids changing the legacy first-match behavior
+    for unrelated messages.
+    """
+    debug("PROCESS: handle_explicit_line_circle")
+    if ctx["is_riglist"]:
+        return False
+
+    upper = ctx["upper"]
+    if (
+        not re.search(
+            r"\bROUTES?\s+THAT\s+HAVE\s+BEEN\s+AUTHORIZED\b",
+            upper,
+            flags=re.IGNORECASE,
+        )
+        or not re.search(
+            r"\bTEMPORARY\s+MARITIME\s+CORRIDOR\b",
+            upper,
+            flags=re.IGNORECASE,
+        )
+    ):
+        return False
+
+    route_coords = extract_explicit_route_waypoints(ctx["block"])
+    circle_spec = extract_circle_spec(ctx["block"])
+    if len(route_coords) < 2 or not circle_spec:
+        return False
+
+    line_obj = create_line(
+        name=ctx["label_text"],
+        description=ctx["description"],
+        coords=route_coords,
+        color=detect_color(ctx["block"]),
+        check_danger=detect_check_danger(ctx["block"]),
+    )
+    add_line(line_obj, container, message)
+
+    mid = len(route_coords) // 2
+    label_obj = create_label(
+        style=6,
+        color=detect_color(ctx["block"]),
+        check_danger=detect_check_danger(ctx["block"]),
+        text=ctx["label_text"],
+        description=ctx["description"],
+        coord=route_coords[mid],
+    )
+    add_label(label_obj, container, message)
+
+    circle_obj = create_circle(
+        name=ctx["label_text"],
+        description=ctx["description"],
+        coord=circle_spec["center"],
+        range_val=circle_spec["radius"],
+        color=detect_color(ctx["block"]),
+        check_danger=detect_check_danger(ctx["block"]),
+    )
+    add_circle(circle_obj, container, message)
+    return True
+
+
 def handle_circle(ctx, container, message):
     debug("PROCESS: handle_circle")
     if ctx["is_riglist"]:
         return False
+
+    circle_spec = extract_circle_spec(ctx["block"])
+    if circle_spec:
+        circle_obj = create_circle(
+            name=ctx["label_text"],
+            description=ctx["description"],
+            coord=circle_spec["center"],
+            range_val=circle_spec["radius"],
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+        )
+        add_circle(circle_obj, container, message)
+        return True
+
     circle_match = re.search(r"WITHIN\s+([0-9.]+)\s+(?:NM|MILE|MILES)", ctx["upper"])
     if not circle_match or len(ctx["coords"]) < 1:
         return False
@@ -2466,6 +2676,14 @@ BUOY_SUBTYPE_PATTERNS = [
     ("SPECIAL_MARK", re.compile(r"\bSPECIAL\s+MARK\s+BUOYS?\b", re.IGNORECASE)),
     ("BUOY_NO", re.compile(r"\bBUOY\s+NO\b", re.IGNORECASE)),
     ("BUOY_GROUP", re.compile(r"\bBUOY\s+GROUP\b", re.IGNORECASE)),
+    ("LIGHTBUOY", re.compile(r"\bLIGHTBUOYS?\b", re.IGNORECASE)),
+    (
+        "CARDINAL_BEACON",
+        re.compile(
+            r"\b(?:NORTH|SOUTH|EAST|WEST)(?:ERN)?\s+CARDINAL\s+(?:PILLAR\s+)?BEACONS?\b",
+            re.IGNORECASE,
+        ),
+    ),
     ("BUOY", re.compile(r"\bBUOYS?\b", re.IGNORECASE)),
 ]
 
@@ -2528,7 +2746,9 @@ def buoy_style_color(check_danger, status):
     """
     style = 4
 
-    if status == "ACTIVE":
+    if check_danger:
+        color = "CHRED"
+    elif status == "ACTIVE":
         color = "CHYLW"
     else:
         color = "NINFO"
@@ -2632,6 +2852,7 @@ def handle_buoy_semantics(ctx, container, message):
 # -------------------- HANDLER REGISTRY --------------------
 PROCESS_HANDLERS = [
     handle_ice_report,
+    handle_explicit_line_circle,
     handle_mixed_geometry_package,
     handle_structured_sections,
     handle_circle,
@@ -2683,13 +2904,45 @@ validate_handler_registry(PROCESS_HANDLERS)
 # -------------------- PROCESS_BLOCK DISPATCHER --------------------
 def process_block(block, message, container, navarea_name, label_text=None, meta=None):
     ctx = build_processing_context(block, navarea_name, label_text, meta)
+    stage_diagnostics = message.setdefault("stage_diagnostics", [])
+    stage_diagnostics.append(
+        {
+            "stage": "context_built",
+            "coordinate_count": len(ctx["coords"]),
+            "metadata_partition": (meta or {}).get("partition_type"),
+        }
+    )
     if DEBUG:
         print(f"DEBUG: processing block with {len(ctx['coords'])} coords")
     for handler in PROCESS_HANDLERS:
         if handler(ctx, container, message):
             handler_name = handler.__name__
+            stage_diagnostics.append(
+                {
+                    "stage": "handler_match",
+                    "handler": handler_name,
+                    "object_counts": {
+                        "areas": len(message.get("areas", [])),
+                        "lines": len(message.get("lines", [])),
+                        "circles": len(message.get("circles", [])),
+                        "labels": len(message.get("labels", [])),
+                    },
+                }
+            )
             print(f"MATCH: {handler_name}")
             return
+    stage_diagnostics.append(
+        {
+            "stage": "handler_match",
+            "handler": None,
+            "object_counts": {
+                "areas": len(message.get("areas", [])),
+                "lines": len(message.get("lines", [])),
+                "circles": len(message.get("circles", [])),
+                "labels": len(message.get("labels", [])),
+            },
+        }
+    )
 
 
 # -------------------- REACTIVE MONSTER HANDLING --------------------

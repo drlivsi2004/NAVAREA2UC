@@ -133,6 +133,99 @@ NAVAREA2UC attempts to automatically partition charts to improve compatibility, 
 
 The converter automatically detects NAVAREA regions and creates separate output files for each NAVAREA.
 
+## Corpus validation
+
+The repeatable corpus runner evaluates every retained NAVAREA warning in the
+tracked `NAV-*.txt` sources without changing parser handlers. It records source
+references, selected handlers, object counts, diagnostics, geometry status, and
+mixed-geometry component losses:
+
+```bash
+python corpus_runner.py --output reports/navarea-corpus.json
+```
+
+Use a prior report for a differential pass. Message IDs supplied with
+`--expected-id` are allowed to change; all other changes remain visible as
+unexpected:
+
+```bash
+python corpus_runner.py \
+  --baseline reports/before.json \
+  --output reports/after.json \
+  --expected-id "NAVAREA IX 208/2026"
+```
+
+The report separates confirmed geometry, reference-only coordinates,
+rejected invalid areas, operation-only results, and unclassified messages.
+
+### Release geometry gate
+
+Run the release gate before publishing. It returns a non-zero status for
+processing errors, unexpected differential changes, or an explicit Area, Line,
+or Circle statement that has not been reviewed:
+
+```bash
+bash scripts/release-validation.sh
+```
+
+The report is written to `reports/release-corpus.json`. Existing reviewed
+findings remain visible in the report, while new component-loss findings block
+the release and include source-line references.
+
+After reviewing a full report, update the compact release baseline without
+hand-entering its message count. The command reruns the current corpus and
+rejects the update unless the reviewed report has matching message-count and
+fingerprint data:
+
+```bash
+python corpus_runner.py \
+  --root . \
+  --update-baseline reports/corpus_baseline.json \
+  --source-report reports/corpus_differential_latest.json
+```
+
+To inspect the baseline that would be derived before approving a reviewed
+report, use the read-only preview mode. It shows the derived message count and
+fingerprint, whether the reviewed report still matches the current corpus, and
+the review metadata that would be preserved. It does not write the baseline
+file; it returns a non-zero status when the reviewed report is stale:
+
+```bash
+python corpus_runner.py \
+  --root . \
+  --preview-baseline reports/corpus_baseline.json \
+  --source-report reports/corpus_differential_latest.json
+```
+
+For release automation, add `--json` (or the explicit
+`--preview-baseline-json` alias) to emit one JSON object instead of the text
+preview:
+
+```bash
+python corpus_runner.py \
+  --root . \
+  --preview-baseline reports/corpus_baseline.json \
+  --source-report reports/corpus_differential_latest.json \
+  --json
+```
+
+The structured preview keeps the same exit status: `0` when the reviewed
+report matches the current corpus and `1` when it is stale or otherwise does
+not match. Errors are written to stderr. The JSON object has these fields:
+
+| Field | Meaning |
+| --- | --- |
+| `reviewed_report_messages` | Derived message count from the reviewed report. |
+| `reviewed_report_sha256` | Derived fingerprint of the reviewed report content. |
+| `current_messages` | Message count in the current corpus run. |
+| `current_report_sha256` | Fingerprint of the current corpus report. |
+| `reviewed_report_matches_current` | Whether the reviewed report matches the current corpus. |
+| `review_metadata` | Existing baseline fields preserved by an update, excluding derived baseline fields. |
+| `proposed_baseline` | Compact baseline that would be written by `--update-baseline`; no file is written by preview. |
+
+All preview JSON is written to stdout, making it safe for CI to capture and
+parse without scraping the human-readable output.
+
 ## Export Modes
 
 ### Modern Furuno
