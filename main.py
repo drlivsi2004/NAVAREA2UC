@@ -32,6 +32,13 @@ DEBUG = (
     or "--debug" in sys.argv
 )
 
+NAVAREA_HEADER_RE = re.compile(
+    r"(?im)^[ \t]*(NAVAREA\s+[A-Z0-9]+\s+\d+/\d+)\b"
+)
+NAVAREA_BLOCK_BOUNDARY_RE = re.compile(
+    r"(?im)(?=^[ \t]*NAVAREA\s+[A-Z0-9]+\s+\d+/\d+\b)"
+)
+
 
 def debug(msg):
     if DEBUG:
@@ -351,6 +358,17 @@ def build_navarea_label(navarea_name):
     if not m:
         return navarea_name
     return f"NAV {m.group(1)} {m.group(2)}"
+
+
+def split_navarea_blocks(text):
+    """Split normalized text at actual message-header lines only.
+
+    Cancellation references can contain a valid-looking NAVAREA number, but
+    they are not new messages.  Requiring the header at the start of a line
+    prevents inline references from becoming separate blocks.
+    """
+
+    return NAVAREA_BLOCK_BOUNDARY_RE.split(text)
 
 
 def haversine_distance_nm(coord1, coord2):
@@ -1507,11 +1525,34 @@ def partition_navarea_block(block, navarea_name):
     )
 
     def marker_line(marker):
-        line_start = block.rfind("\n", 0, marker.start()) + 1
-        line_end = block.find("\n", marker.start())
+        marker_line_start = marker.start()
+        if block[marker_line_start : marker_line_start + 1] == "\n":
+            marker_line_start += 1
+        line_start = block.rfind("\n", 0, marker_line_start) + 1
+        line_end = block.find("\n", marker_line_start)
         if line_end == -1:
             line_end = len(block)
         return block[line_start:line_end]
+
+    def is_cancellation_section(marker, next_marker):
+        section_start = marker.start()
+        if block[section_start : section_start + 1] == "\n":
+            section_start += 1
+        section_end = next_marker.start() if next_marker else len(block)
+        section_text = block[section_start:section_end].lstrip()
+        section_text = re.sub(
+            r"^\d+(?:\.\d+)*(?:\.-?|-)?\s*",
+            "",
+            section_text,
+            count=1,
+        )
+        return bool(
+            re.match(
+                r"CANCEL(?:S|LED|LATION)?\b",
+                section_text,
+                re.IGNORECASE,
+            )
+        )
 
     coordinate_fragment_re = re.compile(
         r"\s*\d{1,3}\.\d+\s*[NSEW]\s*", re.IGNORECASE
@@ -1551,11 +1592,28 @@ def partition_navarea_block(block, navarea_name):
         )
         and not coordinate_fragment_re.fullmatch(marker_line(marker))
     ]
-    if len(numbered_markers) > 1:
+    # A cancellation notice may itself be numbered and can contain a
+    # NAVAREA-looking reference.  It is message metadata, not a child
+    # section; keeping it in the parent block avoids dropping the preceding
+    # geometry when the source has multiple cancellation items.
+    section_markers = [
+        marker
+        for index, marker in enumerate(numbered_markers)
+        if not is_cancellation_section(
+            marker,
+            numbered_markers[index + 1]
+            if index + 1 < len(numbered_markers)
+            else None,
+        )
+    ]
+    if section_markers and (
+        len(section_markers) > 1
+        or len(section_markers) < len(numbered_markers)
+    ):
         semantic_context = None
-        preamble = block[: numbered_markers[0].start()]
+        preamble = block[: section_markers[0].start()]
         parent_context = _partition_parent_context(
-            block, numbered_markers[0].start()
+            block, section_markers[0].start()
         )
         for line in preamble.splitlines():
             if re.search(r"AREA\s+TEMPORARILY\s+DANGEROUS", line, re.IGNORECASE):
@@ -1563,11 +1621,11 @@ def partition_navarea_block(block, navarea_name):
                 break
 
         parts = []
-        for i, m in enumerate(numbered_markers):
+        for i, m in enumerate(section_markers):
             start = m.start()
             end = (
-                numbered_markers[i + 1].start()
-                if i + 1 < len(numbered_markers)
+                section_markers[i + 1].start()
+                if i + 1 < len(section_markers)
                 else len(block)
             )
             sub_block = block[start:end].strip()
@@ -3823,22 +3881,20 @@ def run_regression_tests():
             test_stats = NormalizerStats()
             test_text = normalize_input(test_text, test_stats)
 
-            blocks = re.split(
-                r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", test_text, flags=re.IGNORECASE
-            )
+            blocks = split_navarea_blocks(test_text)
 
             for block in blocks:
                 block = block.strip()
                 if not block:
                     continue
-                nav_match = re.search(
-                    r"(NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", block, re.IGNORECASE
-                )
+                nav_match = NAVAREA_HEADER_RE.search(block)
                 if not nav_match:
                     continue
                 navarea_name = nav_match.group(1)
                 m_code = re.search(
-                    r"NAVAREA\s+([A-Z0-9]+)\s+(\d+/\d+)", navarea_name, re.IGNORECASE
+                    r"NAVAREA\s+([A-Z0-9]+)\s+(\d+/\d+)",
+                    navarea_name,
+                    re.IGNORECASE,
                 )
                 if m_code:
                     nav_code = m_code.group(1).upper()
@@ -3933,8 +3989,15 @@ class ConsoleProgress:
 
     FRAMES = ("|", "/", "-", "\\")
     NON_TTY_INTERVAL = 25
-    MIN_VISIBLE_SECONDS = 3.0
+    MIN_VISIBLE_SECONDS = 8.0
     ANIMATION_INTERVAL_SECONDS = 0.12
+    FINISHING_STAGES = (
+        "validating output",
+        "preparing XML",
+        "writing files",
+        "readying console",
+    )
+    FINISHING_STAGE_SECONDS = 1.8
 
     def __init__(self, total):
         self.total = total
@@ -3942,6 +4005,7 @@ class ConsoleProgress:
         self.interactive = sys.stdout.isatty()
         self.enabled = not DEBUG and total > 0
         self.last_width = 0
+        self.last_stage = "starting"
         self.last_label = "starting"
         self.frame_index = 0
         self.started_at = time.monotonic() if self.enabled and self.interactive else None
@@ -3951,6 +4015,7 @@ class ConsoleProgress:
             return
 
         self.current = current
+        self.last_stage = "reading"
         self.last_label = label
         self._render()
 
@@ -3959,8 +4024,18 @@ class ConsoleProgress:
         ):
             print(self._text(), flush=True)
 
+    def stage(self, stage_name):
+        if not self.enabled:
+            return
+
+        self.last_stage = stage_name
+        self._render()
+
     def _text(self):
-        return f"{self.FRAMES[self.frame_index]} Processing [{self.current}/{self.total}] {self.last_label}"
+        return (
+            f"{self.FRAMES[self.frame_index]} {self.last_stage} "
+            f"[{self.current}/{self.total}] {self.last_label}"
+        )
 
     def _render(self):
         text = self._text()
@@ -3975,9 +4050,21 @@ class ConsoleProgress:
             return
 
         if self.interactive and self.started_at is not None:
+            stage_index = 0
+            stage_started_at = time.monotonic()
+            self.last_stage = self.FINISHING_STAGES[stage_index]
+            self._render()
             remaining = self.MIN_VISIBLE_SECONDS - (time.monotonic() - self.started_at)
             while remaining > 0:
                 time.sleep(min(self.ANIMATION_INTERVAL_SECONDS, remaining))
+                elapsed_stage_seconds = time.monotonic() - stage_started_at
+                next_stage_index = min(
+                    len(self.FINISHING_STAGES) - 1,
+                    int(elapsed_stage_seconds / self.FINISHING_STAGE_SECONDS),
+                )
+                if next_stage_index != stage_index:
+                    stage_index = next_stage_index
+                    self.last_stage = self.FINISHING_STAGES[stage_index]
                 self._render()
                 remaining = self.MIN_VISIBLE_SECONDS - (
                     time.monotonic() - self.started_at
@@ -4034,7 +4121,7 @@ def main():
     stats = NormalizerStats()
     text = normalize_input(text, stats)
 
-    blocks = re.split(r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", text, flags=re.IGNORECASE)
+    blocks = split_navarea_blocks(text)
 
     if DEBUG:
         print("\n========== XV DIAGNOSTICS ==========")
@@ -4047,11 +4134,7 @@ def main():
                 preview = block[:120].replace("\n", "\n")
                 print(f"[DIAG] BLOCK {i}: {preview}")
 
-                m = re.search(
-                    r"NAVAREA\s+([A-ZIVXLC]+)\s+(\d+/\d+)",
-                    block,
-                    flags=re.IGNORECASE,
-                )
+                m = NAVAREA_HEADER_RE.search(block)
 
                 if m:
                     print(
@@ -4060,7 +4143,7 @@ def main():
 
         print("====================================\n")
 
-    blocks = re.split(r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", text, flags=re.IGNORECASE)
+    blocks = split_navarea_blocks(text)
 
     navs = {}
     total_work_blocks = sum(
@@ -4080,9 +4163,7 @@ def main():
         if not block:
             continue
 
-        nav_match = re.search(
-            r"(NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", block, re.IGNORECASE
-        )
+        nav_match = NAVAREA_HEADER_RE.search(block)
         if not nav_match:
             continue
 
@@ -4101,9 +4182,12 @@ def main():
             navs[nav_code] = create_container(nav_code)
         container = navs[nav_code]
 
+        progress.stage("analyzing")
         predict_complexity(block)
+        progress.stage("partitioning")
         partitioned = partition_navarea_block(block, navarea_name)
 
+        progress.stage("building geometry")
         if len(partitioned) == 1 and partitioned[0][1]["partition_type"] == "NONE":
             msg_id = navarea_name
             message = create_message(msg_id, metadata=partitioned[0][1])
@@ -4130,22 +4214,24 @@ def main():
                     sub_block, message, container, navarea_name, label_text, meta=meta
                 )
 
-    progress.finish()
-
     if "--show-normalizer" in sys.argv:
         stats.report()
 
+    progress.stage("exporting XML")
     all_stats = []
     for nav_id in sorted(navs.keys()):
         stats = export_navarea(nav_id, navs[nav_id])
         all_stats.append(stats)
 
+    progress.stage("summarizing results")
     total_areas = total_lines = total_circles = total_labels = 0
     for nav_id, container in navs.items():
         total_areas += len(container["areas"])
         total_lines += len(container["lines"])
         total_circles += len(container["circles"])
         total_labels += len(container["labels"])
+
+    progress.finish()
 
     print()
     print("===== TOTAL SUMMARY =====")
