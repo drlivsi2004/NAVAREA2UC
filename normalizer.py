@@ -298,11 +298,11 @@ def normalize_coordinates(text, stats=None):
     # 0. Remove coordinate prefixes and labels
     #    (added for NAVAREA XV compatibility)
     # ------------------------------------------------------------------
-    text = re.sub(r"\b[LG]-\s*(\d)", r"\1", text, flags=re.I)
-    text = re.sub(r"\bLAT\.?\s*", "", text, flags=re.I)
-    text = re.sub(r"\bLONG\.?\s*", "", text, flags=re.I)
-    text = re.sub(r"\bL\s*(\d)", r"\1", text, flags=re.I)
-    text = re.sub(r"\bG\s*(\d)", r"\1", text, flags=re.I)
+    text = re.sub(r"\b[LG]-[ \t]*(\d)", r"\1", text, flags=re.I)
+    text = re.sub(r"\bLAT\.?(?=\s|$)\s*", "", text, flags=re.I)
+    text = re.sub(r"\bLONG\.?(?=\s|$)\s*", "", text, flags=re.I)
+    text = re.sub(r"\bL[ \t]*(\d)", r"\1", text, flags=re.I)
+    text = re.sub(r"\bG[ \t]*(\d)", r"\1", text, flags=re.I)
 
     # ------------------------------------------------------------------
     # 1. Convert DMS with double hyphens: 12-02-49.5S
@@ -320,13 +320,13 @@ def normalize_coordinates(text, stats=None):
         return f"{deg}-{total_minutes:.3f}{hemi}"
 
     text = re.sub(
-        r"(\d{1,3})-(\d{1,2})-([\d.]+)\s*([NS])",
+        r"(?<![A-Za-z0-9])(\d{1,3})-(\d{1,2})-([\d.]+)\s*([NS])",
         dms_double_hyphen_to_dm,
         text,
         flags=re.I,
     )
     text = re.sub(
-        r"(\d{1,3})-(\d{1,2})-([\d.]+)\s*([EW])",
+        r"(?<![A-Za-z0-9])(\d{1,3})-(\d{1,2})-([\d.]+)\s*([EW])",
         dms_double_hyphen_to_dm,
         text,
         flags=re.I,
@@ -344,17 +344,26 @@ def normalize_coordinates(text, stats=None):
         return f"{deg}-{minutes}{hemi}"
 
     text = re.sub(
-        r"(\d{1,2})(\d{2}\.\d+)\s*([NS])", dm_no_separator_to_dm, text, flags=re.I
+        r"(?<![A-Za-z0-9])(\d{1,2})(\d{2}\.\d+)\s*([NS])",
+        dm_no_separator_to_dm,
+        text,
+        flags=re.I,
     )
     text = re.sub(
-        r"(\d{1,3})(\d{2}\.\d+)\s*([EW])", dm_no_separator_to_dm, text, flags=re.I
+        r"(?<![A-Za-z0-9])(\d{1,3})(\d{2}\.\d+)\s*([EW])",
+        dm_no_separator_to_dm,
+        text,
+        flags=re.I,
     )
 
     # ------------------------------------------------------------------
     # 3. Remove trailing punctuation after hemisphere
     # ------------------------------------------------------------------
-    text = re.sub(r"([NS])\s*[.,;:]+", r"\1", text, flags=re.I)
-    text = re.sub(r"([EW])\s*[.,;:]+", r"\1", text, flags=re.I)
+    # Require a digit immediately before the hemisphere.  Without this
+    # guard, an RIGLIST marker such as "E." is mistaken for a coordinate
+    # hemisphere and its marker dot is removed before list normalization.
+    text = re.sub(r"(?<=\d)([NS])\s*[.,;:]+", r"\1", text, flags=re.I)
+    text = re.sub(r"(?<=\d)([EW])\s*[.,;:]+", r"\1", text, flags=re.I)
 
     # ------------------------------------------------------------------
     # 4. Existing: Convert DMS with spaces to DM
@@ -372,10 +381,16 @@ def normalize_coordinates(text, stats=None):
         return f"{deg}-{total_minutes:.3f}{hemi}"
 
     text = re.sub(
-        r"(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([NS])", dms_to_dm, text, flags=re.I
+        r"(?<![A-Za-z0-9])(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([NS])",
+        dms_to_dm,
+        text,
+        flags=re.I,
     )
     text = re.sub(
-        r"(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([EW])", dms_to_dm, text, flags=re.I
+        r"(?<![A-Za-z0-9])(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([EW])",
+        dms_to_dm,
+        text,
+        flags=re.I,
     )
 
     # Convert DM with spaces to hyphen
@@ -408,7 +423,7 @@ def normalize_riglist_formats(text):
             # Проверяем наличие буквенных маркеров (A., B., ..., AA., AAAA.)
             has_lettered = False
             for line in lines:
-                if re.match(r"^\s*[A-Z]{1,4}\.\s+", line):
+                if re.match(r"^\s*[A-Z]{1,4}\.(?:\s+|$)", line):
                     has_lettered = True
                     break
 
@@ -430,7 +445,7 @@ def normalize_riglist_formats(text):
                         while j < len(lines):
                             next_line = lines[j].strip()
                             # Если следующая строка начинается с маркера – останавливаемся
-                            if re.match(r"^[A-Z]{1,4}\.\s+", next_line):
+                            if re.match(r"^[A-Z]{1,4}\.(?:\s+|$)", next_line):
                                 break
                             # Если в next_line есть координаты – добавляем и выходим
                             if re.search(r"\d{1,3}-\d+\.\d+[NS]", next_line):
