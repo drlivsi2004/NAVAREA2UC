@@ -15,8 +15,9 @@ VSVersionInfo(
         '040904B0',
         [
           StringStruct('CompanyName', 'Independent developer (dr_livsi2004)'),
-          StringStruct('Copyright','NAVAREA2UC &copy; 2026'),
-          StringStruct('FileDescription', 'NAVAREA to ECDIS UserChart Converter'),
+          StringStruct('LegalCopyright', 'Copyright (C) 2026 NAVAREA2UC. All rights reserved.'),
+          StringStruct('FileDescription', 'NAVAREA to ECDIS UserChart Converter (Proprietary Software)'),
+          StringStruct('Comments', 'Proprietary software. All rights reserved.'),
           StringStruct('FileVersion', '1.3.0'),
           StringStruct('InternalName', 'NAVAREA2UC'),
           StringStruct('OriginalFilename', 'NAVAREA2UC.exe'),

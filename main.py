@@ -8,7 +8,7 @@ import math
 import time
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-from xml.sax.saxutils import escape
+from xml.sax.saxutils import escape, unescape
 
 
 APP_NAME = "NAVAREA2UC"
@@ -18,7 +18,7 @@ APP_AUTHOR = "dr_livsi2004"
 # -------------------- CONSTANTS --------------------
 LEGACY_MAX_OBJECTS = 150
 LEGACY_MAX_DESC = 999
-LEGACY_MAX_CIRCLE_RANGE = 100.0
+LEGACY_MAX_CIRCLE_RANGE = 50.0
 RISK_LOW_MAX = 500
 RISK_MEDIUM_MAX = 2000
 RISK_HIGH_MAX = 5000
@@ -177,7 +177,7 @@ def extract_circle_spec(block):
         r"\bWITHIN\s+(?:A\s+)?"
         r"(?P<radius>[0-9]+(?:\.[0-9]+)?)\s*"
         r"(?P<unit>NM|MILES?|MI)\s+"
-        r"(?:RADIUS\s+)?OF\s+POSITION\s+"
+        r"(?:RADIUS\s+)?OF\s+(?:POSITION\s+)?"
         + coord_pattern,
         flags=re.IGNORECASE,
     )
@@ -528,6 +528,7 @@ def detect_style(block):
             "WRECK",
             "SANK",
             "SUNK",
+            "AGROUND",
             "DERELICT",
             "OBSTRUCTION",
             "SUBMERGED WELLHEAD",
@@ -580,6 +581,7 @@ def detect_color(block):
             "WRECK",
             "SANK",
             "SUNK",
+            "AGROUND",
             "DERELICT",
             "DANGER",
             "PROHIBITED",
@@ -612,6 +614,9 @@ def detect_color(block):
             "MILITARY ACTIVITY",
             "DEFENCE OPERATION",
             "HAZARDOUS OPERATIONS",
+            "DRIFTING HAZARDS",
+            "ADRIFT",
+            "DRIFTING",
             "ROCKET LAUNCHING",
             "ICEBERG",
             "ICEBERGS",
@@ -624,6 +629,20 @@ def detect_color(block):
     ):
         return "RESBL"
     return "NINFO"
+
+
+RECOMMENDED_ROUTE_RE = re.compile(r"\bRECOMMENDED\s+ROUTE\b", re.IGNORECASE)
+
+
+def get_line_presentation(block, *semantic_text, base_color=None):
+    """Return the confirmed Furuno presentation for a line semantic."""
+    text = " ".join(str(value or "") for value in semantic_text)
+    if RECOMMENDED_ROUTE_RE.search(text):
+        return {"color": "NINFO", "lineType": 1}
+    return {
+        "color": base_color if base_color is not None else detect_color(block),
+        "lineType": 2,
+    }
 
 
 def detect_check_danger(block):
@@ -639,6 +658,9 @@ def detect_check_danger(block):
             "FIRING",
             "NAVAL OPERATIONS",
             "HAZARDOUS OPERATIONS",
+            "DRIFTING HAZARDS",
+            "ADRIFT",
+            "DRIFTING",
             "ROCKET LAUNCHING",
             "ICEBERG",
             "ICEBERGS",
@@ -648,6 +670,7 @@ def detect_check_danger(block):
             "WRECK",
             "SANK",
             "SUNK",
+            "AGROUND",
             "DERELICT",
             "DANGER",
             "PROHIBITED",
@@ -1278,13 +1301,14 @@ def create_area(name, description, coords, color, check_danger):
     }
 
 
-def create_line(name, description, coords, color, check_danger):
+def create_line(name, description, coords, color, check_danger, line_type=2):
     return {
         "name": name,
         "description": description,
         "coords": coords,
         "color": color,
         "checkDanger": check_danger,
+        "lineType": line_type,
     }
 
 
@@ -1804,6 +1828,14 @@ AREA_BOUNDARY_MARKER_RE = re.compile(
     r"(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\b",
     re.IGNORECASE,
 )
+IMPLICIT_BOUNDED_AREA_RE = re.compile(
+    r"\b(?:"
+    r"(?:IN\s+THE\s+)?FOLLOWING\s+BOUNDED\s+AREAS?"
+    r"|(?:ROUTES?|LINES?)\s+BOUNDED\s+BY"
+    r"|BOUNDED\s+BY"
+    r")\b",
+    re.IGNORECASE,
+)
 
 LINE_PATTERNS = [
     "ALONG TRACKLINE",
@@ -1813,7 +1845,9 @@ LINE_PATTERNS = [
 
 def has_area_pattern(text):
     normalized = re.sub(r"\s+", " ", text.upper())
-    return any(pattern in normalized for pattern in AREA_PATTERNS)
+    return any(pattern in normalized for pattern in AREA_PATTERNS) or bool(
+        IMPLICIT_BOUNDED_AREA_RE.search(normalized)
+    )
 
 
 def has_line_pattern(text):
@@ -2108,6 +2142,12 @@ def handle_ice_report(ctx, container, message):
 def handle_structured_sections(ctx, container, message):
     debug("PROCESS: handle_structured_sections")
     if ctx["is_riglist"]:
+        return False
+
+    # Explicit or implicit bounded-area evidence must be resolved by
+    # handle_area, even when the notice also contains numbered sections.
+    # Otherwise a route-shaped section can consume the coordinates first.
+    if has_area_pattern(ctx["block"]) and len(ctx["coords"]) >= 3:
         return False
 
     # P0: ÑÐ³ÑÑÐ¿Ð¿Ð¸ÑÐ¾Ð²Ð°Ð½Ð½ÑÐµ Ð¿Ð¾Ð»Ð¸Ð³Ð¾Ð½Ñ (A), (B) Ð´Ð¾Ð»Ð¶Ð½Ñ Ð¾Ð±ÑÐ°Ð±Ð°ÑÑÐ²Ð°ÑÑÑÑ handle_area()
@@ -2655,13 +2695,8 @@ def handle_area(ctx, container, message):
         message["geometry_rejected"] = True
         return True
 
-    if not (
-        "AREA BOUND BY" in ctx["upper"]
-        or "BOUNDED BY" in ctx["upper"]
-        or "AREA BOUNDED" in ctx["upper"]
-        or "AREAS BOUNDED" in ctx["upper"]
-        or "AREAS BOUND BY" in ctx["upper"]
-        or "AREA TEMPORARILY DANGEROUS" in ctx["upper"]
+    if not has_area_pattern(ctx["block"]) and not (
+        "AREA TEMPORARILY DANGEROUS" in ctx["upper"]
         or "HAZARD AREA" in ctx["upper"]
     ):
         return False
@@ -2749,19 +2784,26 @@ def handle_trackline(ctx, container, message):
     if len(ctx["coords"]) < 2:
         return False
 
+    line_presentation = get_line_presentation(
+        ctx["block"],
+        ctx["label_text"],
+        ctx["description"],
+        base_color=detect_color(ctx["block"]),
+    )
     line_obj = create_line(
         name=ctx["label_text"],
         description=ctx["description"],
         coords=ctx["coords"],
-        color=detect_color(ctx["block"]),
+        color=line_presentation["color"],
         check_danger=detect_check_danger(ctx["block"]),
+        line_type=line_presentation["lineType"],
     )
     add_line(line_obj, container, message)
 
     mid = len(ctx["coords"]) // 2
     label_obj = create_label(
         style=6,
-        color=detect_color(ctx["block"]),
+        color=line_presentation["color"],
         check_danger=detect_check_danger(ctx["block"]),
         text=ctx["label_text"],
         description=ctx["description"],
@@ -2869,6 +2911,80 @@ def handle_multipoint(ctx, container, message):
             add_label(label_obj, container, message)
         return True
     return False
+
+
+def is_tow_endpoint_operation(ctx):
+    """
+    Identify a towing/movement notice that publishes only two endpoints of an
+    operation, not a navigable route geometry.
+
+    A plain "BETWEEN" clause is intentionally different from explicit
+    trackline wording such as "BETWEEN THE POINTS"; the latter is handled by
+    handle_trackline when the source actually describes line geometry.
+    """
+    if len(ctx["coords"]) != 2:
+        return False
+    if has_area_pattern(ctx["block"]):
+        return False
+
+    upper = ctx["upper"]
+    if re.search(
+        r"\b(?:BUOYS?|LIGHTBUOYS?|BEACONS?|MARKS?|AIDS\s+TO\s+NAVIGATION)\b",
+        upper,
+    ):
+        return False
+
+    is_towing_operation = re.search(
+        r"\b(?:TOW(?:ING|ED)?|TUG|BARGE)\b",
+        upper,
+    )
+    is_movable_object = re.search(
+        r"\b(?:RIG|JACKET|PLATFORM|FPSO|FSO|JUB|VESSEL|CRAFT)\b",
+        upper,
+    ) and re.search(
+        r"\b(?:MOV(?:E|ED|ES|ING)|RELOCAT(?:E|ED|ING)|"
+        r"TRANSFER(?:RED|RING)?|TRANSPORT(?:ED|ING)?)\b",
+        upper,
+    )
+    has_between_endpoints = re.search(r"\bBETWEEN\b", upper) is not None
+    has_from_to_endpoints = re.search(
+        r"\bFROM\b[\s\S]{0,450}\bTO\b",
+        upper,
+    ) is not None
+
+    return bool(
+        (is_towing_operation or is_movable_object)
+        and (has_between_endpoints or has_from_to_endpoints)
+    )
+
+
+def handle_tow_endpoints(ctx, container, message):
+    """
+    Preserve both published endpoints of an unresolved TOW operation.
+
+    The source does not provide intermediate route points, so this handler
+    emits two independent point labels and deliberately does not create a
+    straight line between them.
+    """
+    debug("PROCESS: handle_tow_endpoints")
+    if ctx["is_riglist"] or not is_tow_endpoint_operation(ctx):
+        return False
+
+    description = (
+        f"{ctx['description']}\n"
+        "ROUTE GEOMETRY NOT PROVIDED; POINTS ARE TOW ENDPOINTS ONLY."
+    )
+    for coord in ctx["coords"]:
+        label_obj = create_label(
+            style=get_point_style(ctx["block"]),
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+            text=ctx["label_text"],
+            description=description,
+            coord=coord,
+        )
+        add_label(label_obj, container, message)
+    return True
 
 
 def handle_single_point(ctx, container, message):
@@ -3152,6 +3268,7 @@ PROCESS_HANDLERS = [
     handle_lettered_sections,
     handle_riglist,
     handle_multipoint,
+    handle_tow_endpoints,
     handle_single_point,
     handle_fallback,
 ]
@@ -3443,6 +3560,54 @@ def sanitize_xml_attribute(value):
     return text.strip()
 
 
+ECDIS_COORDINATE_PAIR_RE = re.compile(
+    r"\b\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+    r"(?:/|,|[-\s])+\s*\d{1,3}[-\s]+[\d.]+\s*[EW]\b",
+    re.IGNORECASE,
+)
+
+
+def sanitize_ecdis_description(value):
+    """
+    Keep the operational meaning while avoiding coordinate duplication in ECDIS.
+
+    Coordinates belong to the object's position vertices.  Cancellation
+    references are source metadata, not active object text.
+    """
+    text = unescape(sanitize_xml_attribute(value))
+    text = re.sub(
+        r"^\s*NAVAREA\s+[A-Z0-9]+\s+\d+/\d+\s*",
+        "",
+        text,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(
+        r"(?:^|\s)(?:\d+\s*\.\s*-?\s*)?CANCEL\b.*$",
+        "",
+        text,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    text = ECDIS_COORDINATE_PAIR_RE.sub("", text)
+    text = re.sub(
+        r"\bIN\s+AREA\s+(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\s*:?",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(
+        r"(\bWITHIN\s+[0-9]+(?:\.[0-9]+)?\s+(?:NM|MILES?|MI)\s+OF)"
+        r"\s*[.,]?\s*(?:\d+\s*\.\s*)?(?=CONTACT\b|$)",
+        r"\1 the designated position. ",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(r"\s+([.,;])", r"\1", text)
+    text = re.sub(r"\s{2,}", " ", text)
+    return text.strip()
+
+
 def xml_attr(value):
     """
     Sanitize whitespace and escape XML special characters.
@@ -3508,13 +3673,13 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
 
         if obj_type == "area":
             name = obj_data.get("name", f"NAV {nav_id}")
-            desc = obj_data.get("description", "")
+            desc = sanitize_ecdis_description(obj_data.get("description", ""))
         elif obj_type == "label":
             name = obj_data.get("text", f"NAV {nav_id}")
-            desc = obj_data.get("description", name)
+            desc = sanitize_ecdis_description(obj_data.get("description", name))
         else:  # line, circle, clearingLine
             name = obj_data.get("name", "")
-            desc = obj_data.get("description", "")
+            desc = sanitize_ecdis_description(obj_data.get("description", ""))
 
         name = sanitize_xml_attribute(name)
         desc = sanitize_xml_attribute(desc)
@@ -3636,7 +3801,7 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
             range_val = circle.get("range", 0.0)
             if range_val > LEGACY_MAX_CIRCLE_RANGE:
                 print(
-                    f"WARNING: Circle range {range_val} NM exceeds legacy limit (100 NM). Will be reduced to 100 NM."
+                    f"WARNING: Circle range {range_val} exceeds legacy limit (50). Will be reduced to 50."
                 )
                 range_val = LEGACY_MAX_CIRCLE_RANGE
 
@@ -3692,7 +3857,7 @@ def export_furuno_modern(nav_id, container):
         for line in container["lines"]:
             xml.append(
                 f'<line name="{xml_attr(line["name"])}" '
-                f'description="{xml_attr(line["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(line["description"]))}">'
             )
             xml.append("<position>")
             for idx, (lat, lon) in enumerate(line["coords"], start=1):
@@ -3700,7 +3865,9 @@ def export_furuno_modern(nav_id, container):
                     f'<vertex id="{idx}" latitude="{lat:.6f}" longitude="{lon:.6f}"/>'
                 )
             xml.append("</position>")
-            xml.append('<attribute lineType="2" linkedDocument=""/>')
+            xml.append(
+                f'<attribute lineType="{line.get("lineType", 2)}" linkedDocument=""/>'
+            )
             xml.append(
                 f'<type checkDanger="{line["checkDanger"]}" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>'
             )
@@ -3713,7 +3880,7 @@ def export_furuno_modern(nav_id, container):
         for area in container["areas"]:
             xml.append(
                 f'<area name="{xml_attr(area["name"])}" '
-                f'description="{xml_attr(area["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(area["description"]))}">'
             )
             xml.append("<position>")
             for idx, (lat, lon) in enumerate(area["coords"], start=1):
@@ -3736,7 +3903,7 @@ def export_furuno_modern(nav_id, container):
         for circle in container["circles"]:
             xml.append(
                 f'<circle name="{xml_attr(circle["name"])}" '
-                f'description="{xml_attr(circle["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(circle["description"]))}">'
             )
             lat, lon = circle["coord"]
             xml.append("<position>")
@@ -3757,7 +3924,7 @@ def export_furuno_modern(nav_id, container):
         for label in container["labels"]:
             xml.append(
                 f'<label name="{xml_attr(label["text"])}" '
-                f'description="{xml_attr(label["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(label["description"]))}">'
             )
             lat, lon = label["coord"]
             xml.append("<position>")
@@ -3772,6 +3939,31 @@ def export_furuno_modern(nav_id, container):
             xml.append("</label>")
         xml.append("</labels>")
 
+    # Keep the UserChart presentation grouped by geometry: areas first,
+    # followed by lines, circles and point objects (labels). The individual
+    # builders above stay unchanged so production object semantics are not
+    # altered by the presentation order.
+    section_markers = {
+        "<areas>": ("areas", "Areas: closed zones with boundaries"),
+        "<lines>": ("lines", "Lines: paths between points"),
+        "<circles>": ("circles", "Circles: radius around one point"),
+        "<labels>": ("labels", "Point objects: one position"),
+    }
+    sections = {}
+    current_section = None
+    for item in xml[2:]:
+        marker = section_markers.get(item)
+        if marker:
+            current_section = marker[0]
+            sections[current_section] = [f"<!-- {marker[1]} -->", item]
+        elif current_section:
+            sections[current_section].append(item)
+
+    ordered_xml = xml[:2]
+    for section_name in ("areas", "lines", "circles", "labels"):
+        ordered_xml.extend(sections.get(section_name, []))
+
+    xml = ordered_xml
     xml.append("</userchart>")
     return "\n".join(xml)
 
@@ -3989,7 +4181,7 @@ class ConsoleProgress:
 
     FRAMES = ("|", "/", "-", "\\")
     NON_TTY_INTERVAL = 25
-    MIN_VISIBLE_SECONDS = 8.0
+    MIN_VISIBLE_SECONDS = 12.0
     ANIMATION_INTERVAL_SECONDS = 0.12
     FINISHING_STAGES = (
         "validating output",
@@ -3997,7 +4189,7 @@ class ConsoleProgress:
         "writing files",
         "readying console",
     )
-    FINISHING_STAGE_SECONDS = 1.8
+    FINISHING_STAGE_SECONDS = 2.4
 
     def __init__(self, total):
         self.total = total
@@ -4243,7 +4435,7 @@ def main():
     print()
     print("Conversion completed successfully.")
     print()
-    print("Copyright Â© 2026 All Rights Reserved.")
+    print("Copyright (C) 2026 NAVAREA2UC. All Rights Reserved.")
     print()
     if getattr(sys, "frozen", False):
         input("\nPress ENTER to exit...")
