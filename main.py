@@ -26,6 +26,15 @@ MAX_VERTICES_PER_OBJECT = None
 MAX_VERTICES_PER_MESSAGE = None
 STYLE_SECURITY = 5
 
+# Source notices occasionally spell buoy as "BOUY".  Keep the correction
+# semantic-only: the original source text remains untouched in descriptions
+# and audit records.
+BUOY_WORD = r"(?:BUOYS?|BOUYS?)"
+BUOY_TEXT_RE = re.compile(
+    rf"\b(?:{BUOY_WORD}|LIGHT{BUOY_WORD})\b",
+    re.IGNORECASE,
+)
+
 DEBUG_VALUES = {"1", "true", "yes", "on"}
 DEBUG = (
     os.getenv("NAVAREA2UC_DEBUG", "").strip().lower() in DEBUG_VALUES
@@ -745,7 +754,6 @@ def get_point_style(block):
     if any(
         x in upper
         for x in [
-            "BUOY",
             "LIGHT",
             "SPECIAL MARK",
             "SPECIAL-MARK",
@@ -753,7 +761,7 @@ def get_point_style(block):
             "MOORING BUOY",
             "MOORING BUOYS",
         ]
-    ):
+    ) or BUOY_TEXT_RE.search(upper):
         return 2
     return detect_style(block)
 
@@ -764,8 +772,6 @@ def is_multi_point_navarea(block):
         "MOBILE OFFSHORE DRILLING UNITS",
         "LIGHTS UNLIT",
         "LIGHT UNLIT",
-        "BUOY REMOVED",
-        "BUOYS REMOVED",
         "DEPTHS REPORTED",
         "MOORINGS DEPLOYED",
         "OCEAN BOTTOM MOORINGS",
@@ -774,7 +780,9 @@ def is_multi_point_navarea(block):
         "REMOVAL OF SUBMERGED LINES",
         "CHANNEL MARKING BUOY",
     ]
-    if any(x in upper for x in triggers):
+    if any(x in upper for x in triggers) or re.search(
+        rf"\b{BUOY_WORD}\s+REMOVED\b", upper
+    ):
         return True
 
     platform_count = len(re.findall(r"\bPLATAFORMA\b", upper))
@@ -783,7 +791,7 @@ def is_multi_point_navarea(block):
 
 
 def is_buoy_group(text):
-    return "BUOY GROUP" in text.upper()
+    return re.search(rf"\b{BUOY_WORD}\s+GROUP\b", text, re.IGNORECASE) is not None
 
 
 def detect_arc_area(block):
@@ -876,10 +884,14 @@ def detect_security_incident(text):
 
 
 def parse_structured_sections(block):
-    if not re.search(r"(?:^|\n)\s*\d+\.\s*", block):
+    # A decimal coordinate such as ``38.21 S`` is not a numbered section.
+    # Require whitespace after the section delimiter so wrapped coordinates
+    # cannot split a section and silently lose its preceding positions.
+    section_marker = r"(?:^|\n)\s*\d+\.(?=\s|$)\s*"
+    if not re.search(section_marker, block):
         return None
 
-    parts = re.split(r"\n\s*(\d+)\.\s*", block)
+    parts = re.split(r"\n\s*(\d+)\.(?=\s|$)\s*", block)
     sections = []
     for i in range(1, len(parts), 2):
         num = parts[i]
@@ -1302,6 +1314,7 @@ def create_message(msg_id, metadata=None):
         "circles": [],
         "labels": [],
         "metadata": metadata or {},
+        "geometry_audit": [],
     }
 
 
@@ -1349,31 +1362,121 @@ def create_label(style, color, check_danger, text, description, coord):
 
 
 # -------------------- OBJECT INSERTION HELPERS --------------------
+def _area_validation_vertices(coords):
+    """Return the open ring used by the geometry validator."""
+    if len(coords) >= 2 and coords[0] == coords[-1]:
+        return coords[:-1]
+    return list(coords)
+
+
+def _area_reference_fallback(area_obj, raw_coords, container, message):
+    """Keep failed Area coordinates as unconnected review/reference points."""
+    reference_coords = list(dict.fromkeys(_area_validation_vertices(raw_coords)))
+    description = (
+        f"{area_obj.get('description', '')}\n"
+        "AREA GEOMETRY REQUIRES REVIEW; SOURCE VERTEX REFERENCE ONLY."
+    ).strip()
+    for coord in reference_coords:
+        add_label(
+            create_label(
+                style=2,
+                color=area_obj.get("color", "NINFO"),
+                check_danger=area_obj.get("checkDanger", 0),
+                text=area_obj.get("name", message.get("id", "AREA REVIEW")),
+                description=description,
+                coord=coord,
+            ),
+            container,
+            message,
+        )
+
+
 def add_area(area_obj, container, message):
     coords = normalize_area_vertices(area_obj.get("coords", []))
     area_obj["coords"] = coords
+    raw_coords = list(coords)
 
     validation_code = None
-    validation_coords = (
-        coords[:-1] if coords and coords[0] == coords[-1] else coords
-    )
+    repair_method = None
+    validation_coords = _area_validation_vertices(coords)
+    source_unique_vertices = set(validation_coords)
     if len(set(validation_coords)) < 3:
         validation_code = "GEOMETRY_TOO_FEW_VERTICES"
     else:
         if has_self_intersection(validation_coords):
-            validation_code = "GEOMETRY_SELF_INTERSECTION"
+            # Sort only genuine Areas and only after the published/source order
+            # has failed validation.  The source order remains in raw_coords.
+            candidate_input = list(dict.fromkeys(validation_coords))
+            fixed_coords = normalize_area_vertices(
+                ensure_clockwise(sort_area_vertices(candidate_input))
+            )
+            fixed_validation_coords = _area_validation_vertices(fixed_coords)
+            candidate_unique_vertices = set(fixed_validation_coords)
+            if (
+                len(candidate_unique_vertices) >= 3
+                and len(fixed_validation_coords) == len(candidate_unique_vertices)
+                and candidate_unique_vertices == source_unique_vertices
+                and not has_self_intersection(fixed_validation_coords)
+            ):
+                area_obj["coords"] = fixed_coords
+                coords = fixed_coords
+                validation_coords = fixed_validation_coords
+                repair_method = "centroid_angle"
+            else:
+                validation_code = "GEOMETRY_SELF_INTERSECTION"
 
     if validation_code:
         diagnostics = message.setdefault("diagnostics", [])
-        diagnostics.append(
+        diagnostic = {
+            "code": validation_code,
+            "object_type": "area",
+            "message_id": message.get("id", "unknown"),
+            "fallback": "REFERENCE_POINTS",
+            "source_vertex_count": len(source_unique_vertices),
+        }
+        diagnostics.append(diagnostic)
+        message["geometry_rejected"] = True
+        _area_reference_fallback(area_obj, raw_coords, container, message)
+        message.setdefault("geometry_audit", []).append(
             {
-                "code": validation_code,
+                "event": "area_geometry_review_fallback",
                 "object_type": "area",
                 "message_id": message.get("id", "unknown"),
+                "reason": validation_code,
+                "raw_coords": raw_coords,
+                "reference_vertex_count": len(source_unique_vertices),
             }
         )
-        message["geometry_rejected"] = True
         return False
+
+    if repair_method:
+        area_obj["geometry_repaired"] = True
+        area_obj["repair_method"] = repair_method
+        area_obj["raw_coords"] = raw_coords
+        diagnostics = message.setdefault("diagnostics", [])
+        diagnostics.append(
+            {
+                "code": "GEOMETRY_ORDER_REPAIRED",
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+                "method": repair_method,
+                "source_vertex_count": len(validation_coords),
+                "output_vertex_count": len(
+                    coords[:-1] if coords and coords[0] == coords[-1] else coords
+                ),
+                "raw_coords": raw_coords,
+            }
+        )
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "area_geometry_repaired",
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+                "method": repair_method,
+                "raw_coords": raw_coords,
+                "repaired_coords": list(coords),
+            }
+        )
 
     container["areas"].append(area_obj)
     message["areas"].append(area_obj.copy())
@@ -2228,6 +2331,217 @@ def handle_structured_sections(ctx, container, message):
     return True
 
 
+def extract_vessel_list_positions(block):
+    """Extract one independent point for each named vessel-list entry.
+
+    A lettered vessel list is a collection of reported positions, not a
+    route.  Keep each entry's complete source fragment so the vessel name
+    and its DP/anchor-spread role remain available in the ECDIS Description.
+    """
+    list_heading = re.search(
+        r"\b(?:MINING\s*/\s*AMPLING\s*/\s*EXPLORATION\s+|"
+        r"EXPLORATION\s+)?VESSELS?\s+LIST\b",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if not list_heading:
+        return []
+
+    list_body = block[list_heading.end() :]
+    next_section = re.search(r"(?m)^\s*\d+\.(?=\s|$)\s*", list_body)
+    if next_section:
+        list_body = list_body[: next_section.start()]
+
+    markers = list(
+        re.finditer(
+            r"(?m)^\s*(?:\(([A-Z])\)|([A-Z])\.)\s*",
+            list_body,
+        )
+    )
+    if len(markers) < 2:
+        return []
+
+    entries = []
+    for index, marker in enumerate(markers):
+        end = (
+            markers[index + 1].start()
+            if index + 1 < len(markers)
+            else len(list_body)
+        )
+        snippet = list_body[marker.start() : end].strip()
+        coords = extract_coordinates(snippet)
+        if len(coords) != 1:
+            return []
+        entries.append(
+            {
+                "letter": marker.group(1) or marker.group(2),
+                "text": " ".join(snippet.split()),
+                "coord": coords[0],
+            }
+        )
+    return entries
+
+
+def handle_vessel_list_points(ctx, container, message):
+    """Keep named vessel positions as independent point objects.
+
+    Without explicit ROUTE/TRACKLINE-style wording, connecting reported vessel
+    positions would invent navigation geometry.  An explicit geometry phrase
+    leaves the notice to the normal geometry handlers.
+    """
+    debug("PROCESS: handle_vessel_list_points")
+    if ctx["is_riglist"]:
+        return False
+
+    upper = ctx["upper"]
+    if re.search(
+        r"\b(?:ROUTE|TRACKLINE|TRACK\s+LINE|CENTERLINE|LINE\s+JOINING|"
+        r"PIPELINE|CABLE|CHANNEL)\b|BETWEEN\s+THE\s+POINTS",
+        upper,
+        flags=re.IGNORECASE,
+    ):
+        return False
+
+    entries = extract_vessel_list_positions(ctx["block"])
+    if not entries:
+        return False
+
+    style = get_point_style(ctx["block"])
+    color = detect_color(ctx["block"])
+    check_danger = detect_check_danger(ctx["block"])
+    for entry in entries:
+        label_obj = create_label(
+            style=style,
+            color=color,
+            check_danger=check_danger,
+            text=ctx["label_text"],
+            description=entry["text"],
+            coord=entry["coord"],
+        )
+        add_label(label_obj, container, message)
+    return True
+
+
+FACILITY_LIST_MARKER_RE = re.compile(
+    r"(?m)^\s*(?:\(([A-Z])\)|([A-Z])\.)\s*"
+)
+FACILITY_COORDINATE_RE = re.compile(
+    r"\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+    r"(?:/|,|[-\s])+\s*\d{1,3}[-\s]+[\d.]+\s*[EW]",
+    re.IGNORECASE,
+)
+
+
+def extract_facility_list_positions(block):
+    """Extract one point and local description for each facility entry.
+
+    USCG facility notices use a lettered list, but the facility's status code
+    is also parenthesized (for example ``BOSTON (F)``).  Only markers at the
+    beginning of a line are list boundaries; parenthetical codes inside an
+    entry must remain part of that entry's description.
+    """
+
+    heading = re.search(
+        r"\b(?:REMOTE\s+)?COMMUNICATION\s+FACILITIES\s*:",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if not heading:
+        return []
+
+    list_body = block[heading.end() :]
+    candidate_markers = list(FACILITY_LIST_MARKER_RE.finditer(list_body))
+    if len(candidate_markers) < 2:
+        return []
+
+    # A wrapped facility can put its status code on a new line, as in
+    # ``(E) NEW ORLEANS`` followed by ``(G) 29-53...``.  The normalizer makes
+    # both the list marker and the code look like line-start markers.  Facility
+    # list letters are ordered, so retain the next expected letter and leave
+    # any other parenthetical token inside the current local fragment.
+    markers = []
+    expected_letter = None
+    for marker in candidate_markers:
+        letter = marker.group(1) or marker.group(2)
+        if expected_letter is None or letter == expected_letter:
+            markers.append(marker)
+            expected_letter = chr(ord(letter) + 1)
+    if len(markers) < 2:
+        return []
+
+    entries = []
+    for index, marker in enumerate(markers):
+        end = (
+            markers[index + 1].start()
+            if index + 1 < len(markers)
+            else len(list_body)
+        )
+        snippet = list_body[marker.start() : end].strip()
+        coordinate = FACILITY_COORDINATE_RE.search(snippet)
+        if not coordinate:
+            return []
+        coords = extract_coordinates(coordinate.group(0))
+        if len(coords) != 1:
+            return []
+
+        local_text = snippet[: coordinate.start()]
+        local_text = re.sub(r"-{5,}.*$", "", local_text, flags=re.DOTALL)
+        local_text = " ".join(local_text.split()).strip()
+        if not local_text:
+            return []
+        entries.append(
+            {
+                "letter": marker.group(1) or marker.group(2),
+                "text": local_text,
+                "coord": coords[0],
+            }
+        )
+    return entries
+
+
+def build_facility_list_description(ctx, entry):
+    """Return shared notice context plus one facility's local fragment."""
+
+    block = ctx["block"]
+    heading = re.search(
+        r"\b(?:REMOTE\s+)?COMMUNICATION\s+FACILITIES\s*:",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if heading:
+        parent = " ".join(block[: heading.end()].split())
+    else:
+        parent = sanitize_xml_attribute(ctx.get("description", ""))
+    return escape(f"{parent}\n{entry['text']}".strip())
+
+
+def handle_facility_list_points(ctx, container, message):
+    """Preserve shared context and local names in facility-list notices."""
+
+    debug("PROCESS: handle_facility_list_points")
+    if ctx["is_riglist"]:
+        return False
+
+    entries = extract_facility_list_positions(ctx["block"])
+    if not entries:
+        return False
+
+    style = get_point_style(ctx["block"])
+    color = detect_color(ctx["block"])
+    check_danger = detect_check_danger(ctx["block"])
+    for entry in entries:
+        label_obj = create_label(
+            style=style,
+            color=color,
+            check_danger=check_danger,
+            text=ctx["label_text"],
+            description=build_facility_list_description(ctx, entry),
+            coord=entry["coord"],
+        )
+        add_label(label_obj, container, message)
+    return True
+
+
 def handle_explicit_line_circle(ctx, container, message):
     """
     RC1 targeted handler for an explicit authorized route plus waiting circle.
@@ -2750,6 +3064,9 @@ def handle_trackline(ctx, container, message):
     ]
 
     has_buoy_semantics = any(term in ctx["upper"] for term in BUOY_SEMANTIC_TERMS)
+    has_buoy_semantics = has_buoy_semantics or BUOY_TEXT_RE.search(
+        ctx["upper"]
+    ) is not None
 
     LINE_GEOMETRY_TERMS = [
         "TRACKLINE",
@@ -2943,7 +3260,7 @@ def is_tow_endpoint_operation(ctx):
 
     upper = ctx["upper"]
     if re.search(
-        r"\b(?:BUOYS?|LIGHTBUOYS?|BEACONS?|MARKS?|AIDS\s+TO\s+NAVIGATION)\b",
+        rf"\b(?:{BUOY_WORD}|LIGHT{BUOY_WORD}|BEACONS?|MARKS?|AIDS\s+TO\s+NAVIGATION)\b",
         upper,
     ):
         return False
@@ -3063,14 +3380,23 @@ def handle_no_anchor(ctx, container, message):
 # ----------------------------------------------------------------------
 
 BUOY_SUBTYPE_PATTERNS = [
-    ("CHANNEL_MARKING", re.compile(r"\bCHANNEL\s+MARKING\s+BUOYS?\b", re.IGNORECASE)),
-    ("CHANNEL", re.compile(r"\bCHANNEL\s+BUOYS?\b", re.IGNORECASE)),
-    ("FAIRWAY", re.compile(r"\bFAIRWAY\s+BUOYS?\b", re.IGNORECASE)),
-    ("SAFE_WATER", re.compile(r"\bSAFE\s+WATER\s+BUOYS?\b", re.IGNORECASE)),
-    ("SPECIAL_MARK", re.compile(r"\bSPECIAL\s+MARK\s+BUOYS?\b", re.IGNORECASE)),
-    ("BUOY_NO", re.compile(r"\bBUOY\s+NO\b", re.IGNORECASE)),
-    ("BUOY_GROUP", re.compile(r"\bBUOY\s+GROUP\b", re.IGNORECASE)),
-    ("LIGHTBUOY", re.compile(r"\bLIGHTBUOYS?\b", re.IGNORECASE)),
+    (
+        "CHANNEL_MARKING",
+        re.compile(rf"\bCHANNEL\s+MARKING\s+{BUOY_WORD}\b", re.IGNORECASE),
+    ),
+    ("CHANNEL", re.compile(rf"\bCHANNEL\s+{BUOY_WORD}\b", re.IGNORECASE)),
+    ("FAIRWAY", re.compile(rf"\bFAIRWAY\s+{BUOY_WORD}\b", re.IGNORECASE)),
+    (
+        "SAFE_WATER",
+        re.compile(rf"\bSAFE\s+WATER\s+{BUOY_WORD}\b", re.IGNORECASE),
+    ),
+    (
+        "SPECIAL_MARK",
+        re.compile(rf"\bSPECIAL\s+MARK\s+{BUOY_WORD}\b", re.IGNORECASE),
+    ),
+    ("BUOY_NO", re.compile(rf"\b{BUOY_WORD}\s+NO\b", re.IGNORECASE)),
+    ("BUOY_GROUP", re.compile(rf"\b{BUOY_WORD}\s+GROUP\b", re.IGNORECASE)),
+    ("LIGHTBUOY", re.compile(rf"\bLIGHT{BUOY_WORD}\b", re.IGNORECASE)),
     (
         "BEACON",
         re.compile(
@@ -3088,7 +3414,7 @@ BUOY_SUBTYPE_PATTERNS = [
             re.IGNORECASE,
         ),
     ),
-    ("BUOY", re.compile(r"\bBUOYS?\b", re.IGNORECASE)),
+    ("BUOY", re.compile(rf"\b{BUOY_WORD}\b", re.IGNORECASE)),
 ]
 
 BUOY_DISPLAY_PROFILES = {
@@ -3106,13 +3432,29 @@ BUOY_STATUS_PATTERNS = [
 ]
 
 
+BUOY_TABLE_COORD_RE = re.compile(
+    r"(?P<lat_deg>\d{1,3})[- ]+(?P<lat_min>[\d.]+)\s*"
+    r"(?P<lat_hemi>[NS])[\s,]+"
+    r"(?P<lon_deg>\d{1,3})[- ]+(?P<lon_min>[\d.]+)\s*"
+    r"(?P<lon_hemi>[EW])",
+    re.IGNORECASE,
+)
+
+
+def detect_buoy_status(text):
+    for name, pattern in BUOY_STATUS_PATTERNS:
+        if pattern.search(text.upper()):
+            return name
+    return "ACTIVE"
+
+
 def classify_buoy(text):
     upper = text.upper()
 
     # LIGHT UNLIT / LIGHTHOUSE UNLIT — это AtoN, не buoy
     if (
         "UNLIT" in upper
-        and "BUOY" not in upper
+        and not BUOY_TEXT_RE.search(upper)
         and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
     ):
         return None
@@ -3126,17 +3468,51 @@ def classify_buoy(text):
     if subtype is None:
         return None
 
-    status = "ACTIVE"
-    for name, pattern in BUOY_STATUS_PATTERNS:
-        if pattern.search(upper):
-            status = name
-            break
+    status = detect_buoy_status(upper)
 
     return {
         "has_buoy": True,
         "subtype": subtype,
         "status": status,
     }
+
+
+def parse_buoy_table_rows(block):
+    """Return per-coordinate semantics for a buoy status table."""
+    if not (
+        re.search(rf"\b{BUOY_WORD}\s+POSITIONS\b", block, re.IGNORECASE)
+        and re.search(r"\bTYPE\s+AND\s+ISSUE\b", block, re.IGNORECASE)
+    ):
+        return []
+
+    matches = list(BUOY_TABLE_COORD_RE.finditer(block))
+    rows = []
+    for index, match in enumerate(matches):
+        lat = dm_to_decimal(
+            match.group("lat_deg"),
+            match.group("lat_min"),
+            match.group("lat_hemi").upper(),
+        )
+        lon = dm_to_decimal(
+            match.group("lon_deg"),
+            match.group("lon_min"),
+            match.group("lon_hemi").upper(),
+        )
+        if lat is None or lon is None:
+            continue
+
+        row_end = matches[index + 1].start() if index + 1 < len(matches) else len(block)
+        row_text = block[match.start() : row_end]
+        rows.append(
+            {
+                "coord": (lat, lon),
+                "status": detect_buoy_status(row_text),
+                "subtype": "BUOY",
+                "check_danger": detect_check_danger(row_text),
+            }
+        )
+
+    return rows
 
 
 def buoy_style_color(check_danger, status, subtype=None):
@@ -3213,7 +3589,7 @@ def handle_buoy_semantics(ctx, container, message):
 
     if (
         "UNLIT" in upper
-        and "BUOY" not in upper
+        and not BUOY_TEXT_RE.search(upper)
         and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
     ):
         return False
@@ -3243,14 +3619,28 @@ def handle_buoy_semantics(ctx, container, message):
     if len(ctx["coords"]) < 1:
         return False
 
-    style, color, check_danger = buoy_style_color(
-        check_danger=detect_check_danger(ctx["block"]),
-        status=buoy["status"],
-        subtype=buoy["subtype"],
-    )
+    table_rows = parse_buoy_table_rows(ctx["block"])
+    if table_rows and [row["coord"] for row in table_rows] == ctx["coords"]:
+        buoy_rows = table_rows
+    else:
+        buoy_rows = [
+            {
+                "coord": coord,
+                "status": buoy["status"],
+                "subtype": buoy["subtype"],
+                "check_danger": detect_check_danger(ctx["block"]),
+            }
+            for coord in ctx["coords"]
+        ]
 
-    for coord in ctx["coords"]:
-        desc = build_buoy_label_description(ctx, coord, buoy["status"])
+    for row in buoy_rows:
+        style, color, check_danger = buoy_style_color(
+            check_danger=row["check_danger"],
+            status=row["status"],
+            subtype=row["subtype"],
+        )
+        coord = row["coord"]
+        desc = build_buoy_label_description(ctx, coord, row["status"])
 
         label_obj = create_label(
             style=style,
@@ -3272,6 +3662,8 @@ PROCESS_HANDLERS = [
     handle_mixed_geometry_package,
     handle_platform_multipoint,
     handle_buoy_semantics,  # NEW
+    handle_vessel_list_points,
+    handle_facility_list_points,
     handle_structured_sections,
     handle_circle,
     handle_bounding_box,
