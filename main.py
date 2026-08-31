@@ -302,6 +302,20 @@ def normalize_area_vertices(points):
     return points
 
 
+def area_vertices_for_xml(points):
+    """
+    Return one copy of each boundary vertex for UserChart XML.
+
+    The internal object model keeps a repeated first vertex so geometry
+    validation and reports can reason about a closed ring. Furuno ECDIS,
+    however, closes an Area itself; serializing the repeated vertex can make
+    some imports treat the first boundary point as a duplicate and drop it.
+    """
+    if len(points) >= 2 and points[0] == points[-1]:
+        return points[:-1]
+    return points
+
+
 def extract_sublabels(block):
     markers = list(
         re.finditer(r"(?:^|\n)\s*(?:\(([A-Z]{1,4})\)|([A-Z]{1,4})\.)\s*", block)
@@ -3744,7 +3758,9 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
             name, desc = get_attrs("area", area)
             area_elem = ET.SubElement(areas_elem, "area", name=name, description=desc)
             pos = ET.SubElement(area_elem, "position")
-            for idx, (lat, lon) in enumerate(area["coords"], start=1):
+            for idx, (lat, lon) in enumerate(
+                area_vertices_for_xml(area["coords"]), start=1
+            ):
                 ET.SubElement(
                     pos,
                     "vertex",
@@ -3883,7 +3899,9 @@ def export_furuno_modern(nav_id, container):
                 f'description="{xml_attr(sanitize_ecdis_description(area["description"]))}">'
             )
             xml.append("<position>")
-            for idx, (lat, lon) in enumerate(area["coords"], start=1):
+            for idx, (lat, lon) in enumerate(
+                area_vertices_for_xml(area["coords"]), start=1
+            ):
                 xml.append(
                     f'<vertex id="{idx}" latitude="{lat:.6f}" longitude="{lon:.6f}"/>'
                 )
