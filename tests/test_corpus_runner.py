@@ -277,6 +277,10 @@ AREA BOUNDED BY 10-00.0N 020-00.0E, 10-00.0N 021-00.0E,
         )
         self.assertIn("Release validation: PASS", result.stdout)
 
+    @unittest.skipUnless(
+        os.name == "posix",
+        "bash release-validation command is covered on POSIX runners",
+    )
     def test_release_validation_command_starts_and_passes(self):
         with tempfile.TemporaryDirectory() as directory:
             environment = os.environ.copy()
