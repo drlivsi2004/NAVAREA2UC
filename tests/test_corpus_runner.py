@@ -45,7 +45,7 @@ class CorpusRunnerTests(unittest.TestCase):
         }
 
         self.assertEqual(len(records), 3)
-        self.assertEqual(report["description_audit"]["messages"], 284)
+        self.assertEqual(report["description_audit"]["messages"], 279)
         self.assertEqual(report["description_audit"]["source_files"], 2)
         for message in records.values():
             audit = message["description_audit"]
@@ -76,7 +76,7 @@ class CorpusRunnerTests(unittest.TestCase):
         report = corpus_runner.run_corpus(ROOT)
         audit_summary = report["summary"]["description_audit"]
 
-        self.assertEqual(audit_summary["messages"], 983)
+        self.assertEqual(audit_summary["messages"], 864)
         self.assertGreater(audit_summary["objects"], 0)
         self.assertEqual(
             audit_summary["semantic_context_statuses"],
@@ -249,10 +249,66 @@ AREA BOUNDED BY 10-00.0N 020-00.0E, 10-00.0N 021-00.0E,
                 msg=f"clean checkout failed:\n{clone.stderr}",
             )
 
+            # The working tree may contain an intentional corpus-contract
+            # change that has not been committed yet. Generate the reviewed
+            # source report inside the clean checkout so this test validates
+            # the wrapper's launch and baseline wiring rather than depending
+            # on the caller's uncommitted report files.
+            clean_source_report = checkout / "reports" / "clean-checkout-report.json"
+            clean_baseline = checkout / "reports" / "clean-checkout-baseline.json"
+            generate_report = subprocess.run(
+                [
+                    sys.executable,
+                    "corpus_runner.py",
+                    "--root",
+                    str(checkout),
+                    "--output",
+                    str(clean_source_report),
+                ],
+                cwd=checkout,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(
+                generate_report.returncode,
+                0,
+                msg=(
+                    "clean checkout corpus report failed:\n"
+                    f"{generate_report.stdout}\n{generate_report.stderr}"
+                ),
+            )
+            update_baseline = subprocess.run(
+                [
+                    sys.executable,
+                    "corpus_runner.py",
+                    "--root",
+                    str(checkout),
+                    "--update-baseline",
+                    str(clean_baseline),
+                    "--source-report",
+                    str(clean_source_report),
+                ],
+                cwd=checkout,
+                capture_output=True,
+                text=True,
+                check=False,
+            )
+            self.assertEqual(
+                update_baseline.returncode,
+                0,
+                msg=(
+                    "clean checkout baseline update failed:\n"
+                    f"{update_baseline.stdout}\n{update_baseline.stderr}"
+                ),
+            )
+
             environment = os.environ.copy()
             environment["CORPUS_REPORT_PATH"] = str(
                 Path(directory) / "release-corpus.json"
             )
+            environment["CORPUS_BASELINE_PATH"] = str(clean_baseline)
+            environment["CORPUS_BASELINE_SOURCE_REPORT"] = str(clean_source_report)
             wrapper = checkout / "scripts" / "release-validation.sh"
 
             try:

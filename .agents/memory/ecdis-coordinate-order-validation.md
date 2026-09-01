@@ -15,7 +15,13 @@ For multi-vertex NAVAREA objects, matching the coordinate order printed in the s
 
 **Why:** The V 502 Line can pass coordinate-count and source-order assertions while still representing broken route geometry. The paired IV 789 message provides comparative evidence for a candidate traversal order, not permission to auto-reorder V 502 or any future case without authoritative confirmation.
 
-**How to apply:** Keep V 502 open for authoritative/physical confirmation, but do not block its output. The centralized geometry policy detects crossings, repeats, long-leg signals, and track connectivity for any multi-vertex Line. It may emit a validated single-track candidate order, splits clearly independent tracks, and otherwise preserves raw geometry with reference-point fallback; every decision carries provenance.
+**How to apply:** Before physical confirmation, keep V 502 open for authoritative review but do not block its output. The centralized geometry policy detects crossings, repeats, long-leg signals, and track connectivity for any multi-vertex Line. It may emit a validated single-track candidate order, splits clearly independent tracks, and otherwise preserves raw geometry with reference-point fallback; every decision carries provenance.
+
+Physical Furuno verification confirmed that NAVAREA V 502/26 displays the correct traversal geometry.
+
+**Why:** This closes the previously unresolved distinction between a source coordinate list that is complete and a line that is operationally correct on the target ECDIS.
+
+**How to apply:** Treat V 502/26 as a physically confirmed regression case, while continuing to require separate authoritative or physical evidence for future ambiguous multi-vertex Lines.
 
 Successful geometry repair is a confirmed geometry outcome, not an invalid-area rejection. Report classifiers must use the explicit rejection flag or a non-repair geometry diagnostic for rejection, while preserving the repair diagnostic as positive provenance.
 

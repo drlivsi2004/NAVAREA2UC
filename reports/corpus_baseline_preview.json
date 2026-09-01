@@ -1,9 +1,9 @@
 {
-  "current_messages": 983,
-  "current_report_sha256": "4b18152e45b6e66be39399be97d447a8bc3d5f0e3b3cccaa78b1f30cc0f924e0",
+  "current_messages": 864,
+  "current_report_sha256": "603d2d5dc38a65cf483b56f617795f185a5cd6301206f264279f284034894d0c",
   "proposed_baseline": {
-    "baseline_messages": 983,
-    "report_sha256": "4b18152e45b6e66be39399be97d447a8bc3d5f0e3b3cccaa78b1f30cc0f924e0",
+    "baseline_messages": 864,
+    "report_sha256": "603d2d5dc38a65cf483b56f617795f185a5cd6301206f264279f284034894d0c",
     "reviewed_component_losses": [],
     "source_report": "corpus_differential_latest.json"
   },
@@ -11,6 +11,6 @@
     "reviewed_component_losses": []
   },
   "reviewed_report_matches_current": true,
-  "reviewed_report_messages": 983,
-  "reviewed_report_sha256": "4b18152e45b6e66be39399be97d447a8bc3d5f0e3b3cccaa78b1f30cc0f924e0"
+  "reviewed_report_messages": 864,
+  "reviewed_report_sha256": "603d2d5dc38a65cf483b56f617795f185a5cd6301206f264279f284034894d0c"
 }

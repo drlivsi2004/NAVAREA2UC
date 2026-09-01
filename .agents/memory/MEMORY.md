@@ -7,6 +7,7 @@
 - [Radius-only warnings](radius-warning-semantics.md) — radius language without an explicit center qualifies an existing warning, not an inferred Circle.
 - [Canvas preview port reuse](canvas-preview-port-reuse.md) — a stale Vite preview can answer successfully while a duplicate workflow launch reports the port as busy.
 - [GitHub CI workspace synchronization](github-ci-workspace-sync.md) — a successful remote run may validate an older workflow when local release commits are not on the dispatched ref.
+- [Windows smoke JSON capture](github-actions-powershell-smoke.md) — capture Python JSON before PowerShell parsing and write it as explicit UTF-8 to keep failures diagnosable.
 - [Release baseline checkout](release-baseline-checkout.md) — commit reviewed corpus fingerprints before clean-checkout validation, which ignores uncommitted workspace reports.
 - [GitHub binary transfer](github-binary-transfer.md) — upload binary artifacts from direct file bytes; shell-captured base64 can truncate and corrupt the payload.
 - [NAVAREA header boundaries](navarea-header-boundaries.md) — normalize descriptive headers, but keep cancellation references out of message and section boundaries.

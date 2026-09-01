@@ -205,8 +205,8 @@ class Rc1SuperbossControls(unittest.TestCase):
         for modern_description, legacy_description in zip(
             modern_descriptions, legacy_descriptions
         ):
-            self.assertGreater(len(modern_description), 999)
-            self.assertEqual(legacy_description, modern_description[:999])
+            self.assertLessEqual(len(modern_description), main.LEGACY_MAX_DESC)
+            self.assertEqual(legacy_description, modern_description)
 
     def test_v_470_preserves_area_radius_warning_without_inferred_circle(self):
         message = main.create_message("NAVAREA V 470/26")
@@ -341,17 +341,17 @@ class Rc1SuperbossControls(unittest.TestCase):
         partitioned = self.run_partitioned_source_case(
             "NAVAREA IX - PAKISTAN.txt", navarea_name
         )
-        _, metadata, message, container = next(
-            item for item in partitioned if item[1].get("partition_id") == "3"
-        )
+        self.assertEqual(len(partitioned), 1)
+        _, metadata, message, container = partitioned[0]
+        self.assertEqual(metadata["partition_type"], "NONE")
 
         self.assert_counts(
             message,
-            {"areas": 0, "lines": 0, "circles": 0, "labels": 1},
+            {"areas": 0, "lines": 0, "circles": 0, "labels": 2},
         )
         self.assert_stage_match(message, "handle_buoy_semantics")
 
-        label = message["labels"][0]
+        label = message["labels"][1]
         self.assertEqual(label["coord"], (24.578, 67.067833))
         self.assertEqual(label["style"], 4)
         self.assertEqual(label["color"], "CHYLW")
@@ -368,8 +368,12 @@ class Rc1SuperbossControls(unittest.TestCase):
             self.assertIsNone(root.find("./lines"))
             self.assertIsNone(root.find("./circles"))
             labels = root.findall("./labels/label")
-            self.assertEqual(len(labels), 1)
-            xml_label = labels[0]
+            self.assertEqual(len(labels), 2)
+            xml_label = next(
+                item
+                for item in labels
+                if item.find("./position/vertex").attrib["latitude"] == "24.578000"
+            )
             vertex = xml_label.find("./position/vertex")
             self.assertEqual(vertex.attrib["latitude"], "24.578000")
             self.assertEqual(vertex.attrib["longitude"], "67.067833")
@@ -380,6 +384,153 @@ class Rc1SuperbossControls(unittest.TestCase):
         modern_label = modern_root.find("./labels/label")
         self.assertEqual(modern_label.find("./attribute").attrib["labelStyle"], "4")
         self.assertEqual(modern_label.find("./display").attrib["S52colorcode"], "CHYLW")
+
+    def test_ix_58_emits_three_independent_safety_zone_circles(self):
+        message, container = self.run_source_case(
+            "NAVAREA IX - PAKISTAN.txt", "IX 58/2023"
+        )
+
+        self.assertFalse(message["areas"])
+        self.assertFalse(message["lines"])
+        self.assertEqual(len(message["circles"]), 3)
+        self.assertFalse(message["labels"])
+        self.assertTrue(
+            all(circle["color"] == "NINFO" for circle in message["circles"])
+        )
+        self.assertTrue(
+            all(circle["checkDanger"] == 0 for circle in message["circles"])
+        )
+        self.assertTrue(
+            all(abs(circle["range"] - (1500 / 1852)) < 1e-12
+                for circle in message["circles"])
+        )
+        self.assertEqual(
+            [circle["coord"] for circle in message["circles"]],
+            [
+                (26.5916, 52.0331),
+                (26.6468, 51.8916),
+                (26.672917, 51.898267),
+            ],
+        )
+        self.assert_stage_match(message, "handle_circle")
+
+        for xml in (
+            main.export_furuno_modern("IX", container),
+            main.generate_legacy_xml_from_messages("IX", [message], 1, 1),
+        ):
+            root = ET.fromstring(xml)
+            circles = root.findall("./circles/circle")
+            self.assertEqual(len(circles), 3)
+            self.assertIsNone(root.find("./lines"))
+            self.assertEqual(
+                [
+                    (
+                        float(circle.find("./position/vertex").attrib["latitude"]),
+                        float(circle.find("./position/vertex").attrib["longitude"]),
+                    )
+                    for circle in circles
+                ],
+                [
+                    (26.5916, 52.0331),
+                    (26.6468, 51.8916),
+                    (26.672917, 51.898267),
+                ],
+            )
+            self.assertTrue(
+                all(
+                    abs(
+                        float(circle.find("./attribute").attrib["range"])
+                        - (1500 / 1852)
+                    )
+                    < 1e-6
+                    for circle in circles
+                )
+            )
+
+    def test_ix_7_emits_pipeline_line_and_two_endpoint_yellow_buoys(self):
+        message, container = self.run_source_case(
+            "NAVAREA IX - PAKISTAN.txt", "IX 7/2026"
+        )
+
+        self.assertFalse(message["areas"])
+        self.assertFalse(message["circles"])
+        self.assertEqual(len(message["lines"]), 1)
+        self.assertEqual(
+            message["lines"][0]["coords"],
+            [
+                (24.206, 52.636),
+                (24.197833, 52.631),
+            ],
+        )
+        self.assertEqual(len(message["labels"]), 2)
+        self.assertEqual(
+            [label["coord"] for label in message["labels"]],
+            [
+                (24.206, 52.636),
+                (24.197833, 52.631),
+            ],
+        )
+        self.assertTrue(all(label["style"] == 4 for label in message["labels"]))
+        self.assertTrue(
+            all(label["color"] == "CHYLW" for label in message["labels"])
+        )
+        self.assertTrue(
+            all(label["checkDanger"] == 0 for label in message["labels"])
+        )
+        self.assert_stage_match(message, "handle_line_with_endpoint_objects")
+
+        for xml in (
+            main.export_furuno_modern("IX", container),
+            main.generate_legacy_xml_from_messages("IX", [message], 1, 1),
+        ):
+            root = ET.fromstring(xml)
+            self.assertEqual(len(root.findall("./lines/line")), 1)
+            self.assertEqual(len(root.findall("./labels/label")), 2)
+            self.assertIsNone(root.find("./circles"))
+            self.assertIsNone(root.find("./areas"))
+
+    def test_composite_line_with_tower_endpoints_is_not_buoy_specific(self):
+        block = (
+            "1. DISPOSAL PIPELINE IS MARKED BY TWO TOWERS IN POSITIONS:\n"
+            "(A) 24-12.36N 052-38.16E\n"
+            "(B) 24-11.87N 052-37.86E"
+        )
+        message = main.create_message("TEST")
+        container = main.create_container("IX")
+        main.process_block(block, message, container, "TEST", label_text="TEST")
+
+        self.assertEqual(len(message["lines"]), 1)
+        self.assertEqual(len(message["labels"]), 2)
+        self.assertFalse(message["areas"])
+        self.assertFalse(message["circles"])
+        self.assertEqual(
+            [label["coord"] for label in message["labels"]],
+            [
+                (24.206, 52.636),
+                (24.197833, 52.631),
+            ],
+        )
+        self.assert_stage_match(message, "handle_line_with_endpoint_objects")
+
+    def test_viii_895_maps_undivided_survey_vicinity_to_area(self):
+        message, _ = self.run_source_case(
+            "NAVAREA VIII - INDIA.txt", "VIII 895/26"
+        )
+
+        expected = [
+            (22.414167, 67.511),
+            (22.366667, 68.066667),
+            (21.898333, 68.1125),
+            (21.621, 68.175833),
+        ]
+        self.assertEqual(len(message["areas"]), 1)
+        self.assertFalse(message["lines"])
+        self.assertFalse(message["circles"])
+        self.assertFalse(message["labels"])
+        self.assertEqual(message["areas"][0]["coords"], expected + [expected[0]])
+        self.assertEqual(message["areas"][0]["color"], "NINFO")
+        self.assertEqual(message["areas"][0]["checkDanger"], 0)
+        self.assert_stage_match(message, "handle_implicit_operational_area")
 
     def test_bouy_variants_keep_buoy_semantics_without_source_normalization(self):
         variants = (
@@ -871,6 +1022,31 @@ class Rc1SuperbossControls(unittest.TestCase):
             self.assertEqual(vertices, expected)
             self.assertEqual(len(vertices), len(set(vertices)))
 
+    def test_viii_729_depth_reports_are_independent_points(self):
+        message, _ = self.run_source_case(
+            "NAVAREA VIII - INDIA.txt", "VIII 729/26"
+        )
+
+        self.assertFalse(message["areas"])
+        self.assertFalse(message["lines"])
+        self.assertFalse(message["circles"])
+        self.assertEqual(len(message["labels"]), 2)
+        self.assertTrue(all(label["style"] == 2 for label in message["labels"]))
+        self.assertTrue(
+            all(label["color"] == "NINFO" for label in message["labels"])
+        )
+        self.assertTrue(
+            all(label["checkDanger"] == 0 for label in message["labels"])
+        )
+        self.assertEqual(
+            [label["coord"] for label in message["labels"]],
+            [
+                (18.295333, 72.919667),
+                (18.296167, 72.932),
+            ],
+        )
+        self.assert_stage_match(message, "handle_multipoint")
+
     def test_i_181_explicit_miles_circle_and_ecdis_description(self):
         source = "tests/fixtures/navarea_i_uk_181_26.txt"
         block = load_case_block(source, "NAVAREA I 181/26")
@@ -912,7 +1088,7 @@ class Rc1SuperbossControls(unittest.TestCase):
 
         self.assertEqual(len(circle_messages), 1)
         _, metadata, message, container = circle_messages[0]
-        self.assertEqual(metadata["partition_type"], "SECTION_NUMBER")
+        self.assertEqual(metadata["partition_type"], "NONE")
         self.assertEqual(len(message["circles"]), 1)
 
         xml = main.export_furuno_modern("I", container)
@@ -1002,9 +1178,11 @@ CANCEL THIS WARNING 010000 UTC SEP 26."""
         descriptions = [label["description"].upper() for label in message["labels"]]
         for group_name in ("AREA ALFA", "AREA BRAVO", "AREA CHARLIE"):
             self.assertTrue(any(group_name in description for description in descriptions))
+        self.assertTrue(all(label["color"] == "RESBL" for label in message["labels"]))
+        self.assertTrue(all(label["checkDanger"] == 0 for label in message["labels"]))
         self.assertNotIn("GEOMETRY_SELF_INTERSECTION", diagnostic_codes(message))
 
-    def test_partition_parent_context_is_shared_and_legacy_is_truncated(self):
+    def test_partition_parent_context_is_shared_without_legacy_truncation(self):
         block = load_case_block(
             "NAVAREA IX - PAKISTAN.txt", "NAVAREA IX 208/2026"
         )
@@ -1034,9 +1212,10 @@ CANCEL THIS WARNING 010000 UTC SEP 26."""
         legacy_description = legacy_root.find("./lines/line").attrib["description"]
         self.assertIn("PERSIAN GULF", modern_description)
         self.assertIn("PERSIAN GULF", legacy_description)
+        self.assertLessEqual(len(modern_description), main.LEGACY_MAX_DESC)
         self.assertEqual(
             legacy_description,
-            modern_description[: main.LEGACY_MAX_DESC],
+            modern_description,
         )
 
     def test_closed_operational_area_is_not_rejected_as_self_intersecting(self):
@@ -1065,12 +1244,8 @@ CANCEL THIS WARNING 010000 UTC SEP 26."""
             "tests/fixtures/legacy_regression_cases.txt", navarea_name
         )
         parts = main.partition_navarea_block(block, navarea_name)
-        section = next(
-            sub_block
-            for sub_block, meta in parts
-            if meta["partition_type"] == "SECTION_NUMBER"
-            and meta["partition_id"] == "1"
-        )
+        section, section_metadata = parts[0]
+        self.assertEqual(section_metadata["partition_type"], "NONE")
         message = main.create_message(f"{navarea_name} [Section 1]")
         container = main.create_container("VIII")
 
@@ -1080,7 +1255,7 @@ CANCEL THIS WARNING 010000 UTC SEP 26."""
             container,
             "VIII 809/26",
             label_text=main.build_navarea_label(navarea_name),
-            meta={"partition_type": "SECTION_NUMBER", "partition_id": "1"},
+            meta=section_metadata,
         )
 
         self.assertEqual(len(message["areas"]), 1)
@@ -1094,10 +1269,8 @@ CANCEL THIS WARNING 010000 UTC SEP 26."""
         )
         parts = main.partition_navarea_block(block, navarea_name)
 
-        self.assertEqual(
-            [meta["partition_id"] for _, meta in parts],
-            ["2", "3", "4"],
-        )
+        self.assertEqual(len(parts), 1)
+        self.assertEqual(parts[0][1]["partition_type"], "NONE")
 
         messages = []
         container = main.create_container("IX")
@@ -1117,14 +1290,14 @@ CANCEL THIS WARNING 010000 UTC SEP 26."""
             messages.append(message)
 
         point_messages = [message for message in messages if message["labels"]]
-        self.assertEqual(len(point_messages), 2)
+        self.assertEqual(len(point_messages), 1)
 
         danger_label = messages[0]["labels"][0]
         self.assertEqual(danger_label["style"], 4)
         self.assertEqual(danger_label["color"], "CHRED")
         self.assertEqual(danger_label["coord"], (27.11, 56.099333))
 
-        cardinal_label = messages[1]["labels"][0]
+        cardinal_label = messages[0]["labels"][1]
         self.assertEqual(cardinal_label["style"], 4)
         self.assertEqual(cardinal_label["color"], "CHYLW")
         self.assertEqual(cardinal_label["coord"], (27.114333, 56.107667))

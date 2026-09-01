@@ -91,6 +91,36 @@ class RiglistPairingTests(unittest.TestCase):
             self.assertNotIn("CANCEL", label["description"].upper())
             self.assertNotIn("TO REPORT", label["description"].upper())
 
+    def test_riglist_description_keeps_shared_preamble_per_entry(self):
+        raw = navarea_block(
+            ROOT / "tests/fixtures/legacy_regression_cases.txt",
+            "NAVAREA I 169/26",
+        )
+        normalized = main.normalize_input(raw, main.NormalizerStats())
+        parts = main.partition_navarea_block(normalized, "NAVAREA I 169/26")
+        entry, metadata = parts[0]
+        message = main.create_message(
+            "NAVAREA I 169/26 [RIG 1]", metadata=metadata
+        )
+        container = main.create_container("I")
+
+        main.process_block(
+            entry,
+            message,
+            container,
+            "NAVAREA I 169/26",
+            "NAV I 169/26",
+            metadata,
+        )
+
+        description = message["labels"][0]["description"].upper()
+        self.assertIn("RIGLIST", description)
+        self.assertIn("CORRECT AT 100430 UTC AUG 2026", description)
+        self.assertIn("VALARIS 123 ACP P18-A", description)
+        self.assertNotIn("SHELF DRILLING WINNER", description)
+        self.assertNotIn("NOTES", description)
+        self.assertNotIn("CANCEL", description)
+
 
 if __name__ == "__main__":
     unittest.main()

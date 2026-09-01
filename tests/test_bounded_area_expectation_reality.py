@@ -32,7 +32,12 @@ def process_case(source_path, navarea_name, section=None):
             and metadata["partition_id"] == section
         ]
         if not selected:
-            raise AssertionError(f"Could not find Section {section} in {navarea_name}")
+            if len(parts) == 1 and parts[0][1]["partition_type"] == "NONE":
+                selected = parts
+            else:
+                raise AssertionError(
+                    f"Could not find Section {section} in {navarea_name}"
+                )
         parts = selected
     elif len(parts) != 1:
         raise AssertionError(

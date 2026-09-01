@@ -74,6 +74,22 @@ update into a route-like operation.
 vocabulary, preserve source endpoint order, and keep line geometry restricted
 to explicit trackline/route evidence.
 
+Some notices are genuine composite packages: an explicit linear object
+(pipeline, cable, trackline, or route) can be marked by separate endpoint
+objects such as buoys, beacons, towers, lights, platforms, or other AtoN.
+Repeated endpoint coordinates in the Line and point Labels are intentional
+because they represent distinct semantic objects.
+
+**Why:** `NAVAREA IX 7/2026` describes a disposal pipeline together with two
+yellow mark buoys at its A/B endpoints. Treating the whole package as one Line
+lost one buoy and misclassified the other as a generic line label.
+
+**How to apply:** Detect the explicit line evidence and the endpoint-object
+positions independently, emit one Line plus one Label per marked endpoint, and
+derive each endpoint's style/color/Danger from its object class. Do not let a
+single handler's `return True` suppress valid components in the same source
+section.
+
 `NAVAREA V 515/26` (underwater operations / divers working) is not classified
 as offshore-activity blue semantics or as a towing case; it remains a normal
 informational Point/Label. Its blue appearance in the physical ECDIS screenshot
@@ -86,6 +102,12 @@ operations notice.
 **How to apply:** Keep the default informational color and single-point
 handling for V 515/26 unless the source later provides an explicit semantic
 classification that changes this decision.
+
+Physical Run #96 testing reports that `NAVAREA V 449/26` loses its offshore-operation semantics and appears Orange on Furuno instead of the intended offshore presentation.
+
+**Why:** This is a runtime semantic/color loss, not a geometry failure; the manual blue reference for V 449/26 cannot substitute for generated-output evidence.
+
+**How to apply:** Keep V 449/26 open as a separate offshore semantic regression case. Reproduce the generated object from the Run #96 source/XML, restore only the approved offshore classification, and retest color, Danger, and Description without generalizing the rule to V 515/26.
 
 An `UNLIT` light notice remains an informational Orange/NINFO Point unless the
 source also provides a separate danger signal such as Wreck, ADRIFT, AGROUND,
@@ -121,6 +143,33 @@ content, not permission to alter Legacy serialization or ordering.
 **How to apply:** Preserve Legacy's format, object logic, and export order.
 Change only the shared description source, then validate the Legacy 999
 character limit separately from geometry fidelity.
+
+The approved code-side mapping for preparatory offshore anchorage deployment
+notices is `RESBL` with `checkDanger=0`, using the narrow
+`LAUNCH OF` + `ANCHORAGE LINES` wording pattern. This must not become a
+generic offshore rule.
+
+**Why:** `V 449/26` was physically observed as Orange despite the intended
+offshore presentation, while `V 515/26` is a separate informational point
+case and must remain `NINFO`.
+
+**How to apply:** Assert the mapping for `V 449/26` in XML-side tests and
+assert the unchanged `NINFO`/non-danger result for `V 515/26`; reserve Furuno
+testing for one final batch EXE.
+
+Channel wording is location context, not line geometry. A notice reporting
+lesser/reduced depths at multiple positions should emit independent
+informational points unless it contains explicit line evidence such as
+`TRACKLINE`, `JOINING`, `ROUTE`, `PIPELINE`, `CABLE`, or `CHANNEL WIDTH`.
+
+**Why:** `VIII 729/26` said that depths below about 6.2 m were reported in a
+channel at two positions; the generic word `CHANNEL` had incorrectly promoted
+it to a connecting Line.
+
+**How to apply:** Keep line detection evidence-based and let depth-report
+patterns enter the multipoint path. Test both the resulting point count and a
+nearby genuine channel/route case so removing the context word cannot weaken
+real line handling.
 
 The field screenshot is identified as `NAV V 522/26`, not the current
 `NAV V 502/26` corpus case. Its source text has four repeated unlabelled
