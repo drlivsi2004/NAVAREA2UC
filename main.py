@@ -5,9 +5,10 @@ import glob
 import os
 import copy
 import math
+import time
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-from xml.sax.saxutils import escape
+from xml.sax.saxutils import escape, unescape
 
 
 APP_NAME = "NAVAREA2UC"
@@ -17,7 +18,7 @@ APP_AUTHOR = "dr_livsi2004"
 # -------------------- CONSTANTS --------------------
 LEGACY_MAX_OBJECTS = 150
 LEGACY_MAX_DESC = 999
-LEGACY_MAX_CIRCLE_RANGE = 100.0
+LEGACY_MAX_CIRCLE_RANGE = 50.0
 RISK_LOW_MAX = 500
 RISK_MEDIUM_MAX = 2000
 RISK_HIGH_MAX = 5000
@@ -25,7 +26,18 @@ MAX_VERTICES_PER_OBJECT = None
 MAX_VERTICES_PER_MESSAGE = None
 STYLE_SECURITY = 5
 
-DEBUG = True
+DEBUG_VALUES = {"1", "true", "yes", "on"}
+DEBUG = (
+    os.getenv("NAVAREA2UC_DEBUG", "").strip().lower() in DEBUG_VALUES
+    or "--debug" in sys.argv
+)
+
+NAVAREA_HEADER_RE = re.compile(
+    r"(?im)^[ \t]*(NAVAREA\s+[A-Z0-9]+\s+\d+/\d+)\b"
+)
+NAVAREA_BLOCK_BOUNDARY_RE = re.compile(
+    r"(?im)(?=^[ \t]*NAVAREA\s+[A-Z0-9]+\s+\d+/\d+\b)"
+)
 
 
 def debug(msg):
@@ -52,6 +64,15 @@ def dm_to_decimal(deg, minutes, hemi):
 
 
 def extract_coordinates(text):
+    # NAVAREA sources may separate a latitude/longitude pair with "/".
+    # Normalize only the coordinate boundary so other slash-delimited text
+    # remains untouched.
+    text = re.sub(
+        r"([NS])\s*/\s*(?=\d{1,3}[- ]+[\d.]+\s*[EW])",
+        r"\1 ",
+        text,
+        flags=re.IGNORECASE,
+    )
     # Replace commas with dots in coordinate numbers (e.g. 46-02,80N -> 46-02.80N)
     text = re.sub(
         r"(\d)-([\d,]+)\s*([NS])",
@@ -67,7 +88,7 @@ def extract_coordinates(text):
     )
 
     patterns = [
-        r"(\d{1,3})[- ]+([\d.]+)\s*([NS])[\s,]+(\d{1,3})[- ]+([\d.]+)\s*([EW])",
+        r"(\d{1,3})[-\s]+([\d.]+)\s*([NS])[\s,]+(\d{1,3})[-\s]+([\d.]+)\s*([EW])",
         r"(\d{1,3})-([\d.]+)([NS])\s*,\s*(\d{1,3})-([\d.]+)([EW])",
         r"(\d{1,3})-([\d.]+)([NS])(\d{1,3})-([\d.]+)([EW])",
     ]
@@ -81,7 +102,7 @@ def extract_coordinates(text):
             coords.append((lat, lon))
 
     # Existing fallback for simple DM
-    fallback = r"([+-]?\d+)-([\d.]+)([NS])\s+([+-]?\d+)-([\d.]+)([EW])"
+    fallback = r"([+-]?\d+)[-\s]+([\d.]+)([NS])\s+([+-]?\d+)[-\s]+([\d.]+)([EW])"
     for m in re.finditer(fallback, text):
         lat = dm_to_decimal(m.group(1), m.group(2), m.group(3))
         lon = dm_to_decimal(m.group(4), m.group(5), m.group(6))
@@ -140,6 +161,95 @@ def extract_coordinates(text):
     return coords
 
 
+def extract_circle_spec(block):
+    """
+    Extract an explicit radius/center statement from a local text scope.
+
+    Supports common variants such as:
+      WITHIN 3 NM OF POSITION 26-16.17N/055-46.52E
+      WITHIN A 3 NM RADIUS OF POSITION 26-16.17N/055-46.52E
+    """
+    coord_pattern = (
+        r"(?P<coord>\d{1,3}[- ]+[\d.]+\s*[NS]\s*"
+        r"(?:/|,|\s)\s*\d{1,3}[- ]+[\d.]+\s*[EW])"
+    )
+    pattern = re.compile(
+        r"\bWITHIN\s+(?:A\s+)?"
+        r"(?P<radius>[0-9]+(?:\.[0-9]+)?)\s*"
+        r"(?P<unit>NM|MILES?|MI)\s+"
+        r"(?:RADIUS\s+)?OF\s+(?:POSITION\s+)?"
+        + coord_pattern,
+        flags=re.IGNORECASE,
+    )
+    match = pattern.search(block)
+    if not match:
+        pattern = re.compile(
+            r"\b(?:ARC\s+OF\s+)?RADIUS\s+"
+            r"(?P<radius>[0-9]+(?:\.[0-9]+)?)\s*"
+            r"(?P<unit>NM|MILES?|MI|METERS?|METRES?)\s+"
+            r"(?:RADIUS\s+)?CENTER(?:ED|RE)?\s+(?:AT|ON)\s+"
+            + coord_pattern,
+            flags=re.IGNORECASE,
+        )
+        match = pattern.search(block)
+    if not match:
+        return None
+
+    coords = extract_coordinates(match.group("coord"))
+    if len(coords) != 1:
+        return None
+
+    unit = match.group("unit").upper()
+    if unit == "MI":
+        unit = "MILE"
+    radius = float(match.group("radius"))
+    if unit in ("METER", "METERS", "METRE", "METRES"):
+        radius /= 1852.0
+    return {
+        "center": coords[0],
+        "radius": radius,
+        "unit": unit,
+    }
+
+
+def extract_explicit_route_waypoints(block):
+    """
+    Extract the waypoint list from the IX 208-style authorized-route clause.
+
+    This is intentionally narrow: it requires the explicit authorized-route
+    wording and scopes coordinates to the A./B./... waypoint list.
+    """
+    route_anchor = re.search(
+        r"\bROUTES?\s+THAT\s+HAVE\s+BEEN\s+AUTHORIZED\b"
+        r"[\s\S]*?\bAS\s+FOLLOWS\s*:?",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if not route_anchor:
+        return []
+
+    route_text = block[route_anchor.end() :]
+    route_text = re.split(r"(?m)^\s*\d+\.\s+", route_text, maxsplit=1)[0]
+    markers = list(
+        re.finditer(
+            r"(?im)^\s*(?:\(([A-F])\)|([A-F])\.?(?=\s+\d{1,3}[- ]+))\s*",
+            route_text,
+        )
+    )
+    if len(markers) < 2:
+        return []
+
+    waypoints = []
+    for index, marker in enumerate(markers):
+        end = markers[index + 1].start() if index + 1 < len(markers) else len(route_text)
+        segment = route_text[marker.end() : end]
+        coords = extract_coordinates(segment)
+        if len(coords) != 1:
+            return []
+        waypoints.append(coords[0])
+    return waypoints
+
+
 def deduplicate_consecutive(points):
     """
     Удаляет только соседние точные дубли.
@@ -189,6 +299,20 @@ def normalize_area_vertices(points):
     """
     points = deduplicate_consecutive(points)
     points = ensure_closed(points)
+    return points
+
+
+def area_vertices_for_xml(points):
+    """
+    Return one copy of each boundary vertex for UserChart XML.
+
+    The internal object model keeps a repeated first vertex so geometry
+    validation and reports can reason about a closed ring. Furuno ECDIS,
+    however, closes an Area itself; serializing the repeated vertex can make
+    some imports treat the first boundary point as a duplicate and drop it.
+    """
+    if len(points) >= 2 and points[0] == points[-1]:
+        return points[:-1]
     return points
 
 
@@ -248,6 +372,17 @@ def build_navarea_label(navarea_name):
     if not m:
         return navarea_name
     return f"NAV {m.group(1)} {m.group(2)}"
+
+
+def split_navarea_blocks(text):
+    """Split normalized text at actual message-header lines only.
+
+    Cancellation references can contain a valid-looking NAVAREA number, but
+    they are not new messages.  Requiring the header at the start of a line
+    prevents inline references from becoming separate blocks.
+    """
+
+    return NAVAREA_BLOCK_BOUNDARY_RE.split(text)
 
 
 def haversine_distance_nm(coord1, coord2):
@@ -371,6 +506,11 @@ def segments_intersect(p1, p2, p3, p4):
 
 
 def has_self_intersection(coords):
+    # Area rings are normally stored closed for XML export.  The repeated
+    # first vertex is a delimiter, not a second polygon vertex; remove it
+    # before comparing non-adjacent edges.
+    if len(coords) >= 2 and coords[0] == coords[-1]:
+        coords = coords[:-1]
     n = len(coords)
     if n < 4:
         return False
@@ -402,6 +542,7 @@ def detect_style(block):
             "WRECK",
             "SANK",
             "SUNK",
+            "AGROUND",
             "DERELICT",
             "OBSTRUCTION",
             "SUBMERGED WELLHEAD",
@@ -454,6 +595,7 @@ def detect_color(block):
             "WRECK",
             "SANK",
             "SUNK",
+            "AGROUND",
             "DERELICT",
             "DANGER",
             "PROHIBITED",
@@ -486,6 +628,9 @@ def detect_color(block):
             "MILITARY ACTIVITY",
             "DEFENCE OPERATION",
             "HAZARDOUS OPERATIONS",
+            "DRIFTING HAZARDS",
+            "ADRIFT",
+            "DRIFTING",
             "ROCKET LAUNCHING",
             "ICEBERG",
             "ICEBERGS",
@@ -500,8 +645,24 @@ def detect_color(block):
     return "NINFO"
 
 
+RECOMMENDED_ROUTE_RE = re.compile(r"\bRECOMMENDED\s+ROUTE\b", re.IGNORECASE)
+
+
+def get_line_presentation(block, *semantic_text, base_color=None):
+    """Return the confirmed Furuno presentation for a line semantic."""
+    text = " ".join(str(value or "") for value in semantic_text)
+    if RECOMMENDED_ROUTE_RE.search(text):
+        return {"color": "NINFO", "lineType": 1}
+    return {
+        "color": base_color if base_color is not None else detect_color(block),
+        "lineType": 2,
+    }
+
+
 def detect_check_danger(block):
     upper = block.upper()
+    if detect_security_incident(block):
+        return 1
     if any(
         x in upper
         for x in [
@@ -511,6 +672,9 @@ def detect_check_danger(block):
             "FIRING",
             "NAVAL OPERATIONS",
             "HAZARDOUS OPERATIONS",
+            "DRIFTING HAZARDS",
+            "ADRIFT",
+            "DRIFTING",
             "ROCKET LAUNCHING",
             "ICEBERG",
             "ICEBERGS",
@@ -520,6 +684,7 @@ def detect_check_danger(block):
             "WRECK",
             "SANK",
             "SUNK",
+            "AGROUND",
             "DERELICT",
             "DANGER",
             "PROHIBITED",
@@ -789,6 +954,75 @@ def parse_structured_sections(block):
 
 
 # -------------------- RIGLIST EXTRACTION --------------------
+RIGLIST_COORD_PATTERN = re.compile(
+    r"\d{1,3}\s*-\s*[\d.]+\s*[NS]\s+\d{1,3}\s*-\s*[\d.]+\s*[EW]",
+    re.I,
+)
+RIGLIST_ENTRY_MARKER_PATTERN = re.compile(
+    r"(?m)^\s*(?:\d+|[A-Z]{1,4})\.\s+"
+)
+
+
+def _riglist_body(block):
+    marker = re.search(
+        r"\b(?:RIGLIST|RIG\s+LIST|MODU\s+LIST|"
+        r"MOBILE\s+OFFSHORE\s+DRILLING\s+UNITS)\b",
+        block,
+        re.I,
+    )
+    if not marker:
+        return block
+
+    body = block[marker.end() :]
+    stop = re.search(
+        r"(?im)(?:^|\n)\s*(?:NOTES\b|DISCLAIMER\b|"
+        r"CANCEL\b|NNNN\b|-{10,})",
+        body,
+    )
+    if stop:
+        body = body[: stop.start()]
+
+    # Some source feeds place the next numbered warning section directly
+    # after the final rig entry, without a newline.  Keep the rig name but
+    # remove that following operational text from the entry body.
+    first_coord = RIGLIST_COORD_PATTERN.search(body)
+    if first_coord:
+        prefix = body[: first_coord.start()]
+        coordinate_body = body[first_coord.start() :]
+        coordinate_body = re.split(
+            r"(?i)\s+(?:\d+\.\s+)?(?:4NM\s+EXCLUSION\b|"
+            r"UNTIL\s+FURTHER\b|CANCEL\s+NAVAREA\b|"
+            r"VESSELS\s+TO\s+KEEP\b|TO\s+REPORT\s+A\s+MOBILE\s+"
+            r"OFFSHORE\s+DRILLING\s+UNIT\b)",
+            coordinate_body,
+            maxsplit=1,
+        )[0]
+        body = prefix + coordinate_body
+    return body
+
+
+def _trim_riglist_entry(entry):
+    entry = entry.strip()
+    entry = re.sub(r"^\s*(?:\d+|[A-Z]{1,4})\.\s+", "", entry)
+
+    # Coordinate-first lists can contain a geographic section heading
+    # between the rig name and the next coordinate.
+    entry = re.split(
+        r"(?im)\n\s*(?=[A-Z][A-Z ]{2,}:)",
+        entry,
+        maxsplit=1,
+    )[0]
+    entry = re.split(
+        r"(?i)\s+(?:\d+\.\s+)?(?:4NM\s+EXCLUSION\b|"
+        r"UNTIL\s+FURTHER\b|CANCEL\s+NAVAREA\b|"
+        r"VESSELS\s+TO\s+KEEP\b|TO\s+REPORT\s+A\s+MOBILE\s+"
+        r"OFFSHORE\s+DRILLING\s+UNIT\b|NOTES\b|DISCLAIMER\b|NNNN\b)",
+        entry,
+        maxsplit=1,
+    )[0]
+    return entry.strip()
+
+
 def extract_riglist_entries(block):
     upper = block.upper()
     if not any(
@@ -797,63 +1031,45 @@ def extract_riglist_entries(block):
     ):
         return None
 
-    entries = re.split(r"\n\s*\d+.\s+", block)
+    body = _riglist_body(block)
 
-    entries = [
-        e.strip()
-        for e in entries
-        if e.strip()
-        and re.search(
-            r"\d{1,3}\s*-\s*\d+(?:.\d+)?\s*[NS]\s+\d{1,3}\s*-\s*\d+(?:.\d+)?\s*[EW]",
-            e,
-            re.I,
-        )
+    # Prefer explicit entry markers.  This path handles both the normalized
+    # numbered form and raw A./B./... lists, while preserving the text
+    # between a coordinate and the next coordinate.
+    marked_entries = [
+        _trim_riglist_entry(entry)
+        for entry in RIGLIST_ENTRY_MARKER_PATTERN.split(body)
+        if entry.strip()
     ]
-
-    entry_coord_pattern = re.compile(
-        r"\d{1,3}\s*-\s*[\d.]+\s*[NS]\s+\d{1,3}\s*-\s*[\d.]+\s*[EW]",
-        re.I,
-    )
-    has_spaced_coordinates = re.search(
-        r"\d{1,3}\s+-\s+[\d.]+\s+[NS]", block, re.I
-    )
-    if len(entries) > 10 and (
-        not has_spaced_coordinates
-        or sum(len(entry_coord_pattern.findall(entry)) for entry in entries)
-        == len(entries)
+    marked_entries = [
+        entry
+        for entry in marked_entries
+        if len(RIGLIST_COORD_PATTERN.findall(entry)) == 1
+    ]
+    if marked_entries and len(marked_entries) == len(
+        RIGLIST_COORD_PATTERN.findall(body)
     ):
-        return entries
+        return marked_entries
 
-    rig_block = re.sub(r"\s+", " ", block)
-    coord_pattern = entry_coord_pattern
-    matches = list(coord_pattern.finditer(rig_block))
+    # Coordinate-first lists (for example NAVAREA I and XIX) have no
+    # per-entry marker.  Keep newlines during segmentation so the next
+    # entry's number or name cannot be absorbed into the current name.
+    matches = list(RIGLIST_COORD_PATTERN.finditer(body))
     if not matches:
-        return [block.strip()]
+        return [body.strip()] if body.strip() else []
 
     entries = []
-    for i, m in enumerate(matches):
-        start = m.start()
-        next_start = matches[i + 1].start() if i + 1 < len(matches) else len(rig_block)
-        notes_pos = rig_block.find("NOTES:", m.end())
-        if notes_pos == -1:
-            end = next_start
-        else:
-            end = min(next_start, notes_pos)
-        if end < 0:
-            end = len(rig_block)
-        entry = rig_block[start:end].strip()
-        if entry:
+    for i, match in enumerate(matches):
+        end = matches[i + 1].start() if i + 1 < len(matches) else len(body)
+        entry = _trim_riglist_entry(body[match.start() : end])
+        if entry and len(RIGLIST_COORD_PATTERN.findall(entry)) == 1:
             entries.append(entry)
 
     return entries
 
 
 def process_riglist_entry(entry_text, label_text, container, message):
-    coord_pattern = re.compile(
-        r"\d{1,3}\s*-\s*[\d.]+\s*[NS]\s+\d{1,3}\s*-\s*[\d.]+\s*[EW]",
-        re.I,
-    )
-    matches = list(coord_pattern.finditer(entry_text))
+    matches = list(RIGLIST_COORD_PATTERN.finditer(entry_text))
     if not matches:
         return
     m = matches[0]
@@ -869,6 +1085,7 @@ def process_riglist_entry(entry_text, label_text, container, message):
         rig_name = after
     if not rig_name:
         rig_name = "RIG"
+    rig_name = re.sub(r"^[\s\-–—]+", "", rig_name).strip()
 
     obj = {
         "style": 5,
@@ -1098,13 +1315,14 @@ def create_area(name, description, coords, color, check_danger):
     }
 
 
-def create_line(name, description, coords, color, check_danger):
+def create_line(name, description, coords, color, check_danger, line_type=2):
     return {
         "name": name,
         "description": description,
         "coords": coords,
         "color": color,
         "checkDanger": check_danger,
+        "lineType": line_type,
     }
 
 
@@ -1132,8 +1350,34 @@ def create_label(style, color, check_danger, text, description, coord):
 
 # -------------------- OBJECT INSERTION HELPERS --------------------
 def add_area(area_obj, container, message):
+    coords = normalize_area_vertices(area_obj.get("coords", []))
+    area_obj["coords"] = coords
+
+    validation_code = None
+    validation_coords = (
+        coords[:-1] if coords and coords[0] == coords[-1] else coords
+    )
+    if len(set(validation_coords)) < 3:
+        validation_code = "GEOMETRY_TOO_FEW_VERTICES"
+    else:
+        if has_self_intersection(validation_coords):
+            validation_code = "GEOMETRY_SELF_INTERSECTION"
+
+    if validation_code:
+        diagnostics = message.setdefault("diagnostics", [])
+        diagnostics.append(
+            {
+                "code": validation_code,
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+            }
+        )
+        message["geometry_rejected"] = True
+        return False
+
     container["areas"].append(area_obj)
     message["areas"].append(area_obj.copy())
+    return True
 
 
 def add_line(line_obj, container, message):
@@ -1161,6 +1405,11 @@ def build_partition_context(source_navarea, partition_type, partition_id, sub_bl
     }
 
 
+def _partition_parent_context(block, marker_start):
+    parent = re.sub(r"-{5,}", " ", block[:marker_start])
+    return re.sub(r"\s+", " ", parent).strip()
+
+
 def partition_riglist(block, navarea_name):
     upper = block.upper()
     if not any(
@@ -1173,8 +1422,9 @@ def partition_riglist(block, navarea_name):
     if not entries:
         return None
 
-    print(f"\nð NAVAREA {navarea_name} Partition Type: RIGLIST")
-    print(f"   Entries: {len(entries)}")
+    if DEBUG:
+        print(f"\nð NAVAREA {navarea_name} Partition Type: RIGLIST")
+        print(f"   Entries: {len(entries)}")
 
     parts = []
     for idx, entry in enumerate(entries, start=1):
@@ -1205,7 +1455,10 @@ def partition_navarea_block(block, navarea_name):
     )
     if len(route_markers) > 1:
         numbered_markers = list(
-            re.finditer(r"(?:^|\n)\s*(\d+(?:\.\d+)*)\.\s*", block)
+            re.finditer(
+                r"(?:^|\n)\s*(\d+(?:\.\d+)*)(?:\.-?|-)\s+",
+                block,
+            )
         )
         parts = []
         for i, marker in enumerate(route_markers):
@@ -1303,7 +1556,44 @@ def partition_navarea_block(block, navarea_name):
         )
 
     numbered_markers = list(
-        re.finditer(r"(?:^|\n)\s*(\d+(?:\.\d+)*)\.\s*", block)
+        re.finditer(
+            r"(?:^|\n)\s*(\d+(?:\.\d+)*)(?:\.-?|-)\s+",
+            block,
+        )
+    )
+
+    def marker_line(marker):
+        marker_line_start = marker.start()
+        if block[marker_line_start : marker_line_start + 1] == "\n":
+            marker_line_start += 1
+        line_start = block.rfind("\n", 0, marker_line_start) + 1
+        line_end = block.find("\n", marker_line_start)
+        if line_end == -1:
+            line_end = len(block)
+        return block[line_start:line_end]
+
+    def is_cancellation_section(marker, next_marker):
+        section_start = marker.start()
+        if block[section_start : section_start + 1] == "\n":
+            section_start += 1
+        section_end = next_marker.start() if next_marker else len(block)
+        section_text = block[section_start:section_end].lstrip()
+        section_text = re.sub(
+            r"^\d+(?:\.\d+)*(?:\.-?|-)?\s*",
+            "",
+            section_text,
+            count=1,
+        )
+        return bool(
+            re.match(
+                r"CANCEL(?:S|LED|LATION)?\b",
+                section_text,
+                re.IGNORECASE,
+            )
+        )
+
+    coordinate_fragment_re = re.compile(
+        r"\s*\d{1,3}\.\d+\s*[NSEW]\s*", re.IGNORECASE
     )
     numbered_markers = [
         marker
@@ -1338,21 +1628,42 @@ def partition_navarea_block(block, navarea_name):
                 else len(block)
             ]
         )
+        and not coordinate_fragment_re.fullmatch(marker_line(marker))
     ]
-    if len(numbered_markers) > 1:
+    # A cancellation notice may itself be numbered and can contain a
+    # NAVAREA-looking reference.  It is message metadata, not a child
+    # section; keeping it in the parent block avoids dropping the preceding
+    # geometry when the source has multiple cancellation items.
+    section_markers = [
+        marker
+        for index, marker in enumerate(numbered_markers)
+        if not is_cancellation_section(
+            marker,
+            numbered_markers[index + 1]
+            if index + 1 < len(numbered_markers)
+            else None,
+        )
+    ]
+    if section_markers and (
+        len(section_markers) > 1
+        or len(section_markers) < len(numbered_markers)
+    ):
         semantic_context = None
-        preamble = block[: numbered_markers[0].start()]
+        preamble = block[: section_markers[0].start()]
+        parent_context = _partition_parent_context(
+            block, section_markers[0].start()
+        )
         for line in preamble.splitlines():
             if re.search(r"AREA\s+TEMPORARILY\s+DANGEROUS", line, re.IGNORECASE):
                 semantic_context = line.strip()
                 break
 
         parts = []
-        for i, m in enumerate(numbered_markers):
+        for i, m in enumerate(section_markers):
             start = m.start()
             end = (
-                numbered_markers[i + 1].start()
-                if i + 1 < len(numbered_markers)
+                section_markers[i + 1].start()
+                if i + 1 < len(section_markers)
                 else len(block)
             )
             sub_block = block[start:end].strip()
@@ -1365,6 +1676,8 @@ def partition_navarea_block(block, navarea_name):
                 )
                 if i == 0 and semantic_context:
                     meta["semantic_context"] = semantic_context
+                if parent_context:
+                    meta["parent_context"] = parent_context
                 parts.append((sub_block, meta))
         return parts
 
@@ -1372,6 +1685,9 @@ def partition_navarea_block(block, navarea_name):
     letter_markers = list(re.finditer(r"(?:^|\n)\s*([A-Z]{1,4})\.\s+", block))
     if len(letter_markers) > 1:
         parts = []
+        parent_context = _partition_parent_context(
+            block, letter_markers[0].start()
+        )
         for i, m in enumerate(letter_markers):
             start = m.start()
             end = (
@@ -1387,6 +1703,8 @@ def partition_navarea_block(block, navarea_name):
                     partition_id=m.group(1),
                     sub_block=sub_block,
                 )
+                if parent_context:
+                    meta["parent_context"] = parent_context
                 parts.append((sub_block, meta))
         return parts
 
@@ -1420,6 +1738,7 @@ def predict_complexity(block):
 # -------------------- PROCESSING CONTEXT --------------------
 def build_processing_context(block, navarea_name, label_text=None, metadata=None):
     semantic_context = (metadata or {}).get("semantic_context")
+    parent_context = (metadata or {}).get("parent_context")
     contextual_block = (
         f"{semantic_context}\n{block}" if semantic_context else block
     )
@@ -1429,7 +1748,8 @@ def build_processing_context(block, navarea_name, label_text=None, metadata=None
     clean_block = re.sub(r"\s+", " ", clean_block)
     if semantic_context:
         clean_block = f"{semantic_context}\n{clean_block}"
-    description = escape(clean_block.replace('"', "'").strip())
+    clean_description = clean_block.replace('"', "'").strip()
+    description = escape(clean_description)
     if label_text is None:
         label_text = build_navarea_label(navarea_name)
     is_riglist = metadata and metadata.get("partition_type") == "RIGLIST"
@@ -1439,6 +1759,7 @@ def build_processing_context(block, navarea_name, label_text=None, metadata=None
         "upper": upper,
         "coords": coords,
         "description": description,
+        "parent_context": parent_context,
         "navarea_name": navarea_name,
         "label_text": label_text,
         "metadata": metadata,
@@ -1500,7 +1821,6 @@ SECURITY_KEYWORDS = [
     "ATTACK",
     "ATTEMPTED ATTACK",
     "ROBBERY",
-    "BOARDING",
     "UNAUTHORIZED BOARDING",
     "HIJACKING",
     "SUSPICIOUS CRAFT",
@@ -1517,6 +1837,19 @@ AREA_PATTERNS = [
     "AREAS BOUNDED BY",
     "AREA BOUNDED WITHIN",
 ]
+AREA_BOUNDARY_MARKER_RE = re.compile(
+    r"\b(?:IN\s+)?(?:DANGER\s+)?AREAS?\s+"
+    r"(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\b",
+    re.IGNORECASE,
+)
+IMPLICIT_BOUNDED_AREA_RE = re.compile(
+    r"\b(?:"
+    r"(?:IN\s+THE\s+)?FOLLOWING\s+BOUNDED\s+AREAS?"
+    r"|(?:ROUTES?|LINES?)\s+BOUNDED\s+BY"
+    r"|BOUNDED\s+BY"
+    r")\b",
+    re.IGNORECASE,
+)
 
 LINE_PATTERNS = [
     "ALONG TRACKLINE",
@@ -1526,7 +1859,9 @@ LINE_PATTERNS = [
 
 def has_area_pattern(text):
     normalized = re.sub(r"\s+", " ", text.upper())
-    return any(pattern in normalized for pattern in AREA_PATTERNS)
+    return any(pattern in normalized for pattern in AREA_PATTERNS) or bool(
+        IMPLICIT_BOUNDED_AREA_RE.search(normalized)
+    )
 
 
 def has_line_pattern(text):
@@ -1711,7 +2046,7 @@ def _normalize_ice_coordinate_spacing(section_text: str) -> str:
 
 
 def handle_ice_report(ctx, container, message):
-    print("DEBUG: ICE SECTION DETECTED")
+    debug("ICE SECTION DETECTED")
 
     if ctx["is_riglist"]:
         return False
@@ -1749,11 +2084,11 @@ def handle_ice_report(ctx, container, message):
 
         matches = list(ICEBERG_ENTRY_RE.finditer(normalized_block))
 
-        print(f"DEBUG: ICE MATCH COUNT = {len(matches)}")
+        debug(f"ICE MATCH COUNT = {len(matches)}")
 
         for match in matches:
-            print(
-                "DEBUG: ICEBERG "
+            debug(
+                "ICEBERG "
                 f"{match.group('id')} "
                 f"{match.group('lat')} "
                 f"{match.group('lon')}"
@@ -1823,6 +2158,12 @@ def handle_structured_sections(ctx, container, message):
     if ctx["is_riglist"]:
         return False
 
+    # Explicit or implicit bounded-area evidence must be resolved by
+    # handle_area, even when the notice also contains numbered sections.
+    # Otherwise a route-shaped section can consume the coordinates first.
+    if has_area_pattern(ctx["block"]) and len(ctx["coords"]) >= 3:
+        return False
+
     # P0: ÑÐ³ÑÑÐ¿Ð¿Ð¸ÑÐ¾Ð²Ð°Ð½Ð½ÑÐµ Ð¿Ð¾Ð»Ð¸Ð³Ð¾Ð½Ñ (A), (B) Ð´Ð¾Ð»Ð¶Ð½Ñ Ð¾Ð±ÑÐ°Ð±Ð°ÑÑÐ²Ð°ÑÑÑÑ handle_area()
     regex_match = re.search(r"\(([A-Z])\)\s*\d", ctx["block"]) is not None
     area_context = (
@@ -1842,13 +2183,16 @@ def handle_structured_sections(ctx, container, message):
         return False
 
     for obj in structured_objects:
+        classification_text = obj["description"]
+        object_color = detect_color(classification_text)
+        object_check_danger = detect_check_danger(classification_text)
         if obj["type"] == "area":
             area_obj = create_area(
                 name=ctx["label_text"],
                 description=obj["description"],
                 coords=obj["coords"],
-                color=detect_color(ctx["block"]),
-                check_danger=detect_check_danger(ctx["block"]),
+                color=object_color,
+                check_danger=object_check_danger,
             )
             add_area(area_obj, container, message)
         elif obj["type"] == "line":
@@ -1856,15 +2200,15 @@ def handle_structured_sections(ctx, container, message):
                 name=ctx["label_text"],
                 description=obj["description"],
                 coords=obj["coords"],
-                color=detect_color(ctx["block"]),
-                check_danger=detect_check_danger(ctx["block"]),
+                color=object_color,
+                check_danger=object_check_danger,
             )
             add_line(line_obj, container, message)
             mid = len(obj["coords"]) // 2
             label_obj = create_label(
                 style=6,
-                color=detect_color(ctx["block"]),
-                check_danger=detect_check_danger(ctx["block"]),
+                color=object_color,
+                check_danger=object_check_danger,
                 text=ctx["label_text"],
                 description=obj["description"],
                 coord=obj["coords"][mid],
@@ -1873,8 +2217,8 @@ def handle_structured_sections(ctx, container, message):
         elif obj["type"] == "label":
             label_obj = create_label(
                 style=6,
-                color=detect_color(ctx["block"]),
-                check_danger=detect_check_danger(ctx["block"]),
+                color=object_color,
+                check_danger=object_check_danger,
                 text=ctx["label_text"],
                 description=obj["description"],
                 coord=obj["coord"],
@@ -1884,10 +2228,105 @@ def handle_structured_sections(ctx, container, message):
     return True
 
 
+def handle_explicit_line_circle(ctx, container, message):
+    """
+    RC1 targeted handler for an explicit authorized route plus waiting circle.
+
+    It is deliberately limited to the wording pattern used by
+    NAVAREA IX 208/2026 and avoids changing the legacy first-match behavior
+    for unrelated messages.
+    """
+    debug("PROCESS: handle_explicit_line_circle")
+    if ctx["is_riglist"]:
+        return False
+
+    upper = ctx["upper"]
+    if not re.search(
+        r"\bROUTES?\s+THAT\s+HAVE\s+BEEN\s+AUTHORIZED\b",
+        upper,
+        flags=re.IGNORECASE,
+    ):
+        return False
+
+    route_coords = extract_explicit_route_waypoints(ctx["block"])
+    circle_spec = extract_circle_spec(ctx["block"])
+    if len(route_coords) < 2 and not circle_spec:
+        return False
+
+    if len(route_coords) >= 2:
+        line_obj = create_line(
+            name=ctx["label_text"],
+            description=ctx["description"],
+            coords=route_coords,
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+        )
+        add_line(line_obj, container, message)
+
+        mid = len(route_coords) // 2
+        label_obj = create_label(
+            style=6,
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+            text=ctx["label_text"],
+            description=ctx["description"],
+            coord=route_coords[mid],
+        )
+        add_label(label_obj, container, message)
+
+    if circle_spec:
+        circle_obj = create_circle(
+            name=ctx["label_text"],
+            description=ctx["description"],
+            coord=circle_spec["center"],
+            range_val=circle_spec["radius"],
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+        )
+        add_circle(circle_obj, container, message)
+    return True
+
+
+def handle_platform_multipoint(ctx, container, message):
+    """Keep explicitly named platform jackets as point objects."""
+
+    debug("PROCESS: handle_platform_multipoint")
+    if ctx["is_riglist"]:
+        return False
+    if "PLATFORM JACKET" not in ctx["upper"] or len(ctx["coords"]) < 2:
+        return False
+
+    for coord in ctx["coords"]:
+        label_obj = create_label(
+            style=5,
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+            text=ctx["label_text"],
+            description=ctx["description"],
+            coord=coord,
+        )
+        add_label(label_obj, container, message)
+    return True
+
+
 def handle_circle(ctx, container, message):
     debug("PROCESS: handle_circle")
     if ctx["is_riglist"]:
         return False
+
+    circle_spec = extract_circle_spec(ctx["block"])
+    if circle_spec:
+        circle_obj = create_circle(
+            name=ctx["label_text"],
+            description=ctx["description"],
+            coord=circle_spec["center"],
+            range_val=circle_spec["radius"],
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+        )
+        add_circle(circle_obj, container, message)
+        return True
+
     circle_match = re.search(r"WITHIN\s+([0-9.]+)\s+(?:NM|MILE|MILES)", ctx["upper"])
     if not circle_match or len(ctx["coords"]) < 1:
         return False
@@ -1996,6 +2435,31 @@ def extract_area_group_sections(block):
         markers[m.start()] = m.group(1).upper()
 
     if not markers:
+        boundary_markers = list(AREA_BOUNDARY_MARKER_RE.finditer(block))
+
+        # Some NAVAREA messages repeat a complete, unlabelled boundary
+        # clause instead of using (A)/(B) or named AREA sections.  Treat
+        # each explicit boundary marker as a structural section.  This must
+        # happen before the flat-coordinate fallback in handle_area().
+        if len(boundary_markers) > 1:
+            repeated_groups = []
+            for index, marker in enumerate(boundary_markers, start=1):
+                end = (
+                    boundary_markers[index].start()
+                    if index < len(boundary_markers)
+                    else len(block)
+                )
+                segment = block[marker.end() : end].strip()
+                if len(extract_coordinates(segment)) < 3:
+                    return []
+                repeated_groups.append((str(index), segment))
+
+            debug(
+                "Repeated unlabelled area groups detected: "
+                f"{len(repeated_groups)}"
+            )
+            return repeated_groups
+
         return []
 
     sorted_markers = sorted(markers.items())
@@ -2082,6 +2546,18 @@ def handle_area(ctx, container, message):
     debug("PROCESS: handle_area")
     if ctx["is_riglist"]:
         return False
+    # A channel described as running from one place to another is a line,
+    # even when the destination wording contains "WAITING AREA" or
+    # "HOLDING AREA".  Let handle_trackline process these local partitions.
+    if (
+        re.search(r"\bCHANNEL\s+WIDTH\b", ctx["upper"])
+        and not re.search(
+            r"\b(?:IN\s+)?(?:DANGER\s+)?AREAS?\s+"
+            r"(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\b",
+            ctx["upper"],
+        )
+    ):
+        return False
 
     # ------------------------------------------------------------------
     # 1. Grouped Areas / Named Areas
@@ -2089,6 +2565,27 @@ def handle_area(ctx, container, message):
     area_groups = extract_area_group_sections(ctx["block"])
 
     if len(area_groups) > 1:
+        if (
+            "LAUNCH OF" in ctx["upper"]
+            and "ANCHORAGE LINES" in ctx["upper"]
+        ):
+            for area_id, area_text in area_groups:
+                sub_coords = extract_coordinates(area_text)
+                if not sub_coords:
+                    continue
+                label_obj = create_label(
+                    style=2,
+                    color=detect_color(ctx["block"]),
+                    check_danger=detect_check_danger(ctx["block"]),
+                    text=ctx["label_text"],
+                    description=build_group_area_description(
+                        ctx, area_id, area_text
+                    ),
+                    coord=sub_coords[0],
+                )
+                add_label(label_obj, container, message)
+            return True
+
         for area_id, area_text in area_groups:
             sub_coords = extract_coordinates(area_text)
 
@@ -2178,6 +2675,7 @@ def handle_area(ctx, container, message):
             "ANCHORAGE AREA",
             "DESIGNATED ANCHORAGE AREA",
             "TEMPORARY STAY AREA",
+            "HAZARD AREA",
         ]
     ):
         if len(ctx["coords"]) >= 3:
@@ -2195,13 +2693,25 @@ def handle_area(ctx, container, message):
     # ------------------------------------------------------------------
     # 3. Single AREA BOUND BY fallback
     # ------------------------------------------------------------------
-    if not (
-        "AREA BOUND BY" in ctx["upper"]
-        or "BOUNDED BY" in ctx["upper"]
-        or "AREA BOUNDED" in ctx["upper"]
-        or "AREAS BOUNDED" in ctx["upper"]
-        or "AREAS BOUND BY" in ctx["upper"]
-        or "AREA TEMPORARILY DANGEROUS" in ctx["upper"]
+    repeated_boundary_markers = list(
+        AREA_BOUNDARY_MARKER_RE.finditer(ctx["block"])
+    )
+    if len(repeated_boundary_markers) > 1:
+        diagnostics = message.setdefault("diagnostics", [])
+        diagnostics.append(
+            {
+                "code": "GEOMETRY_UNPARSED_AREA_GROUPS",
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+                "boundary_count": len(repeated_boundary_markers),
+            }
+        )
+        message["geometry_rejected"] = True
+        return True
+
+    if not has_area_pattern(ctx["block"]) and not (
+        "AREA TEMPORARILY DANGEROUS" in ctx["upper"]
+        or "HAZARD AREA" in ctx["upper"]
     ):
         return False
 
@@ -2226,7 +2736,7 @@ def handle_trackline(ctx, container, message):
     if ctx["is_riglist"]:
         return False
     # Area patterns have priority over line
-    if has_area_pattern(ctx["block"]):
+    if has_area_pattern(ctx["block"]) and "CHANNEL WIDTH" not in ctx["upper"]:
         return False
 
     # P2: Ð½Ðµ ÑÐ¾Ð·Ð´Ð°Ð²Ð°ÑÑ Ð»Ð¸Ð½Ð¸Ñ Ð´Ð»Ñ Ð½ÐµÐ·Ð°Ð²Ð¸ÑÐ¸Ð¼ÑÑ Ð±ÑÐµÐ²/ÑÐ¾ÑÐµÑÐ½ÑÑ Ð¾Ð±ÑÐµÐºÑÐ¾Ð²
@@ -2241,9 +2751,19 @@ def handle_trackline(ctx, container, message):
 
     has_buoy_semantics = any(term in ctx["upper"] for term in BUOY_SEMANTIC_TERMS)
 
-    LINE_GEOMETRY_TERMS = ["TRACKLINE", "JOINING", "PIPELINE", "CABLE", "ROUTE"]
+    LINE_GEOMETRY_TERMS = [
+        "TRACKLINE",
+        "JOINING",
+        "PIPELINE",
+        "CABLE",
+        "ROUTE",
+        "BETWEEN THE POINTS",
+    ]
 
     has_line_geometry = any(kw in ctx["upper"] for kw in LINE_GEOMETRY_TERMS)
+    has_line_geometry = has_line_geometry or BOUNDARY_LINE_PATTERN.search(
+        ctx["upper"]
+    ) is not None
 
     if has_buoy_semantics and not has_line_geometry:
         return False
@@ -2267,27 +2787,37 @@ def handle_trackline(ctx, container, message):
         "CHANNEL",
         "TRACK LINE",
         "TRACK LINE JOINING",
+        "BETWEEN THE POINTS",
     ]
 
-    if not any(kw in ctx["upper"] for kw in ROUTE_KEYWORDS + TRACK_KEYWORDS):
+    if not any(kw in ctx["upper"] for kw in ROUTE_KEYWORDS + TRACK_KEYWORDS) and not BOUNDARY_LINE_PATTERN.search(
+        ctx["upper"]
+    ):
         return False
 
     if len(ctx["coords"]) < 2:
         return False
 
+    line_presentation = get_line_presentation(
+        ctx["block"],
+        ctx["label_text"],
+        ctx["description"],
+        base_color=detect_color(ctx["block"]),
+    )
     line_obj = create_line(
         name=ctx["label_text"],
         description=ctx["description"],
         coords=ctx["coords"],
-        color=detect_color(ctx["block"]),
+        color=line_presentation["color"],
         check_danger=detect_check_danger(ctx["block"]),
+        line_type=line_presentation["lineType"],
     )
     add_line(line_obj, container, message)
 
     mid = len(ctx["coords"]) // 2
     label_obj = create_label(
         style=6,
-        color=detect_color(ctx["block"]),
+        color=line_presentation["color"],
         check_danger=detect_check_danger(ctx["block"]),
         text=ctx["label_text"],
         description=ctx["description"],
@@ -2397,6 +2927,80 @@ def handle_multipoint(ctx, container, message):
     return False
 
 
+def is_tow_endpoint_operation(ctx):
+    """
+    Identify a towing/movement notice that publishes only two endpoints of an
+    operation, not a navigable route geometry.
+
+    A plain "BETWEEN" clause is intentionally different from explicit
+    trackline wording such as "BETWEEN THE POINTS"; the latter is handled by
+    handle_trackline when the source actually describes line geometry.
+    """
+    if len(ctx["coords"]) != 2:
+        return False
+    if has_area_pattern(ctx["block"]):
+        return False
+
+    upper = ctx["upper"]
+    if re.search(
+        r"\b(?:BUOYS?|LIGHTBUOYS?|BEACONS?|MARKS?|AIDS\s+TO\s+NAVIGATION)\b",
+        upper,
+    ):
+        return False
+
+    is_towing_operation = re.search(
+        r"\b(?:TOW(?:ING|ED)?|TUG|BARGE)\b",
+        upper,
+    )
+    is_movable_object = re.search(
+        r"\b(?:RIG|JACKET|PLATFORM|FPSO|FSO|JUB|VESSEL|CRAFT)\b",
+        upper,
+    ) and re.search(
+        r"\b(?:MOV(?:E|ED|ES|ING)|RELOCAT(?:E|ED|ING)|"
+        r"TRANSFER(?:RED|RING)?|TRANSPORT(?:ED|ING)?)\b",
+        upper,
+    )
+    has_between_endpoints = re.search(r"\bBETWEEN\b", upper) is not None
+    has_from_to_endpoints = re.search(
+        r"\bFROM\b[\s\S]{0,450}\bTO\b",
+        upper,
+    ) is not None
+
+    return bool(
+        (is_towing_operation or is_movable_object)
+        and (has_between_endpoints or has_from_to_endpoints)
+    )
+
+
+def handle_tow_endpoints(ctx, container, message):
+    """
+    Preserve both published endpoints of an unresolved TOW operation.
+
+    The source does not provide intermediate route points, so this handler
+    emits two independent point labels and deliberately does not create a
+    straight line between them.
+    """
+    debug("PROCESS: handle_tow_endpoints")
+    if ctx["is_riglist"] or not is_tow_endpoint_operation(ctx):
+        return False
+
+    description = (
+        f"{ctx['description']}\n"
+        "ROUTE GEOMETRY NOT PROVIDED; POINTS ARE TOW ENDPOINTS ONLY."
+    )
+    for coord in ctx["coords"]:
+        label_obj = create_label(
+            style=get_point_style(ctx["block"]),
+            color=detect_color(ctx["block"]),
+            check_danger=detect_check_danger(ctx["block"]),
+            text=ctx["label_text"],
+            description=description,
+            coord=coord,
+        )
+        add_label(label_obj, container, message)
+    return True
+
+
 def handle_single_point(ctx, container, message):
     debug("PROCESS: handle_single_point")
     if ctx["is_riglist"]:
@@ -2466,8 +3070,31 @@ BUOY_SUBTYPE_PATTERNS = [
     ("SPECIAL_MARK", re.compile(r"\bSPECIAL\s+MARK\s+BUOYS?\b", re.IGNORECASE)),
     ("BUOY_NO", re.compile(r"\bBUOY\s+NO\b", re.IGNORECASE)),
     ("BUOY_GROUP", re.compile(r"\bBUOY\s+GROUP\b", re.IGNORECASE)),
+    ("LIGHTBUOY", re.compile(r"\bLIGHTBUOYS?\b", re.IGNORECASE)),
+    (
+        "BEACON",
+        re.compile(
+            r"\b(?:"
+            r"BEACONS?"
+            r"|BEACONS?\s+TOWERS?"
+            r"|TOWERS?\s+BEACONS?"
+            r"|PILL(?:AR|ER|E)\s+BEACONS?"
+            r"|LATTICE\s+BEACONS?"
+            r"|PERCH\s+BEACONS?"
+            r"|LIGHT(?:ED|HED)?\s+BEACONS?"
+            r"|PIER\s+BEACONS?"
+            r"|DAY\s+BEACONS?"
+            r")\b",
+            re.IGNORECASE,
+        ),
+    ),
     ("BUOY", re.compile(r"\bBUOYS?\b", re.IGNORECASE)),
 ]
+
+BUOY_DISPLAY_PROFILES = {
+    "BUOY": {"style": 4, "active_color": "CHYLW"},
+    "BEACON": {"style": 4, "active_color": "CHYLW"},
+}
 
 BUOY_STATUS_PATTERNS = [
     ("UNLIT", re.compile(r"\bUNLIT\b", re.IGNORECASE)),
@@ -2512,7 +3139,7 @@ def classify_buoy(text):
     }
 
 
-def buoy_style_color(check_danger, status):
+def buoy_style_color(check_danger, status, subtype=None):
     """
     ÐÐ¾Ð·Ð²ÑÐ°ÑÐ°ÐµÑ (style, color, checkDanger) Ð´Ð»Ñ Ð±ÑÑÐ².
 
@@ -2526,10 +3153,16 @@ def buoy_style_color(check_danger, status):
 
     ÐÑÐ°ÑÐ½ÑÐ¹ Ð½Ðµ Ð¸ÑÐ¿Ð¾Ð»ÑÐ·ÑÐµÑÑÑ.
     """
-    style = 4
+    profile = BUOY_DISPLAY_PROFILES.get(
+        subtype,
+        BUOY_DISPLAY_PROFILES["BUOY"],
+    )
+    style = profile["style"]
 
-    if status == "ACTIVE":
-        color = "CHYLW"
+    if check_danger:
+        return style, "CHRED", 1
+    elif status == "ACTIVE":
+        color = profile["active_color"]
     else:
         color = "NINFO"
 
@@ -2575,6 +3208,8 @@ def handle_buoy_semantics(ctx, container, message):
     if ctx["is_riglist"]:
         return False
     upper = ctx["upper"]
+    if has_area_pattern(ctx["block"]) and "CHANNEL WIDTH" not in upper:
+        return False
 
     if (
         "UNLIT" in upper
@@ -2611,6 +3246,7 @@ def handle_buoy_semantics(ctx, container, message):
     style, color, check_danger = buoy_style_color(
         check_danger=detect_check_danger(ctx["block"]),
         status=buoy["status"],
+        subtype=buoy["subtype"],
     )
 
     for coord in ctx["coords"]:
@@ -2632,18 +3268,21 @@ def handle_buoy_semantics(ctx, container, message):
 # -------------------- HANDLER REGISTRY --------------------
 PROCESS_HANDLERS = [
     handle_ice_report,
+    handle_explicit_line_circle,
     handle_mixed_geometry_package,
+    handle_platform_multipoint,
+    handle_buoy_semantics,  # NEW
     handle_structured_sections,
     handle_circle,
     handle_bounding_box,
     handle_area,
     handle_no_anchor,
-    handle_buoy_semantics,  # NEW
     handle_trackline,
     handle_sublabels,
     handle_lettered_sections,
     handle_riglist,
     handle_multipoint,
+    handle_tow_endpoints,
     handle_single_point,
     handle_fallback,
 ]
@@ -2683,13 +3322,67 @@ validate_handler_registry(PROCESS_HANDLERS)
 # -------------------- PROCESS_BLOCK DISPATCHER --------------------
 def process_block(block, message, container, navarea_name, label_text=None, meta=None):
     ctx = build_processing_context(block, navarea_name, label_text, meta)
+    object_counts_before = {
+        kind: len(container.get(kind, []))
+        for kind in ("areas", "lines", "circles", "labels")
+    }
+    message_counts_before = {
+        kind: len(message.get(kind, []))
+        for kind in ("areas", "lines", "circles", "labels")
+    }
+    stage_diagnostics = message.setdefault("stage_diagnostics", [])
+    stage_diagnostics.append(
+        {
+            "stage": "context_built",
+            "coordinate_count": len(ctx["coords"]),
+            "metadata_partition": (meta or {}).get("partition_type"),
+        }
+    )
     if DEBUG:
         print(f"DEBUG: processing block with {len(ctx['coords'])} coords")
     for handler in PROCESS_HANDLERS:
         if handler(ctx, container, message):
+            parent_context = ctx.get("parent_context")
+            if parent_context:
+                for kind in ("areas", "lines", "circles", "labels"):
+                    container_objects = container.get(kind, [])[
+                        object_counts_before[kind] :
+                    ]
+                    message_objects = message.get(kind, [])[
+                        message_counts_before[kind] :
+                    ]
+                    for obj in (*container_objects, *message_objects):
+                        obj["description"] = (
+                            f"{parent_context}\n{obj['description']}"
+                        )
             handler_name = handler.__name__
-            print(f"MATCH: {handler_name}")
+            stage_diagnostics.append(
+                {
+                    "stage": "handler_match",
+                    "handler": handler_name,
+                    "object_counts": {
+                        "areas": len(message.get("areas", [])),
+                        "lines": len(message.get("lines", [])),
+                        "circles": len(message.get("circles", [])),
+                        "labels": len(message.get("labels", [])),
+                    },
+                }
+            )
+            if DEBUG:
+                print(f"MATCH: {handler_name}")
             return
+    stage_diagnostics.append(
+        {
+            "stage": "handler_match",
+            "handler": None,
+            "object_counts": {
+                "areas": len(message.get("areas", [])),
+                "lines": len(message.get("lines", [])),
+                "circles": len(message.get("circles", [])),
+                "labels": len(message.get("labels", [])),
+            },
+        }
+    )
 
 
 # -------------------- REACTIVE MONSTER HANDLING --------------------
@@ -2704,8 +3397,9 @@ def explode_oversized_messages(messages, limit):
     new_messages = []
     for msg in messages:
         obj_count = count_objects(msg)
-        print(f"\nð Message: {msg['id']}")
-        print_complexity_report(msg)
+        if DEBUG:
+            print(f"\nð Message: {msg['id']}")
+            print_complexity_report(msg)
         check_geometry_warnings(msg)
 
         if obj_count <= limit:
@@ -2788,13 +3482,14 @@ def explode_oversized_messages(messages, limit):
             for idx, part in enumerate(parts, start=1):
                 part["id"] = f"{msg['id']} (Part {idx})"
             new_messages.extend(parts)
-            print(f"   Exploded into {len(parts)} parts:")
-            for idx, part in enumerate(parts, start=1):
-                part_objects = count_objects(part)
-                part_vertices = total_vertices_in_message(part)
-                print(
-                    f"     Part {idx} â {part_objects} objects, {part_vertices} vertices"
-                )
+            if DEBUG:
+                print(f"   Exploded into {len(parts)} parts:")
+                for idx, part in enumerate(parts, start=1):
+                    part_objects = count_objects(part)
+                    part_vertices = total_vertices_in_message(part)
+                    print(
+                        f"     Part {idx} â {part_objects} objects, {part_vertices} vertices"
+                    )
 
     return new_messages
 
@@ -2820,7 +3515,8 @@ def split_legacy_messages(messages, limit):
             print(f"  {mid}")
 
     if total_objects <= limit:
-        print(f"Total objects: {total_objects}, Legacy limit: {limit} â single part")
+        if DEBUG:
+            print(f"Total objects: {total_objects}, Legacy limit: {limit} â single part")
         return [messages]
 
     parts = []
@@ -2849,7 +3545,8 @@ def split_legacy_messages(messages, limit):
     if current_part:
         parts.append(current_part)
 
-    print(f"Total objects: {total_objects}, Legacy limit: {limit}")
+    if DEBUG:
+        print(f"Total objects: {total_objects}, Legacy limit: {limit}")
     for i, part in enumerate(parts, 1):
         part_count = sum(count_objects(m) for m in part)
         print(f"Part {i} = {part_count} objects")
@@ -2874,6 +3571,54 @@ def sanitize_xml_attribute(value):
     text = text.replace("\n", " ")
     text = text.replace("\t", " ")
     text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+ECDIS_COORDINATE_PAIR_RE = re.compile(
+    r"\b\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+    r"(?:/|,|[-\s])+\s*\d{1,3}[-\s]+[\d.]+\s*[EW]\b",
+    re.IGNORECASE,
+)
+
+
+def sanitize_ecdis_description(value):
+    """
+    Keep the operational meaning while avoiding coordinate duplication in ECDIS.
+
+    Coordinates belong to the object's position vertices.  Cancellation
+    references are source metadata, not active object text.
+    """
+    text = unescape(sanitize_xml_attribute(value))
+    text = re.sub(
+        r"^\s*NAVAREA\s+[A-Z0-9]+\s+\d+/\d+\s*",
+        "",
+        text,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(
+        r"(?:^|\s)(?:\d+\s*\.\s*-?\s*)?CANCEL\b.*$",
+        "",
+        text,
+        count=1,
+        flags=re.IGNORECASE,
+    )
+    text = ECDIS_COORDINATE_PAIR_RE.sub("", text)
+    text = re.sub(
+        r"\bIN\s+AREA\s+(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\s*:?",
+        "",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(
+        r"(\bWITHIN\s+[0-9]+(?:\.[0-9]+)?\s+(?:NM|MILES?|MI)\s+OF)"
+        r"\s*[.,]?\s*(?:\d+\s*\.\s*)?(?=CONTACT\b|$)",
+        r"\1 the designated position. ",
+        text,
+        flags=re.IGNORECASE,
+    )
+    text = re.sub(r"\s+([.,;])", r"\1", text)
+    text = re.sub(r"\s{2,}", " ", text)
     return text.strip()
 
 
@@ -2942,13 +3687,13 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
 
         if obj_type == "area":
             name = obj_data.get("name", f"NAV {nav_id}")
-            desc = obj_data.get("description", "")
+            desc = sanitize_ecdis_description(obj_data.get("description", ""))
         elif obj_type == "label":
             name = obj_data.get("text", f"NAV {nav_id}")
-            desc = obj_data.get("description", name)
+            desc = sanitize_ecdis_description(obj_data.get("description", name))
         else:  # line, circle, clearingLine
             name = obj_data.get("name", "")
-            desc = obj_data.get("description", "")
+            desc = sanitize_ecdis_description(obj_data.get("description", ""))
 
         name = sanitize_xml_attribute(name)
         desc = sanitize_xml_attribute(desc)
@@ -3013,7 +3758,9 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
             name, desc = get_attrs("area", area)
             area_elem = ET.SubElement(areas_elem, "area", name=name, description=desc)
             pos = ET.SubElement(area_elem, "position")
-            for idx, (lat, lon) in enumerate(area["coords"], start=1):
+            for idx, (lat, lon) in enumerate(
+                area_vertices_for_xml(area["coords"]), start=1
+            ):
                 ET.SubElement(
                     pos,
                     "vertex",
@@ -3070,7 +3817,7 @@ def generate_legacy_xml(nav_id, data, name_suffix=None):
             range_val = circle.get("range", 0.0)
             if range_val > LEGACY_MAX_CIRCLE_RANGE:
                 print(
-                    f"WARNING: Circle range {range_val} NM exceeds legacy limit (100 NM). Will be reduced to 100 NM."
+                    f"WARNING: Circle range {range_val} exceeds legacy limit (50). Will be reduced to 50."
                 )
                 range_val = LEGACY_MAX_CIRCLE_RANGE
 
@@ -3126,7 +3873,7 @@ def export_furuno_modern(nav_id, container):
         for line in container["lines"]:
             xml.append(
                 f'<line name="{xml_attr(line["name"])}" '
-                f'description="{xml_attr(line["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(line["description"]))}">'
             )
             xml.append("<position>")
             for idx, (lat, lon) in enumerate(line["coords"], start=1):
@@ -3134,7 +3881,9 @@ def export_furuno_modern(nav_id, container):
                     f'<vertex id="{idx}" latitude="{lat:.6f}" longitude="{lon:.6f}"/>'
                 )
             xml.append("</position>")
-            xml.append('<attribute lineType="2" linkedDocument=""/>')
+            xml.append(
+                f'<attribute lineType="{line.get("lineType", 2)}" linkedDocument=""/>'
+            )
             xml.append(
                 f'<type checkDanger="{line["checkDanger"]}" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>'
             )
@@ -3147,10 +3896,12 @@ def export_furuno_modern(nav_id, container):
         for area in container["areas"]:
             xml.append(
                 f'<area name="{xml_attr(area["name"])}" '
-                f'description="{xml_attr(area["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(area["description"]))}">'
             )
             xml.append("<position>")
-            for idx, (lat, lon) in enumerate(area["coords"], start=1):
+            for idx, (lat, lon) in enumerate(
+                area_vertices_for_xml(area["coords"]), start=1
+            ):
                 xml.append(
                     f'<vertex id="{idx}" latitude="{lat:.6f}" longitude="{lon:.6f}"/>'
                 )
@@ -3170,7 +3921,7 @@ def export_furuno_modern(nav_id, container):
         for circle in container["circles"]:
             xml.append(
                 f'<circle name="{xml_attr(circle["name"])}" '
-                f'description="{xml_attr(circle["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(circle["description"]))}">'
             )
             lat, lon = circle["coord"]
             xml.append("<position>")
@@ -3191,7 +3942,7 @@ def export_furuno_modern(nav_id, container):
         for label in container["labels"]:
             xml.append(
                 f'<label name="{xml_attr(label["text"])}" '
-                f'description="{xml_attr(label["description"])}">'
+                f'description="{xml_attr(sanitize_ecdis_description(label["description"]))}">'
             )
             lat, lon = label["coord"]
             xml.append("<position>")
@@ -3206,6 +3957,31 @@ def export_furuno_modern(nav_id, container):
             xml.append("</label>")
         xml.append("</labels>")
 
+    # Keep the UserChart presentation grouped by geometry: areas first,
+    # followed by lines, circles and point objects (labels). The individual
+    # builders above stay unchanged so production object semantics are not
+    # altered by the presentation order.
+    section_markers = {
+        "<areas>": ("areas", "Areas: closed zones with boundaries"),
+        "<lines>": ("lines", "Lines: paths between points"),
+        "<circles>": ("circles", "Circles: radius around one point"),
+        "<labels>": ("labels", "Point objects: one position"),
+    }
+    sections = {}
+    current_section = None
+    for item in xml[2:]:
+        marker = section_markers.get(item)
+        if marker:
+            current_section = marker[0]
+            sections[current_section] = [f"<!-- {marker[1]} -->", item]
+        elif current_section:
+            sections[current_section].append(item)
+
+    ordered_xml = xml[:2]
+    for section_name in ("areas", "lines", "circles", "labels"):
+        ordered_xml.extend(sections.get(section_name, []))
+
+    xml = ordered_xml
     xml.append("</userchart>")
     return "\n".join(xml)
 
@@ -3275,17 +4051,17 @@ def export_navarea(nav_id, container):
             print(f"Failed to write {filename}: {e}")
     stats["legacy_parts"] = len(legacy_outputs)
 
-    # Container diagnostics
-    print(f"\nð Container: {nav_id}")
-    print(f"   Messages: {comp['message_count']}")
-    print(f"   Objects: {comp['total_objects']}")
-    print(f"   Vertices: {comp['total_vertices']}")
-    print(f"   Risk: {comp['risk']}")
-    if stats["modern_success"]:
-        print("   Modern Export: Success")
-    else:
-        print("   Modern Export: Failed")
-    print(f"   Legacy Export: {stats['legacy_parts']} part(s)")
+    if DEBUG:
+        print(f"\nð Container: {nav_id}")
+        print(f"   Messages: {comp['message_count']}")
+        print(f"   Objects: {comp['total_objects']}")
+        print(f"   Vertices: {comp['total_vertices']}")
+        print(f"   Risk: {comp['risk']}")
+        if stats["modern_success"]:
+            print("   Modern Export: Success")
+        else:
+            print("   Modern Export: Failed")
+        print(f"   Legacy Export: {stats['legacy_parts']} part(s)")
 
     return stats
 
@@ -3315,22 +4091,20 @@ def run_regression_tests():
             test_stats = NormalizerStats()
             test_text = normalize_input(test_text, test_stats)
 
-            blocks = re.split(
-                r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", test_text, flags=re.IGNORECASE
-            )
+            blocks = split_navarea_blocks(test_text)
 
             for block in blocks:
                 block = block.strip()
                 if not block:
                     continue
-                nav_match = re.search(
-                    r"(NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", block, re.IGNORECASE
-                )
+                nav_match = NAVAREA_HEADER_RE.search(block)
                 if not nav_match:
                     continue
                 navarea_name = nav_match.group(1)
                 m_code = re.search(
-                    r"NAVAREA\s+([A-Z0-9]+)\s+(\d+/\d+)", navarea_name, re.IGNORECASE
+                    r"NAVAREA\s+([A-Z0-9]+)\s+(\d+/\d+)",
+                    navarea_name,
+                    re.IGNORECASE,
                 )
                 if m_code:
                     nav_code = m_code.group(1).upper()
@@ -3419,6 +4193,100 @@ def run_architecture_checks():
     print("")
 
 
+# -------------------- CONSOLE PROGRESS --------------------
+class ConsoleProgress:
+    """Small, Windows-safe progress indicator for normal CLI runs."""
+
+    FRAMES = ("|", "/", "-", "\\")
+    NON_TTY_INTERVAL = 25
+    MIN_VISIBLE_SECONDS = 12.0
+    ANIMATION_INTERVAL_SECONDS = 0.12
+    FINISHING_STAGES = (
+        "validating output",
+        "preparing XML",
+        "writing files",
+        "readying console",
+    )
+    FINISHING_STAGE_SECONDS = 2.4
+
+    def __init__(self, total):
+        self.total = total
+        self.current = 0
+        self.interactive = sys.stdout.isatty()
+        self.enabled = not DEBUG and total > 0
+        self.last_width = 0
+        self.last_stage = "starting"
+        self.last_label = "starting"
+        self.frame_index = 0
+        self.started_at = time.monotonic() if self.enabled and self.interactive else None
+
+    def update(self, current, label):
+        if not self.enabled:
+            return
+
+        self.current = current
+        self.last_stage = "reading"
+        self.last_label = label
+        self._render()
+
+        if not self.interactive and (
+            current == 1 or current == self.total or current % self.NON_TTY_INTERVAL == 0
+        ):
+            print(self._text(), flush=True)
+
+    def stage(self, stage_name):
+        if not self.enabled:
+            return
+
+        self.last_stage = stage_name
+        self._render()
+
+    def _text(self):
+        return (
+            f"{self.FRAMES[self.frame_index]} {self.last_stage} "
+            f"[{self.current}/{self.total}] {self.last_label}"
+        )
+
+    def _render(self):
+        text = self._text()
+        if self.interactive:
+            padded = text.ljust(self.last_width)
+            print(f"\r{padded}", end="", flush=True)
+            self.last_width = max(self.last_width, len(text))
+        self.frame_index = (self.frame_index + 1) % len(self.FRAMES)
+
+    def finish(self):
+        if not self.enabled:
+            return
+
+        if self.interactive and self.started_at is not None:
+            stage_index = 0
+            stage_started_at = time.monotonic()
+            self.last_stage = self.FINISHING_STAGES[stage_index]
+            self._render()
+            remaining = self.MIN_VISIBLE_SECONDS - (time.monotonic() - self.started_at)
+            while remaining > 0:
+                time.sleep(min(self.ANIMATION_INTERVAL_SECONDS, remaining))
+                elapsed_stage_seconds = time.monotonic() - stage_started_at
+                next_stage_index = min(
+                    len(self.FINISHING_STAGES) - 1,
+                    int(elapsed_stage_seconds / self.FINISHING_STAGE_SECONDS),
+                )
+                if next_stage_index != stage_index:
+                    stage_index = next_stage_index
+                    self.last_stage = self.FINISHING_STAGES[stage_index]
+                self._render()
+                remaining = self.MIN_VISIBLE_SECONDS - (
+                    time.monotonic() - self.started_at
+                )
+
+        completed = f"Completed {self.current}/{self.total} NAVAREA messages."
+        if self.interactive:
+            print(f"\r{completed.ljust(self.last_width)}")
+        elif self.current:
+            print(completed)
+
+
 # -------------------- MAIN ORCHESTRATION --------------------
 def main():
     if "--test" in sys.argv:
@@ -3438,7 +4306,7 @@ def main():
     print()
 
     if len(sys.argv) > 1:
-        sources = sys.argv[1:]
+        sources = [arg for arg in sys.argv[1:] if not arg.startswith("--")]
     else:
         sources = sorted(glob.glob("*.txt"))
 
@@ -3463,45 +4331,55 @@ def main():
     stats = NormalizerStats()
     text = normalize_input(text, stats)
 
-    print("\n========== XV DIAGNOSTICS ==========")
-    print(f"[DIAG] SOURCE FILE: {sources}")
+    blocks = split_navarea_blocks(text)
 
-    print(f"[DIAG] TEXT LENGTH: {len(text)}")
+    if DEBUG:
+        print("\n========== XV DIAGNOSTICS ==========")
+        print(f"[DIAG] SOURCE FILE: {sources}")
+        print(f"[DIAG] TEXT LENGTH: {len(text)}")
+        print(f"[DIAG] BLOCKS FOUND: {len(blocks)}")
 
-    blocks = re.split(r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", text, flags=re.IGNORECASE)
+        for i, block in enumerate(blocks[:20]):
+            if block.strip():
+                preview = block[:120].replace("\n", "\n")
+                print(f"[DIAG] BLOCK {i}: {preview}")
 
-    print(f"[DIAG] BLOCKS FOUND: {len(blocks)}")
+                m = NAVAREA_HEADER_RE.search(block)
 
-    for i, block in enumerate(blocks[:20]):
-        if block.strip():
-            preview = block[:120].replace("\n", "\n")
-            print(f"[DIAG] BLOCK {i}: {preview}")
+                if m:
+                    print(
+                        f"[DIAG] MESSAGE FOUND: NAVAREA {m.group(1)} {m.group(2)}"
+                    )
 
-            m = re.search(
-                r"NAVAREA\s+([A-ZIVXLC]+)\s+(\d+/\d+)", block, flags=re.IGNORECASE
-            )
+        print("====================================\n")
 
-            if m:
-                print(f"[DIAG] MESSAGE FOUND: NAVAREA {m.group(1)} {m.group(2)}")
-
-    print("====================================\n")
-
-    blocks = re.split(r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", text, flags=re.IGNORECASE)
+    blocks = split_navarea_blocks(text)
 
     navs = {}
+    total_work_blocks = sum(
+        1
+        for candidate in blocks
+        if re.search(
+            r"(NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)",
+            candidate,
+            re.IGNORECASE,
+        )
+    )
+    progress = ConsoleProgress(total_work_blocks)
+    processed_blocks = 0
 
     for block in blocks:
         block = block.strip()
         if not block:
             continue
 
-        nav_match = re.search(
-            r"(NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", block, re.IGNORECASE
-        )
+        nav_match = NAVAREA_HEADER_RE.search(block)
         if not nav_match:
             continue
 
         navarea_name = nav_match.group(1)
+        processed_blocks += 1
+        progress.update(processed_blocks, navarea_name)
         m_code = re.search(
             r"NAVAREA\s+([A-Z0-9]+)\s+(\d+/\d+)", navarea_name, re.IGNORECASE
         )
@@ -3514,9 +4392,12 @@ def main():
             navs[nav_code] = create_container(nav_code)
         container = navs[nav_code]
 
+        progress.stage("analyzing")
         predict_complexity(block)
+        progress.stage("partitioning")
         partitioned = partition_navarea_block(block, navarea_name)
 
+        progress.stage("building geometry")
         if len(partitioned) == 1 and partitioned[0][1]["partition_type"] == "NONE":
             msg_id = navarea_name
             message = create_message(msg_id, metadata=partitioned[0][1])
@@ -3546,17 +4427,21 @@ def main():
     if "--show-normalizer" in sys.argv:
         stats.report()
 
+    progress.stage("exporting XML")
     all_stats = []
     for nav_id in sorted(navs.keys()):
         stats = export_navarea(nav_id, navs[nav_id])
         all_stats.append(stats)
 
+    progress.stage("summarizing results")
     total_areas = total_lines = total_circles = total_labels = 0
     for nav_id, container in navs.items():
         total_areas += len(container["areas"])
         total_lines += len(container["lines"])
         total_circles += len(container["circles"])
         total_labels += len(container["labels"])
+
+    progress.finish()
 
     print()
     print("===== TOTAL SUMMARY =====")
@@ -3568,7 +4453,7 @@ def main():
     print()
     print("Conversion completed successfully.")
     print()
-    print("Copyright Â© 2026 All Rights Reserved.")
+    print("Copyright (C) 2026 NAVAREA2UC. All Rights Reserved.")
     print()
     if getattr(sys, "frozen", False):
         input("\nPress ENTER to exit...")
