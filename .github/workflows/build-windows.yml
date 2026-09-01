@@ -218,6 +218,10 @@ jobs:
 
         Assert-BaselinePreviewApproval $sourceReportPath $false
 
+        # The expected stale preview exits with status 1. Both assertions have
+        # passed, so normalize the PowerShell step result explicitly.
+        exit 0
+
   validate-posix-wrapper:
     needs: validate-workflow
     runs-on: ubuntu-latest
