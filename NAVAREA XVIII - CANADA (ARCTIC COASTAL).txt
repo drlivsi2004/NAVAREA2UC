@@ -1,0 +1,2442 @@
+ARCTIC COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: A 233/2026, A 237/2026, A 242/2026, A 245/2026, A
+246/2026, A 249/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: A 352/2024, A 247/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2018 SERIES: H 56, H 66, A 149, A 155, A 156, A 166, A 181.
+
+2019 SERIES: H 132, A 178, A 183, A 184, A 185, A 186, A 187.
+
+2020 SERIES: A 35, A 88.
+
+2021 SERIES: H 53, H 73, H 74, A 120, A 121, H 162, H 204.
+
+2022 SERIES: A 54, H 68, H 87, A 91, H 105, H 154, A 156, A 170, H 173, H 210, H 214.
+
+2023 SERIES: A 45, H 52, H 63, A 110, A 162, A 231.
+
+2024 SERIES: A 8, A 9, A 54, A 70, A 74, A 76, A 77, A 355.
+
+2025 SERIES: A 20, A 42, A 43, A 83, A 84, A 86, A 87, A 89, A 93, A 94, A 96, A 146, A
+190, A 193, A 195, A 196, A 204, A 205, A 206, A 207, A 208, A 233, A 243, A 252, A 258,
+A 262, A 270, A 271, A 272, A 289, A 290, A 295, A 296, A 297, A 298, A 299, A 312, A
+313, A 314, A 315, A 316, A 317, A 318, A 336, A 342, A 344, A 346, A 355, A 375, A 386.
+
+2026 SERIES: A 53, A 61, A 63, A 66, A 67, A 68, A 69, A 70, A 71, A 72, A 73, A 75, A
+78, A 79, A 98, A 100, A 105, A 117, A 121, A 125, A 126, A 128, A 130, A 131, A 132, A
+133, A 134, A 136, A 137, A 140, A 145, A 153, A 154, A 155, A 156, A 172, A 173, A 180,
+A 184, A 193, A 194, A 196, A 198, A 199, A 201, A 202, A 203, A 204, A 205, A 206, A
+209, A 210, A 211, A 212, A 213, A 214, A 217, A 218, A 223, A 224, A 225, A 233, A 237,
+A 242, A 245, A 246, A 249.
+
+---------------------------------------------------------------------------------------
+
+H 56/2018
+250000 UTC JUN 2018
+Aids to Navigation
+Damaged
+
+POSITION 64-52.883N 125-24.033W
+
+---------------------------------------------------------------------------------------
+
+H 66/2018
+070000 UTC JUL 2018
+Obstruction
+Orange and white mooring buoy with relective tape established upstream of Tulita at 64
+53.8N 125 31.6W.
+
+POSITION 64-53.800N 125-31.600W
+
+---------------------------------------------------------------------------------------
+
+A 149/2018
+260000 UTC SEP 2018
+Waterway information
+Shallower depths located at:
+58 57.728N 066 25.784W, 15.7 metres, chart 5373
+58 58.519N 067 03.866W, 42 metres, chart 5374 
+58 58.689N 067 19.025W, 45 metres, chart 5375 
+Depths are reduced to CHS Chart Datum and horizontal positions are based on NAD83.
+POSITION 58-57.728N 066-25.784W
+POSITION 58-58.519N 067-03.866W
+POSITION 58-58.689N
+067-19.025W
+
+---------------------------------------------------------------------------------------
+
+A 155/2018
+030000 UTC OCT 2018
+Obstruction
+Scientific mooring established at 60 03.08N 069 39.98W. Top float extends 1.5 meters
+above the sea floor in 24 meters of water.
+
+POSITION 60-03.088N 069-39.980W
+
+---------------------------------------------------------------------------------------
+
+A 156/2018
+030000 UTC OCT 2018
+Obstruction
+Scientific mooring established at 59 59.67N 069 53.44W. Top float extends 1.5 meters
+above the seafloor at a depth of 16.5 meters.
+
+POSITION 59-59.673N 069-53.445W
+
+---------------------------------------------------------------------------------------
+
+A 166/2018
+060000 UTC OCT 2018
+Waterway information
+Shoals located at:
+60 22.866N 064 49.199W, 6.4 metres
+60 22.831N 064 49.762W, 17.8 metres
+
+POSITION 60-22.866N 064-49.199W
+POSITION 60-22.831N
+064-49.762W
+
+---------------------------------------------------------------------------------------
+
+A 181/2018
+140000 UTC OCT 2018
+Waterway information
+Shoals located at:
+64 16.219N, 076 20.151W, 3 fathoms
+64 15.738N, 076 21.170W, 1 fathom, 2 feet 
+64 15.745N, 076 20.839W, 4 fathoms, 3 feet 
+64 14.806N, 076 22.456W, 5 fathoms, 1 foot 
+64 14.346N, 076 22.704W, 11 fathoms, 5 feet
+
+POSITION 64-16.219N 076-20.151W
+POSITION
+64-15.738N 076-21.170W
+POSITION 64-15.745N 076-20.839W
+POSITION 64-14.806N 076-22.456W
+POSITION 64-14.346N 076-22.704W
+
+---------------------------------------------------------------------------------------
+
+H 132/2019
+060000 UTC SEP 2019
+Aids to Navigation
+The front tower on the lit range LL 1746.0 at Mile 223.4, at position 61°56?.47?N 121°
+42?.45?W is down and temporarily out of service.
+
+POSITION 61-56.470N 121-42.450W
+
+---------------------------------------------------------------------------------------
+
+A 178/2019
+270000 UTC SEP 2019
+Obstruction
+Subsurface scientific mooring established at 70 02.434 N 126 18.404 W. Top float 223
+meters below surface.
+
+POSITION 70-02.434N 126-18.404W
+
+---------------------------------------------------------------------------------------
+
+A 183/2019
+290000 UTC SEP 2019
+Waterway information
+The Canadian Hydrographic Service has found the following shoal depth on the approaches
+to Markham Bay: 19 fathoms at 63 26N 072 18W.
+Please note that chart 5450 is on an unknown datum. The position of this Navigational
+Warning has been scaled to agree with chart 5450.
+
+POSITION 63-26.000N 072-18.000W
+
+---------------------------------------------------------------------------------------
+
+A 184/2019
+290000 UTC SEP 2019
+Waterway information
+The Canadian Hydrographic Service has found an uncharted islet on the approaches to
+Markham Bay at position 63 25.5N 072 13.0W.
+Please note that chart 5450 is on an unknown datum. The position of this Navigational
+Warning has been scaled to agree with chart 5450.
+
+POSITION 63-25.500N 072-13.000W
+
+---------------------------------------------------------------------------------------
+
+A 185/2019
+290000 UTC SEP 2019
+Waterway information
+The Canadian Hydrographic Service has found an uncharted islet on the approaches to
+Markham Bay at position 63 30N, 072 12W.
+Please note that chart 5450 is on an unknown datum. The position of this Navigational
+Warning has been scaled to agree with chart 5450.
+
+POSITION 63-30.000N 072-12.000W
+
+---------------------------------------------------------------------------------------
+
+A 186/2019
+290000 UTC SEP 2019
+Waterway information
+The Canadian Hydrographic Service has found an uncharted islet on the approaches to
+Aberdeen Bay at position 63 37.0N 072 07.5w.
+Please note that chart 5450 is on an unknown datum. The position of this Navigational
+Warning has been scaled to agree with chart 5450.
+
+POSITION 63-37.000N 072-07.500W
+
+---------------------------------------------------------------------------------------
+
+A 187/2019
+290000 UTC SEP 2019
+Waterway information
+The Canadian Hydrographic Service has found an uncharted islet on the approaches to
+Aberdeen Bay at position 63 38.3N 072 11.0w.
+Please note that chart 5450 is on an unknown datum. The position of this Navigational
+Warning has been scaled to agree with chart 5450.
+
+POSITION 63-38.300N 072-11.000W
+
+---------------------------------------------------------------------------------------
+
+A 35/2020
+100000 UTC JUL 2020
+Waterway information
+The canadian hyrdrographic service found the following depths less than charted in Hudson
+Strait area.
+
+62 22.94N 078 14.02W at a depth of 24 fathoms
+
+62 22.77N 078 15.49W at a depth of 25 fathoms.
+
+POSITION 62-22.940N 078-14.020W
+POSITION
+62-22.770N 078-15.490W
+
+---------------------------------------------------------------------------------------
+
+A 88/2020
+110000 UTC AUG 2020
+Obstruction
+The fresh water hose that runs across the bottom of Tuktoyaktuk harbour is floating to
+the surface at 69 26.450N 132 57.650W.
+
+POSITION 69-26.450N 132-57.650W
+
+---------------------------------------------------------------------------------------
+
+H 53/2021
+090000 UTC JUL 2021
+Aids to Navigation
+Destroyed
+
+POSITION 61-50.333N 121-10.700W
+
+---------------------------------------------------------------------------------------
+
+H 73/2021
+140000 UTC JUL 2021
+Aids to Navigation
+Destroyed
+
+POSITION 64-28.550N 124-51.967W
+
+---------------------------------------------------------------------------------------
+
+H 74/2021
+140000 UTC JUL 2021
+Aids to Navigation
+Destroyed
+
+POSITION 64-28.533N 124-52.083W
+
+---------------------------------------------------------------------------------------
+
+A 120/2021
+270000 UTC AUG 2021
+Marine works
+New barge landing facility operational for use at 68 31.068N 089 50.248W.
+
+POSITION
+68-31.068N 089-50.248W
+
+---------------------------------------------------------------------------------------
+
+A 121/2021
+280000 UTC AUG 2021
+Marine works
+Existing barge landing facility at 68 31.730N 089 50.038W is no longer to be used by
+commercial barge unloading operations. New barge landing facility is located 1.2 km
+south.
+
+POSITION 68-31.730N 089-50.038W
+
+---------------------------------------------------------------------------------------
+
+H 162/2021
+300000 UTC AUG 2021
+Aids to Navigation
+Rear tower on the unlit range facing downstream at mile 327.6 destroyed.
+
+POSITION
+62-50.730N 123-15.130W
+
+---------------------------------------------------------------------------------------
+
+H 204/2021
+150000 UTC SEP 2021
+Aids to Navigation
+Temporarily removed
+
+POSITION 63-58.633N 124-12.833W
+
+---------------------------------------------------------------------------------------
+
+A 54/2022
+110000 UTC AUG 2022
+Aids to Navigation
+Out of service
+
+POSITION 69-00.489N 137-34.362W
+
+---------------------------------------------------------------------------------------
+
+H 68/2022
+140000 UTC JUN 2022
+Obstruction
+Semi submerged propane tank reported in position 62 28.911N 114 20.601W. Tank moored to
+bottom.
+Caution.
+
+POSITION 62-28.911N 114-20.601W
+
+---------------------------------------------------------------------------------------
+
+H 87/2022
+100000 UTC JUL 2022
+Aids to Navigation
+Destroyed
+
+POSITION 61-19.830N 118-24.350W
+
+---------------------------------------------------------------------------------------
+
+A 91/2022
+130000 UTC SEP 2022
+Aids to Navigation
+Damaged. Discolored
+
+POSITION 60-00.548N 077-22.117W
+POSITION 60-01.501N 077-20.120W
+
+---------------------------------------------------------------------------------------
+
+H 105/2022
+200000 UTC JUL 2022
+Aids to Navigation
+Destroyed
+
+POSITION 61-34.008N 113-23.013W
+
+---------------------------------------------------------------------------------------
+
+H 154/2022
+130000 UTC AUG 2022
+Aids to Navigation
+Damaged. Missing daymarker.
+
+POSITION 69-20.067N 133-46.333W
+
+---------------------------------------------------------------------------------------
+
+A 156/2022
+180000 UTC OCT 2022
+Obstruction
+Submerged object, depth less than 4.8 meters.
+
+POSITION 63-59.600N 094-18.900W
+
+---------------------------------------------------------------------------------------
+
+A 170/2022
+280000 UTC OCT 2022
+Waterway information
+Shallower depth, 19.1 meters
+
+POSITION 57-29.176N 076-55.331W
+
+---------------------------------------------------------------------------------------
+
+H 173/2022
+050000 UTC SEP 2022
+Aids to Navigation
+Destroyed.
+
+POSITION 64-22.767N 124-44.117W
+
+---------------------------------------------------------------------------------------
+
+H 210/2022
+080000 UTC OCT 2022
+Aids to Navigation
+Destroyed
+
+POSITION 61-58.267N 121-39.700W
+
+---------------------------------------------------------------------------------------
+
+H 214/2022
+110000 UTC OCT 2022
+Aids to Navigation
+Destroyed
+
+POSITION 61-20.400N 120-00.450W
+
+---------------------------------------------------------------------------------------
+
+A 45/2023
+070000 UTC JUL 2023
+Obstruction
+Report of a large tire partially submerged East of Mosher Island.
+
+POSITION 62-26.527N
+114-20.695W
+
+---------------------------------------------------------------------------------------
+
+H 52/2023
+190000 UTC JUN 2023
+Aids to Navigation
+Destroyed
+
+POSITION 67-02.660N 130-16.729W
+
+---------------------------------------------------------------------------------------
+
+H 63/2023
+220000 UTC JUN 2023
+Aids to Navigation
+Destroyed
+
+POSITION 65-33.430N 127-48.250W
+
+---------------------------------------------------------------------------------------
+
+A 110/2023
+140000 UTC AUG 2023
+Aids to Navigation
+Racon X-band Out of service.
+
+POSITION 69-46.406N 134-24.070W
+
+---------------------------------------------------------------------------------------
+
+A 162/2023
+130000 UTC SEP 2023
+Waterway information
+Shallower depth, 32.6 meters
+
+POSITION 59-03.025N 066-21.950W
+
+---------------------------------------------------------------------------------------
+
+A 231/2023
+160000 UTC OCT 2023
+Waterway information
+Shallower depth, 14.8 meters (reduced to chart datum)
+
+POSITION 62-34.770N 077-51.496W
+
+---------------------------------------------------------------------------------------
+
+A 8/2024
+130000 UTC FEB 2024
+Waterway information
+Shoaling reported at the Pangnirtung Small Craft Harbour channel entrance. Depths vary
+from 0.6 metres below chart datum along the channel centerline to 0.7 metres above chart
+datum along the eastearn edge of the channel.
+
+POSITION 66-09.131N 065-42.710W
+POSITION
+66-09.107N 065-42.671W
+ALONG LINE JOINING 66-09.107N 065-42.671W, 66-09.131N 065-42.710W
+
+---------------------------------------------------------------------------------------
+
+A 9/2024
+140000 UTC FEB 2024
+Obstruction
+Mooring line floating near the entrance of Pangnirtung harbour.
+
+POSITION 66-09.124N
+065-42.581W
+
+---------------------------------------------------------------------------------------
+
+A 54/2024
+130000 UTC JUN 2024
+Waterway information
+Due to low water levels, mariners should expect previously unknown dangers to navigation
+to appear, altering established shipping routes.
+
+AREA BOUNDED BY 61-15.130N 118-29.757W,
+61-17.733N 118-31.439W, 61-19.440N 118-32.700W, 61-21.851N 118-34.706W, 61-16.379N
+119-26.961W, 61-19.025N 119-32.564W, 61-29.763N 120-09.760W, 61-30.230N 120-23.456W,
+61-49.298N 120-38.341W, 61-55.470N 121-18.589W, 62-11.621N 122-20.438W, 62-11.884N
+122-43.550W, 62-18.960N 123-17.767W, 62-18.858N 123-20.633W, 62-18.798N 123-26.552W,
+62-18.738N 123-32.909W, 62-12.909N 123-24.584W, 62-06.697N 123-08.828W, 62-02.692N
+122-12.559W, 61-47.197N 121-19.705W, 61-34.065N 120-50.093W, 61-23.538N 120-30.926W,
+61-09.998N 119-34.120W
+AREA BOUNDED BY 61-01.041N 116-48.725W, 61-03.152N 116-47.420W,
+61-04.700N 116-46.467W, 61-10.542N 116-57.234W, 61-12.840N 117-00.397W, 61-11.638N
+117-06.608W, 61-23.260N 117-36.154W, 61-27.921N 117-47.118W, 61-37.464N 118-08.298W,
+61-33.032N 118-27.799W, 61-24.316N 118-28.734W, 61-21.851N 118-34.706W, 61-19.440N
+118-32.700W, 61-17.733N 118-31.439W, 61-15.130N 118-29.757W, 61-23.479N 118-11.893W,
+61-18.138N 118-03.205W, 61-13.148N 117-32.017W, 61-09.406N 117-27.224W, 61-04.744N
+117-18.295W, 61-01.330N 117-07.855W
+AREA BOUNDED BY 62-18.960N 123-17.767W, 62-32.408N
+123-03.840W, 62-42.518N 123-03.357W, 63-02.912N 123-02.750W, 63-33.008N 123-36.569W,
+63-58.337N 124-05.983W, 64-12.513N 124-18.304W, 64-41.110N 124-47.485W, 64-53.627N
+125-00.181W, 64-52.376N 125-07.775W, 64-51.113N 125-15.847W, 64-48.855N 125-16.468W,
+64-27.687N 125-00.909W, 63-55.186N 124-26.060W, 63-10.382N 123-41.347W, 62-18.738N
+123-32.909W, 62-18.798N 123-26.552W, 62-18.858N 123-20.633W
+AREA BOUNDED BY 64-48.855N
+125-16.468W, 64-51.113N 125-15.847W, 64-52.376N 125-07.775W, 64-53.627N 125-00.181W,
+64-57.476N 125-16.723W, 65-00.269N 125-55.771W, 65-12.720N 126-17.716W, 65-18.863N
+126-49.728W, 65-37.656N 127-51.709W, 65-43.666N 128-35.187W, 65-58.549N 128-58.496W,
+66-05.180N 128-56.657W, 66-13.135N 128-31.543W, 66-14.055N 128-38.037W, 66-15.100N
+128-43.698W, 66-16.894N 128-47.030W, 66-09.448N 129-10.577W, 66-01.700N 129-12.284W,
+65-47.387N 129-03.945W, 65-31.914N 128-36.435W, 65-31.979N 128-00.848W, 65-10.226N
+126-56.965W, 65-02.604N 126-18.182W, 64-50.309N 126-01.841W
+AREA BOUNDED BY 66-13.135N
+128-31.543W, 66-19.859N 128-30.468W, 66-40.053N 129-11.906W, 66-52.659N 129-58.595W,
+67-10.401N 130-09.801W, 67-18.354N 130-15.403W, 67-30.260N 130-49.632W, 67-30.725N
+131-26.451W, 67-27.245N 131-39.058W, 67-21.080N 132-24.456W, 67-14.894N 132-47.447W,
+67-15.173N 132-56.399W, 67-29.880N 133-29.228W, 67-29.880N 133-41.834W, 67-37.647N
+134-03.712W, 67-37.055N 134-04.813W, 67-36.455N 134-06.972W, 67-36.084N 134-08.566W,
+67-34.414N 134-12.105W, 67-07.256N 132-56.754W, 67-23.566N 131-07.330W, 67-11.350N
+130-23.282W, 66-46.356N 130-13.886W, 66-16.894N 128-47.030W, 66-15.100N 128-43.698W,
+66-14.055N 128-38.037W
+AREA BOUNDED BY 67-34.414N 134-12.105W, 67-36.084N 134-08.566W,
+67-36.455N 134-06.972W, 67-37.055N 134-04.813W, 67-37.647N 134-03.712W, 68-15.669N
+133-11.899W, 68-33.135N 133-35.630W, 69-20.413N 133-41.781W, 69-21.000N 133-42.637W,
+69-21.000N 134-02.617W, 69-21.009N 134-07.528W, 69-20.436N 134-59.736W, 69-05.349N
+135-01.216W, 68-55.420N 135-02.190W, 68-53.260N 135-02.320W, 68-52.077N 135-02.274W,
+68-43.986N 135-01.237W, 67-41.733N 134-41.211W, 67-38.262N 134-32.147W
+
+---------------------------------------------------------------------------------------
+
+A 70/2024
+260000 UTC JUN 2024
+Waterway information
+Due to low water levels, the rocks and armor placed to protect the pipeline from high
+flow events and scouring may present a danger to navigation within the defined area.
+AREA BOUNDED BY 65-16.200N 126-50.650W, 65-16.767N 126-51.000W, 65-16.733N 126-52.500W,
+65-16.550N 126-52.417W
+
+---------------------------------------------------------------------------------------
+
+A 74/2024
+030000 UTC JUL 2024
+Waterway information
+Shipping containers may be found drifting, or submerged in shallow waters in Koojesse
+Inlet and surrounding areas bounded by the following coordinates. Given tides and
+currents in the region, containers may have shifted over the winter and migrated further
+into Frobisher Bay. Operations with the responsible party to locate and mark the
+remaining seven (7) containers are ongoing. 
+63 44.025N 068 29.206W
+ 63 42.592N 068 25.242W
+ 63 40.944N 068 24.994W
+ 63 40.955N 068 29.296W
+ 63 42.931N 068 31.101W
+
+AREA BOUNDED BY 63-40.955N 068-29.296W, 63-40.944N 068-24.994W,
+63-42.592N 068-25.242W, 63-44.025N 068-29.206W, 63-42.931N 068-31.101W
+
+---------------------------------------------------------------------------------------
+
+A 76/2024
+060000 UTC JUL 2024
+Waterway Information - Channel Change
+Fairway light buoy designator ‘HR’ in 60 53.208N 115 43.831W permanently relocated to 60
+53.414N 115 43.962W.
+ 
+ Hay River Entrance buoy designator ‘H1’ in 60 52.208N 115.43.902W permanently relocated
+to 60 52.602N 115 43.956W.
+ 
+ Hay River Entrance buoy designator ‘H2’ in 60 52.550N 115 43.967W permanently relocated
+to 60 52.554N 115 44.084 W.
+ 
+ Hay River Entrance buoy designator ‘H3’ in 60 52.350N 115 43.910W permanently relocated
+to 60 52.386N 115 44.033W.
+ 
+ Hay River Entrance buoy designator ‘H4’ in 60 52.360N 115 44.020W permanently relocated
+to 60 52.356N 115 44.072W.
+ 
+ Hay River Entrance buoy designator ‘H5’ in 60 52.200N 115 43.967W permanently relocated
+to 60 52.189N 115 44.052W.
+ 
+ Hay River Entrance buoy designator ‘H6’ in 60 52.210N 115 44.050W permanently relocated
+to 60 52.162N 115 44.086W.
+ 
+ Hay River Entrance buoy designator ‘H7’ in 60 52.060N 115 44.000W permanently relocated
+to 60 52.012N 115 44.065W.
+ 
+ Hay River Entrance buoy designator ‘H8’ in 60 52.060N 115 44.000W permanently relocated
+to 60 51.971N 115 44.108W.
+ 
+ Hay River Entrance buoy designator ‘H9’ in 60 51.890N 115 44.050W permanently relocated
+to 60 51.790N 115 44.070W.
+
+POSITION 60-53.414N 115-43.962W
+POSITION 60-52.602N
+115-43.956W
+POSITION 60-52.554N 115-44.084W
+POSITION 60-52.386N 115-44.033W
+POSITION
+60-52.356N 115-44.072W
+POSITION 60-52.189N 115-44.052W
+POSITION 60-52.162N 115-44.086W
+POSITION 60-52.012N 115-44.065W
+POSITION 60-51.971N 115-44.108W
+POSITION 60-51.790N
+115-44.070W
+
+---------------------------------------------------------------------------------------
+
+A 77/2024
+060000 UTC JUL 2024
+Waterway Information - Channel Change
+Due to dredging operations in the mouth of the Hay River, the Hay River Inner range LL
+1687 and LL 1688 no longer marks the navigable channel. Disregard this range.
+
+POSITION
+60-51.645N 115-44.100W
+POSITION 60-51.570N 115-44.107W
+
+---------------------------------------------------------------------------------------
+
+A 355/2024
+310000 UTC OCT 2024
+Aids to Navigation
+Unlit
+
+POSITION 66-08.855N 065-42.259W
+
+---------------------------------------------------------------------------------------
+
+A 20/2025
+280000 UTC FEB 2025
+Obstruction
+Scientific moorings temporarily established at :
+67 02.312N 057 02.191W, depth 692 metres
+67 04.492N 056 41.167W, depth 386 metres
+67 06.408N 056 19.691W, depth 148 metres
+67 08.709N 055 52.690W, depth 112 metres
+72 00.082N 065 30.092W, depth 2322 metres
+
+POSITION 67-02.312N 057-02.191W
+POSITION
+67-04.492N 056-41.167W
+POSITION 67-06.408N 056-19.691W
+POSITION 67-08.709N 055-52.690W
+POSITION 72-00.082N 065-30.092W
+
+---------------------------------------------------------------------------------------
+
+A 42/2025
+040000 UTC MAY 2025
+Obstruction
+Scientific moorings temporarily established at:
+66 39.490N 061 10.151W, depth 152 metres
+66 45.785N 060 04.785W, depth 662 metres
+66 41.564N 060 45.996W, depth 464 metres
+66 51.187N 059 03.227W, depth 1048 metres
+66 58.782N 057 41.412W, depth 874 metres
+
+POSITION 66-39.490N 061-10.151W
+POSITION
+66-45.785N 060-04.785W
+POSITION 66-41.564N 060-45.996W
+POSITION 66-51.187N 059-03.227W
+POSITION 66-58.782N 057-41.412W
+
+---------------------------------------------------------------------------------------
+
+A 43/2025
+070000 UTC MAY 2025
+Waterway information
+An uncharted rocky shoal of unknown depth has been reported along the Simpson Island
+Range line (LL 1700.1 / 1700.2). The approximate center of the shoal is at 61 38.9399 N
+112 59.1578 W (WGS 84). Mariners should stay outside of a 600 metres radius area from the
+centre of the shoal. The SW end of the shoal is approximately 5,875 metres from the
+Simpson Island Front Range tower (LL 1700.1). Mariners are also reminded to take into
+account real-time water levels for Great Slave Lake, as published by the Water Survey of
+Canada.
+
+POSITION 61-38.940N 112-59.158W
+
+---------------------------------------------------------------------------------------
+
+A 83/2025
+280000 UTC JUN 2025
+Waterway information
+Red buoy Mile 56.6 established at 61 23.717N 117 49.393W
+
+POSITION 61-23.717N 117-49.393W
+
+---------------------------------------------------------------------------------------
+
+A 84/2025
+280000 UTC JUN 2025
+Waterway Information - Channel Change
+Green buoy mile 884.0 in 67 18.909N 133 20.768W permanently relocated to 67 18.808N 133
+20.950W
+Green buoy mile 884.6 in 67 19.187N 133 21.631W permanently relocated to 67 19.191N 133
+22.021W
+Green buoy mile 885.5 in 67 19.575N 133 23.273W permanently relocated to 67 19.509N 133
+23.452W
+Green buoy mile 887.1 in 67 20.525N 133 25.684W permanently relocated to mile 887.3 to 67
+20.638N 133 25.915W
+Green buoy established mile 887.7 in 67 20.969N 133 26.364W
+Red buoy mile 887.7 in 67 21.107N 133 26.677W permanently relocated to mile 887.9 to 67
+21.152N 133 26.524W
+Red buoy mile 888.6 in 67 21.610N 133 27.230W permanently relocated to mile 888.6 to 67
+21.619N 133 27.029W
+Red buoy mile 889.2 mile correction to 888.9 to 67 21.935N 133 27.765W
+Red buoy mile 889.7 in 67 22.290N 133 28.430W permanently relocated to mile 889.5 to 67
+22.366N 133 28.413W
+Red buoy Mile 890.5 in 67 22.867N 133 29.984W permanently relocated to 67 22.938N 133
+29.840W
+Red buoy mile 891.0 in 67 23.236N 133 30.766W permanently relocated to 67 23.219N 133
+30.707W
+Red buoy mile 891.5 in 67 23.620N 133 31.220W permanently relocated to 67 23.602N 133
+31.316W
+Red buoy mile 892.7 in 67 24.520N 133 32.376W permanently relocated to 67 24.551N 133
+32.531W
+
+POSITION 67-18.808N 133-20.950W
+POSITION 67-19.191N 133-22.021W
+POSITION
+67-19.509N 133-23.452W
+POSITION 67-20.638N 133-25.915W
+POSITION 67-20.969N 133-26.364W
+POSITION 67-21.152N 133-26.524W
+POSITION 67-21.619N 133-27.029W
+POSITION 67-21.935N
+133-27.765W
+POSITION 67-22.366N 133-28.413W
+POSITION 67-22.938N 133-29.840W
+POSITION
+67-23.219N 133-30.707W
+POSITION 67-23.602N 133-31.316W
+POSITION 67-24.551N 133-32.531W
+
+---------------------------------------------------------------------------------------
+
+A 86/2025
+290000 UTC JUN 2025
+Waterway information
+Green Buoy Mile 830.9 in 67 24.251N 131 41.557W permanently discontinued.
+Red Buoy established at Mile 830.9 at 67 24.359N 131 41.408W.
+
+POSITION 67-24.251N
+131-41.557W
+POSITION 67-24.349N 131-41.408W
+
+---------------------------------------------------------------------------------------
+
+A 87/2025
+290000 UTC JUN 2025
+Waterway information
+Red Buoy Mile 809.5 at 67 29.001N 130 58.776W permanently discontinued.
+
+POSITION
+67-29.001N 130-58.776W
+
+---------------------------------------------------------------------------------------
+
+A 89/2025
+290000 UTC JUN 2025
+Waterway information
+Green Buoy Mile 786.6 in 67 17.884N 130 26.145W permanently relocated to Mile 786.4 to 67
+17.607N 130 26.049W.
+Red Buoy Mile 787.1 in 67 18.219N 130 27.188W permanently relocated to 67 18.291N 130
+26.810W
+
+POSITION 67-17.607N 130-26.049W
+POSITION 67-28.291N 130-26.810W
+
+---------------------------------------------------------------------------------------
+
+A 93/2025
+300000 UTC JUN 2025
+Waterway Information - Channel Change
+Red Buoy established Mile 778.4 in 67 12.021N 130 15.681W.
+Green Buoy Mile 778.8 in 67 12.113N 130 16.332W, permanently discontinued.
+Red Buoy established Mile 779.1 in 67 12.546N 130 16.174W.
+Green Buoy Mile 779.4 in 67 12.567N 130 17.017W, permanently discontinued.
+Red Buoy established Mile 779.7 in 67 12.956N 130 17.016W.
+Green Buoy Mile 779.8 position 67 12.874N 130 17.746W, permanently discontinued.
+Green Buoy Mile 780.3 in 67 13.303N 130 18.186W, permanently discontinued.
+Red Buoy established Mile 780.4 in 67 13.290N 130 18.139W.
+Green Buoy established Mile 781.1 in 67 13.609N 130 19.360W.
+Red Buoy Mile 781.1 in 67 13.911N 130 20.021W, permanently discontinued.
+Green Buoy Mile 781.4 in 67 14.120N 130 19.929W permanently relocated to Mile 781.7 to 67
+14.036N 130 20.391W
+Green Buoy established Mile 782.4 in 67 14.442N 130 21.131W.
+Green Buoy Mile 783.0 in 67 14.960N 130 21.837W permanently relocated to position 67
+14.931N 130 22.009W
+
+POSITION 67-12.021N 130-15.681W
+POSITION 67-12.113N 130-16.332W
+POSITION 67-12.546N 130-16.174W
+POSITION 67-12.567N 130-17.017W
+POSITION 67-12.956N
+130-17.016W
+POSITION 67-12.874N 130-17.746W
+POSITION 67-13.303N 130-18.186W
+POSITION
+67-13.290N 130-18.139W
+POSITION 67-13.609N 130-19.360W
+POSITION 67-13.911N 130-20.021W
+POSITION 67-14.036N 130-20.391W
+POSITION 67-14.442N 130-21.131W
+POSITION 67-14.931N
+130-22.009W
+
+---------------------------------------------------------------------------------------
+
+A 94/2025
+300000 UTC JUN 2025
+Waterway Information - Channel Change
+Green buoy mile 762.8 in 66 58.985N 130 14.667W permanently relocated to mile 762.7 to 66
+59.075N 130 14.705W
+Green buoy mile 763.3 in 66 59.609N 130 13.607W permanently relocated to mile 763.0 to 66
+59.339N 130 14.355W
+Green buoy mile 763.6 in 66 59.592N 130 13.469W permanently relocated to 66 59.764N 130
+13.644W
+Red buoy mile 763.7 in 66 59.658N 130 13.183W permanently discontinued
+Red Buoy mile 763.8 in 66 59.795N 130 12.711W permanently discontinued
+Green Buoy mile 763.8 in 66 59.725N 130 12.632W permanently relocated to mile 764.3 to 67
+00.206N 130 12.921W
+Red buoy mile 764.4 in 67 00.159N 130 12.752W permanently relocated to mile 764.6 to 67
+00.496N 130 12.853W
+
+POSITION 66-59.075N 130-14.705W
+POSITION 66-59.339N 130-14.355W
+POSITION 66-59.764N 130-13.644W
+POSITION 66-59.658N 130-13.183W
+POSITION 66-59.795N
+130-12.711W
+POSITION 67-00.206N 130-12.921W
+POSITION 67-00.496N 130-12.853W
+
+---------------------------------------------------------------------------------------
+
+A 96/2025
+300000 UTC JUN 2025
+Waterway Information - Channel Change
+Red buoy mile 750.4 in 66 49.595N 130 04.259W permanently relocated to mile 750.9 to 66
+49.809N 130 04.535W
+Green buoy mile 750.7 in 66 49.810N 130 04.508W permanently discontinued
+Red buoy mile 751.1 in 66 49.868N 130 05.412W permanently relocated to Mile 751.6 to 66
+50.206N 130 05.751W
+Green buoy mile 751.9 in 66 50.240N 130 06.346W permanently discontinued
+Red buoy established mile 752.2 in 66 50.515N, 130 06.832W
+Green buoy mile 753.0 in 66 51.055N 130 07.230W permanently relocated to 66 51.230N 130
+07.753W
+
+POSITION 66-49.809N 130-04.535W
+POSITION 66-49.810N 130-04.508W
+POSITION
+66-50.206N 130-05.751W
+POSITION 66-50.240N 130-06.346W
+POSITION 66-50.515N 130-06.832W
+POSITION 66-51.230N 130-07.753W
+
+---------------------------------------------------------------------------------------
+
+A 146/2025
+140000 UTC JUL 2025
+Waterway Information - Channel Change
+Red buoy established mile 657.3 in 65 58.408N 129 05.974W
+Green buoy Mile 657.5 in 65 58.42N 129 05.88W permanently discontinued
+Red buoy established mile 657.9 in 65 58.927N 129 06.115W
+Green buoy Mile 658.0 in 65 58.91N 129 06.15W permanently discontinued
+Green buoy Mile 658.3 in 65 59.33N 129 06.61W permanently discontinued
+Red buoy established Mile 658.4 in 65 59.349N 129 06.494W
+Red buoy Mile 658.7 in 65 59.55N, 129 07.12W permanently relocated to 65 59.688N 129
+06.870W
+Green buoy Mile 658.8 in 65 59.69N 129 07.16W permanently discontinued
+Green buoy Mile 659.5 in 66 00.059N, 129 07.900W permanently relocated to Mile 659.3 in
+66 00.088N 129 07.871W
+Green buoy Mile 662.1 in 66 02.230N, 129 08.425W permanently relocated to Mile 662.0 in
+66 02.176N, 129 08.425W
+Green Buoy Mile 662.6 in 66 02.81N, 129 08.11W permanently relocated to Mile 662.7 in 66
+02.753N, 129 08.223W
+Green Buoy Mile 663.1 in 66 03.18N, 129 07.71W permanently relocated to Mile 663.3 in 66
+03.168N, 129 07.754W
+
+POSITION 65-58.408N 129-05.974W
+POSITION 65-58.420N 129-05.880W
+POSITION 65-58.927N 129-06.115W
+POSITION 65-58.910N 129-06.150W
+POSITION 65-59.330N
+129-06.610W
+POSITION 65-59.349N 129-06.494W
+POSITION 65-59.688N 129-06.870W
+POSITION
+65-59.690N 129-07.160W
+POSITION 66-00.088N 129-07.871W
+POSITION 66-02.176N 129-08.425W
+POSITION 66-02.753N 129-08.223W
+POSITION 66-03.168N 129-07.754W
+
+---------------------------------------------------------------------------------------
+
+A 190/2025
+030000 UTC AUG 2025
+Waterway Information - Channel Change
+Green buoy Mile 513.8 in 64 53.743N 125 35.039W permanently relocated to Mile 513.9 in 64
+53.699N 125 35.104W
+Green buoy Mile 514.2 in 64 53.822N 125 35.781W permanently relocated to Mile 514.3 in 64
+53.714N 125 35.945W
+Red buoy Mile 514.2 in 64 53.732N 125 35.895W permanently relocated to Mile 514.3 in 64
+53.667N 125 35.967W
+Green buoy Mile 514.6 in 64 53.800N 125 36.600W permanently relocated to Mile 514.8 in 64
+53.807N 125 37.020W
+Red buoy Mile 514.8 in 64 53.862N 125 37.304W permanently relocated to Mile 515.1 in 64
+53.824N 125 37.477W
+
+POSITION 64-53.699N 125-35.104W
+POSITION 64-53.714N 125-35.945W
+POSITION 64-53.667N 125-35.967W
+POSITION 64-53.807N 125-37.020W
+POSITION 64-53.824N
+125-37.477W
+
+---------------------------------------------------------------------------------------
+
+A 193/2025
+040000 UTC AUG 2025
+Aids to Navigation
+Red buoy mile 754.4 in 66 52.279N 130 07.445W permanently relocated to 66 52.531N 130
+07.642W, mile 754.6
+
+POSITION 66-52.279N 130-07.445W
+POSITION 66-52.531N 130-07.642W
+
+---------------------------------------------------------------------------------------
+
+A 195/2025
+040000 UTC AUG 2025
+Waterway Information - Channel Change
+Red buoy mile 415.4 at 63 57.940N 124 13.740W permanently discontinued 
+Green buoy mile 415.5 at 63 58.000N 124 13.950W permanently discontinued
+Red buoy mile 415.5 in 63 57.964N 124 13.967W permanently relocated to 63 57.947N 124
+13.763W, mile 415.4
+Green buoy mile 415.5 in 63 58.124N 124 13.870W permanently relocated to 63 58.006N 124
+13.944W, mile 415.5
+
+POSITION 63-57.940N 124-13.740W
+POSITION 63-58.000N 124-13.950W
+POSITION 63-57.964N 124-13.967W
+POSITION 63-58.124N 124-13.870W
+POSITION 63-57.947N
+124-13.763W
+POSITION 63-58.006N 124-13.944W
+
+---------------------------------------------------------------------------------------
+
+A 196/2025
+050000 UTC AUG 2025
+Aids to Navigation
+Temporarily out of service
+
+POSITION 62-41.567N 123-13.250W
+
+---------------------------------------------------------------------------------------
+
+A 204/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Unreliable
+
+POSITION 69-02.392N 104-54.982W
+
+---------------------------------------------------------------------------------------
+
+A 205/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Unreliable
+
+POSITION 69-02.323N 104-53.018W
+
+---------------------------------------------------------------------------------------
+
+A 206/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Unreliable
+
+POSITION 69-05.247N 104-57.052W
+
+---------------------------------------------------------------------------------------
+
+A 207/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Unreliable
+
+POSITION 69-05.495N 104-56.858W
+
+---------------------------------------------------------------------------------------
+
+A 208/2025
+090000 UTC AUG 2025
+Aids to Navigation
+Unlit
+
+POSITION 62-13.336N 114-06.928W
+
+---------------------------------------------------------------------------------------
+
+A 233/2025
+200000 UTC AUG 2025
+Waterway information
+Shallow depths reported:
+74 39.714N 091 18.591W 7.1m
+74 39.865N 091 18.314W 8.0m
+74 39.961N 091 18.389W 17.1m
+74 40.290N 091 18.351W 12.7m
+ 
+Depths are reduced to CHS Chart Datum.
+
+POSITION 74-39.714N 091-18.591W
+POSITION
+74-39.865N 091-18.314W
+POSITION 74-39.961N 091-18.389W
+POSITION 74-40.290N 091-18.351W
+
+---------------------------------------------------------------------------------------
+
+A 243/2025
+220000 UTC AUG 2025
+Aids to Navigation
+Permanently discontinued
+
+POSITION 69-45.000N 132-21.500W
+
+---------------------------------------------------------------------------------------
+
+A 252/2025
+280000 UTC AUG 2025
+Aids to Navigation
+Out of service
+
+POSITION 69-09.243N 136-10.665W
+
+---------------------------------------------------------------------------------------
+
+A 258/2025
+300000 UTC AUG 2025
+Waterway Information
+Shallow depth reported at 74 38.628N 091 20.535W, 13.6m.
+Depths are reduced to CHS Chart Datum.
+
+POSITION 74-38.628N 091-20.535W
+
+---------------------------------------------------------------------------------------
+
+A 262/2025
+050000 UTC SEP 2025
+Obstruction
+Subsurface scientific mooring deployed in 66 01.858N 067 06.154W, top of mooring 1.0m
+above seabed. This mooring will remain deployed for one year.
+
+POSITION 66-01.858N
+067-06.154W
+
+---------------------------------------------------------------------------------------
+
+A 270/2025
+170000 UTC SEP 2025
+Waterway Information
+Shoals located at:
+65 14.946N 063 03.293W, depth unknown
+65 15.157N 063 01.288W, depth unknown
+
+POSITION 65-14.946N 063-03.293W
+POSITION
+65-15.157N 063-01.288W
+
+---------------------------------------------------------------------------------------
+
+A 271/2025
+170000 UTC SEP 2025
+Waterway Information
+Potential shoals of unknown depths in the area bounded by the following
+coordinates:
+65 34.155N 062 13.649W
+65 34.029N 062 12.974W
+65 33.246N 062 13.332W
+65 33.484N 062 14.032W
+
+AREA BOUNDED BY 65-33.246N 062-13.332W, 65-34.029N 062-12.974W,
+65-34.155N 062-13.649W, 65-33.484N 062-14.032W
+
+---------------------------------------------------------------------------------------
+
+A 272/2025
+170000 UTC SEP 2025
+Waterway Information
+Potential shoals of unknown depths in the area bounded by the following coordinates:
+65 01.231N 063 22.848W
+64 57.513N 063 05.240W
+65 09.232N 062 52.575W
+65 11.165N 063 09.077W
+
+AREA BOUNDED BY 65-01.231N 063-22.848W, 64-57.513N 063-05.240W,
+65-09.232N 062-52.575W, 65-11.165N 063-09.077W
+
+---------------------------------------------------------------------------------------
+
+A 289/2025
+270000 UTC SEP 2025
+Waterway Information
+Shallow depths reported:
+71 21.823N 096 47.186W, 42m
+
+POSITION 71-21.823N 096-47.186W
+
+---------------------------------------------------------------------------------------
+
+A 290/2025
+270000 UTC SEP 2025
+Waterway Information
+Shallow depth reported at 71 18.038N 096 52.611W, 37.6m
+
+POSITION 71-18.038N 096-52.611W
+
+---------------------------------------------------------------------------------------
+
+A 295/2025
+290000 UTC SEP 2025
+Waterway Information
+Shallow depth reported at 76 40.356N 102 16.622W, 33.57m
+
+POSITION 76-40.356N 102-16.622W
+
+---------------------------------------------------------------------------------------
+
+A 296/2025
+300000 UTC SEP 2025
+Aids to Navigation
+Unreliable
+
+POSITION 69-00.183N 100-39.104W
+
+---------------------------------------------------------------------------------------
+
+A 297/2025
+300000 UTC SEP 2025
+Aids to Navigation
+Temporarily out of service
+
+POSITION 69-27.906N 132-59.349W
+
+---------------------------------------------------------------------------------------
+
+A 298/2025
+300000 UTC SEP 2025
+Aids to Navigation
+Temporarily out of service
+
+POSITION 69-27.681N 132-58.997W
+
+---------------------------------------------------------------------------------------
+
+A 299/2025
+010000 UTC OCT 2025
+Waterway Information
+Shallow depth reported at:
+71 22.816N 096 41.268W, 29.3m
+71 22.047N 096 40.732W, 26.6m
+71 21.533N 096 45.789W, 11.3m
+71 21.200N 096 44.653W, 11.3m
+71 20.589N 096 45.338W, 28.4m
+71 18.282N 096 49.029W, 28.35m
+71 17.445N 096 48.787W, 41m
+
+POSITION 71-22.816N 096-41.268W
+POSITION 71-22.047N
+096-40.732W
+POSITION 71-21.533N 096-45.789W
+POSITION 71-21.200N 096-44.653W
+POSITION
+71-20.589N 096-45.338W
+POSITION 71-18.282N 096-49.029W
+POSITION 71-17.445N 096-48.787W
+
+---------------------------------------------------------------------------------------
+
+A 312/2025
+020000 UTC OCT 2025
+Obstruction
+Subsurface scientific moorings deployed in:
+75 52.806N 104 05.322W, depth of 207m, top of mooring 90m, mooring length 117m.
+75 49.356N 105 15.558W, depth of 181m, top of mooring 28m, mooring length 153m.
+
+POSITION
+75-52.806N 104-05.322W
+POSITION 75-49.356N 105-15.558W
+
+---------------------------------------------------------------------------------------
+
+A 313/2025
+020000 UTC OCT 2025
+Obstruction
+Subsurface scientific moorings deployed in:
+81 05.664N 091 34.854W, depth of 492m, top of mooring 227m, mooring length 265m.
+81 06.414N 090 19.398W, depth of 417m, top of mooring 77m, mooring length 340m.
+
+POSITION
+81-05.664N 091-34.854W
+POSITION 81-06.414N 090-19.398W
+
+---------------------------------------------------------------------------------------
+
+A 314/2025
+020000 UTC OCT 2025
+Obstruction
+Subsurface scientific moorings deployed in:
+80 01.080N 086 49.542W, depth of 547m, top of mooring 162m, mooring length 385m.
+80 01.290N 086 48.990W, depth of 547m, top of mooring 527m, mooring length 20m.
+
+POSITION
+80-01.080N 086-49.542W
+POSITION 80-01.290N 086-48.990W
+
+---------------------------------------------------------------------------------------
+
+A 315/2025
+020000 UTC OCT 2025
+Obstruction
+Subsurface scientific moorings deployed in:
+76 42.978N 097 01.044W, depth of 289m, top of mooring 29m, mooring length 260m.
+76 32.826N 097 29.964W, depth of 156m, top of mooring 43m, mooring length 115m.
+76 32.436N 097 30.168W, depth of 146m, top of mooring 61m, mooring length 85m.
+
+POSITION
+76-42.978N 097-01.044W
+POSITION 76-32.826N 097-29.964W
+POSITION 76-32.436N 097-30.168W
+
+---------------------------------------------------------------------------------------
+
+A 316/2025
+020000 UTC OCT 2025
+Obstruction
+Subsurface scientific mooring deployed in 72 52.834N 075 39.859W, depth of 423m, top of
+mooring 182m, mooring length 241m.
+
+POSITION 72-52.834N 075-39.859W
+
+---------------------------------------------------------------------------------------
+
+A 317/2025
+020000 UTC OCT 2025
+Obstruction
+Subsurface scientific mooring deployed in 81 32.571N 064 53.689W, depth of 259m, top of
+mooring 128m, mooring length 131m.
+
+POSITION 81-32.571N 064-53.689W
+
+---------------------------------------------------------------------------------------
+
+A 318/2025
+020000 UTC OCT 2025
+Aids to Navigation
+Out of service
+
+POSITION 69-27.351N 132-59.971W
+
+---------------------------------------------------------------------------------------
+
+A 336/2025
+140000 UTC OCT 2025
+Obstruction
+Subsurface scientific mooring deployed in 64 29.940N 080 30.210W, top of mooring 211m.
+POSITION 64-29.940N 080-30.210W
+
+---------------------------------------------------------------------------------------
+
+A 342/2025
+200000 UTC OCT 2025
+Waterway Information
+Shoals located at:
+71 21.075N 096 53.896W, depth unknown
+
+POSITION 71-21.075N 096-53.896W
+
+---------------------------------------------------------------------------------------
+
+A 344/2025
+210000 UTC OCT 2025
+Aids to Navigation
+Damaged
+
+POSITION 53-52.015N 079-08.734W
+POSITION 53-52.256N 079-08.759W
+
+---------------------------------------------------------------------------------------
+
+A 346/2025
+220000 UTC OCT 2025
+Aids to Navigation
+Missing.
+
+POSITION 47-46.595N 055-50.925W
+
+---------------------------------------------------------------------------------------
+
+A 355/2025
+300000 UTC OCT 2025
+Waterway Information
+Shallow depths reported:
+58 49.001N 068 19.013W, 2.3m
+58 49.676N 068 16.548W, 5.8m
+58 49.748N 068 15.920W, 3.9m
+58 14.026N 068 16.625W, 4.2m
+58 13.737N 068 16.924W, 3.6m
+58 10.496N 068 19.167W, 4.6m 
+58 10.373N 068 19.262W, 4.2m
+58 06.571N 068 18.878W, 6.7m
+58 05.893N 068 21.855W, 2.7m
+58 05.900N 068 22.090W, 1.8m
+58 05.898N 068 22.237W, 3.0m
+58 05.438N 068 23.563W, 0.4m
+Available depth refers to chart datum.
+
+POSITION 58-49.001N 068-19.013W
+POSITION
+58-49.676N 068-16.548W
+POSITION 58-49.748N 068-15.920W
+POSITION 58-14.026N 068-16.625W
+POSITION 58-13.737N 068-16.924W
+POSITION 58-10.496N 068-19.167W
+POSITION 58-10.373N
+068-19.262W
+POSITION 58-06.571N 068-18.878W
+POSITION 58-05.893N 068-21.855W
+POSITION
+58-05.900N 068-22.090W
+POSITION 58-05.898N 068-22.237W
+POSITION 58-05.438N 068-23.563W
+
+---------------------------------------------------------------------------------------
+
+A 375/2025
+070000 UTC NOV 2025
+Aids to Navigation
+Temporarily changed from Iso W 2s to Iso W 1s
+
+POSITION 63-15.186N 068-01.338W
+
+---------------------------------------------------------------------------------------
+
+A 386/2025
+210000 UTC NOV 2025
+Obstruction
+Twenty two scientific moorings deployed 1m above the sea floor in the following positions:
+61 32.921N 059 23.180W
+61 20.013N 058 47.402W
+61 03.966N 058 12.109W
+60 51.407N 057 37.034W
+61 25.560N 059 50.901W
+61 15.377N 059 22.426W
+61 03.180N 058 55.910W
+60 53.822N 058 33.215W
+60 38.791N 058 04.728W
+61 09.006N 060 06.798W
+61 02.036N 059 32.469W
+60 49.161N 059 12.670W
+60 43.085N 058 43.890W
+60 50.619N 060 11.908W
+60 42.985N 059 40.958W
+60 35.795N 059 10.904W
+60 28.940N 058 27.738W
+60 14.229N 057 51.325W
+60 35.358N 060 10.699W
+60 23.705N 059 36.229W
+60 18.958N 059 04.368W
+60 13.292N 058 33.866W
+These moorings will be retrieved late summer or early fall 2026.
+
+POSITION 61-32.921N
+059-23.180W
+POSITION 61-20.013N 058-47.402W
+POSITION 61-03.966N 058-12.109W
+POSITION
+60-51.407N 057-37.034W
+POSITION 61-25.560N 059-50.901W
+POSITION 61-15.377N 059-22.426W
+POSITION 61-03.180N 058-55.910W
+POSITION 60-53.822N 058-33.215W
+POSITION 60-38.791N
+058-04.728W
+POSITION 61-09.006N 060-06.798W
+POSITION 61-02.036N 059-32.469W
+POSITION
+60-49.161N 059-12.670W
+POSITION 60-43.085N 058-43.890W
+POSITION 60-50.619N 060-11.908W
+POSITION 60-42.985N 059-40.958W
+POSITION 60-35.795N 059-10.904W
+POSITION 60-28.940N
+058-27.738W
+POSITION 60-14.229N 057-51.325W
+POSITION 60-35.358N 060-10.699W
+POSITION
+60-23.705N 059-36.229W
+POSITION 60-18.958N 059-04.368W
+POSITION 60-13.292N 058-33.866W
+
+---------------------------------------------------------------------------------------
+
+A 53/2026
+050000 UTC JUN 2026
+Offshore Works
+A submarine outfall has been built between the following coordinates:
+62 47.918N 092 06.087W
+62 47.819N 092 06.168W
+
+ALONG LINE JOINING 62-47.918N 092-06.087W, 62-47.819N 092-06.168W
+
+---------------------------------------------------------------------------------------
+
+A 61/2026
+140000 UTC JUN 2026
+Aids to Navigation
+Green buoy mile 941.6 in 67 55.366N 134 24.716W permanently relocated to 67 55.418N 134
+25.150W
+Green buoy mile 943.3 in 67 56.916N 134 26.050W permanently relocated to 67 56.742N 134
+26.525W
+
+POSITION 67-55.367N 134-24.717W
+POSITION 67-56.917N 134-26.050W
+
+---------------------------------------------------------------------------------------
+
+A 63/2026
+140000 UTC JUN 2026
+Waterway Information - Channel Change
+Red buoy mile 925.3 in 67 42.000N 134 15.239W permanently relocated to mile 925.3 to 67
+41.988N 134 15.417W Green buoy mile 926.0 in 67 42.707N 134 14.260W permanently relocated
+to mile 926.0 to 67 42.734N 134 14.316W
+Red buoy mile 927.0 in 67 43.588N 134 13.465W permanently discontinued.
+Green buoy established mile 927.4 in 67 43.793N 134 13.466W
+Red buoy mile 927.7 in 67 44.228N 134 13.313W permanently discontinued.
+Green buoy established mile 927.7 in 67 44.244N 134 13.339W
+Red buoy mile 930.8 in 67 47.033N 134 12.250W permanently discontinued
+Green buoy established mile 930.8 in 67 47.041N 134 12.311W
+
+POSITION 67-41.988N
+134-15.417W
+POSITION 67-42.734N 134-14.316W
+POSITION 67-43.588N 134-13.465W
+POSITION
+67-43.793N 134-13.466W
+POSITION 67-44.228N 134-13.313W
+POSITION 67-44.244N 134-13.339W
+POSITION 67-47.033N 134-12.250W
+POSITION 67-47.041N 134-12.311W
+
+---------------------------------------------------------------------------------------
+
+A 66/2026
+160000 UTC JUN 2026
+Aids to Navigation
+Permanently relocated to 67 11.999N 132 49.337W
+
+POSITION 67-11.933N 132-49.133W
+POSITION
+67-11.999N 132-49.337W
+
+---------------------------------------------------------------------------------------
+
+A 67/2026
+160000 UTC JUN 2026
+Aids to Navigation
+Red buoy mile 850.3 in 67 18.790N 132 20.330W permanently relocated to 67 18.840N 132
+20.493W
+
+POSITION 67-18.840N 132-20.493W
+
+---------------------------------------------------------------------------------------
+
+A 68/2026
+160000 UTC JUN 2026
+Aids to Navigation
+To be disregarded
+
+POSITION 67-28.283N 131-06.000W
+
+---------------------------------------------------------------------------------------
+
+A 69/2026
+180000 UTC JUN 2026
+Waterway Information - Channel Change
+Red buoy mile 776.9 in 67 10.583N 130 14.950W permanently relocated to 67 10.635N 130
+14.945W
+Green buoy mile 777.1 in 67 10.866N 130 14.650W permanently discontinued
+Red buoy established mile 777.0 in 67 11.047N 130 14.998W
+Red buoy established mile 778.7 in 67 11.568N 130 15.391W
+
+POSITION 67-10.635N
+130-14.945W
+POSITION 67-10.866N 130-14.650W
+POSITION 67-11.047N 130-14.998W
+POSITION
+67-11.568N 130-15.391W
+
+---------------------------------------------------------------------------------------
+
+A 70/2026
+180000 UTC JUN 2026
+Waterway Information - Channel Change
+Green buoy mile 759.6 in 66 56.216N 130 12.333W permanently relocated to 66 56.406N 130
+12.185W
+Red buoy mile 759.2 in 66 55.900N 130 11.800W permanently relocated to 66 55.934N 130
+11.135W
+Red buoy mile 758.4 in 66 55.533N 130 10.933W permanently relocated to 66 55.530N 130
+10.383W
+Green buoy mile 758.1 in 66 55.197N 130 09.953W permanently relocated to 66 55.175N 130
+09.835W
+Green buoy mile 757.2 in 66 54.616N 130 09.300W permanently relocated to 66 54.517N 130
+09.619W
+
+POSITION 66-56.406N 130-12.185W
+POSITION 66-55.934N 130-11.135W
+POSITION
+66-55.530N 130-10.383W
+POSITION 66-55.175N 130-09.835W
+POSITION 66-54.517N 130-09.619W
+
+---------------------------------------------------------------------------------------
+
+A 71/2026
+180000 UTC JUN 2026
+Aids to Navigation
+Red buoy established mile 755.4 in 66 53.289N 130 08.104W
+
+POSITION 66-53.289N 130-08.104W
+
+---------------------------------------------------------------------------------------
+
+A 72/2026
+180000 UTC JUN 2026
+Aids to Navigation
+Green buoy mile 753.4 in 66 51.533N 130 07.833W permanently relocated to 66 51.565N 130
+07.951W
+
+POSITION 66-51.565N 130-07.951W
+
+---------------------------------------------------------------------------------------
+
+A 73/2026
+180000 UTC JUN 2026
+Waterway Information - Channel Change
+Red buoy mile 748.8 in 66 48.850N 130 01.833W permanently relocated to 66 48.787N 130
+02.068W
+Red buoy mile 748.1 in 66 48.350N 130 01.316W permanently relocated to 66 48.389N 130
+01.619W
+Red buoy mile 747.4 in 66 47.816N 130 00.783W permanently relocated to 66 47.791N 130
+00.983W
+
+POSITION 66-48.787N 130-02.068W
+POSITION 66-48.389N 130-01.619W
+POSITION
+66-47.791N 130-00.983W
+
+---------------------------------------------------------------------------------------
+
+A 75/2026
+200000 UTC JUN 2026
+Aids to Navigation
+Permanently discontinued.
+
+POSITION 66-02.783N 129-08.883W
+
+---------------------------------------------------------------------------------------
+
+A 78/2026
+200000 UTC JUN 2026
+Waterway Information - Channel Change
+Red buoy mile 658.4 in 65 59.346N 129 06.494W permanently discontinued.
+Red buoy mile 658.7 in 65 59.690N 129 07.870W permanently discontinued.
+Green buoy mile 659.3 in 66 00.088N 129 07.871W permanently discontinued.
+Green buoy mile 660.1 in 66 00.566N 129 08.333W permanently discontinued.
+Green buoy mile 660.9 in 66 01.233N 129 08.633W permanently discontinued.
+Green buoy mile 661.6 in 66 01.835N 129 08.661W permanently discontinued.
+Green buoy mile 662.0 in 66 01.176N 129 08.425W permanently discontinued.
+Green buoy mile 662.7 in 66 02.753N 129 08.223W permanently discontinued.
+Green buoy mile 663.3 in 66 03.168N 129 07.754W permanently discontinued.
+Green buoy mile 663.7 in 66 03.608N 129 07.222W permanently discontinued.
+Green buoy mile 664.1 in 66 03.813N 129 06.861W permanently discontinued.
+Green buoy mile 665.0 in 66 04.450N 129 06.766W permanently discontinued.
+Red buoy mile 665.4 in 66 04.700N 129 06.750W permanently discontinued.
+Green buoy mile 665.6 in 66 04.916N 129 06.450W permanently discontinued.
+Green buoy mile 666.0 in 66 05.259N 129 06.104W permanently discontinued.
+Red buoy mile 666.3 in 66 05.508N 129 05.862W permanently discontinued.
+Red buoy mile 666.8 in 66 05.901N 129 05.233W permanently discontinued.
+Red buoy established mile 659.2 in 65 59.533N 129 06.211W.
+Red buoy established mile 659.8 in 66 00.063N 129 05.920W.
+Green buoy established mile 660.5 in 66 00.571N 129 05.261W.
+Green buoy established mile 661.5 in 66 01.138N 129 04.852W.
+Green buoy established mile 662.0 in 66 01.694N 129 04.452W.
+Red buoy established mile 662.0 in 66 01.802N 129 04.585W.
+Red buoy established mile 662.7 in 66 02.321N 129 04.562W.
+Red buoy established mile 663.3 in 66 02.844N 129 04.732W.
+Red buoy established mile 665.1 in 66 04.511N 129 05.147W.
+Red buoy established mile 665.9 in 66 05.215N 129 05.101W.
+Red buoy established mile 666.7 in 66 05.877N 129 05.189W.
+
+POSITION 65-59.346N
+129-06.494W
+POSITION 65-59.690N 129-07.870W
+POSITION 66-00.088N 129-07.871W
+POSITION
+66-00.566N 129-08.333W
+POSITION 66-01.233N 129-08.633W
+POSITION 66-01.835N 129-08.661W
+POSITION 66-01.176N 129-08.425W
+POSITION 66-02.753N 129-08.223W
+POSITION 66-03.168N
+129-07.754W
+POSITION 66-03.608N 129-07.222W
+POSITION 66-03.813N 129-06.861W
+POSITION
+66-04.450N 129-06.766W
+POSITION 66-04.700N 129-06.750W
+POSITION 66-04.916N 129-06.450W
+POSITION 66-05.259N 129-06.104W
+POSITION 66-05.508N 129-05.862W
+POSITION 66-05.901N
+129-05.233W
+POSITION 65-59.533N 129-06.211W
+POSITION 66-00.063N 129-05.920W
+POSITION
+66-00.571N 129-05.261W
+POSITION 66-01.138N 129-04.852W
+POSITION 66-01.694N 129-04.452W
+POSITION 66-01.802N 129-04.585W
+POSITION 66-02.321N 129-04.562W
+POSITION 66-02.844N
+129-04.732W
+POSITION 66-04.511N 129-05.147W
+POSITION 66-05.215N 129-05.101W
+POSITION
+66-05.877N 129-05.189W
+
+---------------------------------------------------------------------------------------
+
+A 79/2026
+200000 UTC JUN 2026
+Seasonal Buoy Program
+The seasonal recommissioning of Canadian Coast Guard navigational buoys is underway in : 
+Great Slave Lake.
+
+AREA BOUNDED BY 60-56.448N 113-43.648W, 61-13.490N 113-24.734W,
+61-20.173N 112-42.299W, 62-00.637N 111-21.837W, 62-17.348N 110-29.844W, 62-25.538N
+109-51.857W, 62-30.576N 109-28.369W, 62-31.354N 109-01.600W, 62-49.097N 108-45.103W,
+63-00.769N 109-39.263W, 63-02.481N 110-41.205W, 62-54.745N 111-18.309W, 62-25.279N
+111-55.453W, 62-10.546N 112-27.617W, 62-12.802N 113-45.653W, 62-36.037N 114-15.135W,
+62-34.786N 114-22.448W, 62-33.859N 115-03.070W, 62-43.352N 115-29.371W, 62-54.977N
+115-36.453W, 63-08.984N 115-30.850W, 63-17.622N 115-44.040W, 62-50.892N 116-21.625W,
+62-26.146N 115-52.677W, 62-23.111N 115-27.115W, 62-12.226N 115-22.524W, 61-48.429N
+115-39.439W, 61-22.797N 116-37.322W, 61-21.980N 116-48.644W, 61-12.840N 117-00.397W,
+61-10.542N 116-57.234W, 61-04.710N 116-46.461W, 61-04.700N 116-46.467W, 61-03.152N
+116-47.420W, 61-03.149N 116-47.386W, 61-01.041N 116-48.725W, 60-53.733N 116-25.649W,
+60-47.313N 115-56.818W, 60-44.308N 115-15.627W
+
+---------------------------------------------------------------------------------------
+
+A 98/2026
+240000 UTC JUN 2026
+Submerged Object
+The hydrokinetic generator placed last year in 61 18.512N 117 36.370W reported missing.
+POSITION 61-18.512N 117-36.370W
+
+---------------------------------------------------------------------------------------
+
+A 100/2026
+250000 UTC JUN 2026
+Shallow Depth Confirmed
+43 shoals of unknown depth confirmed at 251518 UTC Jun 2026 in the following coordinates:
+58 38.805N 067 26.490W
+58 40.330N 067 27.474W
+58 40.423N 067 24.995W
+58 41.359N 067 24.926W
+58 41.948N 067 26.549W
+58 42.280N 067 24.804W
+58 42.794N 067 25.565W
+58 42.629N 067 25.804W
+58 40.647N 067 18.243W
+58 40.706N 067 18.553W
+58 38.102N 067 17.292W
+58 38.234N 067 16.348W
+58 38.378N 067 18.018W
+58 38.159N 067 17.862W
+58 37.716N 067 18.433W
+58 41.367N 067 14.476W
+58 41.425N 067 14.931W
+58 41.494N 067 14.718W
+58 45.974N 067 13.186W
+58 37.683N 067 07.357W
+58 38.594N 067 07.458W
+58 38.564N 067 07.169W
+58 38.974N 067 05.717W
+58 40.099N 067 08.950W
+58 40.619N 067 06.029W
+58 39.835N 067 07.139W
+58 38.549N 066 58.487W
+58 38.260N 066 58.202W
+58 37.526N 066 56.093W
+58 36.294N 066 50.732W
+58 36.399N 066 50.889W
+58 35.999N 066 50.142W
+58 36.179N 066 50.039W
+58 43.984N 066 39.418W
+58 42.934N 066 37.264W
+58 42.473N 066 34.952W
+58 42.546N 067 25.476W
+58 38.577N 067 19.278W
+58 40.068N 067 18.208W
+58 39.983N 067 16.555W
+58 40.494N 067 14.953W
+58 39.070N 067 15.281W
+58 45.394N 066 34.567W
+
+POSITION 58-38.805N 067-26.490W
+POSITION 58-40.330N 067-27.474W
+POSITION 58-40.423N 067-24.995W
+POSITION 58-41.359N 067-24.926W
+POSITION 58-41.948N
+067-26.549W
+POSITION 58-42.280N 067-24.804W
+POSITION 58-42.794N 067-25.565W
+POSITION
+58-42.629N 067-25.804W
+POSITION 58-40.647N 067-18.243W
+POSITION 58-40.706N 067-18.553W
+POSITION 58-38.102N 067-17.292W
+POSITION 58-38.234N 067-16.348W
+POSITION 58-38.378N
+067-18.018W
+POSITION 58-38.159N 067-17.862W
+POSITION 58-37.716N 067-18.433W
+POSITION
+58-41.367N 067-14.476W
+POSITION 58-41.425N 067-14.931W
+POSITION 58-41.494N 067-14.718W
+POSITION 58-45.974N 067-13.186W
+POSITION 58-37.683N 067-07.357W
+POSITION 58-38.594N
+067-07.458W
+POSITION 58-38.564N 067-07.169W
+POSITION 58-38.974N 067-05.717W
+POSITION
+58-40.099N 067-08.950W
+POSITION 58-40.619N 067-06.029W
+POSITION 58-39.835N 067-07.139W
+POSITION 58-38.549N 066-58.487W
+POSITION 58-38.260N 066-58.202W
+POSITION 58-37.526N
+066-56.093W
+POSITION 58-36.294N 066-50.732W
+POSITION 58-36.399N 066-50.889W
+POSITION
+58-35.999N 066-50.142W
+POSITION 58-36.179N 066-50.039W
+POSITION 58-43.984N 066-39.418W
+POSITION 58-42.934N 066-37.264W
+POSITION 58-42.473N 066-34.952W
+POSITION 58-42.546N
+067-25.476W
+POSITION 58-38.577N 067-19.278W
+POSITION 58-40.068N 067-18.208W
+POSITION
+58-39.983N 067-16.555W
+POSITION 58-40.494N 067-14.953W
+POSITION 58-39.070N 067-15.281W
+POSITION 58-45.394N 066-34.567W
+
+---------------------------------------------------------------------------------------
+
+A 105/2026
+280000 UTC JUN 2026
+Aids to Navigation
+Temporarily out of service
+
+POSITION 61-44.500N 120-43.150W
+
+---------------------------------------------------------------------------------------
+
+A 117/2026
+070000 UTC JUL 2026
+Subsurface Mooring
+Subsurface mooring deployed in 71 53.577N 080 51.373W at 071306 UTC Jul 2026. Top of
+mooring 0.4m from the seabed, depth of water 12m. 
+This mooring will remain deployed until the end of the 2027 navigational season.
+POSITION 71-53.577N 080-51.373W
+
+---------------------------------------------------------------------------------------
+
+A 121/2026
+090000 UTC JUL 2026
+Shallow Depth Confirmed
+Shoal located at:
+58 49.514N 068 15.686W, depth unknown
+58 49.548N 068 15.778W, depth unknown
+58 45.608N 068 13.631W, depth unknown.
+
+POSITION 58-49.514N 068-15.686W
+POSITION
+58-49.548N 068-15.778W
+POSITION 58-45.608N 068-13.631W
+
+---------------------------------------------------------------------------------------
+
+A 125/2026
+110000 UTC JUL 2026
+Subsurface Mooring
+Subsurface moorings deployed at 112222 UTC Jul 2026 in:
+63 57.255N 093 43.383W (Cross Bay West), top of mooring 0.4m from the seabed, depth of
+water 9m. 
+63 58.839N 094 06.111W (Ice Hunter Rock), top of mooring 0.4m from the seabed, depth of
+water 7m. 
+These moorings will remain deployed until October 2026.
+
+POSITION 63-57.255N 093-43.383W
+POSITION 63-58.839N 094-06.111W
+
+---------------------------------------------------------------------------------------
+
+A 126/2026
+120000 UTC JUL 2026
+Aids to Navigation
+Unreliable.
+
+POSITION 63-44.731N 068-31.405W
+POSITION 63-44.949N 068-31.543W
+
+---------------------------------------------------------------------------------------
+
+A 128/2026
+130000 UTC JUL 2026
+MCTS HF Services
+ - 
+MCTS MF Services
+Iqaluit MCTS. All HF RT, MF Broadcast and MF RT services located at Killinek off air
+131411 UTC Jul 2026.
+
+POSITION 60-25.450N 064-50.500W
+
+---------------------------------------------------------------------------------------
+
+A 130/2026
+130000 UTC JUL 2026
+MCTS HF Services
+ - 
+MCTS MF Services
+Iqaluit MCTS. All HF RT, MF Broadcast and MF RT services located at Coral Harbour off air
+131430 UTC Jul 2026.
+
+POSITION 64-09.017N 083-22.367W
+
+---------------------------------------------------------------------------------------
+
+A 131/2026
+130000 UTC JUL 2026
+Aids to Navigation
+Permanently relocated to mile 592.3 to 65 29.993N 127 39.235W.
+
+POSITION 65-29.877N
+127-39.278W
+POSITION 65-29.993N 127-39.235W
+
+---------------------------------------------------------------------------------------
+
+A 132/2026
+140000 UTC JUL 2026
+Subsurface Mooring
+Subsurface mooring reported in 64 19.049N 096 02.095W at 140025 UTC Jul 2026. Top of
+mooring 0.5m from the seabed, depth of water 3.25m. 
+These moorings will remain deployed until October 2026.
+
+POSITION 64-19.049N 096-02.095W
+
+---------------------------------------------------------------------------------------
+
+A 133/2026
+150000 UTC JUL 2026
+Aids to Navigation
+Red buoy established mile 664.2 in 66 03.651N 129 04.944W.
+
+POSITION 66-03.651N
+129-04.944W
+
+---------------------------------------------------------------------------------------
+
+A 134/2026
+150000 UTC JUL 2026
+Aids to Navigation
+Red buoy mile 659.8 in 66 00.063N 129 05.920W permanently relocated to 66 00.085N 129
+06.162W.
+
+POSITION 66-00.085N 129-06.162W
+
+---------------------------------------------------------------------------------------
+
+A 136/2026
+160000 UTC JUL 2026
+Aids to Navigation
+Red buoy mile 758.4 in 66 55.530N 130 10.383W permanently relocated to 66 55.570N 130
+10.233W.
+
+POSITION 66-55.570N 130-10.233W
+
+---------------------------------------------------------------------------------------
+
+A 137/2026
+160000 UTC JUL 2026
+Waterway Information - Channel Change
+Red buoy mile 796.5 in 67 20.550N 130 46.066W permanently relocated to 67 20.746N 130
+46.676W.
+Red buoy mile 797.4 in 67 20.733N 130 47.483W permanently relocated to mile 797.2 to 67
+20.848N 130 47.938W .
+
+POSITION 67-20.746N 130-46.676W
+POSITION 67-20.848N 130-47.938W
+
+---------------------------------------------------------------------------------------
+
+A 140/2026
+170000 UTC JUL 2026
+Waterway Information - Channel Change
+Red buoy mile 866.9 in 67 11.69N 132 50.21W permanently relocated to 67 11.827N 132
+50.321W
+Red buoy established mile 867.5 in 67 11.557N 132 51.303W
+Green buoy mile 867.4 in 67 11.411N 132 52.067W permanently discontinued.
+
+POSITION
+67-11.827N 132-50.321W
+POSITION 67-11.557N 132-51.303W
+POSITION 67-11.411N 132-52.067W
+
+---------------------------------------------------------------------------------------
+
+A 145/2026
+230000 UTC JUL 2026
+Aids to Navigation
+Unlit.
+
+POSITION 58-16.545N 068-16.708W
+POSITION 58-16.402N 068-16.820W
+POSITION
+58-18.705N 068-15.868W
+POSITION 58-19.490N 068-16.043W
+POSITION 58-12.460N 068-17.173W
+POSITION 58-11.723N 068-17.593W
+
+---------------------------------------------------------------------------------------
+
+A 153/2026
+260000 UTC JUL 2026
+Passenger Submersible Operations
+Planned passenger submersible operations in vicinity of M/P Viking Polaris from 26 July
+to 24 September 2026.
+
+POSITION 74-34.260N 083-11.940W
+
+---------------------------------------------------------------------------------------
+
+A 154/2026
+260000 UTC JUL 2026
+Passenger Submersible Operations
+Planned passenger submersible operations in vicinity of M/P Viking Polaris from 27 July
+to 25 September 2026.
+
+POSITION 74-41.890N 091-45.760W
+
+---------------------------------------------------------------------------------------
+
+A 155/2026
+260000 UTC JUL 2026
+Passenger Submersible Operations
+Planned passenger submersible operations in vicinity of M/P Viking Polaris from 28 July
+to 26 September 2026.
+
+POSITION 74-30.705N 082-22.210W
+
+---------------------------------------------------------------------------------------
+
+A 156/2026
+260000 UTC JUL 2026
+Aids to Navigation
+Disregard unlit ranges facing downstream, mile 1073.8 at 69 20.233N 133 51.467W, for the
+2026 Navigation Season.
+
+POSITION 69-20.233N 133-51.467W
+
+---------------------------------------------------------------------------------------
+
+A 172/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Port day mark mile 974.4 in 68 18.322N 134 12.701W permanently relocated to mile 974.5 in
+68 18.358N 134 12.645W.
+
+POSITION 68-18.358N 134-12.645W
+
+---------------------------------------------------------------------------------------
+
+A 173/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Temporarily out of service.
+
+POSITION 61-56.483N 121-36.333W
+
+---------------------------------------------------------------------------------------
+
+A 180/2026
+020000 UTC AUG 2026
+Submerged Object
+Submerged green navigational buoy with a square top mark, 2 feet by 2 feet in size,
+reported in 69 26.430N 132 58.830W at 022140 UTC Aug 2026.
+
+POSITION 69-26.430N
+132-58.830W
+
+---------------------------------------------------------------------------------------
+
+A 184/2026
+060000 UTC AUG 2026
+Scientific Instruments Change
+Subsurface scientific mooring deployed in 63 21.771N 068 12.500W, depth of 80m.
+
+POSITION
+63-21.771N 068-12.500W
+
+---------------------------------------------------------------------------------------
+
+A 193/2026
+090000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 67 44.848N 134 12.953W.
+
+POSITION 67-44.856N 134-12.851W
+POSITION 67-44.848N 134-12.953W
+
+---------------------------------------------------------------------------------------
+
+A 194/2026
+090000 UTC AUG 2026
+Aids to Navigation
+Permanently Removed.
+
+POSITION 67-21.156N 133-26.524W
+
+---------------------------------------------------------------------------------------
+
+A 196/2026
+090000 UTC AUG 2026
+Aids to Navigation
+Green buoy established mile 887.9 in 67 21.142N 133 26.628W.
+
+POSITION 67-21.142N
+133-26.628W
+
+---------------------------------------------------------------------------------------
+
+A 198/2026
+100000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 67 13.138N 133 02.565W.
+
+POSITION 67-13.118N 133-02.412W
+POSITION 67-13.138N 133-02.565W
+
+---------------------------------------------------------------------------------------
+
+A 199/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 67 18.065N 132 21.936W and operating properly.
+
+POSITION
+67-18.117N 132-28.667W
+POSITION 67-18.065N 132-21.936W
+
+---------------------------------------------------------------------------------------
+
+A 201/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Beacon Permanently Removed.
+
+POSITION 67-22.213N 131-58.212W
+
+---------------------------------------------------------------------------------------
+
+A 202/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Starboard day beacon mile 851.3 in 67 18.033N 132 21.850W, permanently removed
+Port Day beacon mile 849.3 in 67 19.567N 132 18.650W, permanently removed.
+
+POSITION
+67-18.033N 132-21.850W
+POSITION 67-19.567N 132-18.650W
+
+---------------------------------------------------------------------------------------
+
+A 203/2026
+110000 UTC AUG 2026
+Waterway Information - Channel Change
+Red buoy at Mile 848.3 located at 67 19.445N 132 16.326W, Permanently Removed
+Red buoy at Mile 849.6 located at 67 19.267N 132 19.167W, Permanently Removed
+Red buoy at Mile 850.3 located at 67 18.840N 132 20.493W, Permanently Removed
+Red buoy established at Mile 847.0 located at 67 19.637N 132 13.489W
+Green buoy established at Mile 847.7 located at 67 19.356N 132 14.689W
+Red buoy established at Mile 848.2 located at 67 18.989N 132 15.551W
+Red buoy established at Mile 848.7 located at 67 18.699N 132 16.605W
+Green buoy established at Mile 848.8 located at 67 18.623N 132 17.213W
+Green buoy estabblished at Mile 850.1 located at 67 18.418N 132 20.104W.
+
+POSITION
+67-19.445N 132-16.326W
+POSITION 67-19.267N 132-19.167W
+POSITION 67-18.840N 132-20.493W
+POSITION 67-19.637N 132-13.489W
+POSITION 67-19.356N 132-14.689W
+POSITION 67-18.989N
+132-15.551W
+POSITION 67-18.699N 132-16.605W
+POSITION 67-18.623N 132-17.213W
+POSITION
+67-18.418N 132-20.104W
+
+---------------------------------------------------------------------------------------
+
+A 204/2026
+110000 UTC AUG 2026
+Waterway Information - Channel Change
+Green Buoy at Mile 836.7 located at 67 21.719N 131 52.303W, permanently removed
+Red Buoy at Mile 836.9 located at 67 21.695N 131 52.736W, permanently removed
+Green Buoy Mile 837.3 in 67 21.965N 131 54.899W permanently removed
+Red Buoy at Mile 837.5 in 67 21.847N 131 54.169W, permanently removed
+Green buoy at Mile 838.0 located at 67 21.971N 131 55.018W, permanently removed
+Red Buoy at Mile 838.2 located at 67 21.981N 131 55.431W, permanently removed
+Red Buoy at Mile 838.7 located at 67 22.099N 131 56.681W, permanently removed.
+
+POSITION
+67-21.719N 131-52.303W
+POSITION 67-21.695N 131-52.736W
+POSITION 67-21.965N 131-54.899W
+POSITION 67-21.847N 131-54.169W
+POSITION 67-21.971N 131-55.018W
+POSITION 67-21.981N
+131-55.431W
+POSITION 67-22.099N 131-56.681W
+
+---------------------------------------------------------------------------------------
+
+A 205/2026
+110000 UTC AUG 2026
+Waterway Information - Channel Change
+Green buoy established at Mile 836.6 located at 67 21.831N 131 51.974W
+Green buoy established at Mile 836.9 located at 67 21.709N 131 52.717W
+Green buoy established at Mile 837.5 located at 67 21.837N 131 54.238W
+Green buoy established at Mile 838.2 located at 67 21.951N 131 55.444W
+Red buoy established at Mile 839.0 located at 67 22.066N 131 57.278W.
+
+POSITION
+67-21.831N 131-51.974W
+POSITION 67-21.709N 131-52.717W
+POSITION 67-21.837N 131-54.238W
+POSITION 67-21.951N 131-55.444W
+POSITION 67-22.066N 131-57.278W
+
+---------------------------------------------------------------------------------------
+
+A 206/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Port day beacon facing upstream established at Mile 839.0 located at 67 22.218N 131
+57.581W.
+
+POSITION 67-22.218N 131-57.581W
+
+---------------------------------------------------------------------------------------
+
+A 209/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Starboard Day Beacon established, mile 836.6, facing downstream, in 67 21.554N 131
+51.496W.
+
+POSITION 67-21.554N 131-51.496W
+
+---------------------------------------------------------------------------------------
+
+A 210/2026
+120000 UTC AUG 2026
+Sandbar Change
+Sandbar reported in 72 53.308N 080 31.543W at 121618 UTC Aug 2026.
+
+POSITION 72-53.309N
+080-31.544W
+
+---------------------------------------------------------------------------------------
+
+A 211/2026
+120000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 67 22.628N 131 45.814W and operating properly.
+
+POSITION
+67-22.638N 131-45.701W
+POSITION 67-22.628N 131-45.814W
+
+---------------------------------------------------------------------------------------
+
+A 212/2026
+130000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to mile 806.6 to 67 27.744N 130 53.357W.
+
+POSITION 67-27.450N
+130-53.316W
+POSITION 67-27.744N 130-53.357W
+
+---------------------------------------------------------------------------------------
+
+A 213/2026
+140000 UTC AUG 2026
+Aids to Navigation
+Light Unlit.
+
+POSITION 61-05.100N 116-49.350W
+
+---------------------------------------------------------------------------------------
+
+A 214/2026
+140000 UTC AUG 2026
+Waterway Information - Channel Change
+Green buoy mile 785.4 in 67 16.800N 130 25.400W, permanently discontinued.
+Red buoy established mile 785.4 in 67 16.801N 130 25.388W.
+
+POSITION 67-16.800N
+130-25.400W
+POSITION 67-16.801N 130-25.388W
+
+---------------------------------------------------------------------------------------
+
+A 217/2026
+150000 UTC AUG 2026
+Waterway Information - Channel Change
+Red buoy mile 776.9 in 67 10.635N 130 14.945W, permanently discontinued.
+Red buoy mile 777.0 in 67 11.047N 130 14.998W, permanently discontinued.
+Red buoy mile 778.4 in 67 12.021N 130 15.681W, permanently discontinued.
+Red buoy mile 778.7 in 67 11.568N 130 15.391W, permanently discontinued.
+Red buoy mile 779.1 in 67 12.546N 130 16.174W, permanently discontinued.
+Red buoy established mile 776.7 in 67 10.536N 130 14.980W.
+Red buoy established mile 777.2 in 67 10.727N 130 15.728W.
+Green buoy established mile 777.4 in 67 10.895N 130 16.002W.
+Green buoy established mile 778.1 in 67 11.483N 130 16.343W.
+Green buoy established mile 778.7 in 67 12.037N 130 16.622W.
+Red buoy established mile 779.5 in 67 12.659N 130 16.352W.
+
+POSITION 67-10.635N
+130-14.945W
+POSITION 67-11.047N 130-14.998W
+POSITION 67-12.021N 130-15.681W
+POSITION
+67-11.568N 130-15.391W
+POSITION 67-12.546N 130-16.174W
+POSITION 67-10.536N 130-14.980W
+POSITION 67-10.727N 130-15.728W
+POSITION 67-10.895N 130-16.002W
+POSITION 67-11.483N
+130-16.343W
+POSITION 67-12.037N 130-16.622W
+POSITION 67-12.659N 130-16.352W
+
+---------------------------------------------------------------------------------------
+
+A 218/2026
+150000 UTC AUG 2026
+Waterway Information - Channel Change
+Due to shoreline erosion, the charted shoreline on Chart 6424 no longer accurately
+represents current conditions.
+The shoreline should be amended by connecting the following coordinates:
+67 11.857N 130 17.042W
+67 11.531N 130 16.752W
+67 10.941N 130 16.408W.
+
+ALONG LINE JOINING 67-11.857N 130-17.042W, 67-11.531N
+130-16.752W, 67-10.941N 130-16.408W
+
+---------------------------------------------------------------------------------------
+
+A 223/2026
+160000 UTC AUG 2026
+Waterway Information - Channel Change
+Port Day Beacon mile 764.1, in 67 00.120N 130 12.151W, permanently relocated to mile
+764.6 in 67 00.546N 130 12.338W and operating properly.
+Starboard Day Beacon mile 762.6, in 66 58.761N 130 15.160W, permanently relocated to 66
+58.827N 130 15.263W and operating properly.
+
+POSITION 67-00.546N 130-12.338W
+POSITION
+66-58.527N 130-15.263W
+
+---------------------------------------------------------------------------------------
+
+A 224/2026
+160000 UTC AUG 2026
+Waterway Information - Channel Change
+Red buoy mile 754.6 in 66 52.531N 130 07.642W permanently relocated to mile 754.8 in 66
+52.639N 130 07.654W.
+Red buoy mile 754.0 at 66 51.879N 130 07.992W, permanently removed.
+Green buoy established mile 753.8 in 66 51.900N 130 07.960W.
+Green buoy established mile 753.6 in 66 51.711N 130 08.085W.
+
+POSITION 66-52.639N
+130-07.654W
+POSITION 66-51.879N 130-07.992W
+POSITION 66-51.900N 130-07.960W
+POSITION
+66-51.711N 130-08.085W
+
+---------------------------------------------------------------------------------------
+
+A 225/2026
+160000 UTC AUG 2026
+Aids to Navigation
+Port day beacon facing upstream mile 754.5 in 66 52.425N 130 07.141W, temporarily out of
+service.
+
+POSITION 66-52.425N 130-07.141W
+
+---------------------------------------------------------------------------------------
+
+A 233/2026
+210000 UTC AUG 2026
+Shallow Depth Confirmed
+Shoal confirmed in 66 55.695N 081 26.981W, depth unknown, located in the vicinity of a
+31m sounding.
+
+POSITION 66-55.695N 081-26.981W
+
+---------------------------------------------------------------------------------------
+
+A 237/2026
+220000 UTC AUG 2026
+MCTS MF Services
+ - 
+MCTS HF Services
+Iqaluit MCTS. All MF RT, HF RT and HF Broadcast services located at Inuvik off air 221600
+UTC Aug 2026.
+
+POSITION 68-19.500N 133-35.783W
+
+---------------------------------------------------------------------------------------
+
+A 242/2026
+230000 UTC AUG 2026
+MCTS VHF Services
+Iqaluit MCTS. Receive services on VHF RT CH16 located at Churchill off air 232115 UTC Aug
+2026.
+
+POSITION 58-46.483N 094-11.367W
+
+---------------------------------------------------------------------------------------
+
+A 245/2026
+240000 UTC AUG 2026
+Marine Works
+Dredging and construction operations in Arctic Bay area for the construction of a new
+small craft harbour from 1000UTC to 2300UTC daily from August 30 to September 10, 2026.
+Wide berth of 100m requested.
+Workers will be monitoring VHF CH 77 (156.875mHz).
+There will be no markers delimiting the construction area.
+The two dredging areas are bounded by the following coordinates:
+Zone 1
+73 02.019N 085 09.375W
+ 73 02.009N 085 09.317W
+ 73 01.952N 085 09.489W
+ 73 01.980N 085 09.551W
+Zone 2
+73 01.924N 085 09.527W
+ 73 01.978N 085 09.362W
+ 73 01.969N 085 09.344W
+ 73 01.988N 085 09.324W
+ 73 01.966N 085 09.253W
+ 73 01.914N 085 09.495W
+The dumping area is bounded by the following coordinates:
+73 01.562N 085 09.253W
+73 01.562N 085 08.683W
+73 01.400N 085 08.683W
+73 01.400N 085 09.253W.
+
+AREA BOUNDED BY 73-01.562N 085-09.253W, 73-01.562N 085-08.683W,
+73-01.400N 085-08.683W, 73-01.400N 085-09.253W
+AREA BOUNDED BY 73-02.019N 085-09.375W,
+73-02.009N 085-09.317W, 73-01.952N 085-09.489W, 73-01.980N 085-09.551W
+AREA BOUNDED BY
+73-01.924N 085-09.527W, 73-01.978N 085-09.362W, 73-01.969N 085-09.344W, 73-01.988N
+085-09.324W, 73-01.966N 085-09.253W, 73-01.914N 085-09.495W
+
+---------------------------------------------------------------------------------------
+
+A 246/2026
+250000 UTC AUG 2026
+MCTS HF Services
+ - 
+MCTS MF Services
+Iqaluit MCTS. HF RT, MF Broadcast and MF RT transmit services located at Resolute off air
+251315 UTC Aug 2026.
+
+POSITION 74-44.783N 095-00.183W
+
+---------------------------------------------------------------------------------------
+
+A 249/2026
+260000 UTC AUG 2026
+Shallow Depth Confirmed
+4 shoals of unknown depth confirmed at 261946 UTC Aug 2026 in the following coordinates:
+62 39.362N 091 59.63W
+62 40.808N 091 44.653W
+62 40.809N 091 46.528W
+62 41.376N 091 56.117W.
+
+POSITION 62-39.362N 091-59.630W
+POSITION 62-40.808N 091-44.653W
+POSITION 62-40.809N 091-46.528W
+POSITION 62-41.376N 091-56.117W
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

@@ -161,6 +161,7 @@ def normalize_headers(text, stats=None):
     """
     Normalize NAVAREA headers: ensure a single space between NAVAREA, area code, and number.
     Examples:
+      Navarea III - Spain 122/26 -> NAVAREA III 122/26
       NAVAREA IV998/26  -> NAVAREA IV 998/26
       NAVAREA XII998/26 -> NAVAREA XII 998/26
       NAVAREA IV 998/26 -> already correct
@@ -173,6 +174,14 @@ def normalize_headers(text, stats=None):
         number = m.group(2)
         return f"NAVAREA {roman} {number}"
 
+    # Case: descriptive source label between the area code and warning number.
+    # Keep this line-anchored so cancellation references in message bodies are
+    # never promoted to headers.
+    text = re.sub(
+        r"(?im)^[ \t]*NAVAREA\s+([A-Z0-9]+)\s*-\s*[^0-9\n]*?(\d+/\d+)\b",
+        fix_header,
+        text,
+    )
     # Case: NAVAREA IV998/26 (no space between area and number)
     text = re.sub(r"NAVAREA\s*([A-Z]+)(\d+/\d+)", fix_header, text, flags=re.I)
     # Case: NAVAREA  IV  998/26 (multiple spaces)
@@ -191,8 +200,16 @@ def normalize_pdf_artifacts(text, stats=None):
     """
     # Remove soft hyphens at line breaks (e.g., "nav- igation" -> "navigation")
     text = re.sub(r"(\w)-\s*\n\s*(\w)", r"\1\2", text)
-    # Remove page numbers or header/footer lines that contain only numbers
-    text = re.sub(r"(?m)^\s*\d+\s*$", "", text)
+    # Remove page numbers or header/footer lines that contain only numbers.
+    # Keep a degree-only line when the next line contains coordinate minutes
+    # and a hemisphere; some NAVAREA sources wrap "43 05.03 N" after the
+    # degree value.
+    text = re.sub(
+        r"(?m)^\s*\d+\s*(?!\n\s*\d{1,2}(?:[.,]\d+)?\s*[NS]\b)"
+        r"(?!\n\s*\d{1,2}(?:[.,]\d+)?\s*[EW]\b)$",
+        "",
+        text,
+    )
     if stats:
         stats.pdf_artifacts_removed = len(re.findall(r"-\s*\n", text))
     return text
@@ -414,7 +431,10 @@ def normalize_riglist_formats(text):
     в цифровые (1., 2., …). Поддерживает записи с переносами строк.
     """
     # Разбиваем по NAVAREA блокам, чтобы не затрагивать другие части
-    blocks = re.split(r"(?=NAVAREA\s+[A-ZIVXLC]+\s+\d+/\d+)", text, flags=re.IGNORECASE)
+    blocks = re.split(
+        r"(?im)(?=^[ \t]*NAVAREA\s+[A-Z0-9]+\s+\d+/\d+\b)",
+        text,
+    )
     new_blocks = []
 
     for block in blocks:

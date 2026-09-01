@@ -1,0 +1,604 @@
+KOREA - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 281/2026, 284/2026, 289/2026, 290/2026, 291/2026,
+292/2026, 293/2026, 294/2026, 295/2026, 296/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: 288/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: 272, 281, 284, 289, 290, 291, 292, 293, 294, 295, 296.
+
+---------------------------------------------------------------------------------------
+
+KOREA 272/2026
+100000 UTC AUG 2026
+<Navigational Information>   Artificial reef relocation work is scheduled to be carried
+out in the western waters off Gukhwa-do, Hwaseong-si, Gyeonggi-do as follows. Vessels
+engaged in navigation and fishing are requested to exercise caution.
+a. Area: Area bounded by sequentially connecting points ?~?~?
+      ? 37-04-35N,
+126-32-30E   ? 37-04-35N, 126-33-23E
+      ? 37-02-58N, 126-33-23E   ? 37-02-58N,
+126-32-30E
+b. Work period: 2026. 8. 10. ~ 10. 10.
+c. Ordering agency: West Sea
+Headquarters, Korea Fisheries Resources Agency
+d. Relevant chart: No.3466
+e. Source:
+Maritime and Fisheries Division, Gyeonggi-do.  End.
+  <Source> Gyeonggi-do  Maritime and Fisheries Division
+
+---------------------------------------------------------------------------------------
+
+KOREA 281/2026
+270000 UTC AUG 2026
+<Live-Fire Exercise>   1. This is in reference to Defense Acquisition Program
+Administration Korean Fighter System Development Project Team-4445 (2026. 8. 13.).
+2. The Defense Acquisition Program Administration has informed us of the plan to conduct
+a weapon firing test for the Korean Fighter (KF-21) as follows, so please notify vessels
+engaged in navigation and fishing not to approach during the relevant period.
+ a. Area: area bounded by sequentially connecting coordinates ?~?~?
+  ? 36-26-38N,
+125-16-00E  ? 36-26-38N, 125-36-00E
+  ? 36-05-00N, 125-36-00E  ? 36-05-00N, 125-16-00E
+* Detailed location can be checked on the navigation warning status board
+(https://www.khoa.go.kr/nwb).
+ b. Test date and time: 2026. 8. 27.(Thu) 13:00~15:00   *
+Backup date: 8.28.(Fri) 10:00~12:00
+ c. Related chart: No.3100
+ d. Source: Defense
+Acquisition Program Administration
+End.
+
+
+No. - Firing Range Area - Date - Time - Related Chart
+1 - area bounded by the sea area in the West Sea ~ the point below the central Yellow Sea
+sequentially connected (1) 36-26-38N,125-16-00E(2) 36-26-38N,125-36-00E(3)
+36-05-00N,125-36-00E(4) 36-05-00N,125-16-00E - 08/27 - 13:00 ~ 15:00 - 3100
+
+---------------------------------------------------------------------------------------
+
+KOREA 284/2026
+240000 UTC AUG 2026
+<Maritime Live-Fire>   1. This is in reference to Joint Chiefs of Staff Joint Firepower
+Division-3752 (2026. 8. 14.).
+2. The Joint Chiefs of Staff have notified us of the maritime live-fire training plan as
+attached below, so please inform vessels engaged in navigation and fishing of the
+relevant details.
+  * Detailed locations can be checked on the Navigation Warning Status
+Board (https://www.khoa.go.kr/nwb).
+  <Source>  Joint Chiefs of Staff  Joint Firepower Division
+End.
+
+No. - Firing range area - Date - Time - Related chart
+1 - Korea Strait - south of
+Yokjido offshore (D-72) - 08/24,08/25,08/26,08/28,08/27 - 09:00 ~ 16:00,12:00 ~
+22:00,09:00 ~ 18:00,09:00 ~ 22:00 - 2200
+2 - Yellow Sea - southwest of Geomnyeolbiyeoldo
+(MOA-80) - 08/24,08/25,08/28,08/29 - 12:00 ~ 17:00,16:00 ~ 20:00 - 3011
+3 - West Sea
+Coast - near Daecheon D (R-97D) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 10:30 - 3100
+4
+- West Sea Coast - near Daecheon E (R-97E) - 08/24,08/25,08/26,08/27,08/28 - 09:00 ~
+18:00 - 3100
+5 - West Sea Coast - near Daecheon G (R-97G) - 08/24,08/25,08/26,08/27,08/28
+- 10:30 ~ 18:00 - 3100
+6 - Korea Strait - southeast coast of Geoje Island (D-99) -
+08/24,08/27,08/25,08/26,08/29,08/30 - 08:00 ~ 18:00,10:00 ~ 18:00,14:00 ~ 18:00 - 2200
+7
+- South Sea Coast - near Namhyeongjedo (R-100) - 08/24,08/25,08/26,08/29,08/30 - 10:00 ~
+18:00,16:00 ~ 18:00,11:00 ~ 13:00,14:00 ~ 18:00 - 2112
+8 - West Sea Coast - near Miyeodo
+(R-104) - 08/24,08/25,08/26,08/27,08/28 - 09:00 ~ 21:00 - 3411
+9 - West Sea Coast - near
+Jikdo (R-105) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 22:00 - 3412
+10 - West Sea Coast
+- Anheung 2 (R-108B) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 19:00 - 3413
+11 - West Sea
+Coast - Anheung 4 (R-108D) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 22:00,08:00 ~ 19:00
+- 3100
+12 - West Sea Coast - Anheung 5 (R-108E) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~
+19:00 - 3413
+13 - West Sea Coast - Anheung 6 (R-108F) - 08/24,08/25,08/26,08/27,08/28 -
+08:00 ~ 19:00 - 3100
+14 - East Sea - south of Ulleungdo offshore (D-115) -
+08/25,08/26,08/27,08/28 - 08:00 ~ 18:00,08:00 ~ 21:00 - 1700
+15 - West Sea Coast - near
+Gapjuk, west of Daecheongdo (R-116) - 08/25,08/26,08/27 - 19:00 ~ 23:00,12:00 ~ 19:00 -
+3714
+16 - West Sea Coast - northwest coast of Uido (R-117) - 08/24,08/26,08/28 - 13:00 ~
+16:00,10:00 ~ 16:00 - 3114
+17 - Korea Strait - east of Jeju Island offshore (D-118) -
+08/26,08/27,08/28 - 09:00 ~ 17:00,09:00 ~ 18:00 - 2400
+18 - East Sea - offshore Ulsan
+(D-119) - 08/24,08/26,08/25,08/27,08/28,08/29,08/30 - 09:00 ~ 16:00,10:00 ~ 22:00,10:00 ~
+16:00,10:00 ~ 18:00,13:00 ~ 18:00 - 1600
+19 - East Sea - northeast offshore Pohang
+(D-120) - 08/24,08/25,08/26,08/27,08/28 - 05:00 ~ 16:00,13:30 ~ 16:00,11:00 ~ 16:00,11:00
+~ 17:00,08:00 ~ 18:00 - 1013
+20 - East Sea - offshore Sokcho (D-121) - 08/26,08/27 -
+14:00 ~ 16:00 - 1013
+21 - Yellow Sea - northwest offshore of Anmado (D-123) -
+08/24,08/26,08/27,08/28,08/29,08/25 - 08:00 ~ 18:00,11:00 ~ 18:00 - 3011
+22 - West Sea
+Coast - near Gadeokdo (R-124) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 18:00 - 3200
+23 -
+West Sea Coast - southwest coast of Heuksando (R-125) - 08/26,08/27 - 13:00 ~ 20:00 -
+3114
+24 - West Sea Coast - west coast of Baengnyeongdo (D-131) - 08/24,08/26,08/25 -
+19:00 ~ 22:00,19:00 ~ 23:00 - 3011
+25 - West Sea Coast - near Chochiam (R-133) -
+08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 18:00 - 3415
+26 - East Sea - offshore Gangneung
+(D-135) - 08/24,08/25,08/26,08/27,08/28,08/29 - 08:00 ~ 21:00,08:00 ~ 18:00,09:30 ~ 11:30
+- 1500
+27 - East Sea - offshore Samcheok (D-136) - 08/24,08/25 - 14:00 ~ 16:00 - 1500
+28
+- West Sea Coast - coastal waters of Udo (R-137) - 08/24,08/25,08/27 - 09:30 ~
+11:30,14:00 ~ 22:00 - 3711
+29 - West Sea Coast - west of Daecheongdo (D-153) -
+08/24,08/27,08/30 - 14:00 ~ 16:00 - 3011
+30 - West Sea Coast - east of Yeonpyeongdo
+(R-154) - 08/25,08/27 - 13:00 ~ 18:00,18:00 ~ 21:00 - 3712
+31 - East Sea - offshore
+Jumunjin (D-156) - 08/24,08/25,08/26,08/27,08/28 - 08:00 ~ 18:00 - 1500
+32 - East Sea
+coast ~ area bounded by the following points near Daejin Port (1) 38-35-19N,128-23-26E(2)
+38-35-18N,128-25-57E(3) 38-33-30N,128-25-56E(4) 38-33-30N,128-23-28E -
+08/24,08/25,08/26,08/27 - 19:30 ~ 21:30,18:00 ~ 21:30,17:00 ~ 21:30,16:00 ~ 22:00 - 1411
+33 - East Sea coast ~ area bounded by the following points near Daejin Port (1)
+38-34-06N,128-24-29E(2) 38-34-03N,128-26-26E(3) 38-32-30N,128-26-16E(4)
+38-32-27N,128-24-31E - 08/27 - 16:00 ~ 22:00 - 1411
+34 - West Sea Coast ~ area bounded by
+the following points in the southern Yellow Sea (1) 34-20-00N,124-30-00E(2)
+34-20-00N,125-49-53E(3) 33-45-00N,125-49-53E(4) 33-45-00N,124-30-00E -
+08/24,08/25,08/26,08/27,08/28 - 09:00 ~ 18:00 - 2011
+35 - South Sea Coast ~ area bounded
+by the following points near Geoje-do, Gohyeon Port (1) 35-02-56N,128-30-34E(2)
+35-02-56N,128-35-00E(3) 35-00-36N,128-35-00E(4) 35-00-36N,128-30-34E - 08/24,08/25 -
+09:00 ~ 17:00 - 2156
+36 - West Sea Coast ~ area bounded by the following points near
+Baengnyeongdo, Yonggipo Port (1) 37-59-59N,124-43-11E(2) 37-59-57N,124-45-14E(3)
+37-58-47N,124-45-13E(4) 37-58-48N,124-43-10E - 08/24 - 19:00 ~ 23:00 - 3772
+37 - West Sea
+Coast ~ area bounded by the following points near Seonjinpo Port (1)
+37-46-53N,124-44-14E(2) 37-46-52N,124-45-16E(3) 37-46-20N,124-45-15E(4)
+37-46-21N,124-44-14E - 08/27 - 19:00 ~ 23:00 - 3772
+38 - West Sea Coast ~ area bounded by
+the following points near Yeonpyeongdo Port (1) 37-38-10N,125-36-06E(2)
+37-41-02N,125-40-11E(3) 37-40-00N,125-41-17E(4) 37-37-09N,125-37-14E - 08/27 - 13:00 ~
+21:00 - 3200
+39 - East Sea coast ~ area bounded by the following points near Pohang Port
+(1) 36-10-01N,129-25-29E(2) 36-08-10N,129-28-20E(3) 36-06-17N,129-26-24E(4)
+36-08-10N,129-23-34E - 08/27 - 17:00 ~ 22:00 - 1711
+40 - West Sea Coast ~ area bounded by
+the following points near western Ganghwa-do, Eoyujeong Port (1) 37-45-10N,126-13-31E(2)
+37-45-11N,126-14-57E(3) 37-44-38N,126-14-59E(4) 37-44-37N,126-13-33E - 08/24 - 19:00 ~
+21:30 - 3711
+41 - West Sea Coast ~ area bounded by the following points in the southern
+Yellow Sea (1) 36-40-44N,126-11-07E(2) 36-40-31N,126-11-45E(3) 36-01-05N,125-50-47E(4)
+35-58-35N,125-46-52E(5) 36-00-49N,125-40-48E - 08/24,08/25,08/26 - 10:00 ~ 17:00 - 3100
+42 - West Sea Coast ~ area bounded by the following points near Anheung Port (1)
+36-36-50N,125-59-40E(2) 36-31-00N,125-59-40E(3) 36-31-00N,126-12-00E(4)
+36-36-50N,126-12-00E - 08/25,08/26 - 11:30 ~ 13:30 - 3100
+43 - West Sea Coast ~ area
+bounded by the following points near Anheung Port (1) 36-41-11N,126-11-59E(2)
+36-36-27N,126-16-02E(3) 36-20-14N,126-16-02E(4) 36-20-14N,126-06-00E(5)
+36-29-42N,125-54-12E(6) 36-38-10N,125-54-12E(7) 36-38-10N,125-59-53E(8)
+36-40-38N,126-10-24E - 08/27,08/28 - 16:00 ~ 18:00 - 3100
+44 - West Sea Coast ~ area
+bounded by the following points in the southern Yellow Sea (1) 36-51-28N,125-36-02E(2)
+36-51-28N,126-00-20E(3) 36-31-23N,126-06-18E(4) 36-18-11N,126-06-18E(5)
+36-15-40N,125-56-10E(6) 34-44-16N,125-19-41E(7) 34-44-16N,124-31-27E(8)
+35-12-40N,124-31-21E - 08/28,08/29 - 14:00 ~ 18:00,11:00 ~ 18:00 - 3010
+
+---------------------------------------------------------------------------------------
+
+KOREA 289/2026
+240000 UTC AUG 2026
+<Maritime Training>   1. This is in reference to Ocean Information Unit Ocean Topographic
+Information Division-3256 (2026. 8. 20.).
+2. The Ocean Information Unit has informed us of the maritime training implementation
+plan as attached, so please notify vessels engaged in navigation and fishing of the
+relevant details.
+  * Detailed locations can be checked on the navigation warning status
+board (https://www.khoa.go.kr/nwb).
+  <Source> Ocean Information Unit  Ocean Topographic Information Division
+End.
+
+
+No. - Firing range area - Date - Time - Related chart
+1 - East Coast ~ area bounded by the line sequentially connecting the points below near
+Gangneung Port (1) 37-45-58N,128-57-12E(2) 37-47-28N,128-59-05E(3)
+37-45-02N,129-01-31E(4) 37-44-30N,128-59-07E - 08/24,25,26,27 - 00:00 ~ 24:00 - 1455
+2 - South Coast ~ Jeju-do, area bounded by the line sequentially connecting the points
+below near Seogwipo Port (1) 33-12-00N,126-28-00E(2) 33-12-00N,126-34-00E(3)
+33-07-00N,126-34-00E(4) 33-07-00N,126-28-00E - 08/24,25,26,27,28,29 - 07:00 ~ 18:00 - 2714
+3 - South Coast ~ Jeju-do, vicinity of Seogwipo Port centered at 33-13-19N,126-31-31E
+within a radius of 0.5 NM - 08/28,29 - 07:00 ~ 18:00 - 2755
+
+---------------------------------------------------------------------------------------
+
+KOREA 290/2026
+240000 UTC AUG 2026
+<Maritime Live-Fire Training>   1. This is in relation to Korea Coast Guard Security
+Operations Division-5920 (2026. 8. 20.).
+2. As the Korea Coast Guard will conduct maritime live-fire training as attached, please
+inform vessels engaged in navigation and fishing of the details.
+  * For detailed
+location, please refer to the navigation warning status board (https://www.khoa.go.kr/nwb)
+  <Source> Korea Coast Guard  Security Operations Division
+End.
+
+
+No. - Firing range area - Date - Time - Related chart
+1 - East Coast - Sokcho coastal
+waters (D-140) - 08/24,25,26,27 - 09:00 ~ 18:00 - 1412
+2 - East Sea - offshore east of
+Ulleungdo (D-141) - 08/24,25,26,27,28,29,30 - 08:00 ~ 23:59 - 1417
+3 - East Sea -
+offshore near Ganggu Port (D-142B) - 08/25,27,28,29,30 - 09:00 ~ 18:00 - 1416
+4 - East
+Coast - coastal waters off Homigot (D-142C) - 08/24,25,26 - 09:00 ~ 21:00 - 1711
+5 -
+South Coast - coastal waters off Busan (D-143) - 08/24,25,26,27,28,29,30 - 09:00 ~ 18:00
+- 2111
+6 - Korea Strait - offshore south of Marado (D-147) - 08/26,27,28,29,30 - 09:00 ~
+21:00 - 2400
+7 - South Coast - coastal waters east of Marado (D-150) - 08/24,25 - 09:00 ~
+18:00 - 2714
+8 - South Coast - vicinity of Sojido (R-144) - 08/24,25,26,27,28,29 - 09:00
+~ 18:00 - 2113
+9 - South Coast - vicinity of Sejondo (R-145) - 08/25,08/28,08/29 - 10:00
+~ 14:00 - 09:00 ~ 18:00 - 09:00 ~ 13:00 - 2412
+10 - West Coast - vicinity of Bulmugido
+(R-148A) - 08/25,08/26,08/30 - 12:00 ~ 18:00 - 08:00 ~ 13:00 - 08:00 ~ 18:00 - 2300
+11 -
+West Coast - coastal waters west of Jindo (R-148B) - 08/25,26,08/27,08/28 - 13:00 ~ 18:00
+- 13:00 ~ 20:00 - 09:00 ~ 13:00 - 3111
+12 - South Coast - coastal waters west of Hwado
+(R-149) - 08/24,25,26,27,08/30 - 09:00 ~ 20:00 - 09:00 ~ 18:00 - 2713
+13 - West Coast -
+coastal waters south of Maldo (R-151A) - 08/25,08/26 - 09:00 ~ 20:00 - 16:00 ~ 20:00 -
+3412
+14 - South Coast ~ Jeju-do area bounded by a circle with a radius of 5 NM centered
+at 32-59-00N,125-49-00E - 08/24,25,26,27,08/28,08/29,30 - 09:00 ~ 20:00 - 09:00 ~ 21:00 -
+13:00 ~ 21:00 - 2500
+15 - West Coast ~ area bounded by sequentially connecting the
+following points near Daesan Port (1) 37-08-00N,126-10-00E (2) 37-08-00N,126-15-00E (3)
+37-05-50N,126-14-00E (4) 37-05-00N,126-10-00E - 08/24,25,30 - 10:00 ~ 18:00 - 3415
+
+---------------------------------------------------------------------------------------
+
+KOREA 291/2026
+240000 UTC AUG 2026
+<Maritime Live-Fire>   1. This is in reference to Navigational Warning (No. 26-284) and
+Joint Chiefs of Staff Joint Firepower Division-3827 (2026.8.24.).
+2. As the schedule for the maritime live-fire training conducted by the Joint Chiefs of
+Staff has been changed as attached, please inform vessels engaged in navigation and
+fishing of the relevant details. 
+  * Detailed locations can be checked on the
+Navigational Warning status board (https://www.khoa.go.kr/nwb).
+  <Source> Joint Chiefs of Staff  Joint Firepower Division
+(Before change)
+(After change)
+End.
+
+
+No. - Firing Range Area - Date - Time - Related Chart
+6(No. 26-284) - Korea Strait - southeast coast of Geoje Island (D-99) -
+08/24,2708/2508/26,29,30 - 08:00 ~ 18:0010:00 ~ 18:0014:00 ~ 18:00 - 2200
+21(No. 26-284) - Yellow Sea - northwest offshore of Anmado (D-123) -
+08/24,26,27,28,2908/25 - 08:00 ~ 18:0011:00 ~ 18:00 - 3011
+34(No. 26-284) - area bounded by the following points sequentially connected in the West
+Sea ~ southern Yellow Sea (1) 34-20-00N,124-30-00E(2) 34-20-00N,125-49-53E(3)
+33-45-00N,125-49-53E(4) 33-45-00N,124-30-00E - 08/24,25,26,27,28 - 09:00 ~ 18:00 - 2011
+41(No. 26-284) - area bounded by the following points sequentially connected in the West
+Sea ~ southern Yellow Sea (1) 36-40-44N,126-11-07E(2) 36-40-31N,126-11-45E(3)
+36-01-05N,125-50-47E(4) 35-58-35N,125-46-52E(5) 36-00-49N,125-40-48E - 08/24,25,26 -
+10:00 ~ 17:00 - 3100
+44(No. 26-284) - area bounded by the following points sequentially connected in the West
+Sea ~ southern Yellow Sea (1) 36-51-28N,125-36-02E(2) 36-51-28N,126-00-20E(3)
+36-31-23N,126-06-18E(4) 36-18-11N,126-06-18E(5) 36-15-40N,125-56-10E(6)
+34-44-16N,125-19-41E(7) 34-44-16N,124-31-27E(8) 35-12-40N,124-31-21E - 08/2808/29 - 14:00
+~ 18:0011:00 ~ 18:00 - 3010
+
+No. - Firing Range Area - Date - Time - Related Chart
+1(No. 26-284)(Canceled) - Korea Strait - southeast coast of Geoje Island (D-99) -
+08/24,2708/2508/26,29,30 - 08:00 ~ 18:0010:00 ~ 18:0014:00 ~ 18:00 - 2200
+2(No. 26-284)(Changed) - Yellow Sea - northwest offshore of Anmado (D-123) -
+08/24,26,27,2808/2508/29 - 08:00 ~ 18:0008:00 ~ 21:0011:00 ~ 18:00 - 3011
+3(No. 26-284)(Changed) - area bounded by the following points sequentially connected in
+the West Sea ~ southern Yellow Sea (1) 34-20-00N,124-30-00E(2) 34-20-00N,125-49-53E(3)
+33-45-00N,125-49-53E(4) 33-45-00N,124-30-00E - 08/25 - 09:00 ~ 18:00 - 2011
+4(No. 26-284)(Canceled) - area bounded by the following points sequentially connected in
+the West Sea ~ southern Yellow Sea (1) 36-40-44N,126-11-07E(2) 36-40-31N,126-11-45E(3)
+36-01-05N,125-50-47E(4) 35-58-35N,125-46-52E(5) 36-00-49N,125-40-48E - 08/24,25,26 -
+10:00 ~ 17:00 - 3100
+5(No. 26-284)(Changed) - area bounded by the following points sequentially connected in
+the West Sea ~ southern Yellow Sea (1) 36-51-28N,125-36-02E(2) 36-51-28N,126-00-20E(3)
+36-31-23N,126-06-18E(4) 36-18-11N,126-06-18E(5) 36-15-40N,125-56-10E(6)
+34-44-16N,125-19-41E(7) 34-44-16N,124-31-27E(8) 35-12-40N,124-31-21E - 08/2608/2808/29 -
+16:00 ~ 18:0015:00 ~ 18:0013:30 ~ 18:00 - 3010
+
+---------------------------------------------------------------------------------------
+
+KOREA 292/2026
+310000 UTC AUG 2026
+<Maritime Live-Fire>   1. This is in reference to Joint Chiefs of Staff Joint Firepower
+Division-3827 (2026. 8. 24.).
+2. The Joint Chiefs of Staff have informed us of the maritime live-fire training schedule
+as attached below, so please notify vessels engaged in navigation and fishing of the
+relevant details.
+  * Detailed locations can be checked on the Navigation Warning Status
+Board (https://www.khoa.go.kr/nwb).
+  <Source> Joint Chiefs of Staff  Joint Firepower Division
+End.
+
+
+No. - Firing Range Area - Date - Time - Related Chart
+1 - Korea Strait - South of Yokjido Offshore (D-72) - 08/3109/0109/0209/0309/04 - 09:00 ~
+18:0013:00 ~ 22:0009:00 ~ 16:0009:00 ~ 22:0013:00 ~ 15:00 - 2200
+2 - West Coast - Near Daecheon E (R-97E) - 08/31,09/01,02,03,04 - 09:00 ~ 18:00 - 3100
+3 - Korea Strait - Southeast Coast of Geoje-do (D-99) - 08/3109/01,0209/0309/0409/06 -
+13:00 ~ 18:0008:00 ~ 21:0014:00 ~ 17:0009:00 ~ 12:0014:00 ~ 16:00 - 2200
+4 - South Coast - Near Namhyeongje-do (R-100) - 08/3109/0209/03,05,0609/04 - 16:00 ~
+18:0008:00 ~ 11:0008:00 ~ 14:0008:00 ~ 15:00 - 2112
+5 - West Coast - Near Miyeo-do (R-104) - 08/31,09/01,02,03,04 - 09:00 ~ 21:00 - 3411
+6 - West Coast - Near Jikdo (R-105) - 08/31,09/01,02,03,04 - 08:00 ~ 22:00 - 3412
+7 - West Coast - Anheung 2 (R-108B) - 08/31,09/01,02,03,04 - 08:00 ~ 19:00 - 3413
+8 - West Coast - Anheung 4 (R-108D) - 08/31,09/01,03,0409/02 - 08:00 ~ 19:0008:00 ~ 22:00
+- 3100
+9 - West Coast - Anheung 5 (R-108E) - 08/31,09/01,02,03,04 - 08:00 ~ 19:00 - 3413
+10 - West Coast - Anheung 6 (R-108F) - 08/31,09/01,02,03,04 - 08:00 ~ 19:00 - 3100
+11 - East Sea - South of Ulleungdo Offshore (D-115) - 08/3109/02,03 - 13:00 ~ 15:0012:00
+~ 17:30 - 1700
+12 - West Coast - Near Gapjuk, Daecheongdo (R-116) - 09/01,03 - 09:00 ~ 17:00 - 3714
+13 - West Coast - Northwest Coast of Uido (R-117) - 09/04 - 11:00 ~ 15:00 - 3114
+14 - East Sea - Offshore Ulsan (D-119) - 08/31,09/0209/0109/03 - 09:00 ~ 17:0013:00 ~
+22:0009:00 ~ 22:00 - 1600
+15 - East Sea - Northeast Offshore Pohang (D-120) - 08/3109/0109/02,03 - 10:00 ~
+16:0014:00 ~ 17:0012:00 ~ 19:00 - 1013
+16 - East Sea - Offshore Sokcho (D-121) - 09/02,04 - 08:00 ~ 10:00 - 1013
+17 - Yellow Sea
+- Northwest Offshore of Anmado (D-123) - 08/31,09/01,0209/03,0409/05,0609/05,06 - 08:00 ~
+18:0008:00 ~ 23:5900:00 ~ 08:0018:00 ~ 23:59 - 3011
+18 - West Coast - Near Gadeokdo
+(R-124) - 08/31,09/0109/02,03,0409/05 - 08:00 ~ 20:0008:00 ~ 18:0013:00 ~ 17:00 - 3200
+19
+- West Coast - Southwest Coast of Heuksando (R-125) - 09/01 - 04:00 ~ 10:00 - 3114
+20 -
+West Coast - West Coast of Baengnyeongdo (D-131) - 08/31,09/02 - 19:00 ~ 23:00 - 3011
+21
+- West Coast - Southeast Coast of Baengnyeongdo (R-132) - 09/03 - 19:00 ~ 23:00 - 3714
+22
+- West Coast - Near Chochiam (R-133) - 08/31,09/01,02,03,04 - 08:00 ~ 18:00 - 3415
+23 -
+East Sea - Offshore Gangneung (D-135) - 08/3109/03 - 09:30 ~ 11:3010:00 ~ 16:00 - 1500
+24
+- East Sea - Offshore Samcheok (D-136) - 09/01 - 14:00 ~ 16:00 - 1500
+25 - West Coast -
+Coast of Udo (R-137) - 09/01,03 - 14:00 ~ 22:00 - 3711
+26 - West Coast - West of
+Daecheongdo (D-153) - 09/01,02 - 10:00 ~ 13:00 - 3011
+27 - West Coast - East of
+Yeonpyeongdo (R-154) - 08/31,09/0409/0109/03 - 13:00 ~ 17:0013:00 ~ 21:0018:00 ~ 21:00 -
+3712
+28 - East Sea - Offshore Jumunjin (D-156) - 08/31,09/01,02,03,04 - 08:00 ~ 18:00 -
+1500
+29 - East Sea ~ Within area bounded by the following points near Daejinhang (1)
+38-35-19N,128-23-26E(2) 38-35-18N,128-25-57E(3) 38-33-30N,128-25-56E(4)
+38-33-30N,128-23-28E - 09/0109/03 - 19:30 ~ 22:0019:00 ~ 22:00 - 1411
+30 - West Coast ~
+Within area bounded by the following points near Gyeongin Port (1)
+37-36-22N,126-31-49E(2) 37-36-27N,126-35-12E(3) 37-34-51N,126-35-14E(4)
+37-34-45N,126-31-50E - 09/0209/03 - 23:00 ~ 23:5900:00 ~ 01:00 - 3471
+31 - East Sea ~
+Centered at the coordinates 36-13-59N,129-40-12E, radius 5 NM near Pohang Port -
+09/01,0309/01,0309/01,03 - 09:00 ~ 11:0014:00 ~ 16:0018:30 ~ 20:30 - 1600
+32 - East Sea ~
+Within area bounded by the following points in the southern East Sea (1)
+36-52-00N,130-00-00E(2) 36-52-00N,130-55-00E(3) 36-17-00N,130-55-00E(4)
+36-02-00N,130-29-00E(5) 36-02-00N,130-00-00E - 09/03,04,05,0609/03,04,05,06 - 00:00 ~
+08:0018:00 ~ 23:59 - 1013
+33 - East Sea ~ Within area bounded by the following points in
+the southern East Sea (1) 36-52-00N,130-00-00E(2) 36-52-00N,130-25-00E(3)
+36-02-00N,130-25-00E(4) 36-02-00N,130-00-00E - 09/03,04,05,06 - 08:00 ~ 18:00 - 1600
+34 -
+South Coast ~ Within area bounded by the following points in the eastern South Sea (1)
+33-55-00N,127-05-00E(2) 33-55-00N,128-00-00E(3) 33-25-00N,128-00-00E(4)
+33-25-00N,127-05-00E - 09/03,04,05,0609/03,04,05,06 - 00:00 ~ 08:0018:00 ~ 23:59 - 2400
+35 - South Coast ~ Within area bounded by the following points in the eastern South Sea
+(1) 33-55-00N,127-05-00E(2) 33-55-00N,127-40-00E(3) 33-25-00N,127-40-00E(4)
+33-25-00N,127-05-00E - 09/03,04,05,06 - 08:00 ~ 18:00 - 2400
+36 - West Coast ~ Within
+area bounded by the following points in the southern Yellow Sea (1)
+36-00-00N,124-28-00E(2) 36-00-00N,125-30-00E(3) 35-25-00N,125-30-00E(4)
+35-25-00N,124-28-00E - 09/03,04,05,0609/03,04,05,06 - 00:00 ~ 08:0018:00 ~ 23:59 - 3011
+37 - West Coast ~ Within area bounded by the following points in the southern Yellow Sea
+(1) 36-00-00N,124-28-00E(2) 36-00-00N,125-00-00E(3) 35-25-00N,125-00-00E(4)
+35-25-00N,124-28-00E - 09/03,04,05,06 - 08:00 ~ 18:00 - 3011
+38 - West Coast ~ Within
+area bounded by the following points near Baengnyeongdo, Yonggipo Port (1)
+37-59-59N,124-43-11E(2) 37-59-57N,124-45-14E(3) 37-58-47N,124-45-13E(4)
+37-58-48N,124-43-10E - 09/01 - 19:00 ~ 23:00 - 3772
+39 - West Coast ~ Within area bounded
+by the following points near Yeonpyeongdo Port (1) 37-38-10N,125-36-06E(2)
+37-41-02N,125-40-11E(3) 37-40-00N,125-41-17E(4) 37-37-09N,125-37-14E - 09/03 - 13:00 ~
+18:00 - 3200
+40 - West Coast ~ Within area bounded by the following points near Namdang
+Port (1) 36-41-12N,126-09-11E(2) 36-35-53N,125-47-24E(3) 36-19-17N,125-47-24E(4)
+36-19-17N,126-18-21E(5) 36-41-12N,126-18-21E - 09/03,04 - 11:00 ~ 16:00 - 3100
+41 - West
+Coast ~ Within area bounded by the following points near Anheung Port (1)
+36-41-11N,126-11-59E(2) 36-36-27N,126-16-02E(3) 36-20-14N,126-16-02E(4)
+36-20-14N,126-06-00E(5) 36-29-42N,125-54-12E(6) 36-38-10N,125-54-12E(7)
+36-38-10N,125-59-53E(8) 36-40-38N,126-10-24E - 09/02,03 - 16:00 ~ 18:00 - 3100
+42 - West
+Coast ~ Within area bounded by the following points west of Anmyeondo, near Sapsido (1)
+36-34-09N,126-11-33E(2) 36-33-05N,126-09-04E(3) 36-24-58N,126-08-42E(4)
+35-54-51N,126-08-23E(5) 35-51-56N,126-10-00E(6) 35-54-48N,126-11-43E(7)
+36-24-52N,126-12-45E(8) 36-33-21N,126-13-08E - 09/0109/02 - 16:00 ~ 18:0011:00 ~ 13:00 -
+3100
+
+---------------------------------------------------------------------------------------
+
+KOREA 293/2026
+250000 UTC AUG 2026
+<Navigation Information>   Please be advised that floating debris (fishing net) is
+drifting in the waters off Mokpo New Port, and vessels navigating in the area should
+exercise caution.
+ A. Area : Waters in front of the tugboat berth at Mokpo New Port
+ B. Position :
+34-44.64N, 126-21.18E
+  * Detailed location can be checked on the navigation warning
+situation board (https://www.khoa.go.kr/nwb).
+ C. Dimensions : Estimated fishing net
+approximately 20m x 30m
+ D. Source : Mokpo Maritime Police Station.  End.
+  <Source> Mokpo Maritime Police Station
+
+---------------------------------------------------------------------------------------
+
+KOREA 294/2026
+250000 UTC AUG 2026
+<Navigation Information>   1. This is related to the situation report of the Incheon
+Coast Guard Comprehensive Situation Room (2026. 8. 25.).
+2. On 8. 24. (Mon), a vessel sank near Incheon Coal Pier; please inform vessels
+navigating in the area so they may exercise caution.
+  a. Vessel particulars: Chilbokho (22 tons, coastal and offshore fish transport vessel,
+registered in Namdong-gu)
+  b. Date and time of accident: 2026. 8. 24. (Mon) 20:37
+  c.
+Area: near Incheon Coal Pier
+  d. Position: 37-25-55N, 126-35-11E
+    * Detailed position
+can be checked on the navigation warning status board (https://www.khoa.go.kr/nwb).
+  e.
+Remarks: Anchor buoy and light buoy installation completed
+  f. Source: Incheon Coast
+Guard Comprehensive Situation Room.  End.
+  <Source> Incheon Coast Guard Comprehensive Situation Room
+
+---------------------------------------------------------------------------------------
+
+KOREA 295/2026
+010000 UTC SEP 2026
+<Maritime Training>   1. This is in reference to Naval Operations Command Training
+Division-12435 (2026. 8. 27.).
+2. As Naval Operations Command will conduct maritime training as attached, please inform
+vessels engaged in navigation and fishing of the details.
+  * Check detailed location:
+Navigational Warning Status Board (https://www.khoa.go.kr/nwb)
+  <Source>  Naval Operations Command  Training Division
+End.
+
+No. - Firing Range Area - Date - Time - Related Chart
+1 - South Sea Coast ~ area bounded
+by sequentially connecting the points below south of Geoje-do (1) 34-49-00N,128-56-00E
+(2) 34-49-00N,129-00-00E (3) 34-39-00N,129-00-00E (4) 34-44-00N,128-56-00E -
+09/01,02,03,04 - 09:00 ~ 16:00 - 2112
+2 - East Sea Coast ~ area bounded by sequentially
+connecting the points below south of the East Sea (1) 36-40-00N,129-52-30E (2)
+36-40-00N,130-17-30E (3) 36-20-00N,130-17-30E (4) 36-20-00N,129-52-30E - 09/01,02 - 08:00
+~ 17:00 - 1600
+3 - South Sea Coast ~ vicinity of south of Busan Port, near Hyeongjedo
+centered at 34-53-00N,128-57-00E within a radius of 5 NM - 09/01 - 13:00 ~ 15:00 - 2112
+
+---------------------------------------------------------------------------------------
+
+KOREA 296/2026
+310000 UTC AUG 2026
+<Maritime Live-Fire>   1. This is in reference to Navigational Warning No. 26-292 and
+Joint Chiefs of Staff Joint Firepower Division-3919 (2026.8.27.).
+2. As the schedule for the maritime live-fire training conducted by the Joint Chiefs of
+Staff has been changed as attached, please inform vessels engaged in navigation and
+fishing of the relevant details. 
+  * Detailed locations can be checked on the
+Navigational Warning status board (https://www.khoa.go.kr/nwb).
+  <Source> Joint Chiefs of Staff  Joint Firepower Division
+(Before change)
+(After change)
+End.
+
+
+No. - Firing range area - Date - Time - Related chart
+4(No. 26-292) - South Sea coast - vicinity of Namhyeongje Island (R-100) -
+08/3109/0209/03,05,0609/04 - 16:00 ~ 18:0008:00 ~ 11:0008:00 ~ 14:0008:00 ~ 15:00 - 2112
+32(No. 26-292) - East Sea coast ~ area bounded by sequentially connecting the points
+below in the southern East Sea (1) 36-52-00N,130-00-00E(2) 36-52-00N,130-55-00E(3)
+36-17-00N,130-55-00E(4) 36-02-00N,130-29-00E(5) 36-02-00N,130-00-00E -
+09/03,04,05,0609/03,04,05,06 - 00:00 ~ 08:0018:00 ~ 23:59 - 1013
+34(No. 26-292) - South Sea coast ~ area bounded by sequentially connecting the points
+below in the eastern South Sea (1) 33-55-00N,127-05-00E(2) 33-55-00N,128-00-00E(3)
+33-25-00N,128-00-00E(4) 33-25-00N,127-05-00E - 09/03,04,05,0609/03,04,05,06 - 00:00 ~
+08:0018:00 ~ 23:59 - 2400
+35(No. 26-292) - South Sea coast ~ area bounded by sequentially connecting the points
+below in the eastern South Sea (1) 33-55-00N,127-05-00E(2) 33-55-00N,127-40-00E(3)
+33-25-00N,127-40-00E(4) 33-25-00N,127-05-00E - 09/03,04,05,06 - 08:00 ~ 18:00 - 2400
+40(No. 26-292) - West Sea coast ~ area bounded by sequentially connecting the points
+below in the vicinity of Namdang Port (1) 36-41-12N,126-09-11E(2) 36-35-53N,125-47-24E(3)
+36-19-17N,125-47-24E(4) 36-19-17N,126-18-21E(5) 36-41-12N,126-18-21E - 09/03,04 - 11:00 ~
+16:00 - 3100
+41(No. 26-292) - West Sea coast ~ area bounded by sequentially connecting the points
+below in the vicinity of Anheung Port (1) 36-41-11N,126-11-59E(2) 36-36-27N,126-16-02E(3)
+36-20-14N,126-16-02E(4) 36-20-14N,126-06-00E(5) 36-29-42N,125-54-12E(6)
+36-38-10N,125-54-12E(7) 36-38-10N,125-59-53E(8) 36-40-38N,126-10-24E - 09/02,03 - 16:00 ~
+18:00 - 3100
+42(No. 26-292) - West Sea coast ~ area bounded by sequentially connecting the points
+below in the western part of Anmyeondo, vicinity of Sapsido (1) 36-34-09N,126-11-33E(2)
+36-33-05N,126-09-04E(3) 36-24-58N,126-08-42E(4) 35-54-51N,126-08-23E(5)
+35-51-56N,126-10-00E(6) 35-54-48N,126-11-43E(7) 36-24-52N,126-12-45E(8)
+36-33-21N,126-13-08E - 09/0109/02 - 16:00 ~ 18:0011:00 ~ 13:00 - 3100
+
+No. - Firing range area - Date - Time - Related chart
+1(No. 26-292)(Changed) - South Sea coast - vicinity of Namhyeongje Island (R-100) -
+08/3109/0109/0209/03,05,0609/04 - 10:00 ~ 18:0008:00 ~ 13:0008:00 ~ 16:0008:00 ~
+14:0008:00 ~ 15:00 - 2112
+2(No. 26-292)(Changed) - East Sea coast ~ area bounded by sequentially connecting the
+points below in the southern East Sea (1) 36-52-00N,130-00-00E(2) 36-52-00N,130-55-00E(3)
+36-17-00N,130-55-00E(4) 36-02-00N,130-29-00E(5) 36-02-00N,130-00-00E -
+09/01,02,03,04,05,0609/01,04,05,0609/02,03 - 00:00 ~ 08:0018:00 ~ 23:5919:00 ~ 23:59 -
+1013
+3(No. 26-292)(Changed) - South Sea coast ~ area bounded by sequentially connecting the
+points below in the eastern South Sea (1) 33-55-00N,127-05-00E(2) 33-55-00N,128-00-00E(3)
+33-25-00N,128-00-00E(4) 33-25-00N,127-05-00E - 09/01,02,03,04,05,0609/01,02,03,04,05,06 -
+00:00 ~ 08:0018:00 ~ 23:59 - 2400
+4(No. 26-292)(Changed) - South Sea coast ~ area bounded by sequentially connecting the
+points below in the eastern South Sea (1) 33-55-00N,127-05-00E(2) 33-55-00N,127-40-00E(3)
+33-25-00N,127-40-00E(4) 33-25-00N,127-05-00E - 09/01,02,03,04,05,06 - 08:00 ~ 18:00 - 2400
+5(No. 26-292)(Changed) - West Sea coast ~ area bounded by sequentially connecting the
+points below in the vicinity of Namdang Port (1) 36-41-12N,126-09-11E(2)
+36-35-53N,125-47-24E(3) 36-19-17N,125-47-24E(4) 36-19-17N,126-18-21E(5)
+36-41-12N,126-18-21E - 09/03,04 - 12:00 ~ 15:00 - 3100
+6(No. 26-292)(Changed) - West Sea coast ~ area bounded by sequentially connecting the
+points below in the vicinity of Anheung Port (1) 36-41-11N,126-11-59E(2)
+36-36-27N,126-16-02E(3) 36-20-14N,126-16-02E(4) 36-20-14N,126-06-00E(5)
+36-29-42N,125-54-12E(6) 36-38-10N,125-54-12E(7) 36-38-10N,125-59-53E(8)
+36-40-38N,126-10-24E - 09/0209/03 - 16:00 ~ 18:0015:00 ~ 18:00 - 3100
+7(No. 26-292)(Changed) - West Sea coast ~ area bounded by sequentially connecting the
+points below in the western part of Anmyeondo, vicinity of Sapsido (1) 36-34-09N
+126-11-33E(2) 36-31-36N 126-05-38E(3) 35-54-54N 126-08-24E(4) 35-51-59N 126-10-01E(5)
+35-54-51N 126-11-44E(6) 36-31-17N 126-17-14E - 09/0109/02 - 16:00 ~ 18:0011:30 ~ 13:00 -
+3100
+8(Added) - Yellow Sea - southwest of Gyeokryeolbiyeoldo (MOA-80) - 09/01,02,03,04 - 15:00
+~ 20:00 - 3011
+9(Added) - Yellow Sea - offshore west of Imjado (MOA-84) - 08/31 - 13:00 ~ 15:00 - 2011
+10(Added) - Yellow Sea - northwest of Gyeokryeolbiyeoldo (MOA-88) - 09/04 - 15:00 ~ 17:00
+- 3011
+11(Added) - West Sea coast ~ area bounded by sequentially connecting the points below in
+the vicinity of Gushipo Port (1) 35-26-48N,126-24-58E(2) 35-26-48N,126-25-39E(3)
+35-26-22N,126-25-44E(4) 35-26-24N,126-25-13E - 09/03 - 19:00 ~ 21:00 - 3411
+12(Added) - East Sea coast ~ area bounded by sequentially connecting the points below in
+the southern East Sea (1) 36-20-00N,130-00-00E(2) 36-20-00N,130-25-00E(3)
+36-02-00N,130-25-00E(4) 36-02-00N,130-00-00E - 09/0109/02 - 08:00 ~ 18:0008:00 ~ 19:00 -
+1600
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

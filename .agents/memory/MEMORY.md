@@ -2,3 +2,29 @@
 - [S1 nested numbering](s1-nested-numbering.md) — preserve dotted section identity in both numeric and route-boundary marker scans.
 - [RIGLIST coordinate grammar](riglist-coordinate-grammar.md) — keep specialized rig parsing aligned with generic spaced and compact coordinate forms.
 - [Offshore operational semantics](offshore-operational-messages.md) — deployment and work notices may carry points without defining a polygon, line, or route.
+- [NAVAREA corpus validation](navarea-corpus-validation.md) — preserve source boundaries and use reviewed fingerprints with full reports as investigation artifacts.
+- [Physical ECDIS coordinate order](ecdis-coordinate-order-validation.md) — source-list preservation does not prove the intended traversal order of a multi-vertex object.
+- [Radius-only warnings](radius-warning-semantics.md) — radius language without an explicit center qualifies an existing warning, not an inferred Circle.
+- [Canvas preview port reuse](canvas-preview-port-reuse.md) — a stale Vite preview can answer successfully while a duplicate workflow launch reports the port as busy.
+- [GitHub CI workspace synchronization](github-ci-workspace-sync.md) — a successful remote run may validate an older workflow when local release commits are not on the dispatched ref.
+- [Release baseline checkout](release-baseline-checkout.md) — commit reviewed corpus fingerprints before clean-checkout validation, which ignores uncommitted workspace reports.
+- [GitHub binary transfer](github-binary-transfer.md) — upload binary artifacts from direct file bytes; shell-captured base64 can truncate and corrupt the payload.
+- [NAVAREA header boundaries](navarea-header-boundaries.md) — normalize descriptive headers, but keep cancellation references out of message and section boundaries.
+- [ECDIS descriptions and Legacy contract](ecdis-description-and-legacy-circles.md) — build the Modern Description in handlers; Legacy copies it and only hard-caps at 999.
+- [Drifting and aground hazard semantics](drifting-hazard-semantics.md) — classify DRIFTING HAZARDS, ADRIFT, and AGROUND as dangerous Wreck points, not area or circle geometry.
+- [iOS Home Screen icons](ios-home-screen-icons.md) — use a dedicated apple-touch-icon URL; changing its filename helps Safari discard a cached old icon.
+- [Tablet banner safety](tablet-banner-safety.md) — preserve the complete square ECDIS banner on touch tablets, especially its information-rich upper edge.
+- [4K banner immersion](hero-banner-4k-immersion.md) — the high-resolution ECDIS master should invite close inspection and reward zooming into its chart detail.
+- [Recommended route ECDIS semantics](recommended-route-semantics.md) — confirmed Furuno route presentation is NINFO with lineType 1, scoped only to exact recommended routes.
+- [Official source adaptation boundary](official-source-adaptation-boundary.md) — ingest official notices as traceable inputs, then present a normalized and polished NAVAREA2UC version.
+- [NAVTOR NAVAREA module](navtor-navarea-module.md) — NAVAREA is a provider-georeferenced Point/Line/Area overlay, distinct from Auto Routeing.
+- [Project workstation baseline](project-workstation-baseline.md) — compact BRIX N200 build with 32 GB RAM and 512 GB NVMe for local validation and preview work.
+- [Release and pipeline sequence](release-and-pipeline-sequence.md) — freeze NAVAREA core first, build the web UI on its stable contract, then add isolated coastal pipelines.
+- [ECDIS quick reference purpose](ecdis-quick-reference-purpose.md) — the visual-language block is a printable engine-wide instruction, not a demo-only object catalog.
+- [Extensible core foundation](extensible-core-foundation.md) — keep the safety-critical core strict while designing stable contracts for future adapters, profiles and traceability.
+- [Offline data-first web UI](offline-data-first-web.md) — keep offline processing map-free; reserve cartographic visualization for the online service.
+- [Corpus expectation–reality audit](corpus-expectation-reality-audit.md) — use a full source/XML pass to narrow physical ECDIS work to real mismatches and unresolved semantics.
+- [Bounded geometry precedence](bounded-area-precedence.md) — explicit or implicit bounded-coordinate evidence overrides route/section fallbacks without making ordinary routes Areas.
+- [Section coordinate context](section-coordinate-context.md) — coordinate-only numbered sections must inherit nearby operation and caution prose before export.
+- [Python test runner](python-test-runner.md) — run the project suite through uv-managed pytest; tests modules under tests/ use package-qualified imports.
+- [Cancelled task lifecycle](task-lifecycle-audit.md) — audit cancelled scopes against code and successor tasks; only recreate genuinely incomplete work.

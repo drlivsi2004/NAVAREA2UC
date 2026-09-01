@@ -1,0 +1,190 @@
+INLAND WATERS - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: HG 8650/26.
+
+NO CANCELLED WARNINGS SINCE LAST UPDATE.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2024 SERIES: HG 9016, HG 9557, HG 9558.
+
+2025 SERIES: HG 7090, HG 8968.
+
+2026 SERIES: HG 7689, HG 7690, HG 7691, HG 8071, HG 8072, HG 8073, HG 8074, HG 8650.
+
+---------------------------------------------------------------------------------------
+
+HG 9016/24
+202116 UTC SEP 2024
+VICINITY OF VILA ASSUNCAO
+CHART 2133
+INSERT
+  4.0 METRES IN 30-05.81S 051-16.29W
+3.0
+METRES IN 30-06.11S 051-16.95W
+3.5 METRES IN 30-05.94S 051-16.56W
+REMOVE
+5.7 METRES IN
+30-05.79S 051-16.25W
+5.7 METRES IN 30-05.96S 051-16.59W
+5.7 METRES IN 30-06.12S
+051-16.96W
+CANCEL THIS WARNING 201900 UTC SEP 26.
+
+---------------------------------------------------------------------------------------
+
+HG 9557/24
+172045 UTC NOV 2024
+RIO GUAIBA
+CHART 2111
+DEPTHS LOWER THAN THOSE REPRESENTED ON CHART
+  AREA BOUNDED BY
+30-15.31S 051-11.78W
+30-17.02S 051-13.15W
+30-16.37S 051-14.14W
+30-14.75S 051-12.39W
+MINIMUM DEPTH 2.7 METRES IN 30-15.58S 051-13.06W
+CANCEL LOCAL HG 8203/24
+CANCEL THIS WARNING 172000 UTC NOV 26.
+
+---------------------------------------------------------------------------------------
+
+HG 9558/24
+172045 UTC NOV 2024
+RIO GUAIBA
+CHART 2108
+DEPTHS LOWER THAN THOSE REPRESENTED ON CHART
+  AREA BOUNDED BY
+30-15.31S 051-11.78W
+30-17.02S 051-13.15W
+30-16.37S 051-14.14W
+30-14.75S 051-12.39W
+MINIMUM DEPTH 2.7 METRES AT 30-15.58S 051-13.06W
+CANCEL LOCAL HG 8202/24
+CANCEL THIS WARNING 172000 UTC NOV 26.
+
+---------------------------------------------------------------------------------------
+
+HG 7090/25
+132107 UTC JAN 2025
+LEITAO CHANNEL
+CHART 2133
+REMOVE
+  DEPTHS:
+6.0 METRES AT 30-10.41S 051-16.75W
+5.7 METRES AT 30-10.67S 051-16.57W
+5.6
+METRES AT 30-10.91S 051-16.43W
+5.3 METRES AT 30-11.18S 051-16.26W
+5.7 METRES AT 30-11.36S
+051-16.15W
+5.6 METRES AT 30-11.60S 051-16.01W
+6.1 METRES AT 30-11.91S 051-15.82W
+INSERT
+DEPTHS:
+4.7 METRES AT 30-10.28S 051-16.80W
+4.1 METRES AT 30-11.15S 051-16.27W
+4.3 METRES
+AT 30-11.34S 051-16.15W
+4.5 METRES AT 30-11.45S 051-16.09W
+4.8 METRES AT 30-11.58S
+051-16.01W
+5.3 METRES AT 30-11.90S 051-15.83W
+CANCEL THIS WARNING 132030 UTC JAN 27.
+
+---------------------------------------------------------------------------------------
+
+HG 8968/25
+120400 UTC SEP 2025
+CHART 2104 (PLANO 1)
+01 SEP 25 TO 30 DEC 25
+DREDGING BY DRAGA LIGIA
+IN AREA BOUND BY
+31-47.37S 052-12.95W
+31-47.62S 052-12.26W
+31-47.72S 052-11.96W
+31-48.18S 052-10.60W
+31-47.39S 052-12.96W
+31-47.64S 052-12.27W
+31-47.74S 052-11.97W
+31-48.20S 052-10.61W
+CANCEL THIS WARNING 302200 UTC DEC 26.
+
+---------------------------------------------------------------------------------------
+
+HG 7689/26
+170243 UTC APR 2026
+CHART 2107
+BARBA NEGRA LIGHT NRORD 4512 30-32.00S 051-08.53W UNLIT 
+
+CANCEL THIS WARNING 132000 UTC OCT 26.
+
+---------------------------------------------------------------------------------------
+
+HG 7690/26
+170243 UTC APR 2026
+CHART 2140
+DESERTAS LIGHT NRORD 4508 30-32.64S 050-50.49W REPLACED FOR  
+CANCEL THIS WARNING 132000 UTC OCT 26.
+
+---------------------------------------------------------------------------------------
+
+HG 7691/26
+170243 UTC APR 2026
+CHART 2140
+SAO SIMAO LIGHT BUOY NRORD 4496 30-53.28S 051-08.42W UNLIT 
+
+CANCEL THIS WARNING 132000 UTC OCT 26.
+
+---------------------------------------------------------------------------------------
+
+HG 8071/26
+102100 UTC JUN 2026
+CHART 2105
+LIGHT BUOY NR 82 NRORD 4432 31-41.35S 051-55.18W WITHOUT TOPMARK 
+
+CANCEL THIS WARNING 052000 UTC DEC 26.
+
+---------------------------------------------------------------------------------------
+
+HG 8072/26
+102100 UTC JUN 2026
+CHART 2105
+BUOY NR 100 NRORD RS-295 30-20.92S 051-03.70W WITHOUT TOPMARK 
+
+CANCEL THIS WARNING 052000 UTC DEC 26.
+
+---------------------------------------------------------------------------------------
+
+HG 8073/26
+102100 UTC JUN 2026
+CHART 2105
+BUOY NR 104 NRORD RS-301 30-20.30S 051-04.67W WITHOUT TOPMARK 
+
+CANCEL THIS WARNING 052000 UTC DEC 26.
+
+---------------------------------------------------------------------------------------
+
+HG 8074/26
+102100 UTC JUN 2026
+CHART 2105
+BUOY NR 126 NRORD RS-340 30-10.78S 051-16.55W WITHOUT TOPMARK 
+
+CANCEL THIS WARNING 052000 UTC DEC 26.
+
+---------------------------------------------------------------------------------------
+
+HG 8650/26
+242101 UTC AUG 2026
+CHART 2133
+CRISTAL NR 142 LIGHT NRORD 4629 30-04.38S 051-14.82W REPLACED FOR  
+CANCEL LOCAL HG 8623/26 AND HG 8493/26
+CANCEL THIS WARNING 172100 UTC FEB 27.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

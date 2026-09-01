@@ -1,0 +1,5597 @@
+MARITIMES COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: M 1183/2026, M 1184/2026, M 1187/2026, M 1188/2026, M
+1192/2026, M 1197/2026, M 1198/2026, M 1199/2026, M 1200/2026, M 1201/2026, M 1202/2026,
+M 1203/2026, M 1207/2026, M 1208/2026, M 1209/2026, M 1210/2026, M 1211/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: M 479/2026, M 781/2026, M 1195/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2015 SERIES: M 2278, M 2492.
+
+2016 SERIES: M 1071.
+
+2019 SERIES: M 1673, M 1939, M 2249, M 2250, M 2251, M 2253, M 2255, M 2259, M 2279, M
+2282, M 2283, M 2284, M 2285, M 2288, M 2573.
+
+2020 SERIES: M 71, M 75, M 76, M 77, M 79, M 349, M 691, M 692, M 1210.
+
+2021 SERIES: M 215, M 481, M 482, M 599, M 626, M 741, M 807, M 1862, M 1905.
+
+2022 SERIES: M 79, M 461, M 1121, M 1122, M 1128, M 1146, M 1491, M 1563, M 1650, M
+1953, M 2280, M 2291, M 2294.
+
+2023 SERIES: M 144, M 172, M 183, M 204, M 207, M 229, M 337, M 400, M 408, M 436, M
+642, M 811, M 818, M 830, M 834, M 914, M 957, M 969, M 1012, M 1020, M 1071, M 1110, M
+1166, M 1272, M 1475, M 1483, M 1527, M 1613, M 1616, M 1624, M 1665.
+
+2024 SERIES: M 18, M 101, M 120, M 126, M 171, M 247, M 274, M 280, M 290, M 313, M 315,
+M 317, M 338, M 339, M 355, M 356, M 361, M 425, M 462, M 465, M 474, M 483, M 485, M
+488, M 492, M 546, M 606, M 661, M 677, M 778, M 795, M 834, M 920, M 1027, M 1037, M
+1038, M 1270, M 1273, M 1283, M 1363, M 1364, M 1366, M 1497, M 1521, M 1535, M 1696, M
+1869, M 1945, M 1960, M 2013, M 2186, M 2390, M 2416, M 2510, M 2550.
+
+2025 SERIES: M 359, M 466, M 467, M 506, M 575, M 607, M 617, M 644, M 690, M 692, M
+709, M 752, M 754, M 776, M 797, M 833, M 834, M 835, M 879, M 903, M 957, M 968, M 992,
+M 995, M 1043, M 1087, M 1151, M 1152, M 1153, M 1157, M 1159, M 1160, M 1163, M 1208, M
+1211, M 1215, M 1228, M 1241, M 1278, M 1285, M 1286, M 1290, M 1292, M 1293, M 1301, M
+1335, M 1426, M 1431, M 1447, M 1476, M 1481, M 1523, M 1527, M 1528, M 1535, M 1536, M
+1539, M 1579, M 1630, M 1675, M 1690, M 1711, M 1736, M 1881, M 1884, M 2016, M 2020.
+
+2026 SERIES: M 8, M 9, M 28, M 99, M 104, M 107, M 131, M 140, M 173, M 195, M 209, M
+221, M 230, M 242, M 245, M 249, M 253, M 254, M 269, M 298, M 304, M 307, M 321, M 324,
+M 327, M 328, M 339, M 349, M 354, M 355, M 362, M 369, M 383, M 385, M 393, M 395, M
+396, M 433, M 447, M 448, M 468, M 497, M 500, M 510, M 511, M 512, M 531, M 545, M 560,
+M 566, M 584, M 586, M 590, M 596, M 622, M 625, M 629, M 632, M 661, M 663, M 665, M
+691, M 698, M 703, M 704, M 705, M 706, M 712, M 715, M 730, M 740, M 752, M 753, M 763,
+M 771, M 772, M 774, M 779, M 783, M 812, M 870, M 879, M 881, M 884, M 885, M 886, M
+894, M 895, M 897, M 898, M 900, M 910, M 917, M 920, M 921, M 922, M 923, M 926, M 951,
+M 953, M 960, M 966, M 971, M 973, M 974, M 986, M 996, M 997, M 998, M 999, M 1004, M
+1007, M 1014, M 1016, M 1019, M 1027, M 1028, M 1029, M 1031, M 1032, M 1033, M 1034, M
+1035, M 1037, M 1039, M 1044, M 1046, M 1052, M 1072, M 1077, M 1078, M 1079, M 1084, M
+1086, M 1087, M 1088, M 1090, M 1104, M 1111, M 1113, M 1117, M 1141, M 1143, M 1144, M
+1145, M 1153, M 1161, M 1165, M 1166, M 1167, M 1171, M 1183, M 1184, M 1187, M 1188, M
+1192, M 1197, M 1198, M 1199, M 1200, M 1201, M 1202, M 1203, M 1207, M 1208, M 1209, M
+1210, M 1211.
+
+---------------------------------------------------------------------------------------
+
+M 2278/2015
+290000 UTC OCT 2015
+Partially submerged barge - Passamaquoddy Bay NB
+A barge 20 feet by 40 feet reported partially submerged in 45 08.652N 066 56.08W.
+Caution.
+
+POSITION 45-08.652N 066-56.080W
+
+---------------------------------------------------------------------------------------
+
+M 2492/2015
+090000 UTC DEC 2015
+Shallower waters than advertised - Harbour entrance to Pinkneys Point
+Shallower waters than advertised have been reported in the harbour entrance to Pinkneys
+Point. Caution.
+
+POSITION 43-42.990N 066-04.494W
+
+---------------------------------------------------------------------------------------
+
+M 1071/2016
+210000 UTC JUN 2016
+Abandonned anchor in Dublin Bay, NS
+At 21/1919UTC June 2016, an 8 foot-wide anchor, brown in color, reported abandonned in
+between the government wharf and the beach in Dublin Bay, NS. The anchor is only visible
+at low tide and poses a hazard to navigation. Caution.
+
+POSITION 44-14.959N 064-23.441W
+
+---------------------------------------------------------------------------------------
+
+M 1673/2019
+190000 UTC AUG 2019
+Waterway information
+Mira Gut channel may be impassible at low tide, due to inadequate water depths.
+
+POSITION
+46-02.149N 059-58.064W
+
+---------------------------------------------------------------------------------------
+
+M 1939/2019
+130000 UTC SEP 2019
+Waterway information
+Unmarked hazard in 46 08 02.828N 63 46 11.81W. Caution
+
+POSITION 46-08.047N 063-46.197W
+
+---------------------------------------------------------------------------------------
+
+M 2249/2019
+280000 UTC OCT 2019
+Waterway information
+As a result of a recent hydrographic survey the following shoal depths were found :
+
+43 42 42.721N 65 21 7.774W :1.3 meters
+
+43 40 24.619N 65 17 41.645W :-1.6 meters
+43 40 38.057N 65 17 58.458W :-0.7 meters
+43 38 59.498N 65 18 23.71W :-0.1 meters
+43 39 30.689N 65 18 36.066W :0.2 meters
+43 39 55.811N 65 14 56.679W :2.7 meters
+43 38 38.836N 65 18 43.674W :0.2 meters
+43 38 38.318N 65 18 53.25W :-0.1 meters
+43 38 40.121N 65 19 0.238W :0.1 meters
+43 39 13.642N 65 17 25.101W :2.8 meters
+43 39 11.978N 65 17 27.27W :0.9 meters
+
+AREA BOUNDED BY 43-38.669N 065-19.004W,
+43-39.930N 065-14.945W, 43-42.712N 065-21.130W
+
+---------------------------------------------------------------------------------------
+
+M 2250/2019
+280000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 41.548N 65 10.796W
+43 44.01N 65 9.817W
+43 43.989N 65 8.699W
+43 41.874N 65 8.591W
+43 41.202N 65 9.616W
+43 41.548N 65 10.796W
+Shallower depths located at:
+Latitue Longitude Depth (in meters)
+43 43 43.415N 65 9 17.001W 1.5
+43 43 21.256N 65 9 31.849W 0.5
+43 43 8.022N 65 9 28.916W 2.9
+43 43 26.54N 65 9 9.468W 2.0
+43 41 35.712N 65 10 25.239W 3.6
+43 41 46.203N 65 9 19.055W 6.5
+43 41 58.703N 65 9 0.739W 4.0
+43 42 10.227N 65 8 59.811W 4.7
+43 41 57.415N 65 10 0.335W 2.8
+43 41 28.409N 65 10 8.671W 5.2
+43 43 15.696N 65 9 0.141W 3.2
+
+AREA BOUNDED BY 43-41.202N 065-09.616W, 43-41.874N
+065-08.591W, 43-43.989N 065-08.699W, 43-44.010N 065-09.817W, 43-41.548N 065-10.796W
+
+---------------------------------------------------------------------------------------
+
+M 2251/2019
+280000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 38.52N 65 20.355W
+43 40.161N 65 15.071W
+43 42.837N 65 13.636W
+43 45.721N 65 15.424W
+43 46.921N 65 15.636W
+43 46.901N 65 13.558W
+43 43.291N 65 11.205W
+43 40.247N 65 12.213W
+43 39.552N 65 13.929W
+43 37.505N 65 18.513W
+43 38.52N 65 20.355W
+Shallower depths located at:
+Latitute Longitude Depth (in meters)
+43 41 49.339N 65 12 48.019W 5.8
+43 42 52.522N 65 13 14.252W 1.3
+43 42 51.168N 65 13 8.84W 2.2
+43 41 35.242N 65 12 56.211W 0.5
+43 43 28.842N 65 11 41.065W 1.5
+43 44 16.318N 65 12 15.211W 6.1
+43 38 28.342N 65 19 21.655W -0.1
+43 40 24.153N 65 12 44.886W 2.1
+43 38 15.733N 65 18 40.11W 0.0
+43 38 10.478N 65 18 35.445W -0.0
+43 39 52.489N 65 14 19.496W -0.5
+43 39 51.43N 65 14 32.182W 2.9
+43 40 1.834N 65 14 38.82W 0.4
+43 41 11.434N 65 13 37.097W 0.3
+43 41 37.364N 65 13 45.427W 1.0
+43 41 1.122N 65 13 9.024W 0.9
+43 40 59.732N 65 12 57.136W 1.3
+43 40 55.37N 65 13 29.803W 0.9
+43 40 52.17N 65 13 2.664W 1.6
+43 41 7.43N 65 12 52.953W 1.4
+43 41 20.321N 65 12 56.778W 1.7
+43 46 19.207N 65 15 7.462W -0.2
+
+AREA BOUNDED BY 43-37.505N 065-18.513W, 43-40.247N
+065-12.213W, 43-43.291N 065-11.205W, 43-46.901N 065-13.558W, 43-46.921N 065-15.636W,
+43-45.721N 065-15.424W, 43-42.837N 065-13.636W, 43-40.161N 065-15.071W, 43-38.520N
+065-20.355W, 43-38.520N 065-20.355W
+
+---------------------------------------------------------------------------------------
+
+M 2253/2019
+280000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+ 
+43 27.876 N 65 30.428 W
+43 30.09 N 65 28.262 W
+43 34.194 N 65 27.189 W
+43 34.269 N 65 26.223 W
+43 31.927 N 65 25.136 W
+43 30.029 N 65 26.038 W
+43 28.044 N 65 26.518 W
+43 26.713 N 65 27.669 W
+43 26.672 N 65 28.599 W
+43 27.876 N 65 30.428 W
+Shallower depths located at:
+Latitude Longitude Depth (in meters)
+43 31 7.95N 65 26 46.855W -0.1
+43 33 53.693N 65 26 41.751W -0.2
+43 27 49.866N 65 29 40.869W -3.8
+43 26 54.755N 65 28 19.188W -1.3
+43 27 20.521N 65 29 11.63W 1.8
+43 28 19.575N 65 27 31.463W 1.0
+43 28 7.613N 65 29 37.149W 3.0
+43 29 11.516N 65 27 27.783W 2.7
+43 29 25.477N 65 27 4.086W 1.7
+43 27 26.628N 65 27 36.658W 4.3
+43 31 54.563N 65 25 49.042W -0.2
+43 30 14.513N 65 26 21.985W 1.4
+43 31 5.006N 65 26 17.785W -1.1
+43 29 50.448N 65 26 55.969W 1.9
+43 27 57.865N 65 27 46.158W 0.4
+43 29 59.53N 65 27 48.433W 1.8
+43 31 38.514N 65 25 56.861W 1.9
+43 31 54.818N 65 26 15.114W 0.5
+43 28 40.178N 65 27 30.518W 0.3
+43 28 5.184N 65 26 52.16W 1.9
+43 29 11.499N 65 27 5.969W 2.8
+
+AREA BOUNDED BY 43-26.672N 065-28.599W, 43-26.713N
+065-27.669W, 43-28.044N 065-26.518W, 43-30.029N 065-26.038W, 43-31.927N 065-25.136W,
+43-34.269N 065-26.223W, 43-34.194N 065-27.189W, 43-30.090N 065-28.262W, 43-27.876N
+065-30.428W
+
+---------------------------------------------------------------------------------------
+
+M 2255/2019
+280000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 44.047 N 65 5.855 W
+43 44.414 N 65 5.92 W
+43 45.182 N 65 4.803 W
+43 45.015 N 65 4.469 W
+43 44.024 N 65 4.748 W
+43 44.047 N 65 5.855 W
+Shallower depths located at:
+Latitude Longitude Depths (in meters)
+43 44 10.394N 65 5 43.84W 2.1
+43 44 8.114N 65 5 44.431W 0.3
+43 44 16.078N 65 4 58.887W -1.7
+43 44 6.542N 65 4 57.438W 1.1
+43 45 1.72N 65 4 44.373W -0.6
+43 44 25.43N 65 5 10.388W 5.5
+43 44 28.069N 65 5 16.738W 5.0
+43 44 18.978N 65 5 44.139W 2.2
+43 44 31.195N 65 5 14.164W 4.8
+43 44 10.831N 65 4 53.34W 3.4
+
+AREA BOUNDED BY 43-44.047N 065-05.855W, 43-44.024N
+065-04.748W, 43-45.015N 065-04.469W, 43-45.182N 065-04.803W, 43-44.414N 065-05.920W
+
+---------------------------------------------------------------------------------------
+
+M 2259/2019
+280000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 40.741 N 65 7.702 W
+43 41.56 N 65 7.301 W
+43 41.559 N 65 6.913 W
+43 41.489 N 65 6.061 W
+43 41.194 N 65 5.987 W
+43 40.696 N 65 7.173 W
+43 40.741 N 65 7.702 W
+Shallower depths located at:
+Latitude Longitude Depth (in meters)
+43 41 21.502N 65 6 55.231W 4.8
+43 41 26.677N 65 7 4.57W 3.9
+43 41 21.13N 65 6 40.254W 0.8
+43 40 57.262N 65 7 8.895W 3.8
+43 41 19.136N 65 7 9.218W 4.4
+43 41 18.577N 65 6 46.865W 6.4
+43 41 14.835N 65 6 47.627W 4.2
+43 41 17.57N 65 6 31.196W 2.1
+43 41 20.515N 65 6 12.092W -2.2
+43 41 23.247N 65 6 30.948W 0.8
+43 41 17.612N 65 6 11.32W -3.4
+43 41 22.904N 65 6 14.409W 1.5
+43 40 47.844N 65 7 18.612W 6.7
+43 40 59.655N 65 7 28.408W 0.1
+43 40 50.743N 65 7 28.316W 0.6
+
+AREA BOUNDED BY 43-40.741N 065-07.702W, 43-40.696N
+065-07.173W, 43-41.194N 065-05.987W, 43-41.489N 065-06.061W, 43-41.559N 065-06.913W,
+43-41.560N 065-07.301W
+
+---------------------------------------------------------------------------------------
+
+M 2279/2019
+290000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 47.818N 064 53.147W
+ 43 49.169N 064 53.370W
+ 43 49.927N 064 52.488W
+ 43 51.283N 064 52.950W
+ 43 51.536N 064 52.620W
+ 43 51.411N 064 52.266W
+ 43 48.959N 064 50.758W
+ 43 48.781N 064 50.146W
+ 43 50.205N 064 50.093W
+ 43 50.564N 064 49.643W
+ 43 49.904N 064 48.971W
+ 43 48.867N 064 49.211W
+ 43 47.770N 064 52.565W
+ 43 47.818N 064 53.147W
+Shallower depths located at:
+ Latitude Longitude Depth (in Metres)
+43 47.899N 64 52.770W 6.4
+43 48.725N 64 50.580W 3.1
+43 48.761N 64 50.712W 4.8
+43 48.691N 64 49.926W 2.8
+43 48.859N 64 49.714W 5.9
+43 48.921N 64 49.463W 10.1
+43 49.203N 64 49.803W 4.1
+43 49.542N 64 49.754W 6.0
+43 48.116N 64 52.676W 5.9
+43 49.890N 64 49.896W 1.1
+43 49.970N 64 49.891W 1.4
+43 50.251N 64 49.667W 1.8
+43 50.211N 64 49.599W 1.9
+43 50.229N 64 49.376W 4.1
+43 49.932N 64 49.339W 9.7
+43 51.266N 64 52.647W 0.7
+43 48.994N 64 52.672W 4.5
+43 49.188N 64 52.998W 1.7
+43 49.629N 64 52.350W 0.6
+43 49.737N 64 52.202W 4.0
+43 51.449N 64 52.613W 0.6
+43 51.340N 64 52.511W 0.8
+Available depth refers to chart datum. Caution.
+
+AREA BOUNDED BY 43-47.818N 064-53.147W,
+43-47.770N 064-52.565W, 43-48.867N 064-49.211W, 43-49.904N 064-48.971W, 43-50.564N
+064-49.643W, 43-50.205N 064-50.093W, 43-48.781N 064-50.146W, 43-48.959N 064-50.758W,
+43-51.411N 064-52.266W, 43-51.536N 064-52.620W, 43-51.283N 064-52.950W, 43-49.927N
+064-52.488W, 43-49.169N 064-53.370W
+
+---------------------------------------------------------------------------------------
+
+M 2282/2019
+300000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 49.935N 64 50.193W
+43 50.563N 64 49.461W
+43 50.72N 64 48.605W
+43 51.911N 64 48.489W
+43 51.634N 64 47.614W
+43 48.576N 64 47.163W
+43 48.358N 64 47.896W
+43 49.935N 64 50.193W
+Shallower depths located at:
+Latitude Longitude Depth (in meters)
+43 49.992N 64 49.28W 9.6
+43 49.931N 64 49.338W 9.6
+43 50.229N 64 49.378W 3.9
+43 50.212N 64 49.598W 1.9
+43 50.011N 64 49.881W 1.8
+43 49.97N 64 49.891W 1.3
+43 49.89N 64 49.896W 0.9
+43 51.404N 64 47.866W 2.3
+43 51.298N 64 47.891W 5.9
+43 50.27N 64 49.169W 4.6
+43 51.186N 64 48.395W 3.9
+43 51.303N 64 48.391W 1.2
+43 50.236N 64 47.912W 8.8
+43 50.168N 64 49.034W 6.4
+43 51.051N 64 48.379W 5.9
+43 51.442N 64 48.285W 4.3
+43 50.419N 64 48.221W 2.7
+43 50.998N 64 48.14W 6.5
+43 51.297N 64 48.14W 4.5
+43 49.97N 64 48.981W 1.7
+43 48.994N 64 47.737W 6
+43 48.737N 64 47.632W 3.6
+43 50.39N 64 48.677W 2.4
+43 50.408N 64 48.807W 4.7
+43 50.73N 64 47.963W 4.8
+43 51.01N 64 47.805W 9.9
+43 50.412N 64 49.42W 2.3
+43 48.548N 64 47.712W 14.1
+43 51.684N 64 48.252W 1.1
+
+AREA BOUNDED BY 43-48.358N 064-47.896W, 43-48.576N
+064-47.163W, 43-51.634N 064-47.614W, 43-51.911N 064-48.489W, 43-50.720N 064-48.605W,
+43-50.563N 064-49.461W, 43-49.935N 064-50.193W
+
+---------------------------------------------------------------------------------------
+
+M 2283/2019
+300000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 51.668N 64 47.457W
+43 52.386N 64 47.075W
+43 52.924N 64 46.096W
+43 53.497N 64 44.457W
+43 52.957N 64 43.912W
+43 52.732N 64 45.35W
+43 52.186N 64 45.523W
+43 51.883N 64 45.889W
+43 51.392N 64 47.015W
+43 51.668N 64 47.457W
+Shallower depths located at:
+Latitude Longitude Depth (in meters)
+43 51.542N 64 46.831W 7
+43 51.487N 64 46.999W 7.6
+43 51.668N 64 47.203W 0.1
+43 51.586N 64 47.222W 2.4
+43 52.741N 64 45.499W 6.5
+43 53.06N 64 44.236W 4.9
+43 52.531N 64 45.656W 9.1
+43 52.509N 64 45.886W 9.7
+43 52.773N 64 45.976W 7.6
+43 52.235N 64 46.778W 9.2
+43 51.746N 64 46.74W 5.7
+43 51.813N 64 46.581W 9.3
+43 51.923N 64 45.985W 14.3
+43 52.209N 64 45.648W 12.4
+43 53.301N 64 44.488W 2.5
+
+AREA BOUNDED BY 43-51.392N 064-47.015W, 43-51.883N
+064-45.889W, 43-52.186N 064-45.523W, 43-52.732N 064-45.350W, 43-52.957N 064-43.912W,
+43-53.497N 064-44.457W, 43-52.924N 064-46.096W, 43-52.386N 064-47.075W, 43-51.668N
+064-47.457W
+
+---------------------------------------------------------------------------------------
+
+M 2284/2019
+300000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 53.132N 64 45.92W
+43 52.791N 64 47.199W
+43 55.341N 64 50.301W
+43 56.497N 64 49.257W
+43 56.043N 64 47.477W
+43 54.262N 64 46.461W
+43 53.132N 64 45.92W
+Shallower depths located at:
+Latitude Longitude Depth (in meters)
+43 56.241N 64 48.768W 6.9
+43 56.146N 64 48.742W 8.2
+43 55.902N 64 47.646W 10.3
+43 56.034N 64 49.138W 3.6
+43 54.856N 64 49.447W 3.7
+43 55.626N 64 49.66W 7.8
+43 55.412N 64 50.103W 3.5
+43 54.302N 64 48.12W 6.5
+43 55.701N 64 47.746W 5
+43 54.221N 64 47.725W 8.6
+43 55.614N 64 47.847W 9.2
+43 54.953N 64 47.841W 9.3
+43 54.987N 64 47.927W 5.4
+43 54.587N 64 47.472W 7.6
+43 53.136N 64 46.156W 5.7
+43 53.348N 64 46.359W 4.3
+43 53.882N 64 46.415W 4.4
+43 53.738N 64 46.461W 1.9
+43 53.534N 64 46.51W 0 .8
+43 53.398N 64 46.646W 4.6
+43 53.491N 64 46.747W 4.8
+43 53.707N 64 46.755W 4.7
+43 53.726N 64 47.331W 0.6
+43 53.138N 64 47.165W 4.6
+43 52.968N 64 47.151W 4.8
+43 54.672N 64 47.201W 9.1
+43 53.206N 64 47.156W 1.3
+43 53.521N 64 47.14W 3.2
+43 54.358N 64 46.893W 7.2
+
+AREA BOUNDED BY 43-52.791N 064-47.199W, 43-53.132N
+064-45.920W, 43-54.262N 064-46.461W, 43-56.043N 064-47.477W, 43-56.497N 064-49.257W,
+43-55.341N 064-50.301W
+
+---------------------------------------------------------------------------------------
+
+M 2285/2019
+300000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+43 57.03N 64 46.94W
+43 58.035N 64 43.846W
+43 58.747N 64 42.662W
+43 58.31N 64 41.72W
+43 54.989N 64 43.636W
+43 54.721N 64 44.663W
+43 57.03N 64 46.94W
+Shallower depths located at:
+Latitude Longitude Depth (in meters)
+43 58.414N 64 42.24W 4.9
+43 57.477N 64 43.589W 7
+43 57.607N 64 43.696W 4.8
+43 57.464N 64 43.872W 4.8
+43 57.607N 64 43.935W 4.3
+43 56.911N 64 43.951W 8.8
+43 57.034N 64 44.276W 4.9
+43 56.797N 64 46.522W 8.7
+43 57.88N 64 43.5W 9.6
+43 58.405N 64 42.778W 3.1
+43 57.972N 64 42.738W 9.6
+43 55.005N 64 44.509W 4.2
+43 55.688N 64 44.693W 1.5
+43 55.345N 64 44.772W 1.7
+43 55.869N 64 44.85W 7.7
+43 57.056N 64 44.958W 4.5
+43 56.94N 64 45.766W 9
+43 56.892N 64 45.907W 8
+43 56.881N 64 46.292W 3
+
+AREA BOUNDED BY 43-54.721N 064-44.663W, 43-54.989N 064-43.636W,
+43-58.310N 064-41.720W, 43-58.747N 064-42.662W, 43-58.035N 064-43.846W, 43-57.030N
+064-46.940W
+
+---------------------------------------------------------------------------------------
+
+M 2288/2019
+310000 UTC OCT 2019
+Waterway information
+Shallower depths have been identified in an area bounded by the
+following coordinates:
+43 44 17.449 N 64 59 52.29 W
+43 44 41.515 N 65 00 00.349 W
+43 44
+55.519 N 64 59 41.942 W
+43 44 41.293 N 64 58 11.944 W
+43 44 04.611 N 64 58 03.0 W
+43 43
+04.537 N 64 58 28.12 W
+43 44 17.449 N 64 59 52.29 W
+
+Shallower depths located at:
+Latitude       Longitude      Depth (in metres)
+43 44 42.449 N 64 59 15.758 W  4.3
+43 43
+10.721 N 64 58 28.926 W  4.1
+43 44 37.630 N 64 59 50.471 W  1.6
+43 44 20.622 N 64 59
+49.906 W  4.5
+43 44 20.875 N 64 58 11.338 W -4.1
+43 44 47.796 N 64 59 25.101 W  4.9
+43 44
+23.774 N 64 58 49.881 W  3.4
+43 44 22.618 N 64 58 13.631 W  2.7
+43 44 06.660 N 64 58
+18.025 W  0.5
+43 44 25.302 N 64 58 17.742 W  2.3
+
+Available depth refers to chart datum.
+Caution.
+
+AREA BOUNDED BY 43-43.076N 064-58.469W, 43-44.077N 064-58.050W, 43-44.688N
+064-58.199W, 43-44.925N 064-59.699W, 43-44.692N 065-00.006W, 43-44.291N 064-59.872W
+
+---------------------------------------------------------------------------------------
+
+M 2573/2019
+170000 UTC DEC 2019
+Waterway information
+As a result of a recent hydrographic survey the following shoal depths were found :
+Latitude: Longitude: Depth in Meters
+43 28 05.128N 065 26 52.112W 0.8 meters
+43 29 22.891N 065 31 47.59W 4.7 meters
+43 30 37.58N 065 22 30.958W 4.7 meters
+
+POSITION 43-28.085N 065-26.869W
+POSITION
+43-29.382N 065-31.793W
+POSITION 43-30.626N 065-22.516W
+
+---------------------------------------------------------------------------------------
+
+M 71/2020
+160000 UTC JAN 2020
+Waterway information
+Canadian Hydrographic Service reports shallow depth of 1.9 meter in 44 08 29.430N 064 29
+17.968W (depths are in meters below Chart Datum and horizontal positions are based on
+NAD83). Caution.
+
+POSITION 44-08.491N 064-29.299W
+
+---------------------------------------------------------------------------------------
+
+M 75/2020
+170000 UTC JAN 2020
+Waterway information
+Canadian Hydrographic Service reports the following shallow depths:
+3.5 fathoms in 43 58 30.212N 064 42 41.345W,
+5.3 fathoms in 43 58 56.221N 064 40 04.763W,
+0.3 fathoms in 43 58 43.413N 064 42 32.719W,
+3.2 fathoms in 43 58 20.677N 064 42 16.983W,
+0.5 fathoms in 43 59 02.767N 064 41 59.594W,
+3.3 fathoms in 43 58 49.179N 064 41 49.749W.
+Depths are in fathoms below Chart Datum and horizontal positions are based on NAD83.
+Caution.
+
+AREA BOUNDED BY 43-57.936N 064-42.439W, 43-58.434N 064-39.813W, 43-59.104N
+064-39.639W, 43-59.347N 064-42.094W, 43-58.549N 064-43.304W
+
+---------------------------------------------------------------------------------------
+
+M 76/2020
+170000 UTC JAN 2020
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates :
+44 7.078N 064 32.734W
+44 6.996N 064 31.592W
+44 6.691N 064 30.483W
+44 6.138N 064 30.16W
+44 5.273N 064 30.37W
+44 5.019N 064 31.618W
+44 3.472N 064 31.849W
+44 2.532N 064 33.445W
+44 2.332N 064 36.816W
+44 3.638N 064 37.932W
+44 7.078N 064 32.734W
+ 
+Shallower depths located at:
+Latitude Longitude Depth (in fathoms)
+44 05 36.836N 064 31 3.807W 6.3
+44 06 14.023N 064 31 6.299W 1.2
+44 05 29.27N 064 31 14.909W 6.0
+44 05 49.162N 064 31 25.289W 6.0
+44 03 10.371N 064 37 13.907W 6.0
+44 03 49.623N 064 36 50.413W 3.4
+44 03 47.805N 064 37 0.908W 2.3
+44 02 47.861N 064 33 49.936W 7.3
+44 03 43.458N 064 35 04.164W 3.2
+44 03 44.016N 064 33 54.144W 3.4
+44 03 43.543N 064 32 19.155W 5.2
+44 03 16.147N 064 35 08.456W 9.5
+44 03 34.629N 064 35 15.5W 5.3
+44 03 31.575N 064 32 33.518W 5.5
+44 04 46.85N 064 32 45.014W 2.1
+44 05 37.31N 064 32 28.386W 1.1
+44 06 02.597N 064 32 15.912W 3.0
+44 06 46.424N 064 31 52.677W 3.5
+44 06 34.119N 064 32 10.231W 5.0
+44 06 44.392N 064 32 18.478W 4.5
+44 05 34.815N 064 30 49.453W 6.4
+44 05 28.944N 064 30 48.841W 5.4
+44 06 8.261N 064 30 45.845W 5.3
+44 03 33.989N 064 35 03.322W 4.3
+
+AREA BOUNDED BY 44-02.332N 064-36.816W, 44-02.532N
+064-33.445W, 44-03.472N 064-31.849W, 44-05.019N 064-31.618W, 44-05.273N 064-30.370W,
+44-06.138N 064-30.160W, 44-06.691N 064-30.483W, 44-06.996N 064-31.592W, 44-07.078N
+064-32.734W, 44-03.638N 064-37.932W
+
+---------------------------------------------------------------------------------------
+
+M 77/2020
+170000 UTC JAN 2020
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+ 
+44 8.658N 064 36.234W
+44 9.135N 064 35.957W
+44 9.128N 064 32.439W
+44 8.852N 064 30.19W
+44 7.945N 064 28.216W
+44 6.931N 064 30.161W
+44 7.184N 064 32.099W
+44 8.108N 064 34.789W
+44 8.658N 064 36.234W
+ 
+Shallower depths located at:
+Latitude Longitude Depth (in fathoms)
+ 
+44 08 03.679N 064 29 16.744W 4.3
+44 08 10.666N 064 29 58.685W 6.4
+44 08 16.677N 064 33 01.746W 1.5
+44 08 35.631N 064 33 17.998W 0.5
+44 08 09.282N 064 33 24.164W 3.5
+44 08 27.957N 064 34 46.309W 1.0
+44 08 27.587N 064 32 23.699W 1.2
+44 08 07.842N 064 32 35.331W 1.4
+44 08 20.685N 064 32 41.853W 0.4
+44 08 29.6N 064 32 59.27W 1.5
+44 08 45.768N 064 32 12.688W 1.1
+44 08 15.763N 064 32 08.092W 1.0
+44 08 42.961N 064 35 45.072W 0.3
+44 08 33.933N 064 32 5.69W 1.1
+44 07 57.477N 064 30 35.328W 4.2
+44 08 21.53N 064 30 25.533W 1.2
+44 08 16.372N 064 30 17.136W 2.5
+44 08 24.54N 064 30 08.284W 1.3
+44 07 56.12N 064 32 22.891W 3.2
+44 08 01.126N 064 29 54.977W 5.1
+44 07 43.691N 064 29 18.78W 7.5
+44 07 28.729N 064 32 0.829W 0.4
+44 07 15.812N 064 30 52.162W 5.5
+44 8 17.098N 064 30 40.588W 0.4
+
+AREA BOUNDED BY 44-07.184N 064-32.099W, 44-06.931N
+064-30.161W, 44-07.945N 064-28.216W, 44-08.852N 064-30.190W, 44-09.128N 064-32.439W,
+44-09.135N 064-35.957W, 44-08.658N 064-36.234W, 44-08.108N 064-34.789W
+
+---------------------------------------------------------------------------------------
+
+M 79/2020
+170000 UTC JAN 2020
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+44 1.124N 064 39.565W
+44 1.595N 064 40.636W
+44 2.276N 064 41.052W
+44 2.928N 064 38.888W
+44 3.663N 064 37.505W
+44 3.366N 064 37.44W
+44 1.124N 064 39.565W
+Shallower depths located at :
+Latitude Longitude Depth (in feet)
+44 2.306N 064 39.108W 27
+44 1.342N 064 39.815W 15
+44 2.159N 064 39.991W 39
+44 2.298N 064 40.643W 29
+44 1.59N 064 40.188W 21
+44 2.29N 064 40.431W 36
+44 1.762N 064 40.42W 12
+44 2.569N 064 39.003W 15
+44 2.483N 064 38.987W 21
+44 2.715N 064 38.813W 6
+44 2.744N 064 38.779W 15
+44 2.775N 064 38.734W 10
+44 3.409N 064 37.793W 8
+44 3.537N 064 37.523W 18
+44 3.386N 064 37.512W 28
+44 1.344N 064 39.885W 3
+44 2.297N 064 40.205W 14
+
+AREA BOUNDED BY 44-01.124N 064-39.565W, 44-03.366N 064-37.440W,
+44-03.663N 064-37.505W, 44-02.928N 064-38.888W, 44-02.276N 064-41.052W, 44-01.595N
+064-40.636W
+
+---------------------------------------------------------------------------------------
+
+M 349/2020
+120000 UTC MAR 2020
+Waterway information
+Shallower depths reported at;
+Latitude Longitude Depth (Ft)
+46 25.940N 063 14.110W 1.0
+46 25.790N 063 15.240W 1.0
+46 25.850N 063 15.410W 2.0
+46 26.000N 063 15.940W 3.0
+46 26.800N 063 18.300W 2.0
+46 27.000N 063 18.190W 2.0
+46 27.280N 063 17.390W 0.0
+46 27.390N 063 17.360W -1.0
+46 27.390N 063 17.300W 0.0
+Available depth refers to chart datum. Caution.
+
+POSITION 46-25.940N 063-14.110W
+POSITION
+46-25.790N 063-15.240W
+POSITION 46-25.850N 063-15.410W
+POSITION 46-26.000N 063-15.940W
+POSITION 46-26.800N 063-18.300W
+POSITION 46-27.000N 063-18.190W
+POSITION 46-27.280N
+063-17.390W
+POSITION 46-27.390N 063-17.360W
+POSITION 46-27.390N 063-17.300W
+
+---------------------------------------------------------------------------------------
+
+M 691/2020
+120000 UTC MAY 2020
+Waterway information
+Possible hazards to navigation have been located during hydrographic survey in Port La
+Tour, NS.
+Depths are in metres below chart datum. Horizontal positions are based on NAD83. 
+Possible hazards have been identified in an area bounded by the following coordinates;
+ 43 25.971N 065 28.571W
+43 27.762N 065 28.147W
+ 43 29.634N 065 27.784W
+ 43 32.178N 065 23.354W
+ 43 31.684N 065 22.340W
+ 43 25.970N 065 25.363W
+ 43 25.893N 065 27.689W
+ 43 25.971N 065 28.571W
+Possible hazards located at;
+Latitude Longitude Depth
+43 27 07.200N 065 27 43.211W 3.5
+43 27 26.754N 065 27 00.621W 7.5
+43 27 08.753N 065 26 08.059W 0.0
+43 28 19.915N 065 26 52.978W 4.4
+43 27 21.614N 065 27 13.539W 3.2
+43 27 48.543N 065 26 57.273W 5.3
+43 27 59.482N 065 27 16.184W 3.2
+43 26 57.291N 065 26 28.732W 3.5
+43 27 43.158N 065 26 05.881W 9.6
+43 27 00.375N 065 26 05.721W 4.5
+43 26 44.208N 065 26 34.211W 7.7
+43 29 27.958N 065 26 54.169W 3.6
+43 28 11.828N 065 26 52.206W 1.0
+43 31 47.603N 065 23 14.842W -0.1
+43 26 15.370N 065 26 26.156W 7.6
+
+AREA BOUNDED BY 43-25.971N 065-28.571W, 43-25.893N
+065-27.689W, 43-25.970N 065-25.363W, 43-31.684N 065-22.340W, 43-32.178N 065-23.354W,
+43-29.634N 065-27.784W, 43-27.762N 065-28.147W
+
+---------------------------------------------------------------------------------------
+
+M 692/2020
+120000 UTC MAY 2020
+Waterway information
+Possible hazards to navigation have been located during hydrographic survey in Jordan Bay
+and Green Harbour, N.S.
+Depths are in metres below chart datum. Horizontal positions are based on NAD83. 
+Possible hazards have been identified in an area bounded by the following coordinates;
+43 41.504N 065 14.160W
+ 43 45.374N 065 14.441W
+ 43 45.460N 065 08.887W
+ 43 40.387N 065 08.734W
+ 43 41.504N 065 14.160W
+Possible hazards located at;
+Latitude Longitude Depth
+43 41 31.753N 065 10 54.355W 7.0
+43 40 39.787N 065 09 00.152W 5.9
+43 42 10.487N 065 13 00.637W 4.2
+43 41 31.322N 065 10 34.461W 1.5
+43 44 32.957N 065 12 59.858W 6.4
+43 41 54.700N 065 09 58.227W 0.3
+
+AREA BOUNDED BY 43-41.504N 065-14.160W, 43-40.387N
+065-08.734W, 43-45.460N 065-08.887W, 43-45.374N 065-14.441W
+
+---------------------------------------------------------------------------------------
+
+M 1210/2020
+150000 UTC JUL 2020
+Waterway information
+Possible hazards located during a hydrographic survey in vicinity of Liverpool, N.S.
+Depths in metres, below chart datum. Horizontal positions based on NAD83.
+ Latitude Longitude Depth (fathoms - feet)
+44 08.293N 064 30.530W 1
+
+POSITION 44-08.293N 064-30.530W
+
+---------------------------------------------------------------------------------------
+
+M 215/2021
+240000 UTC FEB 2021
+Waterway information
+As a result of a hydrographic survey the following shallower depths were found:
+ID Latitude Longitude Depth (m)
+1 47 00.358N 065 33.676W 10.6
+2 47 03.949N 065 25.087W 7.3
+3 47 05.088N 065 17.736W 7.7
+ 
+Note:
+ID #1 is referenced to CHS benchmark 72B9000 (Newcastle). Elevation +6.718m above chart
+datum.
+ID #2 is referenced to CHS benchmark 74B9502 (Loggieville). Elevation +7.304m above chart
+datum.
+ID #3 is referenced to CHS benchmark 84B9507 (Oak Point). Elevation +6.438m above chart
+datum.
+
+POSITION 47-00.358N 065-33.676W
+POSITION 47-03.949N 065-25.087W
+POSITION
+47-05.088N 065-17.736W
+
+---------------------------------------------------------------------------------------
+
+M 481/2021
+130000 UTC APR 2021
+Waterway information
+A sandbar is blocking the channel entrance at 46 32 25.74224N 064 41 55.1016W. Depths as
+shallow as 1.46 metres above chart datum have been surveyed.
+
+POSITION 46-32.429N
+064-41.918W
+
+---------------------------------------------------------------------------------------
+
+M 482/2021
+130000 UTC APR 2021
+Waterway information
+A sandbar has been located near the harbour entrance at 46 40 23.30884N 064 42 37.25819W.
+Depths are as shallow as 0.1 metre above chart datum.
+
+POSITION 46-40.388N 064-42.621W
+
+---------------------------------------------------------------------------------------
+
+M 599/2021
+290000 UTC APR 2021
+Obstruction
+The front range dolphin of Reach 25 has collapsed and pieces of the dolphin steel sheet
+pilings are sticking out of the water.
+
+POSITION 47-09.483N 065-02.000W
+
+---------------------------------------------------------------------------------------
+
+M 626/2021
+030000 UTC MAY 2021
+Waterway information
+Channel depths are currently unconfirmed in North Lake, PEI.
+
+Caution
+
+AREA BOUNDED BY 46-27.838N 062-04.213W, 46-28.162N 062-03.927W, 46-28.216N
+062-04.151W, 46-27.920N 062-04.509W
+
+---------------------------------------------------------------------------------------
+
+M 741/2021
+130000 UTC MAY 2021
+Waterway information
+A sounding survey of sections of the Miramichi Channel was completed by Public Services
+and Procurement Canada in April 2021. The limiting depth of 5.4 metres inside the buoyed
+channel remains unchanged since the last survey in May 2020.
+
+POSITION 47-04.872N
+065-20.613W
+
+---------------------------------------------------------------------------------------
+
+M 807/2021
+250000 UTC MAY 2021
+Obstruction
+An obstruction in the Miramichi River in the vicinity of 46 57.640N 065 37.203W.
+Caution.
+
+POSITION 46-57.640N 065-37.203W
+
+---------------------------------------------------------------------------------------
+
+M 1862/2021
+060000 UTC OCT 2021
+Aids to Navigation
+Quick flashing green wharf light located at the west end of Terminal 3 M.D. Young in 47
+54 38N 065 50 44W unlit.
+
+POSITION 47-54.633N 065-50.733W
+
+---------------------------------------------------------------------------------------
+
+M 1905/2021
+140000 UTC OCT 2021
+Obstruction
+Scientific instrument marked by a surface buoy deployed in 46 33.395N 063 43.834W.
+Caution.
+
+POSITION 46-33.395N 063-43.834W
+
+---------------------------------------------------------------------------------------
+
+M 79/2022
+210000 UTC JAN 2022
+Obstruction
+Black wharf section, with approximately 2 feet showing above water, grounded 70 to 80
+feet off Sandy Point, Shelburne Harbour. Caution
+
+AREA BOUNDED BY 43-41.815N 065-19.369W,
+43-41.808N 065-19.739W, 43-41.338N 065-19.719W, 43-41.346N 065-19.327W
+
+---------------------------------------------------------------------------------------
+
+M 461/2022
+180000 UTC MAR 2022
+Obstruction
+Fishing vessel aground off Country Island, Nova Scotia, in 45 05.94N 61 32.58W
+
+POSITION
+45-05.940N 061-32.580W
+
+---------------------------------------------------------------------------------------
+
+M 1121/2022
+290000 UTC JUN 2022
+Aids to Navigation
+Tracadie North Bay - 40 Green Stakes STK40 - LL #6241.7 have been permanently
+discontinued
+
+POSITION 47-32.424N 064-53.334W
+
+---------------------------------------------------------------------------------------
+
+M 1122/2022
+290000 UTC JUN 2022
+Aids to Navigation
+Tracadie North Bay - 41 Red Stakes STK41 LL #6241.9 have been Permanently discontinued
+POSITION 47-32.691N 064-52.824W
+
+---------------------------------------------------------------------------------------
+
+M 1128/2022
+300000 UTC JUN 2022
+Obstruction
+A yellow caution buoy with a flashing yellow light has been deployed at 45 15 619N 066 05
+285W, buoy identification is 'PRIZ'.
+
+POSITION 45-25.317N 066-09.750W
+
+---------------------------------------------------------------------------------------
+
+M 1146/2022
+050000 UTC JUL 2022
+Obstruction
+Mooring buoy reported between Strum Island and Strum Shoal in approximate position 44
+26.606N 064 20.863W. Caution.
+
+POSITION 44-26.606N 064-20.863W
+
+---------------------------------------------------------------------------------------
+
+M 1491/2022
+210000 UTC AUG 2022
+Obstruction
+A partially submerged telephone pole, standing vertically, with with approximately 6
+inches extending above the water in the Saint John River, between Carter's Point and
+Public Landing. Caution
+
+AREA BOUNDED BY 45-23.564N 066-11.460W, 45-23.734N 066-11.141W,
+45-24.507N 066-11.594W, 45-24.215N 066-11.841W
+
+---------------------------------------------------------------------------------------
+
+M 1563/2022
+020000 UTC SEP 2022
+Obstruction
+Flashing green light buoy reported in the vicinity of 46 10N 62 31.8W near Wightmans
+Point. Caution.
+
+POSITION 46-10.000N 062-31.800W
+
+---------------------------------------------------------------------------------------
+
+M 1650/2022
+140000 UTC SEP 2022
+Obstruction
+Presence of unmarked hazards which may be submerged in the vicinity of the Sunny Corner
+Bridge. Caution
+
+AREA BOUNDED BY 46-55.988N 065-48.484W, 46-56.305N 065-48.468W,
+46-56.526N 065-49.148W, 46-56.699N 065-49.225W, 46-56.593N 065-49.457W, 46-56.315N
+065-49.241W, 46-56.154N 065-48.906W
+
+---------------------------------------------------------------------------------------
+
+M 1953/2022
+180000 UTC OCT 2022
+Aids to Navigation
+Permanently discontinued
+
+POSITION 46-08.036N 063-46.179W
+
+---------------------------------------------------------------------------------------
+
+M 2280/2022
+080000 UTC DEC 2022
+Obstruction
+Unmarked 10 metre structure in approximately 20 meetres of water in 44° 22.401N, 66°
+12.026W
+
+POSITION 44-22.401N 066-12.026W
+
+---------------------------------------------------------------------------------------
+
+M 2291/2022
+110000 UTC DEC 2022
+Obstruction
+Scientific equipment deployed on seafloor in 42 03.600N 065 58.800W and 42 35.400N 066
+43.200W. Caution.
+
+POSITION 42-03.600N 065-58.800W
+POSITION 42-35.400N 066-43.200W
+
+---------------------------------------------------------------------------------------
+
+M 2294/2022
+110000 UTC DEC 2022
+Obstruction
+Partially sunken vessel located southeast of Armdale Yacht Club, Northwest Arm. in 44
+38.06N 063 36.37W. A portion of the vessel's white wheelhouse, antenna, and radar unit
+are above water.
+
+POSITION 44-38.060N 063-36.370W
+
+---------------------------------------------------------------------------------------
+
+M 144/2023
+240000 UTC JAN 2023
+Obstruction
+A structure located at the Old Isaacs Harbour Wharf has collapsed and there is debris in
+the harbour. Caution.
+
+AREA BOUNDED BY 45-10.256N 061-39.154W, 45-10.469N 061-38.785W,
+45-10.976N 061-39.040W, 45-11.650N 061-39.901W, 45-11.490N 061-40.194W
+
+---------------------------------------------------------------------------------------
+
+M 172/2023
+010000 UTC FEB 2023
+Aids to Navigation
+Navigation lights on Piers 33 and 38 unlit.
+
+POSITION 44-38.004N 063-33.729W
+POSITION
+44-37.904N 063-33.686W
+
+---------------------------------------------------------------------------------------
+
+M 183/2023
+060000 UTC FEB 2023
+Obstruction
+A 26 foot sailing vessel, beige in color, has been reported aground and semi submerged in
+position 44 37.96N 063 35.85W.
+Caution.
+
+POSITION 44-37.960N 063-35.850W
+
+---------------------------------------------------------------------------------------
+
+M 204/2023
+100000 UTC FEB 2023
+Obstruction
+Operation complete. Anchors marked by buoys remain installed in 44 42.491N 063 38.776W.
+POSITION 44-42.491N 063-38.776W
+
+---------------------------------------------------------------------------------------
+
+M 207/2023
+100000 UTC FEB 2023
+Waterway information
+Exclusion zone established around four unexploded ordinances located 20 meters under the
+surface.
+
+The exclusion zone is 100 meters in radius centered on 44 42.491N 063 38.776W.
+
+Caution.
+
+POSITION 44-42.491N 063-38.776W
+POSITION 44-42.491N 063-38.776W
+
+---------------------------------------------------------------------------------------
+
+M 229/2023
+170000 UTC FEB 2023
+Aids to Navigation
+Unlit
+
+POSITION 46-37.218N 064-23.205W
+
+---------------------------------------------------------------------------------------
+
+M 337/2023
+270000 UTC MAR 2023
+Aids to Navigation
+Unlit
+
+POSITION 46-12.345N 060-13.118W
+
+---------------------------------------------------------------------------------------
+
+M 400/2023
+170000 UTC APR 2023
+Waterway information
+Docks at North Rustico are damaged and some sections of the structures are submerged at
+high tide. Loose debris has been reported in the channel in vicinity of the docks.
+Caution
+
+AREA BOUNDED BY 46-27.321N 063-17.582W, 46-27.322N 063-17.645W, 46-27.261N
+063-17.642W, 46-27.263N 063-17.532W
+
+---------------------------------------------------------------------------------------
+
+M 408/2023
+200000 UTC APR 2023
+Aids to Navigation
+Off position, to the east of advertised position.
+
+POSITION 45-37.202N 060-34.356W
+
+---------------------------------------------------------------------------------------
+
+M 436/2023
+250000 UTC APR 2023
+Waterway information
+Navigation buoys in vicinity of Toney River have not been placed. Caution
+
+AREA BOUNDED
+BY 45-46.584N 062-54.874W, 45-45.888N 062-51.960W, 45-46.596N 062-51.743W, 45-47.007N
+062-54.727W
+
+---------------------------------------------------------------------------------------
+
+M 642/2023
+300000 UTC MAY 2023
+Aids to Navigation
+Temporarily established in 46 27.279N 063 17.598W. Buoy is a red 0.4m SB40 conical
+plastic buoy.
+
+Caution
+
+POSITION 46-27.279N 063-17.598W
+
+---------------------------------------------------------------------------------------
+
+M 811/2023
+220000 UTC JUN 2023
+Waterway information
+A Post-Dredge survey has identified the following shoal areas not identified by
+navigational aids in Escuminac Harbour:
+Latitude Longitude Depth (m)
+47 04.885N 064 53.205W 0.5
+47 04.959N 064 53.274W 0.7
+47 04.970N 064 53.221W 1.0
+Caution
+
+POSITION 47-04.885N 064-53.205W
+POSITION 47-04.959N 064-53.274W
+POSITION
+47-04.970N 064-53.221W
+
+---------------------------------------------------------------------------------------
+
+M 818/2023
+220000 UTC JUN 2023
+Aids to Navigation
+Red and white buoy off position in 44 55.808N 061 59.763W
+
+POSITION 44-55.808N 061-59.763W
+
+---------------------------------------------------------------------------------------
+
+M 830/2023
+240000 UTC JUN 2023
+Obstruction
+A cable is hanging from the Bill Thorpe Walking Bridge in Fredericton, NB. Caution
+POSITION 45-57.430N 066-37.719W
+
+---------------------------------------------------------------------------------------
+
+M 834/2023
+250000 UTC JUN 2023
+Obstruction
+Cable hanging from the Hillsborough bridge over the navigational channel in
+Charlottetown, PEI.
+
+Caution
+
+POSITION 46-14.169N 063-06.294W
+
+---------------------------------------------------------------------------------------
+
+M 914/2023
+100000 UTC JUL 2023
+Obstruction
+4 large semi-submerged shipping containers in the Walton River. 3 Containers are off the
+old Walton wharf and one is off Half Tide rock. Caution.
+
+AREA BOUNDED BY 45-13.941N
+064-01.057W, 45-13.482N 064-00.064W, 45-13.712N 063-59.912W, 45-14.107N 064-00.694W
+
+---------------------------------------------------------------------------------------
+
+M 957/2023
+170000 UTC JUL 2023
+Obstruction
+A 4.9 meter sailing vessel, white with red stripes, is semi-submerged in position 46
+14.90N 060 28.10W. Mast is visible above water.
+
+POSITION 46-14.900N 060-28.100W
+
+---------------------------------------------------------------------------------------
+
+M 969/2023
+190000 UTC JUL 2023
+Obstruction
+Approximately 6-8 abutments visible during low tide at Country Harbour, N.S north of
+Salsman Provinical Park. Caution.
+
+AREA BOUNDED BY 45-14.147N 061-46.380W, 45-14.250N
+061-46.229W, 45-14.301N 061-46.333W, 45-14.214N 061-46.479W
+
+---------------------------------------------------------------------------------------
+
+M 1012/2023
+270000 UTC JUL 2023
+Aids to Navigation
+An unidentified red buoy in 43 37.7N 65 19.5W. Caution.
+
+POSITION 43-37.700N 065-19.500W
+
+---------------------------------------------------------------------------------------
+
+M 1020/2023
+290000 UTC JUL 2023
+Aids to Navigation
+Green buoy partially submerged in the vicinity of 44 32.447N 064 18.376W. Buoy is showing
+approximately 4 inches above the water surface.
+
+POSITION 44-32.447N 064-18.376W
+
+---------------------------------------------------------------------------------------
+
+M 1071/2023
+080000 UTC AUG 2023
+Aids to Navigation
+Red navigation light on the north side of the Dartmouth end of the A. Murray MacKay
+bridge unlit
+
+POSITION 44-40.740N 063-36.659W
+
+---------------------------------------------------------------------------------------
+
+M 1110/2023
+120000 UTC AUG 2023
+Obstruction
+Partially submerged heavy line measuring 2 inches in diametre in 44 37.661N 063 32.975W
+POSITION 44-37.661N 063-32.975W
+
+---------------------------------------------------------------------------------------
+
+M 1166/2023
+230000 UTC AUG 2023
+Waterway information
+Mussels cages placed within Saint John harbour limits. Yellow buoys have been deployed to
+mark these areas. Caution.
+
+AREA BOUNDED BY 45-12.149N 065-58.020W, 45-12.214N
+065-58.056W, 45-12.141N 065-58.149W
+AREA BOUNDED BY 45-13.614N 066-01.620W, 45-13.718N
+066-01.658W, 45-13.664N 066-01.638W
+AREA BOUNDED BY 45-14.932N 066-01.601W, 45-14.900N
+066-01.484W, 45-14.945N 066-01.493W
+AREA BOUNDED BY 45-13.933N 066-04.274W, 45-13.911N
+066-04.126W, 45-13.976N 066-04.177W
+POSITION 45-11.969N 066-06.553W
+
+---------------------------------------------------------------------------------------
+
+M 1272/2023
+310000 UTC AUG 2023
+Obstruction
+Semi submerged vessel in 46 12.4N 063 08.3W
+
+POSITION 46-12.400N 063-08.300W
+
+---------------------------------------------------------------------------------------
+
+M 1475/2023
+280000 UTC SEP 2023
+Aids to Navigation
+Fog signal temporarily removed
+
+POSITION 44-21.616N 064-17.778W
+
+---------------------------------------------------------------------------------------
+
+M 1483/2023
+280000 UTC SEP 2023
+Obstruction
+Unidentified red buoy in 44 22.036N 064 27.818W
+
+POSITION 44-22.036N 064-27.818W
+
+---------------------------------------------------------------------------------------
+
+M 1527/2023
+040000 UTC OCT 2023
+Aids to Navigation
+Green spar buoy off position in 44 42.307N 063 04.647W
+
+POSITION 44-42.307N 063-04.647W
+
+---------------------------------------------------------------------------------------
+
+M 1613/2023
+190000 UTC OCT 2023
+Aids to Navigation
+Bouys in these locations are unreliable. Caution.
+
+POSITION 47-53.161N 064-29.977W
+POSITION 47-53.143N 064-30.038W
+
+---------------------------------------------------------------------------------------
+
+M 1616/2023
+190000 UTC OCT 2023
+Aids to Navigation
+Temporarily established in 45 54.394N 059 57.394W. Light is is a pipe swing pole with
+white lantern attached with flash characteristics Flash 1 second Eclipse 5 seconds. The
+nominal range is 7 nautical miles.
+
+POSITION 45-54.394N 059-57.394W
+
+---------------------------------------------------------------------------------------
+
+M 1624/2023
+230000 UTC OCT 2023
+Obstruction
+An anchor has been reported lost in position 44 39.718N 063 34.066W. Caution.
+
+POSITION
+44-39.718N 063-34.066W
+
+---------------------------------------------------------------------------------------
+
+M 1665/2023
+290100 UTC OCT 2023
+Aids to Navigation
+Off position
+
+POSITION 45-51.788N 063-40.326W
+
+---------------------------------------------------------------------------------------
+
+M 18/2024
+040000 UTC JAN 2024
+Obstruction
+Underwater cable from Martinique to Louisdale submerged and floating in the Lennox
+Passage area. Caution.
+
+AREA BOUNDED BY 45-35.899N 061-01.506W, 45-35.754N 061-02.502W,
+45-35.356N 061-02.369W, 45-35.658N 061-01.203W
+
+---------------------------------------------------------------------------------------
+
+M 101/2024
+220000 UTC JAN 2024
+Waterway information
+As a result of hydrographic survey the following shallower depths were found at:
+Latitude Longitude Depth (m)
+45 16.392N 060 54.288W 16.5
+
+POSITION 45-16.392N 060-54.288W
+
+---------------------------------------------------------------------------------------
+
+M 120/2024
+260000 UTC JAN 2024
+Waterway information
+Anchorage B7 restricted due to sunken vessel Jalema C­.
+
+POSITION 45-08.207N 066-08.590W
+
+---------------------------------------------------------------------------------------
+
+M 126/2024
+270000 UTC JAN 2024
+Waterway information
+As a result of hydrographic survey the following shallower depths were found at:
+ Latitude Longitude Depth (M)
+45 19.498N 060 56.172W 8.4M
+45 12.842N 061 01.682W 19.3M
+
+POSITION 45-19.498N 060-56.172W
+POSITION 45-12.842N
+061-01.682W
+
+---------------------------------------------------------------------------------------
+
+M 171/2024
+040000 UTC FEB 2024
+Marine works
+Wharf reconstruction underway in Abrams Village, Egmont Bay, beginning 5 Feb. 2024 until
+1 Nov. 2027, from 1100UTC to 2300UTC, Monday to Friday and occasionally on weekends. A
+temporary work trestle will be erected adjacent to the existing wharf structure. This
+temporary work trestle is not designed for mooring of vessels. Temporary navigation buoys
+will be positioned outside of the work area.
+
+POSITION 46-26.433N 064-06.800W
+POSITION
+46-26.400N 064-06.683W
+
+---------------------------------------------------------------------------------------
+
+M 247/2024
+140000 UTC FEB 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in Metres)
+45 11.428N 061 09.428W 4.8
+45 12.318N 061 09.586W 8.3
+
+POSITION 45-11.428N 061-09.428W
+POSITION 45-12.318N
+061-09.586W
+
+---------------------------------------------------------------------------------------
+
+M 274/2024
+220000 UTC FEB 2024
+Aids to Navigation
+A large unidentified green buoy has been reported partially submerged in position 42
+55.9N 065 38.2W.
+
+Caution.
+
+POSITION 42-55.900N 065-38.200W
+
+---------------------------------------------------------------------------------------
+
+M 280/2024
+270000 UTC FEB 2024
+Waterway information
+Shallower depths have been reported in the following locations:
+ 
+LatitudeLongitudeDepth
+45 21.592N
+061 08.800W
+ 6.9M
+LatitudeLongitudeDepth
+45 21.543N
+061 08.392W
+ 6.1M
+ 
+Caution.
+
+POSITION 45-21.592N 061-08.800W
+POSITION 45-21.543N 061-08.392W
+
+---------------------------------------------------------------------------------------
+
+M 290/2024
+290000 UTC FEB 2024
+Waterway information
+Shallower depths located at:
+LatitudeLongitudeDepth 
+45 21.209N
+061 15.416W
+ 6.2 m
+LatitudeLongitudeDepth 
+45 21.375N
+061 11.292W
+ 7.4m
+LatitudeLongitudeDepth 
+45 21.085N
+061 16.252W
+ 12.6m
+Caution
+
+POSITION 45-21.209N 061-15.416W
+POSITION 45-21.375N 061-11.292W
+POSITION
+45-21.085N 061-16.252W
+
+---------------------------------------------------------------------------------------
+
+M 313/2024
+080000 UTC MAR 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in metres)
+45 25.783N 060 59.787W 29.6
+All depths are referenced to CHS Chart Datum.
+ 
+ 
+ 
+45 25.783N 060 59.787W
+
+POSITION 45-25.783N 060-59.787W
+
+---------------------------------------------------------------------------------------
+
+M 315/2024
+110000 UTC MAR 2024
+Obstruction
+Partially sunken vessel with mast above the water level in 45 27.922N 066 07.675W.
+Caution.
+
+POSITION 45-27.922N 066-07.675W
+
+---------------------------------------------------------------------------------------
+
+M 317/2024
+110000 UTC MAR 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in metres)
+45 25.693N 061 03.242W 19.5
+45 26.112N 061 02.550W 19.8
+45 26.067N 061 00.851W 19.9
+45 25.535N 061 03.291W 21.0
+45 25.678N 061 01.211W 27.7
+ 
+Available depths are referenced to CHS Chart Datum.
+
+POSITION 45-25.693N 061-03.242W
+POSITION 45-26.112N 061-02.550W
+POSITION 45-26.067N 061-00.851W
+POSITION 45-25.535N
+061-03.291W
+POSITION 45-25.678N 061-01.211W
+
+---------------------------------------------------------------------------------------
+
+M 338/2024
+140000 UTC MAR 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in metres)
+45 26.373N 061 00.202W 21.5
+45 25.940N 060 59.774W 25.0
+45 26.320N 060 58.947W 46.0
+All depths are referenced to CHS Chart Datum.
+
+POSITION 45-26.373N 061-00.202W
+POSITION
+45-25.940N 060-59.774W
+POSITION 45-26.320N 060-58.947W
+
+---------------------------------------------------------------------------------------
+
+M 339/2024
+140000 UTC MAR 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in metres)
+45 20.340N 060 53.264W 7.4
+45 20.320N 060 53.545W 12.9
+45 20.149N 060 54.809W 16.2
+45 20.527N 060 52.693W 16.5
+45 20.661N 060 52.258W 16.8
+45 20.262N 060 53.582W 16.8
+45 20.173N 060 54.523W 17.6
+All depths are referenced to CHS Chart Datum.
+
+POSITION 45-20.340N 060-53.264W
+POSITION
+45-20.320N 060-53.545W
+POSITION 45-20.149N 060-54.809W
+POSITION 45-20.527N 060-52.693W
+POSITION 45-20.661N 060-52.258W
+POSITION 45-20.262N 060-53.582W
+POSITION 45-20.173N
+060-54.523W
+
+---------------------------------------------------------------------------------------
+
+M 355/2024
+160000 UTC MAR 2024
+Waterway information
+Shallower depth located at:
+Latitude Longitude Depth (in Metres)
+45 25.493N 061 06.595W 70.0
+
+POSITION 45-25.493N 061-06.595W
+
+---------------------------------------------------------------------------------------
+
+M 356/2024
+160000 UTC MAR 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in metres)
+45 21.078N 060 52.824W 5.0
+45 20.493N 060 53.080W 7.5
+45 21.103N 060 53.327W 7.6
+45 20.711N 060 52.914W 7.7
+45 20.598N 060 53.140W 8.0
+45 20.473N 060 53.505W 9.2
+45 20.415N 060 53.642W 9.3 45 21.086N 060 52.504W 9.7
+All depths are referenced to CHS Chart Datum.
+
+POSITION 45-21.078N 060-52.824W
+POSITION
+45-20.493N 060-53.080W
+POSITION 45-21.103N 060-53.327W
+POSITION 45-20.711N 060-52.914W
+POSITION 45-20.598N 060-53.140W
+POSITION 45-20.473N 060-53.505W
+POSITION 45-20.415N
+060-53.642W
+POSITION 45-21.086N 060-52.504W
+
+---------------------------------------------------------------------------------------
+
+M 361/2024
+170000 UTC MAR 2024
+Waterway information
+Shallower depths located at: 
+LatitudeLongitudeDepth in Metres
+45 20.046N
+060 55.177W
+ 14.8
+LatitudeLongitudeDepth in Metres
+45 20.226N
+060 52.131W
+ 17.9
+LatitudeLongitudeDepth in Metres
+45 19.976N
+060 54.366W
+ 19.8
+Avaliable depths refers to chart datum. Caution.
+
+POSITION 45-20.046N 060-55.177W
+POSITION 45-20.226N 060-52.131W
+POSITION 45-19.976N 060-54.366W
+
+---------------------------------------------------------------------------------------
+
+M 425/2024
+280000 UTC MAR 2024
+Waterway information
+A previously uncharted seafloor obstruction has been identified at
+LatitudeLongitudeDepth (in Metres)
+45 27.885N
+061 10.064W
+ 21.6
+Avaliable depth refers to chart datum. Caution.
+
+POSITION 45-27.885N 061-10.064W
+
+---------------------------------------------------------------------------------------
+
+M 462/2024
+070100 UTC APR 2024
+Waterway information
+As a result of an ongoing hydrographic survey in Chedabucto Bay, a shoal depth has been
+identified.
+ 
+Latitude Longitude Depth in metres
+45 25.343N 061 15.828W 8.8
+
+POSITION 45-25.343N 061-15.828W
+
+---------------------------------------------------------------------------------------
+
+M 465/2024
+080100 UTC APR 2024
+Waterway information
+Shoal depth of 20.8 metres located in Chedabucto Bay at 45 27.925N 061 05.251W.
+
+Available depth refers to chart datum. Caution.
+
+POSITION 45-27.925N 061-05.251W
+
+---------------------------------------------------------------------------------------
+
+M 474/2024
+100100 UTC APR 2024
+Marine works
+As a result of an ongoing hydrographic survey in Chedabucto Bay shoal depths have been
+identified at the following positions : 
+ Latitude Longitude Depth (meters)
+45 27.208N 061 14.08W 10.6
+45 25.343N 061 15.829W 8.9
+
+POSITION 45-27.208N 061-14.080W
+
+---------------------------------------------------------------------------------------
+
+M 483/2024
+120100 UTC APR 2024
+Aids to Navigation
+Unidentified starboard hand buoy reported off station in 45 57.455N 061 01.128W
+
+POSITION
+45-57.455N 061-01.128W
+
+---------------------------------------------------------------------------------------
+
+M 485/2024
+120100 UTC APR 2024
+Waterway information
+Shallower depth located at:
+Latitude Longitude Depth (in Metres)
+45 25.710N 061 15.900W 9.9
+
+POSITION 45-25.710N 061-15.900W
+
+---------------------------------------------------------------------------------------
+
+M 488/2024
+120100 UTC APR 2024
+Obstruction
+Aquaculture site established in Darnley Basin, PEI, in 46 32.629N 063 39.735W.
+Site is bound by marker buoys.
+
+POSITION 46-32.629N 063-39.735W
+
+---------------------------------------------------------------------------------------
+
+M 492/2024
+130100 UTC APR 2024
+Waterway information
+Shallower depth located at:
+Latitude Longitude Depth (in Metres)
+45 25.61N 061 17.17W 6.1
+
+POSITION 45-25.610N 061-17.170W
+
+---------------------------------------------------------------------------------------
+
+M 546/2024
+200100 UTC APR 2024
+Waterway information
+Shallower depths have been found at the following locations:
+Latitude Longitude Depth (m)
+45 28.779N 060 52.161W, 8.8
+45 28.668N 060 52.100W, 14.2
+45 28.878N 060 53.896W, 8.8
+45 28.627N 060 53.354W, 8.6
+45 28.488N 060 54.534W, 15.5
+45 27.934N 061 01.835W, 17.3
+45 27.925N 061 02.610W, 16.7
+
+POSITION 45-28.779N 060-52.161W
+POSITION 45-28.668N
+060-52.100W
+POSITION 45-28.878N 060-53.896W
+POSITION 45-28.627N 060-53.354W
+POSITION
+45-28.488N 060-54.534W
+POSITION 45-27.934N 061-01.835W
+POSITION 45-27.925N 061-02.610W
+
+---------------------------------------------------------------------------------------
+
+M 606/2024
+300100 UTC APR 2024
+Aids to Navigation
+Unlit
+
+POSITION 47-14.413N 065-04.447W
+
+---------------------------------------------------------------------------------------
+
+M 661/2024
+080100 UTC MAY 2024
+Aids to Navigation
+Unlit
+
+POSITION 46-26.861N 062-44.310W
+
+---------------------------------------------------------------------------------------
+
+M 677/2024
+090100 UTC MAY 2024
+Aids to Navigation
+Navigational Aids in Georgetown, PEI are unreliable.
+
+AREA BOUNDED BY 46-09.869N
+062-39.522W, 46-06.728N 062-24.212W, 46-09.148N 062-20.224W, 46-13.213N 062-36.822W,
+46-10.950N 062-39.249W
+
+---------------------------------------------------------------------------------------
+
+M 778/2024
+230100 UTC MAY 2024
+Obstruction
+Sunken fishing vessel reported in Weymouth near Old Trestle Bridge. Vessel is fully
+submerged, but partially visible at low tide. Caution.
+
+POSITION 44-24.568N 065-59.850W
+
+---------------------------------------------------------------------------------------
+
+M 795/2024
+280100 UTC MAY 2024
+Waterway information
+It has been recently identified that the current bathymetric data contained within
+Louisbourg Harbour chart (4376) is unreliable due to major vertical/horizontal datum
+concerns. Recent bathymetric surveys has shown the presence of shallower depths compared
+to what is currently charted. Mariners are advised to exercise extreme caution when using
+this chart to navigate.
+
+POSITION 45-54.205N 059-58.236W
+
+---------------------------------------------------------------------------------------
+
+M 834/2024
+030100 UTC JUN 2024
+Waterway information
+A hydrographic sounding survey of the Blacklands Gully channel in New Brunswick was
+completed by Public Services and Procurement Canada, in May 2024. 
+A 430 meter sandbar was observed with depths as shallow as 0.3 meters above chart datum
+within the existing buoyed channel. The approximate center of the observed sandbar is in
+46 46.052N 064 51.102W and is across width from buoys XX10 to XX11. Caution
+Note: All depths are referenced to CHS benchmark 90B9014 (Saint-Louis, New Brunswick).
+Elevation 3.981 meters above chart datum.
+
+POSITION 46-46.052N 064-51.102W
+
+---------------------------------------------------------------------------------------
+
+M 920/2024
+140000 UTC JUN 2024
+Aids to Navigation
+A green cylinder buoy was reported in the area off position. Caution.
+
+POSITION
+44-21.931N 064-27.506W
+
+---------------------------------------------------------------------------------------
+
+M 1027/2024
+260000 UTC JUN 2024
+Obstruction
+Submerged engine measuring approximately 2.438 metres in length and marked with a yellow
+buoy in 46 15.808N 063 03.705W. Caution.
+
+POSITION 46-15.808N 063-03.705W
+
+---------------------------------------------------------------------------------------
+
+M 1037/2024
+260000 UTC JUN 2024
+Aids to Navigation
+Permanently relocated from 45 43.197N 060 13.417W to 45 43.378N 060 13.531W
+
+POSITION
+45-43.378N 060-13.531W
+POSITION 45-43.197N 060-13.417W
+
+---------------------------------------------------------------------------------------
+
+M 1038/2024
+260000 UTC JUN 2024
+Aids to Navigation
+Permanently relocated from 46 05.234N 061 28.316W to 46 05.179N 061 28.154W
+
+POSITION
+46-05.179N 061-28.154W
+POSITION 46-05.234N 061-28.316W
+
+---------------------------------------------------------------------------------------
+
+M 1270/2024
+250000 UTC JUL 2024
+Aids to Navigation
+An unidentified spar buoy has been reported in position 45 19.472N 066 09.189W. 
+Caution.
+
+POSITION 45-19.472N 066-09.189W
+
+---------------------------------------------------------------------------------------
+
+M 1273/2024
+250000 UTC JUL 2024
+Aids to Navigation
+Buoys between Wedgeport and the Tusket Islands have been reported as unreliable. 
+Caution.
+
+AREA BOUNDED BY 43-37.833N 066-01.802W, 43-38.000N 065-57.481W, 43-42.162N
+065-57.490W, 43-42.020N 066-01.901W
+
+---------------------------------------------------------------------------------------
+
+M 1283/2024
+300000 UTC JUL 2024
+Waterway information
+As a result of an ongoing hydrographic survey, shallower than charted depths have been
+located in the following positions:
+
+7.0 meters in 45 00.160N 061 53.722W,
+
+7.8 meters in 45 00.161N 061 52.900W,
+
+8.4 meters in 45 00.544N 061 53.543W.
+
+Horizontal Datum: WGS84
+
+POSITION 45-00.160N 061-53.722W
+POSITION 45-00.161N 061-52.900W
+POSITION 45-00.544N 061-53.543W
+
+---------------------------------------------------------------------------------------
+
+M 1363/2024
+070000 UTC AUG 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in Metres)
+47 42.676N 064 39.683W 4.2
+47 42.755N 064 39.742W 2.9 47 42.952N 064 39.780W 1.5
+
+POSITION 47-42.676N 064-39.683W
+POSITION 47-42.755N 064-39.742W
+POSITION 47-42.952N 064-39.780W
+
+---------------------------------------------------------------------------------------
+
+M 1364/2024
+070000 UTC AUG 2024
+Waterway information
+Shallower depths located in an area bound by:
+
+47 42.900N 064 39.763W
+47 42.904N 064 39.746W
+47 42.895N 064 39.731W
+ 47 42.848N 064 39.753W
+
+Limiting depth of 1.2 metres. Caution.
+
+AREA BOUNDED BY 47-42.848N 064-39.753W,
+47-42.895N 064-39.731W, 47-42.904N 064-39.746W, 47-42.900N 064-39.763W
+
+---------------------------------------------------------------------------------------
+
+M 1366/2024
+070000 UTC AUG 2024
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (in Metres)
+45 09.308N 061 26.238W 3.8
+45 07.514N 061 30.135W 14.4 45 09.471N 061 26.368W 4.7
+
+POSITION 45-09.308N 061-26.238W
+POSITION 45-07.514N 061-30.135W
+POSITION 45-09.471N 061-26.368W
+
+---------------------------------------------------------------------------------------
+
+M 1497/2024
+150000 UTC AUG 2024
+Waterway information
+Shallower depths located at
+Latitude Longitude Depth in Meters
+45 08.670N 061 27.947W 15.4
+45 05.636N 061 31.918W 18.8
+45 05.730N 061 33.035W 8.6
+45 05.893N 061 32.883W 3.4
+45 05.985N 061 33.048W 4.3
+45 06.089N 061 33.401W 4.9
+45 05.523N 061 32.657W 13.3
+45 06.707N 061 30.035W 9
+45 04.597N 061 32.863W 3.3
+45 04.806N 061 33.333W 4.9
+45 06.256N 061 34.800W 7.4
+45 05.986N 061 34.465W 5.1
+Available depth refers to chart datum. Caution.
+
+POSITION 45-08.670N 061-27.947W
+POSITION
+45-05.636N 061-31.918W
+POSITION 45-05.730N 061-33.035W
+POSITION 45-05.893N 061-32.883W
+POSITION 45-05.985N 061-33.048W
+POSITION 45-06.089N 061-33.401W
+POSITION 45-05.523N
+061-32.657W
+POSITION 45-06.707N 061-30.035W
+POSITION 45-04.597N 061-32.863W
+POSITION
+45-04.806N 061-33.333W
+POSITION 45-06.256N 061-34.800W
+POSITION 45-05.986N 061-34.465W
+
+---------------------------------------------------------------------------------------
+
+M 1521/2024
+160000 UTC AUG 2024
+Waterway information
+Shallower depths located at:
+45 05.412N 061 32.987W 16.9 metres
+45 06.164N 061 30.451W 19.8 metres
+45 06.381N 061 31.082W 12.0 metres
+
+POSITION 45-05.412N 061-32.987W
+POSITION 45-06.164N
+061-30.451W
+POSITION 45-06.381N 061-31.082W
+
+---------------------------------------------------------------------------------------
+
+M 1535/2024
+190000 UTC AUG 2024
+Aids to Navigation
+Green buoy in the vicinity of 46 12.191N 062 31.610W
+
+POSITION 46-12.191N 062-31.610W
+
+---------------------------------------------------------------------------------------
+
+M 1696/2024
+260000 UTC AUG 2024
+Aids to Navigation
+Red spar buoy partially submerged in 44 24.807N 063 36.607W. Caution
+
+POSITION 44-24.807N
+063-36.607W
+
+---------------------------------------------------------------------------------------
+
+M 1869/2024
+130000 UTC SEP 2024
+Obstruction
+A disused, partially submerged buoy reported on the east side of the East Petpeswick
+channel. Caution.
+
+POSITION 44-44.667N 063-09.069W
+
+---------------------------------------------------------------------------------------
+
+M 1945/2024
+230000 UTC SEP 2024
+Aids to Navigation
+Temporary light on 3 metre aluminum pole established on beach in front of Belyeas Point
+Light during lighthouse refurbishment. Flash characteristics remain unchanged.
+
+POSITION
+45-22.691N 066-12.963W
+
+---------------------------------------------------------------------------------------
+
+M 1960/2024
+260000 UTC SEP 2024
+Waterway information
+Shallower depths located at
+Latitude Longitude Depth in Meters
+45 53.896N 059 57.464W 0.3
+45 53.870N 059 57.889W 1.5
+45 53.703N 059 57.487W 1.5
+45 53.689N 059 59.050W 0.9
+45 53.492N 059 58.142W 1.2
+45 53.581N 059 58.002W 1.5
+
+POSITION 45-53.896N 059-57.464W
+POSITION 45-53.870N
+059-57.889W
+POSITION 45-53.703N 059-57.487W
+POSITION 45-53.689N 059-59.050W
+POSITION
+45-53.492N 059-58.142W
+POSITION 45-53.581N 059-58.002W
+
+---------------------------------------------------------------------------------------
+
+M 2013/2024
+040000 UTC OCT 2024
+Obstruction
+Exposed pier from the former Gunningsville Bridge in the Petitcodiac River. Caution
+
+AREA
+BOUNDED BY 46-04.411N 064-47.025W, 46-04.434N 064-46.971W, 46-04.490N 064-47.034W,
+46-04.472N 064-47.076W
+
+---------------------------------------------------------------------------------------
+
+M 2186/2024
+030000 UTC NOV 2024
+Obstruction
+Small anchor lost near Canso Marina at 45 20.238N 060 59.463W , depth 11 metres.
+POSITION 45-20.238N 060-59.463W
+
+---------------------------------------------------------------------------------------
+
+M 2390/2024
+140000 UTC NOV 2024
+Obstruction
+Lost fishing vessel anchor with rope and orange buoy in 46 05.940N 063 27.700W.
+
+Caution
+
+POSITION 46-05.940N 063-27.700W
+
+---------------------------------------------------------------------------------------
+
+M 2416/2024
+200000 UTC NOV 2024
+Aids to Navigation
+Permanently relocated to 48 03.031N 066 32.992W.
+
+POSITION 48-03.031N 066-32.992W
+
+---------------------------------------------------------------------------------------
+
+M 2510/2024
+110000 UTC DEC 2024
+Obstruction
+Burnt-Church, NB wharf unsafe for operations.
+
+Caution.
+
+POSITION 47-11.536N 065-08.180W
+
+---------------------------------------------------------------------------------------
+
+M 2550/2024
+240000 UTC DEC 2024
+Aids to Navigation
+Unlit
+
+POSITION 46-12.635N 063-45.041W
+
+---------------------------------------------------------------------------------------
+
+M 359/2025
+210000 UTC MAR 2025
+Obstruction
+Vessel Noreaster 07 sunk in the vicinity of 44 43.680N 066 39.000W. Caution
+
+POSITION
+44-43.680N 066-39.000W
+
+---------------------------------------------------------------------------------------
+
+M 466/2025
+120000 UTC APR 2025
+Obstruction
+Subsurface acoustic measuring instrument deployed at 42 18.239N 065 59.321W. Equipment
+has no surface impression and is over 200m below the surface.
+
+POSITION 42-18.239N
+065-59.321W
+
+---------------------------------------------------------------------------------------
+
+M 467/2025
+120000 UTC APR 2025
+Obstruction
+Subsurface acoustic measuring instrument deployed at 42 50.453N 066 43.859W. Equipment
+has no surface impression and is over 200m below the surface.
+
+POSITION 42-50.453N
+066-43.859W
+
+---------------------------------------------------------------------------------------
+
+M 506/2025
+170000 UTC APR 2025
+Waterway information
+The navigation channel in North Rustico, PEI has infilled. The depth and condition of the
+channel are unknown. Caution.
+
+POSITION 46-27.213N 063-17.504W
+
+---------------------------------------------------------------------------------------
+
+M 575/2025
+280000 UTC APR 2025
+Waterway information
+Shallower depths located at
+Latitude Longitude CD Depth (m)
+47 42.754N 064 39.710W 2.0
+47 42.768N 064 39.668W 1.8
+47 43.017N 064 39.960W 2.0
+47 44.553N 064 41.269W 5.0
+All depths are referenced to CHS benchmark 2-1984 (Shippagan Gully). Elevation +2.890m
+above chart datum.
+
+POSITION 47-42.754N 064-39.710W
+POSITION 47-42.768N 064-39.668W
+POSITION 47-43.017N 064-39.960W
+POSITION 47-44.553N 064-41.269W
+
+---------------------------------------------------------------------------------------
+
+M 607/2025
+300000 UTC APR 2025
+Aids to Navigation
+Navigational Aids in the following areas may be unreliable due to multiple buoys reported
+off advertised position: Northwest Miramichi river.
+
+AREA BOUNDED BY 46-55.511N
+065-48.390W, 46-57.080N 065-36.277W, 46-58.419N 065-35.184W, 46-59.104N 065-50.710W,
+46-56.745N 065-50.732W
+
+---------------------------------------------------------------------------------------
+
+M 617/2025
+010000 UTC MAY 2025
+Aids to Navigation
+Green buoy reported in 46 25.24N 063 00.14W
+
+POSITION 46-26.240N 063-00.140W
+
+---------------------------------------------------------------------------------------
+
+M 644/2025
+050000 UTC MAY 2025
+Obstruction
+Sub-surface scientific mooring M2297 deployed in 44 14.532N 058 28.758W.
+
+POSITION
+44-14.532N 058-28.758W
+
+---------------------------------------------------------------------------------------
+
+M 690/2025
+080000 UTC MAY 2025
+Aids to Navigation
+Permanently relocated to 47 44.002N 064 40.436W
+
+POSITION 47-44.002N 064-40.436W
+
+---------------------------------------------------------------------------------------
+
+M 692/2025
+090000 UTC MAY 2025
+Waterway information
+Shallower depth reported in 47 44.180N 064 40.920W. Caution.
+
+POSITION 47-44.180N
+064-40.920W
+
+---------------------------------------------------------------------------------------
+
+M 709/2025
+120000 UTC MAY 2025
+Waterway information
+A shoal was found in Sydney Harbour, Nova Scotia on May 12, 2025, in position 46 12.232N
+060 13.153W at a depth of 1.86 metres. 
+Paper chart affected : 4266
+Caution.
+
+POSITION 46-12.232N 060-13.153W
+
+---------------------------------------------------------------------------------------
+
+M 752/2025
+220000 UTC MAY 2025
+Aids to Navigation
+Permanently relocated to 45 44.752N 62 41.057W
+
+POSITION 45-44.711N 062-41.065W
+
+---------------------------------------------------------------------------------------
+
+M 754/2025
+220000 UTC MAY 2025
+Aids to Navigation
+Permanently relocated to 45 44.905N 62 40.709W
+
+POSITION 45-44.904N 062-40.725W
+
+---------------------------------------------------------------------------------------
+
+M 776/2025
+280000 UTC MAY 2025
+Waterway information
+Shallower depths have been located within the following polygons:
+
+AREA BOUNDED BY
+46-47.672N 064-03.534W, 46-47.672N 064-03.457W, 46-47.758N 064-03.387W, 46-47.755N
+064-03.465W
+AREA BOUNDED BY 46-47.862N 064-02.863W, 46-48.051N 064-02.538W, 46-47.977N
+064-02.716W, 46-47.872N 064-02.886W
+AREA BOUNDED BY 46-48.176N 064-01.953W, 46-48.250N
+064-00.625W, 46-48.235N 064-01.620W, 46-48.216N 064-01.952W
+
+---------------------------------------------------------------------------------------
+
+M 797/2025
+030000 UTC JUN 2025
+Aids to Navigation
+Damaged and unlit
+
+POSITION 46-12.599N 063-45.130W
+
+---------------------------------------------------------------------------------------
+
+M 833/2025
+100000 UTC JUN 2025
+Waterway information
+Shallower depths located at:
+Latitude Longitude Depth (m)
+46 47.711N 064 03.590W 1.5
+46 47.693N 064 03.290W 4.0
+46 48.039N 064 02.538W 3.0
+46 48.118N 064 02.211W 3.5
+46 48.195N 064 00.914W 3.5
+46 48.126N 064 00.873W 3.1
+46 48.123N 064 00.792W 3.2
+46 48.238N 064 00.719W 3.0
+46 48.217N 064 00.640W 3.7
+All depths are referenced to CHS benchmark HAR (6168-19736). Elevation +2.521m above
+chart datum.
+
+POSITION 46-47.711N 064-03.590W
+POSITION 46-47.693N 064-03.290W
+POSITION
+46-48.039N 064-02.538W
+POSITION 46-48.118N 064-02.211W
+POSITION 46-48.195N 064-00.914W
+POSITION 46-48.126N 064-00.873W
+POSITION 46-48.123N 064-00.792W
+POSITION 46-48.238N
+064-00.719W
+POSITION 46-48.217N 064-00.640W
+
+---------------------------------------------------------------------------------------
+
+M 834/2025
+100000 UTC JUN 2025
+Waterway information
+Shallower depths located within the following polygons:
+Shoaling up to 1.3m:
+46 47.682N 064 03.462W
+46 47.683N 064 03.493W
+46 47.757N 064 03.474W
+46 47.755N 064 03.446W
+46 47.825N 064 03.345W
+46 47.839N 064 03.307W
+46 47.832N 064 03.285W
+46 47.743N 064 03.388W
+46 47.727N 064 03.464W
+46 47.864N 064 02.771W
+Shoaling up to 1.7m:
+46 47.866N 064 02.877W
+ 46 47.921N 064 02.854W
+ 46 47.953N 064 02.794W
+ 46 48.001N 064 02.743W
+ 46 48.005N 064 02.722W
+ 46 47.988N 064 02.704W
+ 46 47.959N 064 02.693W
+ 46 47.916N 064 02.753W
+Shoaling up to 2.4m:
+46 48.176N 064 01.945W
+ 46 48.187N 064 01.953W
+ 46 48.217N 064 01.888W
+ 46 48.234N 064 01.621W
+ 46 48.204N 064 01.188W
+ 46 48.184N 064 01.194W
+ 46 48.191N 064 01.328W
+ 46 48.187N 064 01.486W
+ 46 48.187N 064 01.805W
+All depths are referenced to CHS benchmark HAR (6168-19736). Elevation +2.521m above
+chart datum.
+
+AREA BOUNDED BY 46-47.683N 064-03.493W, 46-47.682N 064-03.462W, 46-47.727N
+064-03.464W, 46-47.743N 064-03.388W, 46-47.832N 064-03.285W, 46-47.839N 064-03.307W,
+46-47.825N 064-03.345W, 46-47.755N 064-03.446W, 46-47.757N 064-03.474W
+AREA BOUNDED BY
+46-47.866N 064-02.877W, 46-47.864N 064-02.771W, 46-47.916N 064-02.753W, 46-47.959N
+064-02.693W, 46-47.988N 064-02.704W, 46-48.005N 064-02.722W, 46-48.001N 064-02.743W,
+46-47.953N 064-02.794W, 46-47.921N 064-02.854W
+AREA BOUNDED BY 46-48.176N 064-01.945W,
+46-48.187N 064-01.805W, 46-48.187N 064-01.486W, 46-48.191N 064-01.328W, 46-48.184N
+064-01.194W, 46-48.204N 064-01.188W, 46-48.234N 064-01.621W, 46-48.217N 064-01.888W,
+46-48.187N 064-01.953W
+
+---------------------------------------------------------------------------------------
+
+M 835/2025
+100000 UTC JUN 2025
+Waterway information
+The 18 foot contour has become unreliable between the following locations: 
+ 
+46 48.237N 064 00.706W and 46 48.093N 064 00.630W. Shift towards the West up to 150m.
+46 48.206N 064 01.561W and 46 48.188N 064 01.290W. Shift towards the South up to 50m.
+46 48.193N 064 02.062W and 46 48.204N 064 01.739W. Shift towards the South up to 15m.
+46 48.070N 064 02.478W and 46 48.065N 064 02.404W. Shift towards the North up to 25m.
+46 47.916N 064 02.869W and 46 48.022N 064 02.684W. Shift towards the West up to 300m.
+ 
+All depths are referenced to CHS benchmark HAR (6168-19736). Elevation +2.521m above
+chart datum.
+
+ALONG LINE JOINING 46-48.237N 064-00.706W, 46-48.093N 064-00.630W
+ALONG
+LINE JOINING 46-48.206N 064-01.561W, 46-48.188N 064-01.290W
+ALONG LINE JOINING 46-48.193N
+064-02.062W, 46-48.204N 064-01.739W
+ALONG LINE JOINING 46-48.070N 064-02.478W, 46-48.065N
+064-02.404W
+ALONG LINE JOINING 46-47.916N 064-02.869W, 46-48.022N 064-02.684W
+
+---------------------------------------------------------------------------------------
+
+M 879/2025
+180000 UTC JUN 2025
+Aids to Navigation
+Unidentified damaged red buoy reported in position 45 32 45N 066 01 26W. Caution
+POSITION 45-32.750N 066-01.433W
+
+---------------------------------------------------------------------------------------
+
+M 903/2025
+230000 UTC JUN 2025
+Aids to Navigation
+Damaged
+
+POSITION 45-44.497N 062-41.271W
+
+---------------------------------------------------------------------------------------
+
+M 957/2025
+300000 UTC JUN 2025
+Obstruction
+Temporary tide guage installed in 46 50.465N 064 54.811W. The guage will be marked with a
+buoy.
+
+POSITION 46-50.465N 064-54.811W
+
+---------------------------------------------------------------------------------------
+
+M 968/2025
+040000 UTC JUL 2025
+Aids to Navigation
+Unlit
+
+POSITION 46-40.398N 064-42.635W
+
+---------------------------------------------------------------------------------------
+
+M 992/2025
+090000 UTC JUL 2025
+Aids to Navigation
+Unidentified green and red spar buoy reported off position near the Evandale Resort and
+Marina. Caution.
+
+POSITION 45-35.465N 066-01.438W
+
+---------------------------------------------------------------------------------------
+
+M 995/2025
+090000 UTC JUL 2025
+Obstruction
+A sunken vessel has been reported in 45 17.990N 064 36.190W. Caution.
+
+POSITION
+45-17.990N 064-36.190W
+
+---------------------------------------------------------------------------------------
+
+M 1043/2025
+190000 UTC JUL 2025
+Aids to Navigation
+Unmarked green buoy reported in 44 30.400N 063 48.400W may mark the wrong side of the
+channel. Caution.
+
+POSITION 44-30.400N 063-48.400W
+
+---------------------------------------------------------------------------------------
+
+M 1087/2025
+280000 UTC JUL 2025
+Obstruction
+Red and white buoy reported adrift in the vicinity of 43 25.820N 065 43.260W.
+
+POSITION
+43-25.820N 065-43.260W
+
+---------------------------------------------------------------------------------------
+
+M 1151/2025
+080000 UTC AUG 2025
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+46 13.877N 063 07.212W
+46 13.851N 063 07.191W
+46 13.721N 063 07.447W
+46 13.763N 063 07.445W
+All depths are referenced to CHS benchmark 04P9201. Elevation +4.344 metres above chart
+datum.
+
+AREA BOUNDED BY 46-13.721N 063-07.447W, 46-13.851N 063-07.191W, 46-13.877N
+063-07.212W, 46-13.763N 063-07.445W
+
+---------------------------------------------------------------------------------------
+
+M 1152/2025
+080000 UTC AUG 2025
+Waterway information
+Shallower depths have been identified in an area bounded by the following coordinates:
+46 14.097N 063 07.016W
+46 14.026N 063 06.847W
+46 13.960N 063 06.976W
+46 13.948N 063 06.953W
+46 13.847N 063 07.125W
+46 13.892N 063 07.176W
+All depths are referenced to CHS benchmark 04P9201. Elevation +4.344 metres above chart
+datum.
+
+AREA BOUNDED BY 46-14.097N 063-07.016W, 46-14.026N 063-06.847W, 46-13.960N
+063-06.976W, 46-13.948N 063-06.953W, 46-13.847N 063-07.125W, 46-13.892N 063-07.176W
+
+---------------------------------------------------------------------------------------
+
+M 1153/2025
+080000 UTC AUG 2025
+Waterway information
+Shallower depths located at
+Latitude Longitude Depth in Metres
+46 12.212N 063 08.051W 16.6
+46 13.938N 063 06.850W 13.5
+46 07.753N 063 06.591W 10.4
+46 11.425N 063 07.391W 21.7
+46 08.705N 063 06.076W 12.0
+46 09.159N 063 05.909W 17.6
+46 07.348N 063 06.712W 13.2
+46 09.837N 063 06.458W 17.7
+46 13.636N 063 07.528W 12.9
+46 09.369N 063 06.100W 18.5 
+46 11.560N 063 07.521W 14.8
+46 12.947N 063 07.797W 9.7
+46 14.034N 063 06.801W 8.7
+46 11.719N 063 07.556W 21.4
+46 10.789N 063 07.021W 20.6
+46 10.789N 063 06.594W 17.4
+46 10.239N 063 05.901W 15.9
+Area is bounded by the following coordinates: 
+46 13.935N 063 06.387W
+46 14.324N 063 06.851W
+46 12.548N 063 09.271W
+46 09.046N 063 06.289W
+46 07.251N 063 07.193W
+46 07.132N 063 06.362W
+46 09.401N 063 05.336W
+46 12.548N 063 07.951W
+All depths are referenced to CHS benchmark 04P9201. Elevation +4.344 metres above chart
+datum.
+
+POSITION 46-12.212N 063-08.051W
+POSITION 46-13.938N 063-06.850W
+POSITION
+46-07.753N 063-06.591W
+POSITION 46-11.425N 063-07.391W
+POSITION 46-08.705N 063-06.076W
+POSITION 46-09.159N 063-05.909W
+POSITION 46-07.348N 063-06.712W
+POSITION 46-09.837N
+063-06.458W
+POSITION 46-13.636N 063-07.528W
+POSITION 46-09.369N 063-06.100W
+POSITION
+46-11.560N 063-07.521W
+POSITION 46-12.947N 063-07.797W
+POSITION 46-14.034N 063-06.801W
+POSITION 46-11.719N 063-07.556W
+POSITION 46-10.789N 063-07.021W
+POSITION 46-10.239N
+063-06.594W
+POSITION 46-08.893N 063-05.901W
+AREA BOUNDED BY 46-13.935N 063-06.387W,
+46-14.324N 063-06.851W, 46-12.548N 063-09.271W, 46-09.046N 063-06.289W, 46-07.251N
+063-07.193W, 46-07.132N 063-06.362W, 46-09.401N 063-05.336W, 46-12.548N 063-07.951W
+
+---------------------------------------------------------------------------------------
+
+M 1157/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Yellow spar buoy missing from 44 41.333N 063 37.233W in Bedford Basin.
+
+POSITION
+44-41.333N 063-37.233W
+
+---------------------------------------------------------------------------------------
+
+M 1159/2025
+080000 UTC AUG 2025
+Obstruction
+A partially submerged telephone pole, standing vertically, with approximately 3 feet
+extending above the water near Panmure Island Beach. Caution
+
+POSITION 46-07.956N
+062-27.560W
+
+---------------------------------------------------------------------------------------
+
+M 1160/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Buoys from Wedgeport to Tusket, N.S. unreliable.
+
+AREA BOUNDED BY 43-51.844N 065-58.830W,
+43-50.640N 066-00.499W, 43-49.010N 066-01.134W, 43-43.698N 065-57.828W, 43-45.680N
+065-57.623W
+
+---------------------------------------------------------------------------------------
+
+M 1163/2025
+080000 UTC AUG 2025
+Aids to Navigation
+Buoys in Lobster Bay unreliable
+
+AREA BOUNDED BY 43-44.534N 065-54.096W, 43-40.374N
+065-55.528W, 43-39.988N 065-49.774W, 43-44.817N 065-50.419W
+
+---------------------------------------------------------------------------------------
+
+M 1208/2025
+130000 UTC AUG 2025
+Aids to Navigation
+Temporarily removed for repairs. The shoal is marked with a temporary green buoy.
+POSITION 43-32.157N 065-46.147W
+
+---------------------------------------------------------------------------------------
+
+M 1211/2025
+140000 UTC AUG 2025
+Aids to Navigation
+An 8 foot tower with a light and reflective tape has been temporarily installed.
+POSITION 43-32.157N 065-46.147W
+
+---------------------------------------------------------------------------------------
+
+M 1215/2025
+150000 UTC AUG 2025
+Waterway information
+As a result of a recent survey in Loggiecroft, NB, a narrowing of the channel in 46
+50.164N 064 54.773W was observed.
+Caution
+
+POSITION 46-50.164N 064-54.773W
+
+---------------------------------------------------------------------------------------
+
+M 1228/2025
+180000 UTC AUG 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+45 01.234N 066 54.854W 2.7
+
+POSITION 45-01.234N 066-54.854W
+
+---------------------------------------------------------------------------------------
+
+M 1241/2025
+210000 UTC AUG 2025
+Obstruction
+Submerged buoy in 45 20.702N 066 13.027W. Caution.
+
+POSITION 45-20.702N 066-13.027W
+
+---------------------------------------------------------------------------------------
+
+M 1278/2025
+290000 UTC AUG 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+44 58.56N 066 55.19W 3.4
+44-58.98N 066-55.23W 9.6
+44-58.74N 066-54.70W 0.9
+44-58.60N 066-54.30W 0.5
+
+---------------------------------------------------------------------------------------
+
+M 1285/2025
+300000 UTC AUG 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+44 57.300N 066 56.260W -0.6
+44 57.380N 066 56.170W 0.4
+44 56.570N 066 57.140W 0.8
+44 56.960N 066 56.970W -0.7
+44 57.350N 066 56.190W 1.2
+44 56.320N 066 58.720W 4.4
+All depths are referenced to CHS chart datum.
+
+POSITION 44-57.300N 066-56.260W
+POSITION
+44-57.380N 066-56.170W
+POSITION 44-56.570N 066-57.140W
+POSITION 44-56.960N 066-56.970W
+POSITION 44-57.350N 066-56.190W
+POSITION 44-56.320N 066-58.720W
+
+---------------------------------------------------------------------------------------
+
+M 1286/2025
+300000 UTC AUG 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+45 01.800N 066 52.270W 0.9
+45 00.910N 066 53.690W 1.0
+45 02.100N 066 55.000W 1.0
+45 01.990N 066 54.260W -0.3
+45 02.270N 066 48.360W 9.2
+All depths are referenced to CHS chart datum.
+
+POSITION 45-01.800N 066-52.270W
+POSITION
+45-00.910N 066-53.690W
+POSITION 45-02.100N 066-55.000W
+POSITION 45-01.990N 066-54.260W
+POSITION 45-02.270N 066-48.360W
+
+---------------------------------------------------------------------------------------
+
+M 1290/2025
+310000 UTC AUG 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+44 55.480N 066 57.930W -0.3
+44 59.530N 066 55.980W 4.3
+44 58.850N 066 56.370W 4.5
+All depths are referenced to CHS chart datum.
+
+POSITION 44-55.480N 066-57.930W
+POSITION
+44-59.530N 066-55.980W
+POSITION 44-58.850N 066-56.370W
+
+---------------------------------------------------------------------------------------
+
+M 1292/2025
+310000 UTC AUG 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+44 56.210N 066 57.940W -1.8
+44 56.040N 066 57.840W 1.3
+All depths are referenced to CHS chart datum.
+
+POSITION 44-56.210N 066-57.940W
+POSITION
+44-56.040N 066-57.840W
+
+---------------------------------------------------------------------------------------
+
+M 1293/2025
+310000 UTC AUG 2025
+Waterway Information
+As a result of an hydrographic survey, a shoal depth has been identified.
+ Latitude Longitude Depth in metres
+46 07.171N 059 28.914W 31.819
+
+POSITION 46-07.171N 059-28.914W
+
+---------------------------------------------------------------------------------------
+
+M 1301/2025
+020000 UTC SEP 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters 
+45 04.880N 066 55.060W 0.0 
+ 
+All depths are referenced to CHS chart datum.
+
+POSITION 45-04.880N 066-55.060W
+
+---------------------------------------------------------------------------------------
+
+M 1335/2025
+050000 UTC SEP 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+44 59.070N 066 57.080W 1.9
+44 59.340N 066 56.750W 2.9
+44 59.560N 066 56.620W 2.5
+45 00.400N 066 56.260W 3.5
+All depths are referenced to CHS chart datum.
+
+POSITION 44-59.070N 066-57.080W
+POSITION
+44-59.340N 066-56.750W
+POSITION 44-59.560N 066-56.620W
+POSITION 45-00.400N 066-56.260W
+
+---------------------------------------------------------------------------------------
+
+M 1426/2025
+210000 UTC SEP 2025
+Obstruction
+Large log, approximately 10 feet in length semi-submerged in 44 41.078N 063 54.478W. Log
+is completely submerged at high tide. Caution.
+
+POSITION 44-41.078N 063-54.478W
+
+---------------------------------------------------------------------------------------
+
+M 1431/2025
+220000 UTC SEP 2025
+Obstruction
+Multiple subsurface scientific moorings deployed in the Fundian channel. The scientific
+moorings are between five to six meters off the ocean floor.
+
+POSITION 42-39.358N
+066-27.843W
+POSITION 42-39.576N 066-20.535W
+POSITION 42-33.965N 066-27.544W
+POSITION
+42-34.181N 066-20.247W
+POSITION 42-34.390N 066-12.948W
+POSITION 42-34.592N 066-05.648W
+POSITION 42-28.787N 066-19.959W
+POSITION 42-28.995N 066-12.671W
+POSITION 42-29.196N
+066-05.382W
+POSITION 42-29.389N 065-58.091W
+POSITION 42-29.574N 065-50.799W
+POSITION
+42-23.800N 066-05.117W
+POSITION 42-23.993N 065-57.836W
+POSITION 42-24.177N 065-50.555W
+POSITION 42-24.354N 065-43.272W
+POSITION 42-18.780N 065-50.312W
+POSITION 42-18.956N
+065-43.039W
+POSITION 42-13.383N 065-50.069W
+
+---------------------------------------------------------------------------------------
+
+M 1447/2025
+250000 UTC SEP 2025
+Obstruction
+A Sofar Spotter buoy has been deployed at 44°27'00.3"N 64°22'36.2"W. It is bright yellow
+and black in colour and measures roughly 40 cm in diameter and 30 cm in height. To it is
+attached a smaller cylindrical buoy with additional reflectors.
+ The buoy will remain in place until at most early December. Caution.
+
+POSITION
+44-27.005N 064-22.603W
+
+---------------------------------------------------------------------------------------
+
+M 1476/2025
+290000 UTC SEP 2025
+Waterway information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude 
+44 19.093N 064 24.362W
+44 19.218N 064 23.987W
+44 18.411N 064 22.041W
+44 18.178N 064 22.057W
+44 18.280N 064 22.792W
+44 18.559N 064 23.346W
+44 18.905N 064 23.813W
+
+POSITION 44-19.093N 064-24.362W
+POSITION 44-19.218N 064-23.987W
+POSITION 44-18.411N 064-22.041W
+POSITION 44-18.178N 064-22.057W
+POSITION 44-18.280N
+064-22.792W
+POSITION 44-18.559N 064-23.346W
+POSITION 44-18.905N 064-23.813W
+
+---------------------------------------------------------------------------------------
+
+M 1481/2025
+290000 UTC SEP 2025
+Obstruction
+Sub-surface scientific mooring M2308 deployed in 44 40.386N 066 31.830W.
+Top of mooring is at 178 metres water depth.
+
+POSITION 44-40.386N 066-31.830W
+
+---------------------------------------------------------------------------------------
+
+M 1523/2025
+050000 UTC OCT 2025
+Obstruction
+Subsurface scientific mooring deployed in 42 51.079N 065 18.887W at 146 meters depth. Top
+of the mooring is 113 meters below the surface. 
+Vessels are requested to keep clear of the mooring in a 0.5 nautical mile radius.
+POSITION 42-51.079N 065-18.887W
+
+---------------------------------------------------------------------------------------
+
+M 1527/2025
+060000 UTC OCT 2025
+Obstruction
+Sunken sailboat reported in the Bawleen off Gerard Island. The sailboat is approximately
+24 feet in length.
+
+POSITION 44-48.101N 062-36.669W
+
+---------------------------------------------------------------------------------------
+
+M 1528/2025
+060000 UTC OCT 2025
+Obstruction
+Subsurface scientific mooring installed in 44 14.993N 063 10.028W. Top of the mooring is
+at a depth of 167 metres.
+
+POSITION 44-14.993N 063-10.028W
+
+---------------------------------------------------------------------------------------
+
+M 1535/2025
+070000 UTC OCT 2025
+Waterway Information
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Meters
+44 38.223N 065 44.941W 9.9
+44 37.655N 065 44.968W 4.9
+44 37.490N 065 45.054W 6.9
+44 37.786N 065 45.016W 6.3
+44 37.819N 065 45.024W 6.3
+44 37.901N 065 45.000W 6.2
+45 38.229N 065 45.119W 6.5
+All depths are referenced to CHS chart datum.
+
+POSITION 44-38.223N 065-44.941W
+
+---------------------------------------------------------------------------------------
+
+M 1536/2025
+070000 UTC OCT 2025
+Marine Works
+To ensure the safety of both the public and workers, all individuals traveling under the
+Centennial Bridge, Miramichi, N.B. are to use the Navigation Span as the only authorized
+passage.
+The use of other spans may pose serious safety risks. Unauthorized access beneath
+non-navigation spans may interfere with ongoing work and expose individuals to potential
+hazards.
+Caution.
+
+POSITION 47-01.620N 065-28.740W
+
+---------------------------------------------------------------------------------------
+
+M 1539/2025
+070000 UTC OCT 2025
+Waterway Information
+As a result of an ongoing hydrographic survey, shallower than charted depths have been
+found at the following locations :
+Latitude, longitude, depth. 
+1. 44 14.620N, 064 22.163W, 1.9 meter.
+2. 44 10.353N, 064 19.424W, 7.1 meters.
+3. 44 10.374N, 064 19.519W, 7.1 meters.
+4. 44 10.610N, 064 19.639W, 8 meters.
+5. Replace Sounding 7.3 meters with 4.5 meters at 44 13.815N, 064 22.577W.
+ 
+Available depth refers to chart datum. Caution.
+
+POSITION 44-10.353N 064-19.424W
+POSITION
+44-14.620N 064-22.163W
+POSITION 44-10.374N 064-19.519W
+POSITION 44-10.610N 064-19.639W
+POSITION 44-13.815N 064-22.577W
+
+---------------------------------------------------------------------------------------
+
+M 1579/2025
+140000 UTC OCT 2025
+Obstruction
+Subsurface scientific mooring deployed in 43 51.5650N 058 54.8380W. The mooring is 55
+meters in length, deployed at a depth of 1731 meters with top of mooring 1676 meters
+below water surface.
+
+POSITION 43-51.565N 058-54.838W
+
+---------------------------------------------------------------------------------------
+
+M 1630/2025
+270000 UTC OCT 2025
+Obstruction
+Buoy identified in the vicinity of 46 54.169N 060 27.608W
+
+POSITION 46-54.169N 060-27.608W
+
+---------------------------------------------------------------------------------------
+
+M 1675/2025
+050000 UTC NOV 2025
+Aids to Navigation
+Temporarily removed
+
+POSITION 46-28.114N 062-04.085W
+
+---------------------------------------------------------------------------------------
+
+M 1690/2025
+090000 UTC NOV 2025
+Obstruction
+Submerged steel pipe approximately 50 feet north of the eastern floating dock in Meteghan
+small craft harbour. the top of the obstruction is 0.5m below the surface. The steel pipe
+is marked with two buoys.
+
+POSITION 44-11.633N 066-09.950W
+
+---------------------------------------------------------------------------------------
+
+M 1711/2025
+130000 UTC NOV 2025
+Seasonal Buoy Program
+Lifting of floating aids and decommissioning of fixed aids has commenced in the Atlantic
+South region, in the following areas:
+New Brunswick coast, including the Bay of Fundy and Saint John river, Nova Scotia coast,
+including Cape Breton Island and Bras d'Or Lakes, Prince Edward Island coast, Gulf of St.
+Lawrence and Northumberland Strait, to the Quebec border.
+
+AREA BOUNDED BY 46-26.524N
+063-52.890W, 46-23.695N 063-40.951W, 46-30.482N 063-38.618W, 46-27.194N 063-22.394W,
+46-23.446N 063-15.107W, 46-22.173N 062-56.231W, 46-25.567N 062-36.613W, 46-26.945N
+062-11.269W, 46-27.377N 061-59.956W, 46-27.314N 061-59.212W, 46-27.191N 061-57.800W,
+46-27.106N 061-07.515W, 46-27.118N 061-07.133W, 46-27.119N 061-07.088W, 46-27.273N
+061-06.714W, 46-27.759N 061-04.306W, 46-35.061N 061-00.303W, 46-46.395N 060-50.819W,
+46-49.211N 060-45.848W, 46-53.237N 060-41.822W, 47-00.440N 060-37.661W, 47-02.132N
+060-35.265W, 47-02.523N 060-35.091W, 47-02.582N 060-35.056W, 47-02.893N 060-34.869W,
+47-13.785N 060-28.315W, 47-59.986N 059-59.886W, 48-14.255N 060-14.055W, 48-29.986N
+060-29.887W, 48-30.855N 060-31.489W, 48-30.879N 061-57.934W, 48-30.879N 062-00.057W,
+48-30.821N 062-53.596W, 48-30.753N 063-59.908W, 48-25.614N 063-59.909W, 47-12.908N
+064-00.013W, 47-03.620N 064-00.031W, 47-00.985N 064-00.646W, 46-54.773N 064-02.095W,
+46-47.031N 064-08.246W, 46-42.153N 064-03.262W, 46-35.897N 063-54.248W
+AREA BOUNDED BY
+43-00.000N 067-59.925W, 43-00.539N 066-40.695W, 43-00.535N 066-37.385W, 42-59.998N
+065-29.915W, 43-29.386N 065-29.915W, 43-32.225N 065-30.238W, 43-35.083N 065-34.878W,
+43-32.619N 065-42.311W, 43-47.011N 065-46.124W, 43-53.612N 065-59.485W, 43-50.113N
+066-04.336W, 43-59.700N 066-06.690W, 43-59.999N 066-09.265W, 44-00.146N 066-41.527W,
+44-00.151N 066-45.745W, 43-59.997N 067-29.923W
+AREA BOUNDED BY 42-59.998N 065-29.915W,
+43-33.543N 064-08.070W, 43-33.922N 064-07.117W, 43-59.994N 062-59.906W, 44-33.044N
+063-29.049W, 44-30.351N 063-31.499W, 44-29.528N 063-31.851W, 44-30.300N 063-32.465W,
+44-30.499N 063-36.988W, 44-34.316N 063-50.986W, 44-47.502N 063-50.295W, 44-33.398N
+064-24.547W, 44-21.309N 064-24.547W, 44-13.144N 064-30.804W, 44-10.657N 064-39.181W,
+44-05.165N 064-40.016W, 43-49.841N 065-08.306W, 43-49.841N 065-22.092W, 43-37.166N
+065-30.116W, 43-32.225N 065-30.238W, 43-29.386N 065-29.915W
+AREA BOUNDED BY 44-33.341N
+065-59.930W, 44-35.852N 065-55.563W, 44-36.329N 065-45.661W, 45-00.211N 065-00.192W,
+45-06.643N 064-30.595W, 44-52.567N 064-10.486W, 45-05.135N 064-00.935W, 45-16.697N
+063-18.706W, 45-25.746N 063-17.700W, 45-27.003N 064-41.907W, 45-41.328N 064-18.179W,
+45-52.757N 064-14.022W, 45-53.967N 064-28.158W, 46-01.346N 064-33.985W, 45-43.402N
+064-46.268W, 45-23.795N 065-37.169W, 45-20.415N 065-59.928W, 45-12.749N 065-59.915W,
+44-35.635N 065-59.916W, 44-34.701N 065-59.916W
+AREA BOUNDED BY 45-36.560N 063-20.199W,
+45-38.082N 062-52.800W, 45-29.740N 062-30.602W, 45-44.102N 062-01.251W, 45-32.650N
+062-00.403W, 45-34.402N 061-30.676W, 45-38.262N 061-24.640W, 45-38.262N 061-24.639W,
+45-38.400N 061-24.217W, 45-38.552N 061-23.752W, 45-38.563N 061-23.719W, 45-38.565N
+061-23.720W, 45-39.437N 061-23.010W, 45-47.086N 061-26.941W, 46-00.755N 061-28.233W,
+46-03.725N 061-20.740W, 46-09.568N 061-20.889W, 46-23.645N 061-07.886W, 46-23.713N
+061-04.405W, 46-27.759N 061-04.306W, 46-27.273N 061-06.714W, 46-27.119N 061-07.088W,
+46-27.118N 061-07.133W, 46-27.106N 061-07.515W, 46-27.191N 061-57.800W, 46-27.314N
+061-59.212W, 46-27.377N 061-59.956W, 46-25.119N 062-05.917W, 46-22.018N 062-22.917W,
+46-13.435N 062-35.033W, 45-59.967N 062-36.199W, 46-00.816N 062-49.243W, 46-11.314N
+062-52.636W, 46-14.618N 063-05.928W, 46-10.726N 063-15.367W, 46-14.680N 063-29.597W,
+46-14.550N 063-33.066W, 46-13.845N 063-35.507W, 46-19.633N 063-46.605W, 46-20.891N
+063-43.333W, 46-22.297N 063-41.884W, 46-25.618N 063-54.467W, 46-25.216N 064-06.781W,
+46-31.813N 064-02.596W, 46-39.554N 064-03.020W, 46-39.554N 064-07.686W, 46-40.190N
+064-22.320W, 46-55.885N 064-08.958W, 47-00.985N 064-00.646W, 47-03.620N 064-00.031W,
+47-04.822N 064-49.509W, 47-04.843N 064-50.559W, 47-04.846N 064-50.732W, 47-04.847N
+064-50.776W, 47-04.850N 064-50.922W, 47-04.377N 064-51.261W, 46-59.849N 065-02.057W,
+46-45.321N 065-04.985W, 46-35.459N 064-50.139W, 46-09.478N 064-37.308W, 46-04.663N
+064-14.988W, 45-50.665N 064-03.111W, 45-45.469N 063-36.706W
+AREA BOUNDED BY 45-40.267N
+061-07.882W, 45-45.233N 060-57.234W, 45-42.952N 060-51.463W, 45-40.152N 060-53.693W,
+45-38.952N 060-50.996W, 45-39.977N 060-44.446W, 45-46.863N 060-42.177W, 46-01.656N
+060-21.181W, 46-03.684N 060-20.942W, 45-58.256N 060-41.342W, 46-10.706N 060-19.742W,
+46-15.135N 060-16.790W, 46-18.052N 060-21.766W, 46-18.123N 060-25.115W, 46-18.124N
+060-25.152W, 46-18.137N 060-25.767W, 46-18.137N 060-25.782W, 46-17.641N 060-29.316W,
+46-11.484N 060-38.203W, 46-09.351N 060-41.282W, 46-06.886N 060-55.982W, 46-01.518N
+061-01.082W, 46-00.032N 061-07.546W, 45-57.715N 061-11.147W, 45-54.673N 061-07.658W,
+45-50.333N 061-10.521W, 45-50.378N 061-04.705W, 45-47.954N 061-09.416W, 45-43.354N
+061-12.624W
+AREA BOUNDED BY 46-11.484N 060-38.203W, 46-17.641N 060-29.316W, 46-18.137N
+060-25.782W, 46-18.137N 060-25.767W, 46-18.124N 060-25.152W, 46-18.123N 060-25.115W,
+46-18.052N 060-21.766W, 46-15.135N 060-16.790W, 46-10.706N 060-19.742W, 46-07.071N
+060-18.919W, 46-06.434N 060-11.496W, 46-11.736N 060-07.891W, 46-09.085N 059-56.014W,
+46-01.980N 060-01.316W, 45-59.860N 059-56.438W, 45-59.983N 059-51.081W, 45-59.984N
+059-50.845W, 46-00.007N 059-45.542W, 45-59.989N 058-59.892W, 46-54.103N 058-59.885W,
+46-59.986N 058-59.885W, 47-35.456N 058-59.873W, 47-38.697N 058-59.874W, 47-40.884N
+059-12.685W, 47-50.750N 059-08.986W, 47-54.739N 059-16.602W, 47-59.959N 059-08.225W,
+47-59.958N 059-16.718W, 47-59.986N 059-59.886W, 47-13.785N 060-28.315W, 47-02.893N
+060-34.869W, 47-02.582N 060-35.056W, 47-02.523N 060-35.091W, 47-02.132N 060-35.265W,
+46-57.771N 060-30.548W, 46-55.646N 060-34.003W, 46-48.576N 060-25.237W, 46-19.930N
+060-38.197W, 46-14.645N 060-40.084W
+AREA BOUNDED BY 47-01.360N 065-21.622W, 46-59.849N
+065-02.057W, 47-04.377N 064-51.261W, 47-04.850N 064-50.922W, 47-04.847N 064-50.776W,
+47-04.846N 064-50.732W, 47-04.843N 064-50.559W, 47-04.822N 064-49.509W, 47-03.620N
+064-00.031W, 47-12.908N 064-00.013W, 48-25.614N 063-59.909W, 48-30.753N 063-59.908W,
+48-30.739N 064-13.368W, 48-30.747N 064-18.194W, 48-27.010N 064-24.775W, 48-23.319N
+064-39.337W, 48-21.122N 064-45.231W, 48-11.012N 065-09.703W, 48-03.381N 065-26.322W,
+48-16.079N 065-57.181W, 48-09.004N 066-09.461W, 48-09.640N 066-31.094W, 48-00.017N
+066-51.295W, 47-56.199N 066-47.160W, 47-58.267N 066-25.765W, 47-48.325N 065-49.976W,
+47-37.586N 065-44.562W, 47-35.067N 065-38.173W, 47-45.009N 065-12.722W, 47-44.213N
+064-56.100W, 47-40.330N 064-47.887W, 47-38.816N 064-51.433W, 47-20.209N 065-01.739W,
+47-06.688N 065-23.690W
+AREA BOUNDED BY 43-59.994N 062-59.906W, 44-25.092N 061-25.795W,
+44-32.318N 060-57.168W, 44-59.991N 058-59.892W, 45-07.519N 059-46.935W, 45-18.029N
+060-57.848W, 45-18.036N 060-57.896W, 45-18.136N 060-58.608W, 45-18.142N 060-58.648W,
+45-18.196N 060-59.033W, 45-18.199N 060-59.052W, 45-18.921N 061-00.909W, 45-20.104N
+061-13.164W, 45-12.202N 061-36.432W, 45-16.576N 061-49.635W, 45-09.100N 061-50.112W,
+45-09.259N 062-00.610W, 45-02.066N 062-06.991W, 44-59.660N 062-07.175W, 45-00.113N
+062-22.245W, 44-51.947N 062-43.772W, 44-50.993N 063-05.192W, 44-40.611N 063-26.100W,
+44-36.406N 063-27.484W, 44-35.775N 063-26.559W, 44-33.044N 063-29.049W
+AREA BOUNDED BY
+45-19.858N 061-34.154W, 45-20.104N 061-13.164W, 45-18.921N 061-00.909W, 45-18.199N
+060-59.052W, 45-18.196N 060-59.033W, 45-18.142N 060-58.648W, 45-18.136N 060-58.608W,
+45-18.036N 060-57.896W, 45-18.029N 060-57.848W, 45-07.519N 059-46.935W, 44-59.991N
+058-59.892W, 45-27.710N 058-59.892W, 45-59.989N 058-59.892W, 46-00.007N 059-45.542W,
+45-59.984N 059-50.845W, 45-59.983N 059-51.081W, 45-59.860N 059-56.438W, 45-57.225N
+059-58.147W, 45-55.078N 060-05.006W, 45-53.229N 060-12.045W, 45-48.815N 060-11.747W,
+45-46.071N 060-18.070W, 45-45.355N 060-24.154W, 45-42.114N 060-24.870W, 45-39.158N
+060-34.928W, 45-39.359N 060-40.733W, 45-37.212N 060-43.752W, 45-37.782N 060-51.167W,
+45-38.719N 060-51.113W, 45-40.057N 060-54.000W, 45-39.796N 060-56.675W, 45-38.966N
+061-03.746W, 45-35.820N 061-08.402W, 45-37.431N 061-12.554W, 45-40.576N 061-14.869W,
+45-36.418N 061-17.273W, 45-35.310N 061-19.890W, 45-39.437N 061-23.010W, 45-38.563N
+061-23.719W, 45-38.552N 061-23.752W, 45-38.400N 061-24.217W, 45-38.262N 061-24.639W,
+45-38.262N 061-24.640W, 45-38.261N 061-24.637W, 45-34.402N 061-30.676W, 45-29.924N
+061-16.796W, 45-25.495N 061-28.383W, 45-29.216N 061-32.686W, 45-28.582N 061-39.656W,
+45-22.766N 061-31.962W
+AREA BOUNDED BY 43-59.997N 067-29.923W, 44-00.151N 066-45.745W,
+44-00.146N 066-41.527W, 43-59.999N 066-09.265W, 44-01.935N 066-04.880W, 44-16.293N
+066-04.265W, 44-26.606N 065-56.577W, 44-36.329N 065-45.661W, 44-35.852N 065-55.563W,
+44-33.341N 065-59.930W, 44-34.701N 065-59.916W, 44-35.635N 065-59.916W, 45-12.749N
+065-59.915W, 45-20.415N 065-59.928W, 45-08.401N 066-24.199W, 45-11.457N 066-29.154W,
+45-05.955N 066-47.104W, 45-12.218N 066-52.592W, 45-12.382N 067-05.327W, 45-04.554N
+067-05.346W, 44-57.960N 067-01.489W, 44-57.910N 067-01.460W, 44-57.899N 067-01.454W,
+44-57.892N 067-01.449W, 44-57.887N 067-01.447W
+
+---------------------------------------------------------------------------------------
+
+M 1736/2025
+170000 UTC NOV 2025
+Aids to Navigation
+Red and white buoy reported in the vicinity of 45 28.813N 060 59.582W.
+ 
+Caution.
+
+POSITION 45-28.813N 060-59.582W
+
+---------------------------------------------------------------------------------------
+
+M 1881/2025
+030000 UTC DEC 2025
+Aids to Navigation
+2 red buoys off position in Washademoak Lake, New Brunswick.
+
+POSITION 45-52.103N
+065-52.687W
+
+---------------------------------------------------------------------------------------
+
+M 1884/2025
+030000 UTC DEC 2025
+Obstruction
+Sunken 22 foot open boat in Bear River, NS in 44 34.567N 065 38.417W
+
+POSITION 44-34.567N
+065-38.417W
+
+---------------------------------------------------------------------------------------
+
+M 2016/2025
+230000 UTC DEC 2025
+Aids to Navigation
+Kennebacasis River seasonal aids not yet lifted. Aids in this area may be off positon and
+unreliable and should not be used for navigation.
+
+AREA BOUNDED BY 45-20.991N
+066-09.449W, 45-18.298N 066-01.468W, 45-38.166N 065-33.775W, 45-40.175N 065-42.394W
+
+---------------------------------------------------------------------------------------
+
+M 2020/2025
+240000 UTC DEC 2025
+Aids to Navigation
+Light buoy reported in 44 35.690N 062 13.240W
+
+POSITION 44-35.690N 062-13.240W
+
+---------------------------------------------------------------------------------------
+
+M 8/2026
+030000 UTC JAN 2026
+Aids to Navigation
+Saint John river seasonal aids not yet lifted. Aids in this area may be off positon and
+unreliable and should not be used for navigation.
+
+AREA BOUNDED BY 45-20.966N
+066-15.330W, 45-21.427N 066-10.408W, 45-38.584N 065-46.665W, 45-58.961N 066-10.664W,
+46-32.446N 067-27.460W, 46-23.129N 067-38.369W, 45-55.663N 066-56.099W, 45-34.038N
+066-03.584W
+
+---------------------------------------------------------------------------------------
+
+M 9/2026
+030000 UTC JAN 2026
+Aids to Navigation
+Mactaqua Head Pond seasonal aids not yet lifted. Aids in this area may be off positon and
+unreliable and should not be used for navigation.
+
+AREA BOUNDED BY 45-51.100N
+066-54.875W, 45-56.222N 066-51.546W, 45-57.887N 066-52.013W, 46-01.539N 067-16.545W,
+45-57.237N 067-14.559W
+
+---------------------------------------------------------------------------------------
+
+M 28/2026
+070000 UTC JAN 2026
+Obstruction
+Two wave gauges have been installed in Sanford, NS. One is attached to the wharf inside a
+plastic pipe and the other is secured to a crab pot with a surface buoy on the end of the
+West breakwater. 
+A wide berth is requested.
+
+POSITION 43-55.178N 066-09.323W
+POSITION 43-55.209N
+066-09.382W
+
+---------------------------------------------------------------------------------------
+
+M 99/2026
+260000 UTC JAN 2026
+Waterway Information
+A sounding survey of the Dalhousie Channel was completed by Public Services and
+Procurement
+Canada in January, 2026. Shallower depths have been located at the following locations:
+Latitude Longitude Depth in Meters
+44 02.483N 064 42.874W 3.2
+44 02.814N 064 41.509W 6.0
+44 02.868N 064 41.515W 6.5
+All depths are referenced to CHS benchmark 75-N-078, Dalhousie. Elevation +4.98m above
+chart datum. Caution.
+
+POSITION 44-02.483N 064-42.874W
+POSITION 44-02.814N 064-41.509W
+POSITION 44-02.868N 064-41.515W
+
+---------------------------------------------------------------------------------------
+
+M 104/2026
+280000 UTC JAN 2026
+Aids to Navigation
+Missing
+
+POSITION 44-41.105N 062-42.119W
+
+---------------------------------------------------------------------------------------
+
+M 107/2026
+290000 UTC JAN 2026
+Aids to Navigation
+Unlit
+
+POSITION 44-28.303N 064-08.512W
+
+---------------------------------------------------------------------------------------
+
+M 131/2026
+050000 UTC FEB 2026
+Waterway Information
+A sounding survey of the Lunenburg was completed by Public Services and Procurement
+Canada in January, 2026. Shallower depths have been located at the following locations:
+Latitude Longitude Depth in Meters
+44 22.569N 064 18.834W 13.5
+44 22.568N 064 18.827W 12.5
+44 22.566N 064 18.821W 13.5
+44 22.564N 064 18.815W 13.1
+44 22.562N 064 18.806W 14.4 
+All depths are referenced to PSPC Pt. Wharf-2018. Elevation +2.881m above chart datum.
+Caution
+
+POSITION 44-22.569N 064-18.834W
+POSITION 44-22.568N 064-18.827W
+POSITION
+44-22.566N 064-18.821W
+POSITION 44-22.564N 064-18.812W
+POSITION 44-22.562N 064-18.806W
+
+---------------------------------------------------------------------------------------
+
+M 140/2026
+100000 UTC FEB 2026
+Waterway information
+Shallower depths located in the Saint John main channel. Limiting depth 9.1 metres below
+chart datum in the buoyed channel. Caution
+
+AREA BOUNDED BY 45-13.337N 066-02.199W,
+45-13.379N 066-02.017W, 45-13.815N 066-02.225W, 45-15.761N 066-03.435W, 45-16.218N
+066-03.798W, 45-16.367N 066-04.047W, 45-16.166N 066-04.338W, 45-15.359N 066-03.633W,
+45-13.792N 066-02.401W
+
+---------------------------------------------------------------------------------------
+
+M 173/2026
+220000 UTC FEB 2026
+MCTS VHF Services
+Sydney MCTS. Receive services on VHF RT CH26 located at Kilkenny Lake off air 222100 UTC
+Feb 2026.
+
+POSITION 46-13.483N 060-10.100W
+
+---------------------------------------------------------------------------------------
+
+M 195/2026
+010000 UTC MAR 2026
+Marine Works
+Wharf replacement operations underway at the St-Andrews Biological Station. Operations
+include demolition, dredging, blasting, placement of concrete caissons and installation
+of docks. Equipment on site include barges, work boats, cranes and excavators. A
+cautionary buoy has been placed approximately 40m from the work area.
+
+POSITION
+45-04.955N 067-05.121W
+
+---------------------------------------------------------------------------------------
+
+M 209/2026
+030000 UTC MAR 2026
+Obstruction
+Four fiberglass sonar targets are deployed in Halifax Harbour near Georges Island.
+A 20 cm x 60 cm seafloor cone will be deployed in 44 38.627N 063 33.427W.
+A 60 cm spherical water column will be deployed 5 metres off the seabed in 44 38.577N 063
+33.367W.
+A 50 cm x 50 cm seafloor hollow cylinder will be deployed in 44 38.525N 063 33.333W.
+A 50 cm x 100 cm seafloor cylinder will be deployed in 44 38.408N 063 33.137W.
+The units will be fully submerged with no buoy lines attached and will be retrieved using
+divers following sonar demonstration. Caution.
+
+POSITION 44-38.627N 063-33.427W
+POSITION
+44-38.577N 063-33.367W
+POSITION 44-38.525N 063-33.333W
+POSITION 44-38.408N 063-33.137W
+
+---------------------------------------------------------------------------------------
+
+M 221/2026
+060000 UTC MAR 2026
+Aids to Navigation
+Partially submerged
+
+POSITION 44-01.297N 064-39.596W
+
+---------------------------------------------------------------------------------------
+
+M 230/2026
+100000 UTC MAR 2026
+MCTS VHF Services
+Sydney MCTS. VHF DF located at North Cape, PEI inoperative 101434 UTC Mar 2026.
+
+POSITION
+47-03.450N 063-59.917W
+
+---------------------------------------------------------------------------------------
+
+M 242/2026
+150000 UTC MAR 2026
+Marine Works
+Land based dredging operations occurring daily between 16 March 2026 and 30 October 2026
+during daylight hours only. Minimum wash requested.
+
+POSITION 47-46.799N 064-33.854W
+POSITION 47-46.680N 064-33.870W
+POSITION 47-46.787N 064-33.997W
+
+---------------------------------------------------------------------------------------
+
+M 245/2026
+160000 UTC MAR 2026
+Marine Works
+As a result of a sounding survey the following shallower depths have been found.
+ 
+43 49.424N 066 08.135W - 0.8M
+43 49.690N 066 07.909W - 2.3M
+43 49.957N 066 07.470W - 3.3M
+43 50.268N 066 07.342W - 2.9M
+43 50.891N 066 07.582W - 5.0M
+Note: All depths are referenced to CHS benchmark YAR-4. Elevation +7.309m above chart
+datum.
+
+POSITION 43-49.424N 066-08.135W
+POSITION 43-49.690N 066-07.909W
+POSITION
+43-49.957N 066-07.470W
+POSITION 43-50.268N 066-07.342W
+POSITION 43-50.891N 066-07.582W
+
+---------------------------------------------------------------------------------------
+
+M 249/2026
+180000 UTC MAR 2026
+Deployment of Stella Maris Frame
+Deployment of underwater Scientific testing platform in 44 39.498N 063 33.456W. A small
+diameter communications cable will be attached to the South Cove finger pier in Dartmouth.
+Caution
+
+POSITION 44-39.498N 063-33.456W
+
+---------------------------------------------------------------------------------------
+
+M 253/2026
+190000 UTC MAR 2026
+Deployment of Acoustic Doppler current profiler
+Deployment of an Acoustic Doppler Current Profiler in 44 39.445N 063 33.565W, connected
+with a communications cable to the South finger pier of COVE in Dartmouth. Maximum height
+of the array off of the seafloor is 2 metres. Caution.
+
+POSITION 44-39.445N 063-33.565W
+
+---------------------------------------------------------------------------------------
+
+M 254/2026
+190000 UTC MAR 2026
+Deployment of 2 Seasonal Vessel Tracking devices
+Deployment of two seasonal vessel tracking devices in 44 39.495N 063 33.666W and 44
+39.363N 063 33.501W connected with a communications cable to the South finger pier of
+COVE in Dartmouth. Maximum height of array off of the seafloor is 3 metres. Caution.
+POSITION 44-39.495N 063-33.666W
+POSITION 44-39.363N 063-33.501W
+
+---------------------------------------------------------------------------------------
+
+M 269/2026
+250000 UTC MAR 2026
+Marine Works
+As a result of a sounding survey the following shallower depths have been found.
+44 15.648N 064 20.803W - 5.5M 
+44 15.624N 064 20.663W - 5.5M
+44 15.732N 064 21.722W - 5.5M
+44 15.913N 064 21.678W - 5.5M
+Note: All depths are referenced to CHS benchmark 2011N9000. Elevation +3.722m above chart
+datum.
+
+POSITION 44-15.648N 064-20.803W
+POSITION 44-15.624N 064-20.663W
+POSITION
+44-15.732N 064-21.722W
+POSITION 44-15.913N 064-21.678W
+
+---------------------------------------------------------------------------------------
+
+M 298/2026
+010000 UTC APR 2026
+Aquaculture site
+Aquaculture site established in 44 37.00N 066 50.60W. The area is marked by lighted
+yellow buoys. Caution.
+
+POSITION 44-37.000N 066-50.600W
+
+---------------------------------------------------------------------------------------
+
+M 304/2026
+050000 UTC APR 2026
+Marine Works
+Daylight dredging operations underway in the channel at Fox Den Gully (Pigeon Hill
+Gully). A barge mounted excavator, tugs and scows will be used. Caution.
+
+AREA BOUNDED BY
+47-52.889N 064-30.612W, 47-52.902N 064-29.712W, 47-53.258N 064-29.722W, 47-53.246N
+064-30.640W
+AREA BOUNDED BY 47-54.426N 064-29.550W, 47-54.366N 064-29.244W, 47-54.468N
+064-29.202W, 47-54.528N 064-29.508W
+
+---------------------------------------------------------------------------------------
+
+M 307/2026
+070000 UTC APR 2026
+Dangerous Wreck
+40 foot sunken vessel reported in Herring Cove, NS in 44 34.302N 063 33.400W. Caution
+POSITION 44-34.302N 063-33.400W
+
+---------------------------------------------------------------------------------------
+
+M 321/2026
+110000 UTC APR 2026
+Marine Works
+Daily dredging underway in the Escuminac channel beginning 120900 UTC April 2026, until
+301500 UTC October 2026. Low wake requested.
+
+POSITION 47-04.900N 064-53.233W
+POSITION
+47-04.750N 064-53.317W
+POSITION 47-04.783N 064-53.367W
+POSITION 47-04.817N 064-53.317W
+POSITION 47-04.783N 064-53.283W
+
+---------------------------------------------------------------------------------------
+
+M 324/2026
+120000 UTC APR 2026
+Marine Works
+Dredging underway in the Pointe-Sapin channel during daylight hours beginning 130900 UTC
+April 2026, until 301500 UTC October 2026. The suction dredge Marie Chapdelaine will be
+present. Low wake is requested.
+
+POSITION 46-57.645N 064-49.842W
+POSITION 46-57.530N
+064-50.142W
+POSITION 46-57.533N 064-49.985W
+POSITION 46-57.425N 064-49.978W
+POSITION
+46-57.422N 064-50.135W
+
+---------------------------------------------------------------------------------------
+
+M 327/2026
+130000 UTC APR 2026
+Seasonal Buoy Program
+Replacement and re-establishment of fixed and floating aids has commenced in the Atlantic
+South region, in the following areas:
+New Brunswick Coast, including the Bay of Fundy and St. John River, Nova Scotia Coast,
+including Cape Breton Island and Bras D'Or Lakes, Prince Edward Island Coast, Gulf of St.
+Lawrence and the Northumberland Strait, to the Quebec border.
+Buoy replacement and aid re-establishment should be considered on-going and incomplete in
+all areas until cancellation of this Navigational Warning.
+
+AREA BOUNDED BY 44-33.341N
+065-59.930W, 44-35.852N 065-55.563W, 44-36.329N 065-45.661W, 45-00.211N 065-00.192W,
+45-06.643N 064-30.595W, 44-52.567N 064-10.486W, 45-05.135N 064-00.935W, 45-16.697N
+063-18.706W, 45-25.746N 063-17.700W, 45-27.003N 064-41.907W, 45-41.328N 064-18.179W,
+45-52.757N 064-14.022W, 45-53.967N 064-28.158W, 46-01.346N 064-33.985W, 45-43.402N
+064-46.268W, 45-23.795N 065-37.169W, 45-20.415N 065-59.928W, 45-12.749N 065-59.915W,
+44-35.635N 065-59.916W, 44-34.701N 065-59.916W
+AREA BOUNDED BY 45-36.560N 063-20.199W,
+45-38.082N 062-52.800W, 45-29.740N 062-30.602W, 45-44.102N 062-01.251W, 45-32.650N
+062-00.403W, 45-34.402N 061-30.676W, 45-38.262N 061-24.640W, 45-38.262N 061-24.639W,
+45-38.400N 061-24.217W, 45-38.552N 061-23.752W, 45-38.563N 061-23.719W, 45-38.565N
+061-23.720W, 45-39.437N 061-23.010W, 45-47.086N 061-26.941W, 46-00.755N 061-28.233W,
+46-03.725N 061-20.740W, 46-09.568N 061-20.889W, 46-23.645N 061-07.886W, 46-23.713N
+061-04.405W, 46-27.759N 061-04.306W, 46-27.273N 061-06.714W, 46-27.119N 061-07.088W,
+46-27.118N 061-07.133W, 46-27.106N 061-07.515W, 46-27.191N 061-57.800W, 46-27.314N
+061-59.212W, 46-27.377N 061-59.956W, 46-25.119N 062-05.917W, 46-22.018N 062-22.917W,
+46-13.435N 062-35.033W, 45-59.967N 062-36.199W, 46-00.816N 062-49.243W, 46-11.314N
+062-52.636W, 46-14.618N 063-05.928W, 46-10.726N 063-15.367W, 46-14.680N 063-29.597W,
+46-14.550N 063-33.066W, 46-13.845N 063-35.507W, 46-19.633N 063-46.605W, 46-20.891N
+063-43.333W, 46-22.297N 063-41.884W, 46-25.618N 063-54.467W, 46-25.216N 064-06.781W,
+46-31.813N 064-02.596W, 46-39.554N 064-03.020W, 46-39.554N 064-07.686W, 46-40.190N
+064-22.320W, 46-55.885N 064-08.958W, 47-00.985N 064-00.646W, 47-03.620N 064-00.031W,
+47-04.822N 064-49.509W, 47-04.843N 064-50.559W, 47-04.846N 064-50.732W, 47-04.847N
+064-50.776W, 47-04.850N 064-50.922W, 47-04.377N 064-51.261W, 46-59.849N 065-02.057W,
+46-45.321N 065-04.985W, 46-35.459N 064-50.139W, 46-09.478N 064-37.308W, 46-04.663N
+064-14.988W, 45-50.665N 064-03.111W, 45-45.469N 063-36.706W
+AREA BOUNDED BY 45-40.267N
+061-07.882W, 45-45.233N 060-57.234W, 45-42.952N 060-51.463W, 45-40.152N 060-53.693W,
+45-38.952N 060-50.996W, 45-39.977N 060-44.446W, 45-46.863N 060-42.177W, 46-01.656N
+060-21.181W, 46-03.684N 060-20.942W, 45-58.256N 060-41.342W, 46-10.706N 060-19.742W,
+46-15.135N 060-16.790W, 46-18.052N 060-21.766W, 46-18.123N 060-25.115W, 46-18.124N
+060-25.152W, 46-18.137N 060-25.767W, 46-18.137N 060-25.782W, 46-17.641N 060-29.316W,
+46-11.484N 060-38.203W, 46-09.351N 060-41.282W, 46-06.886N 060-55.982W, 46-01.518N
+061-01.082W, 46-00.032N 061-07.546W, 45-57.715N 061-11.147W, 45-54.673N 061-07.658W,
+45-50.333N 061-10.521W, 45-50.378N 061-04.705W, 45-47.954N 061-09.416W, 45-43.354N
+061-12.624W
+AREA BOUNDED BY 46-11.484N 060-38.203W, 46-17.641N 060-29.316W, 46-18.137N
+060-25.782W, 46-18.137N 060-25.767W, 46-18.124N 060-25.152W, 46-18.123N 060-25.115W,
+46-18.052N 060-21.766W, 46-15.135N 060-16.790W, 46-10.706N 060-19.742W, 46-07.071N
+060-18.919W, 46-06.434N 060-11.496W, 46-11.736N 060-07.891W, 46-09.085N 059-56.014W,
+46-01.980N 060-01.316W, 45-59.860N 059-56.438W, 45-59.983N 059-51.081W, 45-59.984N
+059-50.845W, 46-00.007N 059-45.542W, 45-59.989N 058-59.892W, 46-54.103N 058-59.885W,
+46-59.986N 058-59.885W, 47-35.456N 058-59.873W, 47-38.697N 058-59.874W, 47-40.884N
+059-12.685W, 47-50.750N 059-08.986W, 47-54.739N 059-16.602W, 47-59.959N 059-08.225W,
+47-59.958N 059-16.718W, 47-59.986N 059-59.886W, 47-13.785N 060-28.315W, 47-02.893N
+060-34.869W, 47-02.582N 060-35.056W, 47-02.523N 060-35.091W, 47-02.132N 060-35.265W,
+46-57.771N 060-30.548W, 46-55.646N 060-34.003W, 46-48.576N 060-25.237W, 46-19.930N
+060-38.197W, 46-14.645N 060-40.084W
+AREA BOUNDED BY 47-01.360N 065-21.622W, 46-59.849N
+065-02.057W, 47-04.377N 064-51.261W, 47-04.850N 064-50.922W, 47-04.847N 064-50.776W,
+47-04.846N 064-50.732W, 47-04.843N 064-50.559W, 47-04.822N 064-49.509W, 47-03.620N
+064-00.031W, 47-12.908N 064-00.013W, 48-25.614N 063-59.909W, 48-30.753N 063-59.908W,
+48-30.739N 064-13.368W, 48-30.747N 064-18.194W, 48-27.010N 064-24.775W, 48-23.319N
+064-39.337W, 48-21.122N 064-45.231W, 48-11.012N 065-09.703W, 48-03.381N 065-26.322W,
+48-16.079N 065-57.181W, 48-09.004N 066-09.461W, 48-09.640N 066-31.094W, 48-00.017N
+066-51.295W, 47-56.199N 066-47.160W, 47-58.267N 066-25.765W, 47-48.325N 065-49.976W,
+47-37.586N 065-44.562W, 47-35.067N 065-38.173W, 47-45.009N 065-12.722W, 47-44.213N
+064-56.100W, 47-40.330N 064-47.887W, 47-38.816N 064-51.433W, 47-20.209N 065-01.739W,
+47-06.688N 065-23.690W
+AREA BOUNDED BY 43-59.994N 062-59.906W, 44-25.092N 061-25.795W,
+44-32.318N 060-57.168W, 44-59.991N 058-59.892W, 45-07.519N 059-46.935W, 45-18.029N
+060-57.848W, 45-18.036N 060-57.896W, 45-18.136N 060-58.608W, 45-18.142N 060-58.648W,
+45-18.196N 060-59.033W, 45-18.199N 060-59.052W, 45-18.921N 061-00.909W, 45-20.104N
+061-13.164W, 45-12.202N 061-36.432W, 45-16.576N 061-49.635W, 45-09.100N 061-50.112W,
+45-09.259N 062-00.610W, 45-02.066N 062-06.991W, 44-59.660N 062-07.175W, 45-00.113N
+062-22.245W, 44-51.947N 062-43.772W, 44-50.993N 063-05.192W, 44-40.611N 063-26.100W,
+44-36.406N 063-27.484W, 44-35.775N 063-26.559W, 44-33.044N 063-29.049W
+AREA BOUNDED BY
+45-19.858N 061-34.154W, 45-20.104N 061-13.164W, 45-18.921N 061-00.909W, 45-18.199N
+060-59.052W, 45-18.196N 060-59.033W, 45-18.142N 060-58.648W, 45-18.136N 060-58.608W,
+45-18.036N 060-57.896W, 45-18.029N 060-57.848W, 45-07.519N 059-46.935W, 44-59.991N
+058-59.892W, 45-27.710N 058-59.892W, 45-59.989N 058-59.892W, 46-00.007N 059-45.542W,
+45-59.984N 059-50.845W, 45-59.983N 059-51.081W, 45-59.860N 059-56.438W, 45-57.225N
+059-58.147W, 45-55.078N 060-05.006W, 45-53.229N 060-12.045W, 45-48.815N 060-11.747W,
+45-46.071N 060-18.070W, 45-45.355N 060-24.154W, 45-42.114N 060-24.870W, 45-39.158N
+060-34.928W, 45-39.359N 060-40.733W, 45-37.212N 060-43.752W, 45-37.782N 060-51.167W,
+45-38.719N 060-51.113W, 45-40.057N 060-54.000W, 45-39.796N 060-56.675W, 45-38.966N
+061-03.746W, 45-35.820N 061-08.402W, 45-37.431N 061-12.554W, 45-40.576N 061-14.869W,
+45-36.418N 061-17.273W, 45-35.310N 061-19.890W, 45-39.437N 061-23.010W, 45-38.563N
+061-23.719W, 45-38.552N 061-23.752W, 45-38.400N 061-24.217W, 45-38.262N 061-24.639W,
+45-38.262N 061-24.640W, 45-38.261N 061-24.637W, 45-34.402N 061-30.676W, 45-29.924N
+061-16.796W, 45-25.495N 061-28.383W, 45-29.216N 061-32.686W, 45-28.582N 061-39.656W,
+45-22.766N 061-31.962W
+AREA BOUNDED BY 43-59.997N 067-29.923W, 44-00.151N 066-45.745W,
+44-00.146N 066-41.527W, 43-59.999N 066-09.265W, 44-01.935N 066-04.880W, 44-16.293N
+066-04.265W, 44-26.606N 065-56.577W, 44-36.329N 065-45.661W, 44-35.852N 065-55.563W,
+44-33.341N 065-59.930W, 44-34.701N 065-59.916W, 44-35.635N 065-59.916W, 45-12.749N
+065-59.915W, 45-20.415N 065-59.928W, 45-08.401N 066-24.199W, 45-11.457N 066-29.154W,
+45-05.955N 066-47.104W, 45-12.218N 066-52.592W, 45-12.382N 067-05.327W, 45-04.554N
+067-05.346W, 44-57.960N 067-01.489W, 44-57.910N 067-01.460W, 44-57.899N 067-01.454W,
+44-57.892N 067-01.449W, 44-57.887N 067-01.447W
+AREA BOUNDED BY 46-26.524N 063-52.890W,
+46-23.695N 063-40.951W, 46-30.482N 063-38.618W, 46-27.194N 063-22.394W, 46-23.446N
+063-15.107W, 46-22.173N 062-56.231W, 46-25.567N 062-36.613W, 46-26.945N 062-11.269W,
+46-27.377N 061-59.956W, 46-27.314N 061-59.212W, 46-27.191N 061-57.800W, 46-27.106N
+061-07.515W, 46-27.118N 061-07.133W, 46-27.119N 061-07.088W, 46-27.273N 061-06.714W,
+46-27.759N 061-04.306W, 46-35.061N 061-00.303W, 46-46.395N 060-50.819W, 46-49.211N
+060-45.848W, 46-53.237N 060-41.822W, 47-00.440N 060-37.661W, 47-02.132N 060-35.265W,
+47-02.523N 060-35.091W, 47-02.582N 060-35.056W, 47-02.893N 060-34.869W, 47-13.785N
+060-28.315W, 47-59.986N 059-59.886W, 48-14.255N 060-14.055W, 48-29.986N 060-29.887W,
+48-30.855N 060-31.489W, 48-30.879N 061-57.934W, 48-30.879N 062-00.057W, 48-30.821N
+062-53.596W, 48-30.753N 063-59.908W, 48-25.614N 063-59.909W, 47-12.908N 064-00.013W,
+47-03.620N 064-00.031W, 47-00.985N 064-00.646W, 46-54.773N 064-02.095W, 46-47.031N
+064-08.246W, 46-42.153N 064-03.262W, 46-35.897N 063-54.248W
+AREA BOUNDED BY 43-00.000N
+067-59.925W, 43-00.539N 066-40.695W, 43-00.535N 066-37.385W, 42-59.998N 065-29.915W,
+43-29.386N 065-29.915W, 43-32.225N 065-30.238W, 43-35.083N 065-34.878W, 43-32.619N
+065-42.311W, 43-47.011N 065-46.124W, 43-53.612N 065-59.485W, 43-50.113N 066-04.336W,
+43-59.700N 066-06.690W, 43-59.999N 066-09.265W, 44-00.146N 066-41.527W, 44-00.151N
+066-45.745W, 43-59.997N 067-29.923W
+AREA BOUNDED BY 42-59.998N 065-29.915W, 43-33.543N
+064-08.070W, 43-33.922N 064-07.117W, 43-59.994N 062-59.906W, 44-33.044N 063-29.049W,
+44-30.351N 063-31.499W, 44-29.528N 063-31.851W, 44-30.300N 063-32.465W, 44-30.499N
+063-36.988W, 44-34.316N 063-50.986W, 44-47.502N 063-50.295W, 44-33.398N 064-24.547W,
+44-21.309N 064-24.547W, 44-13.144N 064-30.804W, 44-10.657N 064-39.181W, 44-05.165N
+064-40.016W, 43-49.841N 065-08.306W, 43-49.841N 065-22.092W, 43-37.166N 065-30.116W,
+43-32.225N 065-30.238W, 43-29.386N 065-29.915W
+
+---------------------------------------------------------------------------------------
+
+M 328/2026
+140000 UTC APR 2026
+Marine works
+Dredging operations underway at Chockpish, New Brunswick during daylight hours. Dredging
+performed with an amphibious conventional and suction dredge with disposal via pipeline.
+Caution.
+
+POSITION 46-34.967N 064-43.117W
+POSITION 46-34.833N 064-43.083W
+
+---------------------------------------------------------------------------------------
+
+M 339/2026
+150000 UTC APR 2026
+Canso Canal
+The North and South Canso Canal docking cells are restricted for emergency docking only.
+All non-emergency use of the dock cells is prohibited until further notice.
+
+POSITION
+45-39.180N 061-25.200W
+POSITION 45-38.770N 061-24.520W
+
+---------------------------------------------------------------------------------------
+
+M 349/2026
+190000 UTC APR 2026
+Marine Works
+Daily land based channel dredging operations underway in Miller Brook during daylight
+hours only beginning 20 Apr until 30 Oct, 2026. Suction dredge and land-based heavy
+equipment will be in use.
+Load site:
+47 40.227N 065 30.350W
+Disposal site bounded by the following coordinates:
+47 40.183N 065 30.500W
+47 40.150N 065 30.483W
+47 40.200N 065 30.333W
+47 40.217N 065 30.350W
+Minimum wash requested in the vicinity of operations.
+Contact: Sebastien Doucet, 780-531-2250 or Samuel Robichaud, 506-779-5743.
+
+POSITION
+47-40.227N 065-30.350W
+AREA BOUNDED BY 47-40.183N 065-30.500W, 47-40.150N 065-30.483W,
+47-40.200N 065-30.333W, 47-40.217N 065-30.350W
+
+---------------------------------------------------------------------------------------
+
+M 354/2026
+200000 UTC APR 2026
+Aids to Navigation
+Light Buoy - Light Unreliable
+
+POSITION 47-05.000N 064-00.050W
+
+---------------------------------------------------------------------------------------
+
+M 355/2026
+200000 UTC APR 2026
+Aids to Navigation
+Light Buoy - Light Unreliable
+
+POSITION 46-26.904N 063-08.311W
+
+---------------------------------------------------------------------------------------
+
+M 362/2026
+210000 UTC APR 2026
+Aids to Navigation
+Partially submerged green spar buoy with reflectors in 47 47.746N 064 43.900W.
+Caution.
+
+POSITION 47-47.746N 064-43.900W
+
+---------------------------------------------------------------------------------------
+
+M 369/2026
+220000 UTC APR 2026
+Marine Works
+Dredging operations in Tabusintac gully during daylight hours starting April 23, 2026.
+Tug boat and dump scows will be used. Minimum wash requested. 
+Site contact: Daniel Letourneau at (418) 566-5113
+Caution.
+
+AREA BOUNDED BY 47-17.637N 064-55.995W, 47-17.839N 064-55.869W, 47-17.891N
+064-56.047W, 47-17.779N 064-56.115W, 47-17.689N 064-56.171W
+POSITION 47-18.232N
+064-55.730W
+
+---------------------------------------------------------------------------------------
+
+M 383/2026
+230000 UTC APR 2026
+Aids to Navigation
+Light Unlit.
+
+POSITION 44-28.187N 064-16.974W
+
+---------------------------------------------------------------------------------------
+
+M 385/2026
+240000 UTC APR 2026
+Shallow depth reported
+Shallow depth reported in:
+47 19.148N 064 55.963W observed depth 0.4m
+47 18.870N 064 55.896W observed depth 0.6m
+These coordinates are in NAD83 CSRS and depths are referenced to local chart datum.
+Mariners should use caution when entering the Tabusintac channel.
+
+POSITION 47-19.148N
+064-55.963W
+POSITION 47-18.870N 064-55.896W
+
+---------------------------------------------------------------------------------------
+
+M 393/2026
+260000 UTC APR 2026
+Marine Works
+Dredging operations underway in Botsford Channel . Dredging may take place 24 hours a
+day. Operations being conducted by Amphibex suction dredge and disposed via pipeline.
+Load Site
+ 46 10.133N 063 55.966W
+Disposal site
+ 46 10.064N 063 55.799W
+Caution
+
+POSITION 46-10.133N 063-55.966W
+POSITION 46-10.064N 063-55.799W
+
+---------------------------------------------------------------------------------------
+
+M 395/2026
+260000 UTC APR 2026
+Marine works
+Ferry terminal construction underway in Blandford, NS. daily during daylight hours.
+Work area demarcated by two white flashing lights installed on the west end of the new
+wharf structure.
+Multiple work boats, tug and barges will be on site monitoring VHF Ch 16 and sailing
+daily between Blandford, NS and Big Tancook Island, NS.
+Minimum wash and wide berth requested.
+
+POSITION 44-29.576N 064-07.018W
+
+---------------------------------------------------------------------------------------
+
+M 396/2026
+260000 UTC APR 2026
+Marine works
+Ferry terminal construction underway in Northwest Cove on Big Tancook Island, NS. daily
+during daylight hours.
+Work area demarcated by two green flashing lights installed on the west end of the new
+wharf structure.
+Multiple work boats, tug and barges will be on site monitoring VHF Ch 16 and sailing
+daily between Blandford, NS and Big Tancook Island, NS.
+Minimum wash and wide berth requested.
+
+POSITION 44-27.947N 064-10.194W
+
+---------------------------------------------------------------------------------------
+
+M 433/2026
+290000 UTC APR 2026
+Aids to Navigation
+All bouys in St. Peters Harbour, PEI unreliable.
+
+AREA BOUNDED BY 46-26.753N 062-45.039W,
+46-25.831N 062-43.652W, 46-25.292N 062-40.974W, 46-26.598N 062-39.967W, 46-26.525N
+062-42.551W, 46-26.919N 062-43.938W
+
+---------------------------------------------------------------------------------------
+
+M 447/2026
+290000 UTC APR 2026
+Aids to Navigation
+Navy Mooring Buoy #1, 2, 3 & 6 removed from position. 
+Moorings remain in their advertised position, CAUTION.
+Charted Anchorage Prohibition remains in effect.
+
+POSITION 44-42.300N 063-39.267W
+
+---------------------------------------------------------------------------------------
+
+M 448/2026
+290000 UTC APR 2026
+Aids to Navigation
+Navy Mooring Buoy located 3 cables South of Roach Cove removed from position. 
+Moorings remain in their advertised position, CAUTION.
+Charted Anchorage Prohibition remains in effect.
+
+POSITION 44-42.725N 063-38.623W
+
+---------------------------------------------------------------------------------------
+
+M 468/2026
+030000 UTC MAY 2026
+Marine Works
+Daytime wharf construction being conducted at Barre-de-Cocagne Small Craft Harbour,
+consisting of removal of wharf structure, dredging, disposal and reconstruction,
+beginning 040900UTC May 2026, on weekdays only. Small recue vessels may be in use on
+site. Caution.
+
+POSITION 46-24.498N 064-36.942W
+
+---------------------------------------------------------------------------------------
+
+M 497/2026
+060000 UTC MAY 2026
+Drifting Scientific Equipment
+Four free floating buoys are deployed in area. Two yellow AXYS 1m diameter round buoys
+with clear dome and white strobe. The yellow SOFAR SPOTTER buoys that are 16” in diameter
+with amber strobe beacon. Wide berth requested.
+
+POSITION 43-41.832N 063-26.227W
+
+---------------------------------------------------------------------------------------
+
+M 500/2026
+060000 UTC MAY 2026
+Marine Works
+Wharf construction underway between the MacDonald and A. Murray MacKay bridge in Halifax
+Harbour daily from 1000UTC to 2000UTC. Low wake is requested. Caution.
+
+POSITION
+44-40.247N 063-35.688W
+AREA BOUNDED BY 44-40.821N 063-36.524W, 44-40.573N 063-36.755W,
+44-39.716N 063-35.209W, 44-39.959N 063-34.937W, 44-40.648N 063-35.931W
+
+---------------------------------------------------------------------------------------
+
+M 510/2026
+080000 UTC MAY 2026
+Aids to Navigation
+Virtual aid Sydney Harbour S5 MMSI 993166024 has been temporarily established in 46
+14.67501N 060 11.22821W. Aid is a port hand mark virtual aid.
+
+POSITION 46-14.675N
+060-11.228W
+
+---------------------------------------------------------------------------------------
+
+M 511/2026
+080000 UTC MAY 2026
+Aids to Navigation
+Virtual Aid SYDNEY HARBOUR S7 MMSI: 993166025 temporarily established in 46 14.20246N 060
+11.72447W. Aid is a port hand mark virtual aid.
+
+POSITION 46-14.202N 060-11.724W
+
+---------------------------------------------------------------------------------------
+
+M 512/2026
+080000 UTC MAY 2026
+Aids to Navigation
+Virtual Aid SYDNEY HARBOUR S9 MMSI 993166032 temporarily established in 46° 13.67264N 60°
+12.26897W. Aid is a port hand mark virtual aid.
+
+POSITION 46-13.673N 060-12.269W
+
+---------------------------------------------------------------------------------------
+
+M 531/2026
+090000 UTC MAY 2026
+Marine works
+Dredging operations underway in Les Aboiteaux, N.B. during daylight hours. 
+Suction dredge Marie Chapdelaine will be on scene. Caution.
+Load site
+ 46 13.955N 064 17.947W
+Disposal site
+ 46 14.036N 064 17.800W
+ 46 14.083N 064 17.650W
+ 46 13.967N 064 17.650W
+ 46 13.933N 064 17.817W
+
+POSITION 46-13.955N 064-17.947W
+AREA BOUNDED BY 46-13.933N
+064-17.817W, 46-13.967N 064-17.650W, 46-14.083N 064-17.650W, 46-14.036N 064-17.800W
+
+---------------------------------------------------------------------------------------
+
+M 545/2026
+120000 UTC MAY 2026
+Marine Works
+A temporary access bridge has been installed between the Dartmouth shore and the
+Dartmouth Cable Bent pier, marked by yellow flashing lights. The air draft will be
+approximately 2 metres.
+
+ALONG LINE JOINING 44-40.829N 063-36.574W, 44-40.816N 063-36.585W
+
+---------------------------------------------------------------------------------------
+
+M 560/2026
+140000 UTC MAY 2026
+Marine works
+Temporary barge in position 45 58.033N 066 38.183W in the vicinity of old Carleton Street
+Bridge. Barge will be used as a temporary work platform 24 hours a day until work is
+completed.
+
+POSITION 45-58.033N 066-38.183W
+
+---------------------------------------------------------------------------------------
+
+M 566/2026
+140000 UTC MAY 2026
+Scientific Instruments Change
+Subsurface scientific moorings installed in Sydney Bight in the following locations:
+46 36.038N 060 04.997W
+46 35.833N 059 57.174W
+46 35.620N 059 49.352W
+46 35.399N 059 41.532W
+46 30.645N 060 05.286W
+46 30.441N 059 57.476W
+46 30.229N 059 49.667W
+46 30.008N 059 41.860W
+46 25.252N 060 05.573W
+46 25.049N 059 57.776W
+46 24.838N 059 49.980W
+46 24.617N 059 42.186W
+46 19.859N 060 05.860W
+46 19.657N 059 58.075W
+46 19.446N 059 50.292W
+46 19.226N 059 42.510W
+The moorings are between 5 to 6 metres off of the ocean floor.
+
+POSITION 46-36.038N
+060-04.997W
+POSITION 46-35.833N 059-57.174W
+POSITION 46-35.620N 059-49.352W
+POSITION
+46-35.399N 059-41.532W
+POSITION 46-30.645N 060-05.286W
+POSITION 46-30.441N 059-57.476W
+POSITION 46-30.229N 059-49.667W
+POSITION 46-30.008N 059-41.860W
+POSITION 46-25.252N
+060-05.573W
+POSITION 46-25.049N 059-57.776W
+POSITION 46-24.838N 059-49.980W
+POSITION
+46-24.617N 059-42.186W
+POSITION 46-19.859N 060-05.860W
+POSITION 46-19.657N 059-58.075W
+POSITION 46-19.446N 059-50.292W
+POSITION 46-19.226N 059-42.510W
+
+---------------------------------------------------------------------------------------
+
+M 584/2026
+150000 UTC MAY 2026
+Marine Works
+Work underway at Rodney South Berth 9 on weekdays only, until 31 Aug 2026. Low wake
+requested between 0700LT and 1500LT.
+
+POSITION 45-15.867N 066-03.918W
+
+---------------------------------------------------------------------------------------
+
+M 586/2026
+150000 UTC MAY 2026
+Marine Works
+Dredging operations daily in Cap-Lumiere, New Brunswick. The vessel Amphibex Machine 1
+will be on scene. Minimum wash requested.
+
+POSITION 46-40.387N 064-42.648W
+
+---------------------------------------------------------------------------------------
+
+M 590/2026
+170000 UTC MAY 2026
+Marine Works
+Bridge work underway on the Hillsborough Bridge between Charlottetown and Stratford, PEI
+starting on May 18, 2026. Temporary work platforms will be installed underneath the road
+deck. Passage of vessels will not be restricted.
+
+POSITION 46-14.169N 063-06.294W
+
+---------------------------------------------------------------------------------------
+
+M 596/2026
+190000 UTC MAY 2026
+Fishing gear
+Fishing gear obstructing the ranges in the vicinity of the S4 buoy in Sydney harbour.
+Caution
+
+POSITION 46-15.462N 060-10.641W
+
+---------------------------------------------------------------------------------------
+
+M 622/2026
+200000 UTC MAY 2026
+Aids to Navigation
+Missing
+
+POSITION 46-33.985N 063-47.593W
+
+---------------------------------------------------------------------------------------
+
+M 625/2026
+200000 UTC MAY 2026
+Aids to Navigation
+Established in 46 08.687N 060 12.522W. Buoy is equipped with red lantern, flash
+characteristics: Flash 0.5 seconds, Eclipse 3.5 seconds.
+
+POSITION 46-08.687N 060-12.522W
+
+---------------------------------------------------------------------------------------
+
+M 629/2026
+210000 UTC MAY 2026
+Shallow Depth Confirmed
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Metres
+47 48.574N 064 54.145W 1.9
+Available depth refers to chart datum. Caution.
+
+POSITION 47-48.574N 064-54.145W
+
+---------------------------------------------------------------------------------------
+
+M 632/2026
+210000 UTC MAY 2026
+Subsurface Mooring
+Subsurface scientific mooring NS-1 reported in 46 39.910N 064 31.550W until 01 Dec, 2026.
+POSITION 46-39.910N 064-31.550W
+
+---------------------------------------------------------------------------------------
+
+M 661/2026
+260000 UTC MAY 2026
+Aquaculture Installation
+Aquaculture sites established in 44 21.334N 064 20.166W and 44 20.833N 064 20.088W. The
+areas are marked by yellow buoys. Caution.
+
+POSITION 44-21.334N 064-20.166W
+POSITION
+44-20.833N 064-20.088W
+
+---------------------------------------------------------------------------------------
+
+M 663/2026
+260000 UTC MAY 2026
+Submerged Vessel
+Sunken vessel reported at 47 37.082N 065 38.456W. Caution
+
+POSITION 47-37.082N 065-38.456W
+
+---------------------------------------------------------------------------------------
+
+M 665/2026
+270000 UTC MAY 2026
+Waterway Information
+As a result of a recent survey the Main Channel is reported as -9.3 meters in depth. 
+One area on the edge of the Main Channel near J5 buoy is at a depth of -9.1 meters, at
+position 45 14.350N 066 02.800W, measuring 130 meters along the channel and protruding 11
+meters into the channel.
+Dredging season for the Main Channel will commence July 1, 2026.
+
+POSITION 45-14.350N
+066-02.800W
+
+---------------------------------------------------------------------------------------
+
+M 691/2026
+010000 UTC JUN 2026
+Obstruction
+Two rowing course established in Hillsborough River, PEI.
+1: A 250 meter buoyed rowing course consisting of four yellow buoys located in the area
+of 46 13.684N 063 08.939W.
+2: A 1,000 meter buoyed rowing course consisting of five yellow buoys located in the area
+of 46 13.632N 063 08.097W. 
+Caution.
+
+ALONG LINE JOINING 46-13.709N 063-07.726W, 46-13.553N 063-08.477W
+ALONG LINE
+JOINING 46-13.842N 063-08.854W, 46-13.684N 063-08.939W, 46-13.835N 063-08.859W,
+46-13.811N 063-08.873W
+
+---------------------------------------------------------------------------------------
+
+M 698/2026
+010000 UTC JUN 2026
+Aids to Navigation
+Navy Mooring buoys within the Bedford Basin removed from position. 
+Moorings remain in their advertised position, CAUTION. 
+Charted Anchorage Prohibition remains in effect.
+
+POSITION 44-42.250N 063-38.420W
+POSITION 44-41.000N 063-39.000W
+
+---------------------------------------------------------------------------------------
+
+M 703/2026
+030000 UTC JUN 2026
+Aids to Navigation
+Off position in 45 08.082N 061 30.631W
+
+POSITION 45-09.092N 061-30.628W
+POSITION
+45-08.082N 061-30.631W
+
+---------------------------------------------------------------------------------------
+
+M 704/2026
+030000 UTC JUN 2026
+Aids to Navigation
+Missing
+
+POSITION 45-08.228N 061-32.315W
+
+---------------------------------------------------------------------------------------
+
+M 705/2026
+030000 UTC JUN 2026
+Aids to Navigation
+Off station
+
+POSITION 45-08.600N 061-36.817W
+POSITION 45-08.619N 061-36.718W
+
+---------------------------------------------------------------------------------------
+
+M 706/2026
+030000 UTC JUN 2026
+Aids to Navigation
+Off station
+
+POSITION 45-08.833N 061-38.011W
+
+---------------------------------------------------------------------------------------
+
+M 712/2026
+040000 UTC JUN 2026
+Shallow Depth Confirmed
+46 20.971N 062 15.101W
+As a result of a hydrographic survey, shallower depths located at
+Latitude Longitude Depth in Metres
+46 20.971N 062 15.101W 4.1
+Available depth refers to chart datum. Caution.
+
+POSITION 46-20.971N 062-15.101W
+
+---------------------------------------------------------------------------------------
+
+M 715/2026
+050000 UTC JUN 2026
+Aids to Navigation
+Unlit
+
+POSITION 45-49.122N 063-25.843W
+
+---------------------------------------------------------------------------------------
+
+M 730/2026
+080000 UTC JUN 2026
+Aids to Navigation
+Permanently relocated to 45 47.771N 063 13.077W
+
+POSITION 45-47.460N 063-13.700W
+POSITION
+45-47.771N 063-13.077W
+
+---------------------------------------------------------------------------------------
+
+M 740/2026
+090000 UTC JUN 2026
+Marine Works
+The Suction Dredge Amphibex will conduct 24 hour dredging operations starting on June 10,
+2026 at Petit Cap, New Brunswick. Caution. 
+The dredged material will be disposed of at the ocean disposal sites via a pipeline,
+approximately 325 m east of the channel.
+
+POSITION 46-11.914N 064-09.858W
+POSITION
+46-11.928N 064-09.481W
+
+---------------------------------------------------------------------------------------
+
+M 752/2026
+100000 UTC JUN 2026
+Marine Works
+The suction dredge the Marie Chapdelaine will be conducting dredging operations in
+Barre-de-Cocagne, New Brunswick starting on June 11, 2026 during daylight hours.
+The dredged material will be disposed of at the ocean disposal sites via a pipeline,
+approximately 270m East of channel.
+
+AREA BOUNDED BY 46-24.336N 064-36.835W, 46-24.453N
+064-36.179W, 46-24.658N 064-36.258W, 46-24.538N 064-36.910W
+AREA BOUNDED BY 46-24.336N
+064-36.835W, 46-24.453N 064-36.179W, 46-24.658N 064-36.258W
+
+---------------------------------------------------------------------------------------
+
+M 753/2026
+100000 UTC JUN 2026
+Marine Works
+The Suction Dredge D3 will be conducting dredging operations at St. Edouard Kent Co., New
+Brunswick starting on June 11, 2026 during daylight hours. 
+The dredged material will be disposed of at the ocean disposal sites via a pipeline,
+approximately 316 m east of channel.
+
+POSITION 46-32.427N 064-41.855W
+POSITION 46-32.380N
+064-41.550W
+
+---------------------------------------------------------------------------------------
+
+M 763/2026
+100000 UTC JUN 2026
+Aids to Navigation
+Light Permanently Removed
+
+POSITION 47-49.748N 065-04.867W
+
+---------------------------------------------------------------------------------------
+
+M 771/2026
+110000 UTC JUN 2026
+Marine Works
+Construction underway at Glace Bay Government wharf Mondays to Fridays during daylight
+hours. Caution.
+
+POSITION 46-11.850N 059-56.880W
+
+---------------------------------------------------------------------------------------
+
+M 772/2026
+110000 UTC JUN 2026
+Scientific Instruments Change
+Spotter wave buoy deployment at 44°27'00.3"N 64°22'36.2"W. It is bright yellow and black
+in colour and measures roughly 40 cm in diameter and 30 cm in height. To it is attached a
+smaller cylindrical buoy with additional reflectors.
+Caution.
+
+POSITION 44-27.005N 064-22.603W
+
+---------------------------------------------------------------------------------------
+
+M 774/2026
+110000 UTC JUN 2026
+Marine Works
+Construction underway at the Louisbourg Government Wharf Construction Mondays to Fridays
+during daylight hours. Caution.
+
+POSITION 45-55.055N 059-58.316W
+
+---------------------------------------------------------------------------------------
+
+M 779/2026
+120000 UTC JUN 2026
+Scientific Instruments Change
+Scientific moorings deployed in New London Bay, Prince Edward Island from 11 Jun 2026
+until 01 Oct 2026. The deployment includes scientific moorings for an acoustic monitoring
+project. Only one buoy is present at the surface, the scientific/Valvoscope buoy and it
+has the following flash characteristics: 1 flash / 4 seconds. All other moorings have
+subsurface buoys positioned approximately 2 m above the bottom, with no surface marking. 
+Contact: Réjean Tremblay, 1-418-724-1650.
+
+POSITION 46-29.760N 063-28.320W
+POSITION
+46-29.667N 063-28.397W
+POSITION 46-29.667N 063-28.320W
+POSITION 46-29.667N 063-28.242W
+POSITION 46-29.713N 063-28.437W
+POSITION 46-49.713N 063-28.280W
+POSITION 46-29.713N
+063-28.280W
+POSITION 46-29.713N 063-28.202W
+POSITION 46-29.760N 063-28.477W
+POSITION
+46-29.760N 063-28.398W
+POSITION 46-29.760N 063-28.242W
+POSITION 46-29.460N 063-28.163W
+POSITION 46-29.807N 063-28.438W
+POSITION 46-29.807N 063-28.360W
+POSITION 46-29.807N
+063-28.282W
+POSITION 46-29.807N 063-28.203W
+POSITION 46-29.853N 063-28.398W
+POSITION
+46-29.853N 063-28.322W
+POSITION 46-29.853N 063-28.243W
+POSITION 46-29.858N 063-28.322W
+POSITION 46-29.662N 063-28.320W
+POSITION 46-29.750N 063-28.305W
+POSITION 46-29.830N
+063-28.223W
+POSITION 46-29.753N 063-28.267W
+
+---------------------------------------------------------------------------------------
+
+M 783/2026
+120000 UTC JUN 2026
+Aids to Navigation
+Missing
+
+POSITION 45-11.537N 061-07.295W
+
+---------------------------------------------------------------------------------------
+
+M 812/2026
+170000 UTC JUN 2026
+Submerged Object
+Submerged breakwater reported in 46 14.320N 064 27.535W. Caution.
+
+POSITION 46-14.320N
+064-27.535W
+
+---------------------------------------------------------------------------------------
+
+M 870/2026
+230000 UTC JUN 2026
+Aids to Navigation
+Partially submerged
+
+POSITION 44-27.288N 063-42.453W
+
+---------------------------------------------------------------------------------------
+
+M 879/2026
+260000 UTC JUN 2026
+Aids to Navigation
+An unidentified unlit fairway buoy has been reported in 46 57.790N 064 11.870W.
+
+POSITION
+46-57.790N 064-11.870W
+
+---------------------------------------------------------------------------------------
+
+M 881/2026
+260000 UTC JUN 2026
+Aids to Navigation
+Yellow scientific buoy established in 44 19.980N 064 11.530W.
+
+POSITION 44-19.980N
+064-11.530W
+
+---------------------------------------------------------------------------------------
+
+M 884/2026
+270000 UTC JUN 2026
+Marine Works
+Construction of new crib structure at Wallace wharf starting 28 June 2026 during daylight
+hours only. During this time, the wharf will be unavailable for use.
+Two marker buoys will be deployed with flashing yellow lights. Silt booms will be in
+place.
+Multiple vessels will be on scene.
+Minimum wash and a wide berth are requested.
+
+POSITION 45-48.870N 063-28.426W
+
+---------------------------------------------------------------------------------------
+
+M 885/2026
+280000 UTC JUN 2026
+Aids to Navigation
+Missing
+
+POSITION 47-53.237N 064-45.794W
+
+---------------------------------------------------------------------------------------
+
+M 886/2026
+280000 UTC JUN 2026
+Waterway information
+Barra Strait lift bridge open for the navigation season effective 281100UTC June 2026.
+POSITION 45-57.583N 060-47.941W
+
+---------------------------------------------------------------------------------------
+
+M 894/2026
+300000 UTC JUN 2026
+MCTS VHF Services
+Halifax MCTS. All VHF DF services located at Ecum Secum off air 300427 UTC Jun 2026.
+POSITION 44-57.883N 062-08.933W
+
+---------------------------------------------------------------------------------------
+
+M 895/2026
+300000 UTC JUN 2026
+Marine Works
+Dredging operations are underway in Saint John Harbour and Courtney Bay. Dredging is
+conducted 24 hours a day, seven days a week and performed via barge-mounted dredges and
+disposed via bottom dumping scows. Mariners are requested to give the dredging equipment
+a low wake and wide berth. Caution.
+
+AREA BOUNDED BY 45-12.298N 066-01.544W, 45-12.333N
+066-00.347W, 45-13.000N 066-01.060W, 45-12.990N 066-01.580W
+AREA BOUNDED BY 45-16.459N
+066-04.138W, 45-16.368N 066-04.104W, 45-16.283N 066-04.266W, 45-16.085N 066-04.343W,
+45-15.422N 066-03.738W, 45-14.130N 066-02.757W, 45-14.320N 066-02.390W, 45-14.814N
+066-02.703W, 45-16.308N 066-02.208W, 45-16.529N 066-02.451W, 45-16.298N 066-02.780W,
+45-15.993N 066-02.703W, 45-15.372N 066-03.094W, 45-15.895N 066-03.595W, 45-16.288N
+066-03.752W, 45-16.378N 066-03.955W
+POSITION 45-16.487N 066-02.411W
+POSITION 45-16.000N
+066-04.000W
+
+---------------------------------------------------------------------------------------
+
+M 897/2026
+300000 UTC JUN 2026
+Marine Works
+The Suction Dredge Maria Chapdelaine will be conducting daily dredging operations at
+Blacklands Gully and Pointe Maxime, within the channel as well as at the entrance to the
+wharves, beginning 010900UTC Jul 2026 during daylight hours. The dredged material will be
+disposed of at the ocean disposal sites via a pipeline, approximately 480m south of
+channel. Mariners are requested to maintan a minimum wash in the area of operations.
+AREA BOUNDED BY 46-46.375N 064-52.287W, 46-46.090N 064-52.465W, 46-45.584N 064-50.646W,
+46-46.241N 064-50.694W, 46-46.199N 064-51.897W
+POSITION 46-47.011N 064-53.116W
+POSITION
+46-47.161N 064-53.417W
+
+---------------------------------------------------------------------------------------
+
+M 898/2026
+300000 UTC JUN 2026
+Marine Works
+The amphibious, conventional and suction dredge Amphibex will be conducting dredging
+operations at Loggiecroft Channel starting on 010900UTC Jul, 2026, 24 hours a day, 7 days
+a week. Amphibex no. 2 and no. 6 will dredge areas within the channel and at the entrance
+to the wharves. The dredged material will be disposed of at ocean disposal sites via a
+pipeline and will vary. Minimum wash is requested in the vicinity of operations.
+
+AREA
+BOUNDED BY 46-49.601N 064-54.206W, 46-49.954N 064-53.572W, 46-50.880N 064-54.785W,
+46-50.548N 064-55.417W
+
+---------------------------------------------------------------------------------------
+
+M 900/2026
+300000 UTC JUN 2026
+Aids to Navigation
+Two Unmarked yellow buoys with white cylinders reported at 41 56.7N 061 38.6W and 41
+57.4N 061 38.7W.
+Caution.
+
+POSITION 41-56.700N 061-38.600W
+POSITION 41-57.400N 061-38.700W
+
+---------------------------------------------------------------------------------------
+
+M 910/2026
+030000 UTC JUL 2026
+Aids to Navigation
+Buoys in Upper Saint John River, New Brunswick from Fredericton to Oromocto have been
+reported as unreliable
+
+AREA BOUNDED BY 45-58.496N 066-38.553W, 45-57.601N 066-39.082W,
+45-55.188N 066-36.901W, 45-50.542N 066-27.253W, 45-53.326N 066-25.139W, 45-54.613N
+066-33.432W
+
+---------------------------------------------------------------------------------------
+
+M 917/2026
+050000 UTC JUL 2026
+Marine Works
+Construction of rock berm in Escuminac Harbour, New Brunswick in position 47 04.867N 064
+53.083W. Area of work will be contained by a silt curtain. The top of the silt curtain
+will be yellow and visible above the water surface. Yellow cautionary buoys will also be
+installed with light and radar reflectors spaced at 30m minimum and 100m maximum
+intervals.
+
+POSITION 47-04.867N 064-53.083W
+
+---------------------------------------------------------------------------------------
+
+M 920/2026
+050000 UTC JUL 2026
+Aids to Navigation
+Yellow and blue buoy adrift off Margaretsville, NS. Caution
+
+POSITION 45-04.090N
+065-05.018W
+
+---------------------------------------------------------------------------------------
+
+M 921/2026
+060000 UTC JUL 2026
+Marine Works
+Temporary tide ruler installed outside the channel near Blacklands Wharf, New Brunswick
+in position 46 45 45.3132N 064 51 41.4288W as part of a dredging project. Ruler is marked
+with a buoy.
+
+POSITION 46-45.755N 064-51.690W
+
+---------------------------------------------------------------------------------------
+
+M 922/2026
+060000 UTC JUL 2026
+Scientific Instruments Change
+Bio-collectors for scientific research will be deployed on the seabed at the following
+locations:
+Black Point: 45° 12' 50.3892" N 066° 01' 15.1212" W and 45° 12' 33.0012" N 066° 00'
+50.4612" W
+Mispec Point: 45° 12' 25.4448" N 065° 59' 32.4132" W
+Anthony's Cove: 45° 13' 55.8516" N 066° 00' 48.6504" W
+Welch Cove: 45°05'15.9648"N 066°29'13.002"W
+New River Island: 45° 07' 6.9672" N 066° 32' 50.0028" W
+Beaver Harbor: 45° 04' 5.9664" N 066° 43' 9.0048" W
+Deadman's Harbor: 45° 02' 45.9672" N 066° 47' 10.0032" W
+ 
+Each bio-collector will be marked with a buoy.
+
+POSITION 45-12.840N 066-01.252W
+POSITION
+45-12.424N 065-59.540W
+POSITION 45-13.931N 066-00.811W
+POSITION 45-05.266N 066-29.217W
+POSITION 45-07.116N 066-32.833W
+POSITION 45-04.099N 066-43.150W
+POSITION 45-02.766N
+066-47.167W
+POSITION 45-12.550N 066-00.841W
+
+---------------------------------------------------------------------------------------
+
+M 923/2026
+070000 UTC JUL 2026
+Marine Works
+A temporary tide rule has been installed near the wharf in Loggiecroft, New Brunswick, at
+position 46° 50' 04.73" N 064° 54' 50.91" W, as part of a dredging project. The rule is
+marked by a buoy.
+
+POSITION 46-50.079N 064-54.848W
+
+---------------------------------------------------------------------------------------
+
+M 926/2026
+080000 UTC JUL 2026
+Aids to Navigation
+Buoys in New London, PEI unreliable.
+
+AREA BOUNDED BY 46-28.167N 063-35.575W, 46-27.559N
+063-31.254W, 46-28.951N 063-29.362W, 46-29.484N 063-30.029W, 46-28.404N 063-31.534W,
+46-28.892N 063-35.296W
+
+---------------------------------------------------------------------------------------
+
+M 951/2026
+140000 UTC JUL 2026
+Marine Works
+The amphibious, conventional and suction dredge Amphibex will be conducting dredging
+operations, 24 hours a day, 7 days a week, at Caissie Cape, NB from 15 July to Oct 30,
+2026. Caution.
+Load site:
+46 18.755N 064 30.585W
+Disposal site:
+46 18.652N 064 30.671W.
+
+POSITION 46-18.755N 064-30.585W
+POSITION 46-18.652N 064-30.671W
+
+---------------------------------------------------------------------------------------
+
+M 953/2026
+140000 UTC JUL 2026
+Marine Works
+Dredging operations underway with a Barge and Scow in Grand Anse Harbour, New Brunswick
+in position 47 49.143N 065 10.584W . The material is to be disposed in the containment
+cell at Grande Anse harbour.
+
+POSITION 47-49.143N 065-10.584W
+
+---------------------------------------------------------------------------------------
+
+M 960/2026
+150000 UTC JUL 2026
+Shallow Depth Confirmed
+Shallow depth confirmed in Shippagan, New Brunswick at 092000 UTC Jun 2026. 
+ Latitude Longitude Depth (meters)
+47 42.638N 064 40.026W 2m
+47 42.603N 064 40.210W 1.93m
+47 42.572N 064 40.281W 1.53m
+47 42.663N 064 39.724W 1.95m.
+
+POSITION 47-42.638N 064-40.026W
+POSITION 47-42.603N
+064-40.210W
+POSITION 47-42.572N 064-40.281W
+POSITION 47-42.663N 064-39.724W
+
+---------------------------------------------------------------------------------------
+
+M 966/2026
+150000 UTC JUL 2026
+Aids to Navigation
+Unreliable.
+
+AREA BOUNDED BY 45-50.187N 066-53.651W, 45-59.303N 066-51.167W, 46-00.909N
+067-28.418W, 46-09.521N 067-32.443W, 46-09.521N 067-35.441W, 46-00.968N 067-34.242W
+
+---------------------------------------------------------------------------------------
+
+M 971/2026
+150000 UTC JUL 2026
+Aids to Navigation
+Unlit.
+
+POSITION 45-11.743N 061-17.228W
+
+---------------------------------------------------------------------------------------
+
+M 973/2026
+160000 UTC JUL 2026
+Aids to Navigation
+Missing.
+
+POSITION 45-09.325N 061-30.875W
+
+---------------------------------------------------------------------------------------
+
+M 974/2026
+160000 UTC JUL 2026
+Aids to Navigation
+Unreliable.
+
+POSITION 46-26.026N 063-08.520W
+
+---------------------------------------------------------------------------------------
+
+M 986/2026
+180000 UTC JUL 2026
+Waterway Information
+As a result of a recent survey Courtenay Bay has been reported as -5.0m depth.
+
+AREA
+BOUNDED BY 45-16.580N 066-02.899W, 45-16.275N 066-02.868W, 45-16.061N 066-02.734W,
+45-15.989N 066-02.765W, 45-15.888N 066-02.868W, 45-15.640N 066-03.211W, 45-15.405N
+066-02.689W, 45-16.199N 066-02.292W, 45-16.322N 066-02.229W, 45-16.721N 066-02.408W
+
+---------------------------------------------------------------------------------------
+
+M 996/2026
+200000 UTC JUL 2026
+Aids to Navigation
+Changed from Fl 0.5s Ec 0.5s to fixed. Nominal range is 8.3NM.
+
+POSITION 46-42.959N
+064-47.982W
+
+---------------------------------------------------------------------------------------
+
+M 997/2026
+200000 UTC JUL 2026
+Aids to Navigation
+Changed from Fl 2s Ec 2s to Fl 7s Ec 3s.
+
+POSITION 46-43.058N 064-47.852W
+
+---------------------------------------------------------------------------------------
+
+M 998/2026
+200000 UTC JUL 2026
+Aids to Navigation
+Light changed from Fl 0.5s Ec 0.5s to fixed. The nominal range 8.1NM.
+
+POSITION
+46-42.492N 064-48.033W
+
+---------------------------------------------------------------------------------------
+
+M 999/2026
+200000 UTC JUL 2026
+Aids to Navigation
+Light changed from Fl 2s Ec 2s to Fl 7s Ec 3s. The nominal range is 8.2NM.
+
+POSITION
+46-42.558N 064-47.822W
+
+---------------------------------------------------------------------------------------
+
+M 1004/2026
+210000 UTC JUL 2026
+Marine Works
+Dredging operations underway in Skinner's Pond , Small Craft Harbour, Prince Edward
+Island. Operations may be underway 24 hours a day. Yellow cautionary buoys are installed
+to mark the disposal area.
+
+POSITION 46-57.970N 064-07.560W
+POSITION 46-57.956N
+064-07.579W
+POSITION 46-57.956N 064-07.565W
+POSITION 46-57.937N 064-07.546W
+POSITION
+46-57.933N 064-07.561W
+
+---------------------------------------------------------------------------------------
+
+M 1007/2026
+220000 UTC JUL 2026
+Aids to Navigation
+Buoys in Chockpish, NB are unreliable due to narrowing of the channel.
+
+POSITION
+46-34.954N 064-43.190W
+
+---------------------------------------------------------------------------------------
+
+M 1014/2026
+240000 UTC JUL 2026
+Marine Works
+Dredging operations underway at the West Point Small Craft Harbour. Dredging operations
+may occur 24 hours a day and will be completed by a land-based excavator.
+
+POSITION
+46-37.096N 064-22.290W
+POSITION 46-37.083N 064-21.901W
+
+---------------------------------------------------------------------------------------
+
+M 1016/2026
+240000 UTC JUL 2026
+Aids to Navigation
+Unlit.
+
+POSITION 46-11.848N 063-28.683W
+
+---------------------------------------------------------------------------------------
+
+M 1019/2026
+250000 UTC JUL 2026
+Aids to Navigation
+Unlit.
+
+POSITION 45-54.204N 066-04.082W
+
+---------------------------------------------------------------------------------------
+
+M 1027/2026
+260000 UTC JUL 2026
+Aids to Navigation
+Unlit.
+
+POSITION 45-54.504N 066-05.799W
+
+---------------------------------------------------------------------------------------
+
+M 1028/2026
+260000 UTC JUL 2026
+Aids to Navigation
+Missing.
+
+POSITION 43-53.517N 064-42.500W
+
+---------------------------------------------------------------------------------------
+
+M 1029/2026
+260000 UTC JUL 2026
+Aids to Navigation
+Missing.
+
+POSITION 44-52.996N 062-06.271W
+
+---------------------------------------------------------------------------------------
+
+M 1031/2026
+270000 UTC JUL 2026
+Aids to Navigation
+Aid ID of virtual aid Sydney Harbour S9/1 changed to S11. MMSI is 993166034. Temporarily
+established in 46 13.306N 60 12.653W. Aid is a port hand mark virtual aid.
+
+POSITION
+46-13.306N 060-12.653W
+
+---------------------------------------------------------------------------------------
+
+M 1032/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Off position.
+
+POSITION 45-57.304N 066-37.674W
+
+---------------------------------------------------------------------------------------
+
+M 1033/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Off position.
+
+POSITION 45-57.095N 066-37.696W
+
+---------------------------------------------------------------------------------------
+
+M 1034/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Off position.
+
+POSITION 45-52.571N 066-31.066W
+
+---------------------------------------------------------------------------------------
+
+M 1035/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Damaged.
+
+POSITION 45-52.337N 066-25.082W
+
+---------------------------------------------------------------------------------------
+
+M 1037/2026
+280000 UTC JUL 2026
+Aids to Navigation
+Buoys in Kouchibouguac are unreliable due to dredging operations.
+
+AREA BOUNDED BY
+46-49.403N 064-53.517W, 46-45.786N 065-07.830W, 46-47.341N 065-07.563W, 46-50.787N
+064-54.023W
+
+---------------------------------------------------------------------------------------
+
+M 1039/2026
+290000 UTC JUL 2026
+Scientific Instruments Change
+Yellow scientific buoys have been removed temporarily, red floats connected by line
+remain with small buoy in the middle until further notice.
+Mariners are requested to avoid these areas to prevent additional damage and hazards.
+44 40 45.33N 063 36 43.18W - located under the MacKay Bridge
+44 40 12.9N 063 35 26.8W - the Narrows, outside the controlled access area of the Naval
+Dockyard Annex.
+
+POSITION 44-40.755N 063-36.720W
+POSITION 44-40.215N 063-35.447W
+
+---------------------------------------------------------------------------------------
+
+M 1044/2026
+300000 UTC JUL 2026
+Marine Works
+Channel dredging operations underway in Cap-Pele , New Brunswick. Operations will take
+place 24 hours a day.
+Caution.
+
+POSITION 46-14.116N 064-15.692W
+POSITION 46-14.088N 064-15.504W
+POSITION
+46-14.180N 064-15.459W
+POSITION 46-14.163N 064-15.385W
+POSITION 46-14.073N 064-15.428W
+
+---------------------------------------------------------------------------------------
+
+M 1046/2026
+310000 UTC JUL 2026
+Marine Works
+Several yellow buoys at the entrance to the Loggiecroft Channel marking a submerged pipe.
+Caution.
+
+AREA BOUNDED BY 46-49.931N 064-54.289W, 46-49.884N 064-54.205W, 46-49.843N
+064-54.025W
+
+---------------------------------------------------------------------------------------
+
+M 1052/2026
+020000 UTC AUG 2026
+Submerged Object
+Submerged Object reported in 44 29.371N 063 51.527W at 022054 UTC Aug 2026.
+
+POSITION
+44-29.371N 063-51.527W
+
+---------------------------------------------------------------------------------------
+
+M 1072/2026
+060000 UTC AUG 2026
+MCTS VHF Services
+Halifax MCTS. VHF DF located at Sambro inoperative 061019 UTC Aug 2026.
+
+POSITION
+44-28.350N 063-37.217W
+
+---------------------------------------------------------------------------------------
+
+M 1077/2026
+070000 UTC AUG 2026
+Aids to Navigation
+Changed to 5Cd, Flash Q(9) 15s, White.
+
+POSITION 45-03.875N 066-43.783W
+
+---------------------------------------------------------------------------------------
+
+M 1078/2026
+070000 UTC AUG 2026
+Aids to Navigation
+Changed to 15Cd, Flash 0.5s Eclipse 3.5s, Green.
+
+POSITION 45-04.100N 066-44.050W
+
+---------------------------------------------------------------------------------------
+
+M 1079/2026
+070000 UTC AUG 2026
+Aids to Navigation
+Changed to 15Cd, Flash 0.5s, Eclipse 3.5s, Green.
+
+POSITION 45-03.983N 066-43.467W
+
+---------------------------------------------------------------------------------------
+
+M 1084/2026
+080000 UTC AUG 2026
+Aids to Navigation
+Off position in 43 40.50N 065 05.75W.
+
+POSITION 43-41.030N 065-05.765W
+POSITION
+43-40.500N 065-05.750W
+
+---------------------------------------------------------------------------------------
+
+M 1086/2026
+080000 UTC AUG 2026
+Aids to Navigation
+Name and identifiers of buoy changed from Beaver Harbour KE2, LL 5080.2, to Beaver
+Harbour West Cardinal Light Buoy KEW, LL 80.2.
+
+POSITION 45-03.875N 066-43.783W
+
+---------------------------------------------------------------------------------------
+
+M 1087/2026
+080000 UTC AUG 2026
+Aids to Navigation
+Name and identifiers of buoy changed from Wright Bluff KE3, LL 5080.3 to Wright Bluff
+Light Buoy KE7, LL 80.3.
+
+POSITION 45-04.100N 066-44.050W
+
+---------------------------------------------------------------------------------------
+
+M 1088/2026
+080000 UTC AUG 2026
+Aids to Navigation
+Name and identifiers of buoy changed from Calder Ledge KE5, LL 5080.5, to Calder Ledge
+Light Buoy KE5, LL 80.5.
+
+POSITION 45-03.983N 066-43.467W
+
+---------------------------------------------------------------------------------------
+
+M 1090/2026
+080000 UTC AUG 2026
+Aids to Navigation
+Unreliable.
+
+POSITION 46-46.002N 064-51.116W
+
+---------------------------------------------------------------------------------------
+
+M 1104/2026
+100000 UTC AUG 2026
+Aids to Navigation
+Missing.
+
+POSITION 43-42.138N 065-05.982W
+
+---------------------------------------------------------------------------------------
+
+M 1111/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Light Unlit.
+
+POSITION 45-56.340N 061-31.662W
+
+---------------------------------------------------------------------------------------
+
+M 1113/2026
+110000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 46 49.994N 064 54.702W.
+
+POSITION 46-50.014N 064-54.715W
+POSITION 46-49.994N 064-54.702W
+
+---------------------------------------------------------------------------------------
+
+M 1117/2026
+120000 UTC AUG 2026
+Aids to Navigation
+Unreliable.
+
+POSITION 45-38.521N 061-24.194W
+
+---------------------------------------------------------------------------------------
+
+M 1141/2026
+130000 UTC AUG 2026
+Marine Works
+Hydrographic survey operations will be conducted within the offshore Sable Island Bank
+survey area by R/V Patrick and William. Mariners are requested to navigation with caution
+when transiting the area and maintain a wide berth from survey operations.
+
+POSITION
+43-46.140N 061-16.560W
+POSITION 44-00.040N 061-16.540W
+POSITION 43-59.960N 060-52.850W
+POSITION 44-14.980N 060-52.880W
+POSITION 44-15.040N 060-42.880W
+POSITION 44-12.050N
+060-42.880W
+POSITION 44-12.050N 060-41.970W
+POSITION 44-07.010N 060-27.020W
+POSITION
+43-45.920N 060-27.120W
+
+---------------------------------------------------------------------------------------
+
+M 1143/2026
+130000 UTC AUG 2026
+Aids to Navigation
+Missing.
+
+POSITION 45-02.054N 066-56.012W
+
+---------------------------------------------------------------------------------------
+
+M 1144/2026
+130000 UTC AUG 2026
+Aids to Navigation
+Red spar buoy off position between Macs Island and McGraws Island, NB.
+
+AREA BOUNDED BY
+45-03.075N 066-55.400W, 45-02.897N 066-55.177W, 45-03.161N 066-54.446W, 45-03.238N
+066-54.888W
+
+---------------------------------------------------------------------------------------
+
+M 1145/2026
+130000 UTC AUG 2026
+Aids to Navigation
+Unlit.
+
+POSITION 44-55.942N 062-07.058W
+
+---------------------------------------------------------------------------------------
+
+M 1153/2026
+150000 UTC AUG 2026
+Aids to Navigation
+Off position.
+
+POSITION 43-38.450N 065-02.250W
+
+---------------------------------------------------------------------------------------
+
+M 1161/2026
+180000 UTC AUG 2026
+Aids to Navigation
+Light partially obstructed.
+
+POSITION 43-23.667N 066-00.850W
+
+---------------------------------------------------------------------------------------
+
+M 1165/2026
+180000 UTC AUG 2026
+Aids to Navigation
+Small red can buoy reported in position 46 35.221N 064 14.029W.
+
+POSITION 46-35.221N
+064-14.029W
+
+---------------------------------------------------------------------------------------
+
+M 1166/2026
+190000 UTC AUG 2026
+Aids to Navigation
+Permanently Removed.
+
+POSITION 44-30.023N 064-10.612W
+
+---------------------------------------------------------------------------------------
+
+M 1167/2026
+190000 UTC AUG 2026
+Aids to Navigation
+Established in 44 30.023N 064 10.612W. Buoy is has a white light, flash 0.2 seconds,
+eclipse 0.3 seconds.
+
+POSITION 44-30.023N 064-10.612W
+
+---------------------------------------------------------------------------------------
+
+M 1171/2026
+200000 UTC AUG 2026
+Aids to Navigation
+Light Unlit.
+
+POSITION 43-26.108N 065-39.221W
+
+---------------------------------------------------------------------------------------
+
+M 1183/2026
+210000 UTC AUG 2026
+Marine Works
+Wharf and breakwater construction underway during daylight hours at
+Sainte-Marie-Saint-Raphaël. Work area is indicated by 4 lit marker buoys.
+
+AREA BOUNDED
+BY 47-46.777N 064-33.823W, 47-46.772N 064-33.892W, 47-46.765N 064-33.856W, 47-46.767N
+064-33.816W
+
+---------------------------------------------------------------------------------------
+
+M 1184/2026
+210000 UTC AUG 2026
+Aids to Navigation
+Fog signal unreliable.
+
+POSITION 44-57.477N 066-54.003W
+
+---------------------------------------------------------------------------------------
+
+M 1187/2026
+220000 UTC AUG 2026
+Special Operations
+Hydrographic survey works underway at Belledune Port and Breakwall during daylight hours.
+30 foot Seatruck and 12 foot Zodiac on scene. Low wake and wide berth requested. Caution.
+POSITION 47-54.673N 065-51.450W
+
+---------------------------------------------------------------------------------------
+
+M 1188/2026
+220000 UTC AUG 2026
+Uncharted Rock
+Uncharted rock or shoal reported in 45 57.238N 066 03.445W at 221215 UTC Aug 2026.
+POSITION 45-57.238N 066-03.445W
+
+---------------------------------------------------------------------------------------
+
+M 1192/2026
+230000 UTC AUG 2026
+Aids to Navigation
+Submerged.
+
+POSITION 46-16.633N 064-29.083W
+
+---------------------------------------------------------------------------------------
+
+M 1197/2026
+250000 UTC AUG 2026
+Scientific Instruments Change
+Buoys have been deployed at the following locations for the purpose of a contract with
+Environment and Climate Change Canada, in relation to the Saint John Harbour dredge
+disposal area. Some of the buoys are semi-submerged at different points of the tidal
+cycle, as lines needed to be kept relatively short to avoid entanglement and loss of gear
+over the deployment period.
+Coordinates of buoys are: 
+ Dredge Disposal Area Buoys
+45 12.819N 066 01.163W
+45 12.864N 066 01.217W
+45 12.781N 066 01.323W
+45 12.860N 066 01.305W
+45 12.767N 066 01.221W
+45 12.648N 066 00.879W
+45 12.645N 066 00.912W
+45 12.644N 066 00.939W
+45 12.608N 066 01.014W
+45 12.605N 066 00.947W
+45 12.603N 066 00.973W
+45 12.607N 066 00.907W
+45 12.646N 066 00.962W
+45 12.607N 066 00.870W
+45 12.650N 066 00.984W
+45 12.603N 066 00.824W
+45 12.649N 066 00.796W
+45 12.605N 066 00.790W
+45 12.647N 066 00.832W
+45 12.649N 066 01.015W
+45 12.512N 066 00.880W
+45 12.511N 066 00.915W
+45 12.510N 066 00.954W
+45 12.513N 066 00.995W
+45 12.515N 066 00.829W
+45 12.515N 066 00.855W
+45 12.540N 066 00.889W
+45 12.544N 066 00.781W
+45 12.574N 066 00.988W
+45 12.541N 066 00.937W
+45 12.573N 066 00.884W
+45 12.541N 066 00.751W
+45 12.511N 066 01.033W
+45 12.541N 066 00.832W
+45 12.575N 066 00.943W
+45 12.574N 066 00.838W
+45 12.567N 066 00.909W
+45 12.579N 066 00.808W
+45 12.516N 066 00.801W
+45 12.537N 066 01.019W.
+
+POSITION 45-12.819N 066-01.163W
+POSITION 45-12.864N 066-01.217W
+POSITION 45-12.781N 066-01.323W
+POSITION 45-12.860N 066-01.305W
+POSITION 45-12.767N
+066-01.221W
+POSITION 45-12.648N 066-00.879W
+POSITION 45-12.645N 066-00.912W
+POSITION
+45-12.644N 066-00.939W
+POSITION 45-12.608N 066-01.014W
+POSITION 45-12.605N 066-00.947W
+POSITION 45-12.603N 066-00.973W
+POSITION 45-12.607N 066-00.907W
+POSITION 45-12.646N
+066-00.962W
+POSITION 45-12.607N 066-00.870W
+POSITION 45-12.650N 066-00.984W
+POSITION
+45-12.603N 066-00.824W
+POSITION 45-12.649N 066-00.796W
+POSITION 45-12.605N 066-00.790W
+POSITION 45-12.647N 066-00.832W
+POSITION 45-12.649N 066-01.015W
+POSITION 45-12.512N
+066-00.880W
+POSITION 45-12.511N 066-00.915W
+POSITION 45-12.510N 066-00.954W
+POSITION
+45-12.513N 066-00.995W
+POSITION 45-12.515N 066-00.829W
+POSITION 45-12.515N 066-00.855W
+POSITION 45-12.540N 066-00.889W
+POSITION 45-12.544N 066-00.781W
+POSITION 45-12.574N
+066-00.988W
+POSITION 45-12.541N 066-00.937W
+POSITION 45-12.573N 066-00.884W
+POSITION
+45-12.541N 066-00.751W
+POSITION 45-12.511N 066-01.033W
+POSITION 45-12.541N 066-00.832W
+POSITION 45-12.575N 066-00.943W
+POSITION 45-12.574N 066-00.838W
+POSITION 45-12.567N
+066-00.909W
+POSITION 45-12.579N 066-00.808W
+POSITION 45-12.516N 066-00.801W
+POSITION
+45-12.537N 066-01.019W
+
+---------------------------------------------------------------------------------------
+
+M 1198/2026
+250000 UTC AUG 2026
+Scientific Instruments Change
+Buoys have been deployed at the following locations for the purpose of a contract with
+Environment and Climate Change Canada, in relation to the Saint John Harbour dredge
+disposal area. Some of the buoys are semi-submerged at different points of the tidal
+cycle, as lines needed to be kept relatively short to avoid entanglement and loss of gear
+over the deployment period.
+Coordinates of buoys are: 
+ Anthony’s Cove Buoys
+45 14.130N 066 00.539W
+45 14.204N 066 00.710W
+45 14.079N 066 00.586W
+45 14.105N 066 00.539W
+45 14.083N 066 00.524W
+45 14.128N 066 00.556W
+45 14.218N 066 00.647W
+45 14.148N 066 00.575W
+45 14.232N 066 00.590W
+45 14.197N 066 00.616W
+45 14.178N 066 00.548W
+45 14.164N 066 00.537W
+45 14.208N 066 00.568W
+45 14.169N 066 00.596W
+45 14.119N 066 00.505W
+45 14.101N 066 00.498W
+45 14.302N 066 00.490W
+45 14.151N 066 00.525W
+45 14.192N 066 00.559W
+45 14.136N 066 00.511W.
+
+POSITION 45-14.130N 066-00.539W
+POSITION 45-14.204N 066-00.710W
+POSITION 45-14.079N 066-00.586W
+POSITION 45-14.105N 066-00.539W
+POSITION 45-14.083N
+066-00.524W
+POSITION 45-14.128N 066-00.556W
+POSITION 45-14.218N 066-00.647W
+POSITION
+45-14.148N 066-00.575W
+POSITION 45-14.232N 066-00.590W
+POSITION 45-14.197N 066-00.616W
+POSITION 45-14.178N 066-00.548W
+POSITION 45-14.164N 066-00.537W
+POSITION 45-14.208N
+066-00.568W
+POSITION 45-14.169N 066-00.596W
+POSITION 45-14.119N 066-00.505W
+POSITION
+45-14.101N 066-00.498W
+POSITION 45-14.302N 066-00.490W
+POSITION 45-14.151N 066-00.525W
+POSITION 45-14.192N 066-00.559W
+POSITION 45-14.136N 066-00.511W
+
+---------------------------------------------------------------------------------------
+
+M 1199/2026
+250000 UTC AUG 2026
+Aids to Navigation
+Established in 46 00.291N 060 57.891W. Buoy is equipped with a red lantern, flash
+characteristics: Flash 0.3 seconds, Eclipse 0.7 seconds.
+
+POSITION 46-00.291N 060-57.891W
+
+---------------------------------------------------------------------------------------
+
+M 1200/2026
+250000 UTC AUG 2026
+Aids to Navigation
+Established in 46 17.475N 060 24.867W. Buoy is equipped with a green lantern, flash
+characteristics: Flash 0.3 seconds, Eclipse 0.7 seconds.
+
+POSITION 46-17.475N 060-24.867W
+
+---------------------------------------------------------------------------------------
+
+M 1201/2026
+250000 UTC AUG 2026
+Aids to Navigation
+Established in 46 17.691N 060 24.505W. Buoy is equipped with a green lantern, flash
+characteristics: Flash 0.5 seconds, Eclipse 3.5 seconds.
+
+POSITION 46-17.691N 060-24.505W
+
+---------------------------------------------------------------------------------------
+
+M 1202/2026
+250000 UTC AUG 2026
+Scientific Instruments Change
+Buoys have been deployed at the following locations for the purpose of a contract with
+Environment and Climate Change Canada, in relation to the Saint John Harbour dredge
+disposal area. Some of the buoys are semi-submerged at different points of the tidal
+cycle, as lines needed to be kept relatively short to avoid entanglement and loss of gear
+over the deployment period.
+Coordinates of buoys are: 
+Mispec Point Buoys
+45 12.361N 065 55.930W
+45 12.374N 065 55.871W
+45 12.187N 065 55.800W
+45 12.309N 065 55.845W
+45 12.393N 065 55.886W
+45 12.271N 065 55.906W
+45 12.233N 065 55.882W
+45 12.215N 065 55.874W
+45 12.334N 065 55.855W
+45 12.387N 065 55.934W
+45 12.169N 065 55.848W
+45 12.262N 065 55.826W
+45 12.219N 065 55.806W
+45 12.236N 065 55.817W
+45 12.312N 065 55.920W
+45 12.290N 065 55.829W
+45 12.293N 065 55.910W
+45 12.335N 065 55.927W
+45 12.354N 065 55.867W
+45 12.253N 065 55.894W.
+
+POSITION 45-12.361N 065-55.930W
+POSITION 45-12.374N 065-55.871W
+POSITION 45-12.187N 065-55.800W
+POSITION 45-12.309N 065-55.845W
+POSITION 45-12.393N
+065-55.886W
+POSITION 45-12.271N 065-55.906W
+POSITION 45-12.233N 065-55.882W
+POSITION
+45-12.215N 065-55.874W
+POSITION 45-12.334N 065-55.855W
+POSITION 45-12.387N 065-55.934W
+POSITION 45-12.169N 065-55.848W
+POSITION 45-12.262N 065-55.826W
+POSITION 45-12.219N
+065-55.806W
+POSITION 45-12.236N 065-55.817W
+POSITION 45-12.312N 065-55.920W
+POSITION
+45-12.290N 065-55.829W
+POSITION 45-12.293N 065-55.910W
+POSITION 45-12.335N 065-55.927W
+POSITION 45-12.354N 065-55.867W
+POSITION 45-12.253N 065-55.894W
+
+---------------------------------------------------------------------------------------
+
+M 1203/2026
+250000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 46 13.868N 060 29.569W.
+
+POSITION 46-13.837N 060-29.578W
+POSITION 46-13.868N 060-29.569W
+
+---------------------------------------------------------------------------------------
+
+M 1207/2026
+260000 UTC AUG 2026
+Aids to Navigation
+Buoys in Lower Rose Bay, NS have been reported as unreliable.
+
+AREA BOUNDED BY 44-17.521N
+064-17.977W, 44-17.016N 064-16.256W, 44-17.837N 064-14.484W, 44-17.827N 064-18.271W
+
+---------------------------------------------------------------------------------------
+
+M 1208/2026
+260000 UTC AUG 2026
+Aids to Navigation
+Submerged.
+
+POSITION 44-28.630N 063-46.161W
+
+---------------------------------------------------------------------------------------
+
+M 1209/2026
+260000 UTC AUG 2026
+Aids to Navigation
+Missing.
+
+POSITION 44-28.188N 063-45.728W
+
+---------------------------------------------------------------------------------------
+
+M 1210/2026
+270000 UTC AUG 2026
+Scientific Instruments Change
+Vessel LEEWAY ODYSSEY is currently conducting survey operations in the Emerald Bank.
+Caution.
+
+AREA BOUNDED BY 43-59.750N 063-30.100W, 43-34.083N 063-29.900W, 43-35.050N
+062-28.767W, 43-59.617N 062-30.200W
+
+---------------------------------------------------------------------------------------
+
+M 1211/2026
+270000 UTC AUG 2026
+Scientific Instruments Change
+Wave Glider C34167NS is transiting from 44 54.628N 060 33.037W along the following
+coordinates in sequence:
+44 54.628N 060 33.037W
+ 45 10.830N 059 43.295W
+ 45 28.440N 058 43.140W
+Wave glider C34164NS is copper in colour with a mast extending 1.2 metre above the
+surface of the water, supporting a solid white light and orange visibility flag and is
+equipped with a non-transmitting AIS receiver. It is remotely operated, moving at a speed
+of approximately 1.2 knots and measuring 3.05 metres by 0.81 metres.
+For further information, authorities and mariners may contact Sue L’Orsa at 250-877-8052,
+Tyler Byrne 902-719-7078, or Liquid Robotics Wave Glider Operations Centre at +1
+888-574-4574 or 408-636-4205.
+
+ALONG LINE JOINING 44-54.628N 060-33.037W, 45-10.830N
+059-43.295W, 45-28.440N 058-43.140W
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

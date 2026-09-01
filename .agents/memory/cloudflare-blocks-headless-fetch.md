@@ -9,8 +9,8 @@ Fetching a Replit-hosted page's public URL (e.g. `https://<repl>.replit.dev/...`
 
 **How to apply:** When asked to clone/import a design from a URL that is the user's own Replit project, first check whether the source lives in the current workspace (e.g. a root `index.html` or an already-registered artifact) and use that file directly instead of trying to re-fetch it externally. Only fall back to reconstructing from a blocked fetch response if no local copy exists, and flag to the user that the visual result may be approximate in that case.
 
-When synchronizing imported artifacts through a GitHub connector, a saved Cloudflare block page can also be rejected by the connector proxy with HTTP 403 while ordinary files succeed. Treat that file as a transfer-specific failure rather than changing its contents or retrying the whole sync blindly.
+When synchronizing imported artifacts through a GitHub connector, a saved Cloudflare block page can also be rejected by the connector proxy with HTTP 403 while ordinary files succeed. GitHub GETs may continue working while repeated Git Data write requests are blocked, and an isolated probe can pass before the burst is blocked. Treat this as a transfer-specific failure rather than changing file contents or retrying the whole sync blindly.
 
 **Why:** The proxy's security layer can inspect or reject the same block-page payload that was captured during a headless fetch, even though the GitHub API request and authentication are otherwise valid.
 
-**How to apply:** Continue the sync for unaffected files, report the exact blocked paths, and use a separate approved transfer path for those files instead of silently substituting or deleting them.
+**How to apply:** Continue the sync for unaffected files only when the connector permits it, report the exact blocked paths, and use a separate approved transfer path for blocked writes instead of silently substituting or deleting them.

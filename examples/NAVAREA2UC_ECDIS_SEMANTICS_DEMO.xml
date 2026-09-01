@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<userchart name="NAVAREA DEMO IMPORT" description="" version="1.3">
+<!-- Areas: closed zones with boundaries -->
+<areas>
+<area name="AREA - RESTRICTED DANGER ZONE" description="AREA | restricted zone | DANGER=YES">
+<position>
+<vertex id="1" latitude="45.820000" longitude="31.150000"/>
+<vertex id="2" latitude="45.820000" longitude="31.380000"/>
+<vertex id="3" latitude="45.980000" longitude="31.380000"/>
+<vertex id="4" latitude="45.980000" longitude="31.150000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+<area name="AREA - SPECIAL SURVEY ZONE" description="AREA | survey zone">
+<position>
+<vertex id="1" latitude="45.660000" longitude="31.450000"/>
+<vertex id="2" latitude="45.660000" longitude="31.720000"/>
+<vertex id="3" latitude="45.760000" longitude="31.720000"/>
+<vertex id="4" latitude="45.760000" longitude="31.450000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="NINFO" lineWidth="2" density="25"/>
+</area>
+<area name="AREA - FIRING EXERCISE DANGER ZONE" description="AREA | firing exercise | DANGER=YES">
+<position>
+<vertex id="1" latitude="46.020000" longitude="31.160000"/>
+<vertex id="2" latitude="46.020000" longitude="31.400000"/>
+<vertex id="3" latitude="46.180000" longitude="31.400000"/>
+<vertex id="4" latitude="46.180000" longitude="31.160000"/>
+</position>
+<attribute linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</area>
+</areas>
+<!-- Lines: paths between points -->
+<lines>
+<line name="LINE - RECOMMENDED ROUTE" description="LINE | route">
+<position>
+<vertex id="1" latitude="45.700000" longitude="30.950000"/>
+<vertex id="2" latitude="45.820000" longitude="31.120000"/>
+<vertex id="3" latitude="45.960000" longitude="31.340000"/>
+<vertex id="4" latitude="46.100000" longitude="31.560000"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="CHYLW" lineWidth="3"/>
+</line>
+<line name="LINE - SURVEY TRACK" description="LINE | survey">
+<position>
+<vertex id="1" latitude="45.740000" longitude="31.700000"/>
+<vertex id="2" latitude="45.860000" longitude="31.540000"/>
+<vertex id="3" latitude="45.980000" longitude="31.360000"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="NINFO" lineWidth="3"/>
+</line>
+<line name="LINE - ICEBERG TRACKLINE" description="LINE | iceberg trackline | DANGER=YES">
+<position>
+<vertex id="1" latitude="46.180000" longitude="31.000000"/>
+<vertex id="2" latitude="46.100000" longitude="31.200000"/>
+<vertex id="3" latitude="46.020000" longitude="31.400000"/>
+<vertex id="4" latitude="45.940000" longitude="31.620000"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="CHRED" lineWidth="3"/>
+</line>
+<line name="LINE - LEADING LIGHTS" description="LINE | leading lights">
+<position>
+<vertex id="1" latitude="45.720000" longitude="31.740000"/>
+<vertex id="2" latitude="45.820000" longitude="31.740000"/>
+</position>
+<attribute lineType="2" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0" hasNotes="0" rangeOfNotes="1.000000"/>
+<display S52colorcode="CHYLW" lineWidth="3"/>
+</line>
+</lines>
+<!-- Circles: radius around one point -->
+<circles>
+<circle name="CIRCLE - EXPLOSIVES DUMPING GROUND" description="CIRCLE | explosives area | radius=3 NM | DANGER=YES">
+<position>
+<vertex id="1" latitude="46.000000" longitude="31.700000"/>
+</position>
+<attribute range="3.000000" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0" hasNotes="0" notesType="0"/>
+<display S52colorcode="CHRED" lineWidth="2" density="25"/>
+</circle>
+</circles>
+<!-- Point objects: one position -->
+<labels>
+<label name="SPECIAL MARK BUOY - YELLOW" description="POINT | special mark buoy | yellow class | DANGER=NO">
+<position>
+<vertex id="1" latitude="45.880000" longitude="31.300000"/>
+</position>
+<attribute labelStyle="4" labelText="SPECIAL MARK BUOY - YELLOW" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="ISOLATED DANGER BUOY" description="POINT | isolated danger buoy | DANGER=YES">
+<position>
+<vertex id="1" latitude="45.920000" longitude="31.380000"/>
+</position>
+<attribute labelStyle="4" labelText="ISOLATED DANGER BUOY" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="DEGRADED BUOY" description="POINT | degraded buoy | STATUS=DEGRADED">
+<position>
+<vertex id="1" latitude="45.840000" longitude="31.240000"/>
+</position>
+<attribute labelStyle="4" labelText="DEGRADED BUOY" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+<label name="OFFSHORE PLATFORM" description="POINT | offshore platform">
+<position>
+<vertex id="1" latitude="45.780000" longitude="31.680000"/>
+</position>
+<attribute labelStyle="5" labelText="OFFSHORE PLATFORM" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="RESBL"/>
+</label>
+<label name="WRECK - DANGER POINT" description="POINT | wreck | DANGER=YES">
+<position>
+<vertex id="1" latitude="45.960000" longitude="31.420000"/>
+</position>
+<attribute labelStyle="3" labelText="WRECK - DANGER POINT" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="SECURITY INCIDENT" description="POINT | security incident | DANGER=YES">
+<position>
+<vertex id="1" latitude="46.040000" longitude="31.000000"/>
+</position>
+<attribute labelStyle="5" labelText="SECURITY INCIDENT" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="ICEBERG TRACKLINE" description="POINT | iceberg trackline marker | DANGER=YES">
+<position>
+<vertex id="1" latitude="46.020000" longitude="31.400000"/>
+</position>
+<attribute labelStyle="6" labelText="ICEBERG TRACKLINE" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="LIGHTHOUSE" description="POINT | lighthouse | fixed light">
+<position>
+<vertex id="1" latitude="45.720000" longitude="31.740000"/>
+</position>
+<attribute labelStyle="2" labelText="LIGHTHOUSE" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="LEADING LIGHT - FRONT" description="POINT | leading light | front">
+<position>
+<vertex id="1" latitude="45.760000" longitude="31.740000"/>
+</position>
+<attribute labelStyle="2" labelText="LEADING LIGHT - FRONT" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="LEADING LIGHT - REAR" description="POINT | leading light | rear">
+<position>
+<vertex id="1" latitude="45.820000" longitude="31.740000"/>
+</position>
+<attribute labelStyle="2" labelText="LEADING LIGHT - REAR" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="CHYLW"/>
+</label>
+<label name="DRIFTING OBJECTS - DANGER" description="POINT | drifting objects | DANGER=YES">
+<position>
+<vertex id="1" latitude="45.980000" longitude="31.720000"/>
+</position>
+<attribute labelStyle="3" labelText="DRIFTING OBJECTS - DANGER" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="FIRING EXERCISE" description="POINT | firing exercise marker | DANGER=YES">
+<position>
+<vertex id="1" latitude="46.100000" longitude="31.280000"/>
+</position>
+<attribute labelStyle="6" labelText="FIRING EXERCISE" linkedDocument=""/>
+<type checkDanger="1" displayRadar="0"/>
+<display S52colorcode="CHRED"/>
+</label>
+<label name="ECDIS SEMANTICS DEMO" description="PROOF SCENE | four geometry groups">
+<position>
+<vertex id="1" latitude="45.680000" longitude="31.780000"/>
+</position>
+<attribute labelStyle="2" labelText="ECDIS SEMANTICS DEMO" linkedDocument=""/>
+<type checkDanger="0" displayRadar="0"/>
+<display S52colorcode="NINFO"/>
+</label>
+</labels>
+</userchart>

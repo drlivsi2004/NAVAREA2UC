@@ -26,6 +26,15 @@ MAX_VERTICES_PER_OBJECT = None
 MAX_VERTICES_PER_MESSAGE = None
 STYLE_SECURITY = 5
 
+# Source notices occasionally spell buoy as "BOUY".  Keep the correction
+# semantic-only: the original source text remains untouched in descriptions
+# and audit records.
+BUOY_WORD = r"(?:BUOYS?|BOUYS?)"
+BUOY_TEXT_RE = re.compile(
+    rf"\b(?:{BUOY_WORD}|LIGHT{BUOY_WORD})\b",
+    re.IGNORECASE,
+)
+
 DEBUG_VALUES = {"1", "true", "yes", "on"}
 DEBUG = (
     os.getenv("NAVAREA2UC_DEBUG", "").strip().lower() in DEBUG_VALUES
@@ -318,7 +327,7 @@ def area_vertices_for_xml(points):
 
 def extract_sublabels(block):
     markers = list(
-        re.finditer(r"(?:^|\n)\s*(?:\(([A-Z]{1,4})\)|([A-Z]{1,4})\.)\s*", block)
+        re.finditer(r"(?:^|\n)\s*(?:\(([A-Z])\)|([A-Z])\.)\s*", block)
     )
     if not markers:
         return []
@@ -529,6 +538,221 @@ def has_self_intersection(coords):
     return False
 
 
+def _line_crossing_segments(coords):
+    """Return crossing segment pairs for an open polyline."""
+
+    crossings = []
+    segment_count = len(coords) - 1
+    for i in range(segment_count):
+        for j in range(i + 2, segment_count):
+            if segments_intersect(
+                coords[i], coords[i + 1], coords[j], coords[j + 1]
+            ):
+                crossings.append([i, j])
+    return crossings
+
+
+def _line_unique_coords(coords):
+    unique = []
+    source_indices = []
+    index_by_coord = {}
+    for index, coord in enumerate(coords):
+        if coord not in index_by_coord:
+            index_by_coord[coord] = len(unique)
+            unique.append(coord)
+            source_indices.append([index])
+        else:
+            source_indices[index_by_coord[coord]].append(index)
+    return unique, source_indices
+
+
+def _line_mst_edges(coords):
+    """Build a distance MST used only to detect disconnected tracks."""
+
+    if len(coords) < 2:
+        return []
+    connected = {0}
+    edges = []
+    while len(connected) < len(coords):
+        best = None
+        for start in connected:
+            for end in range(len(coords)):
+                if end in connected:
+                    continue
+                distance = haversine_distance_nm(coords[start], coords[end])
+                candidate = (distance, start, end)
+                if best is None or candidate < best:
+                    best = candidate
+        distance, start, end = best
+        connected.add(end)
+        edges.append((distance, start, end))
+    return edges
+
+
+def _line_track_components(coords):
+    """Split clearly separated vertex clusters without joining them."""
+
+    unique_coords, _ = _line_unique_coords(coords)
+    if len(unique_coords) < 2:
+        return [list(range(len(unique_coords)))] if unique_coords else []
+
+    mst_edges = _line_mst_edges(unique_coords)
+    sorted_distances = sorted(edge[0] for edge in mst_edges)
+    median_distance = sorted_distances[len(sorted_distances) // 2]
+    separation_limit = max(250.0, median_distance * 3.0)
+
+    parent = list(range(len(unique_coords)))
+
+    def find(index):
+        while parent[index] != index:
+            parent[index] = parent[parent[index]]
+            index = parent[index]
+        return index
+
+    def union(left, right):
+        left_root = find(left)
+        right_root = find(right)
+        if left_root != right_root:
+            parent[right_root] = left_root
+
+    for distance, start, end in mst_edges:
+        if distance <= separation_limit:
+            union(start, end)
+
+    components = {}
+    for index in range(len(unique_coords)):
+        components.setdefault(find(index), []).append(index)
+    return list(components.values())
+
+
+def _line_path_distance(coords, order):
+    return sum(
+        haversine_distance_nm(coords[start], coords[end])
+        for start, end in zip(order, order[1:])
+    )
+
+
+def _line_best_order(coords, preferred_start=None, preferred_end=None):
+    """Find a short, non-crossing open path using all supplied vertices."""
+
+    unique_coords, _ = _line_unique_coords(coords)
+    if len(unique_coords) < 2:
+        return list(range(len(unique_coords))), 0.0, False
+
+    candidates = []
+    for start in range(len(unique_coords)):
+        path = [start]
+        remaining = set(range(len(unique_coords))) - {start}
+        while remaining:
+            next_index = min(
+                remaining,
+                key=lambda index: (
+                    haversine_distance_nm(unique_coords[path[-1]], unique_coords[index]),
+                    index,
+                ),
+            )
+            path.append(next_index)
+            remaining.remove(next_index)
+        candidates.append(path)
+
+    valid_candidates = [
+        path
+        for path in candidates
+        if not _line_crossing_segments([unique_coords[index] for index in path])
+    ]
+    if not valid_candidates:
+        return list(range(len(unique_coords))), None, False
+
+    def order_key(path):
+        endpoint_score = 0.0
+        if preferred_start is not None:
+            endpoint_score += haversine_distance_nm(
+                unique_coords[path[0]], preferred_start
+            )
+        if preferred_end is not None:
+            endpoint_score += haversine_distance_nm(
+                unique_coords[path[-1]], preferred_end
+            )
+        return (
+            _line_path_distance(unique_coords, path),
+            endpoint_score,
+            path,
+        )
+
+    best_order = min(valid_candidates, key=order_key)
+    return (
+        best_order,
+        _line_path_distance(unique_coords, best_order),
+        best_order != list(range(len(unique_coords))),
+    )
+
+
+def line_traversal_review(coords):
+    """Report suspicious source ordering without mutating source coordinates."""
+
+    coords = list(coords)
+    if len(coords) < 3:
+        return []
+
+    issues = []
+    duplicate_indices = []
+    for i, coord in enumerate(coords):
+        for j in range(i):
+            if coords[j] == coord and i - j > 1:
+                duplicate_indices.append([j, i])
+    if duplicate_indices:
+        issues.append(
+            {
+                "kind": "REPEATED_NON_ADJACENT_VERTEX",
+                "vertex_pairs": duplicate_indices,
+            }
+        )
+
+    crossing_segments = _line_crossing_segments(coords)
+    if crossing_segments:
+        issues.append(
+            {
+                "kind": "NON_ADJACENT_SEGMENT_CROSSING",
+                "segment_pairs": crossing_segments,
+            }
+        )
+
+    leg_distances = [
+        haversine_distance_nm(start, end)
+        for start, end in zip(coords, coords[1:])
+    ]
+    nearest_distances = []
+    for i, coord in enumerate(coords):
+        other_distances = [
+            haversine_distance_nm(coord, other)
+            for j, other in enumerate(coords)
+            if i != j
+        ]
+        nearest_distances.append(min(other_distances))
+    nearest_sorted = sorted(nearest_distances)
+    nearest_median = nearest_sorted[len(nearest_sorted) // 2]
+    jump_limit_nm = max(250.0, nearest_median * 2.5)
+    suspicious_jumps = [
+        {
+            "segment": i,
+            "distance_nm": round(distance, 2),
+            "review_limit_nm": round(jump_limit_nm, 2),
+        }
+        for i, distance in enumerate(leg_distances)
+        if distance > jump_limit_nm
+    ]
+    if suspicious_jumps:
+        issues.append(
+            {
+                "kind": "SUSPICIOUS_LONG_LEG",
+                "legs": suspicious_jumps,
+                "nearest_vertex_median_nm": round(nearest_median, 2),
+            }
+        )
+
+    return issues
+
+
 def sort_area_vertices(coords):
     c_lat, c_lon = centroid(coords)
     return sorted(coords, key=lambda p: math.atan2(p[0] - c_lat, p[1] - c_lon))
@@ -585,6 +809,8 @@ def detect_color(block):
         ]
     ):
         return "NINFO"
+    if "MINING/AMPLING/EXPLORATION VESSELS" in upper:
+        return "RESBL"
     if any(
         x in upper
         for x in [
@@ -745,7 +971,6 @@ def get_point_style(block):
     if any(
         x in upper
         for x in [
-            "BUOY",
             "LIGHT",
             "SPECIAL MARK",
             "SPECIAL-MARK",
@@ -753,7 +978,7 @@ def get_point_style(block):
             "MOORING BUOY",
             "MOORING BUOYS",
         ]
-    ):
+    ) or BUOY_TEXT_RE.search(upper):
         return 2
     return detect_style(block)
 
@@ -764,8 +989,6 @@ def is_multi_point_navarea(block):
         "MOBILE OFFSHORE DRILLING UNITS",
         "LIGHTS UNLIT",
         "LIGHT UNLIT",
-        "BUOY REMOVED",
-        "BUOYS REMOVED",
         "DEPTHS REPORTED",
         "MOORINGS DEPLOYED",
         "OCEAN BOTTOM MOORINGS",
@@ -774,7 +997,9 @@ def is_multi_point_navarea(block):
         "REMOVAL OF SUBMERGED LINES",
         "CHANNEL MARKING BUOY",
     ]
-    if any(x in upper for x in triggers):
+    if any(x in upper for x in triggers) or re.search(
+        rf"\b{BUOY_WORD}\s+REMOVED\b", upper
+    ):
         return True
 
     platform_count = len(re.findall(r"\bPLATAFORMA\b", upper))
@@ -783,7 +1008,7 @@ def is_multi_point_navarea(block):
 
 
 def is_buoy_group(text):
-    return "BUOY GROUP" in text.upper()
+    return re.search(rf"\b{BUOY_WORD}\s+GROUP\b", text, re.IGNORECASE) is not None
 
 
 def detect_arc_area(block):
@@ -876,10 +1101,14 @@ def detect_security_incident(text):
 
 
 def parse_structured_sections(block):
-    if not re.search(r"(?:^|\n)\s*\d+\.\s*", block):
+    # A decimal coordinate such as ``38.21 S`` is not a numbered section.
+    # Require whitespace after the section delimiter so wrapped coordinates
+    # cannot split a section and silently lose its preceding positions.
+    section_marker = r"(?:^|\n)\s*\d+\.(?=\s|$)\s*"
+    if not re.search(section_marker, block):
         return None
 
-    parts = re.split(r"\n\s*(\d+)\.\s*", block)
+    parts = re.split(r"\n\s*(\d+)\.(?=\s|$)\s*", block)
     sections = []
     for i in range(1, len(parts), 2):
         num = parts[i]
@@ -889,15 +1118,10 @@ def parse_structured_sections(block):
 
         lines = text.split("\n")
         title = lines[0].strip()
-        desc_lines = []
-        for ln in lines:
-            if re.search(r"\d{1,3}[- ]\d+[NS]", ln):
-                break
-            desc_lines.append(ln)
-
-        description = " ".join(desc_lines).strip()
-        if not description:
-            description = title
+        # The complete section is the relevant object context. Coordinate
+        # vertices are removed only by the XML description sanitizer; keeping
+        # the rest here preserves status, caution, and post-coordinate prose.
+        description = " ".join(text.split()).strip() or title
 
         sections.append(
             {
@@ -1092,7 +1316,7 @@ def process_riglist_entry(entry_text, label_text, container, message):
         "color": "RESBL",
         "checkDanger": 0,
         "text": label_text,
-        "description": f"{rig_name} | {coord_text}",
+        "description": compose_description(entry_text),
         "coord": coords_found[0],
     }
     container["labels"].append(obj)
@@ -1302,6 +1526,7 @@ def create_message(msg_id, metadata=None):
         "circles": [],
         "labels": [],
         "metadata": metadata or {},
+        "geometry_audit": [],
     }
 
 
@@ -1349,31 +1574,121 @@ def create_label(style, color, check_danger, text, description, coord):
 
 
 # -------------------- OBJECT INSERTION HELPERS --------------------
+def _area_validation_vertices(coords):
+    """Return the open ring used by the geometry validator."""
+    if len(coords) >= 2 and coords[0] == coords[-1]:
+        return coords[:-1]
+    return list(coords)
+
+
+def _area_reference_fallback(area_obj, raw_coords, container, message):
+    """Keep failed Area coordinates as unconnected review/reference points."""
+    reference_coords = list(dict.fromkeys(_area_validation_vertices(raw_coords)))
+    description = (
+        f"{area_obj.get('description', '')}\n"
+        "AREA GEOMETRY REQUIRES REVIEW; SOURCE VERTEX REFERENCE ONLY."
+    ).strip()
+    for coord in reference_coords:
+        add_label(
+            create_label(
+                style=2,
+                color=area_obj.get("color", "NINFO"),
+                check_danger=area_obj.get("checkDanger", 0),
+                text=area_obj.get("name", message.get("id", "AREA REVIEW")),
+                description=description,
+                coord=coord,
+            ),
+            container,
+            message,
+        )
+
+
 def add_area(area_obj, container, message):
     coords = normalize_area_vertices(area_obj.get("coords", []))
     area_obj["coords"] = coords
+    raw_coords = list(coords)
 
     validation_code = None
-    validation_coords = (
-        coords[:-1] if coords and coords[0] == coords[-1] else coords
-    )
+    repair_method = None
+    validation_coords = _area_validation_vertices(coords)
+    source_unique_vertices = set(validation_coords)
     if len(set(validation_coords)) < 3:
         validation_code = "GEOMETRY_TOO_FEW_VERTICES"
     else:
         if has_self_intersection(validation_coords):
-            validation_code = "GEOMETRY_SELF_INTERSECTION"
+            # Sort only genuine Areas and only after the published/source order
+            # has failed validation.  The source order remains in raw_coords.
+            candidate_input = list(dict.fromkeys(validation_coords))
+            fixed_coords = normalize_area_vertices(
+                ensure_clockwise(sort_area_vertices(candidate_input))
+            )
+            fixed_validation_coords = _area_validation_vertices(fixed_coords)
+            candidate_unique_vertices = set(fixed_validation_coords)
+            if (
+                len(candidate_unique_vertices) >= 3
+                and len(fixed_validation_coords) == len(candidate_unique_vertices)
+                and candidate_unique_vertices == source_unique_vertices
+                and not has_self_intersection(fixed_validation_coords)
+            ):
+                area_obj["coords"] = fixed_coords
+                coords = fixed_coords
+                validation_coords = fixed_validation_coords
+                repair_method = "centroid_angle"
+            else:
+                validation_code = "GEOMETRY_SELF_INTERSECTION"
 
     if validation_code:
         diagnostics = message.setdefault("diagnostics", [])
-        diagnostics.append(
+        diagnostic = {
+            "code": validation_code,
+            "object_type": "area",
+            "message_id": message.get("id", "unknown"),
+            "fallback": "REFERENCE_POINTS",
+            "source_vertex_count": len(source_unique_vertices),
+        }
+        diagnostics.append(diagnostic)
+        message["geometry_rejected"] = True
+        _area_reference_fallback(area_obj, raw_coords, container, message)
+        message.setdefault("geometry_audit", []).append(
             {
-                "code": validation_code,
+                "event": "area_geometry_review_fallback",
                 "object_type": "area",
                 "message_id": message.get("id", "unknown"),
+                "reason": validation_code,
+                "raw_coords": raw_coords,
+                "reference_vertex_count": len(source_unique_vertices),
             }
         )
-        message["geometry_rejected"] = True
         return False
+
+    if repair_method:
+        area_obj["geometry_repaired"] = True
+        area_obj["repair_method"] = repair_method
+        area_obj["raw_coords"] = raw_coords
+        diagnostics = message.setdefault("diagnostics", [])
+        diagnostics.append(
+            {
+                "code": "GEOMETRY_ORDER_REPAIRED",
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+                "method": repair_method,
+                "source_vertex_count": len(validation_coords),
+                "output_vertex_count": len(
+                    coords[:-1] if coords and coords[0] == coords[-1] else coords
+                ),
+                "raw_coords": raw_coords,
+            }
+        )
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "area_geometry_repaired",
+                "object_type": "area",
+                "message_id": message.get("id", "unknown"),
+                "method": repair_method,
+                "raw_coords": raw_coords,
+                "repaired_coords": list(coords),
+            }
+        )
 
     container["areas"].append(area_obj)
     message["areas"].append(area_obj.copy())
@@ -1381,8 +1696,191 @@ def add_area(area_obj, container, message):
 
 
 def add_line(line_obj, container, message):
+    coords = list(line_obj.get("coords", []))
+    review_issues = line_traversal_review(coords)
+    raw_coords = list(coords)
+    unique_coords, _ = _line_unique_coords(raw_coords)
+    components = _line_track_components(raw_coords)
+    if len(components) > 1:
+        emitted_lines = []
+        reference_coords = []
+        for component_index, component in enumerate(components, start=1):
+            component_set = set(component)
+            component_coords = [
+                coord
+                for index, coord in enumerate(unique_coords)
+                if index in component_set
+            ]
+            component_source_order = [
+                index
+                for index, coord in enumerate(raw_coords)
+                if unique_coords.index(coord) in component_set
+            ]
+            if len(component_coords) < 2:
+                reference_coords.extend(component_coords)
+                continue
+
+            component_raw_coords = [
+                coord
+                for coord in raw_coords
+                if unique_coords.index(coord) in component_set
+            ]
+            candidate_order, _, _ = _line_best_order(
+                component_coords,
+                preferred_start=component_raw_coords[0],
+                preferred_end=component_raw_coords[-1],
+            )
+            selected_coords = [
+                component_coords[index] for index in candidate_order
+            ]
+            part = line_obj.copy()
+            part["name"] = f"{line_obj.get('name', 'LINE')} TRACK {component_index}"
+            part["coords"] = selected_coords
+            part["raw_coords"] = raw_coords
+            part["source_vertex_indices"] = component_source_order
+            part["geometry_order_status"] = "TRACK_SPLIT"
+            part["geometry_order_review"] = {
+                "source_order_preserved": False,
+                "component_index": component_index,
+                "component_count": len(components),
+            }
+            container["lines"].append(part)
+            message["lines"].append(part.copy())
+            emitted_lines.append(part)
+
+        if reference_coords:
+            _line_reference_fallback(
+                line_obj, reference_coords, container, message
+            )
+        message.setdefault("diagnostics", []).append(
+            {
+                "code": "GEOMETRY_LINE_TRACKS_SPLIT",
+                "object_type": "line",
+                "message_id": message.get("id", "unknown"),
+                "source_order_preserved": False,
+                "raw_coords": raw_coords,
+                "component_count": len(components),
+                "component_sizes": [
+                    len(component) for component in components
+                ],
+                "issues": review_issues,
+            }
+        )
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "line_tracks_split",
+                "object_type": "line",
+                "message_id": message.get("id", "unknown"),
+                "raw_coords": raw_coords,
+                "component_count": len(components),
+                "component_sizes": [
+                    len(component) for component in components
+                ],
+                "source_order_preserved": False,
+            }
+        )
+        return emitted_lines
+
+    if not review_issues:
+        container["lines"].append(line_obj)
+        message["lines"].append(line_obj.copy())
+        return [line_obj]
+
+    candidate_order, candidate_distance, candidate_changed = _line_best_order(
+        unique_coords,
+        preferred_start=raw_coords[0],
+        preferred_end=raw_coords[-1],
+    )
+    raw_order = []
+    seen = set()
+    for coord in raw_coords:
+        index = unique_coords.index(coord)
+        if index not in seen:
+            raw_order.append(index)
+            seen.add(index)
+    raw_distance = _line_path_distance(unique_coords, raw_order)
+    candidate_coords = [unique_coords[index] for index in candidate_order]
+    can_repair = (
+        candidate_distance is not None
+        and not _line_crossing_segments(candidate_coords)
+        and candidate_distance < raw_distance * 0.98
+    )
+
+    if can_repair and candidate_changed:
+        line_obj["coords"] = candidate_coords
+        line_obj["raw_coords"] = raw_coords
+        line_obj["geometry_order_status"] = "REPAIRED"
+        line_obj["geometry_order_review"] = {
+            "source_order_preserved": False,
+            "repair_method": "shortest_non_crossing_path",
+            "raw_distance_nm": round(raw_distance, 2),
+            "selected_distance_nm": round(candidate_distance, 2),
+        }
+        message.setdefault("diagnostics", []).append(
+            {
+                "code": "GEOMETRY_LINE_ORDER_REPAIRED",
+                "object_type": "line",
+                "message_id": message.get("id", "unknown"),
+                "source_order_preserved": False,
+                "repair_method": "shortest_non_crossing_path",
+                "raw_coords": raw_coords,
+                "selected_coords": candidate_coords,
+                "raw_distance_nm": round(raw_distance, 2),
+                "selected_distance_nm": round(candidate_distance, 2),
+                "issues": review_issues,
+            }
+        )
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "line_geometry_order_repaired",
+                "object_type": "line",
+                "message_id": message.get("id", "unknown"),
+                "raw_coords": raw_coords,
+                "selected_coords": candidate_coords,
+                "repair_method": "shortest_non_crossing_path",
+                "source_order_preserved": False,
+            }
+        )
+    else:
+        line_obj["raw_coords"] = raw_coords
+        line_obj["geometry_order_status"] = "REVIEW_REQUIRED"
+        line_obj["geometry_order_review"] = {
+            "issues": review_issues,
+            "source_order_preserved": True,
+        }
+        hard_review_kinds = {
+            "REPEATED_NON_ADJACENT_VERTEX",
+            "NON_ADJACENT_SEGMENT_CROSSING",
+        }
+        if any(
+            issue["kind"] in hard_review_kinds for issue in review_issues
+        ):
+            _line_reference_fallback(
+                line_obj, raw_coords, container, message
+            )
+        message.setdefault("diagnostics", []).append(
+            {
+                "code": "GEOMETRY_LINE_ORDER_REVIEW",
+                "object_type": "line",
+                "message_id": message.get("id", "unknown"),
+                "source_order_preserved": True,
+                "raw_coords": raw_coords,
+                "issues": review_issues,
+            }
+        )
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "line_geometry_order_review",
+                "object_type": "line",
+                "message_id": message.get("id", "unknown"),
+                "raw_coords": raw_coords,
+                "issues": review_issues,
+                "source_order_preserved": True,
+            }
+        )
     container["lines"].append(line_obj)
     message["lines"].append(line_obj.copy())
+    return [line_obj]
 
 
 def add_circle(circle_obj, container, message):
@@ -1393,6 +1891,48 @@ def add_circle(circle_obj, container, message):
 def add_label(label_obj, container, message):
     container["labels"].append(label_obj)
     message["labels"].append(label_obj.copy())
+
+
+def _line_reference_fallback(line_obj, coords, container, message):
+    description = (
+        f"{line_obj.get('description', '')}\n"
+        "LINE GEOMETRY REVIEW; SOURCE VERTEX REFERENCE ONLY."
+    ).strip()
+    for coord in dict.fromkeys(coords):
+        add_label(
+            create_label(
+                style=2,
+                color=line_obj.get("color", "NINFO"),
+                check_danger=line_obj.get("checkDanger", 0),
+                text=line_obj.get("name", message.get("id", "LINE REVIEW")),
+                description=description,
+                coord=coord,
+            ),
+            container,
+            message,
+        )
+
+
+def add_line_labels(line_objects, container, message):
+    """Add one chart label for every emitted Line component."""
+
+    for line_obj in line_objects:
+        coords = line_obj.get("coords", [])
+        if not coords:
+            continue
+        mid = len(coords) // 2
+        add_label(
+            create_label(
+                style=6,
+                color=line_obj.get("color", "NINFO"),
+                check_danger=line_obj.get("checkDanger", 0),
+                text=line_obj.get("name", message.get("id", "LINE")),
+                description=line_obj.get("description", ""),
+                coord=coords[mid],
+            ),
+            container,
+            message,
+        )
 
 
 # -------------------- CONTEXT & PARTITIONING --------------------
@@ -1410,6 +1950,21 @@ def _partition_parent_context(block, marker_start):
     return re.sub(r"\s+", " ", parent).strip()
 
 
+def _partition_footer_context(block):
+    """Return a shared cancellation footer without treating it as a section."""
+
+    footer = re.search(
+        r"(?im)^\s*(?:\d+(?:\.\d+)*(?:\.-?|-)?\s*)?"
+        r"CANCEL(?:\s+(?:THIS\s+MSG|NAVAREA)|LED(?:\s+WARNING)?)\b",
+        block,
+    )
+    if not footer:
+        return ""
+    text = re.sub(r"-{5,}", " ", block[footer.start() :])
+    text = re.sub(r"\bNNNN\b", " ", text, flags=re.IGNORECASE)
+    return re.sub(r"\s+", " ", text).strip()
+
+
 def partition_riglist(block, navarea_name):
     upper = block.upper()
     if not any(
@@ -1421,6 +1976,17 @@ def partition_riglist(block, navarea_name):
     entries = extract_riglist_entries(block)
     if not entries:
         return None
+    riglist_marker = re.search(
+        r"\b(?:RIGLIST|RIG\s+LIST|MODU\s+LIST|"
+        r"MOBILE\s+OFFSHORE\s+DRILLING\s+UNITS)\b",
+        block,
+        re.IGNORECASE,
+    )
+    parent_context = (
+        _partition_parent_context(block, riglist_marker.end())
+        if riglist_marker
+        else ""
+    )
 
     if DEBUG:
         print(f"\nð NAVAREA {navarea_name} Partition Type: RIGLIST")
@@ -1434,6 +2000,11 @@ def partition_riglist(block, navarea_name):
             partition_id=str(idx),
             sub_block=entry,
         )
+        if parent_context:
+            meta["parent_context"] = parent_context
+        footer_context = _partition_footer_context(block)
+        if footer_context:
+            meta["footer_context"] = footer_context
         parts.append((entry, meta))
     return parts
 
@@ -1454,6 +2025,13 @@ def partition_navarea_block(block, navarea_name):
         )
     )
     if len(route_markers) > 1:
+        footer_context = _partition_footer_context(block)
+        footer_marker = re.search(
+            r"(?im)^\s*(?:\d+(?:\.\d+)*(?:\.-?|-)?\s*)?"
+            r"CANCEL(?:\s+(?:THIS\s+MSG|NAVAREA)|LED(?:\s+WARNING)?)\b",
+            block,
+        )
+        footer_start = footer_marker.start() if footer_marker else len(block)
         numbered_markers = list(
             re.finditer(
                 r"(?:^|\n)\s*(\d+(?:\.\d+)*)(?:\.-?|-)\s+",
@@ -1480,7 +2058,7 @@ def partition_navarea_block(block, navarea_name):
                 for position in (next_route, following_numbered)
                 if position is not None
             ]
-            end = min(end_candidates) if end_candidates else len(block)
+            end = min(end_candidates + [footer_start])
             sub_block = block[marker.start() : end].strip()
             if sub_block:
                 meta = build_partition_context(
@@ -1489,6 +2067,8 @@ def partition_navarea_block(block, navarea_name):
                     partition_id=f"ROUTE_{marker.group(1)}",
                     sub_block=sub_block,
                 )
+                if footer_context:
+                    meta["footer_context"] = footer_context
                 parts.append((sub_block, meta))
 
         first_remaining_numbered = next(
@@ -1512,7 +2092,7 @@ def partition_navarea_block(block, navarea_name):
                     ].start()
                     if numbered_markers.index(first_remaining_numbered) + i + 1
                     < len(numbered_markers)
-                    else len(block)
+                    else footer_start
                 )
                 sub_block = block[start:end].strip()
                 if sub_block:
@@ -1522,6 +2102,8 @@ def partition_navarea_block(block, navarea_name):
                         partition_id=marker.group(1),
                         sub_block=sub_block,
                     )
+                    if footer_context:
+                        meta["footer_context"] = footer_context
                     parts.append((sub_block, meta))
         return parts
 
@@ -1644,6 +2226,68 @@ def partition_navarea_block(block, navarea_name):
             else None,
         )
     ]
+    footer_markers = [
+        marker
+        for index, marker in enumerate(numbered_markers)
+        if is_cancellation_section(
+            marker,
+            numbered_markers[index + 1]
+            if index + 1 < len(numbered_markers)
+            else None,
+        )
+    ]
+    footer_start = footer_markers[0].start() if footer_markers else len(block)
+
+    def normalize_footer(text):
+        text = re.sub(r"-{5,}", " ", text)
+        text = re.sub(r"\bNNNN\b", " ", text, flags=re.IGNORECASE)
+        return re.sub(r"\s+", " ", text).strip()
+
+    footer_context = normalize_footer(block[footer_start:]) if footer_markers else ""
+
+    def section_supporting_context(section_index):
+        """Carry related operation/contact/caution prose into geometry.
+
+        Many NAVAREA messages put the operation in section 3, the position in
+        section 4, and the mariner instruction in section 5. Other notices
+        put contact details in a following no-geometry section. Partitioning
+        those sections independently must not discard either kind of context.
+        """
+
+        marker = section_markers[section_index]
+        section_end = (
+            section_markers[section_index + 1].start()
+            if section_index + 1 < len(section_markers)
+            else footer_start
+        )
+        section_text = block[marker.start() : section_end]
+        if not extract_coordinates(section_text):
+            return ""
+
+        supporting = []
+        for other_index, other_marker in enumerate(section_markers):
+            if other_index == section_index:
+                continue
+            other_end = (
+                section_markers[other_index + 1].start()
+                if other_index + 1 < len(section_markers)
+                else footer_start
+            )
+            other_text = block[other_marker.start() : other_end].strip()
+            if extract_coordinates(other_text):
+                continue
+            other_text = re.sub(r"\bNNNN\b", " ", other_text, flags=re.IGNORECASE)
+            other_text = re.sub(
+                r"\s+\d+(?:\.\d+)*\.\s*$",
+                "",
+                other_text,
+            )
+            if re.search(r"\bCHARTS?\b", other_text, flags=re.IGNORECASE):
+                continue
+            if re.search(r"[A-Z]{3,}", other_text, flags=re.IGNORECASE):
+                supporting.append(" ".join(other_text.split()))
+        return " ".join(supporting)
+
     if section_markers and (
         len(section_markers) > 1
         or len(section_markers) < len(numbered_markers)
@@ -1664,7 +2308,7 @@ def partition_navarea_block(block, navarea_name):
             end = (
                 section_markers[i + 1].start()
                 if i + 1 < len(section_markers)
-                else len(block)
+                else footer_start
             )
             sub_block = block[start:end].strip()
             if sub_block:
@@ -1676,14 +2320,32 @@ def partition_navarea_block(block, navarea_name):
                 )
                 if i == 0 and semantic_context:
                     meta["semantic_context"] = semantic_context
+                section_context = section_supporting_context(i)
+                if section_context:
+                    meta["semantic_context"] = section_context
                 if parent_context:
                     meta["parent_context"] = parent_context
+                if footer_context:
+                    meta["footer_context"] = footer_context
                 parts.append((sub_block, meta))
         return parts
 
     # Lettered sections
     letter_markers = list(re.finditer(r"(?:^|\n)\s*([A-Z]{1,4})\.\s+", block))
     if len(letter_markers) > 1:
+        letter_footer = re.search(
+            r"(?im)^\s*(?:\d+(?:\.\d+)*(?:\.-?|-)?\s*)?"
+            r"CANCEL(?:S|LED|LATION)?\b",
+            block,
+        )
+        letter_footer_start = (
+            letter_footer.start() if letter_footer else len(block)
+        )
+        letter_footer_context = (
+            normalize_footer(block[letter_footer_start:])
+            if letter_footer
+            else ""
+        )
         parts = []
         parent_context = _partition_parent_context(
             block, letter_markers[0].start()
@@ -1693,7 +2355,7 @@ def partition_navarea_block(block, navarea_name):
             end = (
                 letter_markers[i + 1].start()
                 if i + 1 < len(letter_markers)
-                else len(block)
+                else letter_footer_start
             )
             sub_block = block[start:end].strip()
             if sub_block:
@@ -1705,6 +2367,8 @@ def partition_navarea_block(block, navarea_name):
                 )
                 if parent_context:
                     meta["parent_context"] = parent_context
+                if letter_footer_context:
+                    meta["footer_context"] = letter_footer_context
                 parts.append((sub_block, meta))
         return parts
 
@@ -1739,6 +2403,7 @@ def predict_complexity(block):
 def build_processing_context(block, navarea_name, label_text=None, metadata=None):
     semantic_context = (metadata or {}).get("semantic_context")
     parent_context = (metadata or {}).get("parent_context")
+    footer_context = (metadata or {}).get("footer_context")
     contextual_block = (
         f"{semantic_context}\n{block}" if semantic_context else block
     )
@@ -1760,12 +2425,70 @@ def build_processing_context(block, navarea_name, label_text=None, metadata=None
         "coords": coords,
         "description": description,
         "parent_context": parent_context,
+        "footer_context": footer_context,
         "navarea_name": navarea_name,
         "label_text": label_text,
         "metadata": metadata,
         "is_riglist": is_riglist,
         "is_letter_partition": is_letter_partition,
     }
+
+
+def _description_plain_text(value):
+    """Return a normalized, unescaped description fragment."""
+
+    return sanitize_xml_attribute(unescape(str(value or ""))).strip()
+
+
+def compose_description(*parts):
+    """Build one stable description from ordered, non-empty fragments.
+
+    Object descriptions are assembled before XML serialization. Keeping this
+    operation centralized prevents specialized handlers from replacing notice
+    context with a coordinate-only local fragment.
+    """
+
+    normalized = []
+    for part in parts:
+        text = _description_plain_text(part)
+        if not text:
+            continue
+        if any(text == existing or text in existing for existing in normalized):
+            continue
+        normalized = [
+            existing for existing in normalized if existing not in text
+        ]
+        normalized.append(text)
+    return escape("\n".join(normalized).strip())
+
+
+def build_list_entry_description(ctx, entry_text, heading_pattern):
+    """Keep one list entry and its shared preamble, without other entries."""
+
+    block = ctx.get("block", "")
+    heading = re.search(heading_pattern, block, flags=re.IGNORECASE)
+    if heading:
+        shared_context = block[: heading.end()]
+    else:
+        shared_context = ctx.get("description", "")
+    # Keep the local entry first for the ECDIS selection view, then append the
+    # shared context so the object remains immediately identifiable while the
+    # operation/header is still available in the same field.
+    return compose_description(entry_text, shared_context)
+
+
+def build_sublabel_description(ctx, sublabel_text):
+    """Keep a lettered local fragment with its enclosing preamble."""
+
+    block = ctx.get("block", "")
+    first_marker = re.search(
+        r"(?:^|\n)\s*(?:\([A-Z]\)|[A-Z]\.)\s*", block
+    )
+    if first_marker:
+        shared_context = block[: first_marker.start()]
+    else:
+        shared_context = ctx.get("description", "")
+    return compose_description(sublabel_text, shared_context)
 
 
 # -------------------- SUBLABEL HELPER --------------------
@@ -1775,7 +2498,7 @@ def emit_sublabel_points(
     for s in sublabels:
         if not s["coords"]:
             continue
-        desc = escape(s["text"])
+        desc = build_sublabel_description(ctx, s["text"])
         for coord in s["coords"]:
             label_obj = create_label(
                 style=style,
@@ -1927,6 +2650,13 @@ def handle_mixed_geometry_package(ctx, container, message):
     if not sections:
         return False
 
+    first_section = re.search(
+        r"(?im)^\s*(?:ROUTE\s+NO\.\s*[\d.]+|"
+        r"\d+\.\d+\.\d+\.)",
+        block,
+    )
+    shared_context = block[: first_section.start()] if first_section else ""
+
     any_processed = False
     for header, text in sections:
         coords = extract_coordinates(text)
@@ -1934,28 +2664,25 @@ def handle_mixed_geometry_package(ctx, container, message):
             continue
 
         upper_header = header.upper()
+        section_description = compose_description(
+            f"{header} {text}", shared_context
+        )
 
         if "ROUTE NO" in upper_header:
             if len(coords) >= 2:
                 obj_name = f"{label_text} {header}"
                 line_obj = create_line(
                     name=obj_name,
-                    description=header,
+                    description=section_description,
                     coords=coords,
                     color=detect_color(ctx["block"]),
                     check_danger=detect_check_danger(ctx["block"]),
                 )
-                add_line(line_obj, container, message)
-                mid = len(coords) // 2
-                label_obj = create_label(
-                    style=6,
-                    color=detect_color(ctx["block"]),
-                    check_danger=detect_check_danger(ctx["block"]),
-                    text=obj_name,
-                    description=header,
-                    coord=coords[mid],
+                add_line_labels(
+                    add_line(line_obj, container, message),
+                    container,
+                    message,
                 )
-                add_label(label_obj, container, message)
                 any_processed = True
 
         elif (
@@ -1967,7 +2694,7 @@ def handle_mixed_geometry_package(ctx, container, message):
                 area_coords = normalize_area_vertices(coords)
                 area_obj = create_area(
                     name=obj_name,
-                    description="SOUTHERN WAITING AREA",
+                    description=section_description,
                     coords=area_coords,
                     color=detect_color(ctx["block"]),
                     check_danger=detect_check_danger(ctx["block"]),
@@ -1981,7 +2708,7 @@ def handle_mixed_geometry_package(ctx, container, message):
                 area_coords = normalize_area_vertices(coords)
                 area_obj = create_area(
                     name=obj_name,
-                    description="WAITING AREA NORTH AR 354",
+                    description=section_description,
                     coords=area_coords,
                     color=detect_color(ctx["block"]),
                     check_danger=detect_check_danger(ctx["block"]),
@@ -2002,22 +2729,16 @@ def handle_mixed_geometry_package(ctx, container, message):
 
                 line_obj = create_line(
                     name=obj_name,
-                    description=header,
+                    description=section_description,
                     coords=coords,
                     color=detect_color(ctx["block"]),
                     check_danger=detect_check_danger(ctx["block"]),
                 )
-                add_line(line_obj, container, message)
-                mid = len(coords) // 2
-                label_obj = create_label(
-                    style=6,
-                    color=detect_color(ctx["block"]),
-                    check_danger=detect_check_danger(ctx["block"]),
-                    text=obj_name,
-                    description=header,
-                    coord=coords[mid],
+                add_line_labels(
+                    add_line(line_obj, container, message),
+                    container,
+                    message,
                 )
-                add_label(label_obj, container, message)
                 any_processed = True
 
     return any_processed
@@ -2065,18 +2786,11 @@ def handle_ice_report(ctx, container, message):
                 color="NINFO",
                 check_danger=0,
             )
-            add_line(line_obj, container, message)
-
-            mid = len(coords) // 2
-            label_obj = create_label(
-                style=6,
-                color="NINFO",
-                check_danger=0,
-                text=label,
-                description="SEA ICE LIMIT",
-                coord=coords[mid],
+            add_line_labels(
+                add_line(line_obj, container, message),
+                container,
+                message,
             )
-            add_label(label_obj, container, message)
         return True
 
     if "ICEBERGS GREATER" in upper:
@@ -2203,17 +2917,11 @@ def handle_structured_sections(ctx, container, message):
                 color=object_color,
                 check_danger=object_check_danger,
             )
-            add_line(line_obj, container, message)
-            mid = len(obj["coords"]) // 2
-            label_obj = create_label(
-                style=6,
-                color=object_color,
-                check_danger=object_check_danger,
-                text=ctx["label_text"],
-                description=obj["description"],
-                coord=obj["coords"][mid],
+            add_line_labels(
+                add_line(line_obj, container, message),
+                container,
+                message,
             )
-            add_label(label_obj, container, message)
         elif obj["type"] == "label":
             label_obj = create_label(
                 style=6,
@@ -2225,6 +2933,222 @@ def handle_structured_sections(ctx, container, message):
             )
             add_label(label_obj, container, message)
 
+    return True
+
+
+def extract_vessel_list_positions(block):
+    """Extract one independent point for each named vessel-list entry.
+
+    A lettered vessel list is a collection of reported positions, not a
+    route.  Keep each entry's complete source fragment so the vessel name
+    and its DP/anchor-spread role remain available in the ECDIS Description.
+    """
+    list_heading = re.search(
+        r"\b(?:MINING\s*/\s*AMPLING\s*/\s*EXPLORATION\s+|"
+        r"EXPLORATION\s+)?VESSELS?\s+LIST\b",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if not list_heading:
+        return []
+
+    list_body = block[list_heading.end() :]
+    next_section = re.search(r"(?m)^\s*\d+\.(?=\s|$)\s*", list_body)
+    if next_section:
+        list_body = list_body[: next_section.start()]
+
+    markers = list(
+        re.finditer(
+            r"(?m)^\s*(?:\(([A-Z])\)|([A-Z])\.)\s*",
+            list_body,
+        )
+    )
+    if len(markers) < 2:
+        return []
+
+    entries = []
+    for index, marker in enumerate(markers):
+        end = (
+            markers[index + 1].start()
+            if index + 1 < len(markers)
+            else len(list_body)
+        )
+        snippet = list_body[marker.start() : end].strip()
+        coords = extract_coordinates(snippet)
+        if len(coords) != 1:
+            return []
+        entries.append(
+            {
+                "letter": marker.group(1) or marker.group(2),
+                "text": " ".join(snippet.split()),
+                "coord": coords[0],
+            }
+        )
+    return entries
+
+
+def handle_vessel_list_points(ctx, container, message):
+    """Keep named vessel positions as independent point objects.
+
+    Without explicit ROUTE/TRACKLINE-style wording, connecting reported vessel
+    positions would invent navigation geometry.  An explicit geometry phrase
+    leaves the notice to the normal geometry handlers.
+    """
+    debug("PROCESS: handle_vessel_list_points")
+    if ctx["is_riglist"]:
+        return False
+
+    upper = ctx["upper"]
+    if re.search(
+        r"\b(?:ROUTE|TRACKLINE|TRACK\s+LINE|CENTERLINE|LINE\s+JOINING|"
+        r"PIPELINE|CABLE|CHANNEL)\b|BETWEEN\s+THE\s+POINTS",
+        upper,
+        flags=re.IGNORECASE,
+    ):
+        return False
+
+    entries = extract_vessel_list_positions(ctx["block"])
+    if not entries:
+        return False
+
+    style = get_point_style(ctx["block"])
+    color = detect_color(ctx["block"])
+    check_danger = detect_check_danger(ctx["block"])
+    for entry in entries:
+        label_obj = create_label(
+            style=style,
+            color=color,
+            check_danger=check_danger,
+            text=ctx["label_text"],
+            description=build_list_entry_description(
+                ctx,
+                entry["text"],
+                r"\b(?:MINING\s*/\s*AMPLING\s*/\s*EXPLORATION\s+|"
+                r"EXPLORATION\s+)?VESSELS?\s+LIST\b",
+            ),
+            coord=entry["coord"],
+        )
+        add_label(label_obj, container, message)
+    return True
+
+
+FACILITY_LIST_MARKER_RE = re.compile(
+    r"(?m)^\s*(?:\(([A-Z])\)|([A-Z])\.)\s*"
+)
+FACILITY_COORDINATE_RE = re.compile(
+    r"\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+    r"(?:/|,|[-\s])+\s*\d{1,3}[-\s]+[\d.]+\s*[EW]",
+    re.IGNORECASE,
+)
+
+
+def extract_facility_list_positions(block):
+    """Extract one point and local description for each facility entry.
+
+    USCG facility notices use a lettered list, but the facility's status code
+    is also parenthesized (for example ``BOSTON (F)``).  Only markers at the
+    beginning of a line are list boundaries; parenthetical codes inside an
+    entry must remain part of that entry's description.
+    """
+
+    heading = re.search(
+        r"\b(?:REMOTE\s+)?COMMUNICATION\s+FACILITIES\s*:",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if not heading:
+        return []
+
+    list_body = block[heading.end() :]
+    candidate_markers = list(FACILITY_LIST_MARKER_RE.finditer(list_body))
+    if len(candidate_markers) < 2:
+        return []
+
+    # A wrapped facility can put its status code on a new line, as in
+    # ``(E) NEW ORLEANS`` followed by ``(G) 29-53...``.  The normalizer makes
+    # both the list marker and the code look like line-start markers.  Facility
+    # list letters are ordered, so retain the next expected letter and leave
+    # any other parenthetical token inside the current local fragment.
+    markers = []
+    expected_letter = None
+    for marker in candidate_markers:
+        letter = marker.group(1) or marker.group(2)
+        if expected_letter is None or letter == expected_letter:
+            markers.append(marker)
+            expected_letter = chr(ord(letter) + 1)
+    if len(markers) < 2:
+        return []
+
+    entries = []
+    for index, marker in enumerate(markers):
+        end = (
+            markers[index + 1].start()
+            if index + 1 < len(markers)
+            else len(list_body)
+        )
+        snippet = list_body[marker.start() : end].strip()
+        coordinate = FACILITY_COORDINATE_RE.search(snippet)
+        if not coordinate:
+            return []
+        coords = extract_coordinates(coordinate.group(0))
+        if len(coords) != 1:
+            return []
+
+        local_text = snippet[: coordinate.start()]
+        local_text = re.sub(r"-{5,}.*$", "", local_text, flags=re.DOTALL)
+        local_text = " ".join(local_text.split()).strip()
+        if not local_text:
+            return []
+        entries.append(
+            {
+                "letter": marker.group(1) or marker.group(2),
+                "text": local_text,
+                "coord": coords[0],
+            }
+        )
+    return entries
+
+
+def build_facility_list_description(ctx, entry):
+    """Return shared notice context plus one facility's local fragment."""
+
+    block = ctx["block"]
+    heading = re.search(
+        r"\b(?:REMOTE\s+)?COMMUNICATION\s+FACILITIES\s*:",
+        block,
+        flags=re.IGNORECASE,
+    )
+    if heading:
+        parent = " ".join(block[: heading.end()].split())
+    else:
+        parent = sanitize_xml_attribute(ctx.get("description", ""))
+    return escape(f"{parent}\n{entry['text']}".strip())
+
+
+def handle_facility_list_points(ctx, container, message):
+    """Preserve shared context and local names in facility-list notices."""
+
+    debug("PROCESS: handle_facility_list_points")
+    if ctx["is_riglist"]:
+        return False
+
+    entries = extract_facility_list_positions(ctx["block"])
+    if not entries:
+        return False
+
+    style = get_point_style(ctx["block"])
+    color = detect_color(ctx["block"])
+    check_danger = detect_check_danger(ctx["block"])
+    for entry in entries:
+        label_obj = create_label(
+            style=style,
+            color=color,
+            check_danger=check_danger,
+            text=ctx["label_text"],
+            description=build_facility_list_description(ctx, entry),
+            coord=entry["coord"],
+        )
+        add_label(label_obj, container, message)
     return True
 
 
@@ -2261,18 +3185,11 @@ def handle_explicit_line_circle(ctx, container, message):
             color=detect_color(ctx["block"]),
             check_danger=detect_check_danger(ctx["block"]),
         )
-        add_line(line_obj, container, message)
-
-        mid = len(route_coords) // 2
-        label_obj = create_label(
-            style=6,
-            color=detect_color(ctx["block"]),
-            check_danger=detect_check_danger(ctx["block"]),
-            text=ctx["label_text"],
-            description=ctx["description"],
-            coord=route_coords[mid],
+        add_line_labels(
+            add_line(line_obj, container, message),
+            container,
+            message,
         )
-        add_label(label_obj, container, message)
 
     if circle_spec:
         circle_obj = create_circle(
@@ -2750,6 +3667,9 @@ def handle_trackline(ctx, container, message):
     ]
 
     has_buoy_semantics = any(term in ctx["upper"] for term in BUOY_SEMANTIC_TERMS)
+    has_buoy_semantics = has_buoy_semantics or BUOY_TEXT_RE.search(
+        ctx["upper"]
+    ) is not None
 
     LINE_GEOMETRY_TERMS = [
         "TRACKLINE",
@@ -2812,18 +3732,11 @@ def handle_trackline(ctx, container, message):
         check_danger=detect_check_danger(ctx["block"]),
         line_type=line_presentation["lineType"],
     )
-    add_line(line_obj, container, message)
-
-    mid = len(ctx["coords"]) // 2
-    label_obj = create_label(
-        style=6,
-        color=line_presentation["color"],
-        check_danger=detect_check_danger(ctx["block"]),
-        text=ctx["label_text"],
-        description=ctx["description"],
-        coord=ctx["coords"][mid],
+    add_line_labels(
+        add_line(line_obj, container, message),
+        container,
+        message,
     )
-    add_label(label_obj, container, message)
 
     return True
 
@@ -2850,7 +3763,7 @@ def handle_sublabels(ctx, container, message):
                     color=color,
                     check_danger=check_danger,
                     text=ctx["label_text"],
-                    description=escape(s["text"]),
+                    description=build_sublabel_description(ctx, s["text"]),
                     coord=coord,
                 )
                 add_label(label_obj, container, message)
@@ -2943,7 +3856,7 @@ def is_tow_endpoint_operation(ctx):
 
     upper = ctx["upper"]
     if re.search(
-        r"\b(?:BUOYS?|LIGHTBUOYS?|BEACONS?|MARKS?|AIDS\s+TO\s+NAVIGATION)\b",
+        rf"\b(?:{BUOY_WORD}|LIGHT{BUOY_WORD}|BEACONS?|MARKS?|AIDS\s+TO\s+NAVIGATION)\b",
         upper,
     ):
         return False
@@ -3063,14 +3976,23 @@ def handle_no_anchor(ctx, container, message):
 # ----------------------------------------------------------------------
 
 BUOY_SUBTYPE_PATTERNS = [
-    ("CHANNEL_MARKING", re.compile(r"\bCHANNEL\s+MARKING\s+BUOYS?\b", re.IGNORECASE)),
-    ("CHANNEL", re.compile(r"\bCHANNEL\s+BUOYS?\b", re.IGNORECASE)),
-    ("FAIRWAY", re.compile(r"\bFAIRWAY\s+BUOYS?\b", re.IGNORECASE)),
-    ("SAFE_WATER", re.compile(r"\bSAFE\s+WATER\s+BUOYS?\b", re.IGNORECASE)),
-    ("SPECIAL_MARK", re.compile(r"\bSPECIAL\s+MARK\s+BUOYS?\b", re.IGNORECASE)),
-    ("BUOY_NO", re.compile(r"\bBUOY\s+NO\b", re.IGNORECASE)),
-    ("BUOY_GROUP", re.compile(r"\bBUOY\s+GROUP\b", re.IGNORECASE)),
-    ("LIGHTBUOY", re.compile(r"\bLIGHTBUOYS?\b", re.IGNORECASE)),
+    (
+        "CHANNEL_MARKING",
+        re.compile(rf"\bCHANNEL\s+MARKING\s+{BUOY_WORD}\b", re.IGNORECASE),
+    ),
+    ("CHANNEL", re.compile(rf"\bCHANNEL\s+{BUOY_WORD}\b", re.IGNORECASE)),
+    ("FAIRWAY", re.compile(rf"\bFAIRWAY\s+{BUOY_WORD}\b", re.IGNORECASE)),
+    (
+        "SAFE_WATER",
+        re.compile(rf"\bSAFE\s+WATER\s+{BUOY_WORD}\b", re.IGNORECASE),
+    ),
+    (
+        "SPECIAL_MARK",
+        re.compile(rf"\bSPECIAL\s+MARK\s+{BUOY_WORD}\b", re.IGNORECASE),
+    ),
+    ("BUOY_NO", re.compile(rf"\b{BUOY_WORD}\s+NO\b", re.IGNORECASE)),
+    ("BUOY_GROUP", re.compile(rf"\b{BUOY_WORD}\s+GROUP\b", re.IGNORECASE)),
+    ("LIGHTBUOY", re.compile(rf"\bLIGHT{BUOY_WORD}\b", re.IGNORECASE)),
     (
         "BEACON",
         re.compile(
@@ -3088,7 +4010,7 @@ BUOY_SUBTYPE_PATTERNS = [
             re.IGNORECASE,
         ),
     ),
-    ("BUOY", re.compile(r"\bBUOYS?\b", re.IGNORECASE)),
+    ("BUOY", re.compile(rf"\b{BUOY_WORD}\b", re.IGNORECASE)),
 ]
 
 BUOY_DISPLAY_PROFILES = {
@@ -3106,13 +4028,29 @@ BUOY_STATUS_PATTERNS = [
 ]
 
 
+BUOY_TABLE_COORD_RE = re.compile(
+    r"(?P<lat_deg>\d{1,3})[- ]+(?P<lat_min>[\d.]+)\s*"
+    r"(?P<lat_hemi>[NS])[\s,]+"
+    r"(?P<lon_deg>\d{1,3})[- ]+(?P<lon_min>[\d.]+)\s*"
+    r"(?P<lon_hemi>[EW])",
+    re.IGNORECASE,
+)
+
+
+def detect_buoy_status(text):
+    for name, pattern in BUOY_STATUS_PATTERNS:
+        if pattern.search(text.upper()):
+            return name
+    return "ACTIVE"
+
+
 def classify_buoy(text):
     upper = text.upper()
 
     # LIGHT UNLIT / LIGHTHOUSE UNLIT — это AtoN, не buoy
     if (
         "UNLIT" in upper
-        and "BUOY" not in upper
+        and not BUOY_TEXT_RE.search(upper)
         and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
     ):
         return None
@@ -3126,17 +4064,51 @@ def classify_buoy(text):
     if subtype is None:
         return None
 
-    status = "ACTIVE"
-    for name, pattern in BUOY_STATUS_PATTERNS:
-        if pattern.search(upper):
-            status = name
-            break
+    status = detect_buoy_status(upper)
 
     return {
         "has_buoy": True,
         "subtype": subtype,
         "status": status,
     }
+
+
+def parse_buoy_table_rows(block):
+    """Return per-coordinate semantics for a buoy status table."""
+    if not (
+        re.search(rf"\b{BUOY_WORD}\s+POSITIONS\b", block, re.IGNORECASE)
+        and re.search(r"\bTYPE\s+AND\s+ISSUE\b", block, re.IGNORECASE)
+    ):
+        return []
+
+    matches = list(BUOY_TABLE_COORD_RE.finditer(block))
+    rows = []
+    for index, match in enumerate(matches):
+        lat = dm_to_decimal(
+            match.group("lat_deg"),
+            match.group("lat_min"),
+            match.group("lat_hemi").upper(),
+        )
+        lon = dm_to_decimal(
+            match.group("lon_deg"),
+            match.group("lon_min"),
+            match.group("lon_hemi").upper(),
+        )
+        if lat is None or lon is None:
+            continue
+
+        row_end = matches[index + 1].start() if index + 1 < len(matches) else len(block)
+        row_text = block[match.start() : row_end]
+        rows.append(
+            {
+                "coord": (lat, lon),
+                "status": detect_buoy_status(row_text),
+                "subtype": "BUOY",
+                "check_danger": detect_check_danger(row_text),
+            }
+        )
+
+    return rows
 
 
 def buoy_style_color(check_danger, status, subtype=None):
@@ -3170,28 +4142,16 @@ def buoy_style_color(check_danger, status, subtype=None):
 
 
 def build_buoy_label_description(ctx, coord, status):
-    nav_summary = sanitize_xml_attribute(ctx.get("description", ""))
-
-    # ÐÑÐµÐ¼ Ð¿ÐµÑÐ²ÑÑ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð¸ Ð¾Ð±ÑÐµÐ·Ð°ÐµÐ¼ ÑÐµÐºÑÑ Ð´Ð¾ Ð½ÐµÑ
-    coord_pattern = re.compile(
-        r"\d{1,3}-\d{1,2}(?:\.\d+)?[NS]\s+\d{1,3}-\d{1,2}(?:\.\d+)?[EW]", re.IGNORECASE
+    # Keep the complete notice context. Coordinates and cancellation timing
+    # remain visible in the Description for operator verification.
+    status_text = status if status and status != "ACTIVE" else ""
+    metadata = ctx.get("metadata") or {}
+    return compose_description(
+        ctx.get("parent_context", ""),
+        metadata.get("semantic_context", ""),
+        ctx.get("block", ""),
+        status_text,
     )
-    m = coord_pattern.search(nav_summary)
-
-    if m:
-        nav_summary = nav_summary[: m.start()].rstrip()
-        nav_summary = re.sub(r"[(\[\s,;:-]+$", "", nav_summary)
-
-    if not nav_summary:
-        nav_summary = sanitize_xml_attribute(ctx.get("navarea_name", ""))
-
-    # ÐÑÐ»Ð¸ Ð±ÑÐ¹ Ð´ÐµÐ³ÑÐ°Ð´Ð¸ÑÐ¾Ð²Ð°Ð», Ð´Ð¾Ð±Ð°Ð²Ð»ÑÐµÐ¼ ÑÑÐ°ÑÑÑ, Ð¿Ð¾ÑÐ¾Ð¼Ñ ÑÑÐ¾ Ð² Ð¸ÑÑÐ¾Ð´Ð½Ð¾Ð¼
-    # ÑÐµÐºÑÑÐµ Ð¾Ð½ Ð¾Ð±ÑÑÐ½Ð¾ Ð½Ð°ÑÐ¾Ð´Ð¸ÑÑÑ Ð¿Ð¾ÑÐ»Ðµ ÐºÐ¾Ð¾ÑÐ´Ð¸Ð½Ð°ÑÑ Ð¸ Ð±ÑÐ» Ð¾Ð±ÑÐµÐ·Ð°Ð½.
-    if status and status != "ACTIVE":
-        nav_summary = f"{nav_summary} {status}"
-
-    coord_text = f"{coord[0]:.6f} {coord[1]:.6f}"
-    return f"{nav_summary} | {coord_text}"
 
 
 def handle_buoy_semantics(ctx, container, message):
@@ -3213,7 +4173,7 @@ def handle_buoy_semantics(ctx, container, message):
 
     if (
         "UNLIT" in upper
-        and "BUOY" not in upper
+        and not BUOY_TEXT_RE.search(upper)
         and ("LIGHT" in upper or "LIGHTHOUSE" in upper)
     ):
         return False
@@ -3243,14 +4203,28 @@ def handle_buoy_semantics(ctx, container, message):
     if len(ctx["coords"]) < 1:
         return False
 
-    style, color, check_danger = buoy_style_color(
-        check_danger=detect_check_danger(ctx["block"]),
-        status=buoy["status"],
-        subtype=buoy["subtype"],
-    )
+    table_rows = parse_buoy_table_rows(ctx["block"])
+    if table_rows and [row["coord"] for row in table_rows] == ctx["coords"]:
+        buoy_rows = table_rows
+    else:
+        buoy_rows = [
+            {
+                "coord": coord,
+                "status": buoy["status"],
+                "subtype": buoy["subtype"],
+                "check_danger": detect_check_danger(ctx["block"]),
+            }
+            for coord in ctx["coords"]
+        ]
 
-    for coord in ctx["coords"]:
-        desc = build_buoy_label_description(ctx, coord, buoy["status"])
+    for row in buoy_rows:
+        style, color, check_danger = buoy_style_color(
+            check_danger=row["check_danger"],
+            status=row["status"],
+            subtype=row["subtype"],
+        )
+        coord = row["coord"]
+        desc = build_buoy_label_description(ctx, coord, row["status"])
 
         label_obj = create_label(
             style=style,
@@ -3272,6 +4246,8 @@ PROCESS_HANDLERS = [
     handle_mixed_geometry_package,
     handle_platform_multipoint,
     handle_buoy_semantics,  # NEW
+    handle_vessel_list_points,
+    handle_facility_list_points,
     handle_structured_sections,
     handle_circle,
     handle_bounding_box,
@@ -3342,8 +4318,11 @@ def process_block(block, message, container, navarea_name, label_text=None, meta
         print(f"DEBUG: processing block with {len(ctx['coords'])} coords")
     for handler in PROCESS_HANDLERS:
         if handler(ctx, container, message):
-            parent_context = ctx.get("parent_context")
-            if parent_context:
+            shared_context = compose_description(
+                ctx.get("parent_context", ""),
+                ctx.get("footer_context", ""),
+            )
+            if shared_context:
                 for kind in ("areas", "lines", "circles", "labels"):
                     container_objects = container.get(kind, [])[
                         object_counts_before[kind] :
@@ -3352,8 +4331,8 @@ def process_block(block, message, container, navarea_name, label_text=None, meta
                         message_counts_before[kind] :
                     ]
                     for obj in (*container_objects, *message_objects):
-                        obj["description"] = (
-                            f"{parent_context}\n{obj['description']}"
+                        obj["description"] = compose_description(
+                            shared_context, obj["description"]
                         )
             handler_name = handler.__name__
             stage_diagnostics.append(
@@ -3574,49 +4553,19 @@ def sanitize_xml_attribute(value):
     return text.strip()
 
 
-ECDIS_COORDINATE_PAIR_RE = re.compile(
-    r"\b\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
-    r"(?:/|,|[-\s])+\s*\d{1,3}[-\s]+[\d.]+\s*[EW]\b",
-    re.IGNORECASE,
-)
-
-
 def sanitize_ecdis_description(value):
     """
-    Keep the operational meaning while avoiding coordinate duplication in ECDIS.
+    Keep the message, operational meaning, and verification coordinates in
+    the ECDIS Description.
 
-    Coordinates belong to the object's position vertices.  Cancellation
-    references are source metadata, not active object text.
+    Coordinates are intentionally duplicated in the object's position
+    vertices and Description: the vertices drive ECDIS geometry, while the
+    text lets an operator verify the published position. Cancellation
+    information also remains in the Description so an operator can compare
+    the planned passage time with the warning's end time. The application
+    does not schedule self-deletion of the object.
     """
     text = unescape(sanitize_xml_attribute(value))
-    text = re.sub(
-        r"^\s*NAVAREA\s+[A-Z0-9]+\s+\d+/\d+\s*",
-        "",
-        text,
-        count=1,
-        flags=re.IGNORECASE,
-    )
-    text = re.sub(
-        r"(?:^|\s)(?:\d+\s*\.\s*-?\s*)?CANCEL\b.*$",
-        "",
-        text,
-        count=1,
-        flags=re.IGNORECASE,
-    )
-    text = ECDIS_COORDINATE_PAIR_RE.sub("", text)
-    text = re.sub(
-        r"\bIN\s+AREA\s+(?:BOUND(?:ED)?\s+BY|DELIMITED\s+BY)\s*:?",
-        "",
-        text,
-        flags=re.IGNORECASE,
-    )
-    text = re.sub(
-        r"(\bWITHIN\s+[0-9]+(?:\.[0-9]+)?\s+(?:NM|MILES?|MI)\s+OF)"
-        r"\s*[.,]?\s*(?:\d+\s*\.\s*)?(?=CONTACT\b|$)",
-        r"\1 the designated position. ",
-        text,
-        flags=re.IGNORECASE,
-    )
     text = re.sub(r"\s+([.,;])", r"\1", text)
     text = re.sub(r"\s{2,}", " ", text)
     return text.strip()

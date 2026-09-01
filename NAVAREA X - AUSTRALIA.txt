@@ -1,0 +1,64 @@
+NAVAREA X (AUSTRALIA) - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 96/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: 95/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: 87, 94, 96.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA X 87/2026
+282138 UTC JUL 2026
+SPECIAL PURPOSE VESSEL PMG EMERALD / VMGY / 503000137 CONDUCTING SURVEY OPERATIONS IN AN
+AREA BOUNDED BY 15-26.25 S TO 20-57.00 S AND 167-08.20 E TO 169-17.00 E
+
+2.5NM CLEARANCE
+REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA X 94/2026
+151308 UTC AUG 2026
+CHART AUS4074 - CAPE DARNELY TO TASMANIA
+
+1. SPACE DEBRIS DANGER AREA 80NM EITHER SIDE OF
+CENTRELINE:
+
+40-44S 081-06E
+
+47-50S 096-11E
+
+52-27S 114-57E
+
+52-33S 138-19E
+
+48-10S
+160-00E
+
+2. WINDOW BETWEEN 1525 UTC TO 2235 UTC DAILY 20 TO 26 AUG 2026
+
+---------------------------------------------------------------------------------------
+
+NAVAREA X 96/2026
+201011 UTC AUG 2026
+CHART AUS 4074 CAPE DARNLEY TO TASMANIA, SOUTHERN OCEAN
+SPACE DEBRIS DANGER AREA 100NM
+EITHER SIDE OF LINE:
+40-25S 081-00E
+48-00S 097-00E
+52-30S 115-00E
+52-26S 139-00E
+48-00S
+160-00E
+HAZARDOUS WINDOW DAILY FROM 25 AUG TO 31 AUG 2026 BETWEEN 0809 UTC AND 1608 UTC.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

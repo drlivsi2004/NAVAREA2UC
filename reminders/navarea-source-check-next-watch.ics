@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//NAVAREA2UC//Field Validation Reminder//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:navarea-source-check-next-watch-20260829@navarea2uc.com
+DTSTAMP:20260828T000000Z
+DTSTART:20260829T000000Z
+DTEND:20260829T040000Z
+SUMMARY:Проверить официальные источники NAVAREA
+DESCRIPTION:Сверить официальные NAVAREA-источники в судовых рабочих публикациях и onboard-каналах. Записать issuing authority\, publication/revision\, дату\, оригинал или reproduced copy\, SafetyNET/SafetyCast/NAVTEX или другой канал\, warning number\, issue time\, validity/cancellation\, полный текст\, совпадение с web-source\, задержки и coverage gaps.
+LOCATION:На вахте
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Проверить официальные источники NAVAREA
+TRIGGER:PT0M
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,6 +1,7 @@
 import { useEffect, useState, type ComponentType } from 'react';
 
 import { modules as discoveredModules } from './.generated/mockup-components';
+import { LandingPage } from './components/mockups/navarea2uc-imported/LandingPage';
 
 type ModuleMap = Record<string, () => Promise<Record<string, unknown>>>;
 
@@ -140,7 +141,7 @@ function App() {
     );
   }
 
-  return <Gallery />;
+  return <LandingPage />;
 }
 
 export default App;

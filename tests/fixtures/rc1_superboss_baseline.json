@@ -1,0 +1,75 @@
+{
+  "description": "RC1 control baseline for the corrected geometry dispatch.",
+  "cases": {
+    "III 92/22": {
+      "source": "NAVAREA III - SPAIN.txt",
+      "before": {
+        "areas": 1,
+        "lines": 0,
+        "circles": 0,
+        "labels": 0,
+        "invalid_areas": 1
+      },
+      "after": {
+        "areas": 7,
+        "lines": 0,
+        "circles": 0,
+        "labels": 0,
+        "invalid_areas": 0
+      }
+    },
+    "III 124/22": {
+      "source": "NAVAREA III - SPAIN.txt",
+      "before": {
+        "areas": 0,
+        "lines": 1,
+        "circles": 0,
+        "labels": 1
+      },
+      "after": {
+        "areas": 0,
+        "lines": 1,
+        "circles": 0,
+        "labels": 1
+      }
+    },
+    "III 34/24": {
+      "source": "NAVAREA III - SPAIN.txt",
+      "before": {
+        "areas": 2,
+        "lines": 6,
+        "circles": 0,
+        "labels": 6,
+        "invalid_areas": 2
+      },
+      "after": {
+        "areas": 2,
+        "lines": 6,
+        "circles": 0,
+        "labels": 6,
+        "invalid_areas": 0
+      }
+    },
+    "IX 208/2026": {
+      "source": "NAVAREA IX - PAKISTAN.txt",
+      "before": {
+        "areas": 0,
+        "lines": 1,
+        "circles": 0,
+        "labels": 1
+      },
+      "after": {
+        "areas": 0,
+        "lines": 1,
+        "circles": 1,
+        "labels": 1,
+        "line_vertices": 6,
+        "circle_center": [
+          26.2695,
+          55.775333
+        ],
+        "circle_radius": 3.0
+      }
+    }
+  }
+}

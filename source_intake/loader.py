@@ -20,6 +20,7 @@ def _create_report_for_data(
 
     detected_enc, confidence = EncodingIntelligence.detect_encoding(data)
 
+    fallback_used = False
     try:
         (
             text,
@@ -35,14 +36,15 @@ def _create_report_for_data(
         status = Status.SUCCESS if not fallback_used else Status.FALLBACK
         error = None
     except Exception as e:
-        # Should not happen (Latin-1 always succeeds), but defensive
         status = Status.FAILED
         text = None
         used_enc = "unknown"
         detected_enc_final = detected_enc or "unknown"
         final_conf = 0.0
         replacement_count = 0
-        warnings = [str(e)]
+        warnings = list(getattr(e, "warnings", []))
+        if not warnings:
+            warnings = [str(e)]
         error = str(e)
 
     descriptor = SourceDescriptor(
@@ -153,6 +155,9 @@ def report_summary(reports: List[IntakeReport]) -> str:
         status = r.status.value
         if r.status == Status.FAILED:
             lines.append(f"  {r.descriptor.id}: {status} - {r.error}")
+            for w in r.warnings:
+                if w != r.error:
+                    lines.append(f"    warning: {w}")
         else:
             fb = " (fallback)" if r.fallback_used else ""
             lines.append(
