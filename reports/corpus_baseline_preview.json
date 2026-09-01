@@ -1,0 +1,16 @@
+{
+  "current_messages": 983,
+  "current_report_sha256": "4b18152e45b6e66be39399be97d447a8bc3d5f0e3b3cccaa78b1f30cc0f924e0",
+  "proposed_baseline": {
+    "baseline_messages": 983,
+    "report_sha256": "4b18152e45b6e66be39399be97d447a8bc3d5f0e3b3cccaa78b1f30cc0f924e0",
+    "reviewed_component_losses": [],
+    "source_report": "corpus_differential_latest.json"
+  },
+  "review_metadata": {
+    "reviewed_component_losses": []
+  },
+  "reviewed_report_matches_current": true,
+  "reviewed_report_messages": 983,
+  "reviewed_report_sha256": "4b18152e45b6e66be39399be97d447a8bc3d5f0e3b3cccaa78b1f30cc0f924e0"
+}

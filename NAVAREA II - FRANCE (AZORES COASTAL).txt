@@ -1,0 +1,31 @@
+AZORES COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NO NEW WARNINGS SINCE LAST UPDATE.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: NR 1864/2026, NR 1866/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: NR 1763.
+
+---------------------------------------------------------------------------------------
+
+NR 1763/2026
+121625 UTC AUG 2026
+FA44
+NORTH ATLANTIC - PORTUGAL-AZORES ARCHIPELAGO-SAO MIGUEL ISLAND
+Maritime security level information 
+ 13AUG26 TO 02SEP26, A FOREIGN
+MILITARY SAILING VESSEL IS
+MOORED IN PONTA DELGADA
+HARBOUR.
+IS PROHIBITED TO NAVIGATE LESS
+THAN 50 MTS OF THE SHIP.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

@@ -2,14 +2,39 @@ modules = ["python-3.12", "nodejs-24"]
 
 [nix]
 channel = "stable-25_05"
-packages = ["gitFull", "playwright-driver", "nspr", "nss", "atk", "cups", "libdrm", "mesa", "pango", "gtk3", "xorg.libX11", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXext", "xorg.libXfixes", "xorg.libXrandr", "xorg.libxcb"]
+packages = ["atk", "cups", "gitFull", "gtk3", "libdrm", "mesa", "nspr", "nss", "pango", "playwright-driver", "xorg.libX11", "xorg.libXcomposite", "xorg.libXdamage", "xorg.libXext", "xorg.libXfixes", "xorg.libXrandr", "xorg.libxcb"]
 
 [agent]
 expertMode = true
 
 [workflows]
 runButton = "Project"
+run = "python -m unittest discover -s tests -v && python corpus_runner.py --root . --baseline reports/corpus_baseline.json --fail-on-loss --output reports/corpus_validation.json"
+
+[[workflows.workflow]]
+name = "Project"
+mode = "parallel"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "release-geometry-gate"
+
+[[workflows.workflow]]
+name = "release-geometry-gate"
+author = "agent"
+
+[[workflows.workflow.tasks]]
+task = "shell.exec"
+args = "bash scripts/release-validation.sh"
+
+[workflows.workflow.metadata]
+isValidation = true
 
 [[ports]]
 localPort = 19715
 externalPort = 80
+
+[postMerge]
+path = "scripts/post-merge.sh"
+timeoutMs = 180000

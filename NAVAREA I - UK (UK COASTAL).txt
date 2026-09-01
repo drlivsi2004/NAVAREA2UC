@@ -1,0 +1,224 @@
+вUK COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: WZ 510/26, WZ 513/26, WZ 515/26, WZ 516/26, WZ 518/26, WZ
+519/26, WZ 520/26.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: WZ 505/26.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: WZ 453, WZ 455, WZ 459, WZ 462, WZ 465, WZ 466, WZ 469, WZ 471, WZ 473, WZ
+474, WZ 476, WZ 484, WZ 493, WZ 500, WZ 503, WZ 504, WZ 510, WZ 513, WZ 515, WZ 516, WZ
+518, WZ 519, WZ 520.
+
+---------------------------------------------------------------------------------------
+
+WZ 453/26
+211535 UTC Jul 26
+LUNDY.
+SAINT IVES NORTHWESTWARDS.
+WAVE HUB NW BUOY 50-23.1N 005-38.2W AIS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 455/26
+221806 UTC Jul 26
+FORTIES.
+BRITANNIA GAS FIELD.
+PLATFORM 16/26, 58-02.9N 001-08.3E, AIS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 459/26
+240505 UTC Jul 26
+DOGGER.
+SOFIA OFFSHORE WIND FARM.
+1. BUOYS UNLIT:
+A. N1 55-08.1N 002-09.5E.
+B. E5
+54-51.5N 002-20.7E.
+2. CANCEL WZ 374/26.
+
+---------------------------------------------------------------------------------------
+
+WZ 462/26
+250532 UTC Jul 26
+HUMBER.
+LEMAN GAS FIELD.
+1. PLATFORM 49/27-ED 53-03.6N 002-12.6E UNLIT AND ALL NAVAIDS
+INOPERATIVE.
+2. CANCEL WZ 376/26.
+
+---------------------------------------------------------------------------------------
+
+WZ 465/26
+271650 UTC Jul 26
+PLYMOUTH.
+FOWEY LIGHT 50-19.6N 004-38.9W UNRELIABLE.
+
+---------------------------------------------------------------------------------------
+
+WZ 466/26
+280122 UTC Jul 26
+HUMBER.
+MID HAISBRO BUOY 52-54.2N 001-41.6E UNLIT.
+
+---------------------------------------------------------------------------------------
+
+WZ 469/26
+022108 UTC Aug 26
+HUMBER.
+INNER BANK.
+PLATFORM SOUTHWARK 53-11.0N 002-05.8E UNLIT AND ALL NAVAIDS
+INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 471/26
+032003 UTC Aug 26
+FORTH.
+NEART NA GAOITHE WIND FARM.
+1. NNG E BUOY 56-14.3N 002-08.6W AND NNG S BUOY
+56-12.3N 002-09.8W AIS INOPERATIVE.
+2. CANCEL WZ 396/26.
+
+---------------------------------------------------------------------------------------
+
+WZ 473/26
+041521 UTC Aug 26
+IRISH SEA.
+WALNEY EXTENSION WIND FARM.
+1. TURBINE A01, 54-06.8N 003-55.0W, UNLIT.  
+2.
+CANCEL WZ 398/26.
+
+---------------------------------------------------------------------------------------
+
+WZ 474/26
+052117 UTC Aug 26
+FAIR ISLE.
+WESTRAY.
+NOUP HEAD LIGHT 59-19.9N 003-04.2W RANGE TEMPORARILY REDUCED TO 12
+MILES.
+
+---------------------------------------------------------------------------------------
+
+WZ 476/26
+061122 UTC Aug 26
+THAMES.
+SANDETTIE WEST BUOY 51-15.1N 001-54.5E MISSING.
+
+---------------------------------------------------------------------------------------
+
+WZ 484/26
+082015 UTC Aug 26
+HUMBER.
+HORNSEA 1 OFFSHORE WIND FARM.
+1. TURBINE FOG SIGNALS INOPERATIVE:
+A. A21 53-50.1N
+001-52.4E.
+B. A26 53-50.1N 001-45.9E.
+2. CANCEL WZ 411/26.
+
+---------------------------------------------------------------------------------------
+
+WZ 493/26
+121022 UTC Aug 26
+CROMARTY.
+KINCARDINE FLOATING OFFSHORE WIND FARM.
+1. TURBINE FOG SIGNALS INOPERATIVE:
+A.
+KIN-04, 57-01.1N 001-51.3W.
+B. KIN-05, 57-00.6N 001-50.9W.
+2. CANCEL WZ 490/26.
+
+---------------------------------------------------------------------------------------
+
+WZ 500/26
+161800 UTC Aug 26
+DOVER.
+GOODWIN SANDS EASTWARDS.
+EAST GOODWIN LIGHT VESSEL 51-13.3N 001-36.4E PERMANENTLY
+DISCONTINUED.
+
+---------------------------------------------------------------------------------------
+
+WZ 503/26
+181600 UTC Aug 26
+HEBRIDES.
+PABAY EASTWARDS.
+BOW ROCK BUOY 57-16.8N 005-45.9W AIS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 504/26
+190354 UTC Aug 26
+HUMBER.
+RAVENSPURN SOUTH GAS FIELD.
+PLATFORM SOUTH 42/30-B 54-03.6N 000-54.0E UNLIT AND
+ALL NAVAIDS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 510/26
+211830 UTC Aug 26
+HUMBER.
+LEMAN GAS FIELD.
+PLATFORMS 49/27-FD AND 49/27-FP IN 53-02.4N 002-18.9E UNLIT AND
+ALL NAVAIDS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 513/26
+231345 UTC Aug 26
+DOGGER.
+DOGGER BANK B OFFSHORE WIND FARM.
+N1 BUOY 55-04.8N 001-31.5E UNLIT.
+
+---------------------------------------------------------------------------------------
+
+WZ 515/26
+240005 UTC Aug 26
+CROMARTY.
+ABERDEEN OFFSHORE WIND FARM 57-13N 002-00W ALL NAVAIDS UNRELIABLE OR
+INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 516/26
+240025 UTC Aug 26
+FORTIES. CROMARTY.
+BUZZARD OIL AND GAS FIELD.
+PLATFORM BUZZARD 57-48.8N 000-58.6W UNLIT
+AND ALL NAVAIDS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 518/26
+261605 UTC Aug 26
+HUMBER.
+LEMAN GAS FIELD.
+PLATFORMS 49/26-CD AND 49/26-CP 53-05.75N 002-09.63E UNLIT AND
+ALL NAVAIDS INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+WZ 519/26
+262030 UTC Aug 26
+DOVER.
+SOUTH FALLS BUOY 51-13.9N 001-43.9E UNLIT.
+
+---------------------------------------------------------------------------------------
+
+WZ 520/26
+270837 UTC Aug 26
+DOVER.
+DUNGENESS LIGHT 50-54.8N 000-58.6E LIGHT UNRELIABLE AND FOG SIGNAL INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

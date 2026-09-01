@@ -1,0 +1,128 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "ILPmKharYX4VomAjVP9c3"
+uri = "file://ROADMAP.md"
+type = "text"
+title = "NAVAREA2UC Roadmap — Any Source. Any Format. Any ECDIS."
+description = "Обновлённая roadmap проекта: текущая реализация, стабилизация v1.3.0, encoding/language/provenance foundation, Unified Maritime Information Model, AIO, Web transition и ECDIS interoperability."
+logical_id = "27b913b3-bdab-4413-844c-d43f3843a846"
+content_hash = "sha256:226e39c16dbe946121cffec2fa90033475f6f3bbb8a03bf741ce24219705cb5c"
+size = 24108
+mtime_ms = 1787891255771
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/27b913b3-bdab-4413-844c-d43f3843a846/87b25850-715e-44a2-80c2-1fd126af9ec2"
+storage_version_token = "1787891279107433"
+content_type = "text/markdown"
+
+[[outputs]]
+id = "qmZ2pEvRCuzF4AsvZQV3d"
+uri = "file://reminders/navarea-source-check-next-watch.ics"
+type = "unspecified"
+title = "Напоминание на ближайшую вахту"
+description = "iPhone Calendar event: 29 августа 2026, 00:00–04:00 UTC. В начале интервала появится уведомление о проверке официальных источников NAVAREA."
+logical_id = "0c91927c-9ca2-4d0f-8ed8-d9231e18688e"
+content_hash = "sha256:cc270aa48823a96f0932cfc16c175230148f9781f6cefef02b9ffc1ac48e7410"
+size = 1036
+mtime_ms = 1787938381690
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/0c91927c-9ca2-4d0f-8ed8-d9231e18688e/8884a7c0-02b4-400c-9180-6970b7826fc0"
+storage_version_token = "1787938391963569"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "-lWd8aOcAHugFq3MMCqHO"
+uri = "file://reminders/navarea-source-check-next-watch.html"
+type = "text"
+title = "Открыть напоминание на iPhone"
+description = "Откройте страницу в браузере, нажмите Download calendar reminder и добавьте полученный .ics в iPhone Calendar. Событие: 29 августа 2026, 00:00–04:00 UTC."
+logical_id = "302d8b13-1579-4151-974d-a8125e0f03e8"
+content_hash = "sha256:cc41f226fe88caf305e9fcd04389ef10ffd4f958a4f1be3302e0a733786aba91"
+size = 3680
+mtime_ms = 1787938451664
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/302d8b13-1579-4151-974d-a8125e0f03e8/f9b84ca0-00c1-4b84-839c-169a968c7ca1"
+storage_version_token = "1787938466882460"
+content_type = "text/html"
+
+[[outputs]]
+id = "YeCjnHXL0qsXbdUqAvuvn"
+uri = "file://attached_assets/navarea2uc-banner-generated-v2.png"
+type = "image"
+title = "Новая реконструкция баннера — v2"
+description = "Квадратная high-quality версия по исходному референсу: сохранены композиция, верхняя береговая линия, центральный маршрут, зоны предупреждений, судно и блок NAVAREA2UC."
+logical_id = "c94c693e-715b-4258-8344-c94b37b4c948"
+content_hash = "sha256:0576d10570c74a6f3da083f9bea2864df30614d6e140edfc32d514d77ab2b2f2"
+size = 1411836
+mtime_ms = 1787948526216
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/c94c693e-715b-4258-8344-c94b37b4c948/42b2e59c-d9dc-431e-8e8f-b8b1b65cdf6e"
+storage_version_token = "1787948590382283"
+content_type = "image/png"
+
+[[outputs]]
+id = "aFOs3p1t2eGYwVmOUG33Z"
+uri = "file://attached_assets/navarea2uc-banner-master-4k.png"
+type = "image"
+title = "NAVAREA2UC banner master 4K"
+description = "Master-версия 3840×3840 PNG для дальнейшей прорисовки мелких ECDIS-деталей и архивного хранения."
+logical_id = "24bf2e55-d01a-4d2c-ae21-8c7c164c6e3d"
+content_hash = "sha256:0378927fcc74b36dd7c030a17444471e13d1408fbfee252be302466c8ddf700b"
+size = 9984851
+mtime_ms = 1787948839328
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/24bf2e55-d01a-4d2c-ae21-8c7c164c6e3d/52b3aeb9-0139-4e72-9a57-1e6d6bf95ca8"
+storage_version_token = "1787948879034094"
+content_type = "image/png"
+
+[[outputs]]
+id = "mLnuYUBHeQqvxWoOea-1N"
+uri = "file://artifacts/navarea2uc-imported-design/public/images/site-banner-muted-4k.jpeg"
+type = "image"
+title = "NAVAREA2UC muted banner master 4K"
+description = "Обновлённый master 3840×3840: приглушённая цветокоррекция с сохранённой ECDIS-композицией и читаемыми акцентами."
+logical_id = "4d5ffb20-6a7e-4a57-9e69-dfcc9fd51152"
+content_hash = "sha256:fe6dd8e1f436f0c6fcf0381e8e89b9907c5ff3dd73d16801222bb6ed62f5c984"
+size = 2626660
+mtime_ms = 1787950599512
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/4d5ffb20-6a7e-4a57-9e69-dfcc9fd51152/ed3b6cc7-925c-4b9e-934e-7c6c3339439a"
+storage_version_token = "1787950643527993"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "nOq3fVy7wbyd-JAusycio"
+uri = "file://artifacts/navarea2uc-imported-design/public/images/site-banner-flags-4k.jpeg"
+type = "image"
+title = "NAVAREA2UC banner — Ukrainian flags"
+description = "Финальная 4K-версия 3840×3840 с украинским флагом на маяке и на буровой платформе."
+logical_id = "dd44346e-9c48-4d50-b9a0-25003ed7e146"
+content_hash = "sha256:43672942749e8615a2e8ff3b5f9100216dc92c5da08898b7ec5f09de5a03c204"
+size = 2871292
+mtime_ms = 1787951392528
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/dd44346e-9c48-4d50-b9a0-25003ed7e146/05c63528-ec1d-460d-b521-467168c86340"
+storage_version_token = "1787951461962698"
+content_type = "image/jpeg"
+
+[[outputs]]
+id = "BJkWbf1A-Xr1G6WVuZ9da"
+uri = "file://examples/NAVAREA2UC_ECDIS_SEMANTICS_DEMO.xml"
+type = "unspecified"
+title = "ECDIS demo XML — Black Sea / Ukraine"
+description = "Furuno UserChart v1.3 для ECDIS. Все демонстрационные объекты перенесены в открытую акваторию южнее Одессы: 45.66–46.18 N, 30.95–31.78 E."
+logical_id = "d7e4c1b2-bfe9-492f-9d16-008d1a228161"
+content_hash = "sha256:6766b7bfffc066f410e74af71cb5d0b898bbfe7d827a3e8617d0679753482353"
+size = 8607
+mtime_ms = 1787963977501
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/d7e4c1b2-bfe9-492f-9d16-008d1a228161/63ba57fd-5eb2-4990-b5ce-67054dedce46"
+storage_version_token = "1787963997778520"
+content_type = "application/octet-stream"
+
+[[outputs]]
+id = "2v6cbL7CAQyQOBzRKxw5o"
+uri = "file://artifacts/navarea2uc-imported-design/public/NAVAREA2UC-ECDIS-Quick-Reference.pdf"
+type = "pdf"
+title = "NAVAREA2UC ECDIS Quick Reference — updated"
+description = "A4 print-ready quick reference with safety rules plus a note that the shown colours and styles are author defaults and may be customized by the user."
+logical_id = "71f9dd0d-143b-4ae5-8fbf-f27a944eddd3"
+content_hash = "sha256:c186de17cf496d91a37b10d7438410899316d191ec90da4ae79c6b5372e1782c"
+size = 12228
+mtime_ms = 1788046492713
+storage_uri = "gcs://replit-rams-assets-reed/rams/assets/repl:ec8d18cc-9d7e-4afc-96a1-b0ff1a1b444c/71f9dd0d-143b-4ae5-8fbf-f27a944eddd3/3b6ca47b-3a65-4e36-a8a7-47293449bd12"
+storage_version_token = "1788046527553387"
+content_type = "application/pdf"

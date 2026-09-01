@@ -1,0 +1,89 @@
+NAVAREA I (BALTIC SEA SUB-AREA) - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: SWE 143/26, SWE 144/26.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: SWE 135/26, SWE 138/26.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2025 SERIES: BAL 26.
+
+2026 SERIES: SWE 122, SWE 132, SWE 139, SWE 143, SWE 144.
+
+---------------------------------------------------------------------------------------
+
+BAL 26/25
+020859 UTC JUL 2025
+BALTIC SEA NAV WARN
+SOUTHERN, SOUTHEASTERN, CENTRAL AND NORTHERN BALTIC, GULF OF FINLAND, GULF OF RIGA AND
+SEA OF AALAND.
+GNSS, AIS, RADAR AND DGPS INTERFERENCE OBSERVED IN AREA.
+MARINERS ADVISED TO EXERCISE CAUTION
+AND BE PREPARED FOR NAVIGATION IMPACTS.
+
+---------------------------------------------------------------------------------------
+
+SWE 122/26
+200303 UTC JUL 2026
+SWEDISH NAV WARN
+BAY OF BOTHNIA. PITEÅ HAMN (HARAHOLMEN)
+LEADING LINE  'SÖR-HARAHOLMEN NEDRE'  AND  'SÖR HARAHOLMEN ÖVRE'  IS TURNED OFF DUE TO
+MAINTINANCE .
+PSN 65-14.44N 021-37.50E.
+
+---------------------------------------------------------------------------------------
+
+SWE 132/26
+041546 UTC AUG 2026
+SWEDISH NAV WARN
+SEA OF BOTHNIA. SUNDSVALL.
+LIGHT 'GRANÖN' IS UNLIT.
+PSN 62-26.1N 017-31.4E.
+
+---------------------------------------------------------------------------------------
+
+SWE 139/26
+150645 UTC AUG 2026
+SWEDISH NAV WARN
+CENTRAL BALTIC. GOTLAND. FÅRÖSUND. TRELGE SKJUTFÄLT.
+FIRING EXERCISE 18 AUG - 08 SEP.
+CURRENT EXTENSION AREA 2.5M FROM COASTLINE. EXERCISE AREA CENTERED IN APPR PSN: 57-56N
+019-00E
+LOCAL TIME
+0900 - 1700 18 - 20, 25, 27 AUG
+0900 - 1200 28 AUG
+0900 - 1700 03 - 04 SEP
+0800 - 1700 05 SEP
+0830 - 2030 06 SEP
+0900 - 2200 07 SEP
+0900 - 1400 08 SEP
+SEE NTM 20252 (T) FOR ADDITIONAL INFO.
+
+
+---------------------------------------------------------------------------------------
+
+SWE 143/26
+212216 UTC AUG 2026
+SWEDISH NAV WARN
+SEA OF BOTHNIA. SUNDSVALL.
+LIGHT  'DRAGHÄLLAN' IS UNLIT.
+PSN 62-20.39N 017-26.36E.
+
+---------------------------------------------------------------------------------------
+
+SWE 144/26
+250835 UTC AUG 2026
+SWEDISH NAV WARN
+BAY OF BOTHNIA. FAIRWAY TO KARLSBORG. NORTH OF HALSÖKLIPPOR.
+SPAR BUOY REPORTED ADRIFT IN
+APPROX. PSN 65-43.5N 023-26.2E
+AT 251035 UTC AUG.
+CAUTION ADVISED.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

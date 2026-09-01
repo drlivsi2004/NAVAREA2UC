@@ -1,0 +1,187 @@
+PORTUGAL COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: NR 1863/2026, NR 1877/2026, NR 1879/2026, NR 1880/2026,
+NR 1881/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: NR 1865/2026, NR 1874/2026, NR 1876/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: NR 1670, NR 1686, NR 1719, NR 1780, NR 1803, NR 1863, NR 1877, NR 1879, NR
+1880, NR 1881.
+
+---------------------------------------------------------------------------------------
+
+NR 1670/2026
+010153 UTC AUG 2026
+RA93
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-SOUTH COAST
+Maritime security level information 
+ UNTIL 31DEC26, DRAGING WORK IN
+THE PORT OF TAVIRA AND ADJACENT
+CHANNELS. WIDE BERTH
+REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+NR 1686/2026
+031647 UTC AUG 2026
+RA99
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Maritime security level information 
+ FROM 03AUG TO 30SEP26, DRAGGING
+WORK BY THE DRAGGER 'COSTA
+ATLANTICA'AND WITH THE
+SHIPMENTS
+'ESMERALDA AZUL' AND
+'CALMARTIAS' BETWEEN TEJO RIVER
+ESTUARY AND NEAR BUOY NR5
+IN THE
+BARRA CHANNEL.WIDE BERTH
+REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+NR 1719/2026
+071055 UTC AUG 2026
+RL16
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Maritime security level information 
+UNTIL 24NOV26, DRAGGING
+OPERATIONS USING THE 'VIKING R'
+AND 'IDUN R' DRAGERS AT THE BAR
+OF THE PORT OF FIGUEIRA DA FOZ,
+WITH SAND DEPOSITED AT COVA
+GALA BEACH. WIDE BERTH
+REQUESTED. NAV WARNIG 1696/26,
+NAV WARNING 1697/26 CANCELED.
+
+---------------------------------------------------------------------------------------
+
+NR 1780/2026
+141417 UTC AUG 2026
+RL43
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Maritime security level information 
+FROM 12AUG26 TO 09SEP26,
+HYDROGRAPHIC SURVEYS IN LISBON
+ZONE,CONDUTED BY VESSEL
+ROAZ.POSITIONS:CAHOPO NORTE AND
+CABECA DO PATO38-40.08N -
+009-19.28W38-37.38N -
+009-22.22W38-38.73N -
+009-23.11W38-40.52N -
+009-20.95WGOLADA DO BUGIO
+38-39.23N -
+009-18.71W
+38-39.54N - 009-15.43W
+38-40.77N - 009-13.75W
+38-40.90N - 009-17.22W
+38-39.63N
+- 009-18.80W
+WIDE BERTH REQUESTED.
+
+
+
+
+---------------------------------------------------------------------------------------
+
+NR 1803/2026
+171152 UTC AUG 2026
+RL52
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-SOUTH COAST
+Maritime security level information 
+ OCEANOGRAPHIC OBSERVATION
+INFRAESTRUTURE, CONSISTING OF A
+SURFACE AND SUBSURFACE
+MOORINGS,INSTALLED IN THE AREA
+DEFINED BY THE COORDINATES
+:36-50.942N
+008-55.772W36-50.942N
+008-55.252W36-50.638N
+008-55.252W36-50.638N
+008-55.772WWIDE BERTH
+REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+NR 1863/2026
+241547 UTC AUG 2026
+RL73
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-SOUTH COAST
+Maritime security level information 
+ FROM 25 TO 28 AUG 26,
+HYDROGRAPHIC WORKS WILL BE
+CONDUCTED BY VESSEL 'NAUTILUS' 
+MMSI
+224738000 USING ROV,
+BETWEEN LONGITUDES: 007-55W E
+007-47W.
+WIDE BERTH REQUESTED
+
+---------------------------------------------------------------------------------------
+
+NR 1877/2026
+260145 UTC AUG 2026
+RL78
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Special operations: Naval excercices, missile firings, space missions, dumping zones,
+nuclear test, etc
+ FROM 27 TO 28 AUG26,FROM 0900
+TO 1800 LOCAL TIME, TESTS
+INVOLVING THE USE OF LIGHT
+WEAPONS AGAINST UAV'S, AT THE
+FOLLOWING AREA:
+38-18.0N / 008-51.0W
+38-18.0N / 008-45.0W
+38-13.0N / 008-45.0W
+38-13.0N / 008-51.0W
+WIDE BERTH REQUESTED
+
+---------------------------------------------------------------------------------------
+
+NR 1879/2026
+261626 UTC AUG 2026
+RL79
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Maritime security level information 
+ THE CABO DA ROCA LIGHTHOUSE IS
+OPERATING WITH LIMITATIONS,
+WITHA REDUCE RANGE OF
+APPROXIMATELY 12 MILES.
+
+---------------------------------------------------------------------------------------
+
+NR 1880/2026
+262346 UTC AUG 2026
+RL80
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Maritime security level information 
+ 27AUG26 FROM 0001 LOCAL TIME,
+UNTIL 27AUG26 AT 0800LOCAL TIME,
+SERVICES PROVIDED BY THE
+SETUBALPORT MARITIME TRAFFIC
+CONTROL CENTRE CCTM/VTS WILLBE
+TEMPORARILY SUSPENDED, FOR
+OPERATIONAL REASONS.IN CASE OF
+EMERGENCY CONTACT MRCC LISBON.
+
+---------------------------------------------------------------------------------------
+
+NR 1881/2026
+270136 UTC AUG 2026
+RL81
+NORTH ATLANTIC - PORTUGAL-CONTINENTAL PORTUGAL-WEST COAST
+Maritime security level information 
+28 TO 30AUG26, DURING DAYLIGHT,
+SAILING REGATTAS ARE
+TAKINGPLACEIN CASCAIS BAY.WIDE
+BERTHREQUESTED.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

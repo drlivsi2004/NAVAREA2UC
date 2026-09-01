@@ -1,0 +1,80 @@
+SAR - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NO NEW WARNINGS SINCE LAST UPDATE.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: SAR 137/26.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: SAR 38, SAR 102, SAR 105, SAR 110, SAR 121, SAR 135.
+
+---------------------------------------------------------------------------------------
+
+SAR 38/26
+160301 UTC MAR 2026
+BANANAL COVE VICINITY
+CHART 1501
+MAN OVERBOARD, LAST POSITION
+IN 22-58.78S 043-01.13W
+VESSELS IN VICINITY REQUESTED TO SEARCH, SIGHT, ASSIST AND REPORT SALVAMAR SUESTE TEL:
++55  21 99358-9035 E-MAIL: MRCCRIO@MARINHA.MIL.BR
+CANCEL SAR 0028/26
+
+---------------------------------------------------------------------------------------
+
+SAR 102/26
+170536 UTC JUN 2026
+ILHA MONSARAS VICINITY
+CHART 4343 A
+MAN OVERBOARD, LAST POSITION IN 01-15.26S 050-48.08W INFORM SALVAMAR NORTE TEL.: +55 (91)
+98266-0289 / E-MAIL: MRCCBELEM@GMAIL.COM AT 15 JUN 26
+VESSELS IN VICINITY REQUESTED TO SEARCH, SIGHT, ASSIST AND REPORT
+
+---------------------------------------------------------------------------------------
+
+SAR 105/26
+190220 UTC JUN 2026
+PRAIA CACIMBAS VICINITY
+CHART 22800 (INT 2121)
+MAN OVERBOARD, LAST POSITION
+IN 19-24.32S 039-39.48W IN 12 JUN 26
+VESSELS IN VICINITY REQUESTED TO SEARCH, SIGHT, ASSIST AND REPORT SALVAMAR SUESTE. TEL:
++55  21 99358-9035 / +55 21 2253-6572 / +55 21 2104-6119 / +55 21 2104-6120 / 0800 28
+56158. E-MAIL: MRCCRIO@1DN.MAR.MIL.BR
+
+---------------------------------------------------------------------------------------
+
+SAR 110/26
+020301 UTC JUL 2026
+VICINITY OF ARACARI ISLAND
+CHART 4150 HS-C8
+MAN OVERBOARD, LAST POSITION IN 02-34.78S 066-18.18W AT 30 JUN 26
+VESSELS IN VICINITY REQUESTED TO SEARCH, SIGHT, ASSIST AND REPORT
+
+---------------------------------------------------------------------------------------
+
+SAR 121/26
+122104 UTC JUL 2026
+RIO PARANAPANEMA
+CHART 1
+COLLISION BETWEEN TWO VESSELS , 1 CREW MEMBER MISSING
+LAST POSITION IN 22-47.78S
+050-58.47W AT 11 JUL 26
+VESSELS IN VICINITY REQUESTED TO KEEP A SHARP, LOOKOUT AND REPORTS
+
+---------------------------------------------------------------------------------------
+
+SAR 135/26
+141706 UTC AUG 2026
+SOUTHEAST OF ILHA DE ALCATRAZES
+CHART 23100 (INT 2124)
+MAN OVERBOARD, LAST POSITION IN 24-34.60S 045-25.70W AT 14 AUG 26
+VESSELS IN VICINITY REQUESTED TO SEARCH, SIGHT, ASSIST AND REPORT
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

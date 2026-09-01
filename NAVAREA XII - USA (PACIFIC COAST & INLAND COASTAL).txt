@@ -1,0 +1,3040 @@
+PACIFIC COAST & INLAND COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: P 1169/2026, P 1170/2026, P 1171/2026, P 1172/2026, P
+1173/2026, P 1174/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: P 315/2026, P 1103/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2019 SERIES: P 226.
+
+2020 SERIES: P 477, P 484, P 485, P 497, P 501, P 504, P 540, P 634, P 726, P 733, P
+734, P 756, P 760, P 879, P 1126, P 1322, P 1326.
+
+2021 SERIES: P 434, P 619, P 853, P 1174, P 1475, P 1711.
+
+2022 SERIES: P 82, P 94, P 101, P 160, P 186, P 220, P 291, P 338, P 384, P 898, P 1035,
+P 1115, P 1168, P 1406, P 1553, P 1576, P 1683.
+
+2023 SERIES: P 292, P 360, P 585, P 587, P 617, P 625, P 832, P 883, P 924, P 933, P
+934, P 938, P 1021, P 1056, P 1174, P 1184, P 1227, P 1396, P 1401, P 1470, P 1607.
+
+2024 SERIES: P 50, P 304, P 458, P 519, P 619, P 732, P 810, P 847, P 863, P 880, P 885,
+P 999, P 1000, P 1085, P 1095, P 1175, P 1201, P 1202, P 1203, P 1216, P 1411, P 1461, P
+1473, P 1606, P 1660, P 1665, P 1666, P 1669, P 1674, P 1675, P 1685, P 1767, P 1806, P
+1849, P 2007, P 2008, P 2055, P 2058, P 2060, P 2073.
+
+2025 SERIES: P 7, P 129, P 194, P 281, P 373, P 496, P 609, P 669, P 747, P 800, P 879,
+P 1019, P 1023, P 1024, P 1028, P 1029, P 1030, P 1032, P 1043, P 1060, P 1068, P 1069, P
+1070, P 1071, P 1072, P 1073, P 1074, P 1075, P 1077, P 1104, P 1105, P 1142, P 1144, P
+1145, P 1162, P 1163, P 1164, P 1165, P 1166, P 1179, P 1204, P 1205, P 1255, P 1322, P
+1323, P 1324, P 1325, P 1326, P 1402, P 1431, P 1507, P 1603, P 1635, P 1680, P 1709, P
+1730, P 1839, P 1909, P 1910, P 1932.
+
+2026 SERIES: P 5, P 46, P 60, P 97, P 112, P 120, P 121, P 126, P 155, P 170, P 188, P
+189, P 190, P 201, P 337, P 371, P 375, P 380, P 409, P 425, P 426, P 434, P 465, P 467,
+P 475, P 482, P 507, P 511, P 525, P 556, P 562, P 584, P 587, P 591, P 604, P 633, P
+656, P 683, P 713, P 735, P 743, P 745, P 746, P 750, P 757, P 760, P 768, P 786, P 788,
+P 805, P 806, P 809, P 811, P 812, P 820, P 841, P 843, P 853, P 876, P 892, P 914, P
+917, P 924, P 926, P 935, P 939, P 960, P 970, P 1020, P 1022, P 1023, P 1030, P 1032, P
+1038, P 1044, P 1051, P 1052, P 1056, P 1057, P 1062, P 1067, P 1072, P 1097, P 1111, P
+1118, P 1119, P 1120, P 1125, P 1140, P 1150, P 1152, P 1155, P 1160, P 1169, P 1170, P
+1171, P 1172, P 1173, P 1174.
+
+---------------------------------------------------------------------------------------
+
+P 226/2019
+060000 UTC FEB 2019
+Aids to Navigation
+Damaged
+
+POSITION 49-06.381N 123-07.571W
+
+---------------------------------------------------------------------------------------
+
+P 477/2020
+030000 UTC APR 2020
+Obstruction
+Wave monitoring buoys deployed in Burrard Inlet located at 49 18.332N 122 58.714W and 49
+18.116N 122 57.072W.
+
+Marked with yellow flashing lights.
+
+POSITION 49-18.332N 122-58.714W
+POSITION 49-18.116N
+122-57.072W
+
+---------------------------------------------------------------------------------------
+
+P 484/2020
+040000 UTC APR 2020
+Scientific Mooring
+A subsurface scientific mooring has been deployed at 48° 42.094'N 123° 16.650'W
+The buoy is approximately 4 meters above the sea floor.
+
+POSITION 48-42.094N 123-16.650W
+
+---------------------------------------------------------------------------------------
+
+P 485/2020
+040000 UTC APR 2020
+Scientific Mooring
+A subsurface scientific mooring has been deployed at 49° 14.349'N 123° 22.413'W
+The buoy is approximately 9 meters above the sea floor.
+
+POSITION 49-14.349N 123-22.413W
+
+---------------------------------------------------------------------------------------
+
+P 497/2020
+040000 UTC APR 2020
+Obstruction
+Loose pilings reported in the vicinity of the Pitt River Rail bridge located at 49
+14.705N 122 44.023W.
+
+Caution.
+
+POSITION 49-14.705N 122-44.023W
+
+---------------------------------------------------------------------------------------
+
+P 501/2020
+040000 UTC APR 2020
+Underwater Hazard
+Piling below chart datum reported in the vicinity of Pacific Elevators dock located at 49
+17.352N 123 03.947W.
+
+Caution.
+
+POSITION 49-17.352N 123-03.947W
+
+---------------------------------------------------------------------------------------
+
+P 504/2020
+040000 UTC APR 2020
+Debris
+Partially submerged object reported in the vicinity of Secret Cove located at 49 31.686N
+123 57.197W.
+
+Caution.
+
+POSITION 49-31.686N 123-57.197W
+
+---------------------------------------------------------------------------------------
+
+P 540/2020
+150000 UTC APR 2020
+Subsurface Mooring
+A subsurface mooring buoy has been deployed at 48 44.345N 123 15.432W.
+Mooring extends 2 meters from the sea floor.
+
+POSITION 48-44.345N 123-15.432W
+
+---------------------------------------------------------------------------------------
+
+P 634/2020
+100000 UTC MAY 2020
+Obstruction
+Partially submerged Catamaran reported in the vicinity of Roberts Creek, located at 49
+23.580N 123 38.438W.
+
+POSITION 49-23.580N 123-38.438W
+
+---------------------------------------------------------------------------------------
+
+P 726/2020
+200000 UTC MAY 2020
+Fraser River - North Arm Caution
+Submerged debris and significant changes in channel depths in the North arm of the Fraser
+River. 
+Current channel conditions available at https://avadepth.ccg-gcc.gc.ca.
+Caution.
+
+POSITION 49-14.400N 123-14.580W
+
+---------------------------------------------------------------------------------------
+
+P 733/2020
+210000 UTC MAY 2020
+French Creek Temporary Light
+A temporary Fl 4s Green light has been established in the vicinity of French Creek at 49
+21.100N 124 21.223W.
+
+POSITION 49-21.100N 124-21.223W
+
+---------------------------------------------------------------------------------------
+
+P 734/2020
+210000 UTC MAY 2020
+Aids to Navigation
+Changed to Fl 4s Red and moved to49 21.115N 124 21.295W.
+
+.
+
+POSITION 49-21.115N 124-21.295W
+
+---------------------------------------------------------------------------------------
+
+P 756/2020
+220000 UTC MAY 2020
+Aids to Navigation
+Temporarily changed from White 000° to 168°; Red 168° to 198°; obscured 198° to 334°; Red
+334° to 000°; White 000° to 157°; Red 157° to 198°; obscured 198° to 334°; Red 334° to
+000°
+
+POSITION 53-29.552N 130-38.250W
+
+---------------------------------------------------------------------------------------
+
+P 760/2020
+240000 UTC MAY 2020
+Waterway information
+Submerged sailing vessel, with mast 2 feet out of the water, reported in the vicinity of
+comox harbour, located at 49 40.173N 124 55.986W. 
+Caution.
+
+POSITION 49-40.173N 124-55.986W
+
+---------------------------------------------------------------------------------------
+
+P 879/2020
+040000 UTC JUL 2020
+Waterway information
+Partially submerged vessel anchored in Boundary Bay located at 49 01.210N 122 56.620W. 
+Caution.
+
+POSITION 49-01.210N 122-56.620W
+
+---------------------------------------------------------------------------------------
+
+P 1126/2020
+040000 UTC SEP 2020
+Waterway information
+Unmarked netting attached to an Anchor Block in the vicintiy of 49 53.667N 119 30.133W
+
+Caution.
+
+POSITION 49-53.667N 119-30.133W
+
+---------------------------------------------------------------------------------------
+
+P 1322/2020
+160000 UTC OCT 2020
+Waterway information - Wreck
+Partially submerged wreck reported in the North Arm of the Fraser River at 49 11.822N 123
+01.091W.
+
+Caution.
+
+POSITION 49-11.822N 123-01.091W
+
+---------------------------------------------------------------------------------------
+
+P 1326/2020
+170000 UTC OCT 2020
+Waterway information Private Navaid
+Private quick flashing yellow light at 49 17.425N 122 54.704W burning at reduced
+intensity.
+
+POSITION 49-17.425N 122-54.704W
+
+---------------------------------------------------------------------------------------
+
+P 434/2021
+170000 UTC MAR 2021
+Aids to Navigation - Private Aid
+Private green channel marker advertised at 49 16.211N 123 07.621W, missing
+
+POSITION
+49-16.211N 123-07.621W
+
+---------------------------------------------------------------------------------------
+
+P 619/2021
+050000 UTC MAY 2021
+Obstruction
+Submerged concrete pilings approximately 2 feet below the water surface reported in False
+Creek in the vicinity of Science World located at 49 16.450N 123 06.230W. 
+Caution
+
+POSITION 49-16.410N 123-06.230W
+
+---------------------------------------------------------------------------------------
+
+P 853/2021
+300000 UTC JUN 2021
+Aids to Navigation
+Damaged and unlit
+
+POSITION 49-54.000N 118-04.697W
+
+---------------------------------------------------------------------------------------
+
+P 1174/2021
+070000 UTC SEP 2021
+Obstruction
+Three partially submerged docks in Sechelt Inlet, Porpoise Bay, in the vicinity of 49
+30.050N 123 45.750W. The docks are 50 x 20 feet, wooden, unlit, and visible 3 feet out of
+the water. 
+Caution.
+
+POSITION 49-30.050N 123-45.750W
+
+---------------------------------------------------------------------------------------
+
+P 1475/2021
+050000 UTC NOV 2021
+Obstruction
+A water supply line has been reported afloat on the surface of the water in the vicinity
+of Skookumchuck Narrows located at 49 45.778N 123 56.541W. The supply line extends from
+the northern end of Sutton Island to the Sechelt Peninsula. 
+Caution.
+
+POSITION 49-45.778N 123-56.541W
+
+---------------------------------------------------------------------------------------
+
+P 1711/2021
+230000 UTC DEC 2021
+Obstruction
+A subsurface scientific mooring buoy has been deployed at 49 00.802N 123 25.750W. The
+mooring extends to 30 meters below the surface.
+
+POSITION 49-00.802N 123-25.750W
+
+---------------------------------------------------------------------------------------
+
+P 82/2022
+140000 UTC JAN 2022
+Obstruction - Sunken Vessel
+Sunken sailing vessel reported in the vicinity of Bedford Channel at 49 11.167N 122
+35.383W. Mast is showing above waterline.
+
+POSITION 49-11.167N 122-35.383W
+
+---------------------------------------------------------------------------------------
+
+P 94/2022
+170000 UTC JAN 2022
+Obstruction
+A broken waterline has been reported afloat on the water surface North of Lyche Island in
+the vicinity of 
+48 56.860N 125 32.830W in Ucluelet Harbour. 
+Caution.
+
+POSITION 48-56.860N 125-32.830W
+
+---------------------------------------------------------------------------------------
+
+P 101/2022
+180000 UTC JAN 2022
+Obstruction - sunken vessel
+A sunken sailing vessel reported in West Arm Kootney Lake in the vicinity of 49 34.800N
+117 12.917W. 
+Mast showing above the waterline. 
+Caution.
+
+POSITION 49-34.800N 117-12.917W
+
+---------------------------------------------------------------------------------------
+
+P 160/2022
+290000 UTC JAN 2022
+Aids to Navigation
+Iona Jetty range Unlit
+
+POSITION 49-12.327N 123-16.061W
+
+---------------------------------------------------------------------------------------
+
+P 186/2022
+040000 UTC FEB 2022
+Obstruction - Concrete Object
+A partially submerged concrete object is reported in the North Arm of the Fraser River at
+49 12.426N 123 04.267W.
+
+Caution.
+
+POSITION 49-12.426N 123-04.267W
+
+---------------------------------------------------------------------------------------
+
+P 220/2022
+120000 UTC FEB 2022
+Obstruction - Submarine Cable
+Submarine cable showing above water in the vicinity of Harling Point. 
+Caution.
+
+POSITION 48-24.200N 123-19.200W
+
+---------------------------------------------------------------------------------------
+
+P 291/2022
+010000 UTC MAR 2022
+Obstruction
+Overturned and partially submerged wreck reported in the vicinity of Pit River Bridge
+located at 
+49 15.214N 122 43.283W. Described as 30 feet wide by 60 feet long partially submerged in
+the centre of the channel. 
+Caution.
+
+POSITION 49-15.214N 122-43.283W
+
+---------------------------------------------------------------------------------------
+
+P 338/2022
+150000 UTC MAR 2022
+Aids to Navigation
+NOAA Environmental Lighted Buoy 46041, U.S. LL 733 Temporarily removed
+
+POSITION
+48-34.962N 124-44.160W
+
+---------------------------------------------------------------------------------------
+
+P 384/2022
+260000 UTC MAR 2022
+Obstruction - Floating Pipe
+Floating pipe still attached to the sea floor reported in the vicinity of Colburne
+Passage at 48 41.600N 123 23.740W.
+Caution.
+
+POSITION 48-41.600N 123-23.740W
+
+---------------------------------------------------------------------------------------
+
+P 898/2022
+200000 UTC JUL 2022
+Waterway information - Exclusion Zone
+An exclusion zone has been established in Doctor Bay for Environmental Response.
+Vessels on scene monitoring VHF Channel 16.
+Closest point of approach 1/4 mile. 
+Minimum Wash.
+
+POSITION 50-14.917N 124-49.300W
+
+---------------------------------------------------------------------------------------
+
+P 1035/2022
+150000 UTC AUG 2022
+Obstruction
+A partially submerged embedded piling has been reported north of Pylades Island in the
+vicinity of 49 04.249N 123 41.128W. The piling is 30 cm in diameter, with 4 large spikes
+extending outward. 
+Caution.
+
+POSITION 49-04.249N 123-41.128W
+
+---------------------------------------------------------------------------------------
+
+P 1115/2022
+250000 UTC AUG 2022
+Aids to Navigation
+Multiple channel markers are reported off position on the South Thompson River from
+Lafarge and 20 Miles up. 
+Caution.
+
+POSITION 50-49.493N 119-41.967W
+POSITION 50-39.442N 120-03.736W
+
+---------------------------------------------------------------------------------------
+
+P 1168/2022
+040000 UTC SEP 2022
+Obstruction
+Partially submerged 30 foot vessel 3 feet showing above the water at the bow, attached to
+a buoy in the Strait of Georgia in the vicinity of 49 27.841N 123 47.121W
+ 
+Caution.
+
+POSITION 49-27.841N 123-47.121W
+
+---------------------------------------------------------------------------------------
+
+P 1406/2022
+200000 UTC OCT 2022
+Waterway information
+A subsurface mooring has been deployed at 49 57.332N 125 04.436W, 9m above the sea floor.
+POSITION 49-57.332N 125-04.436W
+
+---------------------------------------------------------------------------------------
+
+P 1553/2022
+190000 UTC NOV 2022
+Waterway information
+The Canadian Coast Guard is requesting assistance to observe, record and report any
+marine mammal sightings in
+Grenville Channel and vicinity of Hartley Bay.
+Send reports to the CCG Regional Operations Centre 1-800-889-8852 or by email
+ROC1COR1@dfo-mpo.gc.ca.
+
+POSITION 53-57.090N 130-10.480W
+POSITION 53-31.130N 129-17.300W
+
+---------------------------------------------------------------------------------------
+
+P 1576/2022
+240000 UTC NOV 2022
+Obstruction
+Partially submerged vessel, white with blue trim, in the vicinity of Sidney at 48 38.19n
+123 22.41w .
+ 
+Caution
+
+POSITION 48-38.190N 123-22.411W
+
+---------------------------------------------------------------------------------------
+
+P 1683/2022
+080000 UTC DEC 2022
+Obstruction
+An unknown submerged object in Mitchell Slough position 49.12.29N 123.06.79W
+
+Caution
+
+POSITION 49-12.290N 123-06.790W
+
+---------------------------------------------------------------------------------------
+
+P 292/2023
+250000 UTC FEB 2023
+Waterway information
+Private red makrer buoy in position 48 52.505N 123 17.496W missing
+
+POSITION 48-52.505N
+123-17.496W
+
+---------------------------------------------------------------------------------------
+
+P 360/2023
+170000 UTC MAR 2023
+Waterway information
+Partially submerged buoy adrift south of Discovery Island in position 48 25.079N 123
+13.581W
+
+Caution
+
+POSITION 48-25.000N 123-14.581W
+
+---------------------------------------------------------------------------------------
+
+P 585/2023
+070000 UTC MAY 2023
+Waterway information - Oceanographic Moorings
+12 subsurface moorings buoys have been deployed 1 meter from the sea floor on the Soquel
+Bank off Pachena Point.
+
+POSITION 48-42.651N 125-07.572W
+POSITION 48-41.915N 125-09.248W
+POSITION 48-41.142N 125-09.248W
+POSITION 48-40.344N 125-09.950W
+POSITION 48-39.593N
+125-10.714W
+POSITION 48-38.867N 125-11.647W
+POSITION 48-38.156N 125-12.558W
+POSITION
+48-37.386N 125-13.361W
+POSITION 48-36.635N 125-14.177W
+POSITION 48-35.916N 125-15.035W
+POSITION 48-34.347N 125-16.645W
+POSITION 48-32.865N 125-18.372W
+
+---------------------------------------------------------------------------------------
+
+P 587/2023
+070000 UTC MAY 2023
+Waterway information - Oceanographic Moorings
+13 subsurface moorings buoys have been deployed 1 meter from the sea floor off Barkley
+Sound.
+
+POSITION 48-49.570N 125-23.900W
+POSITION 48-48.460N 125-24.740W
+POSITION
+48-48.460N 125-25.680W
+POSITION 48-47.950N 125-26.660W
+POSITION 48-47.320N 125-27.590W
+POSITION 48-46.800N 125-28.530W
+POSITION 48-46.180N 125-29.710W
+POSITION 48-45.630N
+125-30.450W
+POSITION 48-45.080N 125-31.430W
+POSITION 48-44.430N 125-32.297W
+POSITION
+48-43.330N 125-34.280W
+POSITION 48-42.190N 125-36.197W
+POSITION 48-41.070N 125-38.120W
+
+---------------------------------------------------------------------------------------
+
+P 617/2023
+110000 UTC MAY 2023
+Aids to Navigation
+Private lighted cautionary buoy in the vicinty of 49 12.801N 123 53.157W reported
+missing.
+
+POSITION 49-12.801N 123-53.157W
+
+---------------------------------------------------------------------------------------
+
+P 625/2023
+130000 UTC MAY 2023
+Aids to Navigation
+A yellow partially submerged buoy was reported in Patricia Bay at 48 38.578N 123 28.387W.
+POSITION 48-38.578N 123-28.387W
+
+---------------------------------------------------------------------------------------
+
+P 832/2023
+290000 UTC JUN 2023
+Obstruction - Submerged Structure
+Submerged concrete structure reported in Kitimat Harbour at 53 59.633N 128 41.200W.
+
+It is marked with a coloured hazard buoy with orange stripes and orange diamond shapes.
+POSITION 53-59.633N 128-41.200W
+
+---------------------------------------------------------------------------------------
+
+P 883/2023
+080000 UTC JUL 2023
+Aids to Navigation - ODAS Buoy
+An ODAS buoy located in the vicinity of Woodward point in Sooke Harbour is off position
+reported at 48 21.662N 123 42.813W.
+
+Caution.
+
+POSITION 48-21.662N 123-42.813W
+POSITION 48-21.754N 123-42.955W
+
+---------------------------------------------------------------------------------------
+
+P 924/2023
+190000 UTC JUL 2023
+Obstruction - Submerged Object
+An uncharted can buoy reported just below the surface in Browning Passage at 49 07.645N
+125 49.890W.
+
+Metal silver can, 3-4ft in diameter.
+
+POSITION 49-07.645N 125-49.890W
+
+---------------------------------------------------------------------------------------
+
+P 933/2023
+210000 UTC JUL 2023
+Waterway information - Subsurface Mooring Buoy
+A subsurface mooring has been deployed in position 48 33.220N 125 42.731W at a depth of
+84m. The mooring extends 5m from the seafloor.
+
+POSITION 48-33.220N 125-42.731W
+
+---------------------------------------------------------------------------------------
+
+P 934/2023
+210000 UTC JUL 2023
+MCTS VHF Services
+Prince Rupert MCTS. Transmit services on VHF RT CH84 located at Calvert Island off air
+210548 UTC Jul 2023.
+
+POSITION 51-35.350N 128-00.717W
+
+---------------------------------------------------------------------------------------
+
+P 938/2023
+220000 UTC JUL 2023
+Waterway information - sunken vessel
+A sunken vessel with bow sprit showing aproximately 2 feet above the water in Tsehum
+Harbour in the vicinity of 
+48 40.328N 123 24.590W.
+ 
+Caution
+
+POSITION 48-40.328N 123-24.590W
+
+---------------------------------------------------------------------------------------
+
+P 1021/2023
+070000 UTC AUG 2023
+Obstruction-Subsurface mooring
+A Subsurface mooring the Dixon 3 has been deployed at 54 26.300N 131 58.100W at a depth
+of 259 meters.
+
+POSITION 54-26.300N 131-58.100W
+
+---------------------------------------------------------------------------------------
+
+P 1056/2023
+110000 UTC AUG 2023
+Aids to Navigation
+Unlit
+
+POSITION 52-34.563N 121-32.508W
+
+---------------------------------------------------------------------------------------
+
+P 1174/2023
+080000 UTC SEP 2023
+Waterway information
+The Canadian Coast Guard is asking mariners to observe, record and report any sightings
+of oil in Grenville Channel
+vicinity of 53 31.22N 129 34.55W.
+Send reports to the CCG Regional Operations Centre 1-800-889-8852 or by email
+ROC1COR1@dfo-mpo.gc.ca.
+
+POSITION 53-31.220N 129-34.550W
+
+---------------------------------------------------------------------------------------
+
+P 1184/2023
+110000 UTC SEP 2023
+Waterway information - Oceanographic Moorings
+2 subsurface oceanographic moorings have been deployed 1 meter from the sea floor off
+Estevan Point at 49 19.637N 126 34.985W and in the Soquel Bank off Pachena Point at 48
+41.534N 125 06.415W.
+
+POSITION 49-19.637N 126-34.985W
+POSITION 48-41.534N 125-06.415W
+
+---------------------------------------------------------------------------------------
+
+P 1227/2023
+180000 UTC SEP 2023
+Waterway information - Broken Pipe
+A broken ABS pipe has been reported in Tsehum Harbour in the vicinity of 48 40.251N 123
+24.413W mid-channel near the entrance to Van Isle Marina. The pipe is a black ABS pipe
+extending 4-6 feet out of the water.
+Caution.
+
+POSITION 48-40.251N 123-24.413W
+
+---------------------------------------------------------------------------------------
+
+P 1396/2023
+210000 UTC OCT 2023
+Waterway information - Subsurface Mooring
+A subsurface scientific mooring buoy has been deployed in the Strait of Georgia at 48
+53.392N 123 10.271W extending 2 meters off the sea floor.
+
+POSITION 48-53.392N 123-10.271W
+
+---------------------------------------------------------------------------------------
+
+P 1401/2023
+220000 UTC OCT 2023
+Aids to Navigation
+Haystock Islets special purpose day beacon located in position 48 22.788N 123 30.293W
+damaged.
+
+POSITION 48-22.788N 123-30.293W
+
+---------------------------------------------------------------------------------------
+
+P 1470/2023
+020000 UTC NOV 2023
+Waterway information - Sunken Vessel
+Sunken vessel with mast sticking out of the water in Tsehum Harbour in position 48
+40.217N 123 24.650W. 
+Caution.
+
+POSITION 48-40.217N 123-24.650W
+
+---------------------------------------------------------------------------------------
+
+P 1607/2023
+040000 UTC DEC 2023
+Waterway information
+ODAS buoy in the vicinity of Sentinel Islet off position, 53 44.902N 130 28.888W.
+POSITION 53-44.885N 130-28.835W
+POSITION 53-44.902N 130-28.888W
+
+---------------------------------------------------------------------------------------
+
+P 50/2024
+090000 UTC JAN 2024
+Obstruction
+Submerged vessel reported at 49 10.616N 123 55.894W, attached to a mooring buoy. 
+Caution.
+
+POSITION 49-10.616N 123-55.894W
+
+---------------------------------------------------------------------------------------
+
+P 304/2024
+150000 UTC FEB 2024
+Waterway information
+A 25 foot vessel has been reported partially submerged in Comox harbour in the vicinity
+of 49 40.235N 124 55.709W.
+
+POSITION 49-40.235N 124-55.709W
+
+---------------------------------------------------------------------------------------
+
+P 458/2024
+180000 UTC MAR 2024
+Waterway information
+A subsurface mooring has been deployed 38.5m below the surface in Knight Inlet at 50
+40.788N 125 56.227W.
+
+POSITION 50-40.788N 125-56.227W
+
+---------------------------------------------------------------------------------------
+
+P 519/2024
+090100 UTC APR 2024
+Private mooring Buoy
+The charted private mooring buoy submerged in Clio Bay at 53 54.272N 128 41.071W. Visible
+at low tide.
+Caution
+
+POSITION 53-54.272N 128-41.071W
+
+---------------------------------------------------------------------------------------
+
+P 619/2024
+300100 UTC APR 2024
+Waterway information
+Temporary buoy in position 49 45.826N 124 45.622W unlit
+
+POSITION 49-45.826N 124-45.622W
+
+---------------------------------------------------------------------------------------
+
+P 732/2024
+170100 UTC MAY 2024
+Waterway information - Hazard
+A white flood light as been installed on the Seal Cove Coast Guard Heliport in the
+vicinity of 54 19.859N 130 16.628W. The flood light is facing in a Northerly direction
+and is obscuring the approaches to Fern Passage.
+Caution.
+
+POSITION 54-19.859N 130-16.628W
+
+---------------------------------------------------------------------------------------
+
+P 810/2024
+290100 UTC MAY 2024
+Waterway information - Subsurface Mooring Buoy
+A subsurface mooring buoy has been deployed south of Moresby Island, in the vicinity of
+51 39.923N 130 17.387W, extending 8m above the seafloor, in a water depth of 258m.
+POSITION 51-39.923N 130-17.387W
+
+---------------------------------------------------------------------------------------
+
+P 847/2024
+040100 UTC JUN 2024
+Waterway information
+A sub-surface mooring has been deployed in position 54 14.954N 134 01.408W approximately
+8m above the seafloor.
+
+POSITION 54-14.954N 134-01.408W
+
+---------------------------------------------------------------------------------------
+
+P 863/2024
+060000 UTC JUN 2024
+Waterway information
+A red and white private mooring buoy, at the south end of sunset beach in the vicinity of
+49 24.082N 123 14.958W.
+
+submerged at high tide.
+
+caution.
+
+POSITION 49-24.082N 123-14.958W
+
+---------------------------------------------------------------------------------------
+
+P 880/2024
+090000 UTC JUN 2024
+Waterway information - Dock adrift
+A floating dock reported adrift in Degnen Bay in the vicinity of 49 07.877N 123 42.522W
+at 091515 UTC Jun 2024. The dock and exposed piling has been marked with a float. 
+ 
+Caution.
+
+POSITION 49-07.877N 123-42.522W
+
+---------------------------------------------------------------------------------------
+
+P 885/2024
+100000 UTC JUN 2024
+Obstruction - Log Boom
+There is an unlit log boom blocking the Somass River in Port Alberni at 49 15.015N 124
+48.804W.
+
+Caution
+
+POSITION 49-15.015N 124-48.804W
+
+---------------------------------------------------------------------------------------
+
+P 999/2024
+220000 UTC JUN 2024
+Obstruction
+Twenty foot cabin cruiser submerged at 49 33.600N 123 14.150W in Potreau Cove
+
+Caution
+
+POSITION 49-33.600N 123-14.150W
+
+---------------------------------------------------------------------------------------
+
+P 1000/2024
+220000 UTC JUN 2024
+Obstruction
+Derelict vessel submerged in False Creek at 49 16.860N 123 08.589W
+
+Caution
+
+POSITION 49-16.860N 123-08.589W
+
+---------------------------------------------------------------------------------------
+
+P 1085/2024
+070000 UTC JUL 2024
+Waterway information
+Subsurface mooring "Swanson Channel" has been deployed in the vicinity of 48 44.360N 123
+15.450W, 2m above the sea floor in 70m of water.
+
+POSITION 48-44.360N 123-15.450W
+
+---------------------------------------------------------------------------------------
+
+P 1095/2024
+090000 UTC JUL 2024
+Waterway information
+Subsurface mooring 'Strait of Georgia South' has been deployed in the vicinity of 48
+58.800N 123 30.510W, 2m above the sea floor in 102m of water. Mooring will remain in
+place indefinitely.
+
+POSITION 48-58.800N 123-30.510W
+
+---------------------------------------------------------------------------------------
+
+P 1175/2024
+190000 UTC JUL 2024
+Obstruction
+Sub-Surface mooring has been deployed at depth of 158 metres at 49 00.684N 126 30.230W
+POSITION 49-00.684N 126-30.230W
+
+---------------------------------------------------------------------------------------
+
+P 1201/2024
+230000 UTC JUL 2024
+Obstruction - sunken barge
+A sunken barge and debris reported in Bushell Bay, Lake Athabasca, in the vicinity of 59
+31.052N 108 44.503W.
+Caution.
+
+POSITION 59-31.052N 108-44.503W
+
+---------------------------------------------------------------------------------------
+
+P 1202/2024
+230000 UTC JUL 2024
+Aids to Navigation
+Unreliable
+
+POSITION 49-41.498N 123-09.193W
+
+---------------------------------------------------------------------------------------
+
+P 1203/2024
+230000 UTC JUL 2024
+Aids to Navigation
+Unreliable
+
+POSITION 49-41.510N 123-09.178W
+
+---------------------------------------------------------------------------------------
+
+P 1216/2024
+260000 UTC JUL 2024
+Obstruction
+Submerged damaged piling in Sapperton Channel, in the vicinity of 49 13.471N 122 52.583W.
+
+Caution.
+
+POSITION 49-13.471N 122-52.583W
+
+---------------------------------------------------------------------------------------
+
+P 1411/2024
+030000 UTC SEP 2024
+Obstruction-Sunken Barge
+A sunken barge with machinery equipment onboard has been reported in Pitt River, under
+the Lougheed Highway Bridge at 49 14.945N 122 43.563W.
+
+POSITION 49-14.945N 122-43.563W
+
+---------------------------------------------------------------------------------------
+
+P 1461/2024
+060000 UTC SEP 2024
+Obstruction
+Sub surface mooring has been deployed at 48 23.041N 125 48.242W at a depth of 151 metres
+POSITION 48-23.041N 125-48.242W
+
+---------------------------------------------------------------------------------------
+
+P 1473/2024
+100000 UTC SEP 2024
+Waterway information
+An ODAS buoy has been deployed in Patricia Bay at 48 38.996N 123 27.929W. 
+Fl (5) Y 20s.
+
+POSITION 48-38.996N 123-27.929W
+
+---------------------------------------------------------------------------------------
+
+P 1606/2024
+030000 UTC OCT 2024
+Aids to Navigation
+Off position
+
+POSITION 49-07.773N 123-14.724W
+
+---------------------------------------------------------------------------------------
+
+P 1660/2024
+150000 UTC OCT 2024
+Waterway information - ODAS Buoy
+An ODAS buoy has been deployed in Grenville channel in the vicinity of 53 31.220N 129
+34.630W.
+
+Fl (5) Y 20s with a radar refllector.
+
+POSITION 53-31.220N 129-34.630W
+
+---------------------------------------------------------------------------------------
+
+P 1665/2024
+150000 UTC OCT 2024
+Waterway information - Subsurface Mooring
+Subsurface mooring 'Strait of Georgia South' has been deployed in the vicinity of 48
+58.790N 123 24.250W, 2m above the sea floor in 230m of water.
+
+POSITION 48-58.790N
+123-24.250W
+
+---------------------------------------------------------------------------------------
+
+P 1666/2024
+150000 UTC OCT 2024
+Waterway information - Subsurface Mooring
+Subsurface mooring 'Strait of Georgia South East' has been deployed in the vicinity of 48
+53.390N 123 10.250W, 2m above the sea floor in 132m of water.
+
+POSITION 48-53.390N
+123-10.250W
+
+---------------------------------------------------------------------------------------
+
+P 1669/2024
+150000 UTC OCT 2024
+Waterway information - Subsurface Mooring
+Subsurface mooring 'Swanson' has been deployed in the vicinity of 48 44.350N 123 15.450W,
+2m above the sea floor in 70m of water.
+
+POSITION 48-44.350N 123-15.450W
+
+---------------------------------------------------------------------------------------
+
+P 1674/2024
+150000 UTC OCT 2024
+Waterway information - Subsurface Mooring
+Subsurface mooring 'Port Renfrew' has been deployed in the vicinity of 48 30.270N 124
+30.960W, 2m above the sea floor in 164m of water.
+
+POSITION 48-30.270N 124-30.960W
+
+---------------------------------------------------------------------------------------
+
+P 1675/2024
+150000 UTC OCT 2024
+Waterway information - Subsurface Mooring
+Subsurface mooring 'Jordan River' has been deployed in the vicinity of 48 23.790N 124
+08.030W. 2m above the sea floor in 117m of water.
+
+POSITION 48-23.790N 124-08.030W
+
+---------------------------------------------------------------------------------------
+
+P 1685/2024
+160000 UTC OCT 2024
+Waterway information
+Subsurface mooring "Carmanah East" has been deployed in the vicinity of 48 34.730N 124
+46.510W, 1m above the sea floor in 71m of water.
+
+POSITION 48-34.730N 124-46.510W
+
+---------------------------------------------------------------------------------------
+
+P 1767/2024
+310000 UTC OCT 2024
+Waterway information
+Subsurface mooring 'Northern Malaspina Strait' has been deployed in the vicinity of 49
+45.058N 124 27.912W moored to float 11 meters above the seafloor.
+
+POSITION 49-45.058N
+124-27.912W
+
+---------------------------------------------------------------------------------------
+
+P 1806/2024
+080000 UTC NOV 2024
+Obstruction - Wreck
+A partially submerged vessel has been reported at the approaches to False Creek at 49
+17.034N 123 09.019W.
+
+The bow of the vessel is showing 1 to 2 feet above water.
+
+Caution.
+
+POSITION 49-17.034N 123-09.019W
+
+---------------------------------------------------------------------------------------
+
+P 1849/2024
+160000 UTC NOV 2024
+Waterway information - Derelict Kayak
+A half submerged derelict kayak has been reported in Sechelt Inlet in the vicinity of 49
+31.969N 123 46.362W.
+
+Caution.
+
+POSITION 49-31.969N 123-46.362W
+
+---------------------------------------------------------------------------------------
+
+P 2007/2024
+100000 UTC DEC 2024
+Waterway information
+Yellow private buoy at 49 26.908N 124 40.618W off positon and possibly unlit
+
+POSITION
+49-26.908N 124-40.618W
+
+---------------------------------------------------------------------------------------
+
+P 2008/2024
+100000 UTC DEC 2024
+Waterway information
+Yellow private buoy at 49 27.303N 124 40.759W reported off position and possibly unlit
+POSITION 49-27.303N 124-40.759W
+
+---------------------------------------------------------------------------------------
+
+P 2055/2024
+160000 UTC DEC 2024
+Obstruction
+A 30 foot cabin cruiser submerged at a mooring buoy 150 metres SE of Gibson's pier in the
+vicinity of 49 23.970N 123 30.170W
+
+Caution.
+
+POSITION 49-23.970N 123-30.170W
+
+---------------------------------------------------------------------------------------
+
+P 2058/2024
+170000 UTC DEC 2024
+Obstruction
+Subsurface mooring "Point Grey Southwest" has been deployed in the vicinity of 49 14.209N
+123 22.552W, anchored 2m off the seafloor in 250m of water.
+
+POSITION 49-14.209N
+123-22.552W
+
+---------------------------------------------------------------------------------------
+
+P 2060/2024
+170000 UTC DEC 2024
+Aids to Navigation
+Unreliable - Light partially obscured to the Southwest
+
+POSITION 49-35.558N 126-36.923W
+
+---------------------------------------------------------------------------------------
+
+P 2073/2024
+200000 UTC DEC 2024
+Waterway information - Channel Closure
+The Red Bridge in Kamloops has collapsed in the South Thompson River at 50 40.812N 120
+19.500W.
+
+The waterway from Pioneer Park and Riverside Park is closed until the debris is cleared.
+
+Caution.
+
+POSITION 50-40.812N 120-19.500W
+
+---------------------------------------------------------------------------------------
+
+P 7/2025
+020000 UTC JAN 2025
+Obstruction - Tree
+Large tree reported partially sticking out of the water in Port Browning Harbour, in the
+vicinity of 48 46.305N 123 15.612W. 
+Caution.
+
+POSITION 48-46.305N 123-15.612W
+
+---------------------------------------------------------------------------------------
+
+P 129/2025
+240000 UTC JAN 2025
+Marine works
+Cable laying operations have been suspended 
+2 buoy systems have been deployed in positions49 32.320N 123 59.070W and 49 26.560N 123
+48.480W
+to mark the cable ends.
+
+POSITION 49-32.320N 123-59.070W
+POSITION 49-26.560N 123-48.480W
+
+---------------------------------------------------------------------------------------
+
+P 194/2025
+060000 UTC FEB 2025
+Waterway information - ODAS BUOY
+An ODAS buoy has been deployed in Bute Inlet at 50 35.667N 124 54.039W displaying Fl (5)
+Y 20s.
+
+POSITION 50-35.667N 124-54.039W
+
+---------------------------------------------------------------------------------------
+
+P 281/2025
+270000 UTC FEB 2025
+Obstruction
+A partially submerged vessel has been reported mid channel between Gibsons marina and
+Keats Island, in the vicinity of 49 23.800N 123 29.667W. The 14ft Aluminum Skiff is in
+the vertical position, with the bow showing 5ft out of the water. 
+Caution.
+
+POSITION 49-23.800N 123-29.667W
+
+---------------------------------------------------------------------------------------
+
+P 373/2025
+170000 UTC MAR 2025
+Aids to Navigation
+Reduced Intensity.
+
+POSITION 48-45.890N 123-00.878W
+
+---------------------------------------------------------------------------------------
+
+P 496/2025
+110000 UTC APR 2025
+Obstruction
+A black waterline was reported running from Strawberry Island across to the Tofino Resort
+and Marina at 49 09.101N 125 53.713W.
+The waterline is 6 inches in diameter, stretches across the channel and is hovering just
+below the surface of the water.
+Caution.
+
+POSITION 49-09.101N 125-53.713W
+
+---------------------------------------------------------------------------------------
+
+P 609/2025
+260000 UTC APR 2025
+Waterway information
+A subsea mooring has been deployed in Barkley Sound at 48 49.828N 125 13.780W at a depth
+of 49.7m.
+
+ALONG LINE JOINING 48-49.828N 125-13.780W, 48-49.800N 125-13.560W
+
+---------------------------------------------------------------------------------------
+
+P 669/2025
+120000 UTC MAY 2025
+Fraser River - North Arm Caution
+Submerged debris and significant changes in channel depths in the Mamquam Blind Channel. 
+Current channel conditions available at https://avadepth.ccg-gcc.gc.ca.
+Caution.
+
+POSITION 49-41.255N 123-09.419W
+
+---------------------------------------------------------------------------------------
+
+P 747/2025
+310000 UTC MAY 2025
+Aids to Navigation
+Missing
+
+POSITION 48-53.283N 125-38.090W
+
+---------------------------------------------------------------------------------------
+
+P 800/2025
+110000 UTC JUN 2025
+Aids to Navigation
+Unreliable
+
+POSITION 50-07.965N 117-48.602W
+
+---------------------------------------------------------------------------------------
+
+P 879/2025
+270000 UTC JUN 2025
+Waterway information
+A subsurface moorning has been deployed 8m above the seafloor at 52 23.650N 131 42.750W.
+POSITION 52-23.650N 131-42.750W
+
+---------------------------------------------------------------------------------------
+
+P 1019/2025
+270000 UTC JUL 2025
+Aids to Navigation
+Fog signal inoperative
+
+POSITION 48-17.882N 123-31.885W
+
+---------------------------------------------------------------------------------------
+
+P 1023/2025
+280000 UTC JUL 2025
+Waterway information
+A wave monitoring buoy has been deployed on the surface of the water in position 52
+27.234N 131 15.715W.
+
+POSITION 52-27.234N 131-15.715W
+
+---------------------------------------------------------------------------------------
+
+P 1024/2025
+280000 UTC JUL 2025
+Waterway information
+A sub-surface mooring buoy has been deployed in position 53 06.502N 130 23.003W
+approximately 15 meters below the surface of the water.
+
+POSITION 53-06.502N 130-23.003W
+
+---------------------------------------------------------------------------------------
+
+P 1028/2025
+290000 UTC JUL 2025
+Waterway information
+A sub-surface mooring buoy in position 53 24.254N 128 54.000W approximately 40 metres
+below the surface of the water has been removed.
+
+POSITION 53-24.254N 128-54.000W
+
+---------------------------------------------------------------------------------------
+
+P 1029/2025
+290000 UTC JUL 2025
+Waterway information
+A sub-surface mooring buoy in position 52 44.600N 129 46.000W approximately 13 metres
+below the surface of the water has been removed.
+
+POSITION 52-44.600N 129-46.000W
+
+---------------------------------------------------------------------------------------
+
+P 1030/2025
+300000 UTC JUL 2025
+Obstruction
+Four temporary steel pilings extending 15 to 20 feet above the surface at average tide
+are reported at the entrance to False Creek in the vicinity of 49 17.160N 123 08.980W.
+The pilings are rust coloured, unmarked and unlit. 
+Caution.
+
+POSITION 49-17.160N 123-08.980W
+
+---------------------------------------------------------------------------------------
+
+P 1032/2025
+300000 UTC JUL 2025
+Waterway information
+A sub-surface mooring buoy in position 54 15.801N 130 46.737W approximately 18 metres
+below the surface of the water has been removed.
+
+POSITION 54-15.801N 130-46.737W
+
+---------------------------------------------------------------------------------------
+
+P 1043/2025
+040000 UTC AUG 2025
+Marine works - Pipeline Jetty Contruction
+Construction of a pipeline jetty from the shore will take place on the west side of
+Ridley Island in the vicinity of 54 12.971N 130 20.398W.
+Operations active 24 hours per day. 
+On site vessels monitoring VHF Ch. 16
+Minimum wake
+
+POSITION 54-12.971N 130-20.398W
+
+---------------------------------------------------------------------------------------
+
+P 1060/2025
+060000 UTC AUG 2025
+Waterway information
+Scaffolding extending 6 feet from the center pier into the channel at New Westminster
+Railway bridge in the vicinity of 49 12.249N 122 53.654W.
+
+POSITION 49-12.249N 122-53.654W
+
+---------------------------------------------------------------------------------------
+
+P 1068/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 56.008N 127 39.460W at
+a depth of 48 meters.
+
+POSITION 50-56.008N 127-39.460W
+
+---------------------------------------------------------------------------------------
+
+P 1069/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 58.697N 127 42.319W at
+a depth of 48 meters.
+
+POSITION 50-58.697N 127-42.319W
+
+---------------------------------------------------------------------------------------
+
+P 1070/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 55.913N 127 57.472W at
+a depth of 30 meters.
+
+POSITION 50-55.913N 127-57.472W
+
+---------------------------------------------------------------------------------------
+
+P 1071/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 56.626N 127 55.208W at
+a depth of 31 meters.
+
+POSITION 50-56.626N 127-55.208W
+
+---------------------------------------------------------------------------------------
+
+P 1072/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 51.229N 129 03.320W at
+a depth of 31 meters.
+
+POSITION 50-51.229N 129-03.320W
+
+---------------------------------------------------------------------------------------
+
+P 1073/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 51.566N 129 06.931W at
+a depth of 38 meters.
+
+POSITION 50-51.566N 129-06.931W
+
+---------------------------------------------------------------------------------------
+
+P 1074/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 52.703N 129 05.477W at
+a depth of 40 meters.
+
+POSITION 50-52.703N 129-05.477W
+
+---------------------------------------------------------------------------------------
+
+P 1075/2025
+070000 UTC AUG 2025
+Waterway information
+A sub-surface instrument mooring has been deployed in position 50 52.424N 129 03.890W at
+a depth of 42 meters.
+
+POSITION 50-52.424N 129-03.890W
+
+---------------------------------------------------------------------------------------
+
+P 1077/2025
+080000 UTC AUG 2025
+Waterway information
+Partially submerged 55 foot white sailing vessel in the vicinity of 49 36.135N 124
+48.781W. The vessel is marked with a white fender.
+
+POSITION 49-36.135N 124-48.781W
+
+---------------------------------------------------------------------------------------
+
+P 1104/2025
+130000 UTC AUG 2025
+Obstruction - Uncharted Wreck
+An uncharted wreck has been reported in the Strait of Georgia at 49 23.410N 123 43.800W
+at a depth of 140m.
+
+POSITION 49-23.410N 123-43.800W
+
+---------------------------------------------------------------------------------------
+
+P 1105/2025
+130000 UTC AUG 2025
+Obstruction - Wreck
+A partially submerged wreck has been reported at the entrance to False Creek at 49
+16.750N 123 08.833W.
+A white light has been fixed to the bow above the waterline.
+
+POSITION 49-16.750N
+123-08.833W
+
+---------------------------------------------------------------------------------------
+
+P 1142/2025
+170000 UTC AUG 2025
+Aids to Navigation
+Light intensity has been increased to 75CD and nominal range increased to 5nm.
+
+POSITION
+54-05.732N 132-12.964W
+
+---------------------------------------------------------------------------------------
+
+P 1144/2025
+170000 UTC AUG 2025
+Aids to Navigation
+Light intensity has been increased to 75CD and nominal range increased to 5nm.
+
+POSITION
+53-44.551N 132-16.379W
+
+---------------------------------------------------------------------------------------
+
+P 1145/2025
+170000 UTC AUG 2025
+Aids to Navigation
+Light intensity has been increased to 75CD and nominal range increased to 5nm.
+
+POSITION
+54-07.355N 132-18.748W
+
+---------------------------------------------------------------------------------------
+
+P 1162/2025
+200000 UTC AUG 2025
+Waterway information - ODAS buoy
+An ODAS buoy has been established in Brown Passage at 54 18.126N 130 55.218W displaying
+Fl (5) Y 20s.
+
+POSITION 54-18.126N 130-55.218W
+
+---------------------------------------------------------------------------------------
+
+P 1163/2025
+200000 UTC AUG 2025
+Waterway information - ODAS Buoy
+An ODAS buoy has been established on Agnew Bank at 54 11.892N 130 18.498W displaying Fl
+(5) Y 20s.
+
+POSITION 54-11.892N 130-18.498W
+
+---------------------------------------------------------------------------------------
+
+P 1164/2025
+200000 UTC AUG 2025
+Waterway information - ODAS Buoy
+An ODAS buoy has been established in Chatham Sound at 54 11.322N 130 20.304W displaying
+Fl (5) Y 20s.
+
+POSITION 54-11.322N 130-20.304W
+
+---------------------------------------------------------------------------------------
+
+P 1165/2025
+200000 UTC AUG 2025
+Waterway information - ODAS Buoy
+An ODAS buoy has been established in Brown Passage at 54 16.932N 130 47.466W displaying
+Fl (5) Y 20s.
+
+POSITION 54-16.932N 130-47.466W
+
+---------------------------------------------------------------------------------------
+
+P 1166/2025
+200000 UTC AUG 2025
+Waterway information - ODAS Buoy
+An ODAS buoy has been established in Brown Passage at 54 18.078N 130 48.156W displaying
+Fl (5) Y 20s.
+
+POSITION 54-18.078N 130-48.156W
+
+---------------------------------------------------------------------------------------
+
+P 1179/2025
+220000 UTC AUG 2025
+Obstruction - Wreck
+A sunken sailboat reported in Long Harbour at 48 51.600N 123 27.880W. Only the mast is
+above water and is attached to a mooring buoy.
+
+POSITION 48-51.600N 123-27.880W
+
+---------------------------------------------------------------------------------------
+
+P 1204/2025
+260000 UTC AUG 2025
+Waterway information - Subsurface Mooring
+A subsurface moorning has been deployed at 52 06.000N 130 19.500W at a depth of 40
+meters.
+
+POSITION 52-06.000N 130-19.500W
+
+---------------------------------------------------------------------------------------
+
+P 1205/2025
+260000 UTC AUG 2025
+Aids to Navigation
+Temporarily replaced with a green pillar buoy.
+
+POSITION 50-43.175N 119-17.618W
+
+---------------------------------------------------------------------------------------
+
+P 1255/2025
+040000 UTC SEP 2025
+Waterway Information-Odas Buoy
+An Odas Buoy has been deployed in the Strait of Georgie, Point Grey at 49 16.782N 123
+16.560W displaying Fl (5) Y 20s.
+
+POSITION 49-16.782N 123-16.560W
+
+---------------------------------------------------------------------------------------
+
+P 1322/2025
+170000 UTC SEP 2025
+Aids to Navigation
+Berry Point 1A light LL 411.3 has been established in Vancouver Harbour at 49 17.763N 122
+59.169W.
+The light is all around, obstructed from 083 to 091 degress, has a nominal range of 7.57NM
+and is displaying Fl Red 4s.
+
+POSITION 49-17.763N 122-59.169W
+
+---------------------------------------------------------------------------------------
+
+P 1323/2025
+170000 UTC SEP 2025
+Aids to Navigation
+Berry Point 1 light LL 410.8 has been established in Vancouver Harbour at 49 17.753N 122
+59.415W.
+The light is all around, obstructed from 083 to 091 degress, has a nominal range of 7.57NM
+and is displaying Fl Red 4s.
+
+POSITION 49-17.753N 122-59.415W
+
+---------------------------------------------------------------------------------------
+
+P 1324/2025
+170000 UTC SEP 2025
+Aids to Navigation
+Berry Point Sector Light LL 411.4 established in Vancouver Harbour at 49 17.762N 122
+59.166W.
+The light is fixed green at 087.9 degrees, oscillating green-white at 087.4, fixed white
+from 087.1 to 086.8, oscillating white-red at 086.5 and fixed red at 086.0 degrees.
+The light has a nominal range of 8.97NM.
+
+POSITION 49-17.762N 122-59.166W
+
+---------------------------------------------------------------------------------------
+
+P 1325/2025
+170000 UTC SEP 2025
+Aids to Navigation
+Berry Point Range Rear LL 411.2 established in Vancouver Harbour at 49 17.761N 122
+59.168W.
+Dayboard is trapezoidal, red with a white strip and a range of 2.5NM. 
+Light is fixed yellow with a nominal range of 12.42NM bearing 087 degrees.
+
+POSITION
+49-17.761N 122-59.168W
+
+---------------------------------------------------------------------------------------
+
+P 1326/2025
+170000 UTC SEP 2025
+Aids to Navigation
+Berry Point Range Front LL 410.7 established in Vancouver Harbour at 49 17.753N 122
+59.416W.
+Dayboard is trapezoidal, red with a white strip and a range of 2.5NM. 
+Light is fixed yellow with a nominal range of 11NM bearing 087 degrees.
+
+POSITION
+49-17.753N 122-59.416W
+
+---------------------------------------------------------------------------------------
+
+P 1402/2025
+050000 UTC OCT 2025
+Aids to Navigation
+Changed from Fl W 6s, with a focal height of 5.1m to Fl 2s, 150 CD, Carmanah with a focal
+height of 4m.
+The light was moved 12ft to the west.
+
+POSITION 53-45.483N 132-14.670W
+
+---------------------------------------------------------------------------------------
+
+P 1431/2025
+120000 UTC OCT 2025
+Obstruction - Wreck
+A partially submerged vessel is aground in Ladysmith harbour at 48 58.000N 123 45.770W. 
+Mariners with additional info are asked to call the Regional Operations Center at
+1-800-889-8852.
+
+POSITION 48-58.000N 123-45.770W
+
+---------------------------------------------------------------------------------------
+
+P 1507/2025
+270000 UTC OCT 2025
+Aids to Navigation
+An Odas buoy has been temporarily removed from position 49 43.900N 124 46.498W in Baynes
+Sound.
+
+POSITION 49-43.900N 124-46.498W
+
+---------------------------------------------------------------------------------------
+
+P 1603/2025
+070000 UTC NOV 2025
+Aids to Navigation
+LL 348.5 Deas Island range front light changed from FY to Oc Y 5s (Fl 4.7s; Ec 0.3s),
+nominal range reduced from 15nm to 12.5nm and focal height reduced from 8.2m to 7.2m. 
+ Secondary light nominal range increased from 4nm to 5nm, focal height reduced from 8.3m
+to 7.2m, light Fl(2s) R 6s
+
+POSITION 49-07.110N 123-04.551W
+
+---------------------------------------------------------------------------------------
+
+P 1635/2025
+120000 UTC NOV 2025
+Aids to Navigation
+Unlit
+
+POSITION 53-11.018N 129-45.772W
+
+---------------------------------------------------------------------------------------
+
+P 1680/2025
+190000 UTC NOV 2025
+Waterway information - Scotchmen
+An unlit scotchman buoy has been deployed near Port McNeil at 50 36.667N 127 04.533W.
+The buoy is marking a subsea cable undergoing maintenance.
+
+POSITION 50-36.667N
+127-04.533W
+
+---------------------------------------------------------------------------------------
+
+P 1709/2025
+230000 UTC NOV 2025
+Aids to Navigation
+Unreliable
+
+POSITION 49-29.205N 124-26.087W
+
+---------------------------------------------------------------------------------------
+
+P 1730/2025
+260000 UTC NOV 2025
+Waterway Information
+A lit scientific measurement buoy is reported submerged in Woodward Reach in the vicinity
+of 49 06.980N 123 05.910W.
+Caution.
+
+POSITION 49-06.980N 123-05.910W
+
+---------------------------------------------------------------------------------------
+
+P 1839/2025
+150000 UTC DEC 2025
+Waterway Information - Point Grey Tie Up
+The Point Grey Tie Up located in the North Arm of the Fraser River at 49 14.888N 123
+15.372W is continuing to deteriorate. A light has been installed at the end of a metal
+pontoon breakwater that extends 20 metres from Berth 4. 
+The light exhibits a yellow flashing light at 30 flashes per minute.
+Caution.
+
+POSITION 49-14.888N 123-15.372W
+
+---------------------------------------------------------------------------------------
+
+P 1909/2025
+190000 UTC DEC 2025
+Outage of Dynamic Bridge
+The navigaion lights for the CN Railway Bridge - North Arm bridge at 49 10.976N 122
+59.287W are unlit until further notice.
+
+POSITION 49-10.976N 122-59.287W
+
+---------------------------------------------------------------------------------------
+
+P 1910/2025
+190000 UTC DEC 2025
+Waterway Information
+Maintenance work is underway at the fleet Dive Unit Jetty in Esquimalt Harbour at 48
+26.643N 123 26.945W with Navigation lights temporaily unlit.
+
+POSITION 48-26.643N
+123-26.945W
+
+---------------------------------------------------------------------------------------
+
+P 1932/2025
+240000 UTC DEC 2025
+Drifting Hazard
+Drifting dock reported in the vicinity of Lyche Island at 242208 UTC Dec 2025 in Ucluelet
+Harbour. The dock's anchor has now caught bottom and currently stationary at 48 56.830N
+125 32.750W.
+
+POSITION 48-56.830N 125-32.750W
+
+---------------------------------------------------------------------------------------
+
+P 5/2026
+020000 UTC JAN 2026
+Aids to Navigation
+The private flashing red light at Parteau Cove, Unlit
+
+POSITION 49-33.577N 123-14.324W
+
+---------------------------------------------------------------------------------------
+
+P 46/2026
+080000 UTC JAN 2026
+Waterway Information
+A temporary Can Buoy has been set in howe sound at the wood fibre LNG site at 49 39.515N
+123 15.512W.
+
+POSITION 49-39.515N 123-15.512W
+
+---------------------------------------------------------------------------------------
+
+P 60/2026
+120000 UTC JAN 2026
+Aids to Navigation
+Unlit
+
+POSITION 53-12.508N 129-20.654W
+
+---------------------------------------------------------------------------------------
+
+P 97/2026
+200000 UTC JAN 2026
+Waterway information
+A subsurface scientific instrument was deployed on the seafloor of Cascadia Basin in the
+vicinity of 48 11.053N 127 11.510W.
+The device extends 2m off the seafloor.
+
+POSITION 48-11.053N 127-11.510W
+
+---------------------------------------------------------------------------------------
+
+P 112/2026
+250000 UTC JAN 2026
+Aids to Navigation
+Unlit
+
+POSITION 55-04.726N 130-12.176W
+
+---------------------------------------------------------------------------------------
+
+P 120/2026
+260000 UTC JAN 2026
+Aids to Navigation
+Virtual AIS has been removed.
+
+POSITION 53-55.594N 130-54.408W
+
+---------------------------------------------------------------------------------------
+
+P 121/2026
+260000 UTC JAN 2026
+Aids to Navigation
+Virtual AIS has been removed.
+
+POSITION 54-17.229N 130-22.185W
+
+---------------------------------------------------------------------------------------
+
+P 126/2026
+280000 UTC JAN 2026
+Waterway Information
+Subsurface buoy has been deployed in 70 metres of water near the entrance to Bedwell
+Harbour at 
+48 44.400N 123 15.300W, marked by 2 small surface floats FL (5) Y 20s and FL Y 20s
+POSITION 48-44.400N 123-15.300W
+
+---------------------------------------------------------------------------------------
+
+P 155/2026
+020000 UTC FEB 2026
+Aids to Navigation
+Off position
+
+POSITION 49-15.514N 124-49.085W
+
+---------------------------------------------------------------------------------------
+
+P 170/2026
+040000 UTC FEB 2026
+Marine Works
+A subsea fibre optic cable has been established in Lower Campbell Lake from 50 00.200N
+125 34.383W to 50 00.667N 125 23.200W.
+
+ALONG LINE JOINING 50-00.200N 125-34.383W,
+50-00.505N 125-34.127W, 50-00.771N 125-33.728W, 50-00.981N 125-33.576W, 50-00.854N
+125-32.288W, 50-01.049N 125-30.786W, 50-01.461N 125-29.487W, 50-01.537N 125-28.388W,
+50-01.398N 125-27.558W, 50-01.013N 125-26.965W, 50-00.625N 125-26.174W, 50-00.551N
+125-24.833W, 50-00.441N 125-23.971W, 50-00.441N 125-23.376W, 50-00.435N 125-23.194W,
+50-00.667N 125-23.200W
+
+---------------------------------------------------------------------------------------
+
+P 188/2026
+060000 UTC FEB 2026
+Marine Works - Subsea Cable
+A subsea fibre optic cable has been established in Upper Campbell Lake from 49 59.667N
+125 35.450W to 49 55.350N 125 38.833W.
+
+POSITION 49-59.667N 125-35.450W
+POSITION
+49-55.350N 125-38.833W
+
+---------------------------------------------------------------------------------------
+
+P 189/2026
+060000 UTC FEB 2026
+Waterway Information - Subsea Cable
+A subsea fibre optic cable has been established in Upper Campbell Lake from 49 55.350N
+125 38.833W to 
+49 53.767N 125 39.317W.
+
+POSITION 49-55.350N 125-38.833W
+POSITION 49-53.767N 125-39.317W
+
+---------------------------------------------------------------------------------------
+
+P 190/2026
+070000 UTC FEB 2026
+Waterway Information
+An unmarked partially submerged 35 to 40 foot motor vessel is in False Creek in the
+vicinity of 49 16.218N 123 07.033W
+Vessel is white in colour with blue canvas. Only the bow is showing above the water.
+Caution.
+
+POSITION 49-16.218N 123-07.033W
+
+---------------------------------------------------------------------------------------
+
+P 201/2026
+100000 UTC FEB 2026
+Waterway Information - Subsurface Instruments
+Two subsurface scientific instruments will be mounted on the seabed in the vicinity of 49
+01.086N 123 11.736W and 49 01.038N 123 11.760W
+Instruments will be 1.0m above the seabed.
+
+POSITION 49-01.086N 123-11.736W
+POSITION
+49-01.038N 123-11.760W
+
+---------------------------------------------------------------------------------------
+
+P 337/2026
+040000 UTC MAR 2026
+Aids to Navigation
+Temporarily moved to 49 07.117N 123 05.050W. with a physical AIS installed, MMSI
+993161035.
+
+POSITION 49-07.290N 123-04.712W
+POSITION 49-07.117N 123-05.050W
+
+---------------------------------------------------------------------------------------
+
+P 371/2026
+130000 UTC MAR 2026
+Shallow Depth Reported
+Shallow depth reported in Louise Narrows, south of Carmichael Passage at 52 57.272N 131
+54.137W at 130050 UTC Mar 2026. Area has been silting in and has a reduced depth of 1.07
+meters causing a hazard to navigation.
+
+POSITION 52-57.272N 131-54.137W
+
+---------------------------------------------------------------------------------------
+
+P 375/2026
+130000 UTC MAR 2026
+Scientific Mooring
+A scientific mooring has been deployed in Ogden channel at 53 52.794N 130 18.006W with
+the top float 40m below the surface.
+
+POSITION 53-52.794N 130-18.006W
+
+---------------------------------------------------------------------------------------
+
+P 380/2026
+140000 UTC MAR 2026
+Waterway information
+An oceanographic buoy has been deployed 3 meters below the surface in Blind channel in
+Johnstone Strait at 50 25.014N 125 29.927W.
+
+POSITION 50-25.014N 125-29.927W
+
+---------------------------------------------------------------------------------------
+
+P 409/2026
+190000 UTC MAR 2026
+Aids to Navigation
+Light Unreliable
+
+POSITION 49-21.034N 124-09.613W
+
+---------------------------------------------------------------------------------------
+
+P 425/2026
+230000 UTC MAR 2026
+Aids to Navigation
+A new beacon has been established by Wathus Island in the vicinity of 53 41.430N 132
+28.777W
+Flashing white every 6s with a nominal range of 6nm and equipped witha radar reflector.
+POSITION 53-41.430N 132-28.777W
+
+---------------------------------------------------------------------------------------
+
+P 426/2026
+230000 UTC MAR 2026
+Aids to Navigation
+Changes have been made to the Mackie Rock port bifurcation daybeacon in the vicinity of
+53 41.650N 132 19.358W
+New characteristics are Fl (3) W12s, 6nm nominal range and a radar reflector has been
+added.
+
+POSITION 53-41.650N 132-19.358W
+
+---------------------------------------------------------------------------------------
+
+P 434/2026
+240000 UTC MAR 2026
+Aids to Navigation
+Port Clements breakwater list of lights 795.3 has been changed to a White tower with red
+band and white bands on all sides Flash characteristics FI R 2s
+Nominal range 3nm
+
+POSITION 53-41.418N 132-10.937W
+
+---------------------------------------------------------------------------------------
+
+P 465/2026
+300000 UTC MAR 2026
+Aids to Navigation
+Temporarily operating at 8NM nominal range.
+
+POSITION 49-18.840N 123-08.485W
+
+---------------------------------------------------------------------------------------
+
+P 467/2026
+300000 UTC MAR 2026
+Aids to Navigation
+Changed to White tower with day boards on all sides, Nominal Range 6 NM Radar reflector
+added
+
+POSITION 53-42.967N 132-20.272W
+
+---------------------------------------------------------------------------------------
+
+P 475/2026
+010000 UTC APR 2026
+Obstruction
+Partially submerged pilings reported in the North Arm of the Fraser River in the vicinity
+of 49 12.624N 123 09.390W.
+Described as two pilings installed as a pair and partially submerged.
+Caution.
+
+POSITION 49-12.624N 123-09.390W
+
+---------------------------------------------------------------------------------------
+
+P 482/2026
+050000 UTC APR 2026
+Aids to Navigation - ODAS Buoy
+ODAS buoy 277 in Kwakshua Channel reported off position.
+
+POSITION 51-39.012N 127-57.982W
+
+---------------------------------------------------------------------------------------
+
+P 507/2026
+090000 UTC APR 2026
+Aids to Navigation
+Light changed from,
+Red from 144 to 149, White from 149 to 152, Green from 152 to 154, to
+Red from 144 to 149, White from 149 to 151.
+
+POSITION 50-00.018N 125-11.833W
+
+---------------------------------------------------------------------------------------
+
+P 511/2026
+120000 UTC APR 2026
+Aids to Navigation
+Two buoys have been temporarily established in Kitimat Harbour at 53 59.689N 128 40.977W
+and 53 59.607N 128 40.930W. 
+They are yellow and displaying a solid white light.
+
+POSITION 53-59.689N 128-40.977W
+POSITION 53-59.607N 128-40.930W
+
+---------------------------------------------------------------------------------------
+
+P 525/2026
+150000 UTC APR 2026
+Uncharted Obstruction
+Underwater obstruction reported in Matlset Narrows north of Meares Island at 49 14.479N
+125 46.403W at 151842 UTC Apr 2026.
+
+POSITION 49-14.479N 125-46.403W
+
+---------------------------------------------------------------------------------------
+
+P 556/2026
+210000 UTC APR 2026
+Aids to Navigation
+Light Unreliable
+
+POSITION 48-55.466N 123-42.817W
+
+---------------------------------------------------------------------------------------
+
+P 562/2026
+230000 UTC APR 2026
+MCTS RADAR
+Prince Rupert MCTS. RADAR located at Dundas Island inoperative 230230 UTC Apr 2026.
+POSITION 54-31.267N 130-54.917W
+
+---------------------------------------------------------------------------------------
+
+P 584/2026
+280000 UTC APR 2026
+Aids to Navigation
+Off position
+
+POSITION 49-09.255N 125-53.953W
+
+---------------------------------------------------------------------------------------
+
+P 587/2026
+290000 UTC APR 2026
+MCTS Facilities
+Prince Rupert Marine Communications and Traffic Services. All AIS services located at
+Cumshewa, Dundas Island, Kitimat, Maitland Island, Porcher Island, Klemtu, Rose Inlet,
+Mount Gil, Mount Hays, Naden Harbour, Van Inlet, Calvert Island, Denny Island, Holberg,
+Eliza Dome, Nootka, Mount Ozzard, and Port Alberni unreliable 282250 UTC Apr 2026.
+POSITION 53-09.550N 131-59.783W
+POSITION 54-31.267N 130-54.917W
+POSITION 54-03.333N
+128-37.850W
+POSITION 53-44.083N 128-56.300W
+POSITION 53-55.067N 130-21.000W
+POSITION
+52-34.750N 128-33.750W
+POSITION 52-13.300N 131-12.900W
+POSITION 53-15.767N 129-11.700W
+POSITION 54-17.200N 130-18.817W
+POSITION 53-57.300N 132-56.500W
+POSITION 53-15.133N
+132-32.517W
+POSITION 51-35.350N 128-00.717W
+POSITION 52-06.224N 128-04.509W
+POSITION
+50-38.400N 128-07.567W
+POSITION 49-52.400N 127-07.217W
+POSITION 49-35.600N 126-36.867W
+POSITION 48-57.567N 125-29.500W
+POSITION 49-13.117N 124-48.717W
+
+---------------------------------------------------------------------------------------
+
+P 591/2026
+290000 UTC APR 2026
+Marine Works
+Pier construction will take place on Jetty A at the Esquimalt Naval Base.
+Operations active 24 hours a day, 7 days a week. 
+Pilings are in place with yellow quick flashing lights marking a no-go zone around the
+Jetty.
+All vessels entering Esquimalt Harbour are required to check in with KHM Operations on
+VHF channel 10 or by phone at 250-363-2160.
+Minimum wake.
+
+POSITION 48-25.917N 123-26.383W
+POSITION 48-26.033N 123-26.383W
+POSITION
+48-26.033N 123-26.100W
+POSITION 48-26.000N 123-26.050W
+AREA BOUNDED BY 48-26.000N
+123-26.050W, 48-26.033N 123-26.100W, 48-26.033N 123-26.383W, 48-25.917N 123-26.383W,
+48-25.972N 123-26.330W, 48-26.013N 123-26.111W
+
+---------------------------------------------------------------------------------------
+
+P 604/2026
+010000 UTC MAY 2026
+Uncharted Buoy
+An uncharted buoy reported off Trutch Island at 53 04.151N 129 35.590W.
+
+POSITION
+53-04.151N 129-35.590W
+
+---------------------------------------------------------------------------------------
+
+P 633/2026
+050000 UTC MAY 2026
+MCTS Phone Lines
+Prince Rupert MCTS. Phone lines, including *16 for Prince Rupert MCTS are intermittently
+working.
+
+POSITION 54-17.200N 130-18.817W
+
+---------------------------------------------------------------------------------------
+
+P 656/2026
+090000 UTC MAY 2026
+Aids to Navigation
+Permanently relocated to 54 13.421N 131 38.705W.
+
+POSITION 54-13.421N 131-38.705W
+
+---------------------------------------------------------------------------------------
+
+P 683/2026
+140000 UTC MAY 2026
+Routeing Change
+Power line installation north of the Selkirk Trestle at 48 26.375N 123 23.010W
+Hours of operation 24 hours per day, Monday to Saturday commencing May 15 until Nov 30 
+Caution
+
+POSITION 48-26.375N 123-23.010W
+
+---------------------------------------------------------------------------------------
+
+P 713/2026
+220000 UTC MAY 2026
+Scientific instrument
+A bottom mounted data retrieving instrument has been established in the Strait of Georgia
+at 49 01.212N 123 11.688W.
+The top of the instrument will be 1.0 meters above the seabed and a 60 meter groundline
+with a weighted line will extend along the seabed. 
+will be in place for approximately 1 year.
+
+POSITION 49-01.212N 123-11.688W
+
+---------------------------------------------------------------------------------------
+
+P 735/2026
+290000 UTC MAY 2026
+Waterway information - Bridge Construction
+Bridge construction is ongoing on the Patullo Bridge at 49 12.500N 122 53.533W.
+Hours of operation from 1300 to 1000 UTC daily.
+Mariners are asked to avoid areas marked with flashing amber lights and to contact work
+vessels on channel 74 
+sixty minutes prior to transiting for restrictions and current channel closures.
+Vessels on site monitoring VHF channels 16, 64A, 69, 71 and 74.
+Minimum wake.
+
+POSITION 49-12.500N 122-53.533W
+
+---------------------------------------------------------------------------------------
+
+P 743/2026
+310000 UTC MAY 2026
+Waterway information
+Effective 0700 UTC JUN 1 2026, to comply with the Interim Order for the Protection of
+Southern Resident Killer Whales (Orcinus orca) in the Waters of Southern British
+Columbia, 2026, vessels must not approach within a distance of 1000m of a Southern
+Resident Killer Whale in the Southern Resident Killer Whale critical habitat and British
+Columbia coastal waters east of Vancouver Island and south of Campbell River (Cape Mudge)
+and Ucluelet, including Barkley Sound (up to Port Alberni) and Howe Sound, with
+coordinates listed in Schedule 1 of the Interim Order.
+These prohibitions are in effect until May 31st, 2027. Details of vessel exceptions from
+the approach distance are described in Sections 2(1), 2(2), 3(2), and 4(2) of the Interim
+Order. Note that vessels in transit are excepted from the approach distance measure.
+Vessels must not operate or navigate within the two Vessel Restricted Zones, specifically
+those waters off the eastern coast of Saturna Island and southern coast of North Pender
+Island, with the coordinates listed in Schedule 2 of the Interim Order.
+The Vessel Restricted Zones are in effect until November 30th, 2026. Details of vessel
+exceptions from the Vessel Restricted Zone prohibitions are described in Sections 2(1),
+2(2), 5(2) and 6(2) of the Interim Order.
+In addition, vessels must adhere to the requirements of two Speed Restricted Zones near
+Swiftsure Bank, in which all vessels are restricted to a maximum speed of 10 knots over
+ground, with the coordinates listed in Schedule 3 of the Interim Order.
+The Speed Restricted Zones are in effect until November 30th, 2026. Details of vessel
+exceptions from the Speed Restricted Zones are described in Sections 2(1), 2(2), 7(2) and
+8(2) of the Interim Order.
+Failure to comply with the Interim Order for the Protection of the Southern Resident
+Killer Whales in the Waters of Southern British Columbia, 2026 could lead to enforcement
+action, including fines.
+Further details are available at Transport Canada’s website (Interim Order for the
+Protection of the Southern Resident Killer Whale (Orcinus orca) in the Waters of Southern
+British Columbia, 2026 (canada.ca), or upon request from a Marine Communications and
+Traffic Services Centre.
+
+AREA BOUNDED BY 48-46.333N 123-03.805W, 48-46.558N 123-03.147W,
+48-47.473N 123-01.975W, 48-47.617N 123-02.483W, 48-47.367N 123-02.915W, 48-47.150N
+123-02.733W, 48-46.683N 123-05.150W, 48-46.350N 123-05.150W
+AREA BOUNDED BY 48-44.167N
+123-13.917W, 48-46.217N 123-18.867W, 48-45.817N 123-19.300W, 48-44.153N 123-15.517W
+AREA
+BOUNDED BY 48-34.000N 125-06.000W, 48-32.100N 125-01.760W, 48-32.100N 124-49.545W,
+48-32.017N 124-46.593W, 48-31.150N 124-43.483W, 48-35.717N 124-43.067W, 48-34.000N
+124-54.190W
+AREA BOUNDED BY 48-42.377N 125-00.000W, 48-36.683N 125-00.000W, 48-36.683N
+124-45.083W, 48-39.702N 124-48.943W, 48-39.653N 124-49.837W, 48-40.522N 124-52.344W,
+48-40.871N 124-54.251W, 48-42.063N 124-56.863W
+
+---------------------------------------------------------------------------------------
+
+P 745/2026
+310000 UTC MAY 2026
+Swiftsure Bank Voluntary Slowdown
+Effective June 1 to October 31, 2026, the ECHO Program voluntary ship slowdown in the
+vicinity of Swiftsure Bank is active for all inbound and outbound commercial and
+government vessels to reduce underwater noise for at-risk whales. If it is safe and
+operationally feasible to do so, commercial and government vessels are requested to not
+exceed the following speeds through the water: 
+11 knots – Bulkers, tankers, general cargo vessels, and government vessels; and, 
+14.5 knots – Vehicle carriers, cruise ships, and container vessels. 
+The voluntary ship slowdown takes place at Swiftsure Bank between 125° 17' W or 48° 19' N
+on the western or southern sides, and 124° 40’ W on the eastern side. All vessels
+transiting inbound or outbound are asked to slowdown when it is safe and operationally
+feasible to do so. Speed transition zones are in place about 2 nautical miles prior to
+entering the slowdown area. 
+The ECHO Program is led by the Vancouver Fraser Port Authority in collaboration with
+government agencies, Indigenous communities, industry partners and environmental groups. 
+For more detailed information, refer to the following internet web address: 
+https://www.portvancouver.com/echo/
+
+AREA BOUNDED BY 48-35.000N 125-09.000W, 48-35.000N
+125-17.000W, 48-19.000N 125-17.000W, 48-19.000N 124-59.150W, 48-20.600N 124-58.167W,
+48-22.550N 125-02.807W, 48-26.642N 125-00.808W, 48-28.132N 124-57.900W, 48-28.137N
+124-44.075W, 48-26.867N 124-40.000W, 48-30.180N 124-40.000W, 48-32.100N 124-46.893W,
+48-32.100N 125-08.980W
+
+---------------------------------------------------------------------------------------
+
+P 746/2026
+310000 UTC MAY 2026
+Juan de Fuca Voluntary Lateral Displacement
+Effective June 1 to October 31, 2026, the ECHO Program voluntary route alteration is
+active for all tugs transiting the Canadian inshore area of the Strait of Juan de Fuca to
+reduce underwater noise for at-risk whales. 
+If it is safe and operationally feasible to do so, tugs are requested to navigate either
+through the outbound shipping lane or the inshore route alteration zone, while
+maintaining a buffer distance of 1,000 meters from the traffic separation scheme (TSS).
+The inshore route alteration zone is 1,500 meters wide and occurs between 123-52-21.192
+W, 48-18-37.332 N and 124-31-33.378 W, 48-28-53.316 N, covering approximately 28 NM. 
+The ECHO Program is led by the Vancouver Fraser Port Authority in collaboration with
+government agencies, Indigenous communities, industry partners and environmental groups. 
+For more detailed information, refer to the following internet web address: 
+https://www.portvancouver.com/echo/
+
+---------------------------------------------------------------------------------------
+
+P 750/2026
+010000 UTC JUN 2026
+Aids to Navigation
+A new buoy has been deployed on Quesnel Lake at 52 30.793N 121 14.745W. LL 5583 Wildoat
+rock buoy.
+
+POSITION 52-30.793N 121-14.745W
+
+---------------------------------------------------------------------------------------
+
+P 757/2026
+020000 UTC JUN 2026
+Aids to Navigation
+Beacon is now submerged and considered a hazard to navigation.
+
+POSITION 49-05.300N
+123-07.786W
+
+---------------------------------------------------------------------------------------
+
+P 760/2026
+020000 UTC JUN 2026
+Aids to Navigation
+Beacon Damaged
+
+POSITION 48-40.432N 123-24.760W
+
+---------------------------------------------------------------------------------------
+
+P 768/2026
+040000 UTC JUN 2026
+Aids to Navigation
+The private steel pile mounted navigation aid in the vicinity of 49 17.567N 122 52.050W
+reported unlit
+
+POSITION 49-17.567N 122-52.050W
+
+---------------------------------------------------------------------------------------
+
+P 786/2026
+090000 UTC JUN 2026
+Aids to Navigation
+Nominal range has changed to 4nm with 37 cd
+
+POSITION 49-28.772N 124-44.923W
+
+---------------------------------------------------------------------------------------
+
+P 788/2026
+100000 UTC JUN 2026
+Aids to Navigation
+Permanently discontinued.
+
+POSITION 49-10.952N 122-55.096W
+
+---------------------------------------------------------------------------------------
+
+P 805/2026
+150000 UTC JUN 2026
+Marine Works - Dredging
+Dredging operations will take place in Sapperton Channel at the Kiewit Marine Yard. 
+Operations active 24 hours a day from 15 June to 21 September. 
+The dredge anchors will be marked with lights at night.
+Vessels on site will be anchored in the navigational channel and monitoring VHF channels
+67 and 09.
+
+AREA BOUNDED BY 49-13.317N 122-50.603W, 49-13.353N 122-50.662W, 49-13.384N
+122-50.815W, 49-13.310N 122-50.863W
+
+---------------------------------------------------------------------------------------
+
+P 806/2026
+150000 UTC JUN 2026
+Marine Works - Dredging
+The RIVERFLOW SPIRIT will be conducting maintenance dredging within the main channel of
+the Fraser River from KM-2 to KM-35. Disposal activities will be undertaken within the
+In-River Disposal Site (49 11.753N 122 55.043W), and at the Sand Heads Spoil Site (49
+06.727N 123 11.906W).
+Hours of Operation: 24 hours.
+Monitoring VHF Channel 74.
+All vessels are requested to make contact upon approach.
+
+POSITION 49-06.727N 123-11.906W
+POSITION 49-11.753N 122-55.043W
+AREA BOUNDED BY 49-09.352N 122-56.829W, 49-09.459N
+122-56.605W, 49-09.731N 122-56.200W, 49-10.058N 122-55.678W, 49-10.232N 122-55.525W,
+49-10.461N 122-55.392W, 49-10.861N 122-55.177W, 49-11.282N 122-54.961W, 49-11.657N
+122-54.750W, 49-11.759N 122-54.644W, 49-11.874N 122-54.464W, 49-11.952N 122-54.577W,
+49-11.838N 122-54.753W, 49-11.760N 122-54.846W, 49-11.675N 122-54.919W, 49-11.312N
+122-55.120W, 49-10.865N 122-55.351W, 49-10.462N 122-55.569W, 49-10.264N 122-55.678W,
+49-10.156N 122-55.779W, 49-10.102N 122-55.842W, 49-09.807N 122-56.316W, 49-09.543N
+122-56.782W, 49-09.462N 122-56.986W, 49-09.413N 122-57.196W, 49-09.411N 122-57.592W,
+49-09.506N 122-59.249W, 49-09.486N 122-59.415W, 49-09.387N 122-59.878W, 49-09.107N
+123-01.146W, 49-08.818N 123-02.447W, 49-08.723N 123-02.717W, 49-08.605N 123-02.914W,
+49-08.053N 123-03.649W, 49-07.322N 123-04.620W, 49-07.133N 123-04.926W, 49-07.063N
+123-05.105W, 49-06.839N 123-06.215W, 49-06.579N 123-07.565W, 49-06.536N 123-07.969W,
+49-06.521N 123-08.386W, 49-06.543N 123-08.852W, 49-06.629N 123-09.450W, 49-06.933N
+123-10.743W, 49-07.266N 123-11.575W, 49-07.763N 123-12.832W, 49-07.862N 123-13.225W,
+49-07.901N 123-13.567W, 49-07.896N 123-14.010W, 49-07.791N 123-14.581W, 49-07.686N
+123-14.890W, 49-06.886N 123-16.769W, 49-06.776N 123-16.657W, 49-07.644N 123-14.592W,
+49-07.762N 123-14.031W, 49-07.764N 123-13.585W, 49-07.719N 123-13.239W, 49-07.640N
+123-12.923W, 49-06.837N 123-10.825W, 49-06.520N 123-09.500W, 49-06.432N 123-08.874W,
+49-06.412N 123-08.399W, 49-06.429N 123-07.961W, 49-06.469N 123-07.573W, 49-06.735N
+123-06.169W, 49-06.939N 123-05.134W, 49-06.985N 123-04.974W, 49-07.100N 123-04.713W,
+49-07.275N 123-04.454W, 49-08.041N 123-03.451W, 49-08.600N 123-02.688W, 49-08.701N
+123-02.440W, 49-09.001N 123-01.091W, 49-09.287N 122-59.811W, 49-09.394N 122-59.295W,
+49-09.293N 122-57.608W, 49-09.275N 122-57.245W, 49-09.299N 122-57.036W
+
+---------------------------------------------------------------------------------------
+
+P 809/2026
+150000 UTC JUN 2026
+Waterway information - ECHO Program
+HARO STRAIT AND BOUNDARY PASS – ECHO Program 2025 Voluntary Ship Slowdown 
+Effective June 15 to November 30, 2026 the ECHO Program voluntary ship slowdown through
+Haro Strait and Boundary Pass is active for all inbound and outbound commercial and
+government vessels to reduce underwater noise for at-risk whales. This initiative will
+remain in effect 24 hours per day until 2359 PDT on November 30, 2026, depending on
+southern resident killer whale presence in the fall. If it is safe and operationally
+feasible to do so, commercial and government vessels are requested to not exceed the
+following speeds through the water: 
+11 knots – Bulkers, tankers, general cargo vessels, and government vessels; and, 
+14.5 knots – Vehicle carriers, cruise ships, and container vessels. 
+This voluntary slowdown takes place between the vessel traffic separation scheme at the
+south end of Haro Strait at 48-24-22.78 N ,123-12-15.26 W, and the vessel traffic
+separation scheme at the north end of Boundary Pass at 48-46-39.28 N, 123-1-36.84 W.
+There are also two optional slow down areas, one rounding Turn Point and the other
+between Saturna Island and Alden Point, Patos Island. 
+The ECHO Program is led by the Vancouver Fraser Port Authority in collaboration with
+government agencies, Indigenous communities, industry partners and environmental groups. 
+For more detailed information, refer to the following internet web address: 
+https://www.portvancouver.com/echo/
+
+---------------------------------------------------------------------------------------
+
+P 811/2026
+150000 UTC JUN 2026
+Aids to Navigation
+Light changed from to nominal range 8NM at night, light 24 hrs. Flash synchronized with
+512.3 Campbell River Ferry Terminal Dolphin No. 2.
+
+POSITION 50-01.749N 125-14.277W
+
+---------------------------------------------------------------------------------------
+
+P 812/2026
+150000 UTC JUN 2026
+Aids to Navigation
+Light changed to nominal range 8NM at night, light 24 hrs. Flash synchronized with 512.4
+Campbell River Ferry Terminal Dolphin No.3
+
+POSITION 50-01.831N 125-14.269W
+
+---------------------------------------------------------------------------------------
+
+P 820/2026
+170000 UTC JUN 2026
+Marine Works
+Environmental fills undewater in Esquimalt Harbour at 48 26.783N 123 26.491W.
+Hours of operation Monday to Friday from 1400UTC to 0200UTC 17 Jun to 17 Sep 2026. 
+Vessels on site monitoring VHF CH. 10.
+
+POSITION 48-26.783N 123-26.491W
+
+---------------------------------------------------------------------------------------
+
+P 841/2026
+230000 UTC JUN 2026
+Aids to Navigation
+Beacon arc of visibility temporarily changed to 031 E and 265 S with a nominal range of
+15nm.
+
+POSITION 54-15.327N 133-03.552W
+
+---------------------------------------------------------------------------------------
+
+P 843/2026
+240000 UTC JUN 2026
+Marine Works
+Temporary closure of Public Anchorage South of Cole Island shown on HSO Chart 3419.
+Esquimalt Harbour is undergoing remediation in multiple areas of the Harbour. To
+facilitate the safety of contractor crews and the public, anchoring in the desingated
+zones will be temporarily closed.
+Closure in effect until 0700 UTC 27 Aug 2026.
+Vessels monitoring VHF channels 10 and 16.
+
+AREA BOUNDED BY 48-27.364N 123-27.005W,
+48-27.137N 123-27.227W, 48-26.899N 123-27.010W, 48-26.879N 123-26.363W, 48-26.872N
+123-25.943W
+
+---------------------------------------------------------------------------------------
+
+P 853/2026
+260000 UTC JUN 2026
+Aids to Navigation
+All fixed and floating aids in Stuart Lake and tributaries have been commissioned and are
+operational for the 2026 season.
+
+ALONG LINE JOINING 54-26.412N 124-26.502W, 54-30.311N
+124-33.055W, 54-33.373N 124-40.654W, 54-35.880N 124-44.135W, 54-38.202N 124-49.410W,
+54-39.239N 124-53.947W, 54-37.760N 125-00.269W, 54-37.760N 125-05.460W, 54-41.054N
+125-13.499W, 54-38.032N 125-05.445W, 54-38.118N 124-59.990W, 54-39.861N 124-57.254W,
+54-40.001N 124-51.176W, 54-37.751N 124-42.546W, 54-26.608N 124-16.411W, 54-26.466N
+124-26.500W
+
+---------------------------------------------------------------------------------------
+
+P 876/2026
+010000 UTC JUL 2026
+Marine Works
+Sheet pile installation from Matsqui Island to the mainland shoreline
+Hours of operation 1400 UTC until 0100 UTC Monday to Friday July 2 until Aug 16
+Caution
+
+POSITION 49-07.411N 122-22.166W
+
+---------------------------------------------------------------------------------------
+
+P 892/2026
+050000 UTC JUL 2026
+Aids to Navigation
+Two surface wave monitoring buoys are temporarily established off Long Beach at 48
+57.544N 125 48.566W and 49 00.975N 125 42.461W.
+Both buoys are yellow and display Fl Y 2.5s.
+
+POSITION 48-57.544N 125-48.566W
+POSITION
+49-00.975N 125-42.461W
+
+---------------------------------------------------------------------------------------
+
+P 914/2026
+090000 UTC JUL 2026
+Uncharted Rock
+Uncharted rock reported in Venn Passage at 54 19.861N 130 26.537W at 091751 UTC Jul 2026
+at a depth of 0.9m.
+
+POSITION 54-19.861N 130-26.537W
+
+---------------------------------------------------------------------------------------
+
+P 917/2026
+100000 UTC JUL 2026
+Uncharted Rock
+Uncharted rock reported in 53 12.248N 132 08.453W at 101300 UTC Jul 2026. Depth 3.9
+metres WGS84.
+
+POSITION 53-12.248N 132-08.453W
+
+---------------------------------------------------------------------------------------
+
+P 924/2026
+110000 UTC JUL 2026
+Aids to Navigation
+ODAS buoy established in Colburne Passage at 48 41.622N 123 25.362W. Buoy is yellow and
+displaying Fl (5) Y.
+
+POSITION 48-41.622N 123-25.362W
+
+---------------------------------------------------------------------------------------
+
+P 926/2026
+120000 UTC JUL 2026
+Aids to Navigation
+Light Unlit.
+
+POSITION 54-43.547N 130-49.220W
+
+---------------------------------------------------------------------------------------
+
+P 935/2026
+130000 UTC JUL 2026
+Aids to Navigation
+Off position.
+
+POSITION 50-51.862N 119-36.340W
+
+---------------------------------------------------------------------------------------
+
+P 939/2026
+140000 UTC JUL 2026
+Aids to Navigation
+Light established on the Pendticton Pier at 49 30.291N 119 35.797W. Light is at a height
+of 0.6m, displaying Fl Y
+0.5s Ec 3.5s and has a nominal range of 3nm.
+
+POSITION 49-30.291N 119-35.797W
+
+---------------------------------------------------------------------------------------
+
+P 960/2026
+170000 UTC JUL 2026
+MCTS RADAR
+Prince Rupert MCTS. RADAR located at Denny Island inoperative 170700 UTC Jul 2026.
+POSITION 52-06.224N 128-04.509W
+
+---------------------------------------------------------------------------------------
+
+P 970/2026
+190000 UTC JUL 2026
+Bridge Maintenance
+Maintenance operations will take place on the Johnson Street Bridge in Victoria Harbour.
+Crew and equipment may be suspended from the underside of the bridge within the
+navigational channel. 
+Hours of operation from 1400 to 0100 UTC daily from 20 July to 30 September. 
+All bridge lift requests require a minimum of 90 minutes advance notice. 
+Bridge crew monitoring VHF channel 12.
+
+POSITION 48-25.699N 123-22.329W
+
+---------------------------------------------------------------------------------------
+
+P 1020/2026
+280000 UTC JUL 2026
+Scientific equipment
+Subsurface mooring deployed in Satellite chanel at 48 44.850N 123 22.913W at a depth of
+69 m on July 1, 2026.
+
+POSITION 48-44.850N 123-22.913W
+
+---------------------------------------------------------------------------------------
+
+P 1022/2026
+280000 UTC JUL 2026
+Scientific Instruments
+Subsurface mooring’ deployed south of Pender Island at 48 43.8508N 123 13.5560 at a depth
+of 90 m on July 1, 2026.
+
+POSITION 48-43.851N 123-13.556W
+
+---------------------------------------------------------------------------------------
+
+P 1023/2026
+280000 UTC JUL 2026
+Scientific Instruments
+Two subsurface mooring deployed in Beecher Bay at 48 19.0313N 123 37.7408W at 83 meters
+the second in position 48 19.042N 123 37.736W at a depth of 63 meters.
+
+POSITION
+48-19.031N 123-37.741W
+POSITION 48-19.042N 123-37.736W
+
+---------------------------------------------------------------------------------------
+
+P 1030/2026
+290000 UTC JUL 2026
+Marine Works-Salvage operations
+Salvage operations underway for a sunken dredge downriver from the Port Mann Bridge at 49
+13.067N 122 50.130W.
+Hours of operation 24/7 until operations are complete. 
+Vessels on site monitoring VHF CH. 74.
+Minimum wake.
+
+POSITION 49-13.067N 122-50.130W
+
+---------------------------------------------------------------------------------------
+
+P 1032/2026
+290000 UTC JUL 2026
+Marine Works-Wharf repairs.
+Repair operations at Pembina's Vancouver wharves between Berth 1 and Berth 5.
+between 49 18.481N 123 06.847W and 49 18.733N 123 07.577W.
+Hours of operation daily from 1300 to 0030 UTC Jul 29th to Aug 30th.
+Vessels on site monitoring VHF CH. 64A.
+Minimum wake.
+
+POSITION 49-18.481N 123-06.847W
+POSITION 49-18.733N 123-07.577W
+
+---------------------------------------------------------------------------------------
+
+P 1038/2026
+310000 UTC JUL 2026
+Marine Works - Dredging
+Dredging operations will take place throughout the Steveston Cannery Channel.
+Hours of operation from 1400 to 0200 UTC daily.
+Vessels on site monitoring VHF channels 69 and 74.
+
+POSITION 49-07.210N 123-10.384W
+
+---------------------------------------------------------------------------------------
+
+P 1044/2026
+310000 UTC JUL 2026
+Uncharted Rock
+Uncharted rock reported in 53 01.448N 132 21.617W at 312303 UTC Jul 2026.
+
+POSITION
+53-01.448N 132-21.617W
+
+---------------------------------------------------------------------------------------
+
+P 1051/2026
+020000 UTC AUG 2026
+Aids to Navigation
+Permanently relocated to 48 20.518N 123 33.463W.
+
+POSITION 48-20.518N 123-33.463W
+
+---------------------------------------------------------------------------------------
+
+P 1052/2026
+020000 UTC AUG 2026
+Scientific Instruments Change
+A sub-surface mooring buoy in position 48 48.974N 125 16.794W has been deployed, and
+extends 7m above the seafloor.
+
+POSITION 48-48.974N 125-16.794W
+
+---------------------------------------------------------------------------------------
+
+P 1056/2026
+030000 UTC AUG 2026
+Aids to Navigation
+Permanently fitted with a light showing characteristic (Q(6) + LFl) W 15s, nominal range
+of 4.0nm.
+
+POSITION 48-24.438N 123-17.911W
+
+---------------------------------------------------------------------------------------
+
+P 1057/2026
+030000 UTC AUG 2026
+Aids to Navigation
+Permanently fitted with a light showing characteristic Fl G 4s, nominal range of 4.0nm.
+POSITION 48-25.105N 123-17.295W
+
+---------------------------------------------------------------------------------------
+
+P 1062/2026
+030000 UTC AUG 2026
+Marine Works
+Sheet pile installation operations on the southern riverbank of the Fraser RIver between
+Matsqui Island and Abbotsford. 
+Hours of operation monday to friday from 1400-2359UTC Aug 4th to Aug 30th. 
+Vessels on site monitoring VHF CH. 74 and 69.
+Mariners advised to avoid published postions.
+
+AREA BOUNDED BY 49-08.288N 122-23.485W,
+49-08.404N 122-23.589W, 49-08.427N 122-23.523W, 49-08.311N 122-23.426W
+
+---------------------------------------------------------------------------------------
+
+P 1067/2026
+050000 UTC AUG 2026
+Marine Works
+Marine work and Dock repairs using a marine derrick with crane at the BC Ferries
+Tsawwassen Termina (Berth 5) in the vicinity of 49 00.395N 123 08.042W.
+Hours of operation from 1300 to 0130 UTC daily, 05 to 07 August.
+FRPD monitoring VHF Channel 69.
+Mariners to stay back 200ft from repair operations.
+Minimum wake.
+
+POSITION 49-00.395N 123-08.042W
+
+---------------------------------------------------------------------------------------
+
+P 1072/2026
+050000 UTC AUG 2026
+Waterway information - ODAS Buoy
+An ODAS buoy has been established in Dixon Entrance at 54 14.271N 131 06.661W displaying
+Fl (5) Y 20s.
+
+POSITION 54-14.271N 131-06.661W
+
+---------------------------------------------------------------------------------------
+
+P 1097/2026
+070000 UTC AUG 2026
+Marine Works-Pile driving
+Pile driving operations at the BC Ferries Crofton Terminal at 48 51.959N 123 38.241W.
+Hours of operation daily from 1400-0200 UTC from August 7th to September 7th.
+Vessels on site monitoring VHF CH. 08
+Minimum wake.
+
+POSITION 48-51.959N 123-38.241W
+
+---------------------------------------------------------------------------------------
+
+P 1111/2026
+110000 UTC AUG 2026
+Marine Works
+Marine work and dock repairs of the Snug Cove Main Wharf at 49 22.783N 123 19.852W and
+Float Wharf at 49 22.747N 123 19.887W on Bowen Island. 
+Hours of operation from 1400 to 0200 UTC daily, 11 Aug to 1 September.
+Work barge and crew boat monitoring VHF Channel 8.
+
+POSITION 49-22.747N 123-19.887W
+POSITION 49-22.783N 123-19.852W
+
+---------------------------------------------------------------------------------------
+
+P 1118/2026
+120000 UTC AUG 2026
+Scientific Instruments
+Orange surface float marker buoy deployed in Nootka Sound at 49 33.267N 126 41.966W, 1m
+in diameter with flag and radar reflector Attached wave measuring buoy, 30 cm in
+diameter.
+
+POSITION 49-33.267N 126-41.966W
+
+---------------------------------------------------------------------------------------
+
+P 1119/2026
+120000 UTC AUG 2026
+Scientific Instruments
+Yellow ODAS buoy deployed in Nootka Sound at 49 33.702N 126 39.805W described as 1 meter
+in diamter flashing yellow ODAS sequence.
+
+POSITION 49-33.702N 126-39.805W
+
+---------------------------------------------------------------------------------------
+
+P 1120/2026
+120000 UTC AUG 2026
+Scientific Instruments
+Bottom mounted instrument package deployed in Nootka Sound at 49 33.766N 126 39.663W
+measuring 1 meter x 1 meter to a height off bottom of 1m in water depth of ~43m. No
+surface expression.
+
+POSITION 49-33.766N 126-39.663W
+
+---------------------------------------------------------------------------------------
+
+P 1125/2026
+130000 UTC AUG 2026
+Aids to Navigation
+Private buoy starboard hand marker no. 4, light unreliable.
+
+POSITION 49-16.160N
+123-07.595W
+
+---------------------------------------------------------------------------------------
+
+P 1140/2026
+150000 UTC AUG 2026
+Aids to Navigation
+South Moresby ODAS Light Buoy 46147 LL 769.5 has been permanently re-established on
+position 51 47.372N 131 15.340W.
+
+POSITION 51-47.372N 131-15.340W
+
+---------------------------------------------------------------------------------------
+
+P 1150/2026
+180000 UTC AUG 2026
+Marine Works
+Dredging at Alliance Grain, east berth
+Hours of operation 1300 UTC until 0300 UTC daily from August 19 until September 3
+Vessels on site will monitor VHF CH 69
+Caution.
+
+POSITION 49-17.259N 123-04.719W
+
+---------------------------------------------------------------------------------------
+
+P 1152/2026
+180000 UTC AUG 2026
+Uncharted Rock
+Out of position rock reported in 52 57.482N 132 10.832W near Englefield Bay at 181857 UTC
+Aug 2026. Described as the Thorn Rock that dries to 0.28 meters.
+
+POSITION 52-57.482N
+132-10.832W
+
+---------------------------------------------------------------------------------------
+
+P 1155/2026
+190000 UTC AUG 2026
+Marine Works
+Sheet pile installation, Fraser River South bank downstream of Matsqui Island. Work
+within rectangle with corner points: 
+49 08.535N 122 23.671W
+ 49 08.603N 122 23.710W
+ 49 08.618N 122 23.648W
+ 49 08.551N 122 23.610W
+Hours of operation; Monday to Friday 1400 UTC to 0100 UTC, 19 Aug. to 30 Aug. 2026.
+Vessels monitoring VHF channels 16, 69, and 74.
+Mariner are avised to avoid the work zone.
+Caution.
+
+AREA BOUNDED BY 49-08.535N 122-23.671W, 49-08.603N 122-23.710W, 49-08.618N
+122-23.648W, 49-08.551N 122-23.610W
+
+---------------------------------------------------------------------------------------
+
+P 1160/2026
+200000 UTC AUG 2026
+Submerged Object
+A pipe showing two feet out of the water reported in Qualicum Bay at 49 23.910N 124
+35.955W at 201633 UTC Aug 2026. Described as a ten inch steel pipe.
+
+POSITION 49-23.910N
+124-35.955W
+
+---------------------------------------------------------------------------------------
+
+P 1169/2026
+260000 UTC AUG 2026
+Fish Aggregating Device
+Mooring operations including anchor placement, diving and ROV operations taking place
+vicinity of 50 28.955N 127 53.073W
+Hours of operation 1400 UTC August 25 until 0400 UTC October 2nd
+Sea Roamer will monitor VHF CH 06, 16 and 80
+Minimum wake.
+
+AREA BOUNDED BY 50-28.955N 127-53.073W, 50-28.755N 127-52.382W, 50-29.265N
+127-51.610W
+
+---------------------------------------------------------------------------------------
+
+P 1170/2026
+260000 UTC AUG 2026
+Gunnery Exercises
+Military Exercise Area W-237E (US) will be active for gunnery exercises from 1500 to 1800
+UTC from 26 Aug 2026 to 27 Aug 2026. Mariners are required to remain well clear of naval
+vessels. Ref: NOTMAR F35 - Annual Edition.
+
+AREA BOUNDED BY 48-29.617N 125-09.017W,
+48-20.000N 128-00.000W, 48-08.983N 127-54.733W, 48-08.983N 125-05.000W
+
+---------------------------------------------------------------------------------------
+
+P 1171/2026
+260000 UTC AUG 2026
+Marine works - LNG Construction
+Construction of the Woodfibre LNG facility is taking place in Howe Sound at 49 39.909N
+123 15.114W.
+Two floating worker accommodation to support facility construction and commissioning of
+the Woodfibre LNG facility are at 49 39.650N 123 15.480W.
+A Marine Safety Zone has been established around the work site.
+All vessels not affiliated with the project are to avoid the Marine Safety Zone.
+Operations are active 24 hours a day. 
+Vessels on site monitoring VHF channels 08 and 16.
+
+ALONG LINE JOINING 49-40.139N
+123-14.249W, 49-39.922N 123-14.086W, 49-39.589N 123-14.144W, 49-39.274N 123-15.077W,
+49-39.220N 123-15.485W
+POSITION 49-39.650N 123-15.480W
+POSITION 49-39.909N 123-15.114W
+
+---------------------------------------------------------------------------------------
+
+P 1172/2026
+260000 UTC AUG 2026
+Marine Works - Offloading Area
+A marine construction staging area will be established near the George Massey Tunnel.
+Offloading of materials from barges will take place at 49 07.276N 123 04.316W.
+Hours of operation from 1400 to 0200 UTC daily from 10 Aug to 01 Sept.
+FRPD on site monitoring VHF channels 16, 71 and 74.
+
+AREA BOUNDED BY 49-07.329N
+123-04.285W, 49-07.279N 123-04.404W, 49-07.229N 123-04.350W, 49-07.276N 123-04.227W
+POSITION 49-07.276N 123-04.316W
+
+---------------------------------------------------------------------------------------
+
+P 1173/2026
+260000 UTC AUG 2026
+Military Zone WG
+Military Exercise Area WG will be active for surface, subsurface and air activities from
+27 Aug 2026 1500 UTC to 28 Aug 2026 0000 UTC. During operations WG is extremely hazardous
+and closed to marine traffic. Entry is prohibited pursuant to the Defence Controlled
+Access Area Regulations. Safe passage is available within 0.5nm North of Winchelsea
+Island and within 0.5 nm East of Ballenas Island. Contact Winchelsea Island Control on
+VHF Channel 10 for additional information. Ref: NOTMAR F35 - Annual Edition.
+
+AREA
+BOUNDED BY 49-21.350N 124-07.700W, 49-21.000N 123-48.400W, 49-14.830N 123-48.400W,
+49-16.750N 124-00.900W, 49-19.350N 124-07.700W
+
+---------------------------------------------------------------------------------------
+
+P 1174/2026
+270000 UTC AUG 2026
+Aids to Navigation
+Light Unlit.
+
+POSITION 48-41.472N 123-23.294W
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

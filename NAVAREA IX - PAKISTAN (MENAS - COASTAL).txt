@@ -1,0 +1,1409 @@
+MENAS - COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: Nav 164/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: Nav 163/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2021 SERIES: Nav 83, Nav 305.
+
+2022 SERIES: Nav 19, Nav 84, Nav 136, Nav 143.
+
+2023 SERIES: Nav 42, Nav 50, Nav 51, Nav 100, Nav 118, Nav 222, Nav 247.
+
+2024 SERIES: Nav 24, Nav 43, Nav 56, Nav 92, Nav 181, Nav 186, Nav 219, Nav 222, Nav 308.
+
+2025 SERIES: Nav 2, Nav 5, Nav 9, Nav 10, Nav 33, Nav 46, Nav 58, Nav 117, Nav 132, Nav
+141, Nav 162, Nav 214, Nav 220, Nav 260, Nav 267, Nav 269, Nav 282, Nav 322, Nav 337, Nav
+338, Nav 340, Nav 342, Nav 345.
+
+2026 SERIES: Nav 3, Nav 37, Nav 51, Nav 67, Nav 70, Nav 76, Nav 81, Nav 91, Nav 92, Nav
+94, Nav 100, Nav 107, Nav 110, Nav 112, Nav 113, Nav 126, Nav 128, Nav 129, Nav 130, Nav
+132, Nav 142, Nav 148, Nav 149, Nav 150, Nav 154, Nav 161, Nav 164.
+
+---------------------------------------------------------------------------------------
+
+Nav 83/2021
+140000 UTC MAR 2021
+Central Gulf: Barge Wreck Buoy is Missing.
+Charts BA  3772, 3950, 2886, 2837
+Barge Wreck
+Buoy at position 25-57.710N, 051-52.860E is missing.
+Mariners are requested to Navigate
+with caution when transiting on the area.
+Cancel Navtex 065/2019 which superseded by this
+one.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 305/2021
+150000 UTC NOV 2021
+Central Gulf: Qatar – Al Khalij Field-Mooring Buoy Missing.
+BA Charts: 2886.
+Crewboat
+mooring buoy on Al Khalij Field at position 25-56.100N, 052-41.400E reported Missing.
+Mariners are requested to navigate with caution while passing in the vicinity.
+Issuer:
+MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 19/2022
+160000 UTC JAN 2022
+Central Gulf: Bahrain – Dive Site Wreck Buoy Unlit.
+BA Charts: 3790, 2886.
+Wreck buoy in
+position 26-35.94N, 050-58.51E to mark the Dive site reported Unlit.
+Mariners are
+requested to navigate with caution while passing in the vicinity.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 84/2022
+190000 UTC MAR 2022
+Central Gulf: Sunken Vessel.
+BA Chart: 2523, 2886, 2837.
+Vessel reported Capsized on
+170020 UTC MAR 22 in position 26-52.1N, 052-19.4E within Qatar North
+Oil and Gas field.
+The search and rescue team around the position 26-52.0N, 052-18.2E still looking for
+two
+persons of the crew members.
+Mariners are requested to navigate with caution while
+transiting in the area and keep sharp lookout for
+missing seamen.
+Cancel Navtex 083/2022.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 136/2022
+150000 UTC MAY 2022
+Northern Gulf: Kuwait – Establishment of Navigation Buoy.
+BA Chart: 3773, 2882.
+South
+Cardinal buoy deployed temporarily in following position to mark a sunken vessel:
+29-19.647N 048-25.480E VQ(6).LFl.10s
+Mariners are requested to Navigate with caution and
+keep wide berth.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 143/2022
+240000 UTC MAY 2022
+Central Gulf: Bahrain Light Buoy Unlit
+BA Chart: 3738, 3790, 2886
+The Navigational light
+of Bahrain L/B at location 26-33.00N, 051-03.59E reported unlit.
+Mariners are advised to
+navigate with caution.
+Cancel Navtex 117/2020.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 42/2023
+090000 UTC FEB 2023
+Central Gulf: Qatar –1500mtr Safety Zones around SPMs
+BA Chart: 2523, 2883, 2886, 2837,
+2858
+There are safety zones of 1500mtr around the SPM2, SPM3 and SPM4 located in below
+positions.
+Approval to enter shall be obtained from the attending terminal / operator on
+VHF16 or 72.
+SPM Coordinates (WGS 84)
+SPM2    26-35.496N  052-01.986E
+SPM3    26-38.808N
+051-53.496E
+SPM4    26-40.375N  051-53.896E
+Mariners are requested to navigate with
+caution & update their BA charts.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 50/2023
+140000 UTC FEB 2023
+Southern Gulf: UAE – Deployment of Mooring Buoys.
+BA Charts: 3739, 3176.
+Four Mooring
+Buoys have been deployed, which belongs to the Dubai Maritime City on the following
+positions:
+1. 25-08.140N 055-09.524E
+2. 25-07.780N 055-09.650E
+3. 25-14.766N 055-12.602E
+4. 25-14.342N 055-12.746E
+Mariners are requested to navigate with caution while passing
+in the vicinity.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 51/2023
+140000 UTC FEB 2023
+Northern Gulf: Kuwait – Shuwaikh Port Development.
+BA Charts: 3773.
+Development project
+of the Anchorage area number 1 to 7 is taking place in Shuwaikh Port until further
+notice
+on position 29-21.160N, 047-56.101E
+Mariners are requested to navigate with caution while
+passing in the vicinity.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 100/2023
+060000 UTC APR 2023
+Southern Gulf: UAE - Hail & Ghasha Oil Field – Construction Works
+BA Charts 3178, 3179.
+Major construction works still in progress to construct artificial islands inside Hail
+and Ghasha Oil Fields at
+Abu Dhabi Offshore on the following boundaries (WGS84):
+Ghasha
+Field Area:
+P01 24-40.220 N 052-52.613 E
+P02 24-39.081 N 053-00.183 E
+P03 24-30.790 N
+053-03.239 E
+P04 24-26.334 N 052-56.633 E
+P05 24-30.700 N 052-52.078 E
+Hail Field Area:
+P01 24-24.565 N 053-21.717 E
+P02 24-24.461 N 053-28.221 E
+P03 24-17.964 N 053-28.095 E
+P04 24-18.067 N 053-21.597 E
+Mariners are requested to navigate with caution around the
+area. Unauthorized vessels entry to these
+areas within field boundaries is strictly
+prohibited. Mariners are requested to call Marine Control Center on
+Marine VHF Ch. 16.
+Cancel Navtex 018/2021.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 118/2023
+270000 UTC APR 2023
+Southern Gulf: UAE – Lost Anchor ’s Obstructions.
+BA Chart: 2444, 3178.
+Lost Anchor ’s
+reported losses at position 25-01.57N, 053-03.22E.
+Mariners are requested not to anchor
+in the vicinity.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 222/2023
+280000 UTC AUG 2023
+Southern Gulf: UAE – Old Spare SPM Unlit.
+BA Chart: 3178.
+Old spare SPM exists south of
+Zirku island at position 24-51.601N, 053-05.412 reported unlit.
+Mariners are advised to
+navigate with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 247/2023
+190000 UTC SEP 2023
+Southern Gulf: UAE – Lost Anchor ’s Obstructions.
+BA Chart: 3413.
+A Vessel reported lost
+anchor with chain at position 25-07.23N, 052-53.27E.
+Mariners are requested not to anchor
+in the vicinity.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 24/2024
+250000 UTC JAN 2024
+Northern Gulf: Kuwait - Sinking Vessel.
+BA Chart: 1223, 3773
+Local Chart: 1,4,8
+Sinking
+vessel reported on position 29-05.49N, 048-22.095E. An isolated danger buoy has been
+temporarily deployed on position 29-05.516N, 048-22.061E with Fl(2).5s.
+Mariners are
+advised to navigate with caution.
+Cancel Navtex 012/2024.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 43/2024
+190000 UTC FEB 2024
+Southern Gulf: UAE – New Wreck.
+BA Chart: 2443, 2889.
+semi-sunken wreck has been reported
+in the vicinity of Position 25-11.645 N, 054-10.122 E.
+Mariners are requested to navigate
+with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 56/2024
+290000 UTC FEB 2024
+Southern Gulf: UAE - Reclamation Works in Progress.
+BA Chart: 3404, 3174
+A reclamation
+works behind RAK Maritime City breakwater will be further extended west wards within the
+area bounded by below mentioned coordinates:
+25-58.191N 056-02.131E
+25-58.011N
+056-02.821E
+25-57.378N 056-02.866E
+25-57.624N 056-01.948E
+Three temporary marker buoys
+have been re-positioned in below mentioned co-ordinates to assist in the
+reclamation
+process.
+B1 Flash Yellow 25-58.146N 056-02.301E
+B2 Flash Yellow 25-57.853N 056-02.207E
+B3
+Flash Yellow 25-57.560N 056-02.112E
+All mariners are advised to navigate with caution and
+keep well clear of the area while passing in the
+vicinity.
+Cancel Navtex 224/2021.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 92/2024
+260000 UTC APR 2024
+Southern Gulf: UAE –Unlit Platform.
+BA Chart: 3413.
+“ZH ” platform at position 25-38.82N,
+054-24.85E reported Unlit.
+Mariners are requested to navigate with caution whilst
+transiting in the area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 181/2024
+050000 UTC AUG 2024
+Central Gulf: Qatar– Temporary Wave Buoy.
+BA Chart: 2523, 2886.
+Wave rider buoy will be
+deployed for a period of approx. 1 month on position 26-26.524N, 051-57.858E
+with light
+Fl(5).Y 2.5s.
+Mariners are requested to navigate with caution.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 186/2024
+150000 UTC AUG 2024
+Central Gulf: Bahrain – Construction of Bapco Trestle and Pipelines Laying
+Operations.
+BA
+Charts: 3736, 3737
+Local Charts: 1501, 6501, 5011
+The construction operations of the
+Trestle Construction, Seabed Excavation and Pipeline Laying activities at the
+BAPCO
+Terminal - Sitra Port - in the following bounded area has been extended until end of JUN
+2025:
+26-10.03N 050-39.57E
+26-10.05N 050-39.72E
+26-10.07N 050-40.00E
+26-09.98N 050-40.28E
+26-09.77N 050-40.42E
+26-09.73N 050-40.37E
+26-10.00N 050-39.90E
+26-09.95N 050-39.72E
+26-09.88N 050-39.58E
+26-09.95N 050-39.55E
+Mariners are requested to navigate with caution
+at slow speed, maintain listening watch on VHF CH
+16/74/72 and take instructions as
+required from “Bahrain Port Control” and “Bapco Wharf Control”.
+Cancel Navtex 004/2024.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 219/2024
+160000 UTC SEP 2024
+Southern Gulf: UAE - Sunken Vessel.
+BA Chart: 3175, 2889.
+Vessel “KNIDOS” reported sunk
+on position 25-35.02N, 054-51.15E with a floating debris around the
+position.
+Mariners
+are advised to navigate with caution and keep clear from the area.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 222/2024
+180000 UTC SEP 2024
+Northern Gulf: Kuwait - Buoy Moved.
+BA Chart: 1223, 3773.
+Mooring buoy “M1” has been
+moved permanently from position 29-06.446N, 048-17.682E to position 29-
+06.573N,
+048-17.274E.
+Mariners are requested to Navigate with caution and update their BA chart.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 308/2024
+290000 UTC DEC 2024
+Central Gulf: Bahrain– Buoy Altered in Position.
+BA Chart: 3736
+BH Chart: 1501
+MSI-2 Buoy
+has been altered in position 26-11.675N, 050-36.675E
+Mariners are requested to navigate
+with caution and update their BA Charts.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 2/2025
+050000 UTC JAN 2025
+Northern Gulf: Kuwait - Restricted area.
+BA Charts: 3773.
+KU Charts: 1.
+Restricted area
+has been established on position 28-52.490N, 048-21.634E with 600 Meter diameter.
+Mariners are requested navigate with caution and keep clear from the mentioned area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 5/2025
+070000 UTC JAN 2025
+Northern Gulf: Kuwait – Buoys Permanently Altered in Characteristics.
+BA Charts: 2884,
+3773, 1223.
+Two buoys have been permanently altered in characteristics with same position
+as below:
+From yellow NP -02 to green NP-A with flash code Fl.G.5s and range of 2 N.M at
+position 29-07.704N,
+048-08.416E .
+From yellow NP -01 to red NP-B with flash code Fl.R.5s
+and range of 2 N.M at position 29-07.695N, 048-
+08.494E .
+Mariners requested to navigate
+with caution and update their BA Charts.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 9/2025
+110000 UTC JAN 2025
+Southern Gulf: UAE – Temporary Data Buoys.
+BA Chart: 2444, 2889.
+The below Data buoy
+remains in the location as below.
+MIDI 018 25-03.005N, 053-04.159E   Fl(5).Y.20s
+Buoy DWR
+on position 25-07.143N, 052-56.058E permanently withdrawn.
+This Navtex supersedes Navtex
+No. 257/2024.
+Mariners are requested to navigate with caution.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 10/2025
+130000 UTC JAN 2025
+Northern Gulf: Kuwait – Ras Al Zour – Metrological Tower Collapsed.
+BA Charts: 1223,
+3773.
+Metrological tower reported Collapsed on position 28-46.000N, 048-26.100E, it is
+visible above lowest
+water and become an obstruction which might cause a navigational
+hazard.
+The location of the tower will be marked by a yellow buoy with Fl (4) 15s with a
+5NM range.
+Mariners are requested to navigate with extreme cation while transit in the
+area.
+Cancel Navtex 087/2023.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 33/2025
+070000 UTC FEB 2025
+Southern Gulf: UAE – Lost Anchor’s Obstructions.
+BA Chart: 3413.
+A Vessel reported lost
+anchor with 2.5 shackle of chain at position aprox 25-07.693N, 052-53.090E.
+Mariners are
+requested not to anchor in the vicinity.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 46/2025
+190000 UTC FEB 2025
+Northern Gulf: Kuwait – Establishment of Two buoys showing the borders of Kuwait
+sport
+club water racetrack.
+BA Chart: 1214, 3773.
+Two special mark buoys were deployed
+temporary to shows the borders of Kuwait sport club
+water racetrack at position as
+bellow:
+Buoy 1: 29-20.35N  048 06.051E
+Buoy 2: 29-20.50N  048 06.093E
+Mariners are
+advised to navigate with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 58/2025
+050000 UTC MAR 2025
+Central Gulf: Bahrain - Dredging Operations.
+BA Chart: 3736, 3737.
+Dredging operation
+east of Bahrain Steel Terminal will be conducted on 08 of March 2025.
+Two Buoys will be
+shifted on 06 of March 2025 to temporary position as below:
+BS 3 26-11.243N 050-41.836E
+BS 5 26-11.393N 050-41.653E
+A temporary special Mark buoy will be deployed on the
+position 26-10.733N, 050-41.704E.
+Duration of the operation: Approx. 6 Months.
+Mariners
+are advised to exercise extra caution and give a wide berth.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 117/2025
+080000 UTC MAY 2025
+Southern Gulf: UAE – Ras Al Khaimah Special Mark Data Buoy Established.
+BA Chart: 3174.
+A
+Special Mark Data Bouy was deployed on the following position.
+25-44.205N 055-41.596E QY
+Mariners are requested to navigate with caution.
+Issuer: MENAS Maritime Operations
+Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 132/2025
+240000 UTC MAY 2025
+Central Gulf: Qatar – ROV-Operations in Al Shaheen Field.
+BA Chart: 2886. 2523.
+Self
+Propelled DP2 vessel “HYSY289” will be carrying out sleepers installation in following
+bounded area:
+A- 26-41.990N 051-53.261E
+B- 26-41.940N 052-00.754E
+C- 26-37.648N
+052-00.716E
+D- 26-37.698N 051-53.228E
+Mariners are requested to navigate with caution and
+give wide berth.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 141/2025
+310000 UTC MAY 2025
+Northern Gulf: Kuwait – Restricted area.
+BA Charts: 3773.
+Restricted area has been
+established on position 29-13.102N, 048-44.419E with 600 Meter diameter.
+Mariners are
+requested navigate with caution and keep clear from the mentioned area.
+Issuer: MENAS
+Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 162/2025
+160000 UTC JUN 2025
+Southern Gulf: UAE – Temporary Mooring Buoy Established.
+BA Chart: 3179, 3178.
+Three
+Unlit mooring buoys deployed temporary on the following positions.
+7086 24-53.920 N
+053-01.571 E
+8995 24-53.854 N 053-02.024 E
+3972 24-53.673 N 053-01.958 E
+Mariners are
+requested to navigate with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 214/2025
+220000 UTC AUG 2025
+Southern Gulf: UAE - Amendment to the Exclusion Zone – Burj Al Arab and Madinat
+Jumeirah
+BA Chart: 3176, 2889.
+Restricted area has been amendment to the exclusion zone in Burj Al
+Arab and Madinat Jumeirah.
+The following coordinates show the borders of Restricted Area
+A. 25-07.989N 055-10.772E
+B. 25-08.287N 055-10.635E
+C. 25-08.983N 055-11.224E
+D.
+25-08.911N 055-11.382E
+Mariners are requested navigate with caution and keep clear from
+the mentioned area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 220/2025
+260000 UTC AUG 2025
+Southern Gulf: UAE -Amendment to the Exclusion Zone in Offshore Umm Suqeim
+Coastal Area
+BA Chart: 2837,2889.
+Restricted area has been amendment to the exclusion zone in Offshore
+Umm Suqeim Coastal Area.
+The following coordinates show the borders of Restricted Area
+A.
+25-11.195N 055-11.356E
+B. 25-11.751N 055-11.797E
+C. 25-11.525N 055-12.900E
+D. 25-10.602N
+055-12.907E
+E. 25-10.324N 055-12.586E
+F. 25-10.061N 055-11.881E
+G. 25-10.147N 055-11.564E
+Mariners are requested navigate with caution and keep clear from the mentioned area.
+This
+Navtex supersedes Navtex No. 155/2025.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 260/2025
+280000 UTC SEP 2025
+Northern Gulf: Kuwait – Seabed Survey.
+BA Chart: 3773.
+KU Local Chart: 1.
+Seabed Survey
+is conducted today 28 SEP 25 multi vessels on the following locations:
+A. MPA-1
+29-21.174N 047-50.555E
+B. MPA-2  29-20.631N 047-50.709E
+C. MPA-3  29-21.556N 047-50.783E
+D. MPA-4  29-21.184N 047-53.230E
+E. LTMP-1  29-21.609N 047-52.345E
+F. LTMP-2  29-24.778N
+047-54.447E
+G. LTMP-3  29-25.817N 048-05.305E
+Mariners are requested to navigate with
+caution.
+The operation period is till 30 NOV 2029.
+Cancel Navtex 259/2025.
+Issuer: MENAS
+Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 267/2025
+020000 UTC OCT 2025
+Northern Gulf: Kuwait – AToNs Developing and Seabed Survey.
+BA Chart: 3773.
+KU Local
+Chart: 1.
+AToNs developing and Seabed Survey is carrying out by multi vessels in the
+areas bounded by following
+positions:
+Doha:
+A. 29-23.682N 047-52.476E
+B. 29-23.700N
+047-54.252E
+C. 29-21.426N 047-54.102E
+D. 29-21.438N 047-52.458E
+Faylaka island:
+A.
+29-32.838N 048-37.572E
+B. 29-32.838N 048-12.264E
+C. 29-21.396N 048-37.656E
+D. 29-21.396N
+048-12.222E
+Bubiyan Island:
+A. 29-43.368N 048-34.398E
+B. 29-29.472N 048-11.352E
+C.
+29-56.874N 047-56.010E
+D. 30-01.116N 048-09.462E
+A Temporary special mark buoys will be
+installed around each buoy during the maintenance.
+Mariners are requested to navigate
+with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 269/2025
+050000 UTC OCT 2025
+Southern Gulf: UAE – Zaqqum Light Buoy.
+BA Chart: 2444, 2889
+Zaqqum Light Buoy at
+location 25-06.560N 053-25.060E reported RACON not operational and lantern
+flash
+characteristic malfunctioning.
+Mariners are advised to navigate with caution.
+Issuer:
+MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 282/2025
+140000 UTC OCT 2025
+Northern Gulf: Kuwait – Mooring Buoy Temporary withdraw.
+BA Chart: 3773
+KU Chart :1
+The
+mooring buoy has been temporarily withdrawn from Ahmadi Port at the following position.
+SIB  29-06.716N  048-17.540E   FI(4).Y.20s
+Mariners are requested to navigate with
+caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 322/2025
+250000 UTC NOV 2025
+Southern Gulf: UAE–Temporary Wave Rider Buoy relocation and new deployment
+BA Chart:
+2889, 3179.
+A. PTM 61182 a wave Rider Buoy temporarily moved from position 24-38.58N,
+052-35.32E to
+position 24-38.68N, 052-35.37E with Fl.Y.2s
+B. PTM 6376 a Wave buoy being
+temporarily deployed at the following position 24-39.13N, 052-
+35.55E with Fl.Y.2s.
+Mariners are requested to navigate with caution whilst transiting this area.
+Cancel
+Navtex: 221/2025.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 337/2025
+070000 UTC DEC 2025
+Southern Gulf: UAE - Changes to the Navigational Buoys.
+BA Chart: 3796, 3788, 3780, 3179.
+This Navtex should read conjunction with Navtex 054.2025
+Due to dredging and reclamation
+operation within Jebel Dhanna / Ruwais (JDR) Port limits, below
+temporary changes to the
+navigational buoys.
+Navigational buoy Shifted.
+TRB-3 from 24-08.26 N, 052-46.96 E to
+24-08.29 N, 052-46.91 E
+Other buoys in SHT-2 Basin
+TRB-4 24-08.39 N 052-46.82 E
+Q(3).R.10s
+TRB-5 24-07.96 N 052-46.95 E Q.R
+TRB-6 24-07.88 N 052-46.88 E Fl(3).R.10s
+GS-12 24-08.58 N 052-46.63 E Q.R
+Removed Buoys
+GS-14 24-08.43N 052-46.83E Q(3).R.10s
+GS-16 24-08.31N 052-47.01E Q.R
+GS-18 24-08.21N 052-47.04E Q(2).R.10s
+GS-20 24-07.97N
+052-46.95E Q.R
+GS-22 24-07.87N 052-46.90E Fl(3).R.10s
+Mariners are advised to exercise
+extra caution, proceed with safe speed specially during dark hours and
+Contact Ruwais
+VTIS VHF Ch.21 for further information.
+Cancel Navtex 072/2025, 157/2025, 183/2025.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 338/2025
+080000 UTC DEC 2025
+Sothern Gulf: UAE- Deployment of navigational buoys – RLNG channel.
+BA Chart: 3778, 3780.
+Navigation buoys were permanently deployed along the RLNG Channel at the following
+details
+A. RLNG-1 24-11.556N 052-41.520E  Green Q.G
+B. RLNG-3 24-11.276N 052-41.335E
+Green  FL.G.5s
+C. RLNG-5 24-11.005N 052-41.150E Green FL.G.10s
+D. RLNG-7 24-10.730N
+052-40.958E Green  FL.G.5s
+E. RLNG-9 24-10.459N 052-40.771E Green FL.G.5s
+F. RLNG-11
+24-10.179N 052-40.568E Green  Q.G
+G. RLNG-13 24-09.935N 052-40.403E Green FL.G.5s
+H.
+RLNG-15 24-09. 69 0’N 052-40.231E Green FL.G.10s
+I. RLNG-17 24- 09. 44 7’N 052-40.062E
+Green Q.G
+J. RLNG-2 24-11.452N 052-41.649E Red Q.R
+K. RLNG-4 24-11.210N 052-4 1.4 72’E
+Red FL.R.5s
+L. RLNG-6 24-10.940N 052-41.279E Red FL.R.10s
+M. RLNG-8 24-10.662N
+052-41.082E Red FL.R.5s
+N. RLNG-10 24-10.390N 052-40.893E Red FL.R.5s
+O. RLNG-12
+24-10.145N 052-40.722E Red Q.R
+P. RLNG-14 24-09.861N 052-40.637E Red FL.R.5s
+Q. RLNG-16
+24-09.582N 052-40.558E Red FL.R.10s
+R. RLNG-18 24-09.300N 052-40.475E Red Q.R
+S. RLNG-20
+24-09.090N 052-40.414E Red FL.R.3s
+T. RLNG-22 24-08.880N 052-40.355E Red Q.R
+Mariners are
+requested to navigate with caution and update their BA charts.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 340/2025
+110000 UTC DEC 2025
+Central Gulf: Qatar - Mooring Buoy Established.
+BA Chart: 2523, 2886.
+A mooring buoy
+permanently deployed on the following position.
+26-34.588N 052-00.286E Mo” U”. 15s
+Mariners are requested to navigate with caution and update their BA charts.
+Issuer: MENAS
+Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 342/2025
+130000 UTC DEC 2025
+Northern Gulf: Kuwait – Mooring Buoys Permanently withdraw.
+BA Chart: 3773
+KU Chart :1
+Mooring buoys have been permanently withdrawn from Khour Al-Khiran Channel at the
+following
+positions.
+S16  28-39.449N  048-23.585E
+S17  28-39.467N  048-23.539E
+S18
+28-39.447N  048-23.394E
+S19  28-39.466N  048-23.395E
+S20  28-39.361N  048-23.214E
+S21
+28-39.375N  048-23.165E
+S23  28-39.382N  048-23.112E
+Mariners are requested update their
+BA charts.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 345/2025
+160000 UTC DEC 2025
+Southern Gulf: UAE – Ongoing Reclamation Area.
+BA Chart: 3708, 3709, 3723.
+Ongoing
+reclamation operation within Fujairah Port limits.
+Five special mark buoys and one east
+cardinal buoy were deployed for the Ongoing Reclamation AREA in
+the following positions.
+Y1    25-10.472N  056-22.338E   Fl(2).Y.8s
+Y2  25-10.832N  056-22.702E   Fl(2).Y.8s
+Y3
+25-10.449N  056-22.513E  Fl(2).Y.8s
+Y4  25-11.034N  056-22.671E  Fl(2).Y.8s
+Y5 25-10.481N
+056-22.675E  Fl(2).Y.8s
+EC 25-10.419N 056-22.759E  Q(3).10s
+Mariners are advised to
+exercise extra caution.
+Cancel Navtex 344/2025.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 3/2026
+070000 UTC JAN 2026
+Southern Gulf: UAE-UNLIT Disposal pipeline – Floating
+BA Chart: 3778.
+Disposal pipeline
+is currently afloat and temporary two yellow special mark buoys are attached to the
+Pipeline in the following positions:
+A. 24-12.361N 052-38.163E
+B. 24-11.874N 052-37.858E
+Mariners are requested to navigate with extra caution, maintain a safe speed and
+listening watch on
+VHF channel 12 and 21.
+Cancel Navtex 351/2025.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 37/2026
+080000 UTC FEB 2026
+Northern Gulf: Kuwait - Sunken Barge.
+BA Chart: 3773, 2884.
+A Barge “Dream 1” reported
+sunken on position 29-14.057N, 048-41.216E.
+Mariners are advised to navigate with caution
+and keep clear from the area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 51/2026
+160000 UTC FEB 2026
+Southern Gulf: UAE -REDUCTION IN BOROUGE CHANNEL DEPTH
+BA Chart: 3778
+Charted Depth in
+Borouge channel at position 24-09.000N, 052-45.200E is 13.2m. Minimum Depth
+Reduced to
+12.9M in certain areas of the channel.
+All vessels in the area are requested to navigate
+with caution and adequate under-keel clearance.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 67/2026
+210000 UTC FEB 2026
+Central Gulf: Qatar –Mooring Buoy Temporary shifted to new position
+BA Chart: 2523, 2886.
+Mooring buoy moved temporary from position 26-27.642N, 051-57.760E to position
+26-36.468N, 051-
+57.607E with MO (U) 15s.
+Mariners are requested to navigate with caution
+while transiting this area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 70/2026
+230000 UTC FEB 2026
+Central Gulf: Qatar-Temporarily Wave Rider Buoy.
+BA Chart: 2523, 2837, 2886, 3781.
+A
+Temporary wave Rider Buoy has been deployed at position 26-39.57N, 051-57.22E with
+FL(5).Y.10s
+Mariners are requested to navigate with caution whilst transiting this area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 76/2026
+030000 UTC MAR 2026
+Southern Gulf: UAE- Fujairah GNSS Interference – AIS Disruption.
+BA Chart: 3520.
+GNSS
+signal interference, AIS disruption in the vicinity Fujairah offshore areas.
+Mariners are
+requested to navigate with caution and take extreme care while transiting in the area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 81/2026
+090000 UTC MAR 2026
+Central Gulf: Qatar – Installation of Light on PA Jacket.
+BA Chart: 2523, 2837, 2886,
+3781.
+A navigation light installed temporary on PA Jacket on the position 26-40.218N,
+051-57.133E.
+Flash Colour: White.
+Flash code: Fl 15s.
+Mariners are requested to navigate
+with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 91/2026
+290000 UTC MAR 2026
+Northern Gulf: Kuwait - Sunken Ship.
+BA Chart:2884.
+A ship has been reported sunk in
+position 29-27.022N, 047-49.681E.
+Mariners are advised to navigate with caution and keep
+clear from the area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 92/2026
+020000 UTC APR 2026
+Northern Gulf: Kuwait – Establishment of buoys
+BA Chart: 2884, 3774.
+Ku Chart: 1, 5.
+Buoys were permanently deployed at the positions below:
+S14 28-39.416N 048-23.594E
+Fl(3).R.6s AIS
+S16 28-39.444N 048-23.531E Fl(3).R.6s AIS
+S17 28-39.469N 048-23.541E
+Fl(3).G.6s AIS
+S18 28-39.223N 048-22.942E Fl(3).R.6s
+S19 28-39.234N 048 22.910E
+Fl(3).G.6s
+Mariners are advised to update their BA charts and navigate with in the
+designated
+area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 94/2026
+030000 UTC APR 2026
+Southern Gulf: UAE – Establish of Special Mark Buoys.
+BA Charts:2837, 3739.
+Six Special
+Marks buoys have been deployed temporary in the following positions with flashing yellow
+lights.
+PJS01 25-02.628N 054-59.304E
+PJS02 25-02.612N 054-59.432E
+PJS03 25-03.343N
+054-59.428E
+PJS04 25-03.324N 054-59.554E
+PJS05 25-04.047N 054-59.551E
+PJS06 25-03.948N
+054-59.664E
+Mariners are requested to navigate with extreme caution and keep well clear
+of the marked area.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 100/2026
+140000 UTC APR 2026
+Central Gulf: Qatar – Towing Operation.
+BA Chart: 2523, 3837, 2886, 3781.
+Well Head
+Platforms Jacket will be towed by vessel “Astro Cygnus” from position 26-45.029N, 051-
+50.297E to position 26-32.607N, 051-50.206E.
+All vessels in the area are requested to
+navigate with caution and keep clear from the Astro Cygnus.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 107/2026
+090000 UTC MAY 2026
+Southern Gulf: UAE – Construction Work – Piling and anchor handling activities.
+BA Chart:
+2889, 3178.
+Piling and anchor handling activities are ongoing at the Ruwais West Plant.
+Five yellow marker buoys
+fitted with white flashing light have been deployed to mark a No
+Go Area.
+1    24-09.520N,  052-40.110E
+2  24-09.220N,  052-40.440E
+3  24-08.890N,
+052-40.390E
+4  24-08.840N,  052-40.320E
+5 24-09.250N,  052-39.880E
+Vessels are advised to
+avoid the "NO GO AREA" and maintain continuous monitoring of VTIS VHF
+Channel 21.
+Issuer:
+MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 110/2026
+150000 UTC MAY 2026
+Northern Gulf: Kuwait – Repositions and withdrawn of buoys.
+BA Chart: 2884, 3773.
+Buoys
+were permanently repositioned to the new positions as below:
+G1 29-10.289N 048-07.804E
+Q(3).G.5s AIS
+G2 29-10.247N 048-07.889E Q(3).R.5s AIS
+The following Buoys were
+permanently withdrawn.
+G3 29-10.330N 048-07.800E
+G4 29-10.340N 048 07.960E
+Mariners are
+advised to update their BA charts and navigate with in the designated area.
+Issuer: MENAS
+Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 112/2026
+170000 UTC MAY 2026
+Central Gulf: Qatar – Installation of Light on MA Jacket.
+BA Chart: 2523, 2837, 2886.
+A
+White navigation light with Mo”U”.15s flash Characteristic installed temporary on MA
+Jacket on the
+position 26-38.443, 051-56.287E.
+Mariners are requested to navigate with
+caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 113/2026
+190000 UTC MAY 2026
+Southern Gulf: UAE – Lost Anchor’s Obstructions.
+BA Chart: 3413.
+A Vessel reported lost
+anchor at position approx. 25-07.1N, 052-53.4E.
+Mariners are requested not to anchor in
+the vicinity.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 126/2026
+240000 UTC JUN 2026
+Southern Gulf & Gulf of Oman: Oman Transit Instructions – Strait of Hormuz
+BA Charts
+2837, 2851, 2858, 2888, 3172, 3174.
+Oman Charts OM1219, OM1218.
+Due to the existing risks
+along the current Traffic Separation Scheme (TSS) in the Strait of Hormuz, and
+to ensure
+secure and safe of navigation in this important waterway, the Sultanate of Oman in
+coordination with the IMO, has issued important guidance and instructions for vessels
+planning to transit
+the Strait without the imposition of any tolls.
+Temporary alternative
+routes have been established at the north and south of the TSS, together with a
+safe
+waiting area within a 3 Nm radius of position 26-16.17N/055-46.52E near the strait.
+All
+vessels are therefore advised to review this guidance prior to transiting the Strait. The
+details have
+been promulgated through SafetyNET in Bulletin No. 208-2026, issued by the
+Pakistan Navy, and can be
+accessed through the MENAS website using the link below.
+https://menas.bh/wp-content/uploads/OMAN-INSTRUCTION-TO-TRANSIT-STRAIT-OF-HORMUZ-1.pdf
+Vessels should report any danger to navigation to the Oman Maritime Security Centre
+(OMSC) at +968
+9140 0430 or via email at OMSC@MOD.GOV.OM.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 128/2026
+290000 UTC JUN 2026
+Central Gulf: Qatar – Installation of Light on LA Jacket.
+BA Chart: 2523, 2837, 2886,
+3781.
+A navigation light installed temporary on LA Jacket at the position 26-37.949N,
+051-57.054E.
+Flash Colour: White.
+Flash code: Fl 15s.
+Morse Code: Morse “ U” .
+Mariners
+are requested to navigate with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 129/2026
+290000 UTC JUN 2026
+Southern Gulf: DALMA Buoy Racon Inoperative.
+BA Chart: 3951, 2889.
+DALMA Buoy 24-32.510N,
+052-27.850E Racon inoperative.
+Mariners are advised to navigate with caution.
+Issuer:
+MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 130/2026
+300000 UTC JUN 2026
+Northern Gulf: Kuwait –Restricted Area.
+BA Charts: 3773, 2884.
+Rig “Oriental Phoenix”
+stationed on position 29-14.348N, 048-20.562E until end of DEC 26 and required
+0.5 Nm
+Radius restricted area from the position.
+Mariners are requested to navigate with caution
+and stay away from the mentioned area
+Cancel Navtex 164/2025
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 132/2026
+020000 UTC JUL 2026
+Southern Gulf: UAE – New Permanent No Anchoring Area.
+BA Chart: 3175, 2889
+A new
+permanent No-Anchoring Zone has been established within Dubai waters in the area bounded
+by
+the following positions:
+A. 25-28.342N, 055-09.148E
+B. 25-28.152N, 055-09.362E
+C.
+25-27.118N, 055-09.362E
+D. 25-26.596N, 055-10.651E
+E. 25-25.393N, 055-10.755E
+F.
+25-24.517N, 055-08.768E
+G. 25-24.195N, 055-06.882E
+H. 25-25.848N, 055-05.929E
+I.
+25-26.589N, 055-05.880E
+J. 25-28.173N, 055-06.695E
+All vessels navigating within or near
+the specified area are strictly prohibited from anchoring within the
+said area. Mariners
+are advised to navigate with caution.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 142/2026
+260000 UTC JUL 2026
+Central Gulf: Qatar – Establishment of a Temporary Mooring Buoy
+BA Chart: 2523, 2837,
+2886, 3781
+A temporarily mooring buoy has been established at the following position.
+26-38.473N  051-55.824E
+Mariners are requested to navigate with caution.
+Issuer: MENAS
+Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 148/2026
+040000 UTC AUG 2026
+Central Gulf: Qatar – Geophysical Survey.
+BA Chart: 2837, 2886.
+A Geophysical Survey
+operation will be conducted from 05 Aug until 05 Sept 26 by 'Fugro Proteus' in the
+areas
+bound by the following positions:
+STPM-14
+A. 26-33.345N 051-03.556E
+B. 26-34.641N
+051-04.842E
+C. 26-33.484N 051-06.278E
+D. 26-32.193N 051-04.991E
+STPM-15
+A. 26-56.068N
+051-12.318E
+B. 26-57.357N 051-13.610E
+C. 26-56.199N 051-15.049E
+D. 26-54.909N 051-13.756E
+STPM-16
+A. 25-04.562N 052-26.117E
+B. 25-05.841N 052-27.401E
+C. 25-04.671N 052-28.806E
+D.
+25-03.392N 052-27.521E
+STPM-17
+A. 24-50.595N 052-01.855E
+B. 24-51.878N 052-03.133E
+C.
+24-50.712N 052-04.540E
+D. 24-49.729N 052-03.261E
+Mariners are requested to navigate with
+caution, maintain 1.5NM safety distance from 'Fugro Proteus'
+and keep watching on VHF
+channels 12/16.
+Issuer: MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 149/2026
+040000 UTC AUG 2026
+Central Gulf: Qatar – Establishment of a Temporary Metocean Buoys
+BA Chart: 2886, 2837,
+2950.
+A temporarily Metocean buoys has been established at the following positions.
+STPM-14 26-31.693N 051-06.832E
+STPM-15 26-56.133N 051-16.402E
+STPM-16/17 24-58.889N
+052-14.231E
+Mariners are requested to navigate with caution.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 150/2026
+060000 UTC AUG 2026
+Central Gulf: Qatar – Installation of Light on BH Jacket.
+BA Chart: 2523, 2837, 2886,
+3781.
+A navigation light installed temporary on BH Jacket at the position 26-38.405N,
+051-56.897E.
+Flash code: Fl.R.4s
+Mariners are requested to navigate with caution.
+Issuer:
+MENAS Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 154/2026
+090000 UTC AUG 2026
+Central Gulf: Qatar – Subsea Sleeper/Pipeline Installation.
+BA Chart: 2523, 2886.
+Subsea
+Sleeper/pipeline installation will be conducted by vessel “DERRICK BARGE 30” supported by
+multi vessels in the area bounded by the following positions starting from 10 AUG to 10
+NOV 26.
+A. 26-25.30N                 052-12.50E
+B. 26-31.70N                 051-59.40E
+C. 26-23.50N                 051-59.40E
+D. 26-18.70N                 052-12.40E
+Mariners
+are requested to navigate with caution, keep clear by giving 2 Nm wide berth and maintain
+a
+listening watch on VHF channel 12 and 16.
+Issuer: MENAS Maritime Operations Centre,
+Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 161/2026
+200000 UTC AUG 2026
+Southern Gulf: UAE – Ongoing Reclamation Area.
+BA Chart: 3708, 3709, 3723.
+Ongoing
+reclamation operation within Fujairah Port limits.
+Five special mark buoys, one east
+cardinal buoy and two star board buoys were deployed to mark the
+boundary of ongoing
+reclamation area in the following positions.
+Y1    25-10.082N  056-22.575E  Fl(2).Y.8s
+Y2
+25-10.832N  056-22.702E  Fl(2).Y.8s
+Y3  25-10.324N  056-22.781E Fl(2).Y.8s
+Y4  25-11.034N
+056-22.671E Fl(2).Y.8s
+Y5 25-10.481N 056-22.675E Fl(2).Y.8s
+EC 25-10.082N 056-22.819E
+Q(3).10s
+G1    25-10.254N  056-22.289E  Fl.G.4s
+G2  25-10.081N  056-22.376E  Fl.G.4s
+Mariners are advised to exercise extra caution.
+Cancel Navtex 159/2026.
+Issuer: MENAS
+Maritime Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Nav 164/2026
+240000 UTC AUG 2026
+Central Gulf: Qatar – JUB “Milaha Al Shaheen” Rig move.
+BA Chart: 2523, 2883, 2886.
+Self-propelled JUB “Milaha Al Shaheen” assisted by tug “Bourbon Liberty 306” will be
+moved on 25 AUG
+26 from position 26-35.143N, 051-55.579E to position 26-40.368N,
+052-00.842E.
+Mariners are requested to navigate with caution.
+Issuer: MENAS Maritime
+Operations Centre, Bahrain
+Megulite
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NAVAREA watch reminder</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f4f7fb;
+      color: #142033;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      box-sizing: border-box;
+    }
+    main {
+      width: min(100%, 440px);
+      background: white;
+      border: 1px solid #dbe4ef;
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 12px 32px rgba(20, 32, 51, .08);
+      box-sizing: border-box;
+    }
+    h1 { margin: 0 0 10px; font-size: 24px; }
+    p { line-height: 1.5; color: #42526a; }
+    .event {
+      margin: 20px 0;
+      padding: 16px;
+      border-radius: 12px;
+      background: #eef5ff;
+    }
+    .event strong { display: block; margin-bottom: 6px; }
+    button {
+      width: 100%;
+      border: 0;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 16px;
+      font-weight: 700;
+      color: white;
+      background: #1769e0;
+      cursor: pointer;
+    }
+    button:active { background: #0f52b2; }
+    .hint { font-size: 13px; margin-bottom: 0; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>NAVAREA watch reminder</h1>
+    <p>Download this calendar event and add it to the iPhone Calendar app.</p>
+    <div class="event">
+      <strong>Проверить официальные источники NAVAREA</strong>
+      29 August 2026, 00:00–04:00 UTC<br>
+      На вахте
+    </div>
+    <button id="download" type="button">Download calendar reminder</button>
+    <p class="hint">On iPhone: tap the button, open the downloaded file, then add the event to Calendar.</p>
+  </main>
+  <script>
+    const ics = [
+      "BEGIN:VCALENDAR",
+      "VERSION:2.0",
+      "PRODID:-//NAVAREA2UC//Field Validation Reminder//EN",
+      "CALSCALE:GREGORIAN",
+      "METHOD:PUBLISH",
+      "BEGIN:VEVENT",
+      "UID:navarea-source-check-next-watch-20260829@navarea2uc.com",
+      "DTSTAMP:20260828T000000Z",
+      "DTSTART:20260829T000000Z",
+      "DTEND:20260829T040000Z",
+      "SUMMARY:Проверить официальные источники NAVAREA",
+      "DESCRIPTION:Сверить официальные NAVAREA-источники в судовых рабочих публикациях и onboard-каналах. Записать issuing authority\\, publication/revision\\, дату\\, оригинал или reproduced copy\\, SafetyNET/SafetyCast/NAVTEX или другой approved channel\\, warning number\\, issue time\\, validity/cancellation\\, полный текст\\, совпадение с web-source\\, задержки и coverage gaps.",
+      "LOCATION:На вахте",
+      "STATUS:CONFIRMED",
+      "TRANSP:OPAQUE",
+      "BEGIN:VALARM",
+      "ACTION:DISPLAY",
+      "DESCRIPTION:Проверить официальные источники NAVAREA",
+      "TRIGGER:PT0M",
+      "END:VALARM",
+      "END:VEVENT",
+      "END:VCALENDAR"
+    ].join("\r\n") + "\r\n";
+
+    document.getElementById("download").addEventListener("click", () => {
+      const blob = new Blob([ics], { type: "text/calendar;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "navarea-source-check-next-watch.ics";
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+NORWAY COASTAL - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: Coastal 310/2026, Coastal 311/2026, Coastal 313/2026.
+
+CANCELLED WARNINGS SINCE LAST UPDATE: Coastal 312/2026.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: Coastal 282, Coastal 287, Coastal 299, Coastal 310, Coastal 311, Coastal
+313.
+
+---------------------------------------------------------------------------------------
+
+Coastal 282/2026
+050823 UTC AUG 2026
+MIDSUND BRO
+S LIGHT 62-40.33N 006-39.67E IS UNLIT.
+
+---------------------------------------------------------------------------------------
+
+Coastal 287/2026
+081005 UTC AUG 2026
+REKEFJORDBOEN LIGHTBUOY 58-17.84N 006-15.67E IS UNLIT.
+
+---------------------------------------------------------------------------------------
+
+Coastal 299/2026
+162024 UTC AUG 2026
+HEMNSKJELDET BRU LIGHT 63-29.82N 009-10.15E IS UNLIT.
+
+---------------------------------------------------------------------------------------
+
+Coastal 310/2026
+240557 UTC AUG 2026
+ALL NAVIGATION LIGHTS TROMSOE BRIDGE 69-39.06N 018-58.73E IS UNLIT.
+
+---------------------------------------------------------------------------------------
+
+Coastal 311/2026
+252123 UTC AUG 2026
+TERNINGEN LIGHTHOUSE 63-29.62N 009-02.36E IS UNLIT.
+
+---------------------------------------------------------------------------------------
+
+Coastal 313/2026
+261041 UTC AUG 2026
+FEISTEIN BIFYR LIGHTHOUSE 58-49.58N 005-30.30E IS UNLIT.
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

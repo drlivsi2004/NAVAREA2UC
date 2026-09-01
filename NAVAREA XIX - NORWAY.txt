@@ -1,0 +1,77 @@
+NAVAREA XIX (NORWAY) - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 102/26, 103/26.
+
+NO CANCELLED WARNINGS SINCE LAST UPDATE.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: 45, 99, 102, 103.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XIX 45/26
+291830 UTC mar 26
+1.THE NORWEGIAN GOVERNMENT HAS DECIDED THAT
+RUSSIAN FISHING VESSELS ONLY HAVE ACCESS TO
+THE
+FOLLOWING THREE PORTS ON THE NORWEGIAN MAINLAND:
+A.BAATSFJORD (NOBJF)
+B.KIRKENES
+(NOKKN)
+C.TROMSOE (NOTOS)
+A BAN ON ACCESS TO OTHER PORTS ON THE NORWEGIAN MAINLAND
+WILL
+APPLY FOR RUSSIAN FISHING VESSELS FROM 132200 UTC OCT 2022.
+2. CANCEL NAVAREA XIX 1/25
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XIX 99/26
+080729 UTC AUG 2026
+1. ROCKET LAUNCHING IN THE FOLLOWING PERIODS
+ A. 2100 TO 2400  UTC 13 AUG 26
+ B. 0000 TO
+1800 UTC AND 2100 TO 2400  UTC 14 TO 26 AUG 26
+ C. 0000 TO 1800  UTC. 27 AUG 26
+DANGER
+AREA ESTABLISHED IN AREA BOUNDED BY
+A. 73-01.32N 030-54.14E
+B. 71-53.10N 032-54.52E
+C.
+71-39.35N 031-25.13E
+D. 72-47.11N 029-27.53E
+2. CANCEL THIS MSG 271900UTC AUG 26.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XIX 102/26
+211929 UTC AUG 2026
+1. NAVAREA XIX WARNINGS INFORCE AT 211830 UTC AUG 26
+2026 SERIES: 45, 99, 100, 102.
+2.
+CANCEL NAVAREA XIX 101/26
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XIX 103/26
+240729 UTC AUG 2026
+1. RIGLIST. CORRECT AT  240630 UTC AUG 26
+NORWEGIAN SEA: NORTH OF 65N, EAST OF 5W.
+72-32.70N 020-21.50E - TRANSOCEAN ENABLER
+67-01.65N 005-18.24E - TRANSOCEAN NORGE
+65-17.20N 007-18.10E - ISLAND INNOVATOR
+65-08.00N 006-42.30E - TRANSOCEAN ENCOURAGE
+NOTES:
+A. RIGS ARE PROTECTED BY A 500 METRE SAFETY ZONE.
+B. FOR RIGS LOCATED SOUTH OF
+65N, REFER TO NAVAREA I WARNINGS OR VISIT WWW.UKHO.GOV.UK/RNW
+2. CANCEL NAVAREA XIX 100/26
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

@@ -1,0 +1,25 @@
+# Candidate official NAVAREA/MSI source endpoints for future ingestion.
+# These URLs are source inputs only. The website must present a normalized,
+# adapted NAVAREA2UC notice rather than publishing source text directly.
+
+https://www.admiralty.co.uk/maritime-safety-information/radio-navigational-warnings
+http://diffusion.shom.fr
+https://armada.defensa.gob.es/ArmadaPortal/page/Portal/ArmadaEspannola/cienciaihm1/prefLang-es/02ProductosServicios--02NAVAREAS
+https://msi.nga.mil/NavWarnings
+https://hydrography.paknavy.gov.pk
+https://www.pmd.gov.pk
+https://www.marinha.mil.br/chm/dados-do-segnav-aviso-radio-nautico-tela/avisos-radio-nauticos-e-sar
+http://www.hidro.gob.ar
+https://www.sanho.co.za
+https://hydrobharat.gov.in/navarea-warnings/
+https://www.amsa.gov.au/safety-navigation/navigation-systems/maritime-safety-information-database
+https://www1.kaiho.mlit.go.jp/TUHO/tuho/nm_en.html
+http://msi.nga.mil/NGAPortal/MSI.portal
+http://structure.mil.ru/structure/forces/hydrographic/info/navwar.htm
+http://www.maritimenz.govt.nz/navarea
+https://www.navarea-xix.no/
+https://www.shoa.mil.cl/php/radioavisos.php
+https://www.dhn.mil.pe/radioavisos
+https://www.ccg-gcc.gc.ca/navigation/index-eng.html
+https://www.ccg-gcc.gc.ca/eng/CCG/Notship_Home
+http://www.rosmorport.ru/

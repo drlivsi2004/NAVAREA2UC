@@ -1,0 +1,291 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 4 0 R /F2 5 0 R >> >> /Contents 6 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+6 0 obj
+<< /Length 11563 >>
+stream
+1.000 1.000 1.000 rg
+0.00 0.00 595.28 841.89 re f
+0.050 0.130 0.250 rg BT /F2 25 Tf 36.00 787.89 Td (NAVAREA) Tj ET
+0.900 0.670 0.150 rg BT /F2 25 Tf 161.00 788.39 Td (2) Tj ET
+0.050 0.130 0.250 rg BT /F2 25 Tf 174.00 787.89 Td (UC) Tj ET
+0.180 0.420 0.670 rg BT /F2 7.5 Tf 36.00 765.89 Td (ECDIS USERCHART / VISUAL QUICK REFERENCE / V1.3.0) Tj ET
+0.290 0.400 0.470 rg BT /F2 7.5 Tf 407.00 787.89 Td (PRINT EDITION) Tj ET
+0.900 0.670 0.150 RG
+2.20 w
+36.00 750.89 m 559.28 750.89 l S
+[] 0 d
+0.080 0.160 0.230 rg BT /F2 17 Tf 36.00 726.89 Td (Read the chart at a glance.) Tj ET
+0.290 0.400 0.470 rg BT /F1 8.5 Tf 36.00 709.89 Td (Symbols, colours and shapes used by the NAVAREA2UC export.) Tj ET
+0.970 0.985 0.990 rg
+0.830 0.880 0.910 RG
+0.80 w
+36.00 60.00 523.28 660.00 re B
+0.050 0.130 0.250 rg
+36.00 684.00 523.28 36.00 re f
+1.000 1.000 1.000 rg BT /F2 9 Tf 51.00 705.00 Td (ENGINE OUTPUT QUICK REFERENCE) Tj ET
+0.900 0.670 0.150 rg BT /F2 6.6 Tf 433.28 705.00 Td (REVIEWABLE BY DESIGN) Tj ET
+0.820 0.480 0.080 RG
+1.15 w
+54.00 661.25 14 14 re S
+0.820 0.480 0.080 rg BT /F1 10 Tf 58.30 664.15 Td (i) Tj ET
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 671.00 Td (Element \(i\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 671.00 Td (Information / status notice) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 659.00 Td (Light unlit, reported depths, moorings, communication or service notices.) Tj ET
+0.820 0.480 0.080 rg BT /F2 7.0 Tf 448.28 671.00 Td (Orange) Tj ET
+0.820 0.480 0.080 rg BT /F2 5.9 Tf 514.28 671.00 Td (WARNING) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 650.50 m 547.28 650.50 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+54.00 627.75 14 14 re S
+0.780 0.130 0.190 rg BT /F1 10 Tf 58.30 630.65 Td (i) Tj ET
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 637.50 Td (Element \(i\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 637.50 Td (Drifting hazard) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 625.50 Td (Drifting objects or hazards, shown with the separate \(i\) symbol.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 637.50 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 637.50 Td (DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 617.00 m 547.28 617.00 l S
+[] 0 d
+0.180 0.420 0.670 RG
+1.15 w
+54.00 594.25 14 14 re S
+0.180 0.420 0.670 rg BT /F1 10 Tf 58.30 597.15 Td (i) Tj ET
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 604.00 Td (Element \(i\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 604.00 Td (Offshore activity / deployment) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 592.00 Td (An offshore operation or deployment notice shown as an information symbol.) Tj ET
+0.180 0.420 0.670 rg BT /F2 7.0 Tf 448.28 604.00 Td (Blue) Tj ET
+0.180 0.420 0.670 rg BT /F2 5.9 Tf 514.28 604.00 Td (NON-DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 583.50 m 547.28 583.50 l S
+[] 0 d
+0.900 0.670 0.150 RG
+1.15 w
+0.900 0.670 0.150 rg
+61.00 575.75 m 53.00 560.75 l 69.00 560.75 l h f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 570.50 Td (Element \(triangle\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 570.50 Td (Active / established navigation buoy) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 558.50 Td (An active, established navigation buoy or other aid at one position.) Tj ET
+0.900 0.670 0.150 rg BT /F2 7.0 Tf 448.28 570.50 Td (Yellow) Tj ET
+0.180 0.420 0.670 rg BT /F2 5.9 Tf 514.28 570.50 Td (NON-DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 550.00 m 547.28 550.00 l S
+[] 0 d
+0.820 0.480 0.080 RG
+1.15 w
+0.820 0.480 0.080 rg
+61.00 542.25 m 53.00 527.25 l 69.00 527.25 l h f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 537.00 Td (Element \(triangle\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 537.00 Td (Degraded / missing navigation aid) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 525.00 Td (A navigation aid reported degraded, missing, unlit or otherwise changed from its established state.) Tj ET
+0.820 0.480 0.080 rg BT /F2 7.0 Tf 448.28 537.00 Td (Orange) Tj ET
+0.820 0.480 0.080 rg BT /F2 5.9 Tf 514.28 537.00 Td (WARNING) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 516.50 m 547.28 516.50 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+0.780 0.130 0.190 rg
+61.00 508.75 m 53.00 493.75 l 69.00 493.75 l h f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 503.50 Td (Element \(triangle\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 503.50 Td (Isolated danger buoy) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 491.50 Td (A red isolated-danger mark at a hazard position.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 503.50 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 503.50 Td (DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 483.00 m 547.28 483.00 l S
+[] 0 d
+0.180 0.420 0.670 RG
+1.15 w
+0.180 0.420 0.670 rg
+61.00 476.25 m 70.00 467.25 l 61.00 458.25 l 52.00 467.25 l h f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 470.00 Td (Element \(diamond\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 470.00 Td (Offshore structure) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 458.00 Td (FPSO, FSO, MODU, offshore rig, platform or drillship.) Tj ET
+0.180 0.420 0.670 rg BT /F2 7.0 Tf 448.28 470.00 Td (Blue) Tj ET
+0.180 0.420 0.670 rg BT /F2 5.9 Tf 514.28 470.00 Td (NON-DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 449.50 m 547.28 449.50 l S
+[] 0 d
+0.670 0.200 0.570 RG
+1.15 w
+0.670 0.200 0.570 rg
+61.00 442.75 m 70.00 433.75 l 61.00 424.75 l 52.00 433.75 l h f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 436.50 Td (Element \(diamond\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 436.50 Td (Pilot station) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 424.50 Td (A pilot station shown with a magenta diamond.) Tj ET
+0.670 0.200 0.570 rg BT /F2 7.0 Tf 448.28 436.50 Td (Magenta) Tj ET
+0.180 0.420 0.670 rg BT /F2 5.9 Tf 514.28 436.50 Td (NON-DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 416.00 m 547.28 416.00 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+0.780 0.130 0.190 rg
+61.00 409.25 m 70.00 400.25 l 61.00 391.25 l 52.00 400.25 l h f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 403.00 Td (Element \(diamond\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 403.00 Td (Security incident) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 391.00 Td (Piracy, armed robbery or another security incident at a reported position.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 403.00 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 403.00 Td (DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 382.50 m 547.28 382.50 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+0.780 0.130 0.190 rg
+1.50 w
+66.00 366.75 m
+66.00 369.51 63.76 371.75 61.00 371.75 c
+58.24 371.75 56.00 369.51 56.00 366.75 c
+56.00 363.99 58.24 361.75 61.00 361.75 c
+63.76 361.75 66.00 363.99 66.00 366.75 c
+f
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 369.50 Td (Element \(point\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 369.50 Td (Danger point) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 357.50 Td (Wreck, obstruction, aground vessel, derelict, submerged object or iceberg marker.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 369.50 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 369.50 Td (DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 349.00 m 547.28 349.00 l S
+[] 0 d
+0.820 0.480 0.080 RG
+1.15 w
+[4 2] 0 d
+52.00 333.25 m 70.00 333.25 l S
+[] 0 d
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 336.00 Td (Element \(Line\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 336.00 Td (Navigation or operational line) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 324.00 Td (Recommended route, trackline, cable, pipeline, channel or survey line.) Tj ET
+0.820 0.480 0.080 rg BT /F2 7.0 Tf 448.28 336.00 Td (Orange) Tj ET
+0.820 0.480 0.080 rg BT /F2 5.9 Tf 514.28 336.00 Td (WARNING) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 315.50 m 547.28 315.50 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+[2 2] 0 d
+52.00 299.75 m 70.00 299.75 l S
+[] 0 d
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 302.50 Td (Element \(Line\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 302.50 Td (Danger line) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 290.50 Td (An iceberg danger trackline or another explicitly dangerous operational line.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 302.50 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 302.50 Td (DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 282.00 m 547.28 282.00 l S
+[] 0 d
+0.820 0.480 0.080 RG
+1.15 w
+[3 2] 0 d
+53.00 259.25 16 14 re S
+[] 0 d
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 269.00 Td (Element \(Area\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 269.00 Td (Non-danger area) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 257.00 Td (Survey, work, anchorage, waiting, holding, temporary-stay or no-anchoring area.) Tj ET
+0.820 0.480 0.080 rg BT /F2 7.0 Tf 448.28 269.00 Td (Orange) Tj ET
+0.820 0.480 0.080 rg BT /F2 5.9 Tf 514.28 269.00 Td (WARNING) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 248.50 m 547.28 248.50 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+[2 2] 0 d
+53.00 225.75 16 14 re S
+[] 0 d
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 235.50 Td (Element \(Area\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 235.50 Td (Danger area) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 223.50 Td (War-risk, mine-danger, firing, military, prohibited, exclusion or other hazard area.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 235.50 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 235.50 Td (DANGER) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 215.00 m 547.28 215.00 l S
+[] 0 d
+0.820 0.480 0.080 RG
+1.15 w
+0.820 0.480 0.080 RG
+1.50 w
+69.00 199.25 m
+69.00 203.67 65.42 207.25 61.00 207.25 c
+56.58 207.25 53.00 203.67 53.00 199.25 c
+53.00 194.83 56.58 191.25 61.00 191.25 c
+65.42 191.25 69.00 194.83 69.00 199.25 c
+S
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 202.00 Td (Element \(Circle\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 202.00 Td (Scientific / survey radius) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 190.00 Td (Scientific or survey activity with a published centre and distance.) Tj ET
+0.820 0.480 0.080 rg BT /F2 7.0 Tf 448.28 202.00 Td (Orange) Tj ET
+0.820 0.480 0.080 rg BT /F2 5.9 Tf 514.28 202.00 Td (WARNING) Tj ET
+0.830 0.880 0.910 RG
+0.50 w
+48.00 181.50 m 547.28 181.50 l S
+[] 0 d
+0.780 0.130 0.190 RG
+1.15 w
+0.780 0.130 0.190 RG
+1.50 w
+69.00 165.75 m
+69.00 170.17 65.42 173.75 61.00 173.75 c
+56.58 173.75 53.00 170.17 53.00 165.75 c
+53.00 161.33 56.58 157.75 61.00 157.75 c
+65.42 157.75 69.00 161.33 69.00 165.75 c
+S
+0.080 0.160 0.230 rg BT /F2 8.4 Tf 85.00 168.50 Td (Element \(Circle\)) Tj ET
+0.080 0.210 0.330 rg BT /F2 8.4 Tf 163.00 168.50 Td (Radius warning) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.7 Tf 163.00 156.50 Td (A warning, rocket-launch or explosives radius with a published centre and distance.) Tj ET
+0.780 0.130 0.190 rg BT /F2 7.0 Tf 448.28 168.50 Td (Red) Tj ET
+0.780 0.130 0.190 rg BT /F2 5.9 Tf 514.28 168.50 Td (DANGER) Tj ET
+0.930 0.950 0.960 rg
+48.00 60.00 499.28 59.00 re f
+0.820 0.480 0.080 rg BT /F2 7.2 Tf 60.00 105.00 Td (SAFETY RULES) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.8 Tf 60.00 93.00 Td (Circle only when the source publishes both a centre and a radius. FROM / TO movement stays as separate points.) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.8 Tf 60.00 81.00 Td (Operation-only text without usable geometry creates no chart object.) Tj ET
+0.290 0.400 0.470 rg BT /F1 6.8 Tf 60.00 69.00 Td (Colours and styles shown are the author's default settings; users can change the colour code and styles at their discretion.) Tj ET
+0.290 0.400 0.470 rg BT /F1 7 Tf 36.00 31.00 Td (NAVAREA2UC  |  Any Source. Any Format. Any ECDIS.) Tj ET
+0.180 0.420 0.670 rg BT /F2 7 Tf 450.28 31.00 Td (A4 / PRINT READY) Tj ET
+endstream
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000263 00000 n 
+0000000333 00000 n 
+0000000408 00000 n 
+trailer
+<< /Size 7 /Root 1 0 R >>
+startxref
+12023
+%%EOF

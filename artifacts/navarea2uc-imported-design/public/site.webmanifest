@@ -1,0 +1,29 @@
+{
+  "name": "NAVAREA2UC",
+  "short_name": "NAVAREA2UC",
+  "description": "Any Source. Any Format. Any ECDIS. NAVAREA to ECDIS-ready UserChart data.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#071a3d",
+  "theme_color": "#071a3d",
+  "icons": [
+    {
+      "src": "/nav2uc-apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+GERMAN COASTAL - NORTH SEA - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 479/2026, 481/2026, 482/2026.
+
+NO CANCELLED WARNINGS SINCE LAST UPDATE.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: 415, 429, 445, 447, 454, 458, 468, 479, 481, 482.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 415/2026
+220750 UTC JUL 26
+EAST FRISIAN ISLANDS. NORDERNEY.
+'NORDNEY' LIGHTHOUSE 53-43N 007-14E
+CHARACTERS CHANGED TO: FL (3) 15S
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 429/2026
+291715 UTC JUL 26
+GERMAN BIGHT. EASTERLY OWP 'ALPHA VENTUS'.
+AMMUNITION FINDINGS IN POSITION:
+54-01,0N  006-41,1E
+ANCHORING AND FISHING PROHIBITED WITHIN A RADIUS OF 750 METRES.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 445/2026
+120805 UTC AUG 26
+TSS GERMAN BIGHT WESTERN APPROACH
+'GW/ B' LIGHTBUOY  54-10N 006-54E TEMPORARILY REMOVED.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 447/2026
+131030 UTC AUG 26
+EIDER ESTUARY.
+EIDER APPROACH BUOY 54-15,4N 008-29,3E TEMPORARILY UNLIT.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 454/2026
+152350 UTC AUG 26
+GERMAN BIGHT.
+OFFSHORE WIND FARM 'AMRUMBANK' 54-30,38N 007-45,95E.
+LIGHTING INOPERATIVE.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 458/2026
+160920 UTC AUG 26
+TSS TERSCHELLING-GERMAN BIGHT.
+AMMUNITION FOUND IN APPROX. POSITION 53-56,95N 006-56,5E
+BERTH OF 500 M REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 468/2026
+190400 UTC AUG 26
+GERMAN BIGHT. SOUTH OF WEISSE BANK.
+UXO SURVEY BY
+MV 'OCEAN RESEARCHER', CS 'GDLS' AROUND POSITION
+54-25,0N 006-18,6E
+54-36,9N 005-40,8E
+54-38,1N 006-08,5E
+54-30,2N 006-04,9E
+RESTRICTED MANOEUVRABILITY DURING OPERATIONS.
+SAFE BERTH OF 1 NM REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 479/2026
+240830 UTC AUG 26
+GERMAN BIGHT. TSS 'TERSCHELLING-GERMAN BIGHT'.
+DIVING OPS BY MV 'SEATERRA ACHIEVER', CS 'E6BU3',
+AROUND POSITION 53-47,7N 007-05,5E
+RESTRICTED MANOEVRABILITY DURING OPERATIONS.
+BERTH OF 1 NM REQUESTED.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 481/2026
+241110 UTC AUG 26
+GERMAN BIGHT. WESTLICH OFFSHORE WIND FARM 'SANDBANK'.
+NOT IDENTIFIED OBSTRUCTION IN
+55-21,62N 006-30,71E, WATERDEPHT 37M AND
+55-19,43N 006-30,43E, WATERDEPHT 37M
+DANGER FOR FISHERY.
+
+---------------------------------------------------------------------------------------
+
+GERMAN COASTAL - NORTH SEA 482/2026
+260420 UTC AUG 26
+GERMAN BIGHT. TSS 'TERSCHELLING-GERMAN BIGHT'.
+UNDERWATER OPS BY MV 'IEVOLI COBALT', CS 'IBOK',
+BETWEEN POSITIONS
+53-48,2N 007-20,4E AND
+53-55,5N 007-10,6E
+RESTRICTED MANOEVRABILITY DURING OPERATIONS.
+BERTH OF 1 NM REQUESTED
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.

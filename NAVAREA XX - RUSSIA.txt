@@ -1,0 +1,64 @@
+NAVAREA XX (RUSSIA) - WARNINGS IN FORCE - AS AT 270900 UTC AUG 2026
+=================================================================
+
+NEW WARNINGS SINCE LAST UPDATE: 120/2026, 122/2026.
+
+NO CANCELLED WARNINGS SINCE LAST UPDATE.
+
+SUMMARY OF IN FORCE WARNINGS:
+
+2026 SERIES: 102, 120, 122.
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XX 102/2026
+110651 UTC JUL 2026
+NAVAREA 200 102/26 CHART 12000
+BARENTS SEA
+ANCHORAGE EQUIPMENT LAID AT
+1. 69-43.78N
+033-59.77E
+2. 69-43.80N 034-00.23E=
+NNNN
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XX 120/2026
+211528 UTC AUG 2026
+NAVAREA 200 120/26 CHART 10100
+POMORSKY STRAIT
+1. ROCKET FIRINGS 23 AUG 2100 TO 2400 AND
+24 TO 29 AUG 0000 TO 1800 AND 2100 TO 2400 AND
+30 AUG 0000 TO 1800 NAVIGATION PROHIBITED
+IN WATERS DANGEROUS AND BEYOND THEIR LIMITS IN AREA
+68-44.0N 049-49.0E 68-30.0N 050-37.0E
+67-56.0N 049-25.0E 67-52.0N 048-48.0E
+68-01.0N 048-18.0E
+2. CANCEL THIS NR 301900 AUG=
+NNNN
+
+---------------------------------------------------------------------------------------
+
+NAVAREA XX 122/2026
+211528 UTC AUG 2026
+NAVAREA 200 122/26 CHARTS 10100 10102
+BARENTS SEA
+1. MISSILE FIRINGS 20 AUG 2100 TO 2400
+AND
+21 TO 29 AUG 0000 TO 1800 AND 2100 TO 2400 AND
+30 AUG 0000 TO 1800 IN AREAS DANGEROUS
+FOR NAVIGATION
+A. 70-13.0N 045-43.0E 70-02.0N 047-12.0E
+68-49.0N 045-50.0E 69-00.0N
+044-27.0E
+B. 77-52.0N 061-55.0E 77-37.0N 063-39.0E
+76-39.0N 060-30.0E 76-56.0N 058-52.0E
+2. CANCEL THIS NR 301900 AUG=
+NNNN
+
+---------------------------------------------------------------------------------------
+
+Disclaimer: The provision of navigational warnings from this service does not relieve
+Masters / Captains of their responsibility to monitor MSI broadcasts in accordance with
+the provisions of SOLAS. The end user assumes all risks in using the NautoShark content,
+the data or information contained herein or the results thereof.
