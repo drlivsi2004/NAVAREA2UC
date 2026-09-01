@@ -63,6 +63,7 @@ jobs:
           Write-Error "Release approval blocked: current corpus report could not be generated."
           exit $LASTEXITCODE
         }
+
         python corpus_runner.py `
           --root . `
           --preview-baseline reports/corpus_baseline.json `
@@ -140,9 +141,11 @@ jobs:
       run: |
         $previewPath = Join-Path $env:RUNNER_TEMP "corpus_baseline_preview.json"
         $sourceReportPath = Join-Path $env:RUNNER_TEMP "reviewed-full-report.json"
+
         python corpus_runner.py `
           --root . `
           --output $sourceReportPath
+
         if ($LASTEXITCODE -ne 0) {
           Write-Error "Windows smoke test failed: current corpus report could not be generated."
           exit $LASTEXITCODE
@@ -155,12 +158,16 @@ jobs:
           )
 
           Remove-Item $previewPath -Force -ErrorAction SilentlyContinue
-          python corpus_runner.py `
+
+          $previewOutput = python corpus_runner.py `
             --root . `
             --preview-baseline reports/corpus_baseline.json `
             --source-report $ExpectedSourceReport `
-            --json > $previewPath
+            --json
+
           $previewStatus = $LASTEXITCODE
+          $previewOutput |
+            Set-Content -Path $previewPath -Encoding utf8NoBOM
 
           if (-not (Test-Path $previewPath)) {
             Write-Error "Windows smoke test failed: baseline preview did not produce $previewPath."
@@ -174,10 +181,16 @@ jobs:
             exit 1
           }
 
+          Write-Host "Windows smoke preview exit code: $previewStatus"
+          Write-Host "Windows smoke reviewed fingerprint: $($preview.reviewed_report_sha256)"
+          Write-Host "Windows smoke current fingerprint: $($preview.current_report_sha256)"
+          Write-Host "Windows smoke reviewed/current match: $($preview.reviewed_report_matches_current)"
+
           $approval = (
             $preview.reviewed_report_matches_current -eq $true -and
             $previewStatus -eq 0
           )
+
           if ($approval -ne $ExpectedApproval) {
             Write-Error "Windows smoke test failed: expected approval $ExpectedApproval, got $approval."
             exit 1
@@ -198,9 +211,16 @@ jobs:
 
         $staleReport = Get-Content -Raw $sourceReportPath | ConvertFrom-Json
         $staleReport.messages[0].id = "NAVAREA WINDOWS SMOKE 99/2026"
-        $staleReport | ConvertTo-Json -Depth 100 | Set-Content $sourceReportPath
+
+        $staleReport |
+          ConvertTo-Json -Depth 100 |
+          Set-Content -Path $sourceReportPath -Encoding utf8NoBOM
 
         Assert-BaselinePreviewApproval $sourceReportPath $false
+
+        # The expected stale preview exits with status 1. Both assertions have
+        # passed, so normalize the PowerShell step result explicitly.
+        exit 0
 
   validate-posix-wrapper:
     needs: validate-workflow

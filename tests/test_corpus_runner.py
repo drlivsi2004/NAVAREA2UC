@@ -208,13 +208,16 @@ AREA BOUNDED BY 10-00.0N 020-00.0E, 10-00.0N 021-00.0E,
             "function Assert-BaselinePreviewApproval",
             "--preview-baseline reports/corpus_baseline.json",
             "--source-report $ExpectedSourceReport",
-            "--json > $previewPath",
+            "$previewOutput = python corpus_runner.py",
             "$previewStatus = $LASTEXITCODE",
+            "$previewOutput |",
+            "Set-Content -Path $previewPath -Encoding utf8NoBOM",
             "Get-Content -Raw $previewPath | ConvertFrom-Json",
             "$preview.reviewed_report_matches_current -eq $true",
             "Assert-BaselinePreviewApproval $sourceReportPath $true",
             '$staleReport.messages[0].id = "NAVAREA WINDOWS SMOKE 99/2026"',
             "Assert-BaselinePreviewApproval $sourceReportPath $false",
+            "exit 0",
         )
         for fragment in required_fragments:
             self.assertIn(
@@ -274,6 +277,10 @@ AREA BOUNDED BY 10-00.0N 020-00.0E, 10-00.0N 021-00.0E,
         )
         self.assertIn("Release validation: PASS", result.stdout)
 
+    @unittest.skipUnless(
+        os.name == "posix",
+        "bash release-validation command is covered on POSIX runners",
+    )
     def test_release_validation_command_starts_and_passes(self):
         with tempfile.TemporaryDirectory() as directory:
             environment = os.environ.copy()
