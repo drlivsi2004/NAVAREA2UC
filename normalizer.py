@@ -306,6 +306,14 @@ def normalize_coordinates(text, stats=None):
     # Replace decimal comma with dot
     text = re.sub(r"(\d),(\d)", r"\1.\2", text)
 
+    # Separate a concatenated buoy number from a DMS latitude.
+    text = re.sub(
+        r"\b(BUOY)\s+(\d)(\d{2}-\d{2}(?:\.\d+)?[NS])\b",
+        r"\1 \2 \3",
+        text,
+        flags=re.IGNORECASE,
+    )
+
     # Remove degree, minute, second symbols
     text = re.sub(r"°", " ", text)
     text = re.sub(r"'", " ", text)
@@ -398,13 +406,13 @@ def normalize_coordinates(text, stats=None):
         return f"{deg}-{total_minutes:.3f}{hemi}"
 
     text = re.sub(
-        r"(?<![A-Za-z0-9])(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([NS])",
+        r"(?<![A-Za-z0-9.])(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([NS])",
         dms_to_dm,
         text,
         flags=re.I,
     )
     text = re.sub(
-        r"(?<![A-Za-z0-9])(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([EW])",
+        r"(?<![A-Za-z0-9.])(\d{1,3})\s+(\d{1,2})\s+([\d.]+)\s*([EW])",
         dms_to_dm,
         text,
         flags=re.I,
