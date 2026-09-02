@@ -25,6 +25,13 @@ RISK_HIGH_MAX = 5000
 MAX_VERTICES_PER_OBJECT = None
 MAX_VERTICES_PER_MESSAGE = None
 STYLE_SECURITY = 5
+POINT_PRESENTATION_PROFILES = {
+    "PILOT_BOARDING": {
+        "style": 5,
+        "color": "CHMGD",
+        "checkDanger": 0,
+    },
+}
 
 # Source notices occasionally spell buoy as "BOUY".  Keep the correction
 # semantic-only: the original source text remains untouched in descriptions
@@ -73,6 +80,15 @@ def dm_to_decimal(deg, minutes, hemi):
 
 
 def extract_coordinates(text):
+    # Repair the decimal-dot variant used by a small number of NAVAREA
+    # notices (for example 049.01.55E).
+    text = re.sub(
+        r"(\d{1,3})\.(\d{2})\.(\d+)\s*([EW])",
+        r"\1-\2.\3\4",
+        text,
+        flags=re.IGNORECASE,
+    )
+
     # NAVAREA sources may separate a latitude/longitude pair with "/".
     # Normalize only the coordinate boundary so other slash-delimited text
     # remains untouched.
@@ -431,6 +447,22 @@ def extract_sublabels_inline(block):
                 }
             )
 
+    return items
+
+
+def extract_lettered_area_groups(block):
+    """Extract explicit polygon groups introduced as lettered areas."""
+    upper = block.upper()
+    if not re.search(r"\bFOLLOWING\s+AREAS?\s*:", upper):
+        return []
+
+    items = extract_sublabels(block)
+    if len(items) < 2 or any(len(item["coords"]) < 3 for item in items):
+        return []
+    if [coord for item in items for coord in item["coords"]] != extract_coordinates(
+        block
+    ):
+        return []
     return items
 
 
@@ -1043,6 +1075,29 @@ def get_point_style(block):
     return detect_style(block)
 
 
+def is_pilot_boarding_station(text):
+    """Return whether text explicitly describes a pilot boarding object."""
+
+    return re.search(
+        r"\bPILOT\s+BOARDING(?:\s+(?:STATION|POSITION|AREA))?\b",
+        str(text or ""),
+        flags=re.IGNORECASE,
+    ) is not None
+
+
+def get_point_presentation(block):
+    """Return the point presentation profile for one source fragment."""
+
+    if is_pilot_boarding_station(block) and not detect_security_incident(block):
+        profile = POINT_PRESENTATION_PROFILES["PILOT_BOARDING"]
+        return profile["style"], profile["color"], profile["checkDanger"]
+    return (
+        get_point_style(block),
+        detect_color(block),
+        detect_check_danger(block),
+    )
+
+
 def is_multi_point_navarea(block):
     upper = block.upper()
     depth_report_pattern = re.compile(
@@ -1229,6 +1284,20 @@ def parse_structured_sections(block):
                     "name": None,
                 }
             )
+        elif re.search(
+            r"\b(?:LEADING\s+LIGHTS?|LIGHTBUOYS?|SPECIAL[-\s]+MARK"
+            r"|AIDS\s+TO\s+NAVIGATION|ANCHOR(?:S)?|BUOYS?)\b",
+            upper_text,
+        ):
+            for coord in coords:
+                objects.append(
+                    {
+                        "type": "label",
+                        "coord": coord,
+                        "description": desc,
+                        "name": None,
+                    }
+                )
         else:
             objects.append(
                 {
@@ -1384,6 +1453,7 @@ def process_riglist_entry(entry_text, label_text, container, message):
         "description": compose_description(entry_text),
         "coord": coords_found[0],
     }
+    _attach_emitted_description_references(obj, message, "label")
     container["labels"].append(obj)
     message["labels"].append(obj.copy())
 
@@ -1595,6 +1665,419 @@ def create_message(msg_id, metadata=None):
     }
 
 
+def _description_fragment_catalog(ctx):
+    """Build source-owned Description fragments with stable local spans.
+
+    The catalog is deliberately based on the source block rather than on the
+    Description string produced by a handler.  A handler can therefore select
+    evidence, but cannot make an already broad or truncated string appear
+    source-complete after the fact.
+    """
+
+    block = str(ctx.get("block", "") or "")
+    fragments = []
+
+    def add_fragment(fragment_id, start, end, text, coordinates, role):
+        if end <= start or not str(text).strip():
+            return
+        fragments.append(
+            {
+                "id": fragment_id,
+                "source_span": {
+                    "start": start,
+                    "end": end,
+                    "line_start": block.count("\n", 0, start) + 1,
+                    "line_end": block.count("\n", 0, max(start, end - 1)) + 1,
+                },
+                "source_order": len(fragments),
+                "text": str(text).strip(),
+                "coordinates": [list(coord) for coord in coordinates],
+                "role": role,
+            }
+        )
+
+    footer_match = re.search(
+        r"(?im)^\s*(?:\d+(?:\.\d+)*(?:\.-?|-)?\s*)?"
+        r"CANCEL(?:LED|S|LATION)?"
+        r"(?:\s+(?:(?:THIS\s+)?(?:MSG|MESSAGE|WARNING)|NAVAREA))?\b",
+        block,
+    )
+    footer_start = footer_match.start() if footer_match else len(block)
+
+    section_markers = list(
+        re.finditer(r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+", block)
+    )
+    letter_markers = list(
+        re.finditer(
+            r"(?m)^\s*(?:\(([A-Z])\)|([A-Z]))\.?\s+",
+            block,
+        )
+    )
+    markers = section_markers if len(section_markers) > 1 else (
+        letter_markers if len(letter_markers) > 1 else []
+    )
+    marker_names = [
+        marker.group(1)
+        if section_markers
+        else marker.group(1) or marker.group(2)
+        for marker in markers
+    ]
+    marker_name_counts = {
+        name: marker_names.count(name) for name in set(marker_names)
+    }
+    marker_name_seen = {}
+    marker_spans = []
+    for index, marker in enumerate(markers):
+        start = marker.start()
+        end = (
+            markers[index + 1].start()
+            if index + 1 < len(markers)
+            else footer_start
+        )
+        text = block[start:end].strip()
+        coordinates = extract_coordinates(text)
+        if coordinates:
+            marker_spans.append((index, marker, start, end, text, coordinates))
+
+    if marker_spans:
+        first_start = marker_spans[0][2]
+        if first_start > 0:
+            header_coordinate_pattern = re.compile(
+                r"\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+                r"(?:/|,|\s)*\s*\d{1,3}[-\s]+[\d.]+\s*[EW]",
+                re.IGNORECASE,
+            )
+            header_matches = list(
+                header_coordinate_pattern.finditer(block[:first_start])
+            )
+            for coordinate_index, coordinate_match in enumerate(
+                header_matches, start=1
+            ):
+                coordinate_start = coordinate_match.start()
+                coordinate_end = coordinate_match.end()
+                coordinate_text = block[coordinate_start:coordinate_end]
+                coordinate_values = extract_coordinates(coordinate_text)
+                if coordinate_values:
+                    add_fragment(
+                        f"source:header:coordinate:{coordinate_index}",
+                        coordinate_start,
+                        coordinate_end,
+                        coordinate_text,
+                        coordinate_values,
+                        "object",
+                    )
+            add_fragment(
+                "source:header",
+                0,
+                first_start,
+                block[:first_start],
+                [],
+                "shared_header",
+            )
+        for marker_index, marker, start, end, text, coordinates in marker_spans:
+            nested_markers = list(
+                re.finditer(
+                    r"(?m)^\s*(?:\(([A-Z])\)|([A-Z])\.)\s+", text
+                )
+            )
+            if len(nested_markers) > 1:
+                for nested_index, nested in enumerate(nested_markers):
+                    nested_group_id = nested_index + 1
+                    nested_start = start + nested.start()
+                    nested_end = (
+                        start + nested_markers[nested_index + 1].start()
+                        if nested_index + 1 < len(nested_markers)
+                        else end
+                    )
+                    nested_text = block[nested_start:nested_end].strip()
+                    nested_coordinates = extract_coordinates(nested_text)
+                    if nested_coordinates:
+                        if len(nested_coordinates) > 1:
+                            coordinate_pattern = re.compile(
+                                r"\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+                                r"(?:/|,|\s)*\s*\d{1,3}[-\s]+[\d.]+\s*[EW]",
+                                re.IGNORECASE,
+                            )
+                            coordinate_matches = list(
+                                coordinate_pattern.finditer(nested_text)
+                            )
+                            for coordinate_index, coordinate_match in enumerate(
+                                coordinate_matches, start=1
+                            ):
+                                coordinate_start = (
+                                    nested_start + coordinate_match.start()
+                                )
+                                coordinate_end = (
+                                    nested_start + coordinate_match.end()
+                                )
+                                coordinate_text = block[
+                                    coordinate_start:coordinate_end
+                                ]
+                                coordinate_values = extract_coordinates(
+                                    coordinate_text
+                                )
+                                if coordinate_values:
+                                    add_fragment(
+                                        f"source:section:{marker.group(1)}:"
+                                        f"{nested.group(1) or nested.group(2)}:"
+                                        f"group:{nested_group_id}:"
+                                        f"coordinate:{coordinate_index}",
+                                        coordinate_start,
+                                        coordinate_end,
+                                        coordinate_text,
+                                        coordinate_values,
+                                        "object",
+                                    )
+                            continue
+                        add_fragment(
+                            f"source:section:{marker.group(1)}:"
+                            f"{nested.group(1) or nested.group(2)}:"
+                            f"group:{nested_group_id}",
+                            nested_start,
+                            nested_end,
+                            nested_text,
+                            nested_coordinates,
+                            "object",
+                        )
+                continue
+
+            if len(coordinates) > 1:
+                coordinate_pattern = re.compile(
+                    r"\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+                    r"(?:/|,|\s)*\s*\d{1,3}[-\s]+[\d.]+\s*[EW]",
+                    re.IGNORECASE,
+                )
+                coordinate_matches = list(coordinate_pattern.finditer(text))
+                for coordinate_index, coordinate_match in enumerate(
+                    coordinate_matches, start=1
+                ):
+                    coordinate_start = start + coordinate_match.start()
+                    coordinate_end = start + coordinate_match.end()
+                    coordinate_text = block[coordinate_start:coordinate_end]
+                    coordinate_values = extract_coordinates(coordinate_text)
+                    if coordinate_values:
+                        add_fragment(
+                            f"source:section:{marker.group(1)}:"
+                            f"coordinate:{coordinate_index}",
+                            coordinate_start,
+                            coordinate_end,
+                            coordinate_text,
+                            coordinate_values,
+                            "object",
+                        )
+                continue
+
+            marker_name = marker_names[marker_index]
+            marker_name_seen[marker_name] = marker_name_seen.get(marker_name, 0) + 1
+            group_suffix = (
+                f":group:{marker_name_seen[marker_name]}"
+                if marker_name_counts[marker_name] > 1
+                else ""
+            )
+            fragment_id = (
+                f"source:section:{marker_name}{group_suffix}"
+                if marker_name
+                else f"source:section:{len(fragments) + 1}"
+            )
+            add_fragment(fragment_id, start, end, text, coordinates, "object")
+    else:
+        coordinate_pattern = re.compile(
+            r"\d{1,3}[-\s]+[\d.]+\s*[NS]\s*"
+            r"(?:/|,|\s)*\s*\d{1,3}[-\s]+[\d.]+\s*[EW]",
+            re.IGNORECASE,
+        )
+        coordinate_matches = list(coordinate_pattern.finditer(block))
+        if len(coordinate_matches) > 1:
+            for index, match in enumerate(coordinate_matches):
+                line_start = match.start()
+                end = (
+                    coordinate_matches[index + 1].start()
+                    if index + 1 < len(coordinate_matches)
+                    else len(block)
+                )
+                text = block[line_start:end].strip()
+                coordinates = extract_coordinates(text)
+                if coordinates:
+                    add_fragment(
+                        f"source:coordinate:{index + 1}",
+                        line_start,
+                        end,
+                        text,
+                        coordinates,
+                        "object",
+                    )
+
+        if not fragments:
+            add_fragment(
+                "source:block",
+                0,
+                len(block),
+                block,
+                extract_coordinates(block),
+                "object",
+            )
+
+    if footer_match:
+        footer_text = block[footer_match.start() :].strip()
+        add_fragment(
+            "source:footer",
+            footer_match.start(),
+            len(block),
+            footer_text,
+            [],
+            "shared_footer",
+        )
+    return fragments
+
+
+def description_fragment_references(ctx, obj):
+    """Return handler-facing source references for one emitted object."""
+
+    object_coordinates = {
+        tuple(coord)
+        for coord in (
+            [obj["coord"]]
+            if obj.get("coord")
+            else obj.get("coords", [])
+        )
+    }
+    catalog = _description_fragment_catalog(ctx)
+    object_fragments = [
+        fragment
+        for fragment in catalog
+        if fragment["role"] == "object"
+        and (
+            not object_coordinates
+            or object_coordinates.intersection(
+                tuple(coord) for coord in fragment["coordinates"]
+            )
+        )
+    ]
+    if object_coordinates and object_fragments:
+        exact = [
+            fragment
+            for fragment in object_fragments
+            if set(tuple(coord) for coord in fragment["coordinates"])
+            <= object_coordinates
+        ]
+        if exact:
+            object_fragments = exact
+    if not object_fragments:
+        object_fragments = [
+            fragment for fragment in catalog if fragment["role"] == "object"
+        ][:1]
+
+    selected_ids = {fragment["id"] for fragment in object_fragments}
+    references = [copy.deepcopy(fragment) for fragment in object_fragments]
+    excluded = [
+        fragment["id"]
+        for fragment in catalog
+        if fragment["role"] == "object" and fragment["id"] not in selected_ids
+    ]
+    shared = [
+        copy.deepcopy(fragment)
+        for fragment in catalog
+        if fragment["role"] in {"shared_header", "shared_footer"}
+    ]
+    return {
+        "selected": references,
+        "excluded_sibling_fragments": excluded,
+        "shared": shared,
+    }
+
+
+def attach_description_fragment_references(obj, ctx, object_type=None):
+    """Attach explicit source references while a handler emits an object."""
+
+    references = description_fragment_references(ctx, obj)
+    obj["_description_fragment_refs"] = references["selected"]
+    obj["_description_excluded_siblings"] = references[
+        "excluded_sibling_fragments"
+    ]
+    obj["_description_shared_refs"] = references["shared"]
+    obj["_description_fragment_origin"] = "handler"
+    if object_type:
+        obj["_description_object_type"] = object_type
+    return obj
+
+
+def validate_description_fragment_references(ctx, references):
+    """Validate fragment spans against the normalized source block.
+
+    Fragment metadata is generated from the same block during normal
+    processing, but the audit must still verify the persisted reference
+    against that source. This catches stale, split, or sibling-crossing spans
+    when normalization rules change.
+    """
+
+    block = str(ctx.get("block", "") or "")
+    catalog = _description_fragment_catalog(ctx)
+    catalog_ids = [fragment["id"] for fragment in catalog]
+    catalog_by_id = {fragment["id"]: fragment for fragment in catalog}
+    object_fragments = [
+        fragment for fragment in catalog if fragment["role"] == "object"
+    ]
+    issues = []
+    if len(catalog_ids) != len(set(catalog_ids)):
+        issues.append("FRAGMENT_TRACE_SOURCE_ID_DUPLICATE")
+
+    for reference in references:
+        reference_id = str(reference.get("id", "")).strip()
+        span = reference.get("source_span")
+        if not reference_id or not isinstance(span, dict):
+            issues.append("FRAGMENT_TRACE_SOURCE_SPAN_INVALID")
+            continue
+        start = span.get("start")
+        end = span.get("end")
+        if (
+            not isinstance(start, int)
+            or not isinstance(end, int)
+            or start < 0
+            or end > len(block)
+            or start >= end
+        ):
+            issues.append("FRAGMENT_TRACE_SOURCE_SPAN_INVALID")
+            continue
+
+        expected_line_start = block.count("\n", 0, start) + 1
+        expected_line_end = block.count("\n", 0, max(start, end - 1)) + 1
+        if (
+            span.get("line_start") != expected_line_start
+            or span.get("line_end") != expected_line_end
+        ):
+            issues.append("FRAGMENT_TRACE_SOURCE_LINE_MISMATCH")
+
+        source_text = sanitize_xml_attribute(
+            unescape(block[start:end])
+        )
+        reference_text = sanitize_xml_attribute(
+            unescape(str(reference.get("text", "")))
+        )
+        if source_text != reference_text:
+            issues.append("FRAGMENT_TRACE_SOURCE_TEXT_MISMATCH")
+
+        expected = catalog_by_id.get(reference_id)
+        if expected is None:
+            issues.append("FRAGMENT_TRACE_SOURCE_MISSING")
+            continue
+        if expected["source_span"] != span:
+            issues.append("FRAGMENT_TRACE_SOURCE_SPAN_MISMATCH")
+        if expected["text"] != str(reference.get("text", "")).strip():
+            issues.append("FRAGMENT_TRACE_SOURCE_TEXT_MISMATCH")
+        if expected["coordinates"] != reference.get("coordinates", []):
+            issues.append("FRAGMENT_TRACE_SOURCE_COORDINATE_MISMATCH")
+
+        for sibling in object_fragments:
+            if sibling["id"] == reference_id:
+                continue
+            sibling_span = sibling["source_span"]
+            if start < sibling_span["end"] and end > sibling_span["start"]:
+                issues.append("FRAGMENT_TRACE_CROSSES_SIBLING")
+                break
+
+    return list(dict.fromkeys(issues))
+
+
 def create_area(name, description, coords, color, check_danger):
     return {
         "name": name,
@@ -1668,7 +2151,17 @@ def _area_reference_fallback(area_obj, raw_coords, container, message):
         )
 
 
+def _attach_emitted_description_references(obj, message, object_type):
+    """Record the source evidence selected by the active handler."""
+
+    ctx = message.get("_description_context")
+    if isinstance(ctx, dict):
+        attach_description_fragment_references(obj, ctx, object_type)
+    return obj
+
+
 def add_area(area_obj, container, message):
+    _attach_emitted_description_references(area_obj, message, "area")
     coords = normalize_area_vertices(area_obj.get("coords", []))
     area_obj["coords"] = coords
     raw_coords = list(coords)
@@ -1761,6 +2254,7 @@ def add_area(area_obj, container, message):
 
 
 def add_line(line_obj, container, message):
+    _attach_emitted_description_references(line_obj, message, "line")
     coords = list(line_obj.get("coords", []))
     review_issues = line_traversal_review(coords)
     raw_coords = list(coords)
@@ -1809,6 +2303,7 @@ def add_line(line_obj, container, message):
                 "component_index": component_index,
                 "component_count": len(components),
             }
+            _attach_emitted_description_references(part, message, "line")
             container["lines"].append(part)
             message["lines"].append(part.copy())
             emitted_lines.append(part)
@@ -1949,13 +2444,95 @@ def add_line(line_obj, container, message):
 
 
 def add_circle(circle_obj, container, message):
+    _attach_emitted_description_references(circle_obj, message, "circle")
     container["circles"].append(circle_obj)
     message["circles"].append(circle_obj.copy())
 
 
 def add_label(label_obj, container, message):
+    _attach_emitted_description_references(label_obj, message, "label")
     container["labels"].append(label_obj)
     message["labels"].append(label_obj.copy())
+
+
+def _message_coordinate_set(message):
+    """Return coordinates already represented by emitted message objects."""
+
+    coordinates = set()
+    for area in message.get("areas", []):
+        coordinates.update(tuple(coord) for coord in area.get("coords", []))
+    for line in message.get("lines", []):
+        coordinates.update(tuple(coord) for coord in line.get("coords", []))
+    for circle in message.get("circles", []):
+        coord = circle.get("coord")
+        if coord:
+            coordinates.add(tuple(coord))
+    for label in message.get("labels", []):
+        coord = label.get("coord")
+        if coord:
+            coordinates.add(tuple(coord))
+    return coordinates
+
+
+def _emit_coordinate_reference_labels(
+    coords,
+    container,
+    message,
+    *,
+    label_text,
+    description,
+    reason,
+):
+    """Retain every unrepresented source coordinate as an explicit review Label.
+
+    This is the last-resort no-loss path. It deliberately does not promote
+    uncertain coordinates to Area, Line, or Circle geometry.
+    """
+
+    unique_coords = list(dict.fromkeys(tuple(coord) for coord in coords))
+    represented = _message_coordinate_set(message)
+    missing_coords = [coord for coord in unique_coords if coord not in represented]
+    reference_description = (
+        f"{description}\n"
+        "SOURCE COORDINATE REFERENCE ONLY; GEOMETRY REQUIRES REVIEW."
+    ).strip()
+
+    for coord in missing_coords:
+        add_label(
+            create_label(
+                style=2,
+                color="NINFO",
+                check_danger=0,
+                text=label_text,
+                description=reference_description,
+                coord=coord,
+            ),
+            container,
+            message,
+        )
+
+    if missing_coords:
+        message.setdefault("diagnostics", []).append(
+            {
+                "code": "COORDINATE_REFERENCE_FALLBACK",
+                "object_type": "message",
+                "message_id": message.get("id", "unknown"),
+                "reason": reason,
+                "source_coordinate_count": len(unique_coords),
+                "emitted_reference_count": len(missing_coords),
+                "source_order_preserved": True,
+            }
+        )
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "coordinate_reference_fallback",
+                "message_id": message.get("id", "unknown"),
+                "reason": reason,
+                "source_coordinate_count": len(unique_coords),
+                "emitted_reference_count": len(missing_coords),
+            }
+        )
+    return missing_coords
 
 
 def _line_reference_fallback(line_obj, coords, container, message):
@@ -2539,12 +3116,311 @@ def compose_partition_description(header, section, footer):
     """Compose a long-message Description as header, object section, footer."""
 
     normalized = []
-    for part in (header, section, footer):
+    header_text = _description_plain_text(header)
+    for index, part in enumerate((header, section, footer)):
         text = _description_plain_text(part)
+        if index == 1 and header_text and text.startswith(header_text):
+            text = text[len(header_text):].strip()
         if not text or text in normalized:
             continue
         normalized.append(text)
     return escape("\n".join(normalized).strip())
+
+
+DESCRIPTION_CONTRACT_VERSION = "1.0"
+
+
+def _description_source_sections(ctx):
+    """Return numbered source sections with their coordinate ownership."""
+
+    block = str(ctx.get("block", "") or "")
+    markers = list(
+        re.finditer(
+            r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+",
+            block,
+        )
+    )
+    if not markers:
+        return []
+
+    sections = []
+    for index, marker in enumerate(markers):
+        end = markers[index + 1].start() if index + 1 < len(markers) else len(block)
+        text = block[marker.start() : end].strip()
+        coords = extract_coordinates(text)
+        if coords:
+            sections.append(
+                {
+                    "id": marker.group(1),
+                    "text": text,
+                    "coords": [tuple(coord) for coord in coords],
+                }
+            )
+    return sections
+
+
+def _description_object_coordinates(obj):
+    """Return the coordinates owned by one emitted object."""
+
+    if obj.get("coord"):
+        return [tuple(obj["coord"])]
+    if obj.get("coords"):
+        return [tuple(coord) for coord in obj["coords"]]
+    return []
+
+
+def _description_source_evidence(ctx, obj):
+    """Find source sections that belong to this object's coordinates."""
+
+    sections = _description_source_sections(ctx)
+    object_coords = set(_description_object_coordinates(obj))
+    if not sections or not object_coords:
+        return {
+            "status": "UNSCOPED",
+            "sections": [],
+            "required_fragments": [],
+        }
+
+    owned = [
+        section
+        for section in sections
+        if object_coords.intersection(section["coords"])
+    ]
+    if not owned:
+        return {
+            "status": "UNRESOLVED",
+            "sections": [],
+            "required_fragments": [],
+        }
+
+    complete_sections = [
+        section
+        for section in owned
+        if set(section["coords"]) == object_coords
+    ]
+    required_fragments = [
+        re.sub(
+            r"^\s*\d+(?:\.\d+)*\.\s*",
+            "",
+            re.sub(r"-{5,}", " ", section["text"]).strip(),
+        ).strip()
+        for section in complete_sections
+        if section["text"]
+    ]
+    return {
+        "status": "SCOPED" if complete_sections else "PARTIAL",
+        "sections": [
+            {"id": section["id"], "coordinate_count": len(section["coords"])}
+            for section in owned
+        ],
+        "required_fragments": required_fragments,
+    }
+
+
+def assemble_object_description(
+    ctx,
+    local_description,
+    *,
+    scope="auto",
+    handler_name=None,
+    source_evidence=None,
+):
+    """Build and document the one Description used by every emitted object.
+
+    Handlers may still provide a section-scoped local fragment during the
+    migration.  The dispatcher owns the final composition of shared context
+    and footer so that Modern and Legacy never receive different semantic
+    inputs.  The returned string remains escaped for compatibility with the
+    current object model; the attached evidence is plain text.
+    """
+
+    local_text = _description_plain_text(local_description)
+    parent_text = _description_plain_text(ctx.get("parent_context", ""))
+    footer_text = _description_plain_text(ctx.get("footer_context", ""))
+    metadata = ctx.get("metadata") or {}
+    semantic_text = _description_plain_text(metadata.get("semantic_context", ""))
+
+    if scope == "full":
+        assembled = compose_description(local_text)
+    elif parent_text or footer_text:
+        assembled = compose_partition_description(
+            parent_text,
+            local_text,
+            footer_text,
+        )
+    else:
+        assembled = compose_description(local_text)
+
+    assembled_plain = _description_plain_text(assembled)
+    included_fragments = [
+        fragment
+        for fragment in (parent_text, semantic_text, local_text, footer_text)
+        if fragment
+    ]
+    source_evidence = source_evidence or {
+        "status": "UNSCOPED",
+        "sections": [],
+        "required_fragments": [],
+    }
+    return assembled, {
+        "schema_version": DESCRIPTION_CONTRACT_VERSION,
+        "scope": "FULL" if scope == "full" else "SHARED_LOCAL_FOOTER",
+        "handler": handler_name or "",
+        "shared_header": parent_text,
+        "semantic_context": semantic_text,
+        "object_fragment": local_text,
+        "shared_footer": footer_text,
+        "included_fragments": included_fragments,
+        "source_scope": source_evidence.get("status", "UNSCOPED"),
+        "source_sections": source_evidence.get("sections", []),
+        "source_required_fragments": source_evidence.get(
+            "required_fragments", []
+        ),
+        "assembled_description": assembled_plain,
+        "legacy_limit": LEGACY_MAX_DESC,
+        "legacy_cap_stage": "exporter_only",
+    }
+
+
+def finalize_object_description(
+    obj, ctx, handler_name, *, object_type=None, object_index=None
+):
+    """Apply the shared Description contract to one emitted object."""
+
+    raw_description = obj.get("description", "")
+    fragment_refs = obj.get("_description_fragment_refs", [])
+    if not fragment_refs:
+        # Objects emitted by legacy/direct helper paths still receive an
+        # explicit ledger entry, but the origin remains visible for review.
+        references = description_fragment_references(ctx, obj)
+        fragment_refs = references["selected"]
+        obj["_description_fragment_refs"] = fragment_refs
+        obj["_description_excluded_siblings"] = references[
+            "excluded_sibling_fragments"
+        ]
+        obj["_description_shared_refs"] = references["shared"]
+        obj["_description_fragment_origin"] = "dispatcher_recovery"
+
+    source_evidence = _description_source_evidence(ctx, obj)
+    assembled, evidence = assemble_object_description(
+        ctx,
+        raw_description,
+        handler_name=handler_name,
+        source_evidence=source_evidence,
+    )
+    owner = {
+        "object_type": object_type or obj.get("_description_object_type", ""),
+        "object_index": object_index,
+    }
+    evidence["owner"] = owner
+    evidence["fragment_references"] = []
+    for reference in fragment_refs:
+        reference_copy = copy.deepcopy(reference)
+        reference_copy["owner"] = copy.deepcopy(owner)
+        evidence["fragment_references"].append(reference_copy)
+    evidence["shared_fragment_references"] = copy.deepcopy(
+        obj.get("_description_shared_refs", [])
+    )
+    evidence["excluded_sibling_fragments"] = list(
+        obj.get("_description_excluded_siblings", [])
+    )
+    evidence["source_order"] = [
+        reference.get("source_order") for reference in fragment_refs
+    ]
+    evidence["source_spans"] = [
+        copy.deepcopy(reference.get("source_span", {}))
+        for reference in fragment_refs
+    ]
+    evidence["fragment_owner"] = "handler"
+    evidence["fragment_origin"] = obj.get(
+        "_description_fragment_origin", "dispatcher_recovery"
+    )
+    obj["description"] = assembled
+    obj["_description_evidence"] = evidence
+    return obj
+
+
+def finalize_recent_objects(
+    container,
+    message,
+    object_counts_before,
+    message_counts_before,
+    ctx,
+    handler_name,
+):
+    """Finalize every object emitted during one dispatcher attempt."""
+
+    for kind in ("areas", "lines", "circles", "labels"):
+        container_objects = container.get(kind, [])[object_counts_before[kind] :]
+        message_objects = message.get(kind, [])[message_counts_before[kind] :]
+        for local_index, obj in enumerate(container_objects):
+            finalize_object_description(
+                obj,
+                ctx,
+                handler_name,
+                object_type=kind.removesuffix("s"),
+                object_index=object_counts_before[kind] + local_index,
+            )
+        for local_index, obj in enumerate(message_objects):
+            finalize_object_description(
+                obj,
+                ctx,
+                handler_name,
+                object_type=kind.removesuffix("s"),
+                object_index=message_counts_before[kind] + local_index,
+            )
+
+
+def build_scoped_row_description(
+    ctx,
+    row_text,
+    shared_section="",
+    *,
+    row_first=False,
+    preserve_section_separator=False,
+):
+    """Compose one list/table row without importing sibling rows.
+
+    Source-specific extractors own row boundaries; this shared builder owns
+    the stable Description contract used by future list/table pipelines:
+    notice context, shared section preamble, selected row, and footer.
+    """
+
+    metadata = ctx.get("metadata") or {}
+    header = compose_description(
+        ctx.get("parent_context", ""),
+        metadata.get("semantic_context", ""),
+    )
+    normalized_header = _description_plain_text(header)
+    normalized_shared = _description_plain_text(shared_section)
+    if normalized_header and normalized_shared.startswith(normalized_header):
+        shared_section = normalized_shared[len(normalized_header):].strip()
+    if row_first:
+        section_parts = (row_text, shared_section)
+    else:
+        section_parts = (shared_section, row_text)
+    if preserve_section_separator:
+        normalized_section = "\n".join(
+            text
+            for text in (_description_plain_text(part) for part in section_parts)
+            if text
+        )
+        normalized_parts = [
+            text
+            for text in (
+                _description_plain_text(header),
+                normalized_section,
+                _description_plain_text(ctx.get("footer_context", "")),
+            )
+            if text
+        ]
+        return escape("\n".join(normalized_parts).strip())
+    section = compose_description(*section_parts)
+    return compose_partition_description(
+        header,
+        section,
+        ctx.get("footer_context", ""),
+    )
 
 
 def build_list_entry_description(ctx, entry_text, heading_pattern):
@@ -2559,7 +3435,13 @@ def build_list_entry_description(ctx, entry_text, heading_pattern):
     # Keep the local entry first for the ECDIS selection view, then append the
     # shared context so the object remains immediately identifiable while the
     # operation/header is still available in the same field.
-    return compose_description(entry_text, shared_context)
+    return build_scoped_row_description(
+        ctx,
+        entry_text,
+        shared_context,
+        row_first=True,
+        preserve_section_separator=True,
+    )
 
 
 def build_sublabel_description(ctx, sublabel_text):
@@ -2679,6 +3561,19 @@ def has_line_pattern(text):
 
 IMPLICIT_OPERATION_AREA_PROFILES = (
     {
+        "name": "SEA_PLANE_OPERATIONAL_AREA",
+        "context_pattern": re.compile(
+            r"\b(?:IN\s+)?FOLLOWING\s+POSITIONS?\b", re.IGNORECASE
+        ),
+        "activity_terms": (
+            "SEA PLANE LANDING",
+            "SEAPLANE LANDING",
+            "OPERATIONAL AREA",
+        ),
+        "clearance_terms": (),
+        "minimum_coordinates": 3,
+    },
+    {
         "name": "OPERATIONAL_VICINITY_WITH_CLEARANCE",
         "context_pattern": re.compile(
             r"\b(?:IN\s+)?VICINITY\s+OF\b", re.IGNORECASE
@@ -2728,7 +3623,9 @@ def infer_implicit_operational_area(block):
             continue
         if not any(term in block.upper() for term in profile["activity_terms"]):
             continue
-        if not any(term in block.upper() for term in profile["clearance_terms"]):
+        if profile["clearance_terms"] and not any(
+            term in block.upper() for term in profile["clearance_terms"]
+        ):
             continue
         return {
             "profile": profile["name"],
@@ -3016,6 +3913,8 @@ def handle_structured_sections(ctx, container, message):
     debug("PROCESS: handle_structured_sections")
     if ctx["is_riglist"]:
         return False
+    if len(extract_area_group_sections(ctx["block"])) > 1:
+        return False
 
     # Explicit or implicit bounded-area evidence must be resolved by
     # handle_area, even when the notice also contains numbered sections.
@@ -3267,7 +4166,12 @@ def build_facility_list_description(ctx, entry):
         parent = " ".join(block[: heading.end()].split())
     else:
         parent = sanitize_xml_attribute(ctx.get("description", ""))
-    return escape(f"{parent}\n{entry['text']}".strip())
+    return build_scoped_row_description(
+        ctx,
+        entry["text"],
+        parent,
+        preserve_section_separator=True,
+    )
 
 
 def handle_facility_list_points(ctx, container, message):
@@ -3570,14 +4474,19 @@ def extract_area_group_sections(block):
     }
 
     named_markers = list(
-        re.finditer(r"\b(?:DANGER\s+)?AREA\s+([A-Z][A-Z]+)\b", block, re.IGNORECASE)
+        re.finditer(
+            r"\b(?:DANGER\s+)?AREA\s+([A-Z][A-Z]+)\b|"
+            r"\b([A-Z][A-Z]+)\s+FIELD\s+AREA\b",
+            block,
+            re.IGNORECASE,
+        )
     )
 
     if len(named_markers) > 1:
         named_groups = []
 
         for i, m in enumerate(named_markers):
-            zone_name = m.group(1).upper()
+            zone_name = (m.group(1) or m.group(2)).upper()
 
             if zone_name in INVALID_AREA_NAMES:
                 continue
@@ -3703,8 +4612,18 @@ def build_group_area_description(ctx, area_id, area_text):
             if first_area_marker
             else ctx.get("description", "")
         )
-        section = f"AREA {area_id}\n{area_text}"
         footer = _partition_footer_context(ctx.get("block", ""))
+        section_text = area_text
+        if footer:
+            section_footer_marker = re.search(
+                r"(?im)^\s*(?:\d+(?:\.\d+)*(?:\.-?|-)?\s*)?"
+                r"CANCEL(?:LED|S|LATION)?"
+                r"(?:\s+(?:(?:THIS\s+)?(?:MSG|MESSAGE|WARNING)|NAVAREA))?\b",
+                section_text,
+            )
+            if section_footer_marker:
+                section_text = section_text[: section_footer_marker.start()].rstrip()
+        section = f"AREA {area_id}\n{section_text}"
         return compose_partition_description(header, section, footer)
 
     if is_named:
@@ -3734,29 +4653,103 @@ def build_group_area_description(ctx, area_id, area_text):
 
     coords_text = sanitize_xml_attribute(" ".join(area_text.split()))
 
-    MIN_SUMMARY = 120
-    separators_len = 2  # Ð´Ð²Ð° Ð¿ÐµÑÐµÐ½Ð¾ÑÐ° ÑÑÑÐ¾ÐºÐ¸
+    return f"{nav_summary}\n{group_header}\n{coords_text}"
 
-    fixed_len = MIN_SUMMARY + len(group_header) + separators_len
 
-    if fixed_len > LEGACY_MAX_DESC:
-        available = max(0, LEGACY_MAX_DESC - len(group_header) - separators_len)
-        nav_summary = nav_summary[:available].rstrip()
-        coords_text = ""
-    else:
-        available_for_coords = LEGACY_MAX_DESC - fixed_len
+def extract_mixed_bounded_sections(block):
+    """Split a bounded Area from independent numbered point sections.
 
-        if len(coords_text) > available_for_coords:
-            coords_text = coords_text[:available_for_coords].rstrip()
+    A short NAVAREA warning can remain one processing partition even when its
+    numbered sections define different object classes.  Only sections with
+    explicit bounded-area wording become Areas; an explicit point section
+    remains an independent Label.
+    """
 
-        max_summary = (
-            LEGACY_MAX_DESC - len(group_header) - len(coords_text) - separators_len
+    markers = list(
+        re.finditer(
+            r"(?m)^\s*(\d+(?:\.\d+)*)\.\s+",
+            block,
+        )
+    )
+    if len(markers) < 2:
+        return None
+
+    sections = []
+    for index, marker in enumerate(markers):
+        end = markers[index + 1].start() if index + 1 < len(markers) else len(block)
+        text = block[marker.start() : end].strip()
+        coords = extract_coordinates(text)
+        sections.append(
+            {
+                "number": marker.group(1),
+                "text": text,
+                "coords": coords,
+            }
         )
 
-        if len(nav_summary) > max_summary:
-            nav_summary = nav_summary[:max_summary].rstrip()
+    area_sections = [
+        section
+        for section in sections
+        if len(section["coords"]) >= 3 and has_area_pattern(section["text"])
+    ]
+    if not area_sections:
+        return None
 
-    return f"{nav_summary}\n{group_header}\n{coords_text}"
+    point_sections = []
+    for section in sections:
+        if section in area_sections or not section["coords"]:
+            continue
+        upper = section["text"].upper()
+        if has_area_pattern(upper):
+            continue
+        if any(
+            term in upper
+            for term in (
+                "ROUTE",
+                "TRACKLINE",
+                "CENTERLINE",
+                "PIPELINE",
+                "CABLE",
+                "JOINING",
+            )
+        ):
+            continue
+        point_sections.append(section)
+
+    if not point_sections:
+        return None
+
+    first_marker = markers[0]
+    prefix = block[: first_marker.start()].strip()
+    last_coordinate_section = max(
+        index
+        for index, section in enumerate(sections)
+        if section["coords"]
+    )
+    trailing_sections = [
+        section["text"]
+        for section in sections[last_coordinate_section + 1 :]
+        if not section["coords"]
+    ]
+    trailing = "\n".join(trailing_sections).strip()
+
+    return {
+        "areas": area_sections,
+        "points": point_sections,
+        "prefix": prefix,
+        "trailing": trailing,
+    }
+
+
+def build_mixed_section_description(ctx, section, prefix, trailing):
+    """Compose shared context, one numbered section, and its trailing footer."""
+
+    return compose_description(
+        ctx.get("parent_context", ""),
+        prefix,
+        section["text"],
+        trailing,
+    )
 
 
 def handle_area(ctx, container, message):
@@ -3775,6 +4768,55 @@ def handle_area(ctx, container, message):
         )
     ):
         return False
+
+    mixed_sections = extract_mixed_bounded_sections(ctx["block"])
+    if mixed_sections:
+        for section in mixed_sections["areas"]:
+            area_obj = create_area(
+                name=ctx["label_text"],
+                description=build_mixed_section_description(
+                    ctx,
+                    section,
+                    mixed_sections["prefix"],
+                    mixed_sections["trailing"],
+                ),
+                coords=normalize_area_vertices(section["coords"]),
+                color=detect_color(section["text"]),
+                check_danger=detect_check_danger(section["text"]),
+            )
+            add_area(area_obj, container, message)
+
+        for section in mixed_sections["points"]:
+            style, color, check_danger = get_point_presentation(section["text"])
+            for coord in section["coords"]:
+                add_label(
+                    create_label(
+                        style=style,
+                        color=color,
+                        check_danger=check_danger,
+                        text=ctx["label_text"],
+                        description=build_mixed_section_description(
+                            ctx,
+                            section,
+                            mixed_sections["prefix"],
+                            mixed_sections["trailing"],
+                        ),
+                        coord=coord,
+                    ),
+                    container,
+                    message,
+                )
+
+        message.setdefault("geometry_audit", []).append(
+            {
+                "event": "mixed_bounded_area_and_points_emitted",
+                "object_type": "area_plus_point",
+                "message_id": message.get("id", "unknown"),
+                "area_sections": [section["number"] for section in mixed_sections["areas"]],
+                "point_sections": [section["number"] for section in mixed_sections["points"]],
+            }
+        )
+        return True
 
     # ------------------------------------------------------------------
     # 1. Grouped Areas / Named Areas
@@ -3924,6 +4966,14 @@ def handle_area(ctx, container, message):
             }
         )
         message["geometry_rejected"] = True
+        _emit_coordinate_reference_labels(
+            ctx["coords"],
+            container,
+            message,
+            label_text=ctx["label_text"],
+            description=ctx["description"],
+            reason="UNPARSED_AREA_GROUPS",
+        )
         return True
 
     if not has_area_pattern(ctx["block"]) and not (
@@ -4085,6 +5135,41 @@ def handle_sublabels(ctx, container, message):
     return True
 
 
+def handle_lettered_area_groups(ctx, container, message):
+    """Map explicit lettered area groups to independent closed Areas."""
+    debug("PROCESS: handle_lettered_area_groups")
+    if ctx["is_riglist"] or ctx.get("is_letter_partition", False):
+        return False
+
+    groups = extract_lettered_area_groups(ctx["block"])
+    if not groups:
+        return False
+
+    color = detect_color(ctx["block"])
+    check_danger = detect_check_danger(ctx["block"])
+    for group in groups:
+        coords = normalize_area_vertices(group["coords"])
+        area_obj = create_area(
+            name=ctx["label_text"],
+            description=build_sublabel_description(ctx, group["text"]),
+            coords=coords,
+            color=color,
+            check_danger=check_danger,
+        )
+        area_obj["geometry_evidence"] = "LETTERED_FOLLOWING_AREAS"
+        add_area(area_obj, container, message)
+    message.setdefault("geometry_audit", []).append(
+        {
+            "event": "lettered_area_groups_emitted",
+            "object_type": "area",
+            "message_id": message.get("id", "unknown"),
+            "group_count": len(groups),
+            "source_coords": [list(coord) for group in groups for coord in group["coords"]],
+        }
+    )
+    return True
+
+
 def handle_lettered_sections(ctx, container, message):
     debug("PROCESS: handle_lettered_sections")
     if ctx["is_riglist"] or ctx.get("is_letter_partition", False):
@@ -4121,9 +5206,7 @@ def handle_multipoint(ctx, container, message):
     if ctx["is_riglist"]:
         return False
     if is_buoy_group(ctx["block"]) or is_multi_point_navarea(ctx["block"]):
-        style = get_point_style(ctx["block"])
-        color = detect_color(ctx["block"])
-        check_danger = detect_check_danger(ctx["block"])
+        style, color, check_danger = get_point_presentation(ctx["block"])
 
         for coord in ctx["coords"]:
             label_obj = create_label(
@@ -4217,12 +5300,13 @@ def handle_single_point(ctx, container, message):
     debug("PROCESS: handle_single_point")
     if ctx["is_riglist"]:
         return False
-    if len(ctx["coords"]) < 1:
+    if len(ctx["coords"]) != 1:
         return False
+    style, color, check_danger = get_point_presentation(ctx["block"])
     label_obj = create_label(
-        style=get_point_style(ctx["block"]),
-        color=detect_color(ctx["block"]),
-        check_danger=detect_check_danger(ctx["block"]),
+        style=style,
+        color=color,
+        check_danger=check_danger,
         text=ctx["label_text"],
         description=ctx["description"],
         coord=ctx["coords"][0],
@@ -4233,19 +5317,16 @@ def handle_single_point(ctx, container, message):
 
 def handle_fallback(ctx, container, message):
     debug("PROCESS: handle_fallback")
-    if ctx["is_riglist"]:
-        return False
-    if len(ctx["coords"]) < 1:
-        return False
-    label_obj = create_label(
-        style=2,
-        color="NINFO",
-        check_danger=0,
-        text=ctx["label_text"],
+    if not ctx["coords"]:
+        return True
+    _emit_coordinate_reference_labels(
+        ctx["coords"],
+        container,
+        message,
+        label_text=ctx["label_text"],
         description=ctx["description"],
-        coord=ctx["coords"][0],
+        reason="NO_SAFE_GEOMETRY_HANDLER",
     )
-    add_label(label_obj, container, message)
     return True
 
 
@@ -4396,14 +5477,36 @@ def parse_buoy_table_rows(block):
         if lat is None or lon is None:
             continue
 
+        row_start = match.start()
+        preceding_text = block[: match.start()]
+        entry_marker = re.search(
+            r"\b\d{2,3}[A-Z]?\s+$",
+            preceding_text,
+            flags=re.IGNORECASE,
+        )
+        if entry_marker:
+            row_start = entry_marker.start()
+
         row_end = matches[index + 1].start() if index + 1 < len(matches) else len(block)
-        row_text = block[match.start() : row_end]
+        if index + 1 < len(matches):
+            next_entry_marker = re.search(
+                r"\b\d{2,3}[A-Z]?\s+$",
+                block[: matches[index + 1].start()],
+                flags=re.IGNORECASE,
+            )
+            if next_entry_marker and next_entry_marker.start() >= row_start:
+                # The next row number precedes its coordinate.  Exclude that
+                # marker from this row so it cannot contaminate the selected
+                # object's Description.
+                row_end = next_entry_marker.start()
+        row_text = block[row_start:row_end]
         rows.append(
             {
                 "coord": (lat, lon),
                 "status": detect_buoy_status(row_text),
                 "subtype": "BUOY",
                 "check_danger": detect_check_danger(row_text),
+                "description_fragment": row_text.strip(),
             }
         )
 
@@ -4440,17 +5543,56 @@ def buoy_style_color(check_danger, status, subtype=None):
     return style, color, 0
 
 
-def build_buoy_label_description(ctx, coord, status):
-    # Keep the complete notice context. Coordinates and cancellation timing
-    # remain visible in the Description for operator verification.
+def build_buoy_label_description(ctx, coord, status, description_fragment=""):
+    # Keep the notice header and the local section preamble, but never copy
+    # sibling buoy rows into the selected object's Description.
     status_text = status if status and status != "ACTIVE" else ""
     metadata = ctx.get("metadata") or {}
-    return compose_description(
-        ctx.get("parent_context", ""),
-        metadata.get("semantic_context", ""),
-        ctx.get("block", ""),
-        status_text,
+    block = ctx.get("block", "")
+    is_table = bool(
+        re.search(rf"\b{BUOY_WORD}\s+POSITIONS\b", block, re.IGNORECASE)
+        and re.search(r"\bTYPE\s+AND\s+ISSUE\b", block, re.IGNORECASE)
     )
+    first_coord = BUOY_TABLE_COORD_RE.search(block) if is_table else None
+
+    if description_fragment:
+        if first_coord:
+            section_preamble = block[: first_coord.start()].strip()
+            section_preamble = re.sub(
+                r"\b\d{2,3}[A-Z]?\s*$",
+                "",
+                section_preamble,
+                flags=re.IGNORECASE,
+            ).strip()
+            return build_scoped_row_description(
+                ctx,
+                description_fragment,
+                section_preamble,
+            )
+        else:
+            return build_scoped_row_description(ctx, description_fragment)
+    elif not is_table:
+        # Non-table buoy messages retain their established full notice
+        # Description; only table rows need sibling-entry isolation.
+        return compose_description(
+            ctx.get("parent_context", ""),
+            metadata.get("semantic_context", ""),
+            block,
+            status_text,
+        )
+    elif first_coord:
+        # Defensive fallback for a table row that was not carried through the
+        # row metadata: keep the section preamble and the selected coordinate.
+        section_preamble = block[: first_coord.start()].strip()
+        section_preamble = re.sub(
+            r"\b\d{2,3}[A-Z]?\s*$",
+            "",
+            section_preamble,
+            flags=re.IGNORECASE,
+        ).strip()
+        return build_scoped_row_description(ctx, coord, section_preamble)
+    else:
+        return build_scoped_row_description(ctx, block)
 
 
 def _buoy_context_fragments(block, coords):
@@ -4551,6 +5693,7 @@ def handle_buoy_semantics(ctx, container, message):
                 "status": detect_buoy_status(row_context),
                 "subtype": (classify_buoy(row_context) or buoy)["subtype"],
                 "check_danger": detect_check_danger(row_context),
+                "description_fragment": "",
             }
             for coord, row_context in zip(ctx["coords"], row_contexts)
         ]
@@ -4562,7 +5705,12 @@ def handle_buoy_semantics(ctx, container, message):
             subtype=row["subtype"],
         )
         coord = row["coord"]
-        desc = build_buoy_label_description(ctx, coord, row["status"])
+        desc = build_buoy_label_description(
+            ctx,
+            coord,
+            row["status"],
+            row.get("description_fragment", ""),
+        )
 
         label_obj = create_label(
             style=style,
@@ -4577,6 +5725,43 @@ def handle_buoy_semantics(ctx, container, message):
     return True
 
 
+def handle_independent_coordinate_list(ctx, container, message):
+    """Keep explicitly listed independent positions as separate Labels."""
+    if ctx["is_riglist"] or len(ctx["coords"]) < 2:
+        return False
+    if any(message.get(kind) for kind in ("areas", "lines", "circles", "labels")):
+        return False
+    upper = ctx["upper"]
+    if re.search(
+        r"\b(?:AREA|ROUTE|TRACKLINE|CENTERLINE|PIPELINE|CABLE|CHANNEL|"
+        r"JOINING|LINE\s+JOINING)\b",
+        upper,
+    ):
+        return False
+    if not re.search(
+        r"\b(?:LEADING\s+LIGHTS?|LIGHTBUOYS?|SPECIAL[-\s]+MARK|"
+        r"AIDS\s+TO\s+NAVIGATION|ANCHOR\s+POSITIONS?|"
+        r"BUOY\s+NO\.?\s*\d+)\b",
+        upper,
+    ):
+        return False
+    style, color, check_danger = get_point_presentation(ctx["block"])
+    for coord in ctx["coords"]:
+        add_label(
+            create_label(
+                style=style,
+                color=color,
+                check_danger=check_danger,
+                text=ctx["label_text"],
+                description=ctx["description"],
+                coord=coord,
+            ),
+            container,
+            message,
+        )
+    return True
+
+
 # -------------------- HANDLER REGISTRY --------------------
 PROCESS_HANDLERS = [
     handle_ice_report,
@@ -4588,12 +5773,14 @@ PROCESS_HANDLERS = [
     handle_buoy_semantics,  # NEW
     handle_vessel_list_points,
     handle_facility_list_points,
+    handle_independent_coordinate_list,
     handle_structured_sections,
     handle_circle,
     handle_bounding_box,
     handle_area,
     handle_no_anchor,
     handle_trackline,
+    handle_lettered_area_groups,
     handle_sublabels,
     handle_lettered_sections,
     handle_riglist,
@@ -4638,6 +5825,10 @@ validate_handler_registry(PROCESS_HANDLERS)
 # -------------------- PROCESS_BLOCK DISPATCHER --------------------
 def process_block(block, message, container, navarea_name, label_text=None, meta=None):
     ctx = build_processing_context(block, navarea_name, label_text, meta)
+    # Object insertion helpers use this only while the handler is emitting
+    # objects.  It keeps source references attached at the handler boundary
+    # instead of reconstructing them from the final Description string.
+    message["_description_context"] = ctx
     object_counts_before = {
         kind: len(container.get(kind, []))
         for kind in ("areas", "lines", "circles", "labels")
@@ -4657,22 +5848,59 @@ def process_block(block, message, container, navarea_name, label_text=None, meta
     if DEBUG:
         print(f"DEBUG: processing block with {len(ctx['coords'])} coords")
     for handler in PROCESS_HANDLERS:
-        if handler(ctx, container, message):
-            for kind in ("areas", "lines", "circles", "labels"):
-                container_objects = container.get(kind, [])[
-                    object_counts_before[kind] :
-                ]
-                message_objects = message.get(kind, [])[
-                    message_counts_before[kind] :
-                ]
-                for obj in (*container_objects, *message_objects):
-                    if ctx.get("parent_context") or ctx.get("footer_context"):
-                        obj["description"] = compose_partition_description(
-                            ctx.get("parent_context", ""),
-                            obj.get("description", ""),
-                            ctx.get("footer_context", ""),
-                        )
+        try:
+            matched = handler(ctx, container, message)
+        except Exception as exc:
+            handler_name = getattr(handler, "__name__", repr(handler))
+            message.setdefault("diagnostics", []).append(
+                {
+                    "code": "HANDLER_ERROR",
+                    "object_type": "message",
+                    "message_id": message.get("id", "unknown"),
+                    "handler": handler_name,
+                    "error": f"{type(exc).__name__}: {exc}",
+                }
+            )
+            _emit_coordinate_reference_labels(
+                ctx["coords"],
+                container,
+                message,
+                label_text=ctx["label_text"],
+                description=ctx["description"],
+                reason=f"HANDLER_ERROR:{handler_name}",
+            )
+            finalize_recent_objects(
+                container,
+                message,
+                object_counts_before,
+                message_counts_before,
+                ctx,
+                f"reference_fallback:{handler_name}",
+            )
+            stage_diagnostics.append(
+                {
+                    "stage": "handler_error",
+                    "handler": handler_name,
+                    "error": f"{type(exc).__name__}: {exc}",
+                    "object_counts": {
+                        "areas": len(message.get("areas", [])),
+                        "lines": len(message.get("lines", [])),
+                        "circles": len(message.get("circles", [])),
+                        "labels": len(message.get("labels", [])),
+                    },
+                }
+            )
+            return
+        if matched:
             handler_name = handler.__name__
+            finalize_recent_objects(
+                container,
+                message,
+                object_counts_before,
+                message_counts_before,
+                ctx,
+                handler_name,
+            )
             stage_diagnostics.append(
                 {
                     "stage": "handler_match",
@@ -4688,10 +5916,26 @@ def process_block(block, message, container, navarea_name, label_text=None, meta
             if DEBUG:
                 print(f"MATCH: {handler_name}")
             return
+    _emit_coordinate_reference_labels(
+        ctx["coords"],
+        container,
+        message,
+        label_text=ctx["label_text"],
+        description=ctx["description"],
+        reason="NO_HANDLER_MATCH",
+    )
+    finalize_recent_objects(
+        container,
+        message,
+        object_counts_before,
+        message_counts_before,
+        ctx,
+        "reference_coordinate_fallback",
+    )
     stage_diagnostics.append(
         {
             "stage": "handler_match",
-            "handler": None,
+            "handler": "reference_coordinate_fallback",
             "object_counts": {
                 "areas": len(message.get("areas", [])),
                 "lines": len(message.get("lines", [])),
