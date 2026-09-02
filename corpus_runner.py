@@ -763,6 +763,9 @@ def _geometry_status(
         for code in _diagnostic_codes(message)
     )
     diagnostic_codes = _diagnostic_codes(message)
+    coordinate_reference_fallback = (
+        "COORDINATE_REFERENCE_FALLBACK" in diagnostic_codes
+    )
     line_order_review = "GEOMETRY_LINE_ORDER_REVIEW" in diagnostic_codes
     line_tracks_split = "GEOMETRY_LINE_TRACKS_SPLIT" in diagnostic_codes
     operation = any(term in block.upper() for term in OPERATION_TERMS)
@@ -779,8 +782,11 @@ def _geometry_status(
         statuses.append("REJECTED_INVALID_AREA")
     if not emitted and not rejected and operation:
         statuses.append("OPERATION_ONLY")
-    if not emitted and not rejected and not operation and coordinates:
-        statuses.append("REFERENCE_ONLY_COORDINATES")
+    if coordinate_reference_fallback or (
+        not emitted and not rejected and not operation and coordinates
+    ):
+        if "REFERENCE_ONLY_COORDINATES" not in statuses:
+            statuses.append("REFERENCE_ONLY_COORDINATES")
     if not statuses:
         statuses.append("NO_GEOMETRY")
 
@@ -817,6 +823,8 @@ def _missing_components(
         # A rejected area is an explicit, diagnosed outcome rather than a
         # silent component loss.  Keep it in the status and diagnostics.
         if kind == "area" and "REJECTED_INVALID_AREA" in statuses:
+            continue
+        if "REFERENCE_ONLY_COORDINATES" in statuses:
             continue
         if expected_count and not emitted_count:
             missing.append(
@@ -894,6 +902,187 @@ def _description_mismatch(
     }
 
 
+def _description_fingerprint(value: str) -> str:
+    """Compare descriptions by meaning-preserving whitespace normalization."""
+
+    return " ".join(main.sanitize_ecdis_description(value).split()).casefold()
+
+
+def _description_contract_audit(
+    obj: Mapping[str, object],
+    modern_description: str,
+    legacy_description: str,
+    source_text: str | None = None,
+) -> dict[str, object]:
+    """Validate the dispatcher-owned Description assembly contract.
+
+    This is intentionally separate from Modern/Legacy parity.  XML parity can
+    pass even when a handler supplied an incomplete or overly broad string.
+    """
+
+    evidence = obj.get("_description_evidence")
+    if not isinstance(evidence, Mapping):
+        return {
+            "status": "MISSING_CONTRACT",
+            "required_fragments": [],
+            "missing_fragments": [],
+            "expected_description": "",
+            "modern_matches_expected": False,
+            "legacy_cap_stage": "",
+        }
+
+    expected = str(evidence.get("assembled_description", ""))
+    fragments = [
+        str(fragment)
+        for fragment in evidence.get("included_fragments", [])
+        if str(fragment).strip()
+    ]
+    source_fragments = [
+        str(fragment)
+        for fragment in evidence.get("source_required_fragments", [])
+        if str(fragment).strip()
+    ]
+    fragment_references = [
+        reference
+        for reference in evidence.get("fragment_references", [])
+        if isinstance(reference, Mapping)
+    ]
+    selected_ids = [str(reference.get("id", "")) for reference in fragment_references]
+    selected_orders = [
+        reference.get("source_order") for reference in fragment_references
+    ]
+    object_coordinates = {
+        tuple(coord) for coord in main._description_object_coordinates(obj)
+    }
+    referenced_coordinates = {
+        tuple(coord)
+        for reference in fragment_references
+        for coord in reference.get("coordinates", [])
+    }
+    traceability_issues = []
+    if not fragment_references:
+        traceability_issues.append("FRAGMENT_TRACE_MISSING")
+    if len(selected_ids) != len(set(selected_ids)):
+        traceability_issues.append("FRAGMENT_TRACE_DUPLICATE")
+    spans = [
+        (
+            reference.get("source_span", {}).get("start"),
+            reference.get("source_span", {}).get("end"),
+        )
+        for reference in fragment_references
+        if isinstance(reference.get("source_span"), Mapping)
+    ]
+    malformed_references = [
+        reference
+        for reference in fragment_references
+        if not str(reference.get("id", "")).strip()
+        or not isinstance(reference.get("source_order"), int)
+        or not isinstance(reference.get("source_span"), Mapping)
+        or not isinstance(reference.get("source_span", {}).get("start"), int)
+        or not isinstance(reference.get("source_span", {}).get("end"), int)
+        or reference.get("source_span", {}).get("start")
+        >= reference.get("source_span", {}).get("end")
+    ]
+    if malformed_references:
+        traceability_issues.append("FRAGMENT_TRACE_MISSING")
+    if len(spans) != len(set(spans)):
+        traceability_issues.append("FRAGMENT_TRACE_DUPLICATE")
+    if selected_orders != sorted(
+        order for order in selected_orders if isinstance(order, int)
+    ) or any(order is None for order in selected_orders):
+        traceability_issues.append("FRAGMENT_TRACE_REORDERED")
+    if referenced_coordinates - object_coordinates:
+        traceability_issues.append("FRAGMENT_TRACE_CONTAMINATED")
+    excluded_ids = {
+        str(fragment_id)
+        for fragment_id in evidence.get("excluded_sibling_fragments", [])
+    }
+    if set(selected_ids) & excluded_ids:
+        traceability_issues.append("FRAGMENT_TRACE_CONTAMINATED")
+    owner = evidence.get("owner")
+    valid_owner = (
+        isinstance(owner, Mapping)
+        and str(owner.get("object_type", "")).strip() in {
+            "area",
+            "line",
+            "circle",
+            "label",
+        }
+        and isinstance(owner.get("object_index"), int)
+        and owner.get("object_index") >= 0
+    )
+    if not valid_owner:
+        traceability_issues.append("FRAGMENT_TRACE_OWNER_INVALID")
+    if any(reference.get("owner") != owner for reference in fragment_references):
+        traceability_issues.append("FRAGMENT_TRACE_OWNER_MISMATCH")
+    if source_text is not None:
+        traceability_issues.extend(
+            main.validate_description_fragment_references(
+                {"block": source_text},
+                fragment_references,
+            )
+        )
+    traceability_issues = list(dict.fromkeys(traceability_issues))
+    modern_fingerprint = _description_fingerprint(modern_description)
+    missing_fragments = []
+    for fragment in (*fragments, *source_fragments):
+        fragment_fingerprint = _description_fingerprint(fragment)
+        if fragment_fingerprint and fragment_fingerprint not in modern_fingerprint:
+            missing_fragments.append(fragment)
+    expected_fingerprint = _description_fingerprint(expected)
+    modern_matches_expected = modern_fingerprint == expected_fingerprint
+    expected_length = len(main.sanitize_ecdis_description(expected))
+    modern_length = len(modern_description)
+    legacy_length = len(legacy_description)
+
+    if traceability_issues:
+        status = traceability_issues[0]
+    elif missing_fragments:
+        status = "MISSING_REQUIRED_FRAGMENT"
+    elif not modern_matches_expected:
+        status = "ASSEMBLY_MISMATCH"
+    elif expected_length > main.LEGACY_MAX_DESC and modern_length <= main.LEGACY_MAX_DESC:
+        status = "PREMATURE_CAP"
+    elif expected_length > main.LEGACY_MAX_DESC:
+        status = "COMPLETE_LEGACY_CAP_EXPECTED"
+    else:
+        status = "COMPLETE"
+
+    legacy_cap_valid = (
+        legacy_length == main.LEGACY_MAX_DESC
+        if modern_length > main.LEGACY_MAX_DESC
+        else legacy_length == modern_length
+    )
+    if not legacy_cap_valid:
+        status = "LEGACY_CAP_MISMATCH"
+    return {
+        "status": status,
+        "required_fragments": fragments,
+        "source_required_fragments": source_fragments,
+        "source_scope": str(evidence.get("source_scope", "UNSCOPED")),
+        "source_sections": evidence.get("source_sections", []),
+        "owner": owner,
+        "fragment_references": fragment_references,
+        "excluded_sibling_fragments": list(
+            evidence.get("excluded_sibling_fragments", [])
+        ),
+        "source_order": selected_orders,
+        "source_spans": [
+            reference.get("source_span", {}) for reference in fragment_references
+        ],
+        "fragment_origin": str(evidence.get("fragment_origin", "")),
+        "traceability_issues": traceability_issues,
+        "missing_fragments": missing_fragments,
+        "expected_description": expected,
+        "modern_matches_expected": modern_matches_expected,
+        "legacy_cap_stage": str(evidence.get("legacy_cap_stage", "")),
+        "legacy_cap_valid": legacy_cap_valid,
+        "expected_length": expected_length,
+        "modern_length": modern_length,
+        "legacy_length": legacy_length,
+    }
+
+
 def _description_semantic_context(
     source_text: str, modern_description: str
 ) -> dict[str, object]:
@@ -960,6 +1149,12 @@ def _description_audit(
             mismatch = _description_mismatch(
                 handler_description, modern_description, legacy_description
             )
+            contract = _description_contract_audit(
+                obj,
+                modern_description,
+                legacy_description,
+                source_text=sub_block,
+            )
             semantic_context = _description_semantic_context(
                 semantic_source, modern_description
             )
@@ -975,6 +1170,7 @@ def _description_audit(
                     "legacy_length": len(legacy_description),
                     "legacy_cap": len(modern_description) > main.LEGACY_MAX_DESC,
                     "mismatch_classification": mismatch,
+                    "description_contract": contract,
                     "semantic_context": semantic_context,
                 }
             )
@@ -1172,6 +1368,8 @@ def _summary(
     handler_counts: Counter[str] = Counter()
     object_totals: Counter[str] = Counter()
     description_counts: Counter[str] = Counter()
+    description_contract_counts: Counter[str] = Counter()
+    description_traceability_counts: Counter[str] = Counter()
     description_objects = 0
     semantic_context_counts: Counter[str] = Counter()
     for message in messages:
@@ -1192,6 +1390,18 @@ def _summary(
                 else "UNKNOWN"
             )
             description_counts[str(overall)] += 1
+            contract = obj.get("description_contract", {})
+            contract_status = (
+                contract.get("status")
+                if isinstance(contract, Mapping)
+                else "UNKNOWN"
+            )
+            description_contract_counts[str(contract_status)] += 1
+            if isinstance(contract, Mapping):
+                description_traceability_counts.update(
+                    str(issue)
+                    for issue in contract.get("traceability_issues", [])
+                )
 
     return {
         "source_files": len(sources),
@@ -1222,6 +1432,12 @@ def _summary(
             "mismatch_classifications": dict(sorted(description_counts.items())),
             "semantic_context_statuses": dict(
                 sorted(semantic_context_counts.items())
+            ),
+            "contract_statuses": dict(
+                sorted(description_contract_counts.items())
+            ),
+            "traceability_issues": dict(
+                sorted(description_traceability_counts.items())
             ),
         },
     }
@@ -1335,6 +1551,9 @@ def run_corpus(
             ],
             "semantic_context_statuses": summary["description_audit"][
                 "semantic_context_statuses"
+            ],
+            "traceability_issues": summary["description_audit"][
+                "traceability_issues"
             ],
             "records": "messages[].description_audit",
         },
@@ -2439,6 +2658,25 @@ def validate_report(
         for obj in message.get("description_audit", {}).get("objects", [])
         if obj.get("semantic_context", {}).get("status") == "MISSING"
     ]
+    description_contract_issues = [
+        {
+            "id": message["id"],
+            "source_reference": message["source_reference"],
+            "object_type": obj["object_type"],
+            "object_index": obj["object_index"],
+            "status": obj.get("description_contract", {}).get("status", "UNKNOWN"),
+            "missing_fragments": obj.get("description_contract", {}).get(
+                "missing_fragments", []
+            ),
+            "traceability_issues": obj.get("description_contract", {}).get(
+                "traceability_issues", []
+            ),
+        }
+        for message in report.get("messages", [])
+        for obj in message.get("description_audit", {}).get("objects", [])
+        if obj.get("description_contract", {}).get("status")
+        not in {"COMPLETE", "COMPLETE_LEGACY_CAP_EXPECTED"}
+    ]
 
     return {
         "status": "PASS"
@@ -2448,6 +2686,7 @@ def validate_report(
             or unexpected_changes
             or unreviewed_losses
             or semantic_context_missing
+            or description_contract_issues
         )
         else "FAIL",
         "processing_errors": processing_errors,
@@ -2459,6 +2698,8 @@ def validate_report(
         "unreviewed_component_loss_count": len(unreviewed_loss_keys),
         "semantic_context_missing_count": len(semantic_context_missing),
         "semantic_context_missing": semantic_context_missing,
+        "description_contract_issue_count": len(description_contract_issues),
+        "description_contract_issues": description_contract_issues,
         "unreviewed_component_losses": [
             {
                 "id": message["id"],
